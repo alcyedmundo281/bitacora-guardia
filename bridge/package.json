@@ -1,0 +1,17 @@
+{
+  "name": "bitacora-whatsapp-bridge",
+  "version": "1.0.0",
+  "description": "Puente ligero de WhatsApp para el Agente Antigravity de Bitácora Médica",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "@whiskeysockets/baileys": "^6.7.12",
+    "qrcode-terminal": "^0.12.0",
+    "qrcode": "^1.5.4",
+    "pino": "^9.6.0"
+  }
+}
+

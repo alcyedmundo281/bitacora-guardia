@@ -1,0 +1,34 @@
+# Python / Virtual Environment
+.venv/
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+dist/
+build/
+
+# IDEs
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Environment & Credentials
+.env
+.env.local
+
+# Quarto temporary artifacts
+.quarto/
+*_cache/
+*_files/
+
+# Node.js & WhatsApp Session
+node_modules/
+auth_session/
+*.log
+
+# Google Drive virtual link files
+*.gdoc
+*.gsheet
+*.gslides
+

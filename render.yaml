@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: bitacora-guardia-bot
+    env: docker
+    dockerfilePath: Dockerfile
+    plan: free
+    healthCheckPath: /
+    envVars:
+      - key: PORT
+        value: 3000
+

@@ -1,0 +1,634 @@
+{
+  "$defs": {
+    "GuardiaCenso": {
+      "description": "Estadística de ocupación durante la guardia.",
+      "properties": {
+        "total_pacientes": {
+          "title": "Total Pacientes",
+          "type": "integer"
+        },
+        "emergencia": {
+          "title": "Emergencia",
+          "type": "integer"
+        },
+        "hospitalizados": {
+          "title": "Hospitalizados",
+          "type": "integer"
+        },
+        "perifericos": {
+          "title": "Perifericos",
+          "type": "integer"
+        },
+        "ingresos_guardia": {
+          "default": 0,
+          "title": "Ingresos Guardia",
+          "type": "integer"
+        }
+      },
+      "required": [
+        "total_pacientes",
+        "emergencia",
+        "hospitalizados",
+        "perifericos"
+      ],
+      "title": "GuardiaCenso",
+      "type": "object"
+    },
+    "LaboratorioReciente": {
+      "description": "Conjunto de resultados paraclínicos fechados.",
+      "properties": {
+        "fecha_hora": {
+          "title": "Fecha Hora",
+          "type": "string"
+        },
+        "tipo_estudio": {
+          "title": "Tipo Estudio",
+          "type": "string"
+        },
+        "valores": {
+          "additionalProperties": true,
+          "title": "Valores",
+          "type": "object"
+        },
+        "alerta_critica": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Alerta Critica"
+        }
+      },
+      "required": [
+        "fecha_hora",
+        "tipo_estudio"
+      ],
+      "title": "LaboratorioReciente",
+      "type": "object"
+    },
+    "Medicacion": {
+      "description": "Esquema de fármaco prescrito con control de antibióticos y suspensiones.",
+      "properties": {
+        "nombre": {
+          "title": "Nombre",
+          "type": "string"
+        },
+        "dosis": {
+          "title": "Dosis",
+          "type": "string"
+        },
+        "via": {
+          "title": "Via",
+          "type": "string"
+        },
+        "frecuencia": {
+          "title": "Frecuencia",
+          "type": "string"
+        },
+        "fecha_inicio": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Fecha Inicio"
+        },
+        "dias_tratamiento": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Contador de días de antibiótico (ej: '4/5', 'Día 10')",
+          "title": "Dias Tratamiento"
+        },
+        "indicacion_cie10": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Indicacion Cie10"
+        },
+        "suspendido": {
+          "default": false,
+          "title": "Suspendido",
+          "type": "boolean"
+        },
+        "diferido": {
+          "default": false,
+          "title": "Diferido",
+          "type": "boolean"
+        },
+        "prn": {
+          "default": false,
+          "title": "Prn",
+          "type": "boolean"
+        },
+        "nota": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Nota"
+        }
+      },
+      "required": [
+        "nombre",
+        "dosis",
+        "via",
+        "frecuencia"
+      ],
+      "title": "Medicacion",
+      "type": "object"
+    },
+    "MicrobiologiaCultivo": {
+      "description": "Registro de aislamientos microbiológicos, cultivos y antibiogramas.",
+      "properties": {
+        "fecha": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Fecha"
+        },
+        "muestra": {
+          "title": "Muestra",
+          "type": "string"
+        },
+        "microorganismo": {
+          "title": "Microorganismo",
+          "type": "string"
+        },
+        "patron_resistencia": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Patron Resistencia"
+        },
+        "sensible": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Sensible",
+          "type": "array"
+        },
+        "resistente": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Resistente",
+          "type": "array"
+        },
+        "recuento_colonias": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Recuento Colonias"
+        }
+      },
+      "required": [
+        "muestra",
+        "microorganismo"
+      ],
+      "title": "MicrobiologiaCultivo",
+      "type": "object"
+    },
+    "Paciente": {
+      "description": "Registro clínico de un paciente en la bitácora de guardia.",
+      "properties": {
+        "cama": {
+          "title": "Cama",
+          "type": "string"
+        },
+        "area": {
+          "enum": [
+            "HOSPITALIZACION",
+            "PERIFERICOS",
+            "EMERGENCIA_OBSERVACION"
+          ],
+          "title": "Area",
+          "type": "string"
+        },
+        "servicio_tratante": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Servicio Tratante"
+        },
+        "nombre_completo": {
+          "title": "Nombre Completo",
+          "type": "string"
+        },
+        "hc": {
+          "title": "Hc",
+          "type": "string"
+        },
+        "cedula": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Cedula"
+        },
+        "edad": {
+          "title": "Edad",
+          "type": "string"
+        },
+        "sexo": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Sexo"
+        },
+        "fecha_nacimiento": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Fecha Nacimiento"
+        },
+        "fecha_ingreso": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Fecha Ingreso"
+        },
+        "dias_hospitalizacion": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Dias Hospitalizacion"
+        },
+        "app": {
+          "description": "Antecedentes patológicos personales",
+          "items": {
+            "type": "string"
+          },
+          "title": "App",
+          "type": "array"
+        },
+        "aqx": {
+          "description": "Antecedentes quirúrgicos",
+          "items": {
+            "type": "string"
+          },
+          "title": "Aqx",
+          "type": "array"
+        },
+        "alergias": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Alergias",
+          "type": "array"
+        },
+        "diagnosticos_activos": {
+          "description": "En orden jerárquico",
+          "items": {
+            "type": "string"
+          },
+          "title": "Diagnosticos Activos",
+          "type": "array"
+        },
+        "diagnosticos_pasivos": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Diagnosticos Pasivos",
+          "type": "array"
+        },
+        "dieta": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Dieta"
+        },
+        "hidratacion": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Hidratacion"
+        },
+        "ckd_epi": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "TFG estimada en ml/min/1.73m2",
+          "title": "Ckd Epi"
+        },
+        "medicaciones": {
+          "items": {
+            "$ref": "#/$defs/Medicacion"
+          },
+          "title": "Medicaciones",
+          "type": "array"
+        },
+        "pendientes": {
+          "items": {
+            "$ref": "#/$defs/Pendiente"
+          },
+          "title": "Pendientes",
+          "type": "array"
+        },
+        "observaciones": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Observaciones",
+          "type": "array"
+        },
+        "laboratorios": {
+          "items": {
+            "$ref": "#/$defs/LaboratorioReciente"
+          },
+          "title": "Laboratorios",
+          "type": "array"
+        },
+        "cultivos": {
+          "items": {
+            "$ref": "#/$defs/MicrobiologiaCultivo"
+          },
+          "title": "Cultivos",
+          "type": "array"
+        },
+        "alertas_criticas": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Alertas Criticas",
+          "type": "array"
+        }
+      },
+      "required": [
+        "cama",
+        "area",
+        "nombre_completo",
+        "hc",
+        "edad"
+      ],
+      "title": "Paciente",
+      "type": "object"
+    },
+    "Pendiente": {
+      "description": "Representa una tarea o pendiente clínico accionable durante la guardia.",
+      "properties": {
+        "id": {
+          "description": "Identificador único del pendiente dentro del paciente",
+          "title": "Id",
+          "type": "string"
+        },
+        "tipo": {
+          "$ref": "#/$defs/PendienteTipo"
+        },
+        "descripcion": {
+          "title": "Descripcion",
+          "type": "string"
+        },
+        "prioridad": {
+          "$ref": "#/$defs/PendientePrioridad",
+          "default": "RUTINA"
+        },
+        "turno": {
+          "$ref": "#/$defs/TurnoObjetivo",
+          "default": "NOCTURNA_20_24"
+        },
+        "horario_programado": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Horario específico (ej. '05:00 AM', 'STAT', '18h00')",
+          "title": "Horario Programado"
+        },
+        "es_visita_nocturna": {
+          "default": true,
+          "description": "Indica si debe revisarse en el checklist nocturno de la guardia",
+          "title": "Es Visita Nocturna",
+          "type": "boolean"
+        },
+        "estado": {
+          "default": "PENDIENTE",
+          "enum": [
+            "PENDIENTE",
+            "EN_CURSO",
+            "COMPLETADO",
+            "CANCELADO"
+          ],
+          "title": "Estado",
+          "type": "string"
+        },
+        "responsable": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Responsable"
+        },
+        "resultado_obtenido": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Resultado Obtenido"
+        }
+      },
+      "required": [
+        "id",
+        "tipo",
+        "descripcion"
+      ],
+      "title": "Pendiente",
+      "type": "object"
+    },
+    "PendientePrioridad": {
+      "description": "Niveles de prioridad clínica del pendiente.",
+      "enum": [
+        "STAT",
+        "URGENTE",
+        "CONTROL",
+        "RUTINA"
+      ],
+      "title": "PendientePrioridad",
+      "type": "string"
+    },
+    "PendienteTipo": {
+      "description": "Categorías funcionales de pendientes en la guardia hospitalaria.",
+      "enum": [
+        "LABORATORIO",
+        "IMAGEN_PROCEDIMIENTO",
+        "INTERCONSULTA",
+        "FARMACO_DOSIS",
+        "CUIDADO_ENFERMERIA",
+        "ADMINISTRATIVO_QX"
+      ],
+      "title": "PendienteTipo",
+      "type": "string"
+    },
+    "TurnoObjetivo": {
+      "description": "Momento operativo previsto para ejecutar o auditar el pendiente.",
+      "enum": [
+        "NOCTURNA_20_24",
+        "MADRUGADA_04_06",
+        "MANANA",
+        "AL_ALTA",
+        "CUALQUIERA"
+      ],
+      "title": "TurnoObjetivo",
+      "type": "string"
+    }
+  },
+  "description": "Modelo raíz del documento de bitácora médica de guardia.",
+  "properties": {
+    "version_schema": {
+      "default": "1.0.0",
+      "title": "Version Schema",
+      "type": "string"
+    },
+    "fecha_guardia": {
+      "title": "Fecha Guardia",
+      "type": "string"
+    },
+    "periodo": {
+      "title": "Periodo",
+      "type": "string"
+    },
+    "medicos_guardia": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Medicos Guardia",
+      "type": "array"
+    },
+    "censo": {
+      "$ref": "#/$defs/GuardiaCenso"
+    },
+    "enlaces_utiles": {
+      "additionalProperties": {
+        "type": "string"
+      },
+      "title": "Enlaces Utiles",
+      "type": "object"
+    },
+    "pacientes": {
+      "items": {
+        "$ref": "#/$defs/Paciente"
+      },
+      "title": "Pacientes",
+      "type": "array"
+    }
+  },
+  "required": [
+    "fecha_guardia",
+    "periodo",
+    "medicos_guardia",
+    "censo"
+  ],
+  "title": "BitacoraGuardia",
+  "type": "object"
+}

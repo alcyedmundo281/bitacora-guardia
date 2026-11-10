@@ -1,0 +1,20 @@
+version: '3.8'
+
+services:
+  bitacora-whatsapp:
+    build: .
+    container_name: bitacora-guardia-bot
+    restart: unless-stopped
+    ports:
+      - "3000:3000"
+      - "8000:8000"
+    volumes:
+      - ./data:/app/data
+      - ./reports:/app/reports
+      - whatsapp_auth:/app/bridge/auth_session
+    environment:
+      - PORT=3000
+
+volumes:
+  whatsapp_auth:
+
