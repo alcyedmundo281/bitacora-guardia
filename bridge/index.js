@@ -16,7 +16,7 @@ let currentStatus = "INICIALIZANDO";
 let connectedNumber = null;
 
 // Servidor Web local para mostrar el QR en alta definición en el navegador
-const server = http.createServer((req, res) => {
+function requestHandler(req, res) {
   res.writeHead(200, { "Content-Type": "text/html; charset=utf-8" });
 
   let bodyContent = "";
@@ -76,17 +76,33 @@ const server = http.createServer((req, res) => {
   </html>`;
 
   res.end(html);
-});
+}
 
-server.listen(WEB_PORT, () => {
+const server = http.createServer(requestHandler);
+const WEB_PORT = parseInt(process.env.PORT, 10) || 3000;
+
+server.listen(WEB_PORT, "0.0.0.0", () => {
   console.log(`\n======================================================`);
-  console.log(`🌐 Interfaz Web de Vinculacion lista en: http://localhost:${WEB_PORT}`);
+  console.log(`🌐 Interfaz Web de Vinculacion lista en: http://0.0.0.0:${WEB_PORT}`);
   console.log(`======================================================\n`);
-  // Abrir navegador solo en entorno local Windows
   if (process.platform === "win32") {
     exec(`start http://localhost:${WEB_PORT}`, () => {});
   }
 });
+server.on("error", (e) => console.error("Error en servidor principal:", e.message));
+
+// Servidor espejo en 8080 si Railway configuró el proxy en 8080
+if (WEB_PORT !== 8080) {
+  try {
+    const backupServer = http.createServer(requestHandler);
+    backupServer.listen(8080, "0.0.0.0", () => {
+      console.log(`🌐 Servidor de respaldo activo en: http://0.0.0.0:8080`);
+    });
+    backupServer.on("error", (e) => console.log("Puerto 8080 no activo:", e.message));
+  } catch (err) {
+    console.log("No se pudo iniciar servidor 8080:", err.message);
+  }
+}
 
 async function startWhatsAppBridge() {
   console.log("Iniciando WhatsApp Socket con Baileys...");

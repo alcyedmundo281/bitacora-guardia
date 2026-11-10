@@ -40,8 +40,8 @@ WORKDIR /app
 # Script de arranque
 RUN chmod +x /app/scripts/cloud_entrypoint.sh
 
-# Puerto público por defecto
+# Puerto público por defecto (soporta 3000 y 8080)
 ENV PORT=3000
-EXPOSE 3000
+EXPOSE 3000 8080
 
 CMD ["/app/scripts/cloud_entrypoint.sh"]
