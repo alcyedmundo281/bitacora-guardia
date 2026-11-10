@@ -140,21 +140,44 @@ async function startWhatsAppBridge() {
     }
   });
 
+  const mySentMessageIds = new Set();
+
   sock.ev.on("messages.upsert", async ({ messages, type }) => {
     if (type !== "notify") return;
 
     for (const msg of messages) {
-      if (msg.key.fromMe) continue;
+      if (mySentMessageIds.has(msg.key.id)) continue;
 
       const chatId = msg.key.remoteJid;
       if (!chatId) continue;
 
+      // Desempaquetar mensajes ordinarios, temporales (ephemeral) o multimedia
+      const m =
+        msg.message?.ephemeralMessage?.message ||
+        msg.message?.viewOnceMessage?.message ||
+        msg.message?.viewOnceMessageV2?.message ||
+        msg.message?.documentWithCaptionMessage?.message ||
+        msg.message;
+
+      if (!m) continue;
+
       const text =
-        msg.message?.conversation ||
-        msg.message?.extendedTextMessage?.text ||
+        m.conversation ||
+        m.extendedTextMessage?.text ||
+        m.imageMessage?.caption ||
+        m.videoMessage?.caption ||
         "";
 
       if (!text.trim()) continue;
+
+      // Si el mensaje viene del propio número vinculado (fromMe),
+      // solo procesarlo si es un comando y evitar responder a las propias respuestas
+      if (msg.key.fromMe) {
+        if (/^[🚨✔📌👋🏥⚠]/.test(text.trim())) continue;
+      }
+
+      console.log(`\n[MSG RECIBIDO] Chat: ${chatId} | De: ${msg.key.participant || chatId} | fromMe: ${msg.key.fromMe}`);
+      console.log(`[TEXTO]: "${text}"`);
 
       try {
         const response = await fetch(`${BACKEND_URL}/whatsapp/webhook`, {
@@ -164,15 +187,23 @@ async function startWhatsAppBridge() {
             message: text,
             sender: msg.key.participant || chatId,
             group_id: chatId,
+            is_from_me: msg.key.fromMe,
           }),
         });
 
         if (response.ok) {
           const data = await response.json();
           if (data && data.reply) {
-            await sock.sendMessage(chatId, { text: data.reply }, { quoted: msg });
-            console.log(`[Respuesta enviada a ${chatId}]: ${data.reply}`);
+            const sent = await sock.sendMessage(chatId, { text: data.reply }, { quoted: msg });
+            if (sent?.key?.id) {
+              mySentMessageIds.add(sent.key.id);
+            }
+            console.log(`[RESPUESTA ENVIADA]: "${data.reply}"`);
+          } else {
+            console.log(`[IGNORADO POR BACKEND]: Motivo: ${data?.reason || "Sin coincidencia clínica"}`);
           }
+        } else {
+          console.error(`[ERROR HTTP BACKEND]: ${response.status} ${response.statusText}`);
         }
       } catch (err) {
         console.error("Error contactando al backend de Bitacora:", err.message);
