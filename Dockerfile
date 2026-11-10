@@ -1,11 +1,16 @@
 FROM node:22-bookworm-slim
 
-# Instalar Python y dependencias de sistema
+# Instalar Python, Git y dependencias de sistema (Git es requerido por Baileys para libsignal)
 RUN apt-get update && apt-get install -y --no-install-recommends \
     python3 \
     python3-venv \
+    git \
     ca-certificates \
     && rm -rf /var/lib/apt/lists/*
+
+# Configurar git para clonar dependencias siempre por HTTPS
+RUN git config --global url."https://github.com/".insteadOf "git@github.com:" && \
+    git config --global url."https://github.com/".insteadOf "ssh://git@github.com/"
 
 # Instalar uv directamente desde la imagen oficial de Astral en GitHub Container Registry
 COPY --from=ghcr.io/astral-sh/uv:latest /uv /uvx /bin/
@@ -26,7 +31,7 @@ RUN uv venv /app/.venv && uv pip install --no-cache -e .
 
 # 2. Copiar y preparar el puente de WhatsApp en Node.js
 WORKDIR /app/bridge
-COPY bridge/package.json ./
+COPY bridge/package*.json ./
 RUN npm install --omit=dev
 COPY bridge/index.js ./
 
