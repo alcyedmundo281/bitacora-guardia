@@ -104,8 +104,14 @@ function requestHandler(req, res) {
     return;
   }
 
-  // Proxy transparente para descargas de PDF y HTML generados por Quarto
-  if (parsedUrl.pathname.startsWith("/descargar/") || parsedUrl.pathname.startsWith("/reports/")) {
+  // Proxy transparente para descargas de PDF, HTML, debug y endpoints de backend
+  if (
+    parsedUrl.pathname.startsWith("/descargar/") ||
+    parsedUrl.pathname.startsWith("/reports/") ||
+    parsedUrl.pathname.startsWith("/debug/") ||
+    parsedUrl.pathname === "/api/set-groq-key" ||
+    parsedUrl.pathname === "/whatsapp/webhook"
+  ) {
     const proxyReq = http.request(
       `${BACKEND_URL}${req.url}`,
       { method: req.method, headers: req.headers },
@@ -115,9 +121,9 @@ function requestHandler(req, res) {
       }
     );
     proxyReq.on("error", (e) => {
-      console.error("Error al redirigir descarga a FastAPI:", e.message);
+      console.error("Error al redirigir peticion a FastAPI:", e.message);
       res.writeHead(502, { "Content-Type": "text/plain; charset=utf-8" });
-      res.end("Error contactando al servidor de reportes.");
+      res.end("Error contactando al servidor backend.");
     });
     return req.pipe(proxyReq);
   }

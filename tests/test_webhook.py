@@ -123,15 +123,36 @@ def test_robotina_crear_recordatorio() -> None:
     assert "6A" in data["reply"]
 
 
-def test_robotina_consultar_recordatorios() -> None:
+def test_debug_groq_endpoint() -> None:
+    res = client.get("/debug/groq")
+    assert res.status_code == 200
+    assert "status" in res.json()
+
+
+def test_robotina_screenshot_recordatorio() -> None:
     res = client.post(
         "/whatsapp/webhook",
-        json={"message": "Robotina recordatorios"},
+        json={"message": "Robotina recuerdanos reportar sodio para 8a a las 7pm"},
     )
     assert res.status_code == 200
     data = res.json()
     assert data["status"] == "success"
-    assert data["tipo_accion"] == "LISTA_RECORDATORIOS"
-    assert "07:00" in data["reply"]
+    assert data["tipo_accion"] == "CREAR_RECORDATORIO"
+    assert "19:00" in data["reply"]
+    assert "8A" in data["reply"]
+
+
+def test_robotina_screenshot_examenes_rodriguez() -> None:
+    res = client.post(
+        "/whatsapp/webhook",
+        json={"message": "Robotina Que examenes últimos de Rodríguez de periférico"},
+    )
+    assert res.status_code == 200
+    data = res.json()
+    assert data["status"] == "success"
+    assert data["tipo_accion"] == "CONSULTA_CAMA"
+    assert "RODRIGUEZ" in data["reply"]
+    assert "6A" in data["reply"]
+
 
 
