@@ -3,6 +3,7 @@
 import json
 import logging
 import os
+import re
 import urllib.request
 import urllib.error
 from typing import Any
@@ -10,6 +11,7 @@ from typing import Any
 logger = logging.getLogger(__name__)
 
 GROQ_URL = "https://api.groq.com/openai/v1/chat/completions"
+# Modelos soportados en Groq: llama-3.3-70b-versatile, llama-3.1-8b-instant, gemma2-9b-it
 GROQ_MODEL = os.getenv("GROQ_MODEL", "llama-3.3-70b-versatile")
 
 
@@ -18,22 +20,15 @@ def call_groq_clinical_parser(
     camas_activas: list[dict[str, Any]],
     api_key: str | None = None,
 ) -> dict[str, Any] | None:
-    """Interpreta cualquier mensaje informal/desestructurado de WhatsApp de un médico usando Groq.
-
-    Devuelve un diccionario estructurado con:
-    - intencion: REGISTRAR_RESULTADO | CREAR_PENDIENTE | CONSULTAR_CAMA | CONSULTAR_RESUMEN | CONSULTAR_CAMAS | AYUDA | OTRO
-    - cama: str
-    - estudio: str
-    - resultado: str
-    - prioridad: STAT | URGENTE | CONTROL | RUTINA
-    - horario: str | None
-    - comentario_clinico: str | None
-    """
+    """Interpreta cualquier mensaje informal/desestructurado de WhatsApp de un médico usando Groq."""
     key = api_key or os.getenv("GROQ_API_KEY")
     if not key:
+        print("[GROQ AGENT]: ⚠ GROQ_API_KEY no está configurada en las Variables de Railway. Usando motor local.", flush=True)
         return None
 
-    # Resumen de camas para contexto clínico
+    key = key.strip("'\" \t\r\n")
+
+    # Resumen de camas para contexto clínico del prompt
     camas_ctx = "\n".join(
         [
             f"- Cama {c.get('cama')}: {c.get('nombre')} | Dx: {c.get('dx')} | Pendientes: {c.get('pendientes')}"
@@ -62,14 +57,15 @@ INSTRUCCIONES CLÍNICAS:
    - 'OTRO': Si es un mensaje no relacionado.
 
 2. 'cama': El código exacto de la cama (ej: '6A', '8', '6D', 'INFECTO 1B'). Si mencionan el apellido del paciente, asócialo a su cama respectiva. Si no aplica, null.
-3. 'estudio': El nombre médico del examen o acción (ej: 'Gasometría arterial', 'Lactato', 'EKG', 'Hemocultivos', 'TAC de cráneo').
+3. 'estudio': El nombre médico del examen o acción (ej: 'Gasometría arterial', 'Lactato', 'EKG', 'Hemocultivos', 'TAC de cráneo', 'Control de Sodio').
 4. 'resultado': El valor numérico o reporte completo (ej: 'pf 6.9', 'Lactato 1.4 mmol/L', 'Ritmo sinusal normal').
-5. 'prioridad': 'STAT' (si es crítico/inmediato), 'URGENTE', 'CONTROL' o 'RUTINA'.
-6. 'comentario_clinico': Breve advertencia o nota médica si el resultado es crítico (ej: 'Acidosis metabólica severa / riesgo vital', 'Lactato elevado'). Si es normal, null.
+5. 'horario': Horario si lo mencionan (ej: '07:00', '21:30', '05:00') o null.
+6. 'prioridad': 'STAT' (si es crítico/inmediato), 'URGENTE', 'CONTROL' o 'RUTINA'.
+7. 'comentario_clinico': Breve advertencia o nota médica si el resultado es crítico (ej: 'Acidosis metabólica severa / riesgo vital', 'Lactato elevado'). Si es normal, null.
 
 Responde ÚNICAMENTE un objeto JSON válido con este formato:
 {{
-  "intencion": "REGISTRAR_RESULTADO" | "CREAR_PENDIENTE" | "CONSULTAR_CAMA" | "CONSULTAR_RESUMEN" | "CONSULTAR_CAMAS" | "AYUDA" | "OTRO",
+  "intencion": "REGISTRAR_RESULTADO" | "CREAR_PENDIENTE" | "CREAR_RECORDATORIO" | "CONSULTAR_RECORDATORIOS" | "CONSULTAR_CAMA" | "CONSULTAR_RESUMEN" | "CONSULTAR_CAMAS" | "GENERAR_PDF" | "AYUDA" | "OTRO",
   "cama": "6A",
   "estudio": "Gasometría arterial",
   "resultado": "pf 6.9",
@@ -77,6 +73,8 @@ Responde ÚNICAMENTE un objeto JSON válido con este formato:
   "horario": null,
   "comentario_clinico": null
 }}"""
+
+    print(f"[GROQ INICIANDO]: Consultando modelo {GROQ_MODEL} para: '{mensaje}'...", flush=True)
 
     payload = {
         "model": GROQ_MODEL,
@@ -99,11 +97,19 @@ Responde ÚNICAMENTE un objeto JSON válido con este formato:
                 "User-Agent": "Robotina-Clinical-Agent/1.0",
             },
         )
-        with urllib.request.urlopen(req, timeout=6) as resp:
+        with urllib.request.urlopen(req, timeout=8) as resp:
             data = json.loads(resp.read().decode("utf-8"))
             content = data["choices"][0]["message"]["content"]
-            parsed = json.loads(content)
-            return parsed
+            m_json = re.search(r"\{[\s\S]*\}", content)
+            if m_json:
+                parsed = json.loads(m_json.group(0))
+                print(f"[GROQ ÉXITO]: Intención detectada: {parsed.get('intencion')} | Cama: {parsed.get('cama')}", flush=True)
+                return parsed
+            return None
+    except urllib.error.HTTPError as e:
+        err_msg = e.read().decode("utf-8", errors="ignore")
+        print(f"[GROQ ERROR HTTP {e.code}]: {err_msg}", flush=True)
+        return None
     except Exception as e:
-        logger.warning(f"Llamada a Groq API no disponible en este entorno: {e}")
+        print(f"[GROQ ERROR]: {type(e).__name__}: {e}", flush=True)
         return None
