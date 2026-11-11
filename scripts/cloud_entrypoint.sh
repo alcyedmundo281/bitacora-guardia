@@ -16,8 +16,8 @@ fi
 # Esperar 2 segundos a que el backend esté listo
 sleep 2
 
-# 2. Iniciar el WhatsApp Bridge en el puerto público ($PORT o 3000)
+# 2. Iniciar el WhatsApp Bridge en el puerto público ($PORT o 8080)
 cd /app/bridge
-echo "Iniciando WhatsApp Bridge en puerto ${PORT:-3000}..."
+echo "Iniciando WhatsApp Bridge en puerto ${PORT:-8080}..."
 exec node index.js
 

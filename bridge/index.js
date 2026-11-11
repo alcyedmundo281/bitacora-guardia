@@ -9,7 +9,7 @@ import QRCode from "qrcode";
 import qrcodeTerminal from "qrcode-terminal";
 
 const BACKEND_URL = process.env.BACKEND_URL || "http://127.0.0.1:8000";
-const WEB_PORT = parseInt(process.env.PORT, 10) || 3000;
+const WEB_PORT = parseInt(process.env.PORT, 10) || 8080;
 
 let currentQRDataUrl = null;
 let currentStatus = "INICIALIZANDO";
@@ -127,7 +127,7 @@ async function startWhatsAppBridge() {
       } catch (e) {
         console.error("Error generando imagen QR:", e);
       }
-      console.log("\n[NUEVO QR GENERADO]: Se actualizo en http://localhost:3000");
+      console.log(`\n[NUEVO QR GENERADO]: Se actualizo en http://0.0.0.0:${WEB_PORT}`);
       qrcodeTerminal.generate(qr, { small: true });
     }
 
