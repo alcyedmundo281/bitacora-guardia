@@ -1,8 +1,8 @@
 ---
 title: "Bitácora Médica de Guardia"
-subtitle: "Periodo: 09/11/2026 AL 10/11/2026 | Hospitalización, Periféricos y Emergencia"
-date: "2026-11-09"
-author: "MD DAVALOS (PG Medicina Interna), MD MORAN (PG Reumatología IRM)"
+subtitle: "Periodo: 10/11/2026 AL 11/11/2026 | Hospitalización, Periféricos y Emergencia"
+date: "2026-11-10"
+author: "MD MORAN (PG Reumatología IRM), MD GOMEZ (PG Medicina Interna)"
 format:
   html:
     theme: flatly
@@ -31,7 +31,7 @@ format:
 ## Resumen Ejecutivo de la Guardia
 
 ::: {.callout-note appearance='simple'}
-**Censo Operativo:** Total: **42** pacientes | Hospitalizados: **18** | Periféricos: **12** | Emergencia/Obs: **12** | Nuevos ingresos de guardia: **2**
+**Censo Operativo:** Total: **42** pacientes | Hospitalizados: **18** | Periféricos: **12** | Emergencia/Obs: **12** | Nuevos ingresos de guardia: **1**
 :::
 
 **Accesos Rápidos:** [Cultivos intranet](http://172.16.98.198/account/signin) | [Programacion quirurgica](https://docs.google.com/spreadsheets/d/16AmIt2Cj8iujxKCsbr-4S6KOg75ppkPGJGy3Zj7qwIQ/edit)
@@ -43,10 +43,9 @@ format:
 
 | Prioridad | Cama | Paciente | Tarea / Pendiente | Horario / Ventana | Estado |
 |---|---|---|---|---|---|
-| <span class="badge-stat">STAT</span> | **6A** | RODRIGUEZ MORENO SEGUNDO EZEQUIEL (HC 2013397) | Gasometría arterial STAT + Electrolitos, Urea, Creatinina | `STAT (21:30)` | ☐ Pendiente |
-| <span class="badge-urgente">URGENTE</span> | **6A** | RODRIGUEZ MORENO SEGUNDO EZEQUIEL (HC 2013397) | Comunicar valoración por Neumología y Terapia Respiratoria | `NOCTURNA_20_24` | ☐ Pendiente |
+| <span class="badge-urgente">URGENTE</span> | **6A** | RODRIGUEZ MORENO SEGUNDO EZEQUIEL (HC 2013397) | Evaluar fin de ciclo de antibiótico (Día 5/5) | `NOCTURNA_20_24` | ☐ Pendiente |
 | <span class="badge-urgente">URGENTE</span> | **6C** | ALMEIDA JARAMILLO JUAN CARLOS (HC 2086486) | Insistir reporte TAC cráneo, cuello, tórax, abdomen y pelvis | `NOCTURNA_20_24` | ☐ Pendiente |
-| <span class="badge-control">CONTROL</span> | **6D** | INTRIAGO CEDEÑO JORGE SEBASTIAN (HC 1249372) | Verificar reporte de química central y electrolitos | `22:00` | ☐ Pendiente |
+| <span class="badge-stat">STAT</span> | **6D** | LOPEZ PAZMINO RICARDO DARIO (HC 2199041) | Segunda curva de Troponina ultrasensible a las 22:00 + EKG | `22:00` | ☐ Pendiente |
 | <span class="badge-control">CONTROL</span> | **7** | VINUEZA ROJAS ARTURO MIGUEL (HC 239902) | Control lunes de BH, Urea, Creatinina y Electrolitos | `05:00 AM` | ☐ Pendiente |
 | <span class="badge-urgente">URGENTE</span> | **7** | VINUEZA ROJAS ARTURO MIGUEL (HC 239902) | Aspiración de secreciones traqueales y curación por clínica de heridas | `NOCTURNA_20_24` | ☐ Pendiente |
 | <span class="badge-urgente">URGENTE</span> | **8** | OÑA TELLO JOSELYN CAROLINA (HC 1719421) | Verificar valoración y seguimiento por Comité de Bioética | `NOCTURNA_20_24` | ☐ Pendiente |
@@ -138,7 +137,7 @@ format:
 
 **Medicación Activa:**
 
-- Ampicilina / Sulbactam 3 g IV c/6 horas <span class="badge-atb">4/5</span>
+- Ampicilina / Sulbactam 3 g IV c/6 horas <span class="badge-atb">5/5</span>
 - Paracetamol 1 g VO c/8 horas
 - Omeprazol 40 mg IV cada día
 - Enoxaparina 60 mg SC cada día
@@ -148,9 +147,9 @@ format:
 
 **Pendientes:**
 
-- ☑ <span class="badge-stat">STAT</span> **[IMAGEN_PROCEDIMIENTO]** Electrocardiograma (EKG) STAT (`STAT (21:00)`)
-- ☐ <span class="badge-stat">STAT</span> **[LABORATORIO]** Gasometría arterial STAT + Electrolitos, Urea, Creatinina (`STAT (21:30)`)
-- ☐ <span class="badge-urgente">URGENTE</span> **[INTERCONSULTA]** Comunicar valoración por Neumología y Terapia Respiratoria
+- ☑ <span class="badge-stat">STAT</span> **[IMAGEN_PROCEDIMIENTO]** Electrocardiograma (EKG) STAT
+- ☑ <span class="badge-stat">STAT</span> **[LABORATORIO]** Gasometría arterial STAT + Electrolitos
+- ☐ <span class="badge-urgente">URGENTE</span> **[FARMACO_DOSIS]** Evaluar fin de ciclo de antibiótico (Día 5/5)
 
 **Últimos Laboratorios:**
 
@@ -213,36 +212,35 @@ format:
 ```{=html}
 <div class="patient-card">
   <div class="patient-header">
-    <h4 style="margin:0; display:inline-block;"><strong>Cama 6D</strong>: INTRIAGO CEDEÑO JORGE SEBASTIAN</h4>
-    <span class="badge-control">CKD-EPI: 34.9 ml/min/1.73m2</span>
+    <h4 style="margin:0; display:inline-block;"><strong>Cama 6D</strong>: LOPEZ PAZMINO RICARDO DARIO</h4>
+    <span class="badge-alergia">⚠ ALERGIA: PENICILINA</span>
+    <span class="badge-control">CKD-EPI: 95 ml/min/1.73m2</span>
   </div>
 ```
 
-- **HC:** `1249372` | **Cédula:** 0913692596 | **Edad:** 57 años | **Sexo:** M
+- **HC:** `2199041` | **Cédula:** 1711223344 | **Edad:** 48 años | **Sexo:** M
 - **Antecedentes (APP):** Hipertensión arterial
+- **Quirúrgicos (AQX):** Apendicectomía
 
 **Diagnósticos Activos:**
 
-- Infección del tracto urinario complicada (CIE-10: N39.0)
-- Lesión renal aguda KDIGO C1
-- Hiponatremia severa en resolución
+- Crisis hipertensiva tipo urgencia
 
 **Soporte y Vía:**
-- *Dieta:* Líquida amplia asistida
-- *Hidratación / Infusiones:* Cloruro de sodio al 0.9% 1000 ml IV a 40 ml/h
+- *Dieta:* Hiposódica estricta
+- *Hidratación / Infusiones:* Vía salinizada
 
 **Medicación Activa:**
 
-- Meropenem 1 g IV c/8 horas <span class="badge-atb">Día 4</span>
-- Clortalidona 50 mg VO QD *[DIFERIDO]*
+- Amlodipino 10 mg VO cada día
 
 **Pendientes:**
 
-- ☐ <span class="badge-control">CONTROL</span> **[LABORATORIO]** Verificar reporte de química central y electrolitos (`22:00`)
+- ☐ <span class="badge-stat">STAT</span> **[LABORATORIO]** Segunda curva de Troponina ultrasensible a las 22:00 + EKG (`22:00`)
 
-**Últimos Laboratorios:**
+**Observaciones / Novedades:**
 
-- *2026-11-07 (Electrolitos y Renal):* sodio: 131.9, potasio: 4.08, creatinina: 1.01
+> Nuevo ingreso de guardia.
 ```{=html}
 </div>
 ```

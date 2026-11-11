@@ -5,10 +5,12 @@ from pathlib import Path
 from typing import Any
 
 from fastapi import FastAPI, HTTPException, Request
+from fastapi.responses import FileResponse
 from pydantic import BaseModel
 
 from bitacora.groq_agent import call_groq_clinical_parser
 from bitacora.models import Pendiente, PendientePrioridad, PendienteTipo, TurnoObjetivo
+from bitacora.pdf_generator import generar_bitacora_completa
 from bitacora.schema import load_bitacora, save_bitacora
 from bitacora.whatsapp_bot import (
     format_whatsapp_night_summary,
@@ -52,6 +54,38 @@ def get_night_summary() -> dict[str, str]:
     bitacora = load_bitacora(bitacora_path)
     resumen = format_whatsapp_night_summary(bitacora)
     return {"resumen_texto": resumen}
+
+
+@app.get("/descargar/bitacora.pdf")
+def download_pdf() -> FileResponse:
+    """Descarga directa del PDF de la bitácora médica compilado por Quarto."""
+    pdf_path = Path("reports/bitacora_guardia.pdf")
+    if not pdf_path.exists():
+        bitacora_path = get_active_bitacora_path()
+        generar_bitacora_completa(bitacora_path)
+    if not pdf_path.exists():
+        raise HTTPException(status_code=404, detail="El PDF aún no ha sido generado.")
+    return FileResponse(
+        str(pdf_path),
+        media_type="application/pdf",
+        filename="bitacora_guardia.pdf",
+    )
+
+
+@app.get("/descargar/bitacora.html")
+def download_html() -> FileResponse:
+    """Visualización directa del dashboard interactivo HTML de Quarto."""
+    html_path = Path("reports/bitacora_guardia.html")
+    if not html_path.exists():
+        bitacora_path = get_active_bitacora_path()
+        generar_bitacora_completa(bitacora_path)
+    if not html_path.exists():
+        raise HTTPException(status_code=404, detail="El HTML aún no ha sido generado.")
+    return FileResponse(
+        str(html_path),
+        media_type="text/html",
+        filename="bitacora_guardia.html",
+    )
 
 
 @app.post("/whatsapp/webhook")
@@ -111,6 +145,23 @@ async def receive_whatsapp_message(request: Request) -> dict[str, Any]:
                 "status": "success",
                 "tipo_accion": "LISTA_CAMAS",
                 "reply": f"🏥 *Camas activas censadas ({len(bitacora.pacientes)}):*\n{camas_str}\n\n_Para ver una cama escribe:_ `Robotina como esta 6A`",
+            }
+
+        if intencion == "GENERAR_PDF":
+            generar_bitacora_completa(bitacora_path)
+            return {
+                "status": "success",
+                "tipo_accion": "GENERAR_PDF",
+                "reply": (
+                    "📄 *Bitácora Médica Oficial Generada con Quarto (PDF & Web)*\n\n"
+                    f"🏥 *Periodo:* {bitacora.periodo}\n"
+                    f"👥 *Total Pacientes:* {len(bitacora.pacientes)} censados\n"
+                    f"🌙 *Checklist nocturno:* Actualizado con las novedades reportadas por WhatsApp.\n\n"
+                    "📥 *Descargar PDF para Entrega de Guardia:*\n"
+                    "👉 https://bitacora-guardia-production.up.railway.app/descargar/bitacora.pdf\n\n"
+                    "🌐 *Ver reporte interactivo en línea:*\n"
+                    "👉 https://bitacora-guardia-production.up.railway.app/descargar/bitacora.html"
+                ),
             }
 
         if intencion == "AYUDA":
@@ -212,6 +263,26 @@ async def receive_whatsapp_message(request: Request) -> dict[str, Any]:
             "status": "success",
             "tipo_accion": "CONSULTA_RESUMEN",
             "reply": format_whatsapp_night_summary(bitacora),
+        }
+
+    # Comandos para generar y descargar PDF de la bitácora con Quarto
+    if cmd in ("!pdf", "pdf", "!reporte", "reporte", "descargar pdf", "generar pdf", "entrega de guardia", "bitacora pdf") or any(
+        w in cmd for w in ["genera el pdf", "generar el pdf", "hacer el pdf", "descargar el pdf", "entrega de guardia", "bitacora en pdf", "quarto", "reporte pdf", "descargar bitacora", "genera la bitacora", "generar la bitacora"]
+    ):
+        generar_bitacora_completa(bitacora_path)
+        return {
+            "status": "success",
+            "tipo_accion": "GENERAR_PDF",
+            "reply": (
+                "📄 *Bitácora Médica Oficial Generada con Quarto (PDF & Web)*\n\n"
+                f"🏥 *Periodo:* {bitacora.periodo}\n"
+                f"👥 *Total Pacientes:* {len(bitacora.pacientes)} censados\n"
+                f"🌙 *Checklist nocturno:* Actualizado con las novedades reportadas por WhatsApp.\n\n"
+                "📥 *Descargar PDF para Entrega de Guardia:*\n"
+                "👉 https://bitacora-guardia-production.up.railway.app/descargar/bitacora.pdf\n\n"
+                "🌐 *Ver reporte interactivo en línea:*\n"
+                "👉 https://bitacora-guardia-production.up.railway.app/descargar/bitacora.html"
+            ),
         }
 
     # Comandos de ayuda y saludo a Robotina

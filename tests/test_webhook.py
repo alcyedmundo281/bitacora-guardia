@@ -89,3 +89,22 @@ def test_robotina_ayuda() -> None:
     data = res.json()
     assert data["status"] == "success"
     assert "Robotina" in data["reply"]
+
+
+def test_robotina_generar_pdf() -> None:
+    res = client.post(
+        "/whatsapp/webhook",
+        json={"message": "Robotina genera el pdf"},
+    )
+    assert res.status_code == 200
+    data = res.json()
+    assert data["status"] == "success"
+    assert data["tipo_accion"] == "GENERAR_PDF"
+    assert "descargar/bitacora.pdf" in data["reply"]
+
+
+def test_endpoint_descargar_pdf() -> None:
+    res = client.get("/descargar/bitacora.pdf")
+    assert res.status_code == 200
+    assert res.headers["content-type"] == "application/pdf"
+

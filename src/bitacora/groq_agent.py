@@ -55,6 +55,7 @@ INSTRUCCIONES CLÍNICAS:
    - 'CONSULTAR_CAMA': Si pregunta por un paciente o cama (ej: 'cómo está la 6a', 'datos de don Rodriguez', 'qué tiene pendiente la 8').
    - 'CONSULTAR_RESUMEN': Si pide los pendientes de la noche o el checklist (ej: 'Robotina pendientes', 'resumen de guardia', 'qué hay para hoy').
    - 'CONSULTAR_CAMAS': Si pide la lista de camas censadas (ej: 'Robotina camas', 'qué pacientes tenemos').
+   - 'GENERAR_PDF': Si pide generar o descargar la bitácora, el reporte o el PDF de la guardia (ej: 'Robotina genera la bitacora', 'Robotina genera el pdf', 'Robotina entrega de guardia', 'pasa el reporte').
    - 'AYUDA': Si saluda o pregunta qué haces (ej: 'Robotina ayuda', 'hola', 'qué comandos tienes').
    - 'OTRO': Si es un mensaje no relacionado.
 

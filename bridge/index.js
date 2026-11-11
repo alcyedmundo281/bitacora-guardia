@@ -73,6 +73,24 @@ function requestHandler(req, res) {
     return;
   }
 
+  // Proxy transparente para descargas de PDF y HTML generados por Quarto
+  if (parsedUrl.pathname.startsWith("/descargar/") || parsedUrl.pathname.startsWith("/reports/")) {
+    const proxyReq = http.request(
+      `${BACKEND_URL}${req.url}`,
+      { method: req.method, headers: req.headers },
+      (proxyRes) => {
+        res.writeHead(proxyRes.statusCode, proxyRes.headers);
+        proxyRes.pipe(res);
+      }
+    );
+    proxyReq.on("error", (e) => {
+      console.error("Error al redirigir descarga a FastAPI:", e.message);
+      res.writeHead(502, { "Content-Type": "text/plain; charset=utf-8" });
+      res.end("Error contactando al servidor de reportes.");
+    });
+    return req.pipe(proxyReq);
+  }
+
   // Página Web Principal (HTML interactivo y reactivo sin recarga forzada)
   res.writeHead(200, { "Content-Type": "text/html; charset=utf-8" });
 
