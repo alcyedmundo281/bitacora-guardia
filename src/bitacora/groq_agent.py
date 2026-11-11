@@ -52,6 +52,8 @@ INSTRUCCIONES CLÍNICAS:
 1. 'intencion': Debe ser una de:
    - 'REGISTRAR_RESULTADO': Si el médico reporta un dato de laboratorio, gasometría, signos, imagen o resultado (ej: 'Robotina la gasometria de 6a es pf 6.9', 'el lactato de la 6a dio 4', 'ekg de 6d sin arritmias', 'cultivo de orina de la 8 negativo').
    - 'CREAR_PENDIENTE': Si el médico pide hacer una tarea o control (ej: 'anota gaso a las 21:30 para la 6a', 'ponle hemocultivos urgente al 8').
+   - 'CREAR_RECORDATORIO': Si el médico pide recordar o programar una alarma/aviso a una hora determinada (ej: 'Robotina recuérdanos a las 7 el sodio del sr rodriguez', 'recuerda a las 21:30 la gaso de 6a', 'alarma a las 5 am para glicemia').
+   - 'CONSULTAR_RECORDATORIOS': Si el médico pregunta por los recordatorios o alarmas activas (ej: 'Robotina recordatorios', 'qué alarmas hay programadas').
    - 'CONSULTAR_CAMA': Si pregunta por un paciente o cama (ej: 'cómo está la 6a', 'datos de don Rodriguez', 'qué tiene pendiente la 8').
    - 'CONSULTAR_RESUMEN': Si pide los pendientes de la noche o el checklist (ej: 'Robotina pendientes', 'resumen de guardia', 'qué hay para hoy').
    - 'CONSULTAR_CAMAS': Si pide la lista de camas censadas (ej: 'Robotina camas', 'qué pacientes tenemos').

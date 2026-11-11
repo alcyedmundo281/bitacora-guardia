@@ -108,3 +108,30 @@ def test_endpoint_descargar_pdf() -> None:
     assert res.status_code == 200
     assert res.headers["content-type"] == "application/pdf"
 
+
+def test_robotina_crear_recordatorio() -> None:
+    res = client.post(
+        "/whatsapp/webhook",
+        json={"message": "robotina recuerdanos a las 7 el sodio del sr rodriguez"},
+    )
+    assert res.status_code == 200
+    data = res.json()
+    assert data["status"] == "success"
+    assert data["tipo_accion"] == "CREAR_RECORDATORIO"
+    assert "07:00" in data["reply"]
+    assert "RODRIGUEZ" in data["reply"]
+    assert "6A" in data["reply"]
+
+
+def test_robotina_consultar_recordatorios() -> None:
+    res = client.post(
+        "/whatsapp/webhook",
+        json={"message": "Robotina recordatorios"},
+    )
+    assert res.status_code == 200
+    data = res.json()
+    assert data["status"] == "success"
+    assert data["tipo_accion"] == "LISTA_RECORDATORIOS"
+    assert "07:00" in data["reply"]
+
+

@@ -16,6 +16,7 @@ let currentStatus = "INICIALIZANDO";
 let connectedNumber = null;
 let currentPairingCode = null;
 let globalSock = null;
+let lastActiveChatId = null;
 
 // Servidor Web local para mostrar el QR en alta definición en el navegador
 function requestHandler(req, res) {
@@ -68,6 +69,36 @@ function requestHandler(req, res) {
         console.error("Error al generar pairing code:", err);
         res.writeHead(500, { "Content-Type": "application/json; charset=utf-8" });
         return res.end(JSON.stringify({ error: err.message || "Error al solicitar código" }));
+      }
+    });
+    return;
+  }
+
+  // Endpoint API: Envío proactivo de mensajes a WhatsApp (Recordatorios y Alertas de Robotina)
+  if (parsedUrl.pathname === "/api/send-message" && req.method === "POST") {
+    let body = "";
+    req.on("data", (chunk) => (body += chunk));
+    req.on("end", async () => {
+      try {
+        const payload = JSON.parse(body || "{}");
+        const chatId = payload.chatId || lastActiveChatId;
+        const text = payload.text;
+        if (!chatId || !text) {
+          res.writeHead(400, { "Content-Type": "application/json; charset=utf-8" });
+          return res.end(JSON.stringify({ error: "chatId y text son requeridos" }));
+        }
+        if (!globalSock) {
+          res.writeHead(503, { "Content-Type": "application/json; charset=utf-8" });
+          return res.end(JSON.stringify({ error: "Socket de WhatsApp no conectado aún" }));
+        }
+        await globalSock.sendMessage(chatId, { text });
+        console.log(`[RECORDATORIO EMITIDO A ${chatId}]: "${text}"`);
+        res.writeHead(200, { "Content-Type": "application/json; charset=utf-8" });
+        return res.end(JSON.stringify({ status: "ok" }));
+      } catch (err) {
+        console.error("Error enviando mensaje proactivo:", err.message);
+        res.writeHead(500, { "Content-Type": "application/json; charset=utf-8" });
+        return res.end(JSON.stringify({ error: err.message }));
       }
     });
     return;
@@ -513,6 +544,7 @@ async function startWhatsAppBridge() {
 
       const chatId = msg.key.remoteJid;
       if (!chatId || chatId === "status@broadcast") continue;
+      lastActiveChatId = chatId;
 
       // Desempaquetar mensajes ordinarios, temporales (ephemeral) o multimedia
       const m =

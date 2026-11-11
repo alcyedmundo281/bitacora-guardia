@@ -1,5 +1,5 @@
-"""Servidor Webhook HTTP para conectar el Grupo de WhatsApp con el Agente de Bitácora y Robotina."""
-
+import asyncio
+import logging
 import re
 from pathlib import Path
 from typing import Any
@@ -11,6 +11,13 @@ from pydantic import BaseModel
 from bitacora.groq_agent import call_groq_clinical_parser
 from bitacora.models import Pendiente, PendientePrioridad, PendienteTipo, TurnoObjetivo
 from bitacora.pdf_generator import generar_bitacora_completa
+from bitacora.reminders import (
+    crear_recordatorio,
+    emitir_alerta_whatsapp,
+    formatear_recordatorios,
+    parse_hora_recordatorio,
+    verificar_recordatorios_a_disparar,
+)
 from bitacora.schema import load_bitacora, save_bitacora
 from bitacora.whatsapp_bot import (
     format_whatsapp_night_summary,
@@ -18,10 +25,28 @@ from bitacora.whatsapp_bot import (
     strip_robotina,
 )
 
+logger = logging.getLogger(__name__)
+
 app = FastAPI(
     title="WhatsApp Webhook - Bitácora Médica & Robotina",
     description="Bridge HTTP para sincronizar mensajes de grupos de WhatsApp con la bitácora médica.",
 )
+
+
+@app.on_event("startup")
+async def startup_event():
+    """Inicia el worker en segundo plano para verificar alarmas y recordatorios clínicos."""
+    async def reminder_loop():
+        while True:
+            try:
+                alertas = verificar_recordatorios_a_disparar()
+                for al in alertas:
+                    emitir_alerta_whatsapp(al)
+            except Exception as e:
+                logger.error(f"Error en worker de recordatorios: {e}")
+            await asyncio.sleep(25)
+
+    asyncio.create_task(reminder_loop())
 
 
 def get_active_bitacora_path() -> Path:
@@ -109,6 +134,8 @@ async def receive_whatsapp_message(request: Request) -> dict[str, Any]:
     else:
         texto_mensaje = str(body)
 
+    chat_id = str(body.get("group_id") or body.get("sender") or "")
+
     # Limpiar menciones de números telefónicos de WhatsApp (ej: @593999999999)
     texto_limpio = re.sub(r"^@\d+\s*", "", texto_mensaje).strip()
     texto_sin_robotina = strip_robotina(texto_limpio)
@@ -162,6 +189,34 @@ async def receive_whatsapp_message(request: Request) -> dict[str, Any]:
                     "🌐 *Ver reporte interactivo en línea:*\n"
                     "👉 https://bitacora-guardia-production.up.railway.app/descargar/bitacora.html"
                 ),
+            }
+
+        if intencion == "CREAR_RECORDATORIO":
+            cama_target = str(groq_res.get("cama") or "").upper()
+            pac = next((p for p in bitacora.pacientes if p.cama.upper() == cama_target), None)
+            pac_nombre = pac.nombre_completo if pac else (groq_res.get("paciente") or "Paciente de guardia")
+            cama_display = pac.cama if pac else (cama_target or "Guardia")
+            hora_raw = groq_res.get("horario") or "07:00"
+            tarea = groq_res.get("estudio") or groq_res.get("tarea") or "Control clínico"
+
+            rec = crear_recordatorio(hora_raw, cama_display, pac_nombre, tarea, chat_id=chat_id)
+            return {
+                "status": "success",
+                "tipo_accion": "CREAR_RECORDATORIO",
+                "reply": (
+                    f"⏰ *Recordatorio programado por Robotina:*\n"
+                    f"🏥 *Cama {rec['cama']}:* {rec['paciente']}\n"
+                    f"📋 *Acción:* {rec['tarea']}\n"
+                    f"🕒 *Hora programada:* `{rec['hora_programada']}`\n\n"
+                    f"🔔 _Robotina emitirá una alerta automática en este grupo al llegar la hora._"
+                ),
+            }
+
+        if intencion == "CONSULTAR_RECORDATORIOS":
+            return {
+                "status": "success",
+                "tipo_accion": "LISTA_RECORDATORIOS",
+                "reply": formatear_recordatorios(),
             }
 
         if intencion == "AYUDA":
@@ -282,6 +337,61 @@ async def receive_whatsapp_message(request: Request) -> dict[str, Any]:
                 "👉 https://bitacora-guardia-production.up.railway.app/descargar/bitacora.pdf\n\n"
                 "🌐 *Ver reporte interactivo en línea:*\n"
                 "👉 https://bitacora-guardia-production.up.railway.app/descargar/bitacora.html"
+            ),
+        }
+
+    # Comandos para consultar recordatorios activos
+    if cmd in ("!recordatorios", "recordatorios", "alarmas", "!alarmas") or any(
+        w in cmd for w in ["que recordatorios hay", "lista de recordatorios", "alarmas activas"]
+    ):
+        return {
+            "status": "success",
+            "tipo_accion": "LISTA_RECORDATORIOS",
+            "reply": formatear_recordatorios(),
+        }
+
+    # Creación de recordatorio en lenguaje natural (ej: 'recuerdanos a las 7 el sodio del sr rodriguez')
+    m_rec = re.search(
+        r"(?:recu[eé]rda(?:nos|me)?|alarma|avisa(?:nos|me)?)\s*(?:a\s+las\s+)?(\d{1,2}(?::\d{2})?\s*(?:am|pm)?)\s*(.+)",
+        cmd,
+        re.IGNORECASE,
+    )
+    if m_rec:
+        hora_str = m_rec.group(1).strip()
+        resto = m_rec.group(2).strip()
+
+        # Buscar paciente por cama o apellido en el resto del texto
+        paciente_match = None
+        for p in bitacora.pacientes:
+            if re.search(r"\b" + re.escape(p.cama.lower()) + r"\b", resto.lower()):
+                paciente_match = p
+                break
+            for n in p.nombre_completo.lower().split():
+                if len(n) > 3 and re.search(r"\b" + re.escape(n) + r"\b", resto.lower()):
+                    paciente_match = p
+                    break
+            if paciente_match:
+                break
+
+        cama_rec = paciente_match.cama if paciente_match else "Guardia"
+        nombre_rec = paciente_match.nombre_completo if paciente_match else "Paciente asignado"
+        tarea_rec = resto
+        tarea_rec = re.sub(r"(?:del\s+)?(?:sr\.?|don|doña|paciente)?\s*[a-zA-Z0-9]+$", "", tarea_rec).strip()
+        if not tarea_rec:
+            tarea_rec = resto.capitalize()
+        else:
+            tarea_rec = tarea_rec.capitalize()
+
+        rec = crear_recordatorio(hora_str, cama_rec, nombre_rec, tarea_rec, chat_id=chat_id)
+        return {
+            "status": "success",
+            "tipo_accion": "CREAR_RECORDATORIO",
+            "reply": (
+                f"⏰ *Recordatorio programado por Robotina:*\n"
+                f"🏥 *Cama {rec['cama']}:* {rec['paciente']}\n"
+                f"📋 *Acción:* {rec['tarea']}\n"
+                f"🕒 *Hora programada:* `{rec['hora_programada']}`\n\n"
+                f"🔔 _Robotina emitirá una alerta automática en este grupo al llegar la hora._"
             ),
         }
 

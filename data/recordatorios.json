@@ -1,0 +1,12 @@
+[
+  {
+    "id": "REC-001",
+    "hora_programada": "07:00",
+    "cama": "6A",
+    "paciente": "RODRIGUEZ MORENO SEGUNDO EZEQUIEL",
+    "tarea": "El sodio",
+    "chat_id": "",
+    "estado": "PENDIENTE",
+    "creado_en": "2026-11-11 04:10:27"
+  }
+]
