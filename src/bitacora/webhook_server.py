@@ -1,4 +1,4 @@
-"""Servidor Webhook HTTP para conectar el Grupo de WhatsApp con el Agente de Bitácora."""
+"""Servidor Webhook HTTP para conectar el Grupo de WhatsApp con el Agente de Bitácora y Robotina."""
 
 import re
 from pathlib import Path
@@ -9,11 +9,15 @@ from pydantic import BaseModel
 
 from bitacora.models import Pendiente, PendientePrioridad, PendienteTipo, TurnoObjetivo
 from bitacora.schema import load_bitacora, save_bitacora
-from bitacora.whatsapp_bot import format_whatsapp_night_summary, parse_whatsapp_incoming_message
+from bitacora.whatsapp_bot import (
+    format_whatsapp_night_summary,
+    parse_whatsapp_incoming_message,
+    strip_robotina,
+)
 
 app = FastAPI(
-    title="WhatsApp Webhook - Bitácora Médica",
-    description="Bridge HTTP para sincronizar mensajes de grupos de WhatsApp con la bitácora.",
+    title="WhatsApp Webhook - Bitácora Médica & Robotina",
+    description="Bridge HTTP para sincronizar mensajes de grupos de WhatsApp con la bitácora médica.",
 )
 
 
@@ -26,7 +30,7 @@ def get_active_bitacora_path() -> Path:
 
 
 class WhatsAppIncomingPayload(BaseModel):
-    """Payload estándar recibido desde puentes de WhatsApp (Evolution API / n8n / Twilio)."""
+    """Payload estándar recibido desde puentes de WhatsApp."""
 
     sender: str | None = None
     group_id: str | None = None
@@ -35,7 +39,7 @@ class WhatsAppIncomingPayload(BaseModel):
 
 @app.get("/")
 def health_check() -> dict[str, str]:
-    return {"status": "ok", "service": "Bitacora WhatsApp Agent"}
+    return {"status": "ok", "service": "Bitacora WhatsApp Agent (Robotina)"}
 
 
 @app.get("/whatsapp/resumen-nocturno")
@@ -70,13 +74,16 @@ async def receive_whatsapp_message(request: Request) -> dict[str, Any]:
     else:
         texto_mensaje = str(body)
 
-    # Limpiar menciones de WhatsApp (ej: @593999999999) y espacios
+    # Limpiar menciones de números telefónicos de WhatsApp (ej: @593999999999)
     texto_limpio = re.sub(r"^@\d+\s*", "", texto_mensaje).strip()
-    cmd = texto_limpio.lower()
+    texto_sin_robotina = strip_robotina(texto_limpio)
+    cmd = texto_sin_robotina.lower()
     bitacora_path = get_active_bitacora_path()
 
-    # 1. Comandos directos de consulta en el grupo
-    if cmd in ("!pendientes", "!guardia", "!resumen", "pendientes", "resumen"):
+    # 1. Comandos de consulta de resumen / checklist nocturno
+    if cmd in ("!pendientes", "!guardia", "!resumen", "pendientes", "resumen", "guardia") or any(
+        w in cmd for w in ["que pendientes hay", "que hay de pendientes", "que hay pendiente", "como van los pendientes", "checklist"]
+    ):
         bitacora = load_bitacora(bitacora_path)
         return {
             "status": "success",
@@ -84,38 +91,48 @@ async def receive_whatsapp_message(request: Request) -> dict[str, Any]:
             "reply": format_whatsapp_night_summary(bitacora),
         }
 
-    # 2. Comandos de ayuda y saludo
-    if cmd in ("!ayuda", "!help", "ayuda", "help", "hola", "buenas", "bot", "menu", "!menu", "test", "hola bot"):
+    # 2. Comandos de ayuda y saludo a Robotina
+    if cmd in ("!ayuda", "!help", "ayuda", "help", "hola", "buenas", "bot", "menu", "!menu", "test", "hola bot", "robotina") or any(
+        w in cmd for w in ["quien eres", "que haces", "como funcionas", "instrucciones"]
+    ) or not texto_sin_robotina:
         return {
             "status": "success",
             "tipo_accion": "AYUDA",
             "reply": (
-                "👋 *Asistente de Guardia Médica Activo (24/7)*\n\n"
-                "📋 *Comandos de consulta:*\n"
-                "• `!pendientes` o `!resumen` ➔ Checklist nocturno (STAT, urgentes y controles).\n"
-                "• `!camas` ➔ Lista las camas censadas en el servicio.\n\n"
-                "✍ *Registro durante el turno:*\n"
-                "• `[Cama]: [Pendiente]` ➔ Registra un pendiente.\n"
-                "   _Ejemplo:_ `6A: Gasometria STAT 21:30`\n"
-                "• `[Cama] resultado: [Dato]` ➔ Registra y cierra el pendiente.\n"
-                "   _Ejemplo:_ `6A resultado: Lactato 1.4 mmol/L normal`"
+                "🤖 *¡Hola! Soy Robotina, asistente clínica de guardia (24/7)*\n\n"
+                "Estoy conectada a la bitácora médica para registrar reportes y pendientes del turno.\n\n"
+                "📋 *Consultas:* \n"
+                "• `Robotina pendientes` ➔ Checklist nocturno (STAT, urgentes y controles).\n"
+                "• `Robotina camas` ➔ Lista de camas y pacientes censados.\n"
+                "• `Robotina como esta 6A` ➔ Ficha clínica y pendientes de una cama.\n\n"
+                "✍ *Registro de resultados y pendientes:*\n"
+                "• *Reportar resultado:* `Robotina la gasometria de 6a es pf 6.9`\n"
+                "• *Anotar nuevo pendiente:* `6A: Gasometria STAT 21:30`\n"
+                "• *Formato rápido:* `6A resultado: Lactato 1.4 normal`"
             ),
         }
 
     # 3. Listado de camas activas
-    if cmd in ("!camas", "camas"):
+    if cmd in ("!camas", "camas") or any(w in cmd for w in ["que camas hay", "lista de camas", "camas censadas", "pacientes"]):
         bitacora = load_bitacora(bitacora_path)
         camas_str = ", ".join(f"*{p.cama}* ({p.nombre_completo.split()[0]})" for p in bitacora.pacientes)
         return {
             "status": "success",
             "tipo_accion": "LISTA_CAMAS",
-            "reply": f"🏥 *Camas activas censadas ({len(bitacora.pacientes)}):*\n{camas_str}",
+            "reply": f"🏥 *Camas activas censadas ({len(bitacora.pacientes)}):*\n{camas_str}\n\n_Para ver una cama escribe:_ `Robotina como esta 6A`",
         }
 
-    # 4. Parseo de mensajes clínicos (ej. '6A: Gasometria STAT' o '6A resultado: Lactato 1.6')
+    # 4. Parseo clínico de mensajes (lenguaje natural y comandos)
     parsed = parse_whatsapp_incoming_message(texto_limpio)
     if not parsed:
         return {"status": "ignored", "reason": "No clinical pattern matched", "text": texto_limpio}
+
+    if parsed["accion"] == "SALUDO_ROBOTINA":
+        return {
+            "status": "success",
+            "tipo_accion": "SALUDO",
+            "reply": "🤖 *¡A la orden! Aquí Robotina.* ¿En qué cama o pendiente necesitas asistencia? (Escribe `Robotina ayuda` para ver opciones).",
+        }
 
     cama = parsed["cama"]
     bitacora = load_bitacora(bitacora_path)
@@ -124,36 +141,74 @@ async def receive_whatsapp_message(request: Request) -> dict[str, Any]:
         camas_disponibles = ", ".join(p.cama for p in bitacora.pacientes[:8]) + "..."
         return {
             "status": "error",
-            "reply": f"⚠ No se encontró paciente en la cama '{cama}' en la bitácora activa.\n_Camas disponibles:_ {camas_disponibles}",
+            "reply": f"⚠ No se encontró la cama '{cama}' en la bitácora activa.\n_Camas disponibles:_ {camas_disponibles}",
         }
 
+    # 5. Consulta clínica de una cama individual
+    if parsed["accion"] == "CONSULTAR_CAMA":
+        dx_str = (
+            paciente.diagnosticos_activos[0]
+            if paciente.diagnosticos_activos
+            else "Sin diagnóstico activo registrado"
+        )
+        lines = [
+            f"🏥 *CAMA {paciente.cama}: {paciente.nombre_completo}* ({paciente.edad} años)",
+            f"🩺 *Dx:* {dx_str}",
+            "━━━━━━━━━━━━━━━━━━━━━━",
+            "📋 *Pendientes:*",
+        ]
+        if not paciente.pendientes:
+            lines.append("• _Sin pendientes registrados para este paciente._")
+        else:
+            for pend in paciente.pendientes:
+                icon = "✅" if pend.estado == "COMPLETADO" else ("🔴" if pend.prioridad == PendientePrioridad.STAT else "🟠")
+                res_str = f" ➔ _{pend.resultado_obtenido}_" if pend.resultado_obtenido else ""
+                lines.append(f"• {icon} [{pend.estado}] {pend.descripcion}{res_str}")
+        lines.append("━━━━━━━━━━━━━━━━━━━━━━")
+        lines.append(f"💡 _Para reportar resultado:_ `Robotina la gasometria de {paciente.cama} es pf ...`")
+        return {
+            "status": "success",
+            "tipo_accion": "CONSULTA_CAMA",
+            "reply": "\n".join(lines),
+        }
+
+    # 6. Registro de resultado clínico
     if parsed["accion"] == "REGISTRAR_RESULTADO":
-        resultado = parsed["resultado"]
+        resultado_valor = parsed.get("valor") or parsed["resultado"]
+        estudio_kw = (parsed.get("estudio") or "").lower()
         modificado = False
+        pend_modificado_desc = ""
         pends_nuevos = []
+
+        # Intentar coincidir con el pendiente que contenga la palabra clave del estudio (ej: gasometria, ekg, tac)
         for pend in paciente.pendientes:
-            if pend.es_visita_nocturna and pend.estado == "PENDIENTE" and not modificado:
+            coincide_estudio = bool(estudio_kw and (estudio_kw in pend.descripcion.lower() or (estudio_kw == "gasometria" and "gas" in pend.descripcion.lower())))
+            if pend.es_visita_nocturna and pend.estado == "PENDIENTE" and (coincide_estudio or not modificado):
                 pends_nuevos.append(
                     pend.model_copy(
-                        update={"estado": "COMPLETADO", "resultado_obtenido": resultado}
+                        update={"estado": "COMPLETADO", "resultado_obtenido": resultado_valor}
                     )
                 )
                 modificado = True
+                pend_modificado_desc = pend.descripcion
             else:
                 pends_nuevos.append(pend)
 
+        # Si no había un pendiente pendiente con ese estudio, crear uno completado
         if not modificado:
+            nuevo_desc = f"{parsed.get('estudio').capitalize() if parsed.get('estudio') else 'Reporte'} (WhatsApp)"
             nuevo_p = Pendiente(
                 id=f"PEND-{cama}-WA",
                 tipo=PendienteTipo.LABORATORIO,
-                descripcion="Reporte de guardia vía WhatsApp",
+                descripcion=nuevo_desc,
                 prioridad=PendientePrioridad.STAT,
                 turno=TurnoObjetivo.NOCTURNA_20_24,
                 es_visita_nocturna=True,
                 estado="COMPLETADO",
-                resultado_obtenido=resultado,
+                resultado_obtenido=resultado_valor,
             )
             pends_nuevos.append(nuevo_p)
+            pend_modificado_desc = nuevo_desc
 
         p_nuevo = paciente.model_copy(update={"pendientes": pends_nuevos})
         pacs_actualizados = [
@@ -165,9 +220,16 @@ async def receive_whatsapp_message(request: Request) -> dict[str, Any]:
         return {
             "status": "success",
             "tipo_accion": "RESULTADO_REGISTRADO",
-            "reply": f"✔ *Cama {cama}* ({paciente.nombre_completo.split()[0]}): Resultado documentado exitosamente ➔ `{resultado}`.",
+            "reply": (
+                f"✔ *Resultado registrado por Robotina:*\n"
+                f"🏥 *Cama {cama}:* {paciente.nombre_completo.split()[0]} {paciente.nombre_completo.split()[-1] if len(paciente.nombre_completo.split()) > 1 else ''}\n"
+                f"📋 *Pendiente:* {pend_modificado_desc}\n"
+                f"📊 *Resultado:* `{resultado_valor}`\n"
+                f"✅ *Estado:* COMPLETADO"
+            ),
         }
 
+    # 7. Creación de nuevo pendiente
     elif parsed["accion"] == "CREAR_PENDIENTE":
         nuevo_id = f"PEND-{cama.upper()}-{len(paciente.pendientes) + 1:02d}"
         nuevo_pend = Pendiente(

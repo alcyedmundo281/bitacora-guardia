@@ -5,23 +5,58 @@ from typing import Any
 
 from bitacora.models import BitacoraGuardia, PendientePrioridad, PendienteTipo, TurnoObjetivo
 
+# Regex representativo para las camas clínicas del hospital
+BED_REGEX = (
+    r"(?:INFECTO\s+1B|CARDIO\s+\d+[A-Za-z]|NEUMO\s+[A-Za-z0-9]+|UROLOGIA\s+[A-Za-z]+|"
+    r"INTERMEDIOS\s+[A-Za-z]+|ER-AB\s+\d+|ER\s+[A-Za-z]+|ABREVIADOS\s+[A-Za-z]+|"
+    r"AB\s+\d+[A-Za-z]|\d{1,2}[A-Za-z]|\d{1,2})"
+)
+
+
+def strip_robotina(text: str) -> str:
+    """Remueve invocaciones al bot (ej: Robotina, Robotina:, @Robotina) del mensaje."""
+    t = text.strip()
+    return re.sub(
+        r"^(?:@?[Rr]obotina\b[:,\s-]*|@?\w+\s+robotina\b[:,\s-]*)",
+        "",
+        t,
+        flags=re.IGNORECASE,
+    ).strip()
+
 
 def parse_whatsapp_incoming_message(text: str) -> dict[str, Any] | None:
-    """Parsea mensajes informales de WhatsApp de los médicos para extraer pendientes o resultados.
+    """Parsea mensajes de WhatsApp de los médicos para extraer pendientes o resultados.
 
-    Ejemplos soportados:
-    - '6A: Gasometria arterial STAT a las 21:30'
-    - '8: Hemocultivo x2 urgente'
-    - '6A resultado: EKG normal sin arritmia'
+    Soporta formato con o sin Robotina, lenguaje natural o comandos estructurados:
+    - 'Robotina la gasometria de 6a es pf 6.9'
+    - 'Robotina, la gasometria de 6a es pf 6.9'
+    - 'la gasometria de 6a es pf 6.9'
+    - '6A resultado: Lactato 1.4 mmol/L y gases normales'
+    - '6A: Gasometria arterial STAT 21:30'
+    - 'el ekg de 6d reporta ritmo sinusal'
+    - 'troponina de 6d salio negativa'
+    - 'Robotina como esta la 6a'
     """
-    text = text.strip()
-    if not text:
-        return None
+    cleaned = strip_robotina(text)
+    if not cleaned:
+        # Si el usuario solo escribió "Robotina" o "Hola Robotina"
+        return {"accion": "SALUDO_ROBOTINA"}
 
-    # Caso 1: Reporte de resultado (ej. "6A resultado: ...")
+    # 1. Consulta de estado de una cama específica (ej: 'como esta la 6a', 'paciente 6a', '6a')
+    m_cama_query = re.match(
+        r"^(?:c[oó]mo\s+est[aá](?:\s+la)?|paciente(?:\s+de\s+la)?|estado(?:\s+de\s+la)?|ver|info)?\s*("
+        + BED_REGEX
+        + r")$",
+        cleaned,
+        re.IGNORECASE,
+    )
+    if m_cama_query:
+        return {"accion": "CONSULTAR_CAMA", "cama": m_cama_query.group(1).upper()}
+
+    # 2. Formato estructurado de resultado: '6A resultado: ...' o 'resultado 6A: ...'
     res_match = re.match(
-        r"^([A-Za-z0-9\s-]+?)(?:\s+resultado|\s*:\s*resultado|\s*-\s*resultado)\s*:\s*(.+)$",
-        text,
+        r"^(" + BED_REGEX + r")(?:\s+resultado|\s*:\s*resultado|\s*-\s*resultado)\s*:\s*(.+)$",
+        cleaned,
         re.IGNORECASE,
     )
     if res_match:
@@ -30,11 +65,61 @@ def parse_whatsapp_incoming_message(text: str) -> dict[str, Any] | None:
         return {
             "accion": "REGISTRAR_RESULTADO",
             "cama": cama,
+            "estudio": None,
             "resultado": resultado,
+            "valor": resultado,
         }
 
-    # Caso 2: Nuevo pendiente (ej. "6A: Gasometria arterial STAT 21:30")
-    pend_match = re.match(r"^([A-Za-z0-9\s-]+?)\s*:\s*(.+)$", text)
+    # 3. Lenguaje natural: '[estudio] de/en [cama] (es|salio|reporta|dio|:) [resultado]'
+    # Ej: 'la gasometria de 6a es pf 6.9' o 'el ekg de 6d reporta ritmo sinusal'
+    nat_res1 = re.search(
+        r"^(.*?)\s*(?:de\s+la|en\s+la|de|en|cama)\s+(" + BED_REGEX + r")\s*(?:es|salio|salió|reporta|dio|con|:)\s*(.+)$",
+        cleaned,
+        re.IGNORECASE,
+    )
+    if nat_res1:
+        estudio_raw = nat_res1.group(1).strip()
+        estudio = re.sub(r"^(el|la|los|las)\s+", "", estudio_raw, flags=re.IGNORECASE).strip()
+        cama = nat_res1.group(2).upper()
+        val = nat_res1.group(3).strip()
+        val = re.sub(r"^(es|salio|salió|reporta|dio|con|:)\s*", "", val, flags=re.IGNORECASE).strip()
+        resultado_fmt = f"{estudio.capitalize()}: {val}" if estudio else val
+        return {
+            "accion": "REGISTRAR_RESULTADO",
+            "cama": cama,
+            "estudio": estudio,
+            "resultado": resultado_fmt,
+            "valor": val,
+        }
+
+    # 4. Lenguaje natural inverso: 'en [cama] [estudio] es [resultado]'
+    # Ej: 'en la 6a la gasometria es pf 6.9'
+    nat_res2 = re.search(
+        r"^(?:en\s+la|de\s+la|en|de|cama)\s+(" + BED_REGEX + r")\s+(?:la|el|los|las)?\s*(.*?)\s*(?:es|salio|salió|reporta|dio|:)\s*(.+)$",
+        cleaned,
+        re.IGNORECASE,
+    )
+    if nat_res2:
+        cama = nat_res2.group(1).upper()
+        estudio_raw = nat_res2.group(2).strip()
+        estudio = re.sub(r"^(el|la|los|las)\s+", "", estudio_raw, flags=re.IGNORECASE).strip()
+        val = nat_res2.group(3).strip()
+        val = re.sub(r"^(es|salio|salió|reporta|dio|con|:)\s*", "", val, flags=re.IGNORECASE).strip()
+        resultado_fmt = f"{estudio.capitalize()}: {val}" if estudio else val
+        return {
+            "accion": "REGISTRAR_RESULTADO",
+            "cama": cama,
+            "estudio": estudio,
+            "resultado": resultado_fmt,
+            "valor": val,
+        }
+
+    # 5. Nuevo pendiente estructurado (ej. '6A: Gasometria arterial STAT 21:30' o 'anotar en 6A: ...')
+    pend_match = re.match(
+        r"^(?:anotar\s+en\s+|agregar\s+en\s+|pendiente\s+para\s+)?(" + BED_REGEX + r")\s*:\s*(.+)$",
+        cleaned,
+        re.IGNORECASE,
+    )
     if pend_match:
         cama = pend_match.group(1).strip().upper()
         cuerpo = pend_match.group(2).strip()
@@ -129,7 +214,7 @@ def format_whatsapp_night_summary(bitacora: BitacoraGuardia) -> str:
     lines.extend(
         [
             "━━━━━━━━━━━━━━━━━━━━━━",
-            "💡 _Para reportar un resultado responde:_ `CAMA resultado: [DATO]`",
+            "💡 _Para reportar un resultado escribe:_ `Robotina la gasometria de 6a es pf 6.9`",
         ]
     )
 
