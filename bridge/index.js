@@ -9,7 +9,7 @@ import QRCode from "qrcode";
 import qrcodeTerminal from "qrcode-terminal";
 
 const BACKEND_URL = process.env.BACKEND_URL || "http://127.0.0.1:8000";
-const WEB_PORT = process.env.PORT || 3000;
+const WEB_PORT = parseInt(process.env.PORT, 10) || 3000;
 
 let currentQRDataUrl = null;
 let currentStatus = "INICIALIZANDO";
@@ -79,7 +79,6 @@ function requestHandler(req, res) {
 }
 
 const server = http.createServer(requestHandler);
-const WEB_PORT = parseInt(process.env.PORT, 10) || 3000;
 
 server.listen(WEB_PORT, "0.0.0.0", () => {
   console.log(`\n======================================================`);
