@@ -158,13 +158,14 @@ async function startWhatsAppBridge() {
   const mySentMessageIds = new Set();
 
   sock.ev.on("messages.upsert", async ({ messages, type }) => {
-    if (type !== "notify") return;
+    // Procesar tanto mensajes de terceros ('notify') como del propio dispositivo vinculado ('append')
+    if (type !== "notify" && type !== "append") return;
 
     for (const msg of messages) {
       if (mySentMessageIds.has(msg.key.id)) continue;
 
       const chatId = msg.key.remoteJid;
-      if (!chatId) continue;
+      if (!chatId || chatId === "status@broadcast") continue;
 
       // Desempaquetar mensajes ordinarios, temporales (ephemeral) o multimedia
       const m =
@@ -191,7 +192,7 @@ async function startWhatsAppBridge() {
         if (/^[🚨✔📌👋🏥⚠]/.test(text.trim())) continue;
       }
 
-      console.log(`\n[MSG RECIBIDO] Chat: ${chatId} | De: ${msg.key.participant || chatId} | fromMe: ${msg.key.fromMe}`);
+      console.log(`\n[MSG RECIBIDO] Chat: ${chatId} | De: ${msg.key.participant || chatId} | fromMe: ${msg.key.fromMe} | Type: ${type}`);
       console.log(`[TEXTO]: "${text}"`);
 
       try {
@@ -209,7 +210,9 @@ async function startWhatsAppBridge() {
         if (response.ok) {
           const data = await response.json();
           if (data && data.reply) {
-            const sent = await sock.sendMessage(chatId, { text: data.reply }, { quoted: msg });
+            // Evitar quoting a mensajes propios para prevenir rechazos del protocolo
+            const sendOptions = msg.key.fromMe ? {} : { quoted: msg };
+            const sent = await sock.sendMessage(chatId, { text: data.reply }, sendOptions);
             if (sent?.key?.id) {
               mySentMessageIds.add(sent.key.id);
             }
