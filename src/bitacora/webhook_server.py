@@ -51,6 +51,42 @@ def normalize_text(s: str) -> str:
     nfkd = unicodedata.normalize("NFKD", s.lower())
     return "".join(c for c in nfkd if not unicodedata.combining(c))
 
+
+_NAME_STOPWORDS = {
+    "paciente", "cama", "como", "esta", "estan", "examen", "examenes", "laboratorio",
+    "laboratorios", "resultado", "resultados", "tiene", "sobre", "para", "desde",
+    "drive", "bitacora", "agregar", "agregando", "ingresar", "ingresa", "anadir",
+    "robotina", "ayuda", "ayudame", "encuentra", "guardia", "reporte", "favor",
+    "ultimo", "ultimos", "ultima", "ultimas", "periferico", "perifericos",
+    "hospitalizacion", "emergencia", "abreviados", "observacion", "cual", "cuales",
+}
+
+
+def find_patient_by_name(query: str, pacientes: list[Paciente]) -> Paciente | None:
+    """Busca un paciente dando mayor peso a apellidos que a nombres de pila comunes."""
+    q_norm = normalize_text(query)
+    tokens = set(t for t in re.findall(r"[a-z0-9]+", q_norm) if len(t) > 3 and t not in _NAME_STOPWORDS)
+    if not tokens:
+        return None
+
+    best_pac: Paciente | None = None
+    best_score = 0
+
+    for p in pacientes:
+        p_words = re.findall(r"[a-z0-9]+", normalize_text(p.nombre_completo))
+        if not p_words:
+            continue
+        # En formato estándar (APELLIDO1 APELLIDO2 NOMBRE1 NOMBRE2), los primeros 2 tokens son apellidos
+        surnames = set(p_words[:2]) if len(p_words) >= 3 else {p_words[0]}
+        score = 0
+        for w in set(p_words):
+            if w in tokens:
+                score += 2 if w in surnames else 1
+        if score >= 2 and score > best_score:
+            best_score = score
+            best_pac = p
+    return best_pac
+
 app = FastAPI(
     title="WhatsApp Webhook - Bitácora Médica & Robotina",
     description="Bridge HTTP para sincronizar mensajes de grupos de WhatsApp con la bitácora médica.",
@@ -631,11 +667,7 @@ async def receive_whatsapp_message(request: Request) -> dict[str, Any]:
             cama_target = str(groq_res.get("cama") or "").strip().upper()
             pac = get_cama(cama_target) if cama_target else None
             if not pac and groq_res.get("paciente"):
-                p_query = normalize_text(str(groq_res["paciente"]))
-                for p in bitacora.pacientes:
-                    if any(tok in normalize_text(p.nombre_completo) for tok in p_query.split() if len(tok) > 3):
-                        pac = p
-                        break
+                pac = find_patient_by_name(str(groq_res["paciente"]), bitacora.pacientes)
             if pac:
                 return {
                     "status": "success",
@@ -647,6 +679,12 @@ async def receive_whatsapp_message(request: Request) -> dict[str, Any]:
                     "status": "success",
                     "tipo_accion": "CAMA_LIBRE",
                     "reply": f"🏥 *Cama {cama_target}:* Actualmente *LIBRE* (sin paciente asignado).",
+                }
+            if groq_res.get("paciente"):
+                return {
+                    "status": "success",
+                    "tipo_accion": "PACIENTE_NO_ENCONTRADO",
+                    "reply": f"⚠ No encontré al paciente *{groq_res['paciente']}* en el censo activo.",
                 }
 
         if intencion == "REGISTRAR_RESULTADO" and groq_res.get("cama"):
@@ -802,16 +840,25 @@ async def receive_whatsapp_message(request: Request) -> dict[str, Any]:
     # Parseo local de respaldo
     parsed = parse_whatsapp_incoming_message(texto_limpio)
     if not parsed:
-        # Búsqueda local por apellido de paciente o exámenes (ej: "Que examenes de Rodríguez", "como esta rodriguez")
-        cmd_norm = normalize_text(cmd)
-        for p in bitacora.pacientes:
-            for n in normalize_text(p.nombre_completo).split():
-                if len(n) > 3 and re.search(r"\b" + re.escape(n) + r"\b", cmd_norm):
-                    return {
-                        "status": "success",
-                        "tipo_accion": "CONSULTA_CAMA",
-                        "reply": format_paciente_card(p),
-                    }
+        # Si piden agregar/ingresar un paciente sin especificar cama/datos (ej. "agregando ... que se encuentra en el drive")
+        if any(v in cmd_norm for v in ("agreg", "ingres", "anad", "nuevo paciente")):
+            return {
+                "status": "error",
+                "reply": (
+                    "⚠ Para ingresar un paciente nuevo necesito la *cama*, el *nombre completo*, "
+                    "la *edad* y el *diagnóstico* (no puedo buscar pacientes nuevos en archivos de Drive desde WhatsApp).\n\n"
+                    "Escríbeme así:\n"
+                    "`Robotina ingresa en <CAMA> a <NOMBRE> de <EDAD> años con dx <DIAGNÓSTICO>`"
+                ),
+            }
+        # Búsqueda local estricta por apellido de paciente (ej: "Que examenes de Rodríguez", "como esta rodriguez")
+        pac_local = find_patient_by_name(cmd, bitacora.pacientes)
+        if pac_local:
+            return {
+                "status": "success",
+                "tipo_accion": "CONSULTA_CAMA",
+                "reply": format_paciente_card(pac_local),
+            }
         return {"status": "ignored", "reason": "No clinical pattern matched", "text": texto_limpio}
 
     if parsed["accion"] == "SALUDO_ROBOTINA":

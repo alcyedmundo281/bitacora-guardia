@@ -274,6 +274,20 @@ def test_exportar_xlsx_y_comando_drive(tmp_path) -> None:
     assert "bitacora.xlsx" in data["reply"]
 
 
+def test_no_false_positive_patient_match_on_add() -> None:
+    res = client.post(
+        "/whatsapp/webhook",
+        json={
+            "message": "Robotina ayudame agregando a la bitácora al paciente Espinoza Manteca Jorge Hernan que se encuentra en el drive"
+        },
+    )
+    assert res.status_code == 200
+    data = res.json()
+    assert "ALMAGRO" not in data["reply"]
+    assert "cama" in data["reply"].lower() or "no encontré" in data["reply"].lower()
+
+
+
 
 
 
