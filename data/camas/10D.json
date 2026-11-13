@@ -1,0 +1,253 @@
+{
+  "cama": "10D",
+  "area": "HOSPITALIZACION",
+  "servicio_tratante": null,
+  "nombre_completo": "OÑA TELLO JOSELYN CAROLINA",
+  "hc": "1719421",
+  "cedula": null,
+  "edad": "30 AÑOS",
+  "sexo": null,
+  "fecha_nacimiento": null,
+  "fecha_ingreso": null,
+  "dias_hospitalizacion": null,
+  "app": [
+    "ANTECEDENTES PATOLOGICOS PERSONALES",
+    "SINDROME DE GARDNER",
+    "ARTRITIS REUMATOIDE, POLIARTRITIS CCP POSITIVO (DG A LOS 22 AÑOS)",
+    "POLIPOMATOSIS ADENOMATOSA FAMILIAR HACE 14 AÑOS",
+    "FISTULA ANAL",
+    "OBSTRUCCIÓN INTESTINAL PARCIAL",
+    "ANEMIA CRÓNICA",
+    "TRASTORNO ELECTROLÍTICO CRÓNICO"
+  ],
+  "aqx": [],
+  "alergias": [],
+  "diagnosticos_activos": [
+    "INFECCIÓN O ABSCESO DE PARTES BLANDAS",
+    "INFECCIÓN VÍAS URINARIAS TUMBARELLO 5 PUNTOS EN RESOLUCIÓN",
+    "DOLOR CRÓNICO EXACERBADO",
+    "PROCTORRAGIA OAKLAND DE 20 PUNTOS",
+    "PROLONGACIÓN DE",
+    "TIEMPOS DE COAGULACIÓN **SUSPERADA**",
+    "ENFERMEDAD RENAL AGUDA SUPERADA *** SUPERADA**",
+    "REACCION AL ESTRES GRAVE Y TRASTORNOS DE ADAPTACIÓN"
+  ],
+  "diagnosticos_pasivos": [],
+  "dieta": null,
+  "hidratacion": null,
+  "ckd_epi": null,
+  "medicaciones": [
+    {
+      "nombre": "CIPROFLOXACINO 500 MG VIA ORAL CADA 12 HORAS FI: 10/11/2026 D: 02",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "AMIKACINA 1 GRAMO VIA ORAL QD STA Y MAÑANA FI: 11/11/2026 D: 02/2",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "FLUCONAZOL 400 MG IV CADA DIA FI: 11/11/2026 D: 02/7",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "OMEPRAZOL 40 MG IV CADA DIA",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "PARACETAMOL 1 GR IV CADA 8 HORAS",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "FITOMENADIONA 10 MG IV CADA DIA",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "MORFINA 35 MG + 96 CC DE SOLUCION SALINA 0.9% INTRAVENOSO, PASAR A 4CC/HORA",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "MORFINA 3.5 MG INTRAVENOSO EN ESTE MOMENTO Y CASO DE DOLOR SEVERO, MAXIMO 3",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "RESCATES, REGISTRAR EN SISTEMA PARA AJUSTE DE DOSIS BASAL",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "ONDANSETRON 8 MG INTRAVENOSO EN ESTE MOMENTO Y CADA 12 HORAS",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    }
+  ],
+  "pendientes": [
+    {
+      "id": "PEND-10D-01",
+      "tipo": "IMAGEN_PROCEDIMIENTO",
+      "descripcion": "PENDIENTE INFORME ECOGRAFIA DE PARTES BLANDAS DE CABEZ Y TORAX POSTERIOR",
+      "prioridad": "URGENTE",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": null,
+      "es_visita_nocturna": true,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
+    },
+    {
+      "id": "PEND-10D-02",
+      "tipo": "LABORATORIO",
+      "descripcion": "PENDIENTE TOMOGRAFIA SIMPLE DE CABEZA, TORAX Y PELVIS",
+      "prioridad": "URGENTE",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": null,
+      "es_visita_nocturna": true,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
+    },
+    {
+      "id": "PEND-10D-03",
+      "tipo": "LABORATORIO",
+      "descripcion": "L: LABORATORIO CENTRAL 13/11/2026: BIOMETRIA, PCR, ELECTROLITOS,",
+      "prioridad": "RUTINA",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": null,
+      "es_visita_nocturna": false,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
+    },
+    {
+      "id": "PEND-10D-04",
+      "tipo": "LABORATORIO",
+      "descripcion": "UREA,CREATININA",
+      "prioridad": "RUTINA",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": null,
+      "es_visita_nocturna": false,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
+    },
+    {
+      "id": "PEND-10D-05",
+      "tipo": "INTERCONSULTA",
+      "descripcion": "VALORACIÓN Y SEGUIMIENTO POR EL COMITÉ DE BIOÉTICA",
+      "prioridad": "URGENTE",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": null,
+      "es_visita_nocturna": true,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
+    }
+  ],
+  "observaciones": [
+    "C: INDICACIONES DE CLINICA DEL DOLOR",
+    "INDICACIONES DE COLOPROCTOLOGIA",
+    "INDICACIONES DE PSIQUIATRIA",
+    "INDICACIONES DE PSICOLOGIA",
+    "ORDENES DE CIRUGIA PLASTICA",
+    "O. VALORACION Y SEGUIMIENTO POR EL COMITE DE BIOETICA"
+  ],
+  "laboratorios": [
+    {
+      "fecha_hora": "2026-11-13",
+      "tipo_estudio": "Laboratorios / Gasometría",
+      "valores": {
+        "resumen": "UROCULTIVO: MICROORGANISMO: Proteus mirabilis AMIKACINA SENSIBLE / 4 ug/mL CEFTRIAXONA SENSIBLE / <= 0,25 ug/mL Cefazolina (O) SENSIBLE / <= 4 ug/mL GENTAMICINA RESISTENTE / 8 ug/mL TRIMETOPRIMA/SULFA RESISTENTE / >= 320 ug/mL CIPROFLOXACINO RESISTENTE / >= 4 ug/mL Resultado: Positivo; Contaje de Colonias: > 100.000 UFC/ml;"
+      },
+      "alerta_critica": null
+    }
+  ],
+  "cultivos": [],
+  "alertas_criticas": []
+}

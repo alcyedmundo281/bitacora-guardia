@@ -1,0 +1,142 @@
+{
+  "cama": "ABR 3A",
+  "area": "EMERGENCIA_OBSERVACION",
+  "servicio_tratante": null,
+  "nombre_completo": "DUQUE VERGARA MARIA ESTHER",
+  "hc": "109881",
+  "cedula": null,
+  "edad": "96 años",
+  "sexo": null,
+  "fecha_nacimiento": null,
+  "fecha_ingreso": null,
+  "dias_hospitalizacion": null,
+  "app": [
+    "DIABETES MELLITUS TIPO 2",
+    "HIPERTENSION ARTERIAL",
+    "DEMENCIA SENIL",
+    "GASTRITIS CRONICA",
+    "POLIARTROSIS NO ESPECIFICADA"
+  ],
+  "aqx": [],
+  "alergias": [],
+  "diagnosticos_activos": [
+    "INFECCION DE VIAS URINARIAS",
+    "HIPERKALEMIA MODERADA",
+    "HIPONATREMIA MODERADA"
+  ],
+  "diagnosticos_pasivos": [],
+  "dieta": null,
+  "hidratacion": null,
+  "ckd_epi": null,
+  "medicaciones": [
+    {
+      "nombre": "GLUCONATO DE CALCIO AL 10% 1 AMPOLLA IV STAT Y LUEGO CADA 8 HORAS",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "NEBULIZACION CON 2 ML DE SALBUTAMOL MAS 2 ML DE CLORURO DE DE SODIO AL 0.9%",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "STAT Y LUEGO CADA 4- 6-8 -12 HORAS ( NO ADMINISTRAR SI HAY TAQUICARDIA)",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "FUROSEMIDA 40 MG IV STAT Y LUEGO CADA 8 -12 HORAS ( PRIMERO VER QUE NO ESTE",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "CON HIPOTENSION SINO DISMINUYE A 20 MG )",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "ELECTROCARDIOGRAMA STAT Y VER SI HAY ALTERACION EN EKG",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "CEFTRIAZONA 1GR CADA 12 HORAS D 1 FI : 11-11-2026",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    }
+  ],
+  "pendientes": [
+    {
+      "id": "PEND-ABR3A-01",
+      "tipo": "LABORATORIO",
+      "descripcion": "CONTROL DE ELECTROLITOS A LAS 4 HORAS, LUEGO DE HABER RECIBIDO EL PRIMER CICLO DE NEBULIZACION",
+      "prioridad": "CONTROL",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": null,
+      "es_visita_nocturna": true,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
+    }
+  ],
+  "observaciones": [],
+  "laboratorios": [],
+  "cultivos": [],
+  "alertas_criticas": []
+}

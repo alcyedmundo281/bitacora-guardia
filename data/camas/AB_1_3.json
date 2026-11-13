@@ -1,0 +1,99 @@
+{
+  "cama": "AB 1_3",
+  "area": "EMERGENCIA_OBSERVACION",
+  "servicio_tratante": null,
+  "nombre_completo": "RODRIGUEZ VILLAMAR CECILIA AUGUSTA",
+  "hc": "N/D",
+  "cedula": "1703966620",
+  "edad": "74 AÑOS",
+  "sexo": null,
+  "fecha_nacimiento": null,
+  "fecha_ingreso": null,
+  "dias_hospitalizacion": null,
+  "app": [
+    "DIABETES MELLITUS TIPO 2",
+    "ITU A REPETICIÓN"
+  ],
+  "aqx": [],
+  "alergias": [],
+  "diagnosticos_activos": [
+    "SEPSIS DE FOCO URINARIO",
+    "HIPONATREMIA SEVERA HIPERVOLEMICA HIPOOSMOLAR CRONICA",
+    "HEPATOPATIA EN ESTUDIO"
+  ],
+  "diagnosticos_pasivos": [],
+  "dieta": null,
+  "hidratacion": null,
+  "ckd_epi": null,
+  "medicaciones": [
+    {
+      "nombre": "TFG: 91.32 ML/MIN/M2 (CREATININA 0.57 2026/11/12 )",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "AMPICILINA MAS SULBACTAM 3G IV CADA 6HORAS FI: 12.11.2026 D:0 CIE10: A419",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "PARACETAMOL 1G IV CADA 8 HORAS",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    }
+  ],
+  "pendientes": [
+    {
+      "id": "PEND-AB13-01",
+      "tipo": "LABORATORIO",
+      "descripcion": "OSMOLARIDAD SERICA/PLASMATICA ELECTROLITOS CORTISOL SERICO 08H. NA URINARIO",
+      "prioridad": "RUTINA",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": null,
+      "es_visita_nocturna": false,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
+    },
+    {
+      "id": "PEND-AB13-02",
+      "tipo": "LABORATORIO",
+      "descripcion": "+OSMOLARIDAD URINARIA TSH + T4L",
+      "prioridad": "RUTINA",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": null,
+      "es_visita_nocturna": false,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
+    }
+  ],
+  "observaciones": [],
+  "laboratorios": [],
+  "cultivos": [],
+  "alertas_criticas": []
+}

@@ -1,0 +1,139 @@
+{
+  "cama": "ABR 2",
+  "area": "EMERGENCIA_OBSERVACION",
+  "servicio_tratante": null,
+  "nombre_completo": "AYALA PANCHEZ SEGUNDO VICTORIANO",
+  "hc": "954541",
+  "cedula": null,
+  "edad": "N/D",
+  "sexo": null,
+  "fecha_nacimiento": null,
+  "fecha_ingreso": null,
+  "dias_hospitalizacion": null,
+  "app": [
+    "ANTECEDENTES PERSONALES:",
+    "MALFORMACION VASCULAR DE TIPO ANGIOMA CAVERNOSO",
+    "MIELOMA MULTIPLE DIAGNOSTICADO EN EL 2021",
+    "EPOC DIAGNOSTICADO EN EL 2021",
+    "DIABETES MELLITUS TIPO 2 DIAGNOSTICADO HACE 2 MESES",
+    "ENFERMEDAD DE PARKINSON",
+    "HIPOTIROIDISMO"
+  ],
+  "aqx": [],
+  "alergias": [],
+  "diagnosticos_activos": [
+    "SEPSIS",
+    "DE PROBABLE ETIOLOGIA PULMONAR POR NEUMONIA ASPIRATIVA PSI CLASE 5, NEW DE RIESGO ALTO"
+  ],
+  "diagnosticos_pasivos": [],
+  "dieta": null,
+  "hidratacion": null,
+  "ckd_epi": null,
+  "medicaciones": [
+    {
+      "nombre": "CLORURO DE SODIO 0,9% 300 ML + 30 MEQ DE CLORURO DE POTASIO PASAR IV A 3 HORAS",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "FITOMENADIONA 10 MG IV CADA 12 HORAS D1/3",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "MEROPEMEN 2 GRAMOS IV EN ESTE MOMENTO Y LUEGO MEROPENEM 1 GRAMO IV CADA 8 HOR",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    }
+  ],
+  "pendientes": [
+    {
+      "id": "PEND-ABR2-01",
+      "tipo": "LABORATORIO",
+      "descripcion": "2026/11/08",
+      "prioridad": "RUTINA",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": null,
+      "es_visita_nocturna": false,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
+    },
+    {
+      "id": "PEND-ABR2-02",
+      "tipo": "LABORATORIO",
+      "descripcion": "PCR 433.00",
+      "prioridad": "RUTINA",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": null,
+      "es_visita_nocturna": false,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
+    },
+    {
+      "id": "PEND-ABR2-03",
+      "tipo": "LABORATORIO",
+      "descripcion": "PROCALCITONINA10.0INR 1.85",
+      "prioridad": "RUTINA",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": null,
+      "es_visita_nocturna": false,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
+    },
+    {
+      "id": "PEND-ABR2-04",
+      "tipo": "LABORATORIO",
+      "descripcion": "PROTROMBINA 19.2",
+      "prioridad": "RUTINA",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": null,
+      "es_visita_nocturna": false,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
+    },
+    {
+      "id": "PEND-ABR2-05",
+      "tipo": "LABORATORIO",
+      "descripcion": "TROMBOPLASTINA (TTP)..: 40.7",
+      "prioridad": "RUTINA",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": null,
+      "es_visita_nocturna": false,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
+    }
+  ],
+  "observaciones": [],
+  "laboratorios": [],
+  "cultivos": [],
+  "alertas_criticas": []
+}

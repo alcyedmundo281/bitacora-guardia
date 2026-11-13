@@ -1,0 +1,180 @@
+{
+  "cama": "ABV 3 A",
+  "area": "EMERGENCIA_OBSERVACION",
+  "servicio_tratante": null,
+  "nombre_completo": "CAMACHO PINEDA RICAURTE DE JESUS C",
+  "hc": "2087368",
+  "cedula": "0700618523",
+  "edad": "75 años",
+  "sexo": null,
+  "fecha_nacimiento": null,
+  "fecha_ingreso": null,
+  "dias_hospitalizacion": null,
+  "app": [
+    "APP:",
+    "PARKINSON EN TTO CON LEVODOPA",
+    "HTA SIN TTO ACTUAL",
+    "CANCER DE PROSTATA ETAPA: I RECIBIÓ RADIOTERAPIA SOLCA",
+    "AQX:",
+    "ARTROSCOPIA DE RODILLA DERECHA",
+    "COLECISTECTOMIA"
+  ],
+  "aqx": [],
+  "alergias": [],
+  "diagnosticos_activos": [
+    "INFECCION DE VIAS URINARIAS",
+    "INSUFICIENCIA RESPIRATORIA TIPO 1",
+    "NEUMONÍA COMUNITARIA CURB65: 3 PUNTOS, PSI 165, CLASE V",
+    "ÚLCERAS DE PRESIÓN GRADO III",
+    "ENFERMEDAD RENAL AGUDA O CRÓNICA REAGUDIZADA"
+  ],
+  "diagnosticos_pasivos": [],
+  "dieta": null,
+  "hidratacion": null,
+  "ckd_epi": null,
+  "medicaciones": [
+    {
+      "nombre": "MEROPENEM 1 GR INTRAVENOSO CADA 8 HORAS FI 12/11/2026 CIE10 B99 D1/5",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "SALBUTAMOL 2 PUFFS CADA 12 HORAS",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "N-ACETILCISTEINA 300 MG INTRAVENOSO CADA 12 HORAS D2/3",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "PARACETAMOL 1 GRAMO INTRAVENOSO POR RAZONES NECESARIAS",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "HEPARINA SODICA 5000 UI SUBCUTANEO CADA DIA",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "BROMURO DE IPRATROPIO 2 PUFFS CADA 8 HORAS",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "QUETIAPINA 12.5 MG VIA ORAL 18:00",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "LEVODOPA-CARBIDOPA TABLETA 250MG/25MG:1 TABLETA VO 5 VECES AL DIA",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    }
+  ],
+  "pendientes": [
+    {
+      "id": "PEND-ABV3A-01",
+      "tipo": "LABORATORIO",
+      "descripcion": "LUNES EXAMENES DE LABORATORIO DE CONTROL",
+      "prioridad": "CONTROL",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": null,
+      "es_visita_nocturna": true,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
+    },
+    {
+      "id": "PEND-ABV3A-02",
+      "tipo": "LABORATORIO",
+      "descripcion": "NO TRIBUTARIO DE RCP",
+      "prioridad": "RUTINA",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": null,
+      "es_visita_nocturna": false,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
+    }
+  ],
+  "observaciones": [],
+  "laboratorios": [
+    {
+      "fecha_hora": "2026-11-13",
+      "tipo_estudio": "Laboratorios / Gasometría",
+      "valores": {
+        "resumen": "13/11/2026 LEU: 10.9, HG: 11, HCTO: 35, NEU: 9.9, PLAQ: 234.000 . CLO: 117, K: 4.3, SODIO: 151 . CREA: 1.00 ."
+      },
+      "alerta_critica": null
+    }
+  ],
+  "cultivos": [],
+  "alertas_criticas": []
+}

@@ -1,8 +1,8 @@
 ---
 title: "Bitácora Médica de Guardia"
-subtitle: "Periodo: 10/11/2026 AL 11/11/2026 | Hospitalización, Periféricos y Emergencia"
-date: "2026-11-10"
-author: "MD MORAN (PG Reumatología IRM), MD GOMEZ (PG Medicina Interna)"
+subtitle: "Periodo: 13/11/2026 AL 14/11/2026 | Hospitalización, Periféricos y Emergencia"
+date: "2026-11-13"
+author: "MD. ZAMBRANO PG MEDICINA INTERNA, MD. BUENDIA MRA"
 format:
   html:
     theme: flatly
@@ -31,10 +31,10 @@ format:
 ## Resumen Ejecutivo de la Guardia
 
 ::: {.callout-note appearance='simple'}
-**Censo Operativo:** Total: **42** pacientes | Hospitalizados: **18** | Periféricos: **12** | Emergencia/Obs: **12** | Nuevos ingresos de guardia: **1**
+**Censo Operativo:** Total: **53** pacientes | Hospitalizados: **17** | Periféricos: **12** | Emergencia/Obs: **24** | Nuevos ingresos de guardia: **0**
 :::
 
-**Accesos Rápidos:** [Cultivos intranet](http://172.16.98.198/account/signin) | [Programacion quirurgica](https://docs.google.com/spreadsheets/d/16AmIt2Cj8iujxKCsbr-4S6KOg75ppkPGJGy3Zj7qwIQ/edit)
+**Accesos Rápidos:** [Censo drive](https://docs.google.com/document/d/1dm-8m2VOlTZfwYeORxcFuTDuFi2xitho/edit)
 
 ## Checklist de la Visita Nocturna (Pendientes Críticos)
 
@@ -43,122 +43,150 @@ format:
 
 | Prioridad | Cama | Paciente | Tarea / Pendiente | Horario / Ventana | Estado |
 |---|---|---|---|---|---|
-| <span class="badge-urgente">URGENTE</span> | **6A** | RODRIGUEZ MORENO SEGUNDO EZEQUIEL (HC 2013397) | Evaluar fin de ciclo de antibiótico (Día 5/5) | `NOCTURNA_20_24` | ☐ Pendiente |
-| <span class="badge-urgente">URGENTE</span> | **6C** | ALMEIDA JARAMILLO JUAN CARLOS (HC 2086486) | Insistir reporte TAC cráneo, cuello, tórax, abdomen y pelvis | `NOCTURNA_20_24` | ☐ Pendiente |
-| <span class="badge-stat">STAT</span> | **6D** | LOPEZ PAZMINO RICARDO DARIO (HC 2199041) | Segunda curva de Troponina ultrasensible a las 22:00 + EKG | `22:00` | ☐ Pendiente |
-| <span class="badge-control">CONTROL</span> | **7** | VINUEZA ROJAS ARTURO MIGUEL (HC 239902) | Control lunes de BH, Urea, Creatinina y Electrolitos | `05:00 AM` | ☐ Pendiente |
-| <span class="badge-urgente">URGENTE</span> | **7** | VINUEZA ROJAS ARTURO MIGUEL (HC 239902) | Aspiración de secreciones traqueales y curación por clínica de heridas | `NOCTURNA_20_24` | ☐ Pendiente |
-| <span class="badge-urgente">URGENTE</span> | **8** | OÑA TELLO JOSELYN CAROLINA (HC 1719421) | Verificar valoración y seguimiento por Comité de Bioética | `NOCTURNA_20_24` | ☐ Pendiente |
-| <span class="badge-urgente">URGENTE</span> | **8** | OÑA TELLO JOSELYN CAROLINA (HC 1719421) | Auditar indicaciones de Clínica del Dolor (Dra. Galiano) y Coloproctología | `NOCTURNA_20_24` | ☐ Pendiente |
-| <span class="badge-stat">STAT</span> | **9A** | ROSAS CORREA MARIA ESTHER (HC 124595) | Verificar preparación quirúrgica y programación QX hoy | `STAT / 20:00` | ☐ Pendiente |
-| <span class="badge-control">CONTROL</span> | **9B** | CARRERA AGUIRRE MARTHA GRACIELA (HC 2045964) | CONTROL ESTRICTO DE ELECTROLITOS MAÑANA A LAS 05:00 AM | `05:00 AM` | ☐ Pendiente |
-| <span class="badge-urgente">URGENTE</span> | **9B** | CARRERA AGUIRRE MARTHA GRACIELA (HC 2045964) | Verificar tolerancia a nutrición enteral y residuos gástricos | `NOCTURNA_20_24` | ☐ Pendiente |
-| <span class="badge-stat">STAT</span> | **9C** | MORENO BARRIGA BLANCA ALICIA (HC 1734898) | CONTROL DE ELECTROLITOS Y POTASIO SERICO STAT | `STAT / 21:00` | ☐ Pendiente |
-| <span class="badge-urgente">URGENTE</span> | **9C** | MORENO BARRIGA BLANCA ALICIA (HC 1734898) | Pendiente informe de TAC simple de cráneo y UroTAC | `NOCTURNA_20_24` | ☐ Pendiente |
-| <span class="badge-urgente">URGENTE</span> | **9C** | MORENO BARRIGA BLANCA ALICIA (HC 1734898) | Insistir derivación a IRM de Nefrología para perfil de glomerulopatías | `NOCTURNA_20_24` | ☐ Pendiente |
-| <span class="badge-stat">STAT</span> | **9D** | BARAHONA ALOBUELA DOLORES (HC 1021400) | RESONANCIA MAGNÉTICA SIMPLE Y CONTRASTADA DE ENCÉFALO (Orden 34934990) PENDIENTE REALIZAR | `STAT / Coordinar` | ☐ Pendiente |
-| <span class="badge-urgente">URGENTE</span> | **9D** | BARAHONA ALOBUELA DOLORES (HC 1021400) | Evaluar suspensión de Ampicilina/Sulbactam y Claritromicina al completar hoy 5/5 días | `NOCTURNA_20_24` | ☐ Pendiente |
-| <span class="badge-urgente">URGENTE</span> | **10A** | HERRERA OBANDO JESUS RAQUEL (HC 797237) | Insistir resultado de biopsia EBUS + crioterapia + biomolecular de lesión pulmonar (SOLCA) | `NOCTURNA_20_24` | ☐ Pendiente |
-| <span class="badge-stat">STAT</span> | **10A** | HERRERA OBANDO JESUS RAQUEL (HC 797237) | Rx de control evolutiva y gasometría de control por SDRA | `STAT / 21:00` | ☐ Pendiente |
-| <span class="badge-stat">STAT</span> | **10B** | REYES SANCHEZ INES MAGDALENA (HC 8140) | TOMAR HEMOCULTIVOS X 2 EN CASO DE ALZA TÉRMICA | `STAT PRN FIEBRE` | ☐ Pendiente |
-| <span class="badge-urgente">URGENTE</span> | **10B** | REYES SANCHEZ INES MAGDALENA (HC 8140) | Electrocardiograma STAT de control y diario por flutter auricular | `NOCTURNA_20_24` | ☐ Pendiente |
-| <span class="badge-control">CONTROL</span> | **10B** | REYES SANCHEZ INES MAGDALENA (HC 8140) | Control de laboratorio 05:00 AM: Biometría, Creatinina, Urea, Electrolitos | `05:00 AM` | ☐ Pendiente |
-| <span class="badge-stat">STAT</span> | **10C** | CHANGO GADVAY MARIA ADELAIDA (HC 1996362) | Pendiente resultados de RMN unión cráneo-cervical | `NOCTURNA_20_24` | ☐ Pendiente |
-| <span class="badge-control">CONTROL</span> | **10C** | CHANGO GADVAY MARIA ADELAIDA (HC 1996362) | Control de Electrolitos y Magnesio a las 18h00 / control nocturno | `18:00 / 22:00` | ☐ Pendiente |
-| <span class="badge-stat">STAT</span> | **10C** | CHANGO GADVAY MARIA ADELAIDA (HC 1996362) | Manejo urgente de dolor a nivel genital de gran intensidad | `STAT` | ☐ Pendiente |
-| <span class="badge-stat">STAT</span> | **11A** | NICOLALDE CENTENO CESAR ENRIQUE (HC 554153) | Monitoreo horario de glicemia capilar por hipoglicemia refractaria | `Horario (c/2 horas)` | ☐ Pendiente |
-| <span class="badge-urgente">URGENTE</span> | **11A** | NICOLALDE CENTENO CESAR ENRIQUE (HC 554153) | Pendiente agendar turno Body TAC y TAC con protocolo de páncreas (Orden 34926151) | `NOCTURNA_20_24` | ☐ Pendiente |
-| <span class="badge-stat">STAT</span> | **11B** | PACHACAMA SUNTAXI FREDDY RODRIGO (HC 20CELI84974) | Preparación para broncoscopia y colocación de drenaje torácico MAÑANA | `STAT / NPO 24:00` | ☐ Pendiente |
-| <span class="badge-stat">STAT</span> | **12A** | CALDERON ALMEIDA SIMON BOLIVAR (HC 2007245) | TOMAR HEMOCULTIVOS X 2 ANTE PICO FEBRIL + Laboratorio central de proteínas y perfil hepático | `STAT PRN` | ☐ Pendiente |
-| <span class="badge-urgente">URGENTE</span> | **12A** | CALDERON ALMEIDA SIMON BOLIVAR (HC 2007245) | Coordinar Body TAC para búsqueda de foco infeccioso primario | `NOCTURNA_20_24` | ☐ Pendiente |
-| <span class="badge-stat">STAT</span> | **INFECTO 1B** | ANDRANGO SIMBAÑA GONZALO (HC 307712) | Verificar reserva y alistamiento de 2 paquetes globulares y 2 plasmas congelados para cirugía | `STAT / 20:30` | ☐ Pendiente |
-| <span class="badge-control">CONTROL</span> | **INFECTO 1B** | ANDRANGO SIMBAÑA GONZALO (HC 307712) | Control diario de electrolitos y hematocrito prequirúrgico | `05:00 AM` | ☐ Pendiente |
-| <span class="badge-stat">STAT</span> | **CARDIO 3C** | HIDALGO NIETO CARLOS GONZALO (HC 963279) | Verificar preparación colónica adecuada para EDA y COLONOSCOPIA MAÑANA 10/11/2026 | `21:00` | ☐ Pendiente |
-| <span class="badge-urgente">URGENTE</span> | **CARDIO 3C** | HIDALGO NIETO CARLOS GONZALO (HC 963279) | Hacer informar TAC simple de encéfalo, cuello, tórax, abdomen y pelvis | `NOCTURNA_20_24` | ☐ Pendiente |
-| <span class="badge-control">CONTROL</span> | **CARDIO 4B** | GALEAS LOPEZ ROSA ELVIRA (HC 1814762) | Continuar fisioterapia respiratoria. Si persiste requerimiento de O2, reinterconsultar Neumología con gasometría | `NOCTURNA_20_24` | ☐ Pendiente |
-| <span class="badge-control">CONTROL</span> | **NEUMO 8B** | RODRIGUEZ QUIÑONEZ FRANKLIN (HC 2087745) | CONTROL DIARIO DE ELECTROLITOS Y SODIO | `05:00 AM` | ☐ Pendiente |
-| <span class="badge-urgente">URGENTE</span> | **NEUMO 8B** | RODRIGUEZ QUIÑONEZ FRANKLIN (HC 2087745) | Nueva biopsia percutánea por radiointervencionismo pendiente turno | `NOCTURNA_20_24` | ☐ Pendiente |
-| <span class="badge-control">CONTROL</span> | **NEUMO GOMEZ** | GOMEZ ALMEIDA MARIO RENE (HC 1274973) | EMO POR SONDA VESICAL A LAS 05:00 AM + Biometría, PCR, Azoados | `05:00 AM` | ☐ Pendiente |
-| <span class="badge-urgente">URGENTE</span> | **NEUMO GOMEZ** | GOMEZ ALMEIDA MARIO RENE (HC 1274973) | Auditar respuesta de interconsultas: Neurocirugía, Traumatología y Radioterapia | `NOCTURNA_20_24` | ☐ Pendiente |
-| <span class="badge-urgente">URGENTE</span> | **NEUMO GOMEZ** | GOMEZ ALMEIDA MARIO RENE (HC 1274973) | Fin de esquema de Piperacilina/Tazobactam (Día 5/5): valorar retiro o cambio por Proteus BLEE | `NOCTURNA_20_24` | ☐ Pendiente |
-| <span class="badge-control">CONTROL</span> | **UROLOGIA HARO** | HARO PRADO DANNY ERNESTO (HC 650799) | Control domingo de PCR, Biometría, Electrolitos, Urea y Creatinina | `05:00 AM` | ☐ Pendiente |
-| <span class="badge-stat">STAT</span> | **ER TORRES** | TORRES CEVALLOS CESAR WASHINGTON (HC 558292) | GASOMETRÍA ARTERIAL STAT + CONTROL ESTRICTO DE SODIO Y ELECTROLITOS | `STAT / 20:30` | ☐ Pendiente |
-| <span class="badge-stat">STAT</span> | **INTERMEDIOS CAMACHO** | CAMACHO PINEDA RICAURTE DE JESUS (HC 2087368) | CONTROL DE ELECTROLITOS CADA 12 HORAS ESTRICTO | `21:00` | ☐ Pendiente |
-| <span class="badge-urgente">URGENTE</span> | **INTERMEDIOS CAMACHO** | CAMACHO PINEDA RICAURTE DE JESUS (HC 2087368) | Curación de úlceras por presión por clínica de heridas | `NOCTURNA_20_24` | ☐ Pendiente |
-| <span class="badge-stat">STAT</span> | **AB 3B** | MOSQUERA SALVADOR PATRICIA ALEXANDRA (HC 1334681) | Gasometría arterial STAT + Ácido láctico | `STAT / 20:00` | ☐ Pendiente |
-| <span class="badge-urgente">URGENTE</span> | **AB 3B** | MOSQUERA SALVADOR PATRICIA ALEXANDRA (HC 1334681) | Coprorasitario + PMN + Toxinas A y B para Clostridium difficile | `21:00` | ☐ Pendiente |
-| <span class="badge-stat">STAT</span> | **AB 3B** | MOSQUERA SALVADOR PATRICIA ALEXANDRA (HC 1334681) | Urocultivo tomar muestra STAT | `NOCTURNA_20_24` | ☐ Pendiente |
-| <span class="badge-stat">STAT</span> | **ER-AB 1** | MOLINA MURILLO MARIA JOSE (HC 1304188) | EMO, Gram y UROCULTIVO STAT (¡Muestra vesical estricta, NO de nefrostomías!) | `STAT / Inmediato` | ☐ Pendiente |
-| <span class="badge-stat">STAT</span> | **ER-AB 1** | MOLINA MURILLO MARIA JOSE (HC 1304188) | Electrocardiograma STAT en este momento | `NOCTURNA_20_24` | ☐ Pendiente |
-| <span class="badge-urgente">URGENTE</span> | **ER-AB 1** | MOLINA MURILLO MARIA JOSE (HC 1304188) | Criterio de alarma: Si descompensación neurológica/hemodinámica solicitar valoración UCI | `NOCTURNA_20_24` | ☐ Pendiente |
-| <span class="badge-stat">STAT</span> | **ABREVIADOS CANTOS** | CANTOS AGUIRRE GUADALUPE ESPERANZA (HC 140019) | Gasometría arterial en este momento + Electrolitos hoy PM | `STAT / 20:00` | ☐ Pendiente |
-| <span class="badge-control">CONTROL</span> | **ABREVIADOS CANTOS** | CANTOS AGUIRRE GUADALUPE ESPERANZA (HC 140019) | Control lunes: Biometría, PCR, Urea, Creatinina, Glucosa, Electrolitos urinarios | `05:00 AM` | ☐ Pendiente |
+| <span class="badge-urgente">URGENTE</span> | **10A** | MOSQUERA SALVADOR PATRICIA ALEXANDRA C (HC 1334681) | UROTAC SIMPLE | `NOCTURNA_20_24` | ☐ Pendiente |
+| <span class="badge-urgente">URGENTE</span> | **10A** | MOSQUERA SALVADOR PATRICIA ALEXANDRA C (HC 1334681) | L: HOY BH UREA CREATININA ELECTROLITOS CALCIO IONICO (CONTEO MANUAL DE | `NOCTURNA_20_24` | ☐ Pendiente |
+| <span class="badge-stat">STAT</span> | **10A** | MOSQUERA SALVADOR PATRICIA ALEXANDRA C (HC 1334681) | EKG STAT | `NOCTURNA_20_24` | ☐ Pendiente |
+| <span class="badge-urgente">URGENTE</span> | **10B** | REYES SANCHEZ INES MAGDALENA C (HC 8140) | E: RMN DE ENCEFALO AGENDAR HOY EN LA MAÑANA | `NOCTURNA_20_24` | ☐ Pendiente |
+| <span class="badge-stat">STAT</span> | **10B** | REYES SANCHEZ INES MAGDALENA C (HC 8140) | EKG CADA DIA (STAT) | `NOCTURNA_20_24` | ☐ Pendiente |
+| <span class="badge-urgente">URGENTE</span> | **10B** | REYES SANCHEZ INES MAGDALENA C (HC 8140) | L: HOY BH UREA CREATININA ELECTROITOS CALCIO IONICO MAGNESIO DIMERO D | `NOCTURNA_20_24` | ☐ Pendiente |
+| <span class="badge-urgente">URGENTE</span> | **10C** | CHANGO GADVAY MARIA ADELAIDA (HC 1996362) | E: LABS: HBS, HBC, HEPATITIS C, VIH, QUANTIFERON PENDIENTE | `NOCTURNA_20_24` | ☐ Pendiente |
+| <span class="badge-urgente">URGENTE</span> | **10C** | CHANGO GADVAY MARIA ADELAIDA (HC 1996362) | L: HOY BH UREA CREATININA ELECTROLITOS DIMERO D MAGNESIO CALCIO IONICO | `NOCTURNA_20_24` | ☐ Pendiente |
+| <span class="badge-urgente">URGENTE</span> | **10C** | CHANGO GADVAY MARIA ADELAIDA (HC 1996362) | IC FISIROTERAPIA MOTORA | `NOCTURNA_20_24` | ☐ Pendiente |
+| <span class="badge-urgente">URGENTE</span> | **10D** | OÑA TELLO JOSELYN CAROLINA (HC 1719421) | PENDIENTE INFORME ECOGRAFIA DE PARTES BLANDAS DE CABEZ Y TORAX POSTERIOR | `NOCTURNA_20_24` | ☐ Pendiente |
+| <span class="badge-urgente">URGENTE</span> | **10D** | OÑA TELLO JOSELYN CAROLINA (HC 1719421) | PENDIENTE TOMOGRAFIA SIMPLE DE CABEZA, TORAX Y PELVIS | `NOCTURNA_20_24` | ☐ Pendiente |
+| <span class="badge-urgente">URGENTE</span> | **10D** | OÑA TELLO JOSELYN CAROLINA (HC 1719421) | VALORACIÓN Y SEGUIMIENTO POR EL COMITÉ DE BIOÉTICA | `NOCTURNA_20_24` | ☐ Pendiente |
+| <span class="badge-urgente">URGENTE</span> | **11A** | YELA DÍAS NELSON ARNULFO (HC 641333) | E: PD INFORME DE TAC DE TORAX | `NOCTURNA_20_24` | ☐ Pendiente |
+| <span class="badge-stat">STAT</span> | **11A** | YELA DÍAS NELSON ARNULFO (HC 641333) | GSA STAT | `NOCTURNA_20_24` | ☐ Pendiente |
+| <span class="badge-urgente">URGENTE</span> | **11A** | YELA DÍAS NELSON ARNULFO (HC 641333) | L: HOY BH UREA CREATININA ELECTROLITOS PCR PERFIL LIPIDICO HBA1C TSH | `NOCTURNA_20_24` | ☐ Pendiente |
+| <span class="badge-urgente">URGENTE</span> | **11A** | YELA DÍAS NELSON ARNULFO (HC 641333) | LABORATORIOS (17H00): DESTACA MEJORIA DE AZOADOS POST-DIÁLISIS (UREA 67.8, CR | `NOCTURNA_20_24` | ☐ Pendiente |
+| <span class="badge-urgente">URGENTE</span> | **12A** | CALDERON ALMEIDA SIMON BOLIVAR (HC 2007245) | E: ECOCARDIOGRAMA TRANSTORACICO JUEVES 12H00 | `NOCTURNA_20_24` | ☐ Pendiente |
+| <span class="badge-urgente">URGENTE</span> | **12A** | CALDERON ALMEIDA SIMON BOLIVAR (HC 2007245) | L: PENDIENTE LAB CENTRAL | `NOCTURNA_20_24` | ☐ Pendiente |
+| <span class="badge-urgente">URGENTE</span> | **12A** | CALDERON ALMEIDA SIMON BOLIVAR (HC 2007245) | SE REALIZA IC A ODONTOLOGIA PENDIENTE VALORACION | `NOCTURNA_20_24` | ☐ Pendiente |
+| <span class="badge-stat">STAT</span> | **3B** | BORJA PAUCARIMA VICTORIA AVELINA 69 AÑOS (HC N/D) | C: IC A CLINICA DEL DOLOR YA REALIZADA POR DOLOR CRÓNICO DEBIDO A LESIONES CERVICALES | `NOCTURNA_20_24` | ☐ Pendiente |
+| <span class="badge-urgente">URGENTE</span> | **6A** | RODRIGUEZ MORENO SEGUNDO EZEQUIEL (HC 2013397) | PENDIENTE EXÁMENES GENERADOS EL 12/11/2026 | `NOCTURNA_20_24` | ☐ Pendiente |
+| <span class="badge-urgente">URGENTE</span> | **6A** | RODRIGUEZ MORENO SEGUNDO EZEQUIEL (HC 2013397) | PENDIENTE TAC SIMPLE DE TÓRAX | `NOCTURNA_20_24` | ☐ Pendiente |
+| <span class="badge-urgente">URGENTE</span> | **6A** | RODRIGUEZ MORENO SEGUNDO EZEQUIEL (HC 2013397) | VALORACIÓN POR NEUMOLOGÍA | `NOCTURNA_20_24` | ☐ Pendiente |
+| <span class="badge-control">CONTROL</span> | **6A** | RODRIGUEZ MORENO SEGUNDO EZEQUIEL (HC 2013397) | PROXIMO CONTROL: 06/11/2026 | `NOCTURNA_20_24` | ☐ Pendiente |
+| <span class="badge-urgente">URGENTE</span> | **6C** | ALMEIDA JARAMILLO JUAN CARLOS C (HC 2086486) | TAC SIMPLE DE CRÁNEO PENDIENTE | `NOCTURNA_20_24` | ☐ Pendiente |
+| <span class="badge-urgente">URGENTE</span> | **6C** | ALMEIDA JARAMILLO JUAN CARLOS C (HC 2086486) | PENDIENTE REALIZACIÓN | `NOCTURNA_20_24` | ☐ Pendiente |
+| <span class="badge-urgente">URGENTE</span> | **6C** | ALMEIDA JARAMILLO JUAN CARLOS C (HC 2086486) | PAAF DE GANGLIO CERVICAL (IMAGEN) PENDIENTE REALIZACIÓN | `NOCTURNA_20_24` | ☐ Pendiente |
+| <span class="badge-urgente">URGENTE</span> | **6D** | FARINANGO ANDRADE JUAN MANUEL (HC N/D) | E:PENDIENTE RX DE TÓRAX ANTEROPOSTERIOR Y LATERAL | `NOCTURNA_20_24` | ☐ Pendiente |
+| <span class="badge-urgente">URGENTE</span> | **8** | NICOLALDE CENTENO CESAR ENRIQUE (HC 554153) | PD REALIZACION ECO DOPPLER PORTAL | `NOCTURNA_20_24` | ☐ Pendiente |
+| <span class="badge-stat">STAT</span> | **9A** | ROSAS CORREA MARIA ESTHER C (HC 124595) | RADIOGRAFIA DE TORAX YA | `NOCTURNA_20_24` | ☐ Pendiente |
+| <span class="badge-urgente">URGENTE</span> | **9B** | CARRERA AGUIRRE MARTHA GRACIELA C (HC 2045964) | L. PENDIENTE RESULTADOS DE ELECTROLITOS 12/11/2026 | `NOCTURNA_20_24` | ☐ Pendiente |
+| <span class="badge-urgente">URGENTE</span> | **9D** | GUERRERO PAULA DOLORES NARCIZA (HC 677814) | PD RESULTADOS DE TAC DE TORAX | `NOCTURNA_20_24` | ☐ Pendiente |
+| <span class="badge-control">CONTROL</span> | **ABREVIADOS 2** | FREIRE LOPEZ MARCO FERNANDO (HC 987792) | L: HBA1C Y TSH MAÑANA | `NOCTURNA_20_24` | ☐ Pendiente |
+| <span class="badge-control">CONTROL</span> | **ABREVIADOS 3** | GUEVARA JARAMILLO MARTHA YOLANDA C (HC 140019) | EXÁMENES DE CONTROL EL DIA LUNES | `NOCTURNA_20_24` | ☐ Pendiente |
+| <span class="badge-urgente">URGENTE</span> | **ABREVIADO 3B** | LIDIOMA MINANGO KATHERINE ELIZABETH C (HC 1786985) | PD TAC DE TORAX | `NOCTURNA_20_24` | ☐ Pendiente |
+| <span class="badge-urgente">URGENTE</span> | **ABREVIADO 3B** | LIDIOMA MINANGO KATHERINE ELIZABETH C (HC 1786985) | ECOCARDIOGRAMA PD TURNO | `NOCTURNA_20_24` | ☐ Pendiente |
+| <span class="badge-control">CONTROL</span> | **ABRE 1** | ORTIZ MARIA ANGELA C (HC 520780) | LUNES EXAMENES DE LABORATORIO DE CONTROL | `NOCTURNA_20_24` | ☐ Pendiente |
+| <span class="badge-control">CONTROL</span> | **ABRV 2** | CALVA SALAS GRETA (HC 1158688) | EXAMENES DE CONTROL PARA EL DIA LUNES | `NOCTURNA_20_24` | ☐ Pendiente |
+| <span class="badge-urgente">URGENTE</span> | **ABRV 3A** | VARGAS BAUTISTA ANA PIEDAD C (HC 1234469) | HEMOCULTIVOS X 2 HOY | `NOCTURNA_20_24` | ☐ Pendiente |
+| <span class="badge-urgente">URGENTE</span> | **ABRV 3A** | VARGAS BAUTISTA ANA PIEDAD C (HC 1234469) | VALORACION POR HEMAOTLOGIA E INFECTOLOGIA | `NOCTURNA_20_24` | ☐ Pendiente |
+| <span class="badge-urgente">URGENTE</span> | **ABRV 3A** | VARGAS BAUTISTA ANA PIEDAD C (HC 1234469) | TAC SIMPLE DE ALBOMEN Y PELVIS PENDIENTE | `NOCTURNA_20_24` | ☐ Pendiente |
+| <span class="badge-urgente">URGENTE</span> | **ABRV 3A** | VARGAS BAUTISTA ANA PIEDAD C (HC 1234469) | PET SCAN HOY | `NOCTURNA_20_24` | ☐ Pendiente |
+| <span class="badge-urgente">URGENTE</span> | **ABRV 3B** | GAVIN YERBABUENA MARIA CRISTINA C (HC 1597943) | PD INFORME DE TAC DE ABDOMEN | `NOCTURNA_20_24` | ☐ Pendiente |
+| <span class="badge-control">CONTROL</span> | **ABRV 3B** | GAVIN YERBABUENA MARIA CRISTINA C (HC 1597943) | LUNES EXAMENES DE CONTROL | `NOCTURNA_20_24` | ☐ Pendiente |
+| <span class="badge-urgente">URGENTE</span> | **ABRV 3B** | GAVIN YERBABUENA MARIA CRISTINA C (HC 1597943) | CLOSTRIDIIUM TOXINA A Y B HOY | `NOCTURNA_20_24` | ☐ Pendiente |
+| <span class="badge-control">CONTROL</span> | **ABR 3A** | DUQUE VERGARA MARIA ESTHER (HC 109881) | CONTROL DE ELECTROLITOS A LAS 4 HORAS, LUEGO DE HABER RECIBIDO EL PRIMER CICLO DE NEBULIZACION | `NOCTURNA_20_24` | ☐ Pendiente |
+| <span class="badge-urgente">URGENTE</span> | **ABV1** | VASCONEZ RUALES CARLOS AUGUSTO (HC 297135) | BODY TAC SIMPLE | `NOCTURNA_20_24` | ☐ Pendiente |
+| <span class="badge-stat">STAT</span> | **ABV1** | VASCONEZ RUALES CARLOS AUGUSTO (HC 297135) | ELECTROCARDIOGRAMA STAT | `NOCTURNA_20_24` | ☐ Pendiente |
+| <span class="badge-urgente">URGENTE</span> | **ABV1** | VASCONEZ RUALES CARLOS AUGUSTO (HC 297135) | ECOGRAFIA DE TIROIDES AGENDADA, PENDIENTE REALIZAR | `NOCTURNA_20_24` | ☐ Pendiente |
+| <span class="badge-control">CONTROL</span> | **ABV1** | VASCONEZ RUALES CARLOS AUGUSTO (HC 297135) | L: -MAÑANA BH PCT , PCR , GLUCOSA, ELECTROLTIOS | `NOCTURNA_20_24` | ☐ Pendiente |
+| <span class="badge-stat">STAT</span> | **ABV2** | MALDONADO CAYAMBE DARWIN BENITO C (HC 2090778) | ECOGRAFIA VESCICO PROSTATICA | `NOCTURNA_20_24` | ☐ Pendiente |
+| <span class="badge-control">CONTROL</span> | **ABV2** | MALDONADO CAYAMBE DARWIN BENITO C (HC 2090778) | MAÑANA AM: PSA TOTAL Y LIBRE, CEA, AFP | `NOCTURNA_20_24` | ☐ Pendiente |
+| <span class="badge-stat">STAT</span> | **ABV 2** | FLORES NARANJO MENTOR GUILLERMO (HC 2062807) | EKG STAT | `NOCTURNA_20_24` | ☐ Pendiente |
+| <span class="badge-urgente">URGENTE</span> | **ABV 2** | FLORES NARANJO MENTOR GUILLERMO (HC 2062807) | UROTAC SIMPLE | `NOCTURNA_20_24` | ☐ Pendiente |
+| <span class="badge-control">CONTROL</span> | **ABV 2** | FLORES NARANJO MENTOR GUILLERMO (HC 2062807) | MAÑANA BIOMETRIA HEMATICA, ELECTROLITOS, UREA, CREATININA | `NOCTURNA_20_24` | ☐ Pendiente |
+| <span class="badge-control">CONTROL</span> | **ABV 3 A** | CAMACHO PINEDA RICAURTE DE JESUS C (HC 2087368) | LUNES EXAMENES DE LABORATORIO DE CONTROL | `NOCTURNA_20_24` | ☐ Pendiente |
+| <span class="badge-urgente">URGENTE</span> | **ABV 3 B** | LOPEZ FIGUEROA OLGA MARLENE C (HC 1556289) | PENDIENTE ECO DE HIGADO A DESCARTAR CIRROSIS | `NOCTURNA_20_24` | ☐ Pendiente |
+| <span class="badge-urgente">URGENTE</span> | **AB 1_2** | GALLEGOS ACOSTA FERNANDA BETSABE C (HC 1727494) | ECOGRAFÍA DE ABDOMEN (HEPATITIS AUTOINMUNE) | `NOCTURNA_20_24` | ☐ Pendiente |
+| <span class="badge-urgente">URGENTE</span> | **AB 2** | ALMAGRO PICO JORGE WASHINGTON 74 AÑOS (HC N/D) | HEMOCULTIVOS X2 DEL 04/11/2026 PENDIENTE RESULTADO | `NOCTURNA_20_24` | ☐ Pendiente |
+| <span class="badge-urgente">URGENTE</span> | **CARDIO 3C** | HIDALGO NIETO CARLOS GONZALO 72 AÑOS (HC 963279) | TAC SIMPLE DE ENCÉFALO, CUELLO, TÓRAX, ABDOMEN Y PELVIS. (HACER INFORMAR) | `NOCTURNA_20_24` | ☐ Pendiente |
+| <span class="badge-urgente">URGENTE</span> | **CARDIO 3C** | HIDALGO NIETO CARLOS GONZALO 72 AÑOS (HC 963279) | EDA Y COLONOSCOPIA REALIZADA: REPETIR COLONOSCOPIA PENDIENTE TURNO | `NOCTURNA_20_24` | ☐ Pendiente |
+| <span class="badge-urgente">URGENTE</span> | **CARDIO 3C** | HIDALGO NIETO CARLOS GONZALO 72 AÑOS (HC 963279) | VALORACIÓN POR CIRUGÍA VASCULAR (INSUFICIENCIA ARTERIAL CRONICA): ALTA | `NOCTURNA_20_24` | ☐ Pendiente |
+| <span class="badge-urgente">URGENTE</span> | **CARDIO 4B** | 0200150688 GALEAS LOPEZ ROSA ELVIRA H.C.: 1814762  (HC 1814762) | E: TAC SIMPLE DE ENCEFALO, CUELLO, TORAX, ABDOMEN Y PELVIS PENDIENTE INFORME | `NOCTURNA_20_24` | ☐ Pendiente |
+| <span class="badge-control">CONTROL</span> | **CARDIO 4B** | 0200150688 GALEAS LOPEZ ROSA ELVIRA H.C.: 1814762  (HC 1814762) | L: CONTROL DIARIO DE ELECTROLITOS | `NOCTURNA_20_24` | ☐ Pendiente |
+| <span class="badge-urgente">URGENTE</span> | **EMER_4** | CHIPANTAXI GUAÑA MARIANA (HC 521857) | INTERCONSULTA NEUMOLOGIA PARA TRAMITE DE OXIGENO | `NOCTURNA_20_24` | ☐ Pendiente |
+| <span class="badge-stat">STAT</span> | **EMER_4** | CHIPANTAXI GUAÑA MARIANA (HC 521857) | BAJAR A AVERIGUAR FECHA DE BIOPSIA, YA ENTREGADO EL TRAMITE, AUN NO APROBADO POR RADIOLOGIA INTERVENCIONISTA | `NOCTURNA_20_24` | ☐ Pendiente |
+| <span class="badge-urgente">URGENTE</span> | **EMER_5** | CABEZAS ALMEIDA VICTOR MANUEL (HC 2067347) | PLACA ED PELVIS PENDIENTE REVISAR | `NOCTURNA_20_24` | ☐ Pendiente |
+| <span class="badge-urgente">URGENTE</span> | **INFECTO** | CARDENAS CORONEL CESAR WASHINGTON C (HC N/D) | REVALORACION POR NEUMOLOGIA | `NOCTURNA_20_24` | ☐ Pendiente |
+| <span class="badge-stat">STAT</span> | **INFECTOLOGIA 4D** | GUERRON CASARES VICTOR MISAEL C (HC 165405) | REPETIR ELECTROLITOS STAT + UREA, CREATININA | `NOCTURNA_20_24` | ☐ Pendiente |
+| <span class="badge-stat">STAT</span> | **INFECTOLOGIA 4 C** | ARAUJO FIALLOS FAUSTO RAMIRO (HC N/D) | HEMOCULTIVO X 2 STAT | `NOCTURNA_20_24` | ☐ Pendiente |
+| <span class="badge-urgente">URGENTE</span> | **INFECTOLOGIA 4 C** | ARAUJO FIALLOS FAUSTO RAMIRO (HC N/D) | L: HOY 21H00 ELECTROLITOS MAGNESIO | `NOCTURNA_20_24` | ☐ Pendiente |
+| <span class="badge-control">CONTROL</span> | **INFECTO 1B** | ANDRANGO SIMBAÑA GONZALO (HC 307712) | CONTROL DIARIO DE ELECTROLITOS | `NOCTURNA_20_24` | ☐ Pendiente |
+| <span class="badge-urgente">URGENTE</span> | **INFECTO 1B** | ANDRANGO SIMBAÑA GONZALO (HC 307712) | REVALORACION POR INFECTOLOGÍA | `NOCTURNA_20_24` | ☐ Pendiente |
+| <span class="badge-stat">STAT</span> | **INTERMEDIOS** | GOMEZ ESPINOZA JUSTO ANGEL . (HC N/D) | ELECTROLITOS STAT | `NOCTURNA_20_24` | ☐ Pendiente |
+| <span class="badge-control">CONTROL</span> | **INTERMEDIOS** | GOMEZ ESPINOZA JUSTO ANGEL . (HC N/D) | MAÑANA AM: ELECTROLITOS, UREA, CREATININA | `NOCTURNA_20_24` | ☐ Pendiente |
+| <span class="badge-stat">STAT</span> | **INTERMEDIOS** | GOMEZ ESPINOZA JUSTO ANGEL . (HC N/D) | HEMOCULTIVOS PENDIENTE RESULTADOS, /VERIFICAR SE HAYA ENVIADO MUESTRA | `NOCTURNA_20_24` | ☐ Pendiente |
+| <span class="badge-urgente">URGENTE</span> | **INTERMEDIOS** | GOMEZ ESPINOZA JUSTO ANGEL . (HC N/D) | REINTERCONSULTAR A TRAUMATOLOGÍA CON RESULTADOS DE RESONANCIA DE CODO | `NOCTURNA_20_24` | ☐ Pendiente |
+| <span class="badge-urgente">URGENTE</span> | **NEUMOLOGIA 10C** | C (HC 625308) | PENDIENTE INFORME DE TC S/C DE TÓRAX ABDOMEN Y PELVIS | `NOCTURNA_20_24` | ☐ Pendiente |
+| <span class="badge-control">CONTROL</span> | **NEUMOLOGÍA 8B** | RODRIGUEZ QUIÑONEZ FRANKLIN (HC 2087745) | CONTROL DIARIO DE ELECTROLITOS, BIOMETRÍA Y TIEMPOS DE COAGULACIÓN | `NOCTURNA_20_24` | ☐ Pendiente |
 
 
 ## Mapa Microbiológico y Aislamientos de Alerta
 
 | Cama | Paciente | Muestra | Microorganismo | Patrón / Resistencia | Terapia Sugerida / Sensible |
 |---|---|---|---|---|---|
-| **8** | OÑA TELLO JOSELYN CAROLINA | Urocultivo | *Proteus mirabilis* | **Resistente a Gentamicina, TMP/SMX, Ciprofloxacino** | Amikacina, Ceftriaxona, Cefazolina |
-| **9A** | ROSAS CORREA MARIA ESTHER | Líquido ascítico | *Pseudomonas aeruginosa* | **Resistente a Carbapenémicos (impermeabilidad)** | Colistina, Aminoglucósidos según MIC |
-| **11B** | PACHACAMA SUNTAXI FREDDY RODRIGO | Líquido Pleural | *Salmonella enterica ssp enterica* | **Sensible** | Ceftriaxona, Ciprofloxacino |
-| **INFECTO 1B** | ANDRANGO SIMBAÑA GONZALO | Hemocultivo | *Enterococcus faecalis* | **Sensible a Bencilpenicilina y Ampicilina** | Bencilpenicilina, Ampicilina |
-| **NEUMO GOMEZ** | GOMEZ ALMEIDA MARIO RENE | Urocultivo | *Proteus mirabilis* | **Productor de BLEE (Betalactamasas de espectro extendido)** | Carbapenémicos, Amikacina |
-| **ER-AB 1** | MOLINA MURILLO MARIA JOSE | Urocultivo | *Klebsiella pneumoniae* | **BLEE positivo** | Meropenem, Amikacina |
-| **ABREVIADOS CANTOS** | CANTOS AGUIRRE GUADALUPE ESPERANZA | Urocultivo | *Klebsiella pneumoniae* | **BLEE positivo** | Meropenem, Amikacina |
+| - | - | - | No se registran cultivos activos | - | - |
 
 
 ## Detalle Clínico por Áreas y Camas
 
 ::: {.panel-tabset}
 
-### Hospitalización (15 pacientes)
+### Hospitalización (17 pacientes)
 
 ```{=html}
 <div class="patient-card">
   <div class="patient-header">
-    <h4 style="margin:0; display:inline-block;"><strong>Cama 6A</strong>: RODRIGUEZ MORENO SEGUNDO EZEQUIEL</h4>
-    <span class="badge-control">CKD-EPI: 84 ml/min/1.73m2</span>
+    <h4 style="margin:0; display:inline-block;"><strong>Cama 10A</strong>: MOSQUERA SALVADOR PATRICIA ALEXANDRA C</h4>
   </div>
 ```
 
-- **HC:** `2013397` | **Cédula:** 1709777906 | **Edad:** 59 años | **Sexo:** M
-- **Antecedentes (APP):** Hipotiroidismo; Hipertensión arterial; Neumonía asociada a la comunidad (oct/2026); Artritis reumatoide en seguimiento por Reumatología IESS
+- **HC:** `1334681` | **Cédula:** 1706511530 | **Edad:** 63 años | **Sexo:** N/R
+- **Antecedentes (APP):** LITIASIS RENAL, YA HAN REALIZADO LITOTRICIA; COLELITIASIS DESDE ENERO 2026; OSTEOPOROSIS; PROLAPSO VESICAL DESDE HACE 4 MESES; INFECCION DE VIAS URINARIAS A REPETICIÓN
 
 **Diagnósticos Activos:**
 
-- Neumonía adquirida en la comunidad (CIE-10: J15.9)
-- Choque séptico de foco pulmonar superado (CIE-10: R57.2)
-- Insuficiencia renal aguda KDIGO C3 (CIE-10: N17.9)
-
-**Soporte y Vía:**
-- *Dieta:* Dieta general blanda
-- *Hidratación / Infusiones:* Dispositivo salinizado sin heparina
+- SEPSIS A DOBLE FOCO URINARIO E INTESTINAL
+- DC INFECCIÓN POR CLOSTRIDIUM DIFFICILE
+- LESIÓN RENAL AGUDA KDIGO III CKD EPI: 14 ML/MIN
+- TROMBOCITOPENIA POR SEPSIS
+- HIPONATREMIA HIPOOSMOLAR HIPOVOLEMICA /HIPOKALEMIA. /ACIDEMIA METABÓLICA
+- FALLO MULTIORGANICO RENAL, HEPÁTICO, COAGULACIÓN. APACHE 13 PUNTOS
 
 **Medicación Activa:**
 
-- Ampicilina / Sulbactam 3 g IV c/6 horas <span class="badge-atb">5/5</span>
-- Paracetamol 1 g VO c/8 horas
-- Omeprazol 40 mg IV cada día
-- Enoxaparina 60 mg SC cada día
-- Levotiroxina 50 mcg VO cada día 06:00
-- Tramadol 50 mg IV c/6 horas diluido lento
-- Hidrocortisona 150 mg IV cada día 08:00 AM
+- MEROPENEM 1 GRAMO IV CADA 8 HORAS (7) FI:05/11/2026 CIE: N390   
+- PARACETAMOL 1 GRAMO IV PRN   
+- OMEPRAZOL 20MG VO QD   
+- FUROSEMIDA 40MG IV 08H00 Y 20MG IV 18H00   
 
 **Pendientes:**
 
-- ☑ <span class="badge-stat">STAT</span> **[IMAGEN_PROCEDIMIENTO]** Electrocardiograma (EKG) STAT
-- ☑ <span class="badge-stat">STAT</span> **[LABORATORIO]** Gasometría arterial STAT + Electrolitos
-- ☐ <span class="badge-urgente">URGENTE</span> **[FARMACO_DOSIS]** Evaluar fin de ciclo de antibiótico (Día 5/5)
+- ☐ <span class="badge-urgente">URGENTE</span> **[IMAGEN_PROCEDIMIENTO]** UROTAC SIMPLE
+- ☐ <span class="badge-rutina">RUTINA</span> **[LABORATORIO]** RMN DE COLUMNA LUMBAR
+- ☐ <span class="badge-rutina">RUTINA</span> **[LABORATORIO]** ELECTROFORESIS DE PROTEINAS (TRAMITE DERIVACION)
+- ☐ <span class="badge-rutina">RUTINA</span> **[LABORATORIO]** PD RESULTADOS DE HEMOCULTIVOS
+- ☐ <span class="badge-urgente">URGENTE</span> **[LABORATORIO]** L: HOY BH UREA CREATININA ELECTROLITOS CALCIO IONICO (CONTEO MANUAL DE
+- ☐ <span class="badge-rutina">RUTINA</span> **[LABORATORIO]** PLAQUETAS,) DIMERO D,PERFIL LIPIDICO,PERFIL HEPATICO, LIPASA
+- ☐ <span class="badge-stat">STAT</span> **[IMAGEN_PROCEDIMIENTO]** EKG STAT
+- ☐ <span class="badge-rutina">RUTINA</span> **[LABORATORIO]** GSA PRN
+- ☐ <span class="badge-rutina">RUTINA</span> **[LABORATORIO]** ELECTROLITOS (GSA 16H26): K: 3.3 (DESCENSO EN RELACION AL SERICO MATUTINO DE
+- ☐ <span class="badge-rutina">RUTINA</span> **[LABORATORIO]** 3.99), NA: 136, CL: 107
+- ☐ <span class="badge-rutina">RUTINA</span> **[LABORATORIO]** HEMOCULTIVOS NEGATIVOS
 
 **Últimos Laboratorios:**
 
-- *2026-11-06 (BH y Química):* leucocitos: 2.52, hemoglobina: 10.4, hematocrito: 32.3, plaquetas: 84000, inr: 1.05, creatinina: 0.8
+- *2026-11-13 (Laboratorios / Gasometría):* resumen: - LITIASIS RENAL, YA HAN REALIZADO LITOTRICIA - COLELITIASIS DESDE ENERO 2026 - OSTEOPOROSIS - PROLAPSO VESICAL DESDE HACE 4 MESES - INFECCION DE VIAS URINARIAS A REPETICIÓN
 
 **Observaciones / Novedades:**
 
-> Urea 10% semisólido cutáneo tópico BID por 15 días en manos.
-> Laboratorios reumatología orden 34926920.
+> IC HEMATOLOGIA
+> IC CIRUGIA GENERAL
+> IC NEUMOLOGIA (INICIO DE FTR)
+> IC UROLOGIA
 ```{=html}
 </div>
 ```
@@ -166,436 +194,51 @@ format:
 ```{=html}
 <div class="patient-card">
   <div class="patient-header">
-    <h4 style="margin:0; display:inline-block;"><strong>Cama 6C</strong>: ALMEIDA JARAMILLO JUAN CARLOS</h4>
-    <span class="badge-alergia">⚠ ALERGIA: POLLO, ARÁNDANOS, AVENA</span>
-    <span class="badge-control">CKD-EPI: 103.42 ml/min/1.73m2</span>
+    <h4 style="margin:0; display:inline-block;"><strong>Cama 10B</strong>: REYES SANCHEZ INES MAGDALENA C</h4>
   </div>
 ```
 
-- **HC:** `2086486` | **Cédula:** 1705956132 | **Edad:** 65 años | **Sexo:** M
-- **Antecedentes (APP):** Hipertensión arterial (2004); Diabetes mellitus (2014); Cefalea; Dolor miembro superior derecho
+- **HC:** `8140` | **Cédula:** 1703334647 | **Edad:** 79 AÑOS | **Sexo:** N/R
+- **Antecedentes (APP):** HIPERTENSIÓN ARTERIAL; DIABETES MELLITUS 2; HIPOTIROIDISMO; HIPOACUSIA BILATERAL; GONARTROSIS BILATERAL; LINFOMA (GANGLIO LINFATICO NEGATIVO PARA MALIGNIDAD (0/1) FAMILIAR MENCIONA; QUE RECIBIO QUIMIO Y RADIOTERAPIA POR DICHO DIAGNOSTICO
 
 **Diagnósticos Activos:**
 
-- Adenopatías generalizadas en estudio
-- Hipertensión arterial
-- Diabetes mellitus tipo 2
-- Síndrome constitucional en estudio
-
-**Soporte y Vía:**
-- *Dieta:* Dieta hiposódica y para diabético fraccionada en 5 tomas (EXCLUIR POLLO, ARÁNDANO Y AVENA)
-- *Hidratación / Infusiones:* Dispositivo salinizado sin heparina
+- CHOQUE SÉPTICO DE FOCO PULMONAR SUPEREDARP
+- TROMBOSIS VENOSO MI DERECHO
+- FLUTTER AURICULAR DE CONDUCCIÓN VARIABLE
+- CAHVAS 5 , HAS BLED 3
+- PO 250.5, SAFI 233
 
 **Medicación Activa:**
 
-- Amlodipino 5 mg VO QD PM
-- Amitriptilina 25 mg VO QD PM
-- Insulina Glargina 8 UI SC cada mañana
-- Enoxaparina 40 mg SC cada día
+- ENOXAPARINA 60 MG SC CADA 12 HORAS   
+- BISOPROLOL 2.5 MG VO QD   
+- LEVOTIROXINA 50 MCG VIA ORAL LUNES A JUEVES   
+- LEVOTIROXINA 75 MCG VO VIERNES SABADO Y DOMINGO   
+- INSULINA CRISTALINA POR ESCAPES:   
+- 180 - 220 2 UI   
+- 220 - 260 4 UI   
+- 260 - 300 6 UI   
+- > 300 8 UI   
+- SI GLUCEMIA MENOR A 70, PASAR 200 ML DE DEXTROSA AL 10% Y REPETIR   
 
 **Pendientes:**
 
-- ☐ <span class="badge-urgente">URGENTE</span> **[IMAGEN_PROCEDIMIENTO]** Insistir reporte TAC cráneo, cuello, tórax, abdomen y pelvis
-- ☐ <span class="badge-rutina">RUTINA</span> **[IMAGEN_PROCEDIMIENTO]** Insistir ecografía de tiroides y EDA/Colonoscopia
-
-**Últimos Laboratorios:**
-
-- *2026-11-06 (BH y Bioquímica):* hemoglobina_glicosilada: 9.96, glucosa: 135, creatinina: 0.63, plaquetas: 255000
-
-**Observaciones / Novedades:**
-
-> Alerta estricta de alergia alimentaria a nutrición.
-```{=html}
-</div>
-```
-
-```{=html}
-<div class="patient-card">
-  <div class="patient-header">
-    <h4 style="margin:0; display:inline-block;"><strong>Cama 6D</strong>: LOPEZ PAZMINO RICARDO DARIO</h4>
-    <span class="badge-alergia">⚠ ALERGIA: PENICILINA</span>
-    <span class="badge-control">CKD-EPI: 95 ml/min/1.73m2</span>
-  </div>
-```
-
-- **HC:** `2199041` | **Cédula:** 1711223344 | **Edad:** 48 años | **Sexo:** M
-- **Antecedentes (APP):** Hipertensión arterial
-- **Quirúrgicos (AQX):** Apendicectomía
-
-**Diagnósticos Activos:**
-
-- Crisis hipertensiva tipo urgencia
-
-**Soporte y Vía:**
-- *Dieta:* Hiposódica estricta
-- *Hidratación / Infusiones:* Vía salinizada
-
-**Medicación Activa:**
-
-- Amlodipino 10 mg VO cada día
-
-**Pendientes:**
-
-- ☐ <span class="badge-stat">STAT</span> **[LABORATORIO]** Segunda curva de Troponina ultrasensible a las 22:00 + EKG (`22:00`)
+- ☐ <span class="badge-urgente">URGENTE</span> **[LABORATORIO]** E: RMN DE ENCEFALO AGENDAR HOY EN LA MAÑANA
+- ☐ <span class="badge-stat">STAT</span> **[IMAGEN_PROCEDIMIENTO]** EKG CADA DIA (STAT)
+- ☐ <span class="badge-urgente">URGENTE</span> **[LABORATORIO]** L: HOY BH UREA CREATININA ELECTROITOS CALCIO IONICO MAGNESIO DIMERO D
+- ☐ <span class="badge-rutina">RUTINA</span> **[LABORATORIO]** PCR PERFIL HEPATICO
+- ☐ <span class="badge-rutina">RUTINA</span> **[LABORATORIO]** GSA PRN
+- ☐ <span class="badge-rutina">RUTINA</span> **[LABORATORIO]** LABORATORIOS (17H02): ELEVACION AGUDA DE AZOADOS CON CR 1.99 (PREVIA 0.84) Y
+- ☐ <span class="badge-rutina">RUTINA</span> **[LABORATORIO]** UREA 185 (BUN 86). ELECTROLITOS CONSERVADOS (K 4.36, NA 141.9, MG 2.14, CA
+- ☐ <span class="badge-rutina">RUTINA</span> **[LABORATORIO]** IONICO 1.32). PERFIL INFECCIOSO EN DESCENSO (LEUCOCITOS 7.17, PCR 21.7). INR
+- ☐ <span class="badge-rutina">RUTINA</span> **[LABORATORIO]** 1.74
 
 **Observaciones / Novedades:**
 
-> Nuevo ingreso de guardia.
-```{=html}
-</div>
-```
-
-```{=html}
-<div class="patient-card">
-  <div class="patient-header">
-    <h4 style="margin:0; display:inline-block;"><strong>Cama 7</strong>: VINUEZA ROJAS ARTURO MIGUEL</h4>
-    <span class="badge-control">CKD-EPI: 35.99 ml/min/1.73m2 (Creatinina 1.78)</span>
-  </div>
-```
-
-- **HC:** `239902` | **Cédula:** N/R | **Edad:** 77 años | **Sexo:** M
-- **Antecedentes (APP):** Hipertensión arterial (30 años); Dislipidemia; Enfermedad renal crónica; Craneotomía con evacuación de hematoma subdural
-- **Quirúrgicos (AQX):** Craniectomía descompresiva (sept 2026)
-
-**Diagnósticos Activos:**
-
-- Traqueítis en portador de traqueóstomo
-- Hipertensión arterial
-- Enfermedad renal crónica estadio 3B (TFG CKD-EPI 31.84)
-- Infección de herida quirúrgica frontoparietal + empiema superado
-
-**Soporte y Vía:**
-- *Dieta:* Dieta enteral 300cc ART + Diben 900kcal/600cc por gastrostomía
-- *Hidratación / Infusiones:* O2 por cánula nasal para SatO2 > 85%
-
-**Medicación Activa:**
-
-- Levetiracetam 500 mg Gastrostomía c/12 horas
-- Enoxaparina 40 mg SC QD
-- Buscapina 1 tableta Gastrostomía c/8 horas
-
-**Pendientes:**
-
-- ☐ <span class="badge-control">CONTROL</span> **[LABORATORIO]** Control lunes de BH, Urea, Creatinina y Electrolitos (`05:00 AM`)
-- ☐ <span class="badge-urgente">URGENTE</span> **[CUIDADO_ENFERMERIA]** Aspiración de secreciones traqueales y curación por clínica de heridas
-
-**Últimos Laboratorios:**
-
-- *2026-11-02 (BH y Creatinina):* leucocitos: 7.99, hemoglobina: 12.4, creatinina: 1.78
-
-**Observaciones / Novedades:**
-
-> Gram de secreción traqueal reportó bacilos gramnegativos.
-```{=html}
-</div>
-```
-
-```{=html}
-<div class="patient-card">
-  <div class="patient-header">
-    <h4 style="margin:0; display:inline-block;"><strong>Cama 8</strong>: OÑA TELLO JOSELYN CAROLINA</h4>
-    <span class="badge-control">CKD-EPI: 70.4 ml/min/1.73m2</span>
-  </div>
-```
-
-- **HC:** `1719421` | **Cédula:** 1719421001 | **Edad:** 30 años | **Sexo:** F
-- **Antecedentes (APP):** Síndrome de Gardner; Artritis reumatoide CCP positivo; Poliposis adenomatosa; Colectomía total + ileostomía (2023)
-- **Quirúrgicos (AQX):** Colectomía total íleo-recto anastomosis
-
-**Diagnósticos Activos:**
-
-- Infección de partes blandas
-- Infección urinaria Tumbarello 5 puntos en resolución
-- Dolor crónico exacerbado
-- Proctorragia superada
-
-**Soporte y Vía:**
-- *Dieta:* Adecuada para ileostomía
-- *Hidratación / Infusiones:* Solución salina 0.9% 1000 ml a 20 ml/h
-
-**Medicación Activa:**
-
-- Oxacilina 2 g IV c/4 horas <span class="badge-atb">Día 4</span>
-- Prednisona 5 mg VO cada día
-- Carvedilol 12.5 mg VO c/12 horas
-
-**Pendientes:**
-
-- ☐ <span class="badge-urgente">URGENTE</span> **[INTERCONSULTA]** Verificar valoración y seguimiento por Comité de Bioética
-- ☐ <span class="badge-urgente">URGENTE</span> **[INTERCONSULTA]** Auditar indicaciones de Clínica del Dolor (Dra. Galiano) y Coloproctología
-
-**Últimos Laboratorios:**
-
-- *2026-11-06 (PCR y Hemograma):* pcr: 68.6, leucocitos: 9.82, hemoglobina: 10.7
-
-**Observaciones / Novedades:**
-
-> Seguimiento estricto de débito de ileostomía.
-```{=html}
-</div>
-```
-
-```{=html}
-<div class="patient-card">
-  <div class="patient-header">
-    <h4 style="margin:0; display:inline-block;"><strong>Cama 9A</strong>: ROSAS CORREA MARIA ESTHER</h4>
-    <span class="badge-control">CKD-EPI: 68 ml/min/1.73m2</span>
-  </div>
-```
-
-- **HC:** `124595` | **Cédula:** 0600433312 | **Edad:** 83 años | **Sexo:** F
-- **Antecedentes (APP):** Cardiopatía isquémica con 2 stents; Hipotiroidismo; Hemorragia vítrea
-- **Quirúrgicos (AQX):** Histerectomía; Colecistectomía; Safenectomía
-
-**Diagnósticos Activos:**
-
-- Cáncer de ovario con índice ROMA 97.9 (Alto riesgo)
-- Peritonitis bacteriana secundaria
-- Derrame pleural derecho resuelto
-
-**Soporte y Vía:**
-- *Dieta:* NPO prequirúrgico
-- *Hidratación / Infusiones:* Dextrosa 5% en SS 0.9% 1000 ml IV a 60 cc/h
-
-**Medicación Activa:**
-
-- Ampicilina 2 g IV c/4 horas <span class="badge-atb">Día 7</span>
-- Enoxaparina 60 mg SC QD
-
-**Pendientes:**
-
-- ☐ <span class="badge-stat">STAT</span> **[ADMINISTRATIVO_QX]** Verificar preparación quirúrgica y programación QX hoy (`STAT / 20:00`)
-- ☐ <span class="badge-rutina">RUTINA</span> **[LABORATORIO]** Pendiente resultado de citología de bloque celular e inmunohistoquímica
-
-**Últimos Laboratorios:**
-
-- *2026-11-07 (Gasometría y Química):* lactato: 1.2, sodio: 129.0, potasio: 4.2, creatinina: 0.68
-
-**Observaciones / Novedades:**
-
-> Cultivo líquido ascítico: Pseudomonas aeruginosa resistente a carbapenémicos.
-```{=html}
-</div>
-```
-
-```{=html}
-<div class="patient-card">
-  <div class="patient-header">
-    <h4 style="margin:0; display:inline-block;"><strong>Cama 9B</strong>: CARRERA AGUIRRE MARTHA GRACIELA</h4>
-    <span class="badge-control">CKD-EPI: 75 ml/min/1.73m2</span>
-  </div>
-```
-
-- **HC:** `2045964` | **Cédula:** 1702915719 | **Edad:** 88 años 2 meses | **Sexo:** F
-- **Antecedentes (APP):** Demencia no especificada; Hipertensión arterial; Pénfigo vulgar; Trastorno bipolar
-
-**Diagnósticos Activos:**
-
-- Trastorno deglutorio severo por demencia
-- Anemia moderada macrocítica (Hb 7.5)
-- Zona de presión en sacro en cicatrización
-- Hipernatremia severa hipovolémica superada
-
-**Soporte y Vía:**
-- *Dieta:* Dieta por SNG según indicación de Nutrición
-- *Hidratación / Infusiones:* Agua libre por SNG 200 ml c/8h
-
-**Medicación Activa:**
-
-- Ácido Valproico 250 mg tab VO (por SNG) BID por 10 días
-- Risperidona 5 gotas VO (por SNG) TID
-
-**Pendientes:**
-
-- ☐ <span class="badge-control">CONTROL</span> **[LABORATORIO]** CONTROL ESTRICTO DE ELECTROLITOS MAÑANA A LAS 05:00 AM (`05:00 AM`)
-- ☐ <span class="badge-urgente">URGENTE</span> **[CUIDADO_ENFERMERIA]** Verificar tolerancia a nutrición enteral y residuos gástricos
-
-**Últimos Laboratorios:**
-
-- *2026-11-08 (BH):* hemoglobina: 7.5, hematocrito: 22.7, leucocitos: 4.83
-
-**Observaciones / Novedades:**
-
-> Mantener cabecera a 45 grados por alto riesgo de aspiración.
-```{=html}
-</div>
-```
-
-```{=html}
-<div class="patient-card">
-  <div class="patient-header">
-    <h4 style="margin:0; display:inline-block;"><strong>Cama 9C</strong>: MORENO BARRIGA BLANCA ALICIA</h4>
-    <span class="badge-control">CKD-EPI: 55.2 ml/min/1.73m2</span>
-  </div>
-```
-
-- **HC:** `1734898` | **Cédula:** 0500728902 | **Edad:** 72 años | **Sexo:** F
-- **Antecedentes (APP):** ACV isquémico territorios múltiples; Insuficiencia cardíaca FEVI preservada 60%; Estenosis aórtica severa NYHA II; Síndrome nefrótico en estudio
-
-**Diagnósticos Activos:**
-
-- Insuficiencia cardíaca valvular descompensada
-- Síndrome nefrótico en estudio
-- Hipopotasemia severa recurrente (K 2.44)
-
-**Soporte y Vía:**
-- *Dieta:* Hiposódica estricta
-- *Hidratación / Infusiones:* Restricción hídrica
-
-**Medicación Activa:**
-
-- Citrato de Potasio 2 cápsulas VO c/8 horas
-- Furosemida 20 mg IV c/12 horas **[SUSPENDIDO]**
-- Atorvastatina 40 mg VO QD
-
-**Pendientes:**
-
-- ☐ <span class="badge-stat">STAT</span> **[LABORATORIO]** CONTROL DE ELECTROLITOS Y POTASIO SERICO STAT (`STAT / 21:00`)
-- ☐ <span class="badge-urgente">URGENTE</span> **[IMAGEN_PROCEDIMIENTO]** Pendiente informe de TAC simple de cráneo y UroTAC
-- ☐ <span class="badge-urgente">URGENTE</span> **[INTERCONSULTA]** Insistir derivación a IRM de Nefrología para perfil de glomerulopatías
-
-**Últimos Laboratorios:**
-
-- *2026-11-08 (Electrolitos):* potasio: 2.44, sodio: 142.9, cloro: 112, creatinina: 1.05
-
-**Observaciones / Novedades:**
-
-> Furosemida suspendida por hipokalemia grave recurrente.
-```{=html}
-</div>
-```
-
-```{=html}
-<div class="patient-card">
-  <div class="patient-header">
-    <h4 style="margin:0; display:inline-block;"><strong>Cama 9D</strong>: BARAHONA ALOBUELA DOLORES</h4>
-    <span class="badge-control">CKD-EPI: 78.14 ml/min/1.73m2</span>
-  </div>
-```
-
-- **HC:** `1021400` | **Cédula:** 1703630655 | **Edad:** 77 años | **Sexo:** F
-- **Antecedentes (APP):** Insuficiencia suprarrenal primaria; Hipertensión arterial; IAM lateral y diafragmático; Aneurisma cerebral
-- **Quirúrgicos (AQX):** Túnel carpiano derecho
-
-**Diagnósticos Activos:**
-
-- Insuficiencia respiratoria aguda
-- Neumonía grave en comunidad (CURB-65 3 puntos)
-- Insuficiencia suprarrenal primaria descompensada
-- DHE corregido
-
-**Soporte y Vía:**
-- *Dieta:* Blanda para diabético
-- *Hidratación / Infusiones:* Dextrosa en SS 0.9% 1000 ml a 40 ml/h
-
-**Medicación Activa:**
-
-- Ampicilina / Sulbactam 3 g IV c/8 horas <span class="badge-atb">5/5</span>
-- Claritromicina 500 mg IV c/12 horas <span class="badge-atb">5/5</span>
-- Hidrocortisona 50 mg IV c/8 horas <span class="badge-atb">Día 5</span>
-- Fludrocortisona 0.1 mg VO cada mañana <span class="badge-atb">Día 3</span>
-
-**Pendientes:**
-
-- ☐ <span class="badge-stat">STAT</span> **[IMAGEN_PROCEDIMIENTO]** RESONANCIA MAGNÉTICA SIMPLE Y CONTRASTADA DE ENCÉFALO (Orden 34934990) PENDIENTE REALIZAR (`STAT / Coordinar`)
-- ☐ <span class="badge-urgente">URGENTE</span> **[FARMACO_DOSIS]** Evaluar suspensión de Ampicilina/Sulbactam y Claritromicina al completar hoy 5/5 días
-- ☐ <span class="badge-rutina">RUTINA</span> **[INTERCONSULTA]** Reinterconsultar a Otorrinolaringología para test de deglución
-
-**Últimos Laboratorios:**
-
-- *2026-11-08 (Control Glucosa y Electrolitos):* glucosa: 83, sodio: 145.0, potasio: 3.53, cloro: 123
-
-**Observaciones / Novedades:**
-
-> Conjuntivitis mucopurulenta en tratamiento con Tobramicina/Dexametasona.
-```{=html}
-</div>
-```
-
-```{=html}
-<div class="patient-card">
-  <div class="patient-header">
-    <h4 style="margin:0; display:inline-block;"><strong>Cama 10A</strong>: HERRERA OBANDO JESUS RAQUEL</h4>
-    <span class="badge-control">CKD-EPI: 82.3 ml/min/1.73m2</span>
-  </div>
-```
-
-- **HC:** `797237` | **Cédula:** 1709863706 | **Edad:** 60 años | **Sexo:** F
-- **Antecedentes (APP):** Déficit de proteína C; Trombosis venosa profunda previa; EPID; Cardiopatía isquémica; ECV; Artritis reumatoidea
-
-**Diagnósticos Activos:**
-
-- Masa pulmonar en estudio a descartar neoplasia
-- Insuficiencia respiratoria aguda PAFI 60 mmHg (SDRA grave)
-- Trombosis venosa profunda poplítea, solear y gemelar izquierda
-- Lesión lítica de L4 (posible sarcoma paravertebral)
-
-**Soporte y Vía:**
-- *Dieta:* Blanda fraccionada
-- *Hidratación / Infusiones:* Solución salina 0.9% 1000 ml + 10 mEq KCl a 40 ml/h
-
-**Medicación Activa:**
-
-- Meropenem 1 g IV c/8 horas <span class="badge-atb">4/5</span>
-- Enoxaparina 60 mg SC c/12 horas (dosis terapéutica por TVP)
-- Morfina 20 mg en 98 ml SS 0.9% IV a 8 ml/h en infusión continua
-
-**Pendientes:**
-
-- ☐ <span class="badge-urgente">URGENTE</span> **[IMAGEN_PROCEDIMIENTO]** Insistir resultado de biopsia EBUS + crioterapia + biomolecular de lesión pulmonar (SOLCA)
-- ☐ <span class="badge-stat">STAT</span> **[LABORATORIO]** Rx de control evolutiva y gasometría de control por SDRA (`STAT / 21:00`)
-
-**Últimos Laboratorios:**
-
-- *2026-11-08 (BH y Plaquetas):* leucocitos: 13.78, hemoglobina: 9.5, plaquetas: 197000, neutrofilos: 11.38
-
-**Observaciones / Novedades:**
-
-> Infusión continua de morfina por dolor intenso de lesión lítica L4.
-```{=html}
-</div>
-```
-
-```{=html}
-<div class="patient-card">
-  <div class="patient-header">
-    <h4 style="margin:0; display:inline-block;"><strong>Cama 10B</strong>: REYES SANCHEZ INES MAGDALENA</h4>
-    <span class="badge-control">CKD-EPI: 42 ml/min/1.73m2</span>
-  </div>
-```
-
-- **HC:** `8140` | **Cédula:** 1703334647 | **Edad:** 79 años | **Sexo:** F
-- **Antecedentes (APP):** Hipertensión arterial; Diabetes mellitus tipo 2; Hipotiroidismo; Flutter auricular de conducción variable; Linfoma en remisión
-
-**Diagnósticos Activos:**
-
-- Choque séptico de foco pulmonar superado
-- Trombosis venosa profunda miembro inferior derecho
-- Flutter auricular de conducción variable
-
-**Soporte y Vía:**
-- *Dieta:* Dieta para diabético hiposódica
-- *Hidratación / Infusiones:* Cloruro de sodio 0.9% 1000 ml a 40 ml/h
-
-**Medicación Activa:**
-
-- Enoxaparina 60 mg SC c/12 horas
-- Bisoprolol 5 mg VO c/12 horas
-- Furosemida 20 mg IV c/12 horas
-
-**Pendientes:**
-
-- ☐ <span class="badge-stat">STAT</span> **[LABORATORIO]** TOMAR HEMOCULTIVOS X 2 EN CASO DE ALZA TÉRMICA (`STAT PRN FIEBRE`)
-- ☐ <span class="badge-urgente">URGENTE</span> **[IMAGEN_PROCEDIMIENTO]** Electrocardiograma STAT de control y diario por flutter auricular
-- ☐ <span class="badge-control">CONTROL</span> **[LABORATORIO]** Control de laboratorio 05:00 AM: Biometría, Creatinina, Urea, Electrolitos (`05:00 AM`)
-
-**Últimos Laboratorios:**
-
-- *2026-11-07 (Renal y Electrolitos):* creatinina: 1.01, urea: 118, potasio: 4.75, sodio: 142.3
-
-**Observaciones / Novedades:**
-
-> Interconsulta con Cardiología al alta.
+> IC NEUROLOGIA
+> IC CARDIOLOGIA
+> IC TRABAJO SOCIAL
 ```{=html}
 </div>
 ```
@@ -604,43 +247,50 @@ format:
 <div class="patient-card">
   <div class="patient-header">
     <h4 style="margin:0; display:inline-block;"><strong>Cama 10C</strong>: CHANGO GADVAY MARIA ADELAIDA</h4>
-    <span class="badge-control">CKD-EPI: 89.3 ml/min/1.73m2</span>
   </div>
 ```
 
-- **HC:** `1996362` | **Cédula:** 1706938626 | **Edad:** 65 años | **Sexo:** F
-- **Antecedentes (APP):** Artritis reumatoide (hace 14 años); Fibromialgia; Úlcera sacra grado I
+- **HC:** `1996362` | **Cédula:** N/R | **Edad:** 65 AÑOS | **Sexo:** N/R
+- **Antecedentes (APP):** ARTRITIS REUMATOIDE HACE 14 AÑOS; FIBROMIALGIA HACE 10 MESES
 
 **Diagnósticos Activos:**
 
-- Cuadriparesia en estudio relacionada a lesiones medulares
-- Artritis reumatoide descompensada (SDAI: 10)
-- Tromboembolia pulmonar superada
-
-**Soporte y Vía:**
-- *Dieta:* Blanda fraccionada
-- *Hidratación / Infusiones:* Solución salina 0.9% 1000 ml + 102 mEq NaCl a 40 ml/h
+- DIAGNOSTICOS ACTIVOS:
+- MIELITIS TRANSVERSA AUTOINMUNE / LESION INTRAMEDULAR C1 (EN RESOLUCION
+- PARCIAL)
+- ARTRITIS REUMATOIDE ACTIVA EN TRATAMIENTO CON INMUNOGLOBULINA
+- POLINEUROPATIA AXONAL SENSITIVO-MOTORA / ATROFIA MUSCULAR
+- HIPOPOTASEMIA MODERADA CRONICA / PROTEINURIA NO NEFROTICA
+- TROMBOEMBOLIA PULMONAR EN ESTUDIO BAJO ANTICOAGULACION
+- ULCERA POR PRESION SACRA GRADO I
 
 **Medicación Activa:**
 
-- Metilprednisolona 1 g en 250 ml SS 0.9% IV cada día (Pulso 2/5) <span class="badge-atb">2/5</span>
-- Sulfato de Magnesio 1 ampolla IV c/12 horas
-- Enoxaparina 80 mg SC c/12 horas
+- IV PASAR EN 4 HORAS   
+- ENOXAPARINA 80MG SC CADA 12 HORAS   
+- ESPIRONOLACTONA 50MG VO CADA DIA   
+- TRAMADOL 50MG + 50ML SS 0.9% IV CADA 12 HORAS   
+- METOCLOPRAMIDA 10MG IV ANTES DE TRAMADOL   
+- LACTULOSA 60 ML VO CADA DIA   
+- QUETIPINA 25MG VO HS (19H00)   
 
 **Pendientes:**
 
-- ☐ <span class="badge-stat">STAT</span> **[IMAGEN_PROCEDIMIENTO]** Pendiente resultados de RMN unión cráneo-cervical
-- ☐ <span class="badge-control">CONTROL</span> **[LABORATORIO]** Control de Electrolitos y Magnesio a las 18h00 / control nocturno (`18:00 / 22:00`)
-- ☐ <span class="badge-stat">STAT</span> **[CUIDADO_ENFERMERIA]** Manejo urgente de dolor a nivel genital de gran intensidad (`STAT`)
+- ☐ <span class="badge-urgente">URGENTE</span> **[LABORATORIO]** E: LABS: HBS, HBC, HEPATITIS C, VIH, QUANTIFERON PENDIENTE
+- ☐ <span class="badge-urgente">URGENTE</span> **[LABORATORIO]** L: HOY BH UREA CREATININA ELECTROLITOS DIMERO D MAGNESIO CALCIO IONICO
+- ☐ <span class="badge-rutina">RUTINA</span> **[INTERCONSULTA]** C: ORDENES DE REUMATOLOGIA (DIARIO)
+- ☐ <span class="badge-urgente">URGENTE</span> **[INTERCONSULTA]** IC FISIROTERAPIA MOTORA
+- ☐ <span class="badge-rutina">RUTINA</span> **[LABORATORIO]** O: NOVEDADES
 
 **Últimos Laboratorios:**
 
-- *2026-11-07 (Reactantes y Hemograma):* pcr: 45.9, leucocitos: 6.21, plaquetas: 523000, potasio: 2.81
+- *2026-11-13 (Laboratorios / Gasometría):* resumen: 2026/11/07 PCR CUANTITATIVO ULTRASENSIB..: 45.90 LEUCOCITOS (WBC 6.21 HEMOGLOBINA (HGB 12.2 HEMATOCRITO (HCT 37.9 PLAQUETAS 523.000 CLORO 105 POTASIO 2.81 SODIO 140.3 NITROGENO UREICO EN SUERO 10 UREA SUERO 21.8 CREATININA 0.36
 
 **Observaciones / Novedades:**
 
-> Presentó dolor a nivel genital de gran intensidad.
-> Staff médico convocado por déficit motor en progresión.
+> LABORATORIOS (13H58): K: 3.46 (EN FRANCA MEJORIA TRAS REPOSICION AM), MG: 1.77,
+> NA: 135.3, CL: 102. FUNCION RENAL CONSERVADA (CR 0.42, UREA 33.4). DIMERO D EN
+> DESCENSO (2.12 VS 6.44 PREVIO). LEUCOCITOS 6.73, HB 11.6
 ```{=html}
 </div>
 ```
@@ -648,42 +298,57 @@ format:
 ```{=html}
 <div class="patient-card">
   <div class="patient-header">
-    <h4 style="margin:0; display:inline-block;"><strong>Cama 11A</strong>: NICOLALDE CENTENO CESAR ENRIQUE</h4>
-    <span class="badge-control">CKD-EPI: 122.2 ml/min/1.73m2</span>
+    <h4 style="margin:0; display:inline-block;"><strong>Cama 10D</strong>: OÑA TELLO JOSELYN CAROLINA</h4>
   </div>
 ```
 
-- **HC:** `554153` | **Cédula:** 1715905293 | **Edad:** 40 años | **Sexo:** M
-- **Antecedentes (APP):** Síndrome de Down; Hipotiroidismo; Discapacidad intelectual 70%
+- **HC:** `1719421` | **Cédula:** N/R | **Edad:** 30 AÑOS | **Sexo:** N/R
+- **Antecedentes (APP):** ANTECEDENTES PATOLOGICOS PERSONALES; SINDROME DE GARDNER; ARTRITIS REUMATOIDE, POLIARTRITIS CCP POSITIVO (DG A LOS 22 AÑOS); POLIPOMATOSIS ADENOMATOSA FAMILIAR HACE 14 AÑOS; FISTULA ANAL; OBSTRUCCIÓN INTESTINAL PARCIAL; ANEMIA CRÓNICA; TRASTORNO ELECTROLÍTICO CRÓNICO
 
 **Diagnósticos Activos:**
 
-- Bicitopenia en estudio (Plaquetas 13.000)
-- Hipoglicemia refractaria
-- Sospecha de síndrome paraneoplásico
-- Infección de vías urinarias
-- Hepatopatía en estudio
-
-**Soporte y Vía:**
-- *Dieta:* Blanda para diabético con monitoreo estricto de glucosa
-- *Hidratación / Infusiones:* Dextrosa al 5% 1000 ml IV a 60 cc/h
+- INFECCIÓN O ABSCESO DE PARTES BLANDAS
+- INFECCIÓN VÍAS URINARIAS TUMBARELLO 5 PUNTOS EN RESOLUCIÓN
+- DOLOR CRÓNICO EXACERBADO
+- PROCTORRAGIA OAKLAND DE 20 PUNTOS
+- PROLONGACIÓN DE
+- TIEMPOS DE COAGULACIÓN **SUSPERADA**
+- ENFERMEDAD RENAL AGUDA SUPERADA *** SUPERADA**
+- REACCION AL ESTRES GRAVE Y TRASTORNOS DE ADAPTACIÓN
 
 **Medicación Activa:**
 
-- Enoxaparina 40 mg SC cada día **[SUSPENDIDO]**
+- CIPROFLOXACINO 500 MG VIA ORAL CADA 12 HORAS FI: 10/11/2026 D: 02   
+- AMIKACINA 1 GRAMO VIA ORAL QD STA Y MAÑANA FI: 11/11/2026 D: 02/2   
+- FLUCONAZOL 400 MG IV CADA DIA FI: 11/11/2026 D: 02/7   
+- OMEPRAZOL 40 MG IV CADA DIA   
+- PARACETAMOL 1 GR IV CADA 8 HORAS   
+- FITOMENADIONA 10 MG IV CADA DIA   
+- MORFINA 35 MG + 96 CC DE SOLUCION SALINA 0.9% INTRAVENOSO, PASAR A 4CC/HORA   
+- MORFINA 3.5 MG INTRAVENOSO EN ESTE MOMENTO Y CASO DE DOLOR SEVERO, MAXIMO 3   
+- RESCATES, REGISTRAR EN SISTEMA PARA AJUSTE DE DOSIS BASAL   
+- ONDANSETRON 8 MG INTRAVENOSO EN ESTE MOMENTO Y CADA 12 HORAS   
 
 **Pendientes:**
 
-- ☐ <span class="badge-stat">STAT</span> **[LABORATORIO]** Monitoreo horario de glicemia capilar por hipoglicemia refractaria (`Horario (c/2 horas)`)
-- ☐ <span class="badge-urgente">URGENTE</span> **[IMAGEN_PROCEDIMIENTO]** Pendiente agendar turno Body TAC y TAC con protocolo de páncreas (Orden 34926151)
+- ☐ <span class="badge-urgente">URGENTE</span> **[IMAGEN_PROCEDIMIENTO]** PENDIENTE INFORME ECOGRAFIA DE PARTES BLANDAS DE CABEZ Y TORAX POSTERIOR
+- ☐ <span class="badge-urgente">URGENTE</span> **[LABORATORIO]** PENDIENTE TOMOGRAFIA SIMPLE DE CABEZA, TORAX Y PELVIS
+- ☐ <span class="badge-rutina">RUTINA</span> **[LABORATORIO]** L: LABORATORIO CENTRAL 13/11/2026: BIOMETRIA, PCR, ELECTROLITOS,
+- ☐ <span class="badge-rutina">RUTINA</span> **[LABORATORIO]** UREA,CREATININA
+- ☐ <span class="badge-urgente">URGENTE</span> **[INTERCONSULTA]** VALORACIÓN Y SEGUIMIENTO POR EL COMITÉ DE BIOÉTICA
 
 **Últimos Laboratorios:**
 
-- *2026-11-05 (Recuento Plaquetario):* plaquetas: 13000, leucocitos: 4.37
+- *2026-11-13 (Laboratorios / Gasometría):* resumen: UROCULTIVO: MICROORGANISMO: Proteus mirabilis AMIKACINA SENSIBLE / 4 ug/mL CEFTRIAXONA SENSIBLE / <= 0,25 ug/mL Cefazolina (O) SENSIBLE / <= 4 ug/mL GENTAMICINA RESISTENTE / 8 ug/mL TRIMETOPRIMA/SULFA RESISTENTE / >= 320 ug/mL CIPROFLOXACINO RESISTENTE / >= 4 ug/mL Resultado: Positivo; Contaje de Colonias: > 100.000 UFC/ml;
 
 **Observaciones / Novedades:**
 
-> Alerta plaquetopenia severa confirmada por frotis.
+> C: INDICACIONES DE CLINICA DEL DOLOR
+> INDICACIONES DE COLOPROCTOLOGIA
+> INDICACIONES DE PSIQUIATRIA
+> INDICACIONES DE PSICOLOGIA
+> ORDENES DE CIRUGIA PLASTICA
+> O. VALORACION Y SEGUIMIENTO POR EL COMITE DE BIOETICA
 ```{=html}
 </div>
 ```
@@ -691,41 +356,102 @@ format:
 ```{=html}
 <div class="patient-card">
   <div class="patient-header">
-    <h4 style="margin:0; display:inline-block;"><strong>Cama 11B</strong>: PACHACAMA SUNTAXI FREDDY RODRIGO</h4>
-    <span class="badge-control">CKD-EPI: 75 ml/min/1.73m2</span>
+    <h4 style="margin:0; display:inline-block;"><strong>Cama 11A</strong>: YELA DÍAS NELSON ARNULFO</h4>
   </div>
 ```
 
-- **HC:** `20CELI84974` | **Cédula:** 1713637401 | **Edad:** 50 años | **Sexo:** M
-- **Antecedentes (APP):** Lupus eritematoso sistémico (dx 2022); Anemia moderada microcítica; TEP previo; Sepsis por Salmonella superada
+- **HC:** `641333` | **Cédula:** 1705250726 | **Edad:** N/D | **Sexo:** N/R
+- **Antecedentes (APP):** ANTECEDENTES PATOLÓGICOS PERSONALES:; ENFERMEDAD RENAL CRÓNICA ESTADIO 5 SECUNDARIA A NEFROPATÍA DIABÉTICA EN HEMODIÁLISIS TRISEMANAL (MARTES, JUEVES Y SÁBADO) NO OLIGÚRICO; INFECCIÓN DE VÍAS URINARIAS NOSOCOMIAL POR KLEBSIELLA PNEUMONIAE KPC/ENTEROCOCCUS FAECALIS SUPERADA; DIABETES MELLITUS TIPO 2; DISLIPIDEMIA; HIPERTENSIÓN ARTERIAL SISTÉMICA; TAQUIARRITMIA CARDÍACA TIPO FIBRILACIÓN AURICULAR; HIPERPLASIA E HIPERTROFIA PROSTÁTICA BENIGNA
 
 **Diagnósticos Activos:**
 
-- Lupus eritematoso sistémico actividad alta (SLEDAI 2K: 10 puntos)
-- Nefritis lúpica clase IV probable
-- Derrame pleural loculado
-
-**Soporte y Vía:**
-- *Dieta:* Blanda normoproteica
-- *Hidratación / Infusiones:* Vía salinizada
+- DIAGNÓSTICOS ACTIVOS:
+- NEUMONÍA ADQUIRIDA EN LA COMUNIDAD EN RESOLUCIÓN (CIE-10: J18.9)
+- ENFERMEDAD RENAL CRÓNICA ESTADIO 5 EN HEMODIÁLISIS (CKD-EPI: 13.14 ML/MIN) (CIE-10: N18.5)
+- DIABETES MELLITUS TIPO 2 (CIE-10: E11.9)
+- HIPERTENSIÓN ARTERIAL (CIE-10: I10)
 
 **Medicación Activa:**
 
-- Ceftriaxona 2 g IV cada día <span class="badge-atb">Día 24</span>
-- Enoxaparina 60 mg SC c/12 horas
-- Cotrimoxazol 800/160 mg VO Martes, Jueves, Sábado a las 14:00
+- A PASAR 40ML/HORA   
+- CEFTRIAXOONE 2 GRAMOS IV CADA DIA (1/3) FI: 12/11/2026 A419   
+- HEPARINA SODICA 5000UI SC CADA 12 HORAS   
+- LOSARTAN 100 MG VO CADA DIA   
+- AMLODIPINA 10 MG VO CADA DIA   
+- CARVEDILOL 6.25 MG VO CADA DIA   
+- INSULINA NPH 32 UI SC AM   
+- INSULINA NPH 14 UI SC PM   
+- 180-230 2UI   
+- 231-280 3UI   
 
 **Pendientes:**
 
-- ☐ <span class="badge-stat">STAT</span> **[ADMINISTRATIVO_QX]** Preparación para broncoscopia y colocación de drenaje torácico MAÑANA (`STAT / NPO 24:00`)
-
-**Últimos Laboratorios:**
-
-- *2026-11-01 (Control):* pcr: 29.2, leucocitos: 7.0, plaquetas: 300000, creatinina: 0.58
+- ☐ <span class="badge-urgente">URGENTE</span> **[IMAGEN_PROCEDIMIENTO]** E: PD INFORME DE TAC DE TORAX
+- ☐ <span class="badge-stat">STAT</span> **[LABORATORIO]** GSA STAT
+- ☐ <span class="badge-urgente">URGENTE</span> **[LABORATORIO]** L: HOY BH UREA CREATININA ELECTROLITOS PCR PERFIL LIPIDICO HBA1C TSH
+- ☐ <span class="badge-rutina">RUTINA</span> **[LABORATORIO]** CALCIO IONICO
+- ☐ <span class="badge-urgente">URGENTE</span> **[IMAGEN_PROCEDIMIENTO]** LABORATORIOS (17H00): DESTACA MEJORIA DE AZOADOS POST-DIÁLISIS (UREA 67.8, CR
+- ☐ <span class="badge-rutina">RUTINA</span> **[LABORATORIO]** 3.90). SODIO EN 134.0. PERSISTEN LEUCOCITOSIS (14.03) Y ANEMIA (HB 9.0)
 
 **Observaciones / Novedades:**
 
-> Cultivo de líquido pleural: Salmonella enterica ssp enterica sensible a ceftriaxona.
+> C: IC CENTRO DE HEMODIALISIS
+> IC NEUMOLOGIA (INICIO DE FTR)
+```{=html}
+</div>
+```
+
+```{=html}
+<div class="patient-card">
+  <div class="patient-header">
+    <h4 style="margin:0; display:inline-block;"><strong>Cama 11B</strong>: PACHACAMA SUNTAXI FREDDY RODRIGO C</h4>
+  </div>
+```
+
+- **HC:** `20` | **Cédula:** 1713637401 | **Edad:** N/D | **Sexo:** N/R
+- **Antecedentes (APP):** LUPUS ERITEMATOSO SISTEMICO DIAGNOSTICO EN EL 2022; ANEMIA MODERADA MICROCITICA HIPOCROMICA; TROMBOEMBOLIA PULMONAR, ANGIO TOMOGRAFIA TORAX 12/09/2026; SEPSIS POR BACTERIEMIA POR SALMONELLA SUPERADO 10/2026; NEFRITIS LUPICA (POR CLINICA PROBABLE CLASE IV, SLEDAI 2K: 24 ACTIVIDAD; SEVERA); PROTEINURIA SUB NEFROTICA
+
+**Diagnósticos Activos:**
+
+- LUPUS ERITEMATOSO SISTEMICO SLEDAI 2K 10 PUNTOS ACTIVIDAD ALTA
+- NEFRITIS LÚPICA
+- DERRAME PLEURAL LOCULADO
+- ANEMIA MODERADA MICROCÍTICA HIPOCRÓMICA
+
+**Medicación Activa:**
+
+- CEFTRIAXONA A 2 G IV QD FI: 16/10/2026 D: 27 CIE 10 B99   
+- PARACETAMOL 1 GR IV CADA 8 HORAS   
+- MORFINA 4 MG IV EN LA TARDE, DESPUES DE ALMUERZO   
+- ENOXAPARINA 60 MG SC CADA 12 HORAS   
+- OMEPRAZOL 40 MG INTRAVENOSO CADA DIA   
+- CARBONATO DE CALCIO SOLIDO ORAL 500 MG VO QD 11 AM   
+- COTRIMOXAZOL SOLIDO ORAL 800/160 MG LOS DIAS MARTES JUEVES SABADO A LAS 2   
+- GABAPENTINA SOLIDO ORAL 300 MG VO QD A LAS 9 PM   
+- TRAMADOL 100 MG INTRAVENOSO CADA 8 HORAS   
+- METOCLOPRAMIDA 10 MG INTRAVENOSO CADA 8 HORAS   
+
+**Pendientes:**
+
+- ☐ <span class="badge-rutina">RUTINA</span> **[INTERCONSULTA]** INDICACIONES DE REUMATOLOGÍA
+- ☐ <span class="badge-rutina">RUTINA</span> **[LABORATORIO]** L: BIOMETRIA, ELECTROLITOS, FUNCION RENAL 12/11/2026
+- ☐ <span class="badge-rutina">RUTINA</span> **[INTERCONSULTA]** BRONCOSCOPIA:10-11-2026
+- ☐ <span class="badge-rutina">RUTINA</span> **[LABORATORIO]** INFILTRACION GRADO II DE CARINA SECUNDARIA ENTRE LOBULO SUPERIOR E INFERIOR
+- ☐ <span class="badge-rutina">RUTINA</span> **[LABORATORIO]** IZQUIERDO
+- ☐ <span class="badge-rutina">RUTINA</span> **[LABORATORIO]** TRAQUEOBRONQUITIS LEVE NO PURULENTA
+
+**Últimos Laboratorios:**
+
+- *2026-11-13 (Laboratorios / Gasometría):* resumen: CULTIVO DE LIQ. PLEURAL: MICROORGANISMO: SALMONELLA ENTERICA SSP ENTÉRICA . SENSIBLE A CEFTRIAXONA . LABORATORIOS RECIENTES: HB EN DESCENSO (10.7 G/DL), LEUCOCITOS NORMALES (8.67), FUNCION RENAL CONSERVADA (CR 0.58), ELECTROLITOS EN RANGO (K 3.5). PCR EN DESCENSO CLARO (17.00 PREVIA).
+
+**Observaciones / Novedades:**
+
+> INMUNOLÓGICOS LABORATORIO ZURITA Y ZURITA 23-09-2026
+> ANTICUERPOS ANTI-PEPTIDO CITRULINADO (ANTICCP): INFERIOR A 0,50 U/ML-NEGATIVO
+> ANTICUERPOS ANTI-SM (SMITH): INFERIOR A 3,3 CU - NEGATIVO
+> ANTICUERPOS ANTI-CARDIOLIPINA IGM: 2,10 CU - NEGATIVO
+> ANTICUERPOS ANTI-CARDIOLIPINA IGG: 9,50 CU - NEGATIVO
+> ANTICUERPOS ANTI-BETA2 GLICOPROTEINA 1 IGM: INFERIOR A 1,1 CU - NEGATIVO
 ```{=html}
 </div>
 ```
@@ -734,83 +460,843 @@ format:
 <div class="patient-card">
   <div class="patient-header">
     <h4 style="margin:0; display:inline-block;"><strong>Cama 12A</strong>: CALDERON ALMEIDA SIMON BOLIVAR</h4>
-    <span class="badge-control">CKD-EPI: Estadío 5 (Hemodiálisis M-J-S)</span>
   </div>
 ```
 
-- **HC:** `2007245` | **Cédula:** 0601406994 | **Edad:** 68 años | **Sexo:** M
-- **Antecedentes (APP):** Enfermedad renal crónica estadio 5 en hemodiálisis trisemanal; Diabetes mellitus tipo 2; Fibrilación auricular
-- **Quirúrgicos (AQX):** Catéter tunelizado yugular derecho
+- **HC:** `2007245` | **Cédula:** 0601406994 | **Edad:** 68 AÑOS | **Sexo:** N/R
+- **Antecedentes (APP):** ANTECEDENTES PERSONALES:; ARRITMIA CARDIACA; PORTADOR DE MARCAPASO; ACCIDENTE CEREBROVASCULAR ISQUÉMICO; ANTECEDENTES; APENDICECTOMIA; COLECISTECTOMIA
 
 **Diagnósticos Activos:**
 
-- Fiebre de origen no determinado en hemodiálisis
-- Arritmia cardíaca
-- Sospecha de bacteriemia asociada a catéter
-
-**Soporte y Vía:**
-- *Dieta:* Dieta para paciente renal en hemodiálisis
-- *Hidratación / Infusiones:* Restricción hídrica estricta (no oligúrico)
+- DIAGNÓSTICOS
+- 1.- ENDOCARDITIS ASOCIADA A CATETER
+- 2.- ARRITMIA CARDIACA/MARCAPASO DC ENDOCARDITIS ASOCIADA A DISPOSITIVO
+- PASIVOS
+- 1.- HERPES LABIAL
+- NO ALERGIAS
 
 **Medicación Activa:**
 
-- Paracetamol 1 g IV PRN fiebre o dolor hasta c/8h
+- CEFTRIAXONE 2 G IV QD CIE 10:I 339 FI:11-XI-2026 0/28   
+- VANCOMICINA 1 G IV C/12H CIE 10:I 339 FI:12-XI-2026 1/28   
+- PARACETAMOL 1 G IV PRN HASTA C/8H (FIEBRE O DOLOR)   
+- RIBAROXABAN 20 MG P.O. QD 08H00   
 
 **Pendientes:**
 
-- ☐ <span class="badge-stat">STAT</span> **[LABORATORIO]** TOMAR HEMOCULTIVOS X 2 ANTE PICO FEBRIL + Laboratorio central de proteínas y perfil hepático (`STAT PRN`)
-- ☐ <span class="badge-urgente">URGENTE</span> **[IMAGEN_PROCEDIMIENTO]** Coordinar Body TAC para búsqueda de foco infeccioso primario
+- ☐ <span class="badge-urgente">URGENTE</span> **[IMAGEN_PROCEDIMIENTO]** E: ECOCARDIOGRAMA TRANSTORACICO JUEVES 12H00
+- ☐ <span class="badge-urgente">URGENTE</span> **[LABORATORIO]** L: PENDIENTE LAB CENTRAL
+- ☐ <span class="badge-rutina">RUTINA</span> **[INTERCONSULTA]** ALTA POR MEDICINA INTERNA Y PASA A CARDIOLOGIA
+- ☐ <span class="badge-urgente">URGENTE</span> **[INTERCONSULTA]** SE REALIZA IC A ODONTOLOGIA PENDIENTE VALORACION
 
 **Últimos Laboratorios:**
 
-- *2026-11-09 (Infeccioso y Hematológico):* leucocitos: 17.02, neutrofilos: 14.96, pcr: 53.3, procalcitonina: 0.97, inr: 1.89
+- *2026-11-13 (Laboratorios / Gasometría):* resumen: 2026/11/12 Leucocitos (WBC): 5.48 Hemoglobina (HGB): 15.3 Hematocrito (HCT): 47.0 Volumen corp. medio (MCV): 92.40 Conc. media hemog. (MCH): 30.0 Conc. corp. media (MCHC) de hemo: 32.6 Volumen Medio Plaquetario (MPV): 10.7 Monocitos: 0.48 Eosinófilos: 0.08 Linfocitos: 1.53 Neutrofilos: 3.32 Basófilos: 0.030 Plaquetas: 197.000 Recuento de globulos r
 
 **Observaciones / Novedades:**
 
-> Leucocitosis de 17.020 con PCR 53.30.
+> O: REVALORACION POR CARDIOLOGIA
+> IC ODONTOLOGIA
 ```{=html}
 </div>
 ```
 
-### Periféricos (6 pacientes)
+```{=html}
+<div class="patient-card">
+  <div class="patient-header">
+    <h4 style="margin:0; display:inline-block;"><strong>Cama 13B</strong>: CANTOS AGUIRRE GUADALUPE ESPERANZA C</h4>
+  </div>
+```
+
+- **HC:** `140019` | **Cédula:** 1703701944 | **Edad:** 73 AÑOS | **Sexo:** N/R
+- **Antecedentes (APP):** ANTECEDENTES PATOLOGICOS PERSONALES; HIPERTENSION ESENCIAL DX A LOS 40 AÑOS; INFECCION DE VIAS URINAS RECURRENTES; TRASTONO DE ANSIEDAD- INSOMNIO
+
+**Diagnósticos Activos:**
+
+- DIAGNÓSTICOS ACTIVOS:
+- CRISIS CONVULSIVA EN ESTUDIO
+- INFECCION DE VIAS URINARIAS K. PNEUMONIAE SENSIBLE
+- HIPONATREMIA SUPERADA
+- HIPOKALEMIA MODERADA
+
+**Medicación Activa:**
+
+- CEFTRIAXONA 2 GR INTRAVENOSO CADA DIA D5/7 FI 09/11/2026, CIE-10:   
+- PARACETAMOL 1 GRAMO INTRAVENOSO POR RAZONES NECESARIAS   
+- OMEPRAZOL 20 MG VIA ORAL CADA DIA   
+- ENOXAPARINA 40 MG SC CADA DIA   
+- ACIDO VALPROICO 500 MG VIA ORAL CADA 12 HORAS   
+- LOSARTAN 100 MG VIA ORAL CADA DIA AM   
+- AMLODIPINO 10 MG VIA ORAL CADA DIA PM   
+- CARVEDILOL 12.5 MG VIA ORAL CADA 12 HORAS   
+- GABAPENTINA 300 MG VIA ORAL CADA DIA 18:00   
+- MIDAZOLAM 2.5 MG INTRAVENOSO PREVIO A SEDACION   
+
+**Pendientes:**
+
+- ☐ <span class="badge-rutina">RUTINA</span> **[LABORATORIO]** E: RESONANCIA MAGNETICA SIMPLE Y CONTRASTADA DE ENCEFALO EL DIA DOMINGO CON SEDACION
+- ☐ <span class="badge-rutina">RUTINA</span> **[LABORATORIO]** ELECTROENCEFALOGRAMA
+- ☐ <span class="badge-rutina">RUTINA</span> **[LABORATORIO]** L: NO
+
+**Observaciones / Novedades:**
+
+> INDICACIONES DE NEUROLOGIA
+```{=html}
+</div>
+```
+
+```{=html}
+<div class="patient-card">
+  <div class="patient-header">
+    <h4 style="margin:0; display:inline-block;"><strong>Cama 6A</strong>: RODRIGUEZ MORENO SEGUNDO EZEQUIEL</h4>
+  </div>
+```
+
+- **HC:** `2013397` | **Cédula:** 1709777906 | **Edad:** 59 AÑO | **Sexo:** N/R
+- **Antecedentes (APP):** HIPOTIROIDISMO; HIPERTENSIÓN ARTERIAL; NEUMONIA ASOCIADA A LA COMUNIDAD FINALES DE OCTUBRE/2026, ENVIADO CON ANTIBIOTICOTERAPIA VIA ORAL + INHALADORES; HIPERTENSIÓN ARTERIAL; ARTRITIS REUMATOIDE EN SEGUIMIENTO POR REUMATOLOGÍA IESS DISPENSARIO; EN REVALORACIÓN AL MOMENTO; NEUMONIA HACE DOS AÑOS
+
+**Diagnósticos Activos:**
+
+- INSUFICIENCIA RESPIRATORIA
+- NEUMONIA ADQUIRIDA EN LA COMUNIDAD. CIE 10: J159 SUPERADA
+- CHOQUE SÉPTICO DE FOCO PULMONAR SUPERADO CIE 10: R572
+- LESIÓN RENAL AGUDA KDIGO C3 CIE-10: N179 SUPERADO
+
+**Medicación Activa:**
+
+- PARACETAMOL 1 GRAMO VIA ORAL CADA 8 HORAS   
+- OMEPRAZOL 40 MILIGRAMOS INTRAVENOSO CADA DIA   
+- ENOXAPARINA 60 MG APLICAR SUBCUTANEO, CADA DIA   
+- LEVOTIROXINA 50 MICROGRAMO VIA ORAL CADA DIA 06:00   
+- TRAMADOL 50 MILIGRAMOS INTRAVENOSO POR RAZONES NECESARIAS   
+- METOCLOPRAMIDA 10 MILIGRAMOS INTRAVENOSO POR RAZONES NECESARIAS   
+- HIDROCORTISONA 150 MG IV QD 8 AM   
+- TRI-K 10 ML DILUIR EN MEDIO VASO DE JUGO DE NARANJA VO CADA 8 HORAS (D3/3)   
+- ENALAPRIL 10 MILIGRAMO VIA ORAL CADA DIA   
+- PREDNISONA 20 MILIGRAMO CADA DIA ***SUSPENDE HACE 3 DIAS***   
+
+**Pendientes:**
+
+- ☐ <span class="badge-urgente">URGENTE</span> **[LABORATORIO]** PENDIENTE EXÁMENES GENERADOS EL 12/11/2026
+- ☐ <span class="badge-rutina">RUTINA</span> **[INTERCONSULTA]** INDICACIONES DE REUMATOLOGÍA
+- ☐ <span class="badge-urgente">URGENTE</span> **[IMAGEN_PROCEDIMIENTO]** PENDIENTE TAC SIMPLE DE TÓRAX
+- ☐ <span class="badge-rutina">RUTINA</span> **[LABORATORIO]** C: COMUNICAR
+- ☐ <span class="badge-urgente">URGENTE</span> **[INTERCONSULTA]** VALORACIÓN POR NEUMOLOGÍA
+- ☐ <span class="badge-rutina">RUTINA</span> **[LABORATORIO]** INICIO DE OXIGENO DOMICILIARIO
+- ☐ <span class="badge-rutina">RUTINA</span> **[INTERCONSULTA]** REUMATOLOGÍA
+- ☐ <span class="badge-rutina">RUTINA</span> **[INTERCONSULTA]** INDICACIONES DE DERMATOLOGÍA
+- ☐ <span class="badge-rutina">RUTINA</span> **[LABORATORIO]** UREA 10% SEMISOLIDO CUTANEO APLICAR TOPICO BID POR 15 DIAS EN MANOS
+- ☐ <span class="badge-control">CONTROL</span> **[LABORATORIO]** PROXIMO CONTROL: 06/11/2026
+
+**Últimos Laboratorios:**
+
+- *2026-11-13 (Laboratorios / Gasometría):* resumen: 10/11/2026 ACIDO LACTICO.: 1.0 BE.: 5.5 Ca: 1.1 Cl: 100.0 COHb: 1.9 Glu: 130.0 HCO3: 28.8 Hct: 33.7 K.: 3.9 MetHb.: 0.2 Na.: 137.0 O2Hb: 61.8 O2SAT.: 63.1 PCO2.: 37.6 PHS: 7.493 PO2: 32.6 TCO2.: 30.0 Leucocitos (WBC)..: 4.98 Hemoglobina (HGB): 10.6 Hematocrito (HCT).: 33.0 Volumen corp. medio (MCV).: 85.40 Conc.media hemog.(MCH)..........: 27.4 Con
+
+**Observaciones / Novedades:**
+
+> LABORATORIOS SOLICITADOS POR REUMATOLOGIA:
+> FACTOR REUMATOIDEO..............: 13.1
+> C3..............................: 0.85
+> C4..............................: 0.07
+> ANTICOAGULANTE LUPICO...........: 1.08
+> EXAMENES DE LABORATORIO POR SERVICIO BASE: FACTOR REUMATOIDE, ANTICOAGULANTE
+```{=html}
+</div>
+```
+
+```{=html}
+<div class="patient-card">
+  <div class="patient-header">
+    <h4 style="margin:0; display:inline-block;"><strong>Cama 6C</strong>: ALMEIDA JARAMILLO JUAN CARLOS C</h4>
+  </div>
+```
+
+- **HC:** `2086486` | **Cédula:** 1705956132 | **Edad:** 65 años | **Sexo:** N/R
+- **Antecedentes (APP):** ANTECEDENTES PATOLÓGICOS PERSONALES:; HIPERTENSIÓN ARTERIAL DIAGNOSTICADA EN EL 2004; DIABETES MELLITUS DIAGNOSTICADA EN EL 2014; CEFALEA DESDE EL 2020; DOLOR EN MIEMBRO SUPERIOR DERECHO DESDE HACE 3 MESES
+
+**Diagnósticos Activos:**
+
+- ADENOPATÍAS GENERALIZADAS (CERVICALES, AXILARES, INGUINALES)
+- HIPERTENSIÓN ARTERIAL
+- DIABETES MELLITUS
+- SINDROME CONSTITUCIONAL
+
+**Medicación Activa:**
+
+- AMLODIPINO 5 MG VO QD PM   
+- METFORMINA 850 MG VO TID * SUSPENDER *   
+- AMITRIPTILINA 25 MG VO QD PM   
+- TRAMADOL 10 GOTAS VO BID   
+- PARACETAMOL 1 GR VIA ORAL CADA 8 HORAS   
+- ENOXAPARINA 40 MG SC CADA DIA   
+- INSULINA NPH 12 UI SC AM Y 6 I SC PM   
+- 180 - 230 MG/DL: 2 UI SUBCUTANEO   
+- 231 - 280 MG/DL: 4 UI SUBCUTANEO   
+- 281 - 330 MG/DL: 6 UI SUBCUTANEO   
+
+**Pendientes:**
+
+- ☐ <span class="badge-rutina">RUTINA</span> **[LABORATORIO]** E: EXAMENES Y PROCEDIMIENTOS:
+- ☐ <span class="badge-urgente">URGENTE</span> **[IMAGEN_PROCEDIMIENTO]** TAC SIMPLE DE CRÁNEO PENDIENTE
+- ☐ <span class="badge-urgente">URGENTE</span> **[LABORATORIO]** PENDIENTE REALIZACIÓN
+- ☐ <span class="badge-rutina">RUTINA</span> **[LABORATORIO]** RMN SIMPLE DE COLUMNA CERVICAL MADRUGADA DEL 13 DE NOVIEMBRE
+- ☐ <span class="badge-urgente">URGENTE</span> **[LABORATORIO]** PAAF DE GANGLIO CERVICAL (IMAGEN) PENDIENTE REALIZACIÓN
+- ☐ <span class="badge-rutina">RUTINA</span> **[INTERCONSULTA]** INDICACIONES DE CIRUGÍA ONCOLÓGICA
+- ☐ <span class="badge-rutina">RUTINA</span> **[LABORATORIO]** 2026/11/11 12:04 ENDOSCOPIA
+- ☐ <span class="badge-rutina">RUTINA</span> **[LABORATORIO]** DIAGNOSTICO
+- ☐ <span class="badge-rutina">RUTINA</span> **[LABORATORIO]** LESION DE ASPECTO PAPILOMATOSO EN ESOFAGO MEDIO RESECADO
+- ☐ <span class="badge-rutina">RUTINA</span> **[LABORATORIO]** GASTROPATIA ERITEMATOSA LEVE DE ANTRO
+- ☐ <span class="badge-rutina">RUTINA</span> **[LABORATORIO]** CICATRIZ LINEAL DE ULCERA PREVIA EN CUERPO SAKITA MIWA H2
+- ☐ <span class="badge-rutina">RUTINA</span> **[LABORATORIO]** ESTUDIO NEGATIVO PARA LESIONES NEOPLASICAS
+
+**Últimos Laboratorios:**
+
+- *2026-11-13 (Laboratorios / Gasometría):* resumen: 2026/11/09 TSH.: 1.30 INR.: 1.14 TIEMPO DE PROTROMBINA (TP).: 12.4 TIEMPO DE TROMBOPLASTINA (TTP)..: 28.3 Leucocitos (WBC).: 5.67 Hemoglobina (HGB).: 16.0 Hematocrito (HCT).: 47.9 Eosinófilos %.: 2.7 Linfocitos %.: 36.6 Neutrofilos %.: 54.1 COLESTEROL HDL: 32.10 COLESTEROL LDL: 104.70 GLUCOSA.: 98 CLORO: 106 POTASIO: 3.84 SODIO: 138.2 CALCIO IONICO
+```{=html}
+</div>
+```
+
+```{=html}
+<div class="patient-card">
+  <div class="patient-header">
+    <h4 style="margin:0; display:inline-block;"><strong>Cama 6D</strong>: FARINANGO ANDRADE JUAN MANUEL</h4>
+  </div>
+```
+
+- **HC:** `N/D` | **Cédula:** N/R | **Edad:** 88 AÑOS | **Sexo:** N/R
+- **Antecedentes (APP):** HIPOTIROIDISMO; DIABETES TIPO 2; HIPERPLASIA PROSTÁTICA; COLECISTECTOMIA; CATARATA BILATERAL; LIPOMA EN BRAZO DERECHO
+
+**Diagnósticos Activos:**
+
+- DERRAME PLEURAL GRADO 2
+- SINDROME CONSTITUCIONAL
+- COLECCIÓN SUBFRÉNICA EN ESTUDIO
+
+**Medicación Activa:**
+
+- PARACETAMOL 1 GR IV CADA 8 HORAS   
+- METOCLOPRAMIDA 10 MG IV PRN   
+- FUROSEMIDA 40 MG IV 08H00 AM Y 20 MG IV 14H00   
+- CEFTRIAXONA 1 GR IV CADA 12 HORAS (D:2) FI:10/11/2026 CIE10: A065   
+- METRONIDAZOL 500 MG IV CADA 8 HORAS (D:2) FI:10/11/2026 CIE10: A065   
+- LOSARTAN 50 MG VO QD   
+- LEVOTIROXINA 75 MCG VO QD   
+- TAMSULOSINA 0,4 MG VO QD   
+- METFORMINA 500 MG VO QD *******SUSPENDIDO.******   
+
+**Pendientes:**
+
+- ☐ <span class="badge-urgente">URGENTE</span> **[IMAGEN_PROCEDIMIENTO]** E:PENDIENTE RX DE TÓRAX ANTEROPOSTERIOR Y LATERAL
+- ☐ <span class="badge-rutina">RUTINA</span> **[LABORATORIO]** CIRUGIA PULMONAR ALTA
+
+**Últimos Laboratorios:**
+
+- *2026-11-13 (Laboratorios / Gasometría):* resumen: 2026/11/12 PCR CUANTITATIVO ULTRASENSIBLE: 75.80 PROCALCITONINA LAB. CLINICO: 0.19 INR: 1.23 TIEMPO DE PROTROMBINA (TP): 13.3 TIEMPO DE TROMBOPLASTINA (TTP): 25.5 LEUCOCITOS (WBC): 4.65 HEMOGLOBINA (HGB): 13.7 HEMATOCRITO (HCT): 44.2 VOLUMEN CORP. MEDIO (MCV): 85.60 CONC. MEDIA HEMOG. (MCH): 26.6 LINFOCITOS: 0.78 NEUTROFILOS: 3.33 BASOFILOS: 0.040 
+```{=html}
+</div>
+```
+
+```{=html}
+<div class="patient-card">
+  <div class="patient-header">
+    <h4 style="margin:0; display:inline-block;"><strong>Cama 7</strong>: VINUEZA ROJAS ARTURO MIGUEL 77 AÑOS 239902</h4>
+  </div>
+```
+
+- **HC:** `N/D` | **Cédula:** N/R | **Edad:** 77 años | **Sexo:** N/R
+- **Antecedentes (APP):** ANTECEDENTES PERSONALES:; HIPERTENSION ARTERIAL DIAGNOSTICADO HACE 30 AÑOS; DISLIPIDEMIA; ENFERMEDAD RENAL CRONICA; ANTECEDENTES QUIRURGICOS:; APENDICECTOMIA; RECONSTRUCCION NASAL; CRANEOTOMIA FRONTO TEMPORO PARIETAL IZQUIERDA MAS EVACUACION DE
+
+**Diagnósticos Activos:**
+
+- TRAQUEITIS
+- HIPERTENSIÓN ARTERIAL
+- DISLIPIDEMIA
+- ENFERMEDAD RENAL CRÓNICA ESTADIO 3B (TFG POR CKD-EPI: 31,84)
+- PORTADOR DE TRAQUEOSTOMO
+- HEMATOMA SUBDURAL AGUDO HEMISFERICO IZQUIERDO PARIETAL DERECHO EVACUADO
+- NECROSIS DE COLGAJO EN CUERO CABELLUDO RESUELTO PARIETAL POSTERIOR IZQUIERDO +
+- INFECCION DE HERIDA QUIRURGICA FRONTO TEMPORO PARIETAL IZQUIERDA + EMPIEMA
+
+**Medicación Activa:**
+
+- LEVETIRACETAM 500 MILIGRAMOS POR GASTROSTOMIA CADA 12 HORAS   
+- ENOXAPARINA 40 MG SC QD   
+- BUSCAPINA 1 TABLETA POR GASTROSTOMIA C/8H   
+- EMPAGLIFLOZINA 10 MILIGRAMOS POR SONDA OROGASTRICA CADA DIA   
+- SIMVASTATINA 40 MILIGRAMOS POR SONDA OROGASTRICA CADA DIA   
+- NEBULIZACIONES CON BROMURO DE IPRATROPIO 2 ML + SOLUCION SALINA 0.9% 5 ML   
+- CADA 6 HORAS   
+- LAGRIMAS ARTIFICIALES UNA GOTA CADA 2 HORAS AMBOS OJOS SIEMPRE   
+
+**Observaciones / Novedades:**
+
+> O: FTR RESPIRATORIA Y REHABILITACIÓN
+> CURACIONES AVANZADAS POR CLÍNICA DE HERIDAS
+```{=html}
+</div>
+```
+
+```{=html}
+<div class="patient-card">
+  <div class="patient-header">
+    <h4 style="margin:0; display:inline-block;"><strong>Cama 8</strong>: NICOLALDE CENTENO CESAR ENRIQUE</h4>
+  </div>
+```
+
+- **HC:** `554153` | **Cédula:** 1715905293 | **Edad:** 40 AÑOS | **Sexo:** N/R
+- **Antecedentes (APP):** SINDROME . DE DOWN; HIPOTIROIDISMO; POLIGLOBULIA; DISCAPACIDAD INTELECTUAL DEL 70%
+
+**Diagnósticos Activos:**
+
+- HEPATOPATÍA EN ESTUDIO EN ESTUDIO DE POSIBLE HEPATITIS TÓXICA VS MEDICAMENTOSAS
+- NEUTEOFEMIA CON ANTIBIOTICO TERAPI EMPÍRICA
+- BICITOPENIA EN ESTUDIO
+- TRAUMA CRANEOENCEFÁLICO LEVE
+- HIPOGLICEMIA REFRACTARIA SUPERADA
+- DC. PARANEOPLÁSICO
+- INFECCION DE VIAS URINARIAS
+- SINDROME HEPÁTICO MIXTO COLESTÁSICO Y CITOLITICO
+
+**Medicación Activa:**
+
+- CEFEPIME 2 GRAMOS IV CADA 8 HORAS (2/3) FI:10/11/2026   
+- ACICLOVIR 400MG VO CADA 12 HORAS (1/5)   
+- FLUCONAZOL 400MG VO CADA DIA (1/5)   
+- LEVOTIROXINA 75MCG VO CADA DIA   
+- TRAMADOL 50MG + 50ML SS 0.9% IV PASAR PRN   
+- RISPERIDONA 8 GOTAS VO PRN (AGITACION PSICOMOTRIZ)   
+- QUETIAPINA 25 MG VO HS , ADICIONAR 25 MG VO HS PRN   
+
+**Pendientes:**
+
+- ☐ <span class="badge-rutina">RUTINA</span> **[LABORATORIO]** PD RESULTADOS DE BIOPSIA
+- ☐ <span class="badge-urgente">URGENTE</span> **[IMAGEN_PROCEDIMIENTO]** PD REALIZACION ECO DOPPLER PORTAL
+- ☐ <span class="badge-rutina">RUTINA</span> **[LABORATORIO]** 11.11.2026
+- ☐ <span class="badge-rutina">RUTINA</span> **[LABORATORIO]** MEDULOGRAMA: DILUIDO, NO VALORABLE
+- ☐ <span class="badge-rutina">RUTINA</span> **[LABORATORIO]** IMPRONTA: DILUIDO NO VALORABLE
+- ☐ <span class="badge-rutina">RUTINA</span> **[LABORATORIO]** 10.11.2026 FROTIS DE SANGRE PERIFERICA
+- ☐ <span class="badge-rutina">RUTINA</span> **[LABORATORIO]** FORMULA DIFERENCIAL MANUAL
+- ☐ <span class="badge-rutina">RUTINA</span> **[LABORATORIO]** SEGMENTADOS: 68 %
+- ☐ <span class="badge-rutina">RUTINA</span> **[LABORATORIO]** LINFOCITOS: 16 %
+- ☐ <span class="badge-rutina">RUTINA</span> **[LABORATORIO]** MONOCITOS:16 %
+- ☐ <span class="badge-rutina">RUTINA</span> **[LABORATORIO]** HIPOSEGMENTADOS +++
+
+**Últimos Laboratorios:**
+
+- *2026-11-13 (Laboratorios / Gasometría):* resumen: 22026/11/12 PCR CUANTITATIVO ULTRASENSIBLE: 78.40 Leucocitos (WBC): 2.11 Hemoglobina (HGB): 11.8 Hematocrito (HCT): 35.4 Volumen corp. medio (MCV): 95.60 Conc. media hemog. (MCH): 31.8 Neutrofilos: 1.68 Basófilos: 0.000 Plaquetas: 55.000 CLORO: 100 POTASIO: 3.46 SODIO: 136.7 NITROGENO UREICO EN SUERO: 17 UREA SUERO: 37.1 CREATININA: 0.44
+
+**Observaciones / Novedades:**
+
+> L: PD RESULTADOS DE LAB CENTRAL
+> C: ORDENES DE HEMATOLOGIA
+> ORDENES DE PSIQUIATRIA
+> O: NOVEDADES
+```{=html}
+</div>
+```
+
+```{=html}
+<div class="patient-card">
+  <div class="patient-header">
+    <h4 style="margin:0; display:inline-block;"><strong>Cama 9A</strong>: ROSAS CORREA MARIA ESTHER C</h4>
+  </div>
+```
+
+- **HC:** `124595` | **Cédula:** 0600433312 | **Edad:** N/D | **Sexo:** N/R
+- **Antecedentes (APP):** 2010 CARDIOPATÍA ISQUÉMICA CRÓNICA SE DESCONOCE EVENTO AGUDO APARENTE IMPLANTE; DE 2 STENTS EN ARTERIA DESCONOCIDA (CLÍNICA PICHINCHA); HIPOTIROIDISMO; HEMORRAGIA VÍTREA; ANTECEDENTES QUIRÚRGICOS; IMPLANTE DE 2 STENTS POR CARDIOPATÍA EN ARTERIA DESCONOCIDA; HISTERECTOMÍA; COLECISTECTOMÍA
+
+**Diagnósticos Activos:**
+
+- CA DE OVARIO CON ÍNDICE DE ROMA DE 97.9 (ALTO RIESGO PARA CÁNCER OVÁRICO EPITELIAL)
+- PERITONITIS BACTERIANA SUPERADA
+- DERRAME PLEURAL DERECHO. SUPERADO
+- HIPOACUSIA BILATERAL
+
+**Medicación Activa:**
+
+- OMEPRAZOL 20 MG VIA ORAL CADA DIA AM   
+- ESPIRONOLACTONA 25 MG VO CADA DIA   
+- PARACETAMOL 1 GR VIA ORAL CADA 8 HORAS   
+- TRAMADOL 100 MG IV CADA 12 HORAS   
+- METOCLOPRAMIDA 10 MG VO CADA 8 HORAS - 20 MIN ANTES DE CADA COMIDA   
+- MAGALDRATO CON SIMETICONA 10 CC POSTERIOR A CADA COMIDA   
+- ENOXAPARINA 60 MG SC QD   
+- CAPSULAS DE SAL 1 GR MG VIA ORAL CADA DIA   
+- KETOROLACO 30 MG IV CADA 8 HORAS   
+- OMEPRAZOL 40 MG IV CADA DIA HORA SUEÑO   
+
+**Pendientes:**
+
+- ☐ <span class="badge-stat">STAT</span> **[LABORATORIO]** RADIOGRAFIA DE TORAX YA
+- ☐ <span class="badge-rutina">RUTINA</span> **[LABORATORIO]** HISOPADO RECTAL PARA BACTERIA RESISTENTES TOMADO
+- ☐ <span class="badge-rutina">RUTINA</span> **[LABORATORIO]** DESTET DE OXIGENO
+
+**Últimos Laboratorios:**
+
+- *2026-11-13 (Laboratorios / Gasometría):* resumen: 2026/11/01 HORA: CULTIVO DE LIQUIDO ASCÍTICO.....: A/B RESULTADOS: MICROORGANISMO: PSEUDOMONAS AERUGINOSA RESULTADO: POSITIVO; MICROORGANISMO RESISTENTE A CARBAPEN MICOS. NEGATIVO PARA PRODUCCI N E NZIM TICA DE CARBAPENEMASAS, RESISTENCIA MEDIADA POR IMPERMEABILIDAD; . 2026/11/12 ACIDO LACTICO: 2.2 GLU: 155.0 HCO3: 23.0 K: 4.1 NA: 131.0 O2HB: 87.4 
+
+**Observaciones / Novedades:**
+
+> CITOLOGÍA DE BLOQUE CELULAR E INMUNOHISTOQUÍMICO EN BUSCA DE PRIMARIO
+> (PENDIENTE RESULTADO )
+```{=html}
+</div>
+```
+
+```{=html}
+<div class="patient-card">
+  <div class="patient-header">
+    <h4 style="margin:0; display:inline-block;"><strong>Cama 9B</strong>: CARRERA AGUIRRE MARTHA GRACIELA C</h4>
+  </div>
+```
+
+- **HC:** `2045964` | **Cédula:** 1702915719 | **Edad:** 88 años | **Sexo:** N/R
+- **Antecedentes (APP):** DEMENCIA NO ESPECIFICADA DIAGNOSTICADA POR GERIATRIA; HIPERTENSIÓN ARTERIAL; PÉNFIGO VULGAR; INFECCION DE VIAS URINARIAS (HOSPITALIZADA SEPTIEMBRE 2025); TRASTORNO BIPOLAR DIAGNOSTICADO 2023
+
+**Diagnósticos Activos:**
+
+- TRASTORNO DEGLUTORIO EN CONTEXTO DE DEMENCIA TIPO ALZHEIMER
+- ANEMIA MODERADA MACROCÍTICA
+- ZONA DE PRESIÓN EN SACRO ANTERIOR EN CICATRIZACIÓN
+- NEUMONIA POR ASPIRACION SUPERADA
+- HIPERNATREMIA SEVERA HIPOVOLEMICA AGUDA SINTOMATICA SUPERADA
+- LESIÓN RENAL AGUDA KDIGO C2 SUPERADA
+
+**Medicación Activa:**
+
+- I. DEXTROSA 5% EN SOLUCION SALINA 1000 CC PASAR IV A 40 CC/H   
+- PARACETAMOL 1 G IV PRN   
+- ENOXAPARINA 40 MG SC QD   
+- FUROSEMIDA 40 MG INTRAVENOSO CADA DIA   
+- ESPIRONOLACTONA 25 MG POR SONDA NASOGASTRICA   
+- ***SUSPENDER*** AMPICILINA + SULBACTAM 3 G IV CADA 6 HORAS FI: 29/10/2026 CIE   
+- INDICACIONES DE PSIQUIATRIA 04/11/2026   
+- ACIDO VALPROICO 250MG TABLETA VO BID POR 10 DIAS   
+- RISPERIDONA GOTAS: 5 GOTAS TID POR 10 DIAS   
+- LOSARTAN 100 MILIGRAMOS VIA ORAL DIFERIDO*****************   
+
+**Pendientes:**
+
+- ☐ <span class="badge-rutina">RUTINA</span> **[LABORATORIO]** E. NO AMERITA
+- ☐ <span class="badge-urgente">URGENTE</span> **[LABORATORIO]** L. PENDIENTE RESULTADOS DE ELECTROLITOS 12/11/2026
+- ☐ <span class="badge-rutina">RUTINA</span> **[LABORATORIO]** C. INDICACIONES DE GASTROENTEROLOGIA: GASTROSTOMIA 12/11/2026 16:00
+
+**Últimos Laboratorios:**
+
+- *2026-11-13 (Laboratorios / Gasometría):* resumen: 2026/11/13 CLORO....: 95 POTASIO...: 3.73 SODIO..: 129.2 CALCIO IONICO EN SUERO..: 1.16 CALCIO IONICO EN SUERO..: 1.16 CALCIO TOTAL: 7.3 FOSFORO..: 3.5 MAGNESIO: 1.63 . 2026/11/11 CLORO....: 93 POTASIO...: 4.68 SODIO: 127.8
+
+**Observaciones / Novedades:**
+
+> GASTROSTOMÍA A LAS 16: 00 12/11/2026
+> INDICACIONES DE GASTROENTEROLOGIA POST PROCEDIMIENTO
+```{=html}
+</div>
+```
+
+```{=html}
+<div class="patient-card">
+  <div class="patient-header">
+    <h4 style="margin:0; display:inline-block;"><strong>Cama 9C</strong>: MORENO BARRIGA BLANCA ALICIA</h4>
+  </div>
+```
+
+- **HC:** `1734898` | **Cédula:** 0500728902 | **Edad:** 72 AÑOS | **Sexo:** N/R
+- **Antecedentes (APP):** ACCIDENTE CEREBROVASCULAR ISQUÉMICO DE MÚLTIPLES TERRITORIOS Y BILATERALES; INSUFICIENCIA CARDIACA FEVI PRESERVADA 60% PERFIL HEMODINÁMICO A, ETIOLOGIA VALVULAR POR ESTENOSIS AÓRTICA SEVERA, ESTADIO C, NYHA II; SINDROME NEFRÓTICO EN ESTUDIO; INJURIA MIOCÁRDICA AGUDA SECUNDARIA A SINDROME CEREBRO CORAZON, TIPO II; DISLIPIDEMIA DIAGNOSTICADA HACE APROXIMADAMENTE 2 MESES, SIN TRATAMIENTO
+
+**Diagnósticos Activos:**
+
+- SINDROME NEFRÓTICO
+- INSUFICIENCIA CARDIACA FEVI PRESERVADA 60% PERFIL HEMODINÁMICO A, ETIOLOGIA VALVULAR POR ESTENOSIS AÓRTICA SEVERA, ESTADIO C, NYHA II DESCOMPENSADA
+- HIPOKALEMIA LEVE EN REPOSICIÓN
+- BACTERIURIA ASINTOMATICA
+- ENCEFALOMALACIA
+
+**Medicación Activa:**
+
+- OMPERAZOL 20 MG P.O QD   
+- UROCIT 2 CAPSULAS VIA ORAL CADA 8 HORAS   
+- ENOXAPARINA 40 MG SUBCUTANEO CADA 12 HORAS   
+- PARACETAMOL 1 GRAMO INTRAVENOSO POR RAZONES NECESARIAS   
+- ATORVASTATINA 40 MG VO QD ( ALTO RIESGO CARDIOVASCULAR   
+- BETAHISTINA 48 MG VO QD   
+- EMPAGLIFLOZINA 25 MG VIA ORAL CADA DIA   
+- ENALAPRIL 5 MG VO QD   
+- FUROSEMIDA 20 MG IV CADA 12 HORAS   
+- POLIETILENGLICOL 1 CUCHARADA VIA ORAL CADA 12 HORAS   
+
+**Pendientes:**
+
+- ☐ <span class="badge-rutina">RUTINA</span> **[LABORATORIO]** PD RESULTADO RESULTADO DE ELECTROFORESIS DE PROTEÍNAS
+- ☐ <span class="badge-rutina">RUTINA</span> **[LABORATORIO]** SE PROGRAMA CURETAJE PERIODONTAL DE PIEZA DENTAL 36 PARA EL DIA JUEVES 12
+- ☐ <span class="badge-rutina">RUTINA</span> **[LABORATORIO]** DE NOVIEMBRE DE 2026 A LAS 16H00
+- ☐ <span class="badge-rutina">RUTINA</span> **[LABORATORIO]** ODONTOLOGIA REALIZA PROCEDIMIENTO
+- ☐ <span class="badge-rutina">RUTINA</span> **[LABORATORIO]** INDICACIONES DE NEFROLOGIA
+
+**Últimos Laboratorios:**
+
+- *2026-11-13 (Laboratorios / Gasometría):* resumen: CLORO: 114 POTASIO: 3.47 SODIO: 143.3 CALCIO IÓNICO EN SUERO: 1.19 CALCIO TOTAL: 7.4 FÓSFORO: 3.1 MAGNESIO: 1.96
+
+**Observaciones / Novedades:**
+
+> EKG CADA DIA
+> PD INFORME DE BODY TAC SIMPLE Y CONTRASTADA
+> ECO RENAL PD REALIZAR
+```{=html}
+</div>
+```
+
+```{=html}
+<div class="patient-card">
+  <div class="patient-header">
+    <h4 style="margin:0; display:inline-block;"><strong>Cama 9D</strong>: GUERRERO PAULA DOLORES NARCIZA</h4>
+  </div>
+```
+
+- **HC:** `677814` | **Cédula:** N/R | **Edad:** 63 años | **Sexo:** N/R
+- **Antecedentes (APP):** ANTECEDENTES PATOLOGICOS PERSONAES; EPILEPSIA. SECUNDARIA A TRAUMATISMO HACE 17 AÑOS; HIPOTIROIDISMO; DISLIPIDEMIA; LESIONES VASCULARES CEREBRALES EN IMAGEN; HIPONATREMIA CRONICA; TROMBOSIS VENOSA PROFUNDA DE MIEMBRO INFERIOR DERECHA; RESIDENTE EN CENTRO DE CUIDADO, DEPENDIENTE DE TERCERAS PERSONAS
+
+**Diagnósticos Activos:**
+
+- DIAGNOSTICO:
+- ANEMIA MACROCITICA SEVERA AGUDA (CAIDA DE HB A 8.1 G/DL - EN SOPORTE
+- TRANSFUSIONAL)
+- SEPSIS DE FOCO PULMONAR / NEUMONIA ASPIRATIVA (DIA 4 DE TRATAMIENTO)
+- DESCARTE DE MENINGOENCEFALITIS VS. ENCEFALOPATIA TOXICO-METABOLICA
+- EPILEPSIA SECUNDARIA A TRAUMA / DEMENCIA VASCULAR
+- CONSTIPACION
+- HIPERNATREMIA MODERADA Y TROMBOCITOPENIA (RESUELTAS)
+
+**Medicación Activa:**
+
+- IV PASAR 60ML/HORA   
+- PIPERACILINA/TAZOBACTAM 4.5 GRAMOS IV CADA 6 HORAS (4/5) FI:09/11/2026 A419   
+- ENOXAPARINA 40 MG SC CADA DIA   
+- PARACETAMOL 1 GRAMO IV PRN   
+- BROMURO DE IPATROPIO 2 PUFF CADA 8 HORAS   
+- ATORVASTATINA 40 MG VO CADA DIA   
+- ACIDO VALPROICO 1000MG VO CADA 12 HORAS   
+- LEVOTIROXINA 125 MG VO CADA DIA   
+- FUROSEMIDA 40MG IV DESPUES DE PAQUETE GLOBULAR   
+
+**Pendientes:**
+
+- ☐ <span class="badge-urgente">URGENTE</span> **[IMAGEN_PROCEDIMIENTO]** PD RESULTADOS DE TAC DE TORAX
+- ☐ <span class="badge-rutina">RUTINA</span> **[LABORATORIO]** PD RESULTADOS HEMOCULTIVO
+
+**Últimos Laboratorios:**
+
+- *2026-11-13 (Laboratorios / Gasometría):* resumen: 2026/11/12 HORA: 08:39 LEUCOCITOS (WBC): 5.72 HEMOGLOBINA (HGB): 8.1 HEMATOCRITO (HCT): 25.0 VOLUMEN CORP. MEDIO (MCV): 100.60 CONC. MEDIA HEMOG. (MCH): 32.4 CONC. CORP. MEDIA (MCHC) DE HEMO: 32.4 VOLUMEN MEDIO PLAQUETARIO (MPV): 11.5 MONOCITOS: 0.45 EOSINOFILOS: 0.05 LINFOCITOS: 2.65 NEUTROFILOS: 2.51 BASOFILOS: 0.030 PLAQUETAS: 117.000 RECUENTO D
+
+**Observaciones / Novedades:**
+
+> MAÑNA 05H00 BH UREA CREATININA ELECTROLITOS
+```{=html}
+</div>
+```
+
+### Periféricos (12 pacientes)
+
+```{=html}
+<div class="patient-card">
+  <div class="patient-header">
+    <h4 style="margin:0; display:inline-block;"><strong>Cama CARDIO 3C</strong>: HIDALGO NIETO CARLOS GONZALO 72 AÑOS</h4>
+  </div>
+```
+
+- **HC:** `963279` | **Cédula:** N/R | **Edad:** 72 años | **Sexo:** N/R
+- **Antecedentes (APP):** HIPERTENSIÓN ARTERIAL; ENFEREMEDAD RENAL CRONICA; PSORIASIS; HIPOROIDISMO; PROTEINURIA SUBNEFROTICA PERSISTENTE DE CAUSA NO FILIADA; ******PACIENTE ALÉRGICO AL PESCADO Y MARISCOS******
+
+**Diagnósticos Activos:**
+
+- SINDROME CONSTITUCIONAL A DESCARTAR PROCESO ONCOLÓGICO
+
+**Medicación Activa:**
+
+- PARACETAMOL 1 GR VO CADA 8 HORAS   
+- LEVOTIROXINA 100 UG VO QD AM   
+- AMLODIPINO 10 MG VO QD SUSPENDIDO   
+- FUROSEMIDA 20 MG CADA 48 HORAS   
+- EMPAGLIFLOZINA 10 MG VO QD   
+- ALOPURINOL 150 MG VO CADA 48 HORAS   
+- BICARBONATO DE SODIO 1 GR VO QD   
+
+**Pendientes:**
+
+- ☐ <span class="badge-urgente">URGENTE</span> **[IMAGEN_PROCEDIMIENTO]** TAC SIMPLE DE ENCÉFALO, CUELLO, TÓRAX, ABDOMEN Y PELVIS. (HACER INFORMAR)
+- ☐ <span class="badge-urgente">URGENTE</span> **[LABORATORIO]** EDA Y COLONOSCOPIA REALIZADA: REPETIR COLONOSCOPIA PENDIENTE TURNO
+- ☐ <span class="badge-urgente">URGENTE</span> **[INTERCONSULTA]** VALORACIÓN POR CIRUGÍA VASCULAR (INSUFICIENCIA ARTERIAL CRONICA): ALTA
+- ☐ <span class="badge-rutina">RUTINA</span> **[LABORATORIO]** SEGUIMIENTO POR NEFROLOGÍA
+```{=html}
+</div>
+```
+
+```{=html}
+<div class="patient-card">
+  <div class="patient-header">
+    <h4 style="margin:0; display:inline-block;"><strong>Cama CARDIO 4B</strong>: 0200150688 GALEAS LOPEZ ROSA ELVIRA H.C.: 1814762 </h4>
+  </div>
+```
+
+- **HC:** `1814762` | **Cédula:** N/R | **Edad:** 83 años | **Sexo:** N/R
+- **Antecedentes (APP):** HIPERTENSIÓN ARTERIAL; VERTIGO; HIPOTIROIDISMO; ANSIEDAD /DEPRESIÓN; POLIGLOBULIA
+
+**Diagnósticos Activos:**
+
+- INSUFICIENCIA RESPIRATORIA AGUDA
+- SANGRADO DIGESTIVO ALTO POR ÚLCERAS GÁSTRICAS Y DUODENALES FORREST III, SANGRADO DETENIDO
+- ANEMIA MODERADA POSTHEMORRAGICA AGUDA
+- FRACTURA DE RAMA ISQUIOPUBIANA IZQUIERDA (MANEJO CONSERVADOR)
+- HIPOPROTEINEMIA - HIPOALBUMINEMIA LEVE
+- DELIRIO HIPOACTIVO SUPERADO
+- INSUFICIENCIA VENOSA PERIFÉRICA
+- DESHIDRATACIÓN MODERADA SUPERADA
+
+**Medicación Activa:**
+
+- ******PACIENTE ALERGICO AL PESCADO Y MARISCOS******   
+- PARACETAMOL 1 GR VO POR RAZONES NECESARIAS   
+- ENOXAPARINA 40 MG SC CADA DIA   
+- LEVOTIROXINA 100 UG VO QD AM   
+- AMLODIPINO 10 MG VO QD SUSPENDIDO****   
+- FUROSEMIDA 20 MG CADA 48 HORAS DIFERIDO*****   
+- EMPAGLIFLOZINA 10 MG VO QD   
+- ALOPURINOL 150 MG VO CADA 48 HORAS   
+- BICARBONATO DE SODIO 1 GR VO QD   
+- FUROSEMIDA 40 MG VIA ORAL CADA DIA. GENERAR DIARIO   
+
+**Pendientes:**
+
+- ☐ <span class="badge-urgente">URGENTE</span> **[IMAGEN_PROCEDIMIENTO]** E: TAC SIMPLE DE ENCEFALO, CUELLO, TORAX, ABDOMEN Y PELVIS PENDIENTE INFORME
+- ☐ <span class="badge-rutina">RUTINA</span> **[LABORATORIO]** REPETIR COLONOSCOPIA POR INDICACION DE GASTROENTEROLOGIA NUEVO TURNO
+- ☐ <span class="badge-control">CONTROL</span> **[LABORATORIO]** L: CONTROL DIARIO DE ELECTROLITOS
+- ☐ <span class="badge-rutina">RUTINA</span> **[LABORATORIO]** 07-11-2026
+- ☐ <span class="badge-rutina">RUTINA</span> **[LABORATORIO]** Leucocitos 5.12
+- ☐ <span class="badge-rutina">RUTINA</span> **[LABORATORIO]** Hemoglobina 11.7
+- ☐ <span class="badge-rutina">RUTINA</span> **[LABORATORIO]** Hematocrito 36.8
+- ☐ <span class="badge-rutina">RUTINA</span> **[LABORATORIO]** Neutrofilo 3.33
+- ☐ <span class="badge-rutina">RUTINA</span> **[LABORATORIO]** Plaquetas 309.000
+- ☐ <span class="badge-rutina">RUTINA</span> **[LABORATORIO]** CLORO 102
+- ☐ <span class="badge-rutina">RUTINA</span> **[LABORATORIO]** POTASIO 3.63
+- ☐ <span class="badge-rutina">RUTINA</span> **[LABORATORIO]** SODIO 138.9
+
+**Últimos Laboratorios:**
+
+- *2026-11-13 (Laboratorios / Gasometría):* resumen: NEUMOLOGÍA: CONTINUAR CON FISIOTERAPIA RESPIRATORIA , SI PERSISTE REQUERIMIENTO DE 02 REINTERCONSULTAR CON GASOMETRÍA CARDIOLOGIA: SI LA TENSIÓN ARTERIAL SE ELEVA DE 140/90 ADMINISTRAR LOSARTÁN 50 MG VO QD TOMA DE TENSIÓN ARTERIAL DIARIA Y ANOTAR CONTROL POR CONSULTA EXTERNA DE CARDIOLOGÍA TURNO EXTRA 18 DE NOVIEMBRE/2026 CONSULTORIO 53, CARDIOLOGÍ
+
+**Observaciones / Novedades:**
+
+> TAC DE TÓRAX YA
+> VALORACIÓN POR NEUMOLOGÍA (O2 DOMICILIO)
+```{=html}
+</div>
+```
+
+```{=html}
+<div class="patient-card">
+  <div class="patient-header">
+    <h4 style="margin:0; display:inline-block;"><strong>Cama INFECTO</strong>: CARDENAS CORONEL CESAR WASHINGTON C</h4>
+  </div>
+```
+
+- **HC:** `N/D` | **Cédula:** 1700837642 | **Edad:** 92 años | **Sexo:** N/R
+- **Antecedentes (APP):** ADENOCARCINOMA DE PROSTATA ACINAR EN TTO CON LEUPROLIDE; HIPOTIROIDEO EN TTO LT4 50MCG VO QD; HTA SIN TTO; RINITIS ALERGICA EN TTO LORATADINA 10MG VO QD
+
+**Diagnósticos Activos:**
+
+- ALTERACIÓN HIDROELECTROLÍTICA EN ESTUDIO
+- INFECCION DE VIAS URINARIA A DESCARTAR
+
+**Medicación Activa:**
+
+- BUPRENORFINA 20 MG SC 1/4 (UN CUARTO) DE PARCHE, CAMBIO NCADA 72 HORAS CIE: 10   
+- PARACETAMOL 1 G P.O. CADA 8 HORAS   
+- OMEPRAZOL 20 MG P.O. QD 07H00   
+- POLIETILENCLICOL 17 G DILUIDO EN 1 VASO DE AGUA PRN   
+- ZOPLICONA 7.5 MG P.O. HS (PCTE TIENE)   
+- L: PENDIENTE UROCULTIVO   
+
+**Pendientes:**
+
+- ☐ <span class="badge-rutina">RUTINA</span> **[LABORATORIO]** INDICACIONES DE TRAUMATOLOGIA
+- ☐ <span class="badge-rutina">RUTINA</span> **[LABORATORIO]** INDICACIONES DE UROLOGIA
+- ☐ <span class="badge-urgente">URGENTE</span> **[INTERCONSULTA]** REVALORACION POR NEUMOLOGIA
+- ☐ <span class="badge-rutina">RUTINA</span> **[LABORATORIO]** VERIFICAR QUE SE COLOQUE PARCHE DE BUPRENORFINA
+- ☐ <span class="badge-rutina">RUTINA</span> **[LABORATORIO]** UROCULTIVO RESULTADO: NEGATIVO 09/11/2026 SIN DESARROLLO EN 48H DE INCUBACI N
+
+**Últimos Laboratorios:**
+
+- *2026-11-13 (Laboratorios / Gasometría):* resumen: 2026/11/11 ACIDO LACTICO...................: 1.9 BE..............................: -0.4 Ca..............................: 1.1 Cl..............................: 102.0 COHb............................: 2.9 Glu.............................: 123.0 HCO3............................: 23.3 Hct.............................: 37.4 K...........................
+
+**Observaciones / Novedades:**
+
+> PENDIENTE UROCULTIVO
+```{=html}
+</div>
+```
+
+```{=html}
+<div class="patient-card">
+  <div class="patient-header">
+    <h4 style="margin:0; display:inline-block;"><strong>Cama INFECTOLOGIA 4D</strong>: GUERRON CASARES VICTOR MISAEL C</h4>
+  </div>
+```
+
+- **HC:** `165405` | **Cédula:** 1702873785 | **Edad:** 81 AÑOS | **Sexo:** N/R
+- **Antecedentes (APP):** SINDROME CORONARIO CRONICO POR CARDIOPATIA ISQUEMICA CRONICA CON; REVASCULARIZACION CORONARIA, 2 PUENTES EN 2010 CON FEVI BAJA EN PREVENCION; SECUNDARIA; INSUFICIENCIA CARDIACA PERFIL HEMODINAMICO A ETIOLOGIA ISQUEMICA. FEVI; REDUCIDA; ESTENOSIS AORTICA MODERADA; FIBRILACION AURICULAR PAROXISTICA JUNIO 2025; DISLIPIDEMIA
+
+**Diagnósticos Activos:**
+
+- DERRAME PLEURAL BILATERAL, PREDOMINIO DERECHO, LOCULADO
+- ENFERMEDAD RENAL CRÓNICA REAGUDIZADA SECUNDARIA A USO DE CONTRASTE
+- HIPONATREMIA SEVERA
+- HIPERKALEMIA SEVERA
+- INSUFICIENCIA CARDIACA NYHA III ESTADIO C
+
+**Medicación Activa:**
+
+- PARACETAMOL 1 GR IV CADA 8 HORAS   
+- FUROSEMIDA 20 MG IV 07H00 AM Y 14H00   
+- OMEPRAZOL 40 MG IV QD   
+- APIXABAN 2,5 MG VO BID TIENE PACIENTE MEDICACIÓN CRÓNICA   
+- CARVEDILOL 3,125 MG VO BID MEDICACIÓN CRÓNICA   
+- EMPAGLIFOZINA 25 MG MG VO QD MEDICACIÓN CRÓNICA   
+- LEVOTIROXINA 75 UG VO QD   
+- LACTULOSA 20 CC VO HS   
+
+**Pendientes:**
+
+- ☐ <span class="badge-stat">STAT</span> **[LABORATORIO]** REPETIR ELECTROLITOS STAT + UREA, CREATININA
+
+**Observaciones / Novedades:**
+
+> 12/11/2206
+> SODIO 120.5
+> POTASIO 5.20
+> 17:40
+> POTASIO: 5.22
+> SODIO: 119.9
+```{=html}
+</div>
+```
+
+```{=html}
+<div class="patient-card">
+  <div class="patient-header">
+    <h4 style="margin:0; display:inline-block;"><strong>Cama INFECTOLOGIA 4 C</strong>: ARAUJO FIALLOS FAUSTO RAMIRO</h4>
+  </div>
+```
+
+- **HC:** `N/D` | **Cédula:** N/R | **Edad:** 67 AÑOS | **Sexo:** N/R
+- **Antecedentes (APP):** ANTECEDENTES PATOLOGICOS PERSONALES; TRASTORNO BIPOLAR; TRASTORNOS MENTALES Y DE COMPORTAMIENTO POR USO DE ALCOHOL; ANTECEDENTES QUIRURGICOS; CIRUGIA POR DEDO EN GATILLO; ALERGIAS; NO REFIERE
+
+**Diagnósticos Activos:**
+
+- HIPONATREMIA HIPOTÓNICA EUVOLEMICA SEVERA SINTOMÁTICA CRÓNICA
+- TRASTORNO AFECTIVO BIPOLAR DESCOMPENSADO
+
+**Medicación Activa:**
+
+- IV PASAR A 32 ML/HORA   
+- ACIDO VALPROICO 250 MG VO CADA 12 HORAS   
+- ENOXAPARINA 40MG SC CADA DIA   
+
+**Pendientes:**
+
+- ☐ <span class="badge-stat">STAT</span> **[LABORATORIO]** HEMOCULTIVO X 2 STAT
+- ☐ <span class="badge-urgente">URGENTE</span> **[LABORATORIO]** L: HOY 21H00 ELECTROLITOS MAGNESIO
+- ☐ <span class="badge-rutina">RUTINA</span> **[LABORATORIO]** seguimiento por psiquiatria
+```{=html}
+</div>
+```
+
+```{=html}
+<div class="patient-card">
+  <div class="patient-header">
+    <h4 style="margin:0; display:inline-block;"><strong>Cama INFECTOLOGÍA</strong>: ESPINOZA GRANDA ESTELA EUFEMIA C</h4>
+  </div>
+```
+
+- **HC:** `1736432` | **Cédula:** 1700669672 | **Edad:** 82 años | **Sexo:** N/R
+- **Antecedentes (APP):** HIPERTENSIÓN ARTERIAL;; HIPOTIROIDISMO;; EMBOLIA PULMONAR EN DICIEMBRE 2025 EN TRATAMIENTO CON RIVAROXABAN SUSPENDIÓ HACE 2 MESES POR SANGRADO VAGINAL; ANTECEDENTES QUIRÚRGICOS:; COLECISTECTOMÍA; SAFENECTOMIA; PROTESIS DE RODILLA DERECHA. CONCILIACION DE MEDICAMENTOS:; LEVOTIROXINA 75 MCG VIA ORAL CADA DIA, LOSARTAN 50 MG VIA ORAL CADA DIA,; RIVAROXABAN 20 MG VO QD HASTA HACE 2 MESES SUSPENDIO
+
+**Diagnósticos Activos:**
+
+- IMPRESIÓN DIAGNÓSTICA:
+- TROMBOEMBOLIA PULMONAR ETIOLOGIA EN ESTUDIO ( SOSPECHA DE PATOLOGÍA ENDOMETRIAL MALIGNA)
+- SANGRADO VAGINAL EN ESTUDIO CIE-10: N939
+- LESIÓN RENAL AGUDA AKIN - SUPERADA CIE-10: N179
+- FRACTURA INVETERADA DE RADIO DISTAL DERECHO
+
+**Medicación Activa:**
+
+- ENOXAPARINA 60 MG SUBCUTANEO CADA 12 HORAS   
+- PARACETAMOL 1 GRAMO CADA 8 HORAS   
+- LEVOTIROXINA 50 MCG CADA DIA EN AYUNAS **1 HORA ANTES DEL DESAYUNO**   
+- LOSARTAN 50 MILIGRAMO VIA ORAL CADA DIA   
+- AMLODIPINO 10 MILIGRAMOS VIA ORAL STAT Y CADA DIA   
+
+**Pendientes:**
+
+- ☐ <span class="badge-rutina">RUTINA</span> **[LABORATORIO]** E: (-)
+- ☐ <span class="badge-rutina">RUTINA</span> **[LABORATORIO]** L: (-)
+- ☐ <span class="badge-rutina">RUTINA</span> **[LABORATORIO]** C: NOVEDADES
+
+**Últimos Laboratorios:**
+
+- *2026-11-13 (Laboratorios / Gasometría):* resumen: UROCULTIVO: A/B, MICROORGANISMO: ESCHERICHIA COLI, GENTAMICINA SENSIBLE, AMPICILINA/SULBACTAM: SENSIBLE, TRIMETOPRIMA/SULFA: SENSIBLE, FOSFOMYCIN (URINE): SENSIBLE, NITROFURANTOÍNA: SENSIBLE, CIPROFLOXACINO: SENSIBLE, CEFAZOLINA (O): SENSIBLE, CONTAJE DE COLONIAS: 10.000 UFC/ML
+
+**Observaciones / Novedades:**
+
+> O: REVALORACION POR GINECOLOGIA
+```{=html}
+</div>
+```
 
 ```{=html}
 <div class="patient-card">
   <div class="patient-header">
     <h4 style="margin:0; display:inline-block;"><strong>Cama INFECTO 1B</strong>: ANDRANGO SIMBAÑA GONZALO</h4>
-    <span class="badge-control">CKD-EPI: 144 ml/min/1.73m2</span>
   </div>
 ```
 
-- **HC:** `307712` | **Cédula:** 1702481852 | **Edad:** 76 años | **Sexo:** M
-- **Antecedentes (APP):** Hipotiroidismo; Hipertensión arterial; Incontinencia urinaria; No vidente; Vólvulo de colon
+- **HC:** `307712` | **Cédula:** 1702481852 | **Edad:** 76 AÑOS | **Sexo:** N/R
+- **Antecedentes (APP):** HIPOTIROIDISMO; HIPERTENSION ARTERIAL -INCONTINENCIA URINARIA; HIPOACUSIA BILATERAL; NO VIDENTFFE; VÓLVULO DE COLON SIGMOIDE; MASA A NIVEL ANAL DE RECIENTE DIAGNÓSTICO
 
 **Diagnósticos Activos:**
 
-- Úlcera sacra e isquiática grado III-IV
-- Bacteriemia por Enterococcus faecalis
-- Derrame pleural bilateral
-
-**Soporte y Vía:**
-- *Dieta:* Hiperproteica blanda
-- *Hidratación / Infusiones:* Vía salinizada
+- ÚLCERA SACRO ISQUIÁTICA GRADO III - IV
+- DERRAME PLEURAL BILATERAL
+- MASA PERIANAL (HEMANGIOMA CAPILAR)
+- HIDROCELE TESTICULAR SUPERADO
+- SANGRADO DIGESTIVO ALTO POR ESOFAGITIS EROSIVA DISTAL INTENSA GRADO D DE LA CLASIFICACIÓN DE LOS ÁNGELES
+- HIPOPOTASEMIA MODERADA SUPERADA
+- INFECCION DE VIAS URINARIAS
+- BACTERIEMIA POR E. FAECALIS
 
 **Medicación Activa:**
 
-- Ampicilina + Sulbactam 3 g IV c/6 horas <span class="badge-atb">Día 10</span>
+- PARACETAMOL 1 GRAMO IV POR RAZONES NECESARIAS   
+- LEVOTIROXINA 25 MCG VO 6:00 AM   
+- CÁPSULAS DE SAL 1 G VO CADA DIA   
+- AMPICILINA + SULBACTAM 3 GRAMOS INTRAVENOSO CADA 6 HORAS FI: 30-10-2026 DIA 13/14   
+- AMIKACINA 1G IV CADA DIA POR 3 DÍAS (FI: 09/11/2026 D3/3 B99) SUSPENDER****   
+- PROGRESIÓN DE DIETA SEGÚN TOLERANCIA   
 
 **Pendientes:**
 
-- ☐ <span class="badge-stat">STAT</span> **[ADMINISTRATIVO_QX]** Verificar reserva y alistamiento de 2 paquetes globulares y 2 plasmas congelados para cirugía (`STAT / 20:30`)
-- ☐ <span class="badge-control">CONTROL</span> **[LABORATORIO]** Control diario de electrolitos y hematocrito prequirúrgico (`05:00 AM`)
+- ☐ <span class="badge-control">CONTROL</span> **[LABORATORIO]** CONTROL DIARIO DE ELECTROLITOS
+- ☐ <span class="badge-urgente">URGENTE</span> **[INTERCONSULTA]** REVALORACION POR INFECTOLOGÍA
+- ☐ <span class="badge-rutina">RUTINA</span> **[LABORATORIO]** INDICACIONES DE NUTRICIÓN
+- ☐ <span class="badge-rutina">RUTINA</span> **[LABORATORIO]** INDICACIONES DE INFECTOLOGÍA
+- ☐ <span class="badge-rutina">RUTINA</span> **[LABORATORIO]** INDICACIONES DE COLOPROCTOLOGÍA
 
 **Últimos Laboratorios:**
 
-- *2026-11-07 (Hemocultivo):* tiempo_deteccion_horas: 42.8
+- *2026-11-13 (Laboratorios / Gasometría):* resumen: 2026/11/07 Hora: 13:37 HEMOCULTIVO POR 1 MUESTRA. MICROORGANISMO: Enterococcus faecalis BENCILPENICILINA SENSIBLE / 4 ug/mL AMPICILINA SENSIBLE / <= 2 ug/mL Resultado: POSITIVO; Tiempo de Detecci n: 42.8 hs;
 
 **Observaciones / Novedades:**
 
-> Cirugía por coloproctología programada.
+> NPT TOTAL
 ```{=html}
 </div>
 ```
@@ -818,80 +1304,45 @@ format:
 ```{=html}
 <div class="patient-card">
   <div class="patient-header">
-    <h4 style="margin:0; display:inline-block;"><strong>Cama CARDIO 3C</strong>: HIDALGO NIETO CARLOS GONZALO</h4>
-    <span class="badge-alergia">⚠ ALERGIA: PESCADO, MARISCOS</span>
-    <span class="badge-control">CKD-EPI: 17 ml/min/1.73m2 (ERC avanzada)</span>
+    <h4 style="margin:0; display:inline-block;"><strong>Cama NEUMO</strong>: GOMEZ ALMEIDA MARIO RENE C</h4>
   </div>
 ```
 
-- **HC:** `963279` | **Cédula:** N/R | **Edad:** 72 años | **Sexo:** M
-- **Antecedentes (APP):** Hipertensión arterial; Enfermedad renal crónica; Psoriasis; Hipotiroidismo
+- **HC:** `1274973` | **Cédula:** 1703534469 | **Edad:** 74 años | **Sexo:** N/R
+- **Antecedentes (APP):** HIPOTIROIDISMO; INFECCION DE VIAS URINARIAS A REPETICION; DERRAME PLEURAL EN ESTUDIO; SINDROME CONSTITUCIONAL; ANEMIA CRONICA CIE-10 D630; QUISTES HEPATICOS SIMPLES CIE-10 K768
 
 **Diagnósticos Activos:**
 
-- Síndrome constitucional a descartar proceso oncológico
-- Proteinuria subnefrótica persistente
-
-**Soporte y Vía:**
-- *Dieta:* Líquida clara estricta (En preparación colónica)
-- *Hidratación / Infusiones:* Vía salinizada
+- DOLOR ONCOLÓGICO POR MASA PULMONAR EN ESTUDIO
+- COMPRESIÓN MEDULAR, LESIONES LÍTICAS
+- SEPSIS DE FOCO urinario *** SUPERADA***
 
 **Medicación Activa:**
 
-- Amlodipino 10 mg VO QD **[SUSPENDIDO]**
-- Alopurinol 150 mg VO c/48 horas
-- Bicarbonato de Sodio 1 g VO QD
+- PIPERACILINA / TAZOBACTAM 4.5 GR IV CADA 6 HORAS. FI: 02/11/2026 D: 5/5   
+- PARACETAMOL 1 G VO C/8H   
+- N-BUTIL ESCOPOLAMINA 1 AMP IV C/8H   
+- ENOXAPARINA 40 MG SC QD   
+- LACTULOSA 30 ML VIA ORAL PRN   
+- TRAMADOL 100 MG IV LENTO Y DILUIDO EN ESTE MOMENTO Y PRN   
+- METOCLOPRAMIDA 10 MG IV EN ESTE MOMENTO Y PREVIO USO DE TRAMADOL PRN   
+- MORFINA 20 MG EN 98 ML. TOTAL 100 ML . PASAR A 2, 5 ML / H. / DIA POR 5 DIAS   
+- RESCATES DE ANALGESIA: MORFINA 2 MG SI EVERA INTENSO O 30 MINUTOS PREVIO A   
+- MOVILIZACION QUE GENERE DOLOR . MAXIMO 3 RESCATES EN 24/ HORAS   
 
 **Pendientes:**
 
-- ☐ <span class="badge-stat">STAT</span> **[IMAGEN_PROCEDIMIENTO]** Verificar preparación colónica adecuada para EDA y COLONOSCOPIA MAÑANA 10/11/2026 (`21:00`)
-- ☐ <span class="badge-urgente">URGENTE</span> **[IMAGEN_PROCEDIMIENTO]** Hacer informar TAC simple de encéfalo, cuello, tórax, abdomen y pelvis
-
-**Observaciones / Novedades:**
-
-> Paciente en preparación colónica para endoscopia matutina.
-```{=html}
-</div>
-```
-
-```{=html}
-<div class="patient-card">
-  <div class="patient-header">
-    <h4 style="margin:0; display:inline-block;"><strong>Cama CARDIO 4B</strong>: GALEAS LOPEZ ROSA ELVIRA</h4>
-    <span class="badge-control">CKD-EPI: 80 ml/min/1.73m2 (Creatinina 0.65)</span>
-  </div>
-```
-
-- **HC:** `1814762` | **Cédula:** 0200150688 | **Edad:** 83 años 5 meses | **Sexo:** F
-- **Antecedentes (APP):** Hipertensión arterial; Vértigo periférico; Hipotiroidismo; Fractura de rama isquiopubiana izquierda
-
-**Diagnósticos Activos:**
-
-- Hemorragia digestiva alta por úlceras Forrest III (sangrado detenido)
-- Anemia moderada posthemorrágica aguda
-- Insuficiencia respiratoria aguda en resolución
-
-**Soporte y Vía:**
-- *Dieta:* Blanda hiposódica fraccionada
-- *Hidratación / Infusiones:* Dextrosa 5% en SS 0.9% 1000 ml IV a 20 cc/h
-
-**Medicación Activa:**
-
-- Omeprazol 40 mg IV c/12 horas
-- Betahistina 16 mg VO cada día por 10 días
-- Rosuvastatina / Ezetimibe 10 mg / 10 mg VO QD *[DIFERIDO]*
-
-**Pendientes:**
-
-- ☐ <span class="badge-control">CONTROL</span> **[INTERCONSULTA]** Continuar fisioterapia respiratoria. Si persiste requerimiento de O2, reinterconsultar Neumología con gasometría
+- ☐ <span class="badge-rutina">RUTINA</span> **[LABORATORIO]** GLOBO VESICAL EL 06/11/2026 SUPERADO
 
 **Últimos Laboratorios:**
 
-- *2026-11-07 (Control):* hemoglobina: 11.7, hematocrito: 36.8, plaquetas: 309000, creatinina: 0.65
+- *2026-11-13 (Laboratorios / Gasometría):* resumen: 02/11/2026 PCR: 214, PCT: 0.23, INR: 1.4, TP: 14.9, TTP: 32, LEU: 6.6, HG: 11.6, NEU: 5,35, PLAQ: 373.000, GLUCOSA: 128, CLORO: 105, POTASIO: 4.4, SODIO: 133 . CREA: 1.21 , 2026/11/05 UROCULTIVO MICROORGANISMO: Proteus mirabilis Productor de Betalactamasas de espectro extendido
 
 **Observaciones / Novedades:**
 
-> Alta por Otorrinolaringología y Psiquiatría.
+> IC NEUROCIRUGIA
+> IC TRAUMATOLOGIA
+> IC RADIOTERAPIA
 ```{=html}
 </div>
 ```
@@ -899,43 +1350,48 @@ format:
 ```{=html}
 <div class="patient-card">
   <div class="patient-header">
-    <h4 style="margin:0; display:inline-block;"><strong>Cama NEUMO 8B</strong>: RODRIGUEZ QUIÑONEZ FRANKLIN</h4>
-    <span class="badge-control">CKD-EPI: Normal</span>
+    <h4 style="margin:0; display:inline-block;"><strong>Cama NEUMOLOGIA 10C</strong>: C</h4>
   </div>
 ```
 
-- **HC:** `2087745` | **Cédula:** 0400506853 | **Edad:** 74 años | **Sexo:** M
-- **Antecedentes (APP):** Paludismo previo
+- **HC:** `625308` | **Cédula:** 1702923002 | **Edad:** 76 años | **Sexo:** N/R
+- **Antecedentes (APP):** HIPOTIROIDISMO / NODULO TIROIDEO; OBESIDAD; HIPERTENSIÓN ARTERIAL; DISLIPIDEMIA; GONARTROSIS BILATERAL; CÁNCER DE MAMA 2016, MASTECTOMÍA RADICAL; HERNIA INCISIONAL INCARCERADA + CELULITIS EN EL 2012; MASA PULMONAR DERECHA
 
 **Diagnósticos Activos:**
 
-- Reacción leucemoide de etiología infecciosa vs paraneoplásica
-- LOEs intrahepáticos y esplénicos en evaluación
-- Síndrome colestásico
-- Hiponatremia leve euvolémica
-
-**Soporte y Vía:**
-- *Dieta:* Blanda intestinal hiperproteica
-- *Hidratación / Infusiones:* Cápsulas de sal 1 g VO c/8 horas
+- DERRAME PLEURAL DE PREDOMINIO DERECHO
+- NÓDULO PULMONAR IZQUIERDO
+- HIPOTIROIDISMO
+- INFECCION DE VIAS URINARIAS POR E. COLI BLEE SUPERADA
 
 **Medicación Activa:**
 
-- Enoxaparina 40 mg SC cada día
-- Omeprazol 20 mg IV cada día
-- Lactulosa 30 ml VO al acostarse
+- ICKD-EPI 54,20 ML/MIN/1,73 M2 (CREATININA: 1,01 DEL 03/11/2026)   
+- PARACETAMOL 1 G IV C/8H   
+- TRAMADOL 50 MG IV C/8H   
+- ENOXAPARINA 60 MG SC QD   
+- FUROSEMIDA 20 MG IV CADA 12 HORAS   
+- METOCLOPRAMIDA 10 MG IV PRN   
+- QUETIAPINA 25 MG VO QD HS   
 
 **Pendientes:**
 
-- ☐ <span class="badge-control">CONTROL</span> **[LABORATORIO]** CONTROL DIARIO DE ELECTROLITOS Y SODIO (`05:00 AM`)
-- ☐ <span class="badge-urgente">URGENTE</span> **[IMAGEN_PROCEDIMIENTO]** Nueva biopsia percutánea por radiointervencionismo pendiente turno
+- ☐ <span class="badge-urgente">URGENTE</span> **[IMAGEN_PROCEDIMIENTO]** PENDIENTE INFORME DE TC S/C DE TÓRAX ABDOMEN Y PELVIS
+- ☐ <span class="badge-rutina">RUTINA</span> **[IMAGEN_PROCEDIMIENTO]** PD HISTOPATOLOGICO PARTICULARCARCINOMA
+- ☐ <span class="badge-rutina">RUTINA</span> **[LABORATORIO]** ESCAMO CELULAR DE PULMON DERECHO
 
 **Últimos Laboratorios:**
 
-- *2026-11-07 (Electrolitos):* sodio: 130.2, potasio: 3.32, cloro: 96
+- *2026-11-13 (Laboratorios / Gasometría):* resumen: UROCULTIVO NEGATIVO . ONCOLOGIA REVISION DE LAMINILLAS + IHQ + ESTUDIO DE EGFR + GAMMAGRAFIA OSEA Y TOMOGRAFIA DE PELVIS ABDOMEN Y TORAX (A CUENTA CON TACS)
 
 **Observaciones / Novedades:**
 
-> Sodio 130.2 mEq/L con mejoría.
+> 2026/11/07
+> Leucocitos: 9.29
+> Hemoglobina: 9.2
+> Hematocrito: 29.3
+> Neutrofilos 6.75
+> Plaquetas 406.000
 ```{=html}
 </div>
 ```
@@ -943,43 +1399,235 @@ format:
 ```{=html}
 <div class="patient-card">
   <div class="patient-header">
-    <h4 style="margin:0; display:inline-block;"><strong>Cama NEUMO GOMEZ</strong>: GOMEZ ALMEIDA MARIO RENE</h4>
-    <span class="badge-control">CKD-EPI: 58 ml/min/1.73m2</span>
+    <h4 style="margin:0; display:inline-block;"><strong>Cama NEUMOLOGÍA 8B</strong>: RODRIGUEZ QUIÑONEZ FRANKLIN</h4>
   </div>
 ```
 
-- **HC:** `1274973` | **Cédula:** 1703534469 | **Edad:** 74 años | **Sexo:** M
-- **Antecedentes (APP):** Hipotiroidismo; ITU a repetición; Derrame pleural en estudio; Anemia crónica CIE D63.0
+- **HC:** `2087745` | **Cédula:** 0400506853 | **Edad:** 74 AÑOS | **Sexo:** N/R
+- **Antecedentes (APP):** PALUDISMO
 
 **Diagnósticos Activos:**
 
-- Sepsis de foco urinario por Proteus BLEE
-- Compresión medular por lesiones líticas
-- Globo vesical resuelto (sonda vesical)
-
-**Soporte y Vía:**
-- *Dieta:* Blanda hipercalórica
-- *Hidratación / Infusiones:* Vía salinizada
+- SINDROME CONSTITUCIONAL
+- ANEMIA FERROPÉNICA CRÓNICA MODERADA
+- SANGRADO DIGESTIVO A DESCARTAR
+- REACCIÓN LEUCEMOIDE DE ETIOLOGIA INFECCIOSA VS. PARANEOPLÁSICA
+- COLANGITIS VS METÁSTASIS ABSCEDADAS
+- SINDROME COLESTASICO
+- LOES INTRAHEPÁTICOS Y ESPLÉNICOS EN EVALUACIÓN
+- HIPONATREMIA LEVE EUVOLEMICA ASINTOMATICA EN MANEJO CON CÁPSULAS DE SAL
 
 **Medicación Activa:**
 
-- Piperacilina / Tazobactam 4.5 g IV c/6 horas <span class="badge-atb">5/5</span>
-- Morfina 20 mg en 98 ml SS 0.9% IV a 2.5 ml/h en infusión continua
-- Gabapentina 300 mg VO TID
+- PARACETAMOL 1 GRAMO VIA ORAL POR RAZONES NECESARIAS   
+- TRAMADOL 50 MG IV PRN   
+- ENOXAPARINA 40 MILIGRAMOS SUBCUTÁNEO CADA DIA   
+- CAPSULAS DE SAL 1 GRAMO VIA ORAL CADA 8 HORAS   
+- OMEPRAZOL 20 MG IV CADA DIA   
+- TRIK 10ML CADA 12 HORAS   
+- LACTULOSA 30 ML HS   
 
 **Pendientes:**
 
-- ☐ <span class="badge-control">CONTROL</span> **[LABORATORIO]** EMO POR SONDA VESICAL A LAS 05:00 AM + Biometría, PCR, Azoados (`05:00 AM`)
-- ☐ <span class="badge-urgente">URGENTE</span> **[INTERCONSULTA]** Auditar respuesta de interconsultas: Neurocirugía, Traumatología y Radioterapia
-- ☐ <span class="badge-urgente">URGENTE</span> **[FARMACO_DOSIS]** Fin de esquema de Piperacilina/Tazobactam (Día 5/5): valorar retiro o cambio por Proteus BLEE
+- ☐ <span class="badge-control">CONTROL</span> **[LABORATORIO]** CONTROL DIARIO DE ELECTROLITOS, BIOMETRÍA Y TIEMPOS DE COAGULACIÓN
+
+**Observaciones / Novedades:**
+
+> INDICACIONES DE GASTROENTEROLOGÍA
+> INDICACIONES DE UROLOGIA Y CONTROL POR LA CONSULTA EXTERNA
+> BIOPSIA PERCUTÁNEA POR DR BORJA, AL MOMENTO CON PERMISO, REINTERCONSULTAR LUNES
+```{=html}
+</div>
+```
+
+```{=html}
+<div class="patient-card">
+  <div class="patient-header">
+    <h4 style="margin:0; display:inline-block;"><strong>Cama TRASNPLANTE RENAL 8B</strong>: NOLIVOS CALDERON SILVIA ALEXANDRA C</h4>
+  </div>
+```
+
+- **HC:** `642799` | **Cédula:** 1710357581 | **Edad:** 54 AÑOS | **Sexo:** N/R
+- **Antecedentes (APP):** HIPOTIROIDISMO; TROMBOEMBOLIA PULMONAR EN SEPTIEMBRE 2025; FIBROMIALGIA HACE 5 AÑOS EN TRATAMIENTO CON PREGABALINA POR 1 AÑO 4 AÑOS; SIN TRATAMIENTO; PSORIASIS TRATAMIENTO TÓPICOS; HIPERTENSIÓN PULMONAR; COVID 19 POR 3 OCASIONES
+
+**Diagnósticos Activos:**
+
+- FIBROMIALGIA M797
+- INSUFICIENCIA RESPIRATORIA
+
+**Medicación Activa:**
+
+- PARACETAMOL 1 G IV STAT Y PRN   
+- FLUOXETINA 20 MG VO QD   
+- PREGABALINA 50 MG VO QD EN LA NOCHE   
+- RIVAROXABAN 15 MG VO QD ( PACIENTE TIENE)   
+- TRAMADOL 50 MILIGRAMOS INTRAVENOSO PRN (LENTO Y DILUIDO)   
+
+**Pendientes:**
+
+- ☐ <span class="badge-rutina">RUTINA</span> **[LABORATORIO]** ELECTROMIOGRAFÍA
+- ☐ <span class="badge-rutina">RUTINA</span> **[INTERCONSULTA]** LABORATORIOS POR DERIVACIÓN: ANA POR IFI, ANTI-CCP, PANEL DE MIOSITIS, ALDOLASA , SE ENTREGA 09/11/2026 SOLICITADO POR REUMATOLOGÍA
+```{=html}
+</div>
+```
+
+```{=html}
+<div class="patient-card">
+  <div class="patient-header">
+    <h4 style="margin:0; display:inline-block;"><strong>Cama UROLOGIA</strong>: VASCONEZ FUENTES NORMA MARINA</h4>
+  </div>
+```
+
+- **HC:** `486665` | **Cédula:** N/R | **Edad:** 57 AÑOS | **Sexo:** N/R
+- **Antecedentes (APP):** ARTRITIS REUMATOIDE, FR: 538 CITRULINA 496 ANA 1/160 NUCLEAR HOMOGÉNEO (DIAGNOSTICADA A LOS 40 AÑOS); TRASTORNO DE CÓRNEA (POS TRAUMA + ARTRITIS); ENFERMEDAD RENAL CRÓNICA, POR AINES? EN ESTUDIO POR NEFROLOGÍA; HERPES OCULAR BILATERAL (ABRIL, 2024); MENINGITIS BACTERIANA Y OTITIS MEDIA DERECHA (ABRIL, 2024); GLUCOSA ALTERADO EN AYUNAS; HIPERTRIGLICERIDEMIA; GEMFIBROZILO; RINOFARINGITIS CRÓNICA
+
+**Diagnósticos Activos:**
+
+- INFECCION DE VIAS URINARIAS TUMBARELLO DE 2 PUNTOS A DESCARTAR
+- ARTRITIS REUMATOIDEA DE ALTA ACTIVIDAD DAS28 DE 5.7 9
+
+**Medicación Activa:**
+
+- OMEPRAZOL 20 MG VO QD   
+- CEFAZOLINA 1 G IV STAT Y C/8H (1/10) CIE 10 B99 FI: 11/11/2026   
+- TRAMADOL 50 MG IV LENTO Y DILUIDO PRN   
+
+**Pendientes:**
+
+- ☐ <span class="badge-rutina">RUTINA</span> **[LABORATORIO]** ALZA TERMICA 38 GRADOS CENTIGRADOS EL 11/11/2026 Y FLEBITIS DE EXTREMIDAD SUPERIOR IZQUIERDA,SE INDICA ANTIBIOTICOTERAPIA, POTENCIAR ANALGESIA Y MEDIDAS LOCALES
+```{=html}
+</div>
+```
+
+### Emergencia / Observación (24 pacientes)
+
+```{=html}
+<div class="patient-card">
+  <div class="patient-header">
+    <h4 style="margin:0; display:inline-block;"><strong>Cama 3B</strong>: BORJA PAUCARIMA VICTORIA AVELINA 69 AÑOS</h4>
+  </div>
+```
+
+- **HC:** `N/D` | **Cédula:** N/R | **Edad:** 69 años | **Sexo:** N/R
+- **Antecedentes (APP):** ARTRITIS REUMATOIDE (ACTIVIDAD BAJA) HACE 10 AÑOS; HIPERTENSION ARTERIAL; OBESIDAD; ENFERMEDAD RENAL CRONICA ETAPA 3 A; TRANSTORNOS DEL SUEÑO; HIPONATREMIA CRONICA
+
+**Diagnósticos Activos:**
+
+- HIPONATREMIA CRONICA SEVERA HIPOOSMOLAR EUVOLEMICA ASINTOMATICA
+- ARTRITIS REUMATOIDEA CDAI 15 ACTIVIDAD MODERADA
+
+**Medicación Activa:**
+
+- BLADURIL CADA 12 HORAS POR 3 DÍAS   
+- CAPSULAS DE SAL 1 GRAMO VIA ORAL QD   
+- OMEPRAZOL 20 MG VO QD   
+- PARACETAMOL 1 GRAMO IV POR RAZONES NECESARIAS   
+- ENOXAPARINA 40 MG SC CADA DIA   
+- DIGERIL 10 ML VO POSTERIOR A LAS COMIDAS   
+- FUROSEMIDA 40 MG IV QD **SUSPENDER***   
+
+**Pendientes:**
+
+- ☐ <span class="badge-rutina">RUTINA</span> **[LABORATORIO]** METOTREXATO 15 MG VO SEMANAL
+- ☐ <span class="badge-rutina">RUTINA</span> **[LABORATORIO]** ACIDO FOLICO 1 MG VO QD
+- ☐ <span class="badge-rutina">RUTINA</span> **[LABORATORIO]** PREDNISONA 5 MG VO CADA 48 HORAS
+- ☐ <span class="badge-rutina">RUTINA</span> **[LABORATORIO]** CLOROQUINA 250 MG VO QD
+- ☐ <span class="badge-rutina">RUTINA</span> **[LABORATORIO]** ***SUSPENDER*** LOSARTAN 100 MG VO QD
+- ☐ <span class="badge-rutina">RUTINA</span> **[LABORATORIO]** AMLODIPINO 5 MG VO QD
+- ☐ <span class="badge-rutina">RUTINA</span> **[LABORATORIO]** QUETIAPINA 50 MG VO QD
+- ☐ <span class="badge-rutina">RUTINA</span> **[LABORATORIO]** ESPIRONOLACTONA 25 MG VO QD
+- ☐ <span class="badge-stat">STAT</span> **[INTERCONSULTA]** C: IC A CLINICA DEL DOLOR YA REALIZADA POR DOLOR CRÓNICO DEBIDO A LESIONES CERVICALES
+
+**Observaciones / Novedades:**
+
+> L: LABORATORIO
+> ELECTROLITOS A LAS 21H00
+```{=html}
+</div>
+```
+
+```{=html}
+<div class="patient-card">
+  <div class="patient-header">
+    <h4 style="margin:0; display:inline-block;"><strong>Cama ABREVIADOS 2</strong>: FREIRE LOPEZ MARCO FERNANDO</h4>
+  </div>
+```
+
+- **HC:** `987792` | **Cédula:** N/R | **Edad:** 79 años | **Sexo:** N/R
+- **Antecedentes (APP):** ANTECEDENTES PERSONALES:; DIABETES MELLITUS 2; OBESIDAD GRADO 1; RAQUITISMO DIAGNISTICADO JUNIO 2026; CANCER TIROIDEO RECIENTE DIAGNOSTICO REFIERE FAMILIAR (NO TIENE BIOPSIA); ANTECEDENTES QUIRURGICOS:; HERNIA INGUINAL DERECHA
+
+**Diagnósticos Activos:**
+
+- DIAGNOSTICO:
+- NEUMONIA ADQUIRIDA EN LA COMUNIDAD CURBA 65 2 PUNTOS, PSI 149
+- FALLA RENAL AGUDA
+- DESCOMPENSACION DIABETICA
+
+**Medicación Activa:**
+
+- LIQUIDOS ORALES   
+- AMPICILINA MAS SULBACTAM 3 GR INTRAVENOSO CADA 6 HORAS CIE10 J189 FI:   
+- CLARITROMICINA 500 MG VIA ORAL CADA 12 HORAS CIE10 J47   
+- INSULINA POR ESQUEMA: 6UI NPH AM, 4 UI NPH HS   
+- 180 - 230 MG/DL: 2 UI SUBCUTANEO   
+- 231 - 280 MG/DL: 3 UI SUBCUTANEO   
+- 281 - 330 MG/DL: 4 UI SUBCUTANEO   
+- MAYOR 331 MG/DL: 5 UI SC Y COMUNICAR   
+- EN CASO DE HIPOGLUCEMIA (< 70 MG/DL) FAVOR ADMINISTRAR DX/A 10% 200 CC IV EN BOLO, REPETIR GLUCEMIA 15 MINUTOS DESPUES,    
+
+**Pendientes:**
+
+- ☐ <span class="badge-control">CONTROL</span> **[LABORATORIO]** L: HBA1C Y TSH MAÑANA
+
+**Observaciones / Novedades:**
+
+> 2026/11/12
+> ACIDO LACTICO...................: 2.4
+> BE..............................: -0.9 CA..............................: 1.1
+> CL..............................: 104.0 COHB............................: 1.9
+> GLU.............................: 260.0 HCO3............................: 24.3
+> O2SAT...........................: 65.5 PCO2............................: 42.1
+```{=html}
+</div>
+```
+
+```{=html}
+<div class="patient-card">
+  <div class="patient-header">
+    <h4 style="margin:0; display:inline-block;"><strong>Cama ABREVIADOS 3</strong>: GUEVARA JARAMILLO MARTHA YOLANDA C</h4>
+  </div>
+```
+
+- **HC:** `140019` | **Cédula:** 1703701944 | **Edad:** 73 años | **Sexo:** N/R
+- **Antecedentes (APP):** ANTECEDENTES PATOLOGICOS PERSONALES; INFECCION DEL TRACTO URINARIO POR K. PNEUMONIAE BLEE; INFECCION DEL TRACTO URINARIO RECURRENTE; HIPERTENSION PULMONAR; HIPOTIROIDISMO; ANTECEDENTES QUIRURGICO:; HISTERECTOMIA; CISTOPEXIA
+
+**Diagnósticos Activos:**
+
+- IMPRESION DIAGNOSTICA
+- ACTIVOS:
+- INFECCION DEL TRACTO URINARIO COMPLICADA E. COLI BLEE
+- EXACERBACION DE EPID
+
+**Medicación Activa:**
+
+- MEROPENEM 1G INTRAVENOSO CADA 8 HORAS (FI: 10/11/2026 D3/7 N390)   
+- PREDNISONA 20 MG VIA ORAL CADA DIA D1/3   
+- PARACETAMOL 1 GRAMO INTRAVENOSO POR RAZONES NECESARIAS   
+- LOSARTAN 100 MG VIA ORAL CADA DIA   
+- AMLODIPINO 10 MG VIA ORAL CADA DIA   
+- OMEPRAZOL 20 MG VIA ORAL CADA DIA   
+- ENOXAPARINA 40 MG SC CADA DIA   
+- LEVOTIROXINA 50 MCG VO CADA DIA EN AYUNAS   
+- TAMSULOSINA 0.4 MG VO CADA DIA   
+- SALBUTAMOL 2 PUFFS CADA 6 HORAS   
+
+**Pendientes:**
+
+- ☐ <span class="badge-control">CONTROL</span> **[LABORATORIO]** EXÁMENES DE CONTROL EL DIA LUNES
 
 **Últimos Laboratorios:**
 
-- *2026-11-02 (PCR y Reactantes):* pcr: 214, procalcitonina: 0.23, creatinina: 1.21
-
-**Observaciones / Novedades:**
-
-> Urocultivo: Proteus mirabilis productor de BLEE.
+- *2026-11-13 (Laboratorios / Gasometría):* resumen: 13/11/2026 LEU: 10.66, HG: 14.8, HCTO: 45, NEU: 9.57, PLAQ: 327.000. . CLORO: 105, POTASIO: 4.05, SODIO:141 . CREA: 0.55
 ```{=html}
 </div>
 ```
@@ -987,80 +1635,36 @@ format:
 ```{=html}
 <div class="patient-card">
   <div class="patient-header">
-    <h4 style="margin:0; display:inline-block;"><strong>Cama UROLOGIA HARO</strong>: HARO PRADO DANNY ERNESTO</h4>
-    <span class="badge-control">CKD-EPI: Conservada</span>
+    <h4 style="margin:0; display:inline-block;"><strong>Cama ABREVIADO 3B</strong>: LIDIOMA MINANGO KATHERINE ELIZABETH C</h4>
   </div>
 ```
 
-- **HC:** `650799` | **Cédula:** 1711965382 | **Edad:** 49 años 10 meses | **Sexo:** M
-- **Antecedentes (APP):** Hipertensión arterial; Nefrolitiasis; ITU a repetición con sepsis reciente (oct 2026)
+- **HC:** `1786985` | **Cédula:** 1720905486 | **Edad:** 24 AÑOS | **Sexo:** N/R
+- **Antecedentes (APP):** ANTECEDENTES PATOLOGICOS PERSONALES:; CLINICOS:; MIOSITIS NECROTIZANTE INMUNOMEDIADA; QUIRURGICOS; APENDICECTOMIA; ALERGIAS:; NO REFIERE
 
 **Diagnósticos Activos:**
 
-- Infección urinaria complicada / Pielonefritis aguda
-- Nefrolitiasis (CIE N20.0)
-- Hipertensión arterial esencial
-
-**Soporte y Vía:**
-- *Dieta:* Blanda hiposódica
-- *Hidratación / Infusiones:* Vía salinizada
+- MIOSITIS NECROTIZANTE INMUNOMEDIADA
+- REFRACTARIEDAD A CORTICOTERAPIA
 
 **Medicación Activa:**
 
-- Meropenem 2 g IV c/8 horas <span class="badge-atb">Día 3/7</span>
-- Enoxaparina 40 mg SC cada día
+- PARACETAMOL 1 GR INTRAVENOSO POR RAZONES NECESARIAS   
+- PREDNISONA 30 MG VO QD   
+- OMEPRAZOL 20 MG VO QD   
+- COTRIMOZAXOL 800 / 160 MG LUNES MIERCOLES Y VIERNES   
+- VITAMINA D 2000 UI VO QD   
+- AZATIOPRINA 100 MG VO QD TIENE   
 
 **Pendientes:**
 
-- ☐ <span class="badge-control">CONTROL</span> **[LABORATORIO]** Control domingo de PCR, Biometría, Electrolitos, Urea y Creatinina (`05:00 AM`)
-
-**Observaciones / Novedades:**
-
-> Paciente joven con antecedente de choque séptico urológico hace un mes.
-```{=html}
-</div>
-```
-
-### Emergencia / Observación (5 pacientes)
-
-```{=html}
-<div class="patient-card">
-  <div class="patient-header">
-    <h4 style="margin:0; display:inline-block;"><strong>Cama ER TORRES</strong>: TORRES CEVALLOS CESAR WASHINGTON</h4>
-    <span class="badge-control">CKD-EPI: Reducida por edad y LRA (Creatinina 2.31)</span>
-  </div>
-```
-
-- **HC:** `558292` | **Cédula:** 1701071282 | **Edad:** 90 años 11 meses | **Sexo:** M
-- **Antecedentes (APP):** Demencia vascular; Hipoacusia severa; Cáncer de próstata; EPOC
-
-**Diagnósticos Activos:**
-
-- Insuficiencia respiratoria aguda hipoxémica severa (Tipo I)
-- Neumonía comunitaria grave bilateral (CIE J18.9)
-- Hipernatremia severa hipoosmolar hipovolémica (Sodio 156.5)
-- LRA KDIGO 2 prerrenal
-
-**Soporte y Vía:**
-- *Dieta:* NPO / Soporte respiratorio
-- *Hidratación / Infusiones:* Dextrosa 5% en agua 1000 ml IV a 60 cc/h
-
-**Medicación Activa:**
-
-- Cefepime 2 g IV c/24 horas (ajustado por TFG)
-- Claritromicina 500 mg IV c/12 horas <span class="badge-atb">Día 2/7</span>
-
-**Pendientes:**
-
-- ☐ <span class="badge-stat">STAT</span> **[LABORATORIO]** GASOMETRÍA ARTERIAL STAT + CONTROL ESTRICTO DE SODIO Y ELECTROLITOS (`STAT / 20:30`)
+- ☐ <span class="badge-urgente">URGENTE</span> **[IMAGEN_PROCEDIMIENTO]** PD TAC DE TORAX
+- ☐ <span class="badge-rutina">RUTINA</span> **[INTERCONSULTA]** INDICACIONES DE REUMATOLOGIA
+- ☐ <span class="badge-urgente">URGENTE</span> **[IMAGEN_PROCEDIMIENTO]** ECOCARDIOGRAMA PD TURNO
 
 **Últimos Laboratorios:**
 
-- *2026-11-07 (Gases y Electrolitos):* sodio: 156.5, potasio: 3.2, creatinina: 2.31, urea: 142.0
-
-**Observaciones / Novedades:**
-
-> Paciente nonagenario con hipernatremia grave de 156.5 mEq/L.
+- *2026-11-13 (Laboratorios / Gasometría):* resumen: 11/11/2026 PCR 1.11 / INR.1.19 (TP).: 12.9 (TTP): 27.3 LEUCOCITOS : 6.83 (HB).: 15.1 MONOCITOS.: 0.30 EOSINOFILOS.: 0.05 LINFOCITOS..: 2.51 NEUTROFILOS 3.90 PLAQU: 448.000 2026/11/04 PCR : 2.24 AST .: 133.0 ALT : 223.0 CPK...: 5798.0 * COLESTEROL.: 180 TRIGLI 92 F-ALKALINA...: 103 GGT...: 18 . CL: 108, K: 4.5, SODIO: 140. . CREA. 0.53 . EMO NO INFE
 ```{=html}
 </div>
 ```
@@ -1068,45 +1672,41 @@ format:
 ```{=html}
 <div class="patient-card">
   <div class="patient-header">
-    <h4 style="margin:0; display:inline-block;"><strong>Cama INTERMEDIOS CAMACHO</strong>: CAMACHO PINEDA RICAURTE DE JESUS</h4>
-    <span class="badge-control">CKD-EPI: Conservada</span>
+    <h4 style="margin:0; display:inline-block;"><strong>Cama ABRE 1</strong>: ORTIZ MARIA ANGELA C</h4>
   </div>
 ```
 
-- **HC:** `2087368` | **Cédula:** 0700618523 | **Edad:** 75 años | **Sexo:** M
-- **Antecedentes (APP):** Enfermedad de Parkinson en tratamiento con Levodopa; Cáncer de próstata estadio I (radioterapia previa)
-- **Quirúrgicos (AQX):** Artroscopia de rodilla; Colecistectomía
+- **HC:** `520780` | **Cédula:** 1702106038 | **Edad:** 98 años | **Sexo:** N/R
+- **Antecedentes (APP):** HIPERTENSION ARTERIAL; INSOMNIO; ARTROSIS
 
 **Diagnósticos Activos:**
 
-- Neumonía comunitaria CURB-65: 3 puntos, PSI 165 (Clase V)
-- Insuficiencia respiratoria tipo 1
-- Infección de vías urinarias
-- Úlceras por presión grado III
-- Hipernatremia marcada (Na 156.6)
-
-**Soporte y Vía:**
-- *Dieta:* Dieta en papillas asistida
-- *Hidratación / Infusiones:* Cloruro de sodio al 0.9% IV a 80 ml/h
+- SEPSIS DE FOCO URINARIO
+- LESION RENAL AGUDA KDIGO II
+- HIPOKALEMIA LEVE
+- HIPONATREMIA LEVE HIPOVOLEMICA ISOSMOLAR AGUDA ASINTOMATICA
 
 **Medicación Activa:**
 
-- Ceftriaxona 1 g IV c/12 horas <span class="badge-atb">Día 4</span>
-- Levodopa / Carbidopa 250/25 mg VO 5 veces al día
-- Furosemida 20 mg IV BID
+- CLORURO DE SODIO AL 0.9% PASAR INTRAVENOSO A 40ML/H   
+- MEROPENEM 1G INTRAVENOSO STAT Y CADA 8 HORAS (FI: 13/11/2026 D0 N390) *   
+- PARACETAMOL 1 GRAMO INTRAVENOSO POR RAZONES NECESARIAS   
+- FUROSEMIDA 20 MG INTRAVENOSO CADA DIA   
+- QUETIAPINA 25 MG VIA ORAL HORA SUEÑO, POR 3   
+- BROMURO DE IPATROPIO 2 PUFFS CADA 8 HORAS   
+- ESCITALOPRAM 10 MG VIA ORAL CADA DIA AM, P   
+- HEPARINA SODICA 5000 UI SC CADA DIA   
+- OMEPRAZOL 40 MG INTRAVENOSO CADA DIA   
 
 **Pendientes:**
 
-- ☐ <span class="badge-stat">STAT</span> **[LABORATORIO]** CONTROL DE ELECTROLITOS CADA 12 HORAS ESTRICTO (`21:00`)
-- ☐ <span class="badge-urgente">URGENTE</span> **[CUIDADO_ENFERMERIA]** Curación de úlceras por presión por clínica de heridas
+- ☐ <span class="badge-control">CONTROL</span> **[LABORATORIO]** LUNES EXAMENES DE LABORATORIO DE CONTROL
+- ☐ <span class="badge-rutina">RUTINA</span> **[LABORATORIO]** INDICACION DE INFECTOLOGIA
+- ☐ <span class="badge-rutina">RUTINA</span> **[LABORATORIO]** PD RESULATDO DE UROCULTIVO
 
 **Últimos Laboratorios:**
 
-- *2026-11-09 (Reactantes y Gases):* pcr: 202.0, sodio: 156.6, cloro: 120, potasio: 3.06
-
-**Observaciones / Novedades:**
-
-> Paciente no tributario de medidas invasivas según consenso familiar.
+- *2026-11-13 (Laboratorios / Gasometría):* resumen: 13/11/2026 PCR: 280, PCT: 20.2 . LEU: 10.3, HG: 12, HCTO: 36, NEU: 8.7, PLAQ: 185.000. CLORO: 96, POTASIO: 3.3, SODIO: 132. . UREA: 90 CREA: 1.77 . EMO INFECCIOSO
 ```{=html}
 </div>
 ```
@@ -1114,45 +1714,40 @@ format:
 ```{=html}
 <div class="patient-card">
   <div class="patient-header">
-    <h4 style="margin:0; display:inline-block;"><strong>Cama AB 3B</strong>: MOSQUERA SALVADOR PATRICIA ALEXANDRA</h4>
-    <span class="badge-control">CKD-EPI: 14 ml/min/1.73m2</span>
+    <h4 style="margin:0; display:inline-block;"><strong>Cama ABRV 2</strong>: CALVA SALAS GRETA</h4>
   </div>
 ```
 
-- **HC:** `1334681` | **Cédula:** 1706511530 | **Edad:** 63 años | **Sexo:** F
-- **Antecedentes (APP):** Litiasis renal (litotricia); Colelitiasis; Osteoporosis; Prolapso vesical; ITU a repetición
+- **HC:** `1158688` | **Cédula:** 1102134838 | **Edad:** 64 años | **Sexo:** N/R
+- **Antecedentes (APP):** TROMBOCITOPENIA INMUNE; DIABETES; HIPERTENSION ARTERIAL; HIPOTIROIDISMO; ARTRITIS REUMATOIDE HACE 10 AÑOS; GASTRITIS CRONICA CON H. PYLORI +, RECIBE TRATAMIENTO ERRADICADOR; POLIPOS COLONICOS, ALGUNOS HIPERPLASICOS, OTROS CON FOCOS DE DISPLASIA, TODOS; SON RESECADOS, BORDES LIBRES, SE RECOMIENDA CONTROLES
 
 **Diagnósticos Activos:**
 
-- Sepsis a doble foco (urinario e intestinal)
-- Descarte de Clostridium difficile
-- Lesión renal aguda KDIGO III (TFG 14 ml/min)
-- Trombocitopenia severa por sepsis (Plaquetas 13.000)
-- Fallo multiorgánico
-
-**Soporte y Vía:**
-- *Dieta:* NPO
-- *Hidratación / Infusiones:* Lactato de Ringer en bolo de 500 cc, luego a 150 ml/h
+- INFECCION DE TRACTO URINARIO COMPLICADA TUMBARELLO 2 PUNTOS
+- INSUFICIENCIA RENAL AGUDA KDIGO 1
+- HIPONATREMIA LEVE
 
 **Medicación Activa:**
 
-- Meropenem 1 g IV c/8 horas
-- Metronidazol 500 mg IV c/8 horas
-- Enoxaparina 40 mg SC QD **[SUSPENDIDO]**
+- CEFTRIAXONA 2 GR INTRAVENOSO CADA DIA D2/5 CIE 10: N390 FI:12/11/26   
+- HIDROCORTISONA 50 MG INTRAVENOSO CADA DIA   
+- OMEPRAZOL 40 MG INTRAVENOSO CADA DIA   
+- PARACETAMOL 1GR INTRAVENOSO CADA 8 HORAS   
+- PREDNISONA 5MG DIARIOS * DIFERIDO *   
+- ELTROMBOPAG 50MG VO QD   
+- LEVOTIROXINA 50 MCG VO QD   
+- LOSARTAN 100 MG VO QD AM * DIFERIDO *   
+- AMLODIPINO 10MG VO QD PM * DIFERIDO *   
+- EMPAGLIFOZINA 10 MG CADA DIA * DIFERIDO *   
 
 **Pendientes:**
 
-- ☐ <span class="badge-stat">STAT</span> **[LABORATORIO]** Gasometría arterial STAT + Ácido láctico (`STAT / 20:00`)
-- ☐ <span class="badge-urgente">URGENTE</span> **[LABORATORIO]** Coprorasitario + PMN + Toxinas A y B para Clostridium difficile (`21:00`)
-- ☐ <span class="badge-stat">STAT</span> **[LABORATORIO]** Urocultivo tomar muestra STAT
+- ☐ <span class="badge-rutina">RUTINA</span> **[LABORATORIO]** PD UROCULTIVO
+- ☐ <span class="badge-control">CONTROL</span> **[LABORATORIO]** EXAMENES DE CONTROL PARA EL DIA LUNES
 
 **Últimos Laboratorios:**
 
-- *2026-11-07 (Control Crítico):* plaquetas: 13000, leucocitos: 14.14, potasio: 3.39, sodio: 135.8
-
-**Observaciones / Novedades:**
-
-> Paciente en choque séptico y falla multiorgánica. Monitoreo continuo.
+- *2026-11-13 (Laboratorios / Gasometría):* resumen: 13/11/2026 TSH: 0.02, LEU: 13,8, HG: 12.4, HCTO: 39, NEU: 12.6, PLAQ: 51.000 . H GLICOSILADA: 5.9, COLESTEROL: 15.6 . COLESTEROL LDL: 55.4, GLUCOSA: 101, CLORO: 101, POTASIO: 4.19 SODIO: 134. . UREA: 79, CREA: 1.37
 ```{=html}
 </div>
 ```
@@ -1160,41 +1755,52 @@ format:
 ```{=html}
 <div class="patient-card">
   <div class="patient-header">
-    <h4 style="margin:0; display:inline-block;"><strong>Cama ER-AB 1</strong>: MOLINA MURILLO MARIA JOSE</h4>
-    <span class="badge-control">CKD-EPI: 28.6 ml/min/1.73m2 (Creatinina 2.24)</span>
+    <h4 style="margin:0; display:inline-block;"><strong>Cama ABRV 3A</strong>: VARGAS BAUTISTA ANA PIEDAD C</h4>
   </div>
 ```
 
-- **HC:** `1304188` | **Cédula:** 1717438442 | **Edad:** 35 años | **Sexo:** F
-- **Antecedentes (APP):** Cáncer de cérvix IIIB; Uropatía obstructiva; Nefrostomías bilaterales (julio 2026)
-- **Quirúrgicos (AQX):** Nefrostomías bilaterales; Cesárea
+- **HC:** `1234469` | **Cédula:** 1800447821 | **Edad:** 80 años | **Sexo:** N/R
+- **Antecedentes (APP):** INFECCION DE VIAS URINARIAS COMPLICADA POR ESCHERICHIA COLI MULTISENSIBLE; BACTERIEMIA POR COCOS GRAM POSITIVOS EN ESTUDIO (CIE-10: A49.0); CANDIDURIA POR CANDIDA TROPICALIS (CIE-10: B37.4); T; TROMBOSIS VENOSA PROFUNDA CRONICA DE MIEMBRO INFERIOR IZQUIERDO; ENFERMEDAD PULMONAR INTERSTICIAL DIFUSA (EPID) / PATRON PROBABLE NIU; INSUFICIENCIA RESPIRATORIA CRONICA - OXIGENO DOMICILIARIO; INSUFICIENCIA CARDIACA CONGESTIVA - FEVI 70%
 
 **Diagnósticos Activos:**
 
-- Infección urinaria complicada Tumbarello 12 puntos
-- Lesión renal aguda KDIGO II
-
-**Soporte y Vía:**
-- *Dieta:* Blanda hiposódica
-- *Hidratación / Infusiones:* Solución salina 0.9% 1000 ml: bolo 250 ml, luego a 60 ml/h
+- INFECCION DE VIAS URINARIAS COMPLICADA POR ESCHERICHIA COLI MULTISENSIBLE
+- BACTERIEMIA POR COCOS GRAM POSITIVOS EN ESTUDIO (CIE-10: A49.0)
+- CANDIDURIA POR CANDIDA TROPICALIS (CIE-10: B37.4)
+- T
+- TROMBOSIS VENOSA PROFUNDA CRONICA DE MIEMBRO INFERIOR IZQUIERDO
+- ENFERMEDAD PULMONAR INTERSTICIAL DIFUSA (EPID) / PATRON PROBABLE NIU
+- INSUFICIENCIA RESPIRATORIA CRONICA - OXIGENO DOMICILIARIO
+- INSUFICIENCIA CARDIACA CONGESTIVA - FEVI 70%
 
 **Medicación Activa:**
 
-- Meropenem 1 g IV c/12 horas <span class="badge-atb">Día 0</span>
+- MEROPENEM 1 GRAMOS INTRAVENOSO CADA 12 HORAS FI:12-11-2026 CIE:10 B99 D1   
+- FUROSEMIDA 20 MG VIA ORAL CADA DIA   
+- APIXABAN 5 MG VIA ORAL CADA 12 HORAS   
+- ALOPURINOL 150 MG VIA ORAL CADA DIA   
+- BROMURO DE IPRATROPIO 2 PUFFS CADA 8 HORAS   
+- ESPIRONOLACTONA 25 MILIGRAMOS VIA ORAL CADA DIA   
+- DAPAGLIFOZINA 10 MG VIA ORAL CADA DIA   
+- CARVEDILOL 3.125 MG VIA ORAL CADA DIA   
+- PARACETAMOL 1 GRAMO INTRAVENOSO POR RAZONES NECESARIAS   
+- GABAPENTINA 300 MG VIA ORAL CADA 8 HORAS   
 
 **Pendientes:**
 
-- ☐ <span class="badge-stat">STAT</span> **[LABORATORIO]** EMO, Gram y UROCULTIVO STAT (¡Muestra vesical estricta, NO de nefrostomías!) (`STAT / Inmediato`)
-- ☐ <span class="badge-stat">STAT</span> **[IMAGEN_PROCEDIMIENTO]** Electrocardiograma STAT en este momento
-- ☐ <span class="badge-urgente">URGENTE</span> **[CUIDADO_ENFERMERIA]** Criterio de alarma: Si descompensación neurológica/hemodinámica solicitar valoración UCI
+- ☐ <span class="badge-urgente">URGENTE</span> **[LABORATORIO]** HEMOCULTIVOS X 2 HOY
+- ☐ <span class="badge-urgente">URGENTE</span> **[INTERCONSULTA]** VALORACION POR HEMAOTLOGIA E INFECTOLOGIA
+- ☐ <span class="badge-rutina">RUTINA</span> **[LABORATORIO]** PD RESULTADO DE UROCULTIVO, HEMOCULTIVO,
+- ☐ <span class="badge-urgente">URGENTE</span> **[IMAGEN_PROCEDIMIENTO]** TAC SIMPLE DE ALBOMEN Y PELVIS PENDIENTE
+- ☐ <span class="badge-urgente">URGENTE</span> **[LABORATORIO]** PET SCAN HOY
 
 **Últimos Laboratorios:**
 
-- *2026-11-08 16:30 (Gasometría y Renal):* lactato: 1.6, po2: 20.2, pcr: 126.0, procalcitonina: 1.44, creatinina: 2.24
+- *2026-11-13 (Laboratorios / Gasometría):* resumen: 13/11/2026 IGG: 7, IGM: 0.22, LEU: 24, HG: 10, HCTO: 31, PLAQ: 328.000, FERRITINA: 1043, TRIGLI: 241, . EMO NO INFECCIOSO. . PCR: 96, PCT: 0.47 . CLO: 98, K: 5.0, SODIO: 132 . crea: 1.8
 
 **Observaciones / Novedades:**
 
-> Tomar muestra para urocultivo por sonda vesical, no de nefrostomías.
+> INDICACIONES DE INFECTOLOGIA
 ```{=html}
 </div>
 ```
@@ -1202,41 +1808,663 @@ format:
 ```{=html}
 <div class="patient-card">
   <div class="patient-header">
-    <h4 style="margin:0; display:inline-block;"><strong>Cama ABREVIADOS CANTOS</strong>: CANTOS AGUIRRE GUADALUPE ESPERANZA</h4>
-    <span class="badge-control">CKD-EPI: 30 ml/min/1.73m2 (Creatinina 2.24)</span>
+    <h4 style="margin:0; display:inline-block;"><strong>Cama ABRV 3B</strong>: GAVIN YERBABUENA MARIA CRISTINA C</h4>
   </div>
 ```
 
-- **HC:** `140019` | **Cédula:** 1703701944 | **Edad:** 73 años 1 mes | **Sexo:** F
-- **Antecedentes (APP):** Hipertensión arterial esencial; ITU a repetición; Trastorno de ansiedad e insomnio
-- **Quirúrgicos (AQX):** Cesáreas; Embarazo ectópico; Apendicectomía
+- **HC:** `1597943` | **Cédula:** 0602991937 | **Edad:** 49 años | **Sexo:** N/R
+- **Antecedentes (APP):** GASTRITIS; INFECCIÓN POR H. PYLORI
 
 **Diagnósticos Activos:**
 
-- Hiponatremia severa sintomática en resolución
-- Infección urinaria complicada Tumbarello 2 puntos
-- Crisis convulsivas secundarias a hiponatremia
-
-**Soporte y Vía:**
-- *Dieta:* Blanda hiposódica
-- *Hidratación / Infusiones:* Cápsulas de sal 1 g VO cada 12 horas
+- SEPSIS DE FOCO GASTROINTESTINAL
+- HIPOKALEMIA LEVE
 
 **Medicación Activa:**
 
-- Ceftriaxona 2 g IV cada día <span class="badge-atb">Día 0</span>
+- CLORURO DE SODIO AL 0.9% PASAR INTRAVENOSO A 60ML/H   
+- METRONIDAZOL 500 MG INTRAVENOSO CADA 8 HORAS CIE10 A090 FI 13/11/2026   
+- OMEPRAZOL 40 MG INTRAVENOSO CADA DIA   
+- PARACETAMOL 1 GR INTRAVENOSO CADA 8 HORAS   
+- METOCLOPRAMIDA 10 MG INTRAVENOSO CADA 8 HORAS   
+- ENOXAPARINA 40 MG SC CADA DIA   
 
 **Pendientes:**
 
-- ☐ <span class="badge-stat">STAT</span> **[LABORATORIO]** Gasometría arterial en este momento + Electrolitos hoy PM (`STAT / 20:00`)
-- ☐ <span class="badge-control">CONTROL</span> **[LABORATORIO]** Control lunes: Biometría, PCR, Urea, Creatinina, Glucosa, Electrolitos urinarios (`05:00 AM`)
+- ☐ <span class="badge-urgente">URGENTE</span> **[IMAGEN_PROCEDIMIENTO]** PD INFORME DE TAC DE ABDOMEN
+- ☐ <span class="badge-control">CONTROL</span> **[LABORATORIO]** LUNES EXAMENES DE CONTROL
+- ☐ <span class="badge-urgente">URGENTE</span> **[LABORATORIO]** CLOSTRIDIIUM TOXINA A Y B HOY
 
 **Últimos Laboratorios:**
 
-- *2026-11-08 (Bioquímica):* sodio: 133.9, potasio: 4.13, creatinina: 2.24, urea: 53.4
+- *2026-11-13 (Laboratorios / Gasometría):* resumen: 13/11/2026 PCR: 108, PCT: 3.7. LEU: 16.4, HG: 14.5, HCTO: 44.3, NEU: 14.9, PLAQ: 367.000. . CLORO: 105. POATSIO: 3.3, SODIO: 137. . UREA: 22, CREA: 0.64
+```{=html}
+</div>
+```
+
+```{=html}
+<div class="patient-card">
+  <div class="patient-header">
+    <h4 style="margin:0; display:inline-block;"><strong>Cama ABR 2</strong>: AYALA PANCHEZ SEGUNDO VICTORIANO</h4>
+  </div>
+```
+
+- **HC:** `954541` | **Cédula:** N/R | **Edad:** N/D | **Sexo:** N/R
+- **Antecedentes (APP):** ANTECEDENTES PERSONALES:; MALFORMACION VASCULAR DE TIPO ANGIOMA CAVERNOSO; MIELOMA MULTIPLE DIAGNOSTICADO EN EL 2021; EPOC DIAGNOSTICADO EN EL 2021; DIABETES MELLITUS TIPO 2 DIAGNOSTICADO HACE 2 MESES; ENFERMEDAD DE PARKINSON; HIPOTIROIDISMO
+
+**Diagnósticos Activos:**
+
+- SEPSIS
+- DE PROBABLE ETIOLOGIA PULMONAR POR NEUMONIA ASPIRATIVA PSI CLASE 5, NEW DE RIESGO ALTO
+
+**Medicación Activa:**
+
+- CLORURO DE SODIO 0,9% 300 ML + 30 MEQ DE CLORURO DE POTASIO PASAR IV A 3 HORAS   
+- FITOMENADIONA 10 MG IV CADA 12 HORAS D1/3   
+- MEROPEMEN 2 GRAMOS IV EN ESTE MOMENTO Y LUEGO MEROPENEM 1 GRAMO IV CADA 8 HOR   
+
+**Pendientes:**
+
+- ☐ <span class="badge-rutina">RUTINA</span> **[LABORATORIO]** 2026/11/08
+- ☐ <span class="badge-rutina">RUTINA</span> **[LABORATORIO]** PCR 433.00
+- ☐ <span class="badge-rutina">RUTINA</span> **[LABORATORIO]** PROCALCITONINA10.0INR 1.85
+- ☐ <span class="badge-rutina">RUTINA</span> **[LABORATORIO]** PROTROMBINA 19.2
+- ☐ <span class="badge-rutina">RUTINA</span> **[LABORATORIO]** TROMBOPLASTINA (TTP)..: 40.7
+```{=html}
+</div>
+```
+
+```{=html}
+<div class="patient-card">
+  <div class="patient-header">
+    <h4 style="margin:0; display:inline-block;"><strong>Cama ABR 3A</strong>: DUQUE VERGARA MARIA ESTHER</h4>
+  </div>
+```
+
+- **HC:** `109881` | **Cédula:** N/R | **Edad:** 96 años | **Sexo:** N/R
+- **Antecedentes (APP):** DIABETES MELLITUS TIPO 2; HIPERTENSION ARTERIAL; DEMENCIA SENIL; GASTRITIS CRONICA; POLIARTROSIS NO ESPECIFICADA
+
+**Diagnósticos Activos:**
+
+- INFECCION DE VIAS URINARIAS
+- HIPERKALEMIA MODERADA
+- HIPONATREMIA MODERADA
+
+**Medicación Activa:**
+
+- GLUCONATO DE CALCIO AL 10% 1 AMPOLLA IV STAT Y LUEGO CADA 8 HORAS   
+- NEBULIZACION CON 2 ML DE SALBUTAMOL MAS 2 ML DE CLORURO DE DE SODIO AL 0.9%   
+- STAT Y LUEGO CADA 4- 6-8 -12 HORAS ( NO ADMINISTRAR SI HAY TAQUICARDIA)   
+- FUROSEMIDA 40 MG IV STAT Y LUEGO CADA 8 -12 HORAS ( PRIMERO VER QUE NO ESTE   
+- CON HIPOTENSION SINO DISMINUYE A 20 MG )   
+- ELECTROCARDIOGRAMA STAT Y VER SI HAY ALTERACION EN EKG   
+- CEFTRIAZONA 1GR CADA 12 HORAS D 1 FI : 11-11-2026   
+
+**Pendientes:**
+
+- ☐ <span class="badge-control">CONTROL</span> **[LABORATORIO]** CONTROL DE ELECTROLITOS A LAS 4 HORAS, LUEGO DE HABER RECIBIDO EL PRIMER CICLO DE NEBULIZACION
+```{=html}
+</div>
+```
+
+```{=html}
+<div class="patient-card">
+  <div class="patient-header">
+    <h4 style="margin:0; display:inline-block;"><strong>Cama ABV1</strong>: VASCONEZ RUALES CARLOS AUGUSTO</h4>
+  </div>
+```
+
+- **HC:** `297135` | **Cédula:** 1700568841 | **Edad:** 87 AÑOS | **Sexo:** N/R
+- **Antecedentes (APP):** HIPERPLASIA PROSTATICA BENIGNA; GLAUCOMA; ENFERMEDAD RENAL CRÓNICA; NODULO TIROIDEO; SINDROME MIELODISPLASICO - MIELOMA MULTIPLE EN ESTUDIO
+
+**Diagnósticos Activos:**
+
+- COLECCION SUBMENTONIANA
+- MASA CERVICAL IZQUIERDA EN ESTUDIO
+- PANCITOPENIA
+- ENFERMEDAD RENAL CRÓNICA REAGUDIZADA
+- DESCARTAR FOCO ODONTOGENICO
+- DESCARTAR ANGINA DE LUDWING
+- A DESCARTAR NEOPLASIA TIROIDEA
+- HIPONATREMIA LEVE
+
+**Medicación Activa:**
+
+- CEFEPIME 1 GRAMO IV CADA DOCE HORAS   
+- VANCOMICINA 500 MG IV CADA 48 HORAS   
+- PARACETAMOL   
+- FLUCONAZOL 150 MG VIA ORAL QD   
+- COTRIMOXAZOL 800/160 MG VIA ORAL QD   
+- ACICLOVIR 800 MG VIA ORAL QD   
+- HEPARINA SODICA 5000 UI BID   
+- FUROSEMIDA 40 MG IV   
+- OMEPRAZOL 20 MG IV QD   
+- DEXAMETASONA 8 MG CADA 12 HORAS FI: 10/11/2026 (D1)   
+
+**Pendientes:**
+
+- ☐ <span class="badge-urgente">URGENTE</span> **[IMAGEN_PROCEDIMIENTO]** BODY TAC SIMPLE
+- ☐ <span class="badge-stat">STAT</span> **[INTERCONSULTA]** ELECTROCARDIOGRAMA STAT
+- ☐ <span class="badge-urgente">URGENTE</span> **[IMAGEN_PROCEDIMIENTO]** ECOGRAFIA DE TIROIDES AGENDADA, PENDIENTE REALIZAR
+- ☐ <span class="badge-rutina">RUTINA</span> **[LABORATORIO]** PAAF DE MASA CERVICAL IZQUIERDA
+- ☐ <span class="badge-control">CONTROL</span> **[LABORATORIO]** L: -MAÑANA BH PCT , PCR , GLUCOSA, ELECTROLTIOS
+- ☐ <span class="badge-rutina">RUTINA</span> **[LABORATORIO]** GASOMETRÍA EN LA PRN
+
+**Últimos Laboratorios:**
+
+- *2026-11-13 (Laboratorios / Gasometría):* resumen: 13/11/2026 07:30: LEUCOCITOS: 0.51, NEUTROFILOS: 0.13, LINFOCITOS: 0.37, HEMOGLOBINA: 8.1, HEMATOCRITO: 26.1, VOLUMEN CORPUSCULAR MEDIO: 88.00, PLAQUETAS: 134.000 | 12/11/2026 10:16: GLUCOSA: 112, SODIO: 135.4, POTASIO: 5.18, CLORO: 109, PCR CUANTITATIVO ULTRASENSIBLE: 35.30, PROCALCITONINA: 0.21 | 12/11/2026 09:28: CREATININA: 3.44 LEUCOCITOS: 0.6
 
 **Observaciones / Novedades:**
 
-> Urocultivo previo: Klebsiella pneumoniae BLEE.
+> IC ODONTOLOGIA DESCARTAR FOCO ODONTOGENICO DE ABSCESO SUBMENTONIAN YA REALIZADA
+> IC A HEMATOLOGIA PANCITPENAI SD MIELODISPLASICO, VS MIELOMA REALIZADO
+> SEGUIMIENTO OTORRINOLARINGOLOGIA PD DEFINIR DRENAJE DE COLECCION
+> IC NEFROLOGIA POR ENF RENAL CRONICA ESTADIO 5 REALIZADA
+```{=html}
+</div>
+```
+
+```{=html}
+<div class="patient-card">
+  <div class="patient-header">
+    <h4 style="margin:0; display:inline-block;"><strong>Cama ABV2</strong>: MALDONADO CAYAMBE DARWIN BENITO C</h4>
+  </div>
+```
+
+- **HC:** `2090778` | **Cédula:** 1711695302 | **Edad:** 55 años | **Sexo:** N/R
+- **Antecedentes (APP):** INFARTO AGUDO DE MIOCARDIO
+
+**Diagnósticos Activos:**
+
+- SINDROME CONSTITUCIONAL EN ESTUDIO
+
+**Medicación Activa:**
+
+- PARACETAMOL 1 GRAMO IV PRN   
+- ENOXAPARINA 40 MG SC CADA DIA   
+
+**Pendientes:**
+
+- ☐ <span class="badge-rutina">RUTINA</span> **[LABORATORIO]** EDA MÁS COLONOSCOPIA AGENDAR TURNO. VERIFICAR QUE DISPONGA DE PEDIDO Y TOMAR
+- ☐ <span class="badge-rutina">RUTINA</span> **[LABORATORIO]** TURNO
+- ☐ <span class="badge-stat">STAT</span> **[IMAGEN_PROCEDIMIENTO]** ECOGRAFIA VESCICO PROSTATICA
+- ☐ <span class="badge-control">CONTROL</span> **[LABORATORIO]** MAÑANA AM: PSA TOTAL Y LIBRE, CEA, AFP
+
+**Últimos Laboratorios:**
+
+- *2026-11-13 (Laboratorios / Gasometría):* resumen: 2026/11/12 Hora: 13:58 CA 19-9...........: 2.00 CA-125..........................: 1006.00 CA 15-3.........................: 101 CLORO...........................: 100 POTASIO.........................: 4.03 SODIO...........................: 135.3 NITROGENO UREICO EN SUERO.......: 12 UREA SUERO......................: 25.2 CREATININA...................
+```{=html}
+</div>
+```
+
+```{=html}
+<div class="patient-card">
+  <div class="patient-header">
+    <h4 style="margin:0; display:inline-block;"><strong>Cama ABV 2</strong>: FLORES NARANJO MENTOR GUILLERMO</h4>
+  </div>
+```
+
+- **HC:** `2062807` | **Cédula:** 1707828602 | **Edad:** 62 AÑOS | **Sexo:** N/R
+- **Antecedentes (APP):** CANCER DE PROSTATA; HIDRONEFROSIS BILATERAL, CON CAMBIOS DE NEFROSTOMIAS CADA 3 MESES; ENFERMEDAD RENAL CRONICA ESTADIO 4 DE ETIOLOGIA POST-OBSTRUCTIVA CON REQUERIMIENTO DE TERAPIA DE REEMPLAZO RENAL, CON ULTIMA SESION DEL 01/09/2026 RETIRO DE ACCESO VASCULAR EL 09/10/2026; FIBRILACION AURICULAR CON RESPUESTA VENTRICULAR ALTA; DERRAME PERICARDICO CON SIGNOS DE TAPONAMIENTO + PERICARDIOCENTESIS REALIZADA EL 28/08/2026
+
+**Diagnósticos Activos:**
+
+- SEPSIS DE FOCO URNARIO
+- DERRAME PLEURAL BILATERAL A PREDOMINIO IZQUIERDO
+- INFECCIÓN DE TRACTO URINARIO COMPLICADA
+- INSUFICIENCIA RESPIRATORIA AGUDA
+- LESIÓN RENAL AGUDA VS CRONICA REAGUDIZADA
+- HIPONATREMIA MODERADA
+- ANEMIA LEVE
+
+**Medicación Activa:**
+
+- MEROPENEM 2 G STAT DESPUES 1 G IV CADA 12 HORAS FI 11/11/2026 D0 N390   
+- PARACETAMOL 1 G VO TID   
+- METAMIZOL 1 GRAMO IV PRN   
+- HEPARINA SODICA 5000 UI SC CADA 12 HORAS   
+- FUROSEMIDA 40 MG IV CADA 12 HORAS   
+- ONDANSETRON 8 MG VO CADA 8 HORAS   
+- PICOSULFATO 5 MG VO CADA 12 HORAS PRN   
+- MORFINA 10 MG VO BID   
+- GABAPENTINA TAB 300 MG VO HS   
+
+**Pendientes:**
+
+- ☐ <span class="badge-stat">STAT</span> **[IMAGEN_PROCEDIMIENTO]** EKG STAT
+- ☐ <span class="badge-urgente">URGENTE</span> **[IMAGEN_PROCEDIMIENTO]** UROTAC SIMPLE
+- ☐ <span class="badge-rutina">RUTINA</span> **[LABORATORIO]** L: LABORATORIO
+- ☐ <span class="badge-control">CONTROL</span> **[LABORATORIO]** MAÑANA BIOMETRIA HEMATICA, ELECTROLITOS, UREA, CREATININA
+- ☐ <span class="badge-rutina">RUTINA</span> **[LABORATORIO]** GASOMETRIA ARTERIAL
+```{=html}
+</div>
+```
+
+```{=html}
+<div class="patient-card">
+  <div class="patient-header">
+    <h4 style="margin:0; display:inline-block;"><strong>Cama ABV 3 A</strong>: CAMACHO PINEDA RICAURTE DE JESUS C</h4>
+  </div>
+```
+
+- **HC:** `2087368` | **Cédula:** 0700618523 | **Edad:** 75 años | **Sexo:** N/R
+- **Antecedentes (APP):** APP:; PARKINSON EN TTO CON LEVODOPA; HTA SIN TTO ACTUAL; CANCER DE PROSTATA ETAPA: I RECIBIÓ RADIOTERAPIA SOLCA; AQX:; ARTROSCOPIA DE RODILLA DERECHA; COLECISTECTOMIA
+
+**Diagnósticos Activos:**
+
+- INFECCION DE VIAS URINARIAS
+- INSUFICIENCIA RESPIRATORIA TIPO 1
+- NEUMONÍA COMUNITARIA CURB65: 3 PUNTOS, PSI 165, CLASE V
+- ÚLCERAS DE PRESIÓN GRADO III
+- ENFERMEDAD RENAL AGUDA O CRÓNICA REAGUDIZADA
+
+**Medicación Activa:**
+
+- MEROPENEM 1 GR INTRAVENOSO CADA 8 HORAS FI 12/11/2026 CIE10 B99 D1/5   
+- SALBUTAMOL 2 PUFFS CADA 12 HORAS   
+- N-ACETILCISTEINA 300 MG INTRAVENOSO CADA 12 HORAS D2/3   
+- PARACETAMOL 1 GRAMO INTRAVENOSO POR RAZONES NECESARIAS   
+- HEPARINA SODICA 5000 UI SUBCUTANEO CADA DIA   
+- BROMURO DE IPRATROPIO 2 PUFFS CADA 8 HORAS   
+- QUETIAPINA 12.5 MG VIA ORAL 18:00   
+- LEVODOPA-CARBIDOPA TABLETA 250MG/25MG:1 TABLETA VO 5 VECES AL DIA   
+
+**Pendientes:**
+
+- ☐ <span class="badge-control">CONTROL</span> **[LABORATORIO]** LUNES EXAMENES DE LABORATORIO DE CONTROL
+- ☐ <span class="badge-rutina">RUTINA</span> **[LABORATORIO]** NO TRIBUTARIO DE RCP
+
+**Últimos Laboratorios:**
+
+- *2026-11-13 (Laboratorios / Gasometría):* resumen: 13/11/2026 LEU: 10.9, HG: 11, HCTO: 35, NEU: 9.9, PLAQ: 234.000 . CLO: 117, K: 4.3, SODIO: 151 . CREA: 1.00 .
+```{=html}
+</div>
+```
+
+```{=html}
+<div class="patient-card">
+  <div class="patient-header">
+    <h4 style="margin:0; display:inline-block;"><strong>Cama ABV 3 B</strong>: LOPEZ FIGUEROA OLGA MARLENE C</h4>
+  </div>
+```
+
+- **HC:** `1556289` | **Cédula:** 1713043618 | **Edad:** 51 años | **Sexo:** N/R
+- **Antecedentes (APP):** PANCITOPENIA SEVERA EN ESTUDIO; HEPATOPATIA CRONICA DE ETIOLOGIA A DETERMINAR CHILD C 10 PUNTOS, MELDM NA 15; ANEMIA CRONICA; GASTROPATIA ATROFICA DE FONDO; GASTROPATIA ERITEMATOSA DE ANTRO Y CUERPO; ANGIODISPLASIAS DE RECTO CON APLICACION DE ARGON PLASMA; HIPOTIROIDISMO SUBCLINICO SIN TRATAMIENTO ACTUAL; ANEMIA CRONICA EN ESTUDIO
+
+**Diagnósticos Activos:**
+
+- CELULITIS DE MIEMBRO INFERIOR DERECHO LRINEC 10 PUNTOS
+- ANEMIA SEVERA
+- TROMBOCITOPENIA SEVERA
+- HIPOKALEMIA LEVE SUPERADA
+- HIPONATREMIA LEVE SUPERADA
+- HIPERVOLEMICA CRONICA ASINTOMATICA
+
+**Medicación Activa:**
+
+- CEFEPIME 2 GRAMOS IV STAT Y LUEGO 1 GR CADA 8 HORAS . FI: 11/11/2026 D: 1/5   
+- AMIKACINA 1 GRAMO IV CADA DIA 1/3 FI: 11/11/2026 D: 1/3 CIE: L031   
+- PARACETAMOL 1 GRAMO IV CADA 8 HORAS   
+- TRAMADOL 100 MG IV PRN   
+- METOCLOPRAMIDA 10 MG IV PRN   
+- ECOGRAFIA DE HIGADO A DESCARTAR CIRROSIS   
+
+**Pendientes:**
+
+- ☐ <span class="badge-urgente">URGENTE</span> **[IMAGEN_PROCEDIMIENTO]** PENDIENTE ECO DE HIGADO A DESCARTAR CIRROSIS
+```{=html}
+</div>
+```
+
+```{=html}
+<div class="patient-card">
+  <div class="patient-header">
+    <h4 style="margin:0; display:inline-block;"><strong>Cama AB 1</strong>: BENAVIDES ANA LUCIA C</h4>
+  </div>
+```
+
+- **HC:** `639501` | **Cédula:** 1000997724 | **Edad:** 70 años | **Sexo:** N/R
+- **Antecedentes (APP):** FRACTURA DE COSTILLAS DE LADO IZQUIERDO; INSUFICIENCIA CARDIACA CONGESTIVA; ENFERMEDAD RENAL CRÓNICA; HIPERTENSIÓN PORTAL; FIBROMIALGIA; HIPOTIROIDISMO; GOTA; ISQUEMIA MESENTÉRICA SEGMENTARIA
+
+**Diagnósticos Activos:**
+
+- DERRAME PLEURAL TABICADO IZQUIERDO
+- NEUMONÍA ASOCIADA A CUIDADOS DE LA SALUD
+- DESCARTAR PROGRESIÓN DE PATOLOGIA ONCOLOGICA (CANCER DE MAMA/CERVIX)
+- PORTADORA DE YEYUNOSTOMÍA
+
+**Medicación Activa:**
+
+- SOLUCIÓN SALINA 0.9% 1000 ML PASAR 40 ML/HORA   
+- MEROPENEM 1G IV CADA 8 HORAS (FI: 11/11/2026 D1 B99)   
+- PARACETAMOL 1 GR IV CADA 8 HORAS   
+- ENOXAPARINA 40 MG SC CADA DIA   
+
+**Pendientes:**
+
+- ☐ <span class="badge-rutina">RUTINA</span> **[LABORATORIO]** LABORATORIO CENTRAL 13/11/2026: BIOMETRÍA, LDH, PCR, ELECTROLITOS, MAGNESIO, CALCIO IÓNICO, PROTEÍNAS TOTALES, ALBÚMINA
+```{=html}
+</div>
+```
+
+```{=html}
+<div class="patient-card">
+  <div class="patient-header">
+    <h4 style="margin:0; display:inline-block;"><strong>Cama AB 1_2</strong>: GALLEGOS ACOSTA FERNANDA BETSABE C</h4>
+  </div>
+```
+
+- **HC:** `1727494` | **Cédula:** 1850092782 | **Edad:** 22 AÑOS | **Sexo:** N/R
+- **Antecedentes (APP):** LUPUS ERITEMATOSO JUVENIL DESDE LOS 11 A#OS DE EDAD:; *MANIFESTACIÓN NEUROLÓGICA: EPILEPSIA PRIMERA CRISIS A LOS 12 A#OS DE EDAD; *PARAPARESIA ESPÁSTICA EN 2016; *HEMATOLÓGICO Y RENAL; HEPATITIS AUTOINMUNE VS HEPATITIS MEDICAMENTOSA; VEJIGA NEUROGÉNICA CON IVU RECURRENTES QUE RECIBE ALGUNOS ESQUEMAS DE ANTIBIÓTICOS (PROFILAXIS Y TRATAMIENTO); ALERGIA AL PESCADO*********
+
+**Diagnósticos Activos:**
+
+- HERPES ZÓSTER (CIE-10: B029)
+- LUPUS ERITEMATOSO SISTÉMICO (CIE-10: M321)
+
+**Medicación Activa:**
+
+- HIDROCORTISONA 50 MG IV QD (ORDEN NO. 34971591)   
+- HIDROXICLOROQUINA 200 MG VO QD (ORDEN NO. 34971591)   
+- GABAPENTINA 300 MG VO BID (ORDEN NO. 34971591)   
+- TRAMADOL 50 MG IV PRN (ORDEN NO. 34971591)   
+- METOCLOPRAMIDA 10 MG IV PRN PREVIO A TRAMADOL (ORDEN NO. 34971591)   
+- AZATIOPRINA 50 MG VO QD ***SUSPENDER***   
+- ACICLOVIR 800 MG TOMAR VIA ORAL 6AM- 10AM- 2PM-6PM- 10PM POR 10 DÍAS   
+- PARACETAMOL 1 GRAMOS CADA 8 HORAS POR 5 DÍAS   
+- PASTA LASSAR: OXIDO DE ZINC 25GR + ALMIDÓN DE ARROZ 25 GR+LANOLINA 25 GR + VASELINA 25 GR MPUE APLICAR CADA 8 HORAS EN L   
+
+**Pendientes:**
+
+- ☐ <span class="badge-urgente">URGENTE</span> **[IMAGEN_PROCEDIMIENTO]** ECOGRAFÍA DE ABDOMEN (HEPATITIS AUTOINMUNE)
+
+**Observaciones / Novedades:**
+
+> SEGUIMIENTO POR REUMATOLOGÍA
+> ALTA POR DERMATOLOGÍA
+> VALORACIÓN POR GASTROENTEROLOGÍA
+```{=html}
+</div>
+```
+
+```{=html}
+<div class="patient-card">
+  <div class="patient-header">
+    <h4 style="margin:0; display:inline-block;"><strong>Cama AB 1_3</strong>: RODRIGUEZ VILLAMAR CECILIA AUGUSTA</h4>
+  </div>
+```
+
+- **HC:** `N/D` | **Cédula:** 1703966620 | **Edad:** 74 AÑOS | **Sexo:** N/R
+- **Antecedentes (APP):** DIABETES MELLITUS TIPO 2; ITU A REPETICIÓN
+
+**Diagnósticos Activos:**
+
+- SEPSIS DE FOCO URINARIO
+- HIPONATREMIA SEVERA HIPERVOLEMICA HIPOOSMOLAR CRONICA
+- HEPATOPATIA EN ESTUDIO
+
+**Medicación Activa:**
+
+- TFG: 91.32 ML/MIN/M2 (CREATININA 0.57 2026/11/12 )   
+- AMPICILINA MAS SULBACTAM 3G IV CADA 6HORAS FI: 12.11.2026 D:0 CIE10: A419   
+- PARACETAMOL 1G IV CADA 8 HORAS   
+
+**Pendientes:**
+
+- ☐ <span class="badge-rutina">RUTINA</span> **[LABORATORIO]** OSMOLARIDAD SERICA/PLASMATICA ELECTROLITOS CORTISOL SERICO 08H. NA URINARIO
+- ☐ <span class="badge-rutina">RUTINA</span> **[LABORATORIO]** +OSMOLARIDAD URINARIA TSH + T4L
+```{=html}
+</div>
+```
+
+```{=html}
+<div class="patient-card">
+  <div class="patient-header">
+    <h4 style="margin:0; display:inline-block;"><strong>Cama AB 2</strong>: ALMAGRO PICO JORGE WASHINGTON 74 AÑOS</h4>
+  </div>
+```
+
+- **HC:** `N/D` | **Cédula:** N/R | **Edad:** 74 años | **Sexo:** N/R
+- **Antecedentes (APP):** LINFOMA HACE UN AÑO TRATADO EN SOLCA RECIBIO QUIMIOTERAPIA SEIS SESIONES; (ULTIMA EN NOVIEMBRE 2025 NO SE TIENE DATOS); DESPRENDIMIENTO DE RETINA PTOSIS IZQUIERDA+CEGUERA IZQUIERDA HACE 10 AÑOS; ECV ISQUEMICO ACM DERECHA RAMA INFERIOR NIHSS 3 PUNTOS HACE 3 MESES; FIBRILACION AURICULAR DIAGNOSTICO HACE 3 MESES
+
+**Diagnósticos Activos:**
+
+- SEPSIS DE PARTES BLANDAS
+- CELULITIS DE MIEMBRO INFERIOR DERECHO LRINEC: 7 PUNTOS (RIESGO MODERADO DE
+- FASCITIS NECROTIZANTE)
+- BACTERIEMIA POR GRAM POSITIVOS
+- FIBRILACION AURICULAR DE RESPUESTA VENTRICULAR ADECUADA CHADSVASC: 3 PUTOS
+- HAS-BLED: 2 PUNTOS
+- ENDOCARDITIS INFECCIOSA DESCARTADO
+
+**Medicación Activa:**
+
+- AMPICILINA SULBACTAM 3.5 GRAMO IV CADA 6 HORAS D1 /3 FI: 10/11/2026   
+- PARACETAMOL 1 GRAMO IV PRN   
+- RIVAROXABAN 20 MG VO CADA DIA   
+- SIMVASTATINA 40 MG VO QD PM   
+- ZOPICLONA 7.5 MG VO QD HORA SUEÑO   
+- FUROSEMIDA 40 MG VO QD   
+
+**Pendientes:**
+
+- ☐ <span class="badge-rutina">RUTINA</span> **[LABORATORIO]** E: EXAMENES:
+- ☐ <span class="badge-rutina">RUTINA</span> **[INTERCONSULTA]** ELECTROCARDIOGRAMA REALZIADO Y PRN
+- ☐ <span class="badge-rutina">RUTINA</span> **[LABORATORIO]** L: LABORATORIO VIERNES 12/11/2026 BH, PROCALCITONINA Y PCR
+- ☐ <span class="badge-urgente">URGENTE</span> **[LABORATORIO]** HEMOCULTIVOS X2 DEL 04/11/2026 PENDIENTE RESULTADO
+- ☐ <span class="badge-rutina">RUTINA</span> **[LABORATORIO]** CLORO...........................: 99
+- ☐ <span class="badge-rutina">RUTINA</span> **[LABORATORIO]** POTASIO.........................: 3.36
+- ☐ <span class="badge-rutina">RUTINA</span> **[LABORATORIO]** SODIO...........................: 133.4
+- ☐ <span class="badge-rutina">RUTINA</span> **[LABORATORIO]** NITROGENO UREICO EN SUERO.......: 30
+- ☐ <span class="badge-rutina">RUTINA</span> **[LABORATORIO]** UREA SUERO......................: 64.4
+- ☐ <span class="badge-rutina">RUTINA</span> **[LABORATORIO]** CREATININA......................: 0.92
+
+**Observaciones / Novedades:**
+
+> LABORATORIOS:
+> 2026/11/05 HORA: 11:35
+> PROCALCITONINA LAB. CLINICO.....: 5.71
+> LEUCOCITOS (WBC)................: 22.11
+> HEMOGLOBINA (HGB)...............: 14.5
+> HEMATOCRITO (HCT)...............: 42.6
+```{=html}
+</div>
+```
+
+```{=html}
+<div class="patient-card">
+  <div class="patient-header">
+    <h4 style="margin:0; display:inline-block;"><strong>Cama CRITICOS</strong>: SOLORZANO JAMA SEGUNDO SIGIFREDO</h4>
+  </div>
+```
+
+- **HC:** `N/D` | **Cédula:** N/R | **Edad:** N/D | **Sexo:** N/R
+- **Antecedentes (APP):** CÁNCER GÁSTRICO DE RECIENTE DIAGNÓSTICO; ANEMIA CRÓNICA
+
+**Diagnósticos Activos:**
+
+- 1. SEPSIS CON PUNTO DE PARTIDA URINARIO (CIE-10: A41.9 / N39.0)
+- 2. ANEMIA GRAVE MICROCITICA HIPOCROMICA CRONICA DESCOMPENSADA / SINDROME ANÉMICO SEVERO (HB: 5.0 G/DL) (CIE-10: D50.0 / D64.9)
+- 3. CÁNCER GÁSTRICO DE RECIENTE DIAGNÓSTICO (CIE-10: C16.9)
+- 4. TROMBOCITOSIS REACTIVA (PLAQUETAS: 682.000) (CIE-10: D75.2)
+
+**Medicación Activa:**
+
+- CLORURO DE SODIO 0.9% 1000 ML PASAR IV 60 ML/H   
+- PARACETAMOL 1G IV CADA 8 HORAS   
+- OMEPRAZOL 40 MG IV CADA 12 HORAS   
+- MEROPENEM 1G IV CADA 8H FI 12/11/2026 CIE10 B99 D0   
+
+**Últimos Laboratorios:**
+
+- *2026-11-13 (Laboratorios / Gasometría):* resumen: MAS DE 24 HORAS SIN VASOACTIVO, SE PUEDE ENCARGAR
+```{=html}
+</div>
+```
+
+```{=html}
+<div class="patient-card">
+  <div class="patient-header">
+    <h4 style="margin:0; display:inline-block;"><strong>Cama EMER_4</strong>: CHIPANTAXI GUAÑA MARIANA</h4>
+  </div>
+```
+
+- **HC:** `521857` | **Cédula:** N/R | **Edad:** N/D | **Sexo:** N/R
+- **Antecedentes (APP):** GASTRITIS; HIPOTIROIDISMO CON BOCIO MULTINODULAR SIN SOSPECHA DE MALIGNIDAD; PARALISIS FACIAL PERIFERICA; DISLIPIDEMIA SECUNDARIA; POLIARTROSIS
+
+**Diagnósticos Activos:**
+
+- CARCINOMATOSIS RETROPERITONEAL
+- SINDROME CONSTITUCIONAL EN ESTUDIO
+- ASCITIS
+- DERRAME PLEURAL PREDOMINIO IZQUIERDO
+- HIPOTIROIDISMO
+- DOLOR ABDOMINAL CRONICO
+
+**Medicación Activa:**
+
+- TRAMADOL 100 MG DILUIDO IV LENTO CADA 8 HORAS   
+- METOCLOPRAMIDA 10 MG DILUIDO IV LENTO POR RAZONES NECESARIAS   
+- LACTULOSA 10 ML VIA ORAL CADA 12 HORAS Y SUSPENDER AL TENER DIARREAS   
+- ENOXAPARINA 60 MG SC CADA DIA   
+
+**Pendientes:**
+
+- ☐ <span class="badge-urgente">URGENTE</span> **[INTERCONSULTA]** INTERCONSULTA NEUMOLOGIA PARA TRAMITE DE OXIGENO
+- ☐ <span class="badge-stat">STAT</span> **[LABORATORIO]** BAJAR A AVERIGUAR FECHA DE BIOPSIA, YA ENTREGADO EL TRAMITE, AUN NO APROBADO POR RADIOLOGIA INTERVENCIONISTA
+
+**Observaciones / Novedades:**
+
+> 2026/11/12
+> BE..............................: 5.1
+> Ca..............................: 1.1
+> Cl..............................: 104.0
+> COHb............................: 2.1
+> Glu.............................: 93.0
+```{=html}
+</div>
+```
+
+```{=html}
+<div class="patient-card">
+  <div class="patient-header">
+    <h4 style="margin:0; display:inline-block;"><strong>Cama EMER_5</strong>: CABEZAS ALMEIDA VICTOR MANUEL</h4>
+  </div>
+```
+
+- **HC:** `2067347` | **Cédula:** N/R | **Edad:** 78 años | **Sexo:** N/R
+- **Antecedentes (APP):** ANTECEDENTES PATOLOGICOS PERSONALES:; HIPERTENSION ARTERIAL; CA PROSTATA; INSUFICIENCIA RENAL DIALISIS BISEMANAL; ANTECEDENTES QUIRURGICOS:; APENDICECTOMIA
+
+**Diagnósticos Activos:**
+
+- DIAGNÓSTICOS ACTIVOS:
+- CELULITIS DE OTROS SITIOS (L038)
+- ENFERMEDAD RENAL CRÓNICA (N185)
+- ÚLCERA DE DECÚBITO Y POR ÁREA DE PRESIÓN L899
+- TROMBOCITOPENIA SEVERA
+- DIAGNÓSTICOS PASIVOS:
+- HIPERTENSIÓN ARTERIAL
+- CA PRÓSTATA
+
+**Medicación Activa:**
+
+- MEROPENEM 1 GRAMO QD Y 1 GRAMO POSTERIOR A CADA DIÁLISIS FI: 11/11/2026   
+- AMLODIPINO 10 MG VÍA ORAL CADA   
+
+**Pendientes:**
+
+- ☐ <span class="badge-urgente">URGENTE</span> **[IMAGEN_PROCEDIMIENTO]** PLACA ED PELVIS PENDIENTE REVISAR
+- ☐ <span class="badge-rutina">RUTINA</span> **[LABORATORIO]** EXAMENES LUEGO DE DIALISIS: BH, PCR, PROCALCITONINA
+
+**Observaciones / Novedades:**
+
+> LABORATORIOS
+> 2026/11/11 13:44
+> CALCULO DE PLAQUETAS............: 130.000
+> Leucocitos (WBC)................: 5.81
+> Hemoglobina (HGB)...............: 10.8
+> Hematocrito (HCT)...............: 33.4
+```{=html}
+</div>
+```
+
+```{=html}
+<div class="patient-card">
+  <div class="patient-header">
+    <h4 style="margin:0; display:inline-block;"><strong>Cama EMER_7</strong>: GUERRERO PAULA DOLORES NARCIZA</h4>
+  </div>
+```
+
+- **HC:** `677814` | **Cédula:** N/R | **Edad:** N/D | **Sexo:** N/R
+- **Antecedentes (APP):** ANTECEDENTES PATOLOGICOS PERSONAES; EPILEPSIA. SECUNDARIA A TRAUMATISMO HACE 17 AÑOS; HIPOTIROIDISMO; DISLIPIDEMIA; LESIONES VASCULARES CEREBRALES EN IMAGEN; HIPONATREMIA CRONICA; TROMBOSIS VENOSA PROFUNDA DE MIEMBRO INFERIOR DERECHA; RESIDENTE EN CENTRO DE CUIDADO, DEPENDIENTE DE TERCERAS PERSONAS
+
+**Diagnósticos Activos:**
+
+- SEPSIS DE FOCO PULMONAR
+- NEUMONIA ASPIRATIVA CURB-65: 2; PSI / PORT SCORE: 93 PUNTOS - CLASE IV
+- (RIESGO MODERADO-ALTO)
+- HIPERNATREMIA MODERADA HIPEROSMOLAR HIPOVOLEMICA AGUDA SINTOMATICA
+
+**Medicación Activa:**
+
+- BROMURO DE IPATROPIO 2 PUFF CADA 8 HORAS   
+- AMPICILINA MAS SULBACTAM 1.5G IV CADA 6 HORAS CI:J189 FI: 6/11/2026 D:2   
+- CLARITROMICINA 500MG IV CADA 12 HORAS CI:J189 FI: 6/11/2026 D:2   
+- PARACETAMOL 1G IV CADA 8 HORAS   
+- ENOXAPARINA 40 MG SC CADA DIA   
+
+**Observaciones / Novedades:**
+
+> 2026/11/07
+> CLORO 116
+> POTASIO 3.38
+> SODIO 156.4
+> 2026/11/06
+> PCR 314.00
+```{=html}
+</div>
+```
+
+```{=html}
+<div class="patient-card">
+  <div class="patient-header">
+    <h4 style="margin:0; display:inline-block;"><strong>Cama INTERMEDIOS</strong>: GOMEZ ESPINOZA JUSTO ANGEL .</h4>
+  </div>
+```
+
+- **HC:** `N/D` | **Cédula:** 1709837072 | **Edad:** 58 AÑOS | **Sexo:** N/R
+- **Antecedentes (APP):** EPILEPSIA; DIABETES MELLITUS TIPO 2 HACE 17 AÑOS; HIPERTENSION ARTERIAL; HIPOTIROIDISMO
+
+**Diagnósticos Activos:**
+
+- SEPSIS DE PARTES BLANDAS
+- CELULITS MIEMBRO SUPERIOR DERECHO
+- LESION RENAL AGUDA KDIGO C1 U0
+- ESTADO HIPEROSMOLAR HIPERGLICEMICO/ CETOACIDOSIS DIABETICA SUPERADA
+- HIPERKALEMIA MODERADA SUPERADA
+
+**Medicación Activa:**
+
+- MEROPENEM 1 GRAMO INTRAVENOSO CADA 8 HORAS, FI: 10/11/2026 (B99)   
+- VANCOMICINA 1 GRAMO INTRAVENOSO CADA 12 HORAS FIN: 10/11/2026 (B99)   
+- PARACETAMOL 1 G IV PRN   
+- ENOXAPARINA 40 MG SC QD   
+- ACIDO VALPROICO 500 MG C/12H   
+- METFORMINA 850 MG TID****SUSPENDER***   
+- LOSARTAN 50 MG VO QD   
+
+**Pendientes:**
+
+- ☐ <span class="badge-rutina">RUTINA</span> **[LABORATORIO]** EXAMENES: RESONANCIA DE CODO IZQUIERDO
+- ☐ <span class="badge-stat">STAT</span> **[LABORATORIO]** ELECTROLITOS STAT
+- ☐ <span class="badge-control">CONTROL</span> **[LABORATORIO]** MAÑANA AM: ELECTROLITOS, UREA, CREATININA
+- ☐ <span class="badge-stat">STAT</span> **[LABORATORIO]** HEMOCULTIVOS PENDIENTE RESULTADOS, /VERIFICAR SE HAYA ENVIADO MUESTRA
+- ☐ <span class="badge-urgente">URGENTE</span> **[INTERCONSULTA]** REINTERCONSULTAR A TRAUMATOLOGÍA CON RESULTADOS DE RESONANCIA DE CODO
+- ☐ <span class="badge-rutina">RUTINA</span> **[LABORATORIO]** INDICACION DE ENDOCRINOLOGIA
+
+**Últimos Laboratorios:**
+
+- *2026-11-13 (Laboratorios / Gasometría):* resumen: Leucocitos (WBC)................: 11.50 Hemoglobina (HGB)...............: 11.1 Hematocrito (HCT)...............: 33.1 Volumen corp. medio (MCV).......: 90.60 Conc.media hemog.(MCH)..........: 30.5 Conc.corp.media (MCHC) de hemo..: 33.5 Volumen Medio Plaquetario(MPV)..: 8.7 Monocitos.......................: 0.69 Eosinófilos.....................: 0.0
 ```{=html}
 </div>
 ```

@@ -1,71 +1,177 @@
 {
   "cama": "9A",
   "area": "HOSPITALIZACION",
-  "servicio_tratante": "Ginecología Oncológica / MI",
-  "nombre_completo": "ROSAS CORREA MARIA ESTHER",
+  "servicio_tratante": null,
+  "nombre_completo": "ROSAS CORREA MARIA ESTHER C",
   "hc": "124595",
   "cedula": "0600433312",
-  "edad": "83 años",
-  "sexo": "F",
+  "edad": "N/D",
+  "sexo": null,
   "fecha_nacimiento": null,
   "fecha_ingreso": null,
   "dias_hospitalizacion": null,
   "app": [
-    "Cardiopatía isquémica con 2 stents",
-    "Hipotiroidismo",
-    "Hemorragia vítrea"
+    "2010 CARDIOPATÍA ISQUÉMICA CRÓNICA SE DESCONOCE EVENTO AGUDO APARENTE IMPLANTE",
+    "DE 2 STENTS EN ARTERIA DESCONOCIDA (CLÍNICA PICHINCHA)",
+    "HIPOTIROIDISMO",
+    "HEMORRAGIA VÍTREA",
+    "ANTECEDENTES QUIRÚRGICOS",
+    "IMPLANTE DE 2 STENTS POR CARDIOPATÍA EN ARTERIA DESCONOCIDA",
+    "HISTERECTOMÍA",
+    "COLECISTECTOMÍA"
   ],
-  "aqx": [
-    "Histerectomía",
-    "Colecistectomía",
-    "Safenectomía"
-  ],
+  "aqx": [],
   "alergias": [],
   "diagnosticos_activos": [
-    "Cáncer de ovario con índice ROMA 97.9 (Alto riesgo)",
-    "Peritonitis bacteriana secundaria",
-    "Derrame pleural derecho resuelto"
+    "CA DE OVARIO CON ÍNDICE DE ROMA DE 97.9 (ALTO RIESGO PARA CÁNCER OVÁRICO EPITELIAL)",
+    "PERITONITIS BACTERIANA SUPERADA",
+    "DERRAME PLEURAL DERECHO. SUPERADO",
+    "HIPOACUSIA BILATERAL"
   ],
   "diagnosticos_pasivos": [],
-  "dieta": "NPO prequirúrgico",
-  "hidratacion": "Dextrosa 5% en SS 0.9% 1000 ml IV a 60 cc/h",
-  "ckd_epi": "68 ml/min/1.73m2",
+  "dieta": null,
+  "hidratacion": null,
+  "ckd_epi": null,
   "medicaciones": [
     {
-      "nombre": "Ampicilina",
-      "dosis": "2 g",
-      "via": "IV",
-      "frecuencia": "c/4 horas",
-      "fecha_inicio": "2026-11-02",
-      "dias_tratamiento": "Día 7",
-      "indicacion_cie10": "A41.9",
-      "suspendido": false,
-      "diferido": false,
-      "prn": false,
-      "nota": null
-    },
-    {
-      "nombre": "Enoxaparina",
-      "dosis": "60 mg",
-      "via": "SC",
-      "frecuencia": "QD",
+      "nombre": "OMEPRAZOL 20 MG VIA ORAL CADA DIA AM",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
       "fecha_inicio": null,
       "dias_tratamiento": null,
       "indicacion_cie10": null,
       "suspendido": false,
       "diferido": false,
       "prn": false,
-      "nota": "Reiniciar 12 horas posterior a cirugía"
+      "nota": null
+    },
+    {
+      "nombre": "ESPIRONOLACTONA 25 MG VO CADA DIA",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "PARACETAMOL 1 GR VIA ORAL CADA 8 HORAS",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "TRAMADOL 100 MG IV CADA 12 HORAS",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "METOCLOPRAMIDA 10 MG VO CADA 8 HORAS - 20 MIN ANTES DE CADA COMIDA",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "MAGALDRATO CON SIMETICONA 10 CC POSTERIOR A CADA COMIDA",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "ENOXAPARINA 60 MG SC QD",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "CAPSULAS DE SAL 1 GR MG VIA ORAL CADA DIA",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "KETOROLACO 30 MG IV CADA 8 HORAS",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "OMEPRAZOL 40 MG IV CADA DIA HORA SUEÑO",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
     }
   ],
   "pendientes": [
     {
       "id": "PEND-9A-01",
-      "tipo": "ADMINISTRATIVO_QX",
-      "descripcion": "Verificar preparación quirúrgica y programación QX hoy",
+      "tipo": "LABORATORIO",
+      "descripcion": "RADIOGRAFIA DE TORAX YA",
       "prioridad": "STAT",
       "turno": "NOCTURNA_20_24",
-      "horario_programado": "STAT / 20:00",
+      "horario_programado": null,
       "es_visita_nocturna": true,
       "estado": "PENDIENTE",
       "responsable": null,
@@ -74,9 +180,21 @@
     {
       "id": "PEND-9A-02",
       "tipo": "LABORATORIO",
-      "descripcion": "Pendiente resultado de citología de bloque celular e inmunohistoquímica",
+      "descripcion": "HISOPADO RECTAL PARA BACTERIA RESISTENTES TOMADO",
       "prioridad": "RUTINA",
-      "turno": "MANANA",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": null,
+      "es_visita_nocturna": false,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
+    },
+    {
+      "id": "PEND-9A-03",
+      "tipo": "LABORATORIO",
+      "descripcion": "DESTET DE OXIGENO",
+      "prioridad": "RUTINA",
+      "turno": "NOCTURNA_20_24",
       "horario_programado": null,
       "es_visita_nocturna": false,
       "estado": "PENDIENTE",
@@ -85,39 +203,19 @@
     }
   ],
   "observaciones": [
-    "Cultivo líquido ascítico: Pseudomonas aeruginosa resistente a carbapenémicos."
+    "CITOLOGÍA DE BLOQUE CELULAR E INMUNOHISTOQUÍMICO EN BUSCA DE PRIMARIO",
+    "(PENDIENTE RESULTADO )"
   ],
   "laboratorios": [
     {
-      "fecha_hora": "2026-11-07",
-      "tipo_estudio": "Gasometría y Química",
+      "fecha_hora": "2026-11-13",
+      "tipo_estudio": "Laboratorios / Gasometría",
       "valores": {
-        "lactato": 1.2,
-        "sodio": 129.0,
-        "potasio": 4.2,
-        "creatinina": 0.68
+        "resumen": "2026/11/01 HORA: CULTIVO DE LIQUIDO ASCÍTICO.....: A/B RESULTADOS: MICROORGANISMO: PSEUDOMONAS AERUGINOSA RESULTADO: POSITIVO; MICROORGANISMO RESISTENTE A CARBAPEN MICOS. NEGATIVO PARA PRODUCCI N E NZIM TICA DE CARBAPENEMASAS, RESISTENCIA MEDIADA POR IMPERMEABILIDAD; . 2026/11/12 ACIDO LACTICO: 2.2 GLU: 155.0 HCO3: 23.0 K: 4.1 NA: 131.0 O2HB: 87.4 "
       },
       "alerta_critica": null
     }
   ],
-  "cultivos": [
-    {
-      "fecha": "2026-11-01",
-      "muestra": "Líquido ascítico",
-      "microorganismo": "Pseudomonas aeruginosa",
-      "patron_resistencia": "Resistente a Carbapenémicos (impermeabilidad)",
-      "sensible": [
-        "Colistina",
-        "Aminoglucósidos según MIC"
-      ],
-      "resistente": [
-        "Carbapenémicos"
-      ],
-      "recuento_colonias": null
-    }
-  ],
-  "alertas_criticas": [
-    "Aislamiento de Pseudomonas aeruginosa resistente a carbapenémicos",
-    "Cirugía oncológica programada"
-  ]
+  "cultivos": [],
+  "alertas_criticas": []
 }

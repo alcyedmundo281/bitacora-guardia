@@ -1,0 +1,116 @@
+{
+  "cama": "ABV2",
+  "area": "EMERGENCIA_OBSERVACION",
+  "servicio_tratante": null,
+  "nombre_completo": "MALDONADO CAYAMBE DARWIN BENITO C",
+  "hc": "2090778",
+  "cedula": "1711695302",
+  "edad": "55 años",
+  "sexo": null,
+  "fecha_nacimiento": null,
+  "fecha_ingreso": null,
+  "dias_hospitalizacion": null,
+  "app": [
+    "INFARTO AGUDO DE MIOCARDIO"
+  ],
+  "aqx": [],
+  "alergias": [],
+  "diagnosticos_activos": [
+    "SINDROME CONSTITUCIONAL EN ESTUDIO"
+  ],
+  "diagnosticos_pasivos": [],
+  "dieta": null,
+  "hidratacion": null,
+  "ckd_epi": null,
+  "medicaciones": [
+    {
+      "nombre": "PARACETAMOL 1 GRAMO IV PRN",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "ENOXAPARINA 40 MG SC CADA DIA",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    }
+  ],
+  "pendientes": [
+    {
+      "id": "PEND-ABV2-01",
+      "tipo": "LABORATORIO",
+      "descripcion": "EDA MÁS COLONOSCOPIA AGENDAR TURNO. VERIFICAR QUE DISPONGA DE PEDIDO Y TOMAR",
+      "prioridad": "RUTINA",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": null,
+      "es_visita_nocturna": false,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
+    },
+    {
+      "id": "PEND-ABV2-02",
+      "tipo": "LABORATORIO",
+      "descripcion": "TURNO",
+      "prioridad": "RUTINA",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": null,
+      "es_visita_nocturna": false,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
+    },
+    {
+      "id": "PEND-ABV2-03",
+      "tipo": "IMAGEN_PROCEDIMIENTO",
+      "descripcion": "ECOGRAFIA VESCICO PROSTATICA",
+      "prioridad": "STAT",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": null,
+      "es_visita_nocturna": true,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
+    },
+    {
+      "id": "PEND-ABV2-04",
+      "tipo": "LABORATORIO",
+      "descripcion": "MAÑANA AM: PSA TOTAL Y LIBRE, CEA, AFP",
+      "prioridad": "CONTROL",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": null,
+      "es_visita_nocturna": true,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
+    }
+  ],
+  "observaciones": [],
+  "laboratorios": [
+    {
+      "fecha_hora": "2026-11-13",
+      "tipo_estudio": "Laboratorios / Gasometría",
+      "valores": {
+        "resumen": "2026/11/12 Hora: 13:58 CA 19-9...........: 2.00 CA-125..........................: 1006.00 CA 15-3.........................: 101 CLORO...........................: 100 POTASIO.........................: 4.03 SODIO...........................: 135.3 NITROGENO UREICO EN SUERO.......: 12 UREA SUERO......................: 25.2 CREATININA..................."
+      },
+      "alerta_critica": null
+    }
+  ],
+  "cultivos": [],
+  "alertas_criticas": []
+}

@@ -1,51 +1,42 @@
 {
   "cama": "11B",
   "area": "HOSPITALIZACION",
-  "servicio_tratante": "Reumatología / MI",
-  "nombre_completo": "PACHACAMA SUNTAXI FREDDY RODRIGO",
-  "hc": "20CELI84974",
+  "servicio_tratante": null,
+  "nombre_completo": "PACHACAMA SUNTAXI FREDDY RODRIGO C",
+  "hc": "20",
   "cedula": "1713637401",
-  "edad": "50 años",
-  "sexo": "M",
+  "edad": "N/D",
+  "sexo": null,
   "fecha_nacimiento": null,
   "fecha_ingreso": null,
   "dias_hospitalizacion": null,
   "app": [
-    "Lupus eritematoso sistémico (dx 2022)",
-    "Anemia moderada microcítica",
-    "TEP previo",
-    "Sepsis por Salmonella superada"
+    "LUPUS ERITEMATOSO SISTEMICO DIAGNOSTICO EN EL 2022",
+    "ANEMIA MODERADA MICROCITICA HIPOCROMICA",
+    "TROMBOEMBOLIA PULMONAR, ANGIO TOMOGRAFIA TORAX 12/09/2026",
+    "SEPSIS POR BACTERIEMIA POR SALMONELLA SUPERADO 10/2026",
+    "NEFRITIS LUPICA (POR CLINICA PROBABLE CLASE IV, SLEDAI 2K: 24 ACTIVIDAD",
+    "SEVERA)",
+    "PROTEINURIA SUB NEFROTICA"
   ],
   "aqx": [],
   "alergias": [],
   "diagnosticos_activos": [
-    "Lupus eritematoso sistémico actividad alta (SLEDAI 2K: 10 puntos)",
-    "Nefritis lúpica clase IV probable",
-    "Derrame pleural loculado"
+    "LUPUS ERITEMATOSO SISTEMICO SLEDAI 2K 10 PUNTOS ACTIVIDAD ALTA",
+    "NEFRITIS LÚPICA",
+    "DERRAME PLEURAL LOCULADO",
+    "ANEMIA MODERADA MICROCÍTICA HIPOCRÓMICA"
   ],
   "diagnosticos_pasivos": [],
-  "dieta": "Blanda normoproteica",
-  "hidratacion": "Vía salinizada",
-  "ckd_epi": "75 ml/min/1.73m2",
+  "dieta": null,
+  "hidratacion": null,
+  "ckd_epi": null,
   "medicaciones": [
     {
-      "nombre": "Ceftriaxona",
-      "dosis": "2 g",
-      "via": "IV",
-      "frecuencia": "cada día",
-      "fecha_inicio": "2026-10-16",
-      "dias_tratamiento": "Día 24",
-      "indicacion_cie10": "B99",
-      "suspendido": false,
-      "diferido": false,
-      "prn": false,
-      "nota": null
-    },
-    {
-      "nombre": "Enoxaparina",
-      "dosis": "60 mg",
-      "via": "SC",
-      "frecuencia": "c/12 horas",
+      "nombre": "CEFTRIAXONA A 2 G IV QD FI: 16/10/2026 D: 27 CIE 10 B99",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
       "fecha_inicio": null,
       "dias_tratamiento": null,
       "indicacion_cie10": null,
@@ -55,10 +46,114 @@
       "nota": null
     },
     {
-      "nombre": "Cotrimoxazol",
-      "dosis": "800/160 mg",
-      "via": "VO",
-      "frecuencia": "Martes, Jueves, Sábado a las 14:00",
+      "nombre": "PARACETAMOL 1 GR IV CADA 8 HORAS",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "MORFINA 4 MG IV EN LA TARDE, DESPUES DE ALMUERZO",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "ENOXAPARINA 60 MG SC CADA 12 HORAS",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "OMEPRAZOL 40 MG INTRAVENOSO CADA DIA",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "CARBONATO DE CALCIO SOLIDO ORAL 500 MG VO QD 11 AM",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "COTRIMOXAZOL SOLIDO ORAL 800/160 MG LOS DIAS MARTES JUEVES SABADO A LAS 2",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "GABAPENTINA SOLIDO ORAL 300 MG VO QD A LAS 9 PM",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "TRAMADOL 100 MG INTRAVENOSO CADA 8 HORAS",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "METOCLOPRAMIDA 10 MG INTRAVENOSO CADA 8 HORAS",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
       "fecha_inicio": null,
       "dias_tratamiento": null,
       "indicacion_cie10": null,
@@ -71,49 +166,95 @@
   "pendientes": [
     {
       "id": "PEND-11B-01",
-      "tipo": "ADMINISTRATIVO_QX",
-      "descripcion": "Preparación para broncoscopia y colocación de drenaje torácico MAÑANA",
-      "prioridad": "STAT",
+      "tipo": "INTERCONSULTA",
+      "descripcion": "INDICACIONES DE REUMATOLOGÍA",
+      "prioridad": "RUTINA",
       "turno": "NOCTURNA_20_24",
-      "horario_programado": "STAT / NPO 24:00",
-      "es_visita_nocturna": true,
+      "horario_programado": null,
+      "es_visita_nocturna": false,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
+    },
+    {
+      "id": "PEND-11B-02",
+      "tipo": "LABORATORIO",
+      "descripcion": "L: BIOMETRIA, ELECTROLITOS, FUNCION RENAL 12/11/2026",
+      "prioridad": "RUTINA",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": null,
+      "es_visita_nocturna": false,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
+    },
+    {
+      "id": "PEND-11B-03",
+      "tipo": "INTERCONSULTA",
+      "descripcion": "BRONCOSCOPIA:10-11-2026",
+      "prioridad": "RUTINA",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": null,
+      "es_visita_nocturna": false,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
+    },
+    {
+      "id": "PEND-11B-04",
+      "tipo": "LABORATORIO",
+      "descripcion": "INFILTRACION GRADO II DE CARINA SECUNDARIA ENTRE LOBULO SUPERIOR E INFERIOR",
+      "prioridad": "RUTINA",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": null,
+      "es_visita_nocturna": false,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
+    },
+    {
+      "id": "PEND-11B-05",
+      "tipo": "LABORATORIO",
+      "descripcion": "IZQUIERDO",
+      "prioridad": "RUTINA",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": null,
+      "es_visita_nocturna": false,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
+    },
+    {
+      "id": "PEND-11B-06",
+      "tipo": "LABORATORIO",
+      "descripcion": "TRAQUEOBRONQUITIS LEVE NO PURULENTA",
+      "prioridad": "RUTINA",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": null,
+      "es_visita_nocturna": false,
       "estado": "PENDIENTE",
       "responsable": null,
       "resultado_obtenido": null
     }
   ],
   "observaciones": [
-    "Cultivo de líquido pleural: Salmonella enterica ssp enterica sensible a ceftriaxona."
+    "INMUNOLÓGICOS LABORATORIO ZURITA Y ZURITA 23-09-2026",
+    "ANTICUERPOS ANTI-PEPTIDO CITRULINADO (ANTICCP): INFERIOR A 0,50 U/ML-NEGATIVO",
+    "ANTICUERPOS ANTI-SM (SMITH): INFERIOR A 3,3 CU - NEGATIVO",
+    "ANTICUERPOS ANTI-CARDIOLIPINA IGM: 2,10 CU - NEGATIVO",
+    "ANTICUERPOS ANTI-CARDIOLIPINA IGG: 9,50 CU - NEGATIVO",
+    "ANTICUERPOS ANTI-BETA2 GLICOPROTEINA 1 IGM: INFERIOR A 1,1 CU - NEGATIVO"
   ],
   "laboratorios": [
     {
-      "fecha_hora": "2026-11-01",
-      "tipo_estudio": "Control",
+      "fecha_hora": "2026-11-13",
+      "tipo_estudio": "Laboratorios / Gasometría",
       "valores": {
-        "pcr": 29.2,
-        "leucocitos": 7.0,
-        "plaquetas": 300000,
-        "creatinina": 0.58
+        "resumen": "CULTIVO DE LIQ. PLEURAL: MICROORGANISMO: SALMONELLA ENTERICA SSP ENTÉRICA . SENSIBLE A CEFTRIAXONA . LABORATORIOS RECIENTES: HB EN DESCENSO (10.7 G/DL), LEUCOCITOS NORMALES (8.67), FUNCION RENAL CONSERVADA (CR 0.58), ELECTROLITOS EN RANGO (K 3.5). PCR EN DESCENSO CLARO (17.00 PREVIA)."
       },
       "alerta_critica": null
     }
   ],
-  "cultivos": [
-    {
-      "fecha": "2026-10-25",
-      "muestra": "Líquido Pleural",
-      "microorganismo": "Salmonella enterica ssp enterica",
-      "patron_resistencia": null,
-      "sensible": [
-        "Ceftriaxona",
-        "Ciprofloxacino"
-      ],
-      "resistente": [],
-      "recuento_colonias": null
-    }
-  ],
-  "alertas_criticas": [
-    "Broncoscopia y tubo torácico programados para mañana (NPO desde medianoche)",
-    "Ceftriaxona día 24 de tratamiento"
-  ]
+  "cultivos": [],
+  "alertas_criticas": []
 }

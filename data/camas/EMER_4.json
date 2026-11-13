@@ -1,0 +1,125 @@
+{
+  "cama": "EMER_4",
+  "area": "EMERGENCIA_OBSERVACION",
+  "servicio_tratante": null,
+  "nombre_completo": "CHIPANTAXI GUAÑA MARIANA",
+  "hc": "521857",
+  "cedula": null,
+  "edad": "N/D",
+  "sexo": null,
+  "fecha_nacimiento": null,
+  "fecha_ingreso": null,
+  "dias_hospitalizacion": null,
+  "app": [
+    "GASTRITIS",
+    "HIPOTIROIDISMO CON BOCIO MULTINODULAR SIN SOSPECHA DE MALIGNIDAD",
+    "PARALISIS FACIAL PERIFERICA",
+    "DISLIPIDEMIA SECUNDARIA",
+    "POLIARTROSIS"
+  ],
+  "aqx": [],
+  "alergias": [],
+  "diagnosticos_activos": [
+    "CARCINOMATOSIS RETROPERITONEAL",
+    "SINDROME CONSTITUCIONAL EN ESTUDIO",
+    "ASCITIS",
+    "DERRAME PLEURAL PREDOMINIO IZQUIERDO",
+    "HIPOTIROIDISMO",
+    "DOLOR ABDOMINAL CRONICO"
+  ],
+  "diagnosticos_pasivos": [],
+  "dieta": null,
+  "hidratacion": null,
+  "ckd_epi": null,
+  "medicaciones": [
+    {
+      "nombre": "TRAMADOL 100 MG DILUIDO IV LENTO CADA 8 HORAS",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "METOCLOPRAMIDA 10 MG DILUIDO IV LENTO POR RAZONES NECESARIAS",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "LACTULOSA 10 ML VIA ORAL CADA 12 HORAS Y SUSPENDER AL TENER DIARREAS",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "ENOXAPARINA 60 MG SC CADA DIA",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    }
+  ],
+  "pendientes": [
+    {
+      "id": "PEND-EMER4-01",
+      "tipo": "INTERCONSULTA",
+      "descripcion": "INTERCONSULTA NEUMOLOGIA PARA TRAMITE DE OXIGENO",
+      "prioridad": "URGENTE",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": null,
+      "es_visita_nocturna": true,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
+    },
+    {
+      "id": "PEND-EMER4-02",
+      "tipo": "LABORATORIO",
+      "descripcion": "BAJAR A AVERIGUAR FECHA DE BIOPSIA, YA ENTREGADO EL TRAMITE, AUN NO APROBADO POR RADIOLOGIA INTERVENCIONISTA",
+      "prioridad": "STAT",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": null,
+      "es_visita_nocturna": true,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
+    }
+  ],
+  "observaciones": [
+    "2026/11/12",
+    "BE..............................: 5.1",
+    "Ca..............................: 1.1",
+    "Cl..............................: 104.0",
+    "COHb............................: 2.1",
+    "Glu.............................: 93.0"
+  ],
+  "laboratorios": [],
+  "cultivos": [],
+  "alertas_criticas": []
+}

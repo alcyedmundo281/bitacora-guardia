@@ -1,0 +1,205 @@
+{
+  "cama": "ABRV 2",
+  "area": "EMERGENCIA_OBSERVACION",
+  "servicio_tratante": null,
+  "nombre_completo": "CALVA SALAS GRETA",
+  "hc": "1158688",
+  "cedula": "1102134838",
+  "edad": "64 años",
+  "sexo": null,
+  "fecha_nacimiento": null,
+  "fecha_ingreso": null,
+  "dias_hospitalizacion": null,
+  "app": [
+    "TROMBOCITOPENIA INMUNE",
+    "DIABETES",
+    "HIPERTENSION ARTERIAL",
+    "HIPOTIROIDISMO",
+    "ARTRITIS REUMATOIDE HACE 10 AÑOS",
+    "GASTRITIS CRONICA CON H. PYLORI +, RECIBE TRATAMIENTO ERRADICADOR",
+    "POLIPOS COLONICOS, ALGUNOS HIPERPLASICOS, OTROS CON FOCOS DE DISPLASIA, TODOS",
+    "SON RESECADOS, BORDES LIBRES, SE RECOMIENDA CONTROLES"
+  ],
+  "aqx": [],
+  "alergias": [],
+  "diagnosticos_activos": [
+    "INFECCION DE TRACTO URINARIO COMPLICADA TUMBARELLO 2 PUNTOS",
+    "INSUFICIENCIA RENAL AGUDA KDIGO 1",
+    "HIPONATREMIA LEVE"
+  ],
+  "diagnosticos_pasivos": [],
+  "dieta": null,
+  "hidratacion": null,
+  "ckd_epi": null,
+  "medicaciones": [
+    {
+      "nombre": "CEFTRIAXONA 2 GR INTRAVENOSO CADA DIA D2/5 CIE 10: N390 FI:12/11/26",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "HIDROCORTISONA 50 MG INTRAVENOSO CADA DIA",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "OMEPRAZOL 40 MG INTRAVENOSO CADA DIA",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "PARACETAMOL 1GR INTRAVENOSO CADA 8 HORAS",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "PREDNISONA 5MG DIARIOS * DIFERIDO *",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "ELTROMBOPAG 50MG VO QD",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "LEVOTIROXINA 50 MCG VO QD",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "LOSARTAN 100 MG VO QD AM * DIFERIDO *",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "AMLODIPINO 10MG VO QD PM * DIFERIDO *",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "EMPAGLIFOZINA 10 MG CADA DIA * DIFERIDO *",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    }
+  ],
+  "pendientes": [
+    {
+      "id": "PEND-ABRV2-01",
+      "tipo": "LABORATORIO",
+      "descripcion": "PD UROCULTIVO",
+      "prioridad": "RUTINA",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": null,
+      "es_visita_nocturna": false,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
+    },
+    {
+      "id": "PEND-ABRV2-02",
+      "tipo": "LABORATORIO",
+      "descripcion": "EXAMENES DE CONTROL PARA EL DIA LUNES",
+      "prioridad": "CONTROL",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": null,
+      "es_visita_nocturna": true,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
+    }
+  ],
+  "observaciones": [],
+  "laboratorios": [
+    {
+      "fecha_hora": "2026-11-13",
+      "tipo_estudio": "Laboratorios / Gasometría",
+      "valores": {
+        "resumen": "13/11/2026 TSH: 0.02, LEU: 13,8, HG: 12.4, HCTO: 39, NEU: 12.6, PLAQ: 51.000 . H GLICOSILADA: 5.9, COLESTEROL: 15.6 . COLESTEROL LDL: 55.4, GLUCOSA: 101, CLORO: 101, POTASIO: 4.19 SODIO: 134. . UREA: 79, CREA: 1.37"
+      },
+      "alerta_critica": null
+    }
+  ],
+  "cultivos": [],
+  "alertas_criticas": []
+}

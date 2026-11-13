@@ -1,0 +1,92 @@
+{
+  "cama": "UROLOGIA",
+  "area": "PERIFERICOS",
+  "servicio_tratante": null,
+  "nombre_completo": "VASCONEZ FUENTES NORMA MARINA",
+  "hc": "486665",
+  "cedula": null,
+  "edad": "57 AÑOS",
+  "sexo": null,
+  "fecha_nacimiento": null,
+  "fecha_ingreso": null,
+  "dias_hospitalizacion": null,
+  "app": [
+    "ARTRITIS REUMATOIDE, FR: 538 CITRULINA 496 ANA 1/160 NUCLEAR HOMOGÉNEO (DIAGNOSTICADA A LOS 40 AÑOS)",
+    "TRASTORNO DE CÓRNEA (POS TRAUMA + ARTRITIS)",
+    "ENFERMEDAD RENAL CRÓNICA, POR AINES? EN ESTUDIO POR NEFROLOGÍA",
+    "HERPES OCULAR BILATERAL (ABRIL, 2024)",
+    "MENINGITIS BACTERIANA Y OTITIS MEDIA DERECHA (ABRIL, 2024)",
+    "GLUCOSA ALTERADO EN AYUNAS",
+    "HIPERTRIGLICERIDEMIA; GEMFIBROZILO",
+    "RINOFARINGITIS CRÓNICA"
+  ],
+  "aqx": [],
+  "alergias": [],
+  "diagnosticos_activos": [
+    "INFECCION DE VIAS URINARIAS TUMBARELLO DE 2 PUNTOS A DESCARTAR",
+    "ARTRITIS REUMATOIDEA DE ALTA ACTIVIDAD DAS28 DE 5.7 9"
+  ],
+  "diagnosticos_pasivos": [],
+  "dieta": null,
+  "hidratacion": null,
+  "ckd_epi": null,
+  "medicaciones": [
+    {
+      "nombre": "OMEPRAZOL 20 MG VO QD",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "CEFAZOLINA 1 G IV STAT Y C/8H (1/10) CIE 10 B99 FI: 11/11/2026",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "TRAMADOL 50 MG IV LENTO Y DILUIDO PRN",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    }
+  ],
+  "pendientes": [
+    {
+      "id": "PEND-UROLOGIA-01",
+      "tipo": "LABORATORIO",
+      "descripcion": "ALZA TERMICA 38 GRADOS CENTIGRADOS EL 11/11/2026 Y FLEBITIS DE EXTREMIDAD SUPERIOR IZQUIERDA,SE INDICA ANTIBIOTICOTERAPIA, POTENCIAR ANALGESIA Y MEDIDAS LOCALES",
+      "prioridad": "RUTINA",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": null,
+      "es_visita_nocturna": false,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
+    }
+  ],
+  "observaciones": [],
+  "laboratorios": [],
+  "cultivos": [],
+  "alertas_criticas": []
+}

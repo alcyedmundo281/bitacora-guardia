@@ -1,38 +1,41 @@
 {
   "cama": "9C",
   "area": "HOSPITALIZACION",
-  "servicio_tratante": "Cardiología / MI",
+  "servicio_tratante": null,
   "nombre_completo": "MORENO BARRIGA BLANCA ALICIA",
   "hc": "1734898",
   "cedula": "0500728902",
-  "edad": "72 años",
-  "sexo": "F",
+  "edad": "72 AÑOS",
+  "sexo": null,
   "fecha_nacimiento": null,
   "fecha_ingreso": null,
   "dias_hospitalizacion": null,
   "app": [
-    "ACV isquémico territorios múltiples",
-    "Insuficiencia cardíaca FEVI preservada 60%",
-    "Estenosis aórtica severa NYHA II",
-    "Síndrome nefrótico en estudio"
+    "ACCIDENTE CEREBROVASCULAR ISQUÉMICO DE MÚLTIPLES TERRITORIOS Y BILATERALES",
+    "INSUFICIENCIA CARDIACA FEVI PRESERVADA 60% PERFIL HEMODINÁMICO A, ETIOLOGIA VALVULAR POR ESTENOSIS AÓRTICA SEVERA, ESTADIO C, NYHA II",
+    "SINDROME NEFRÓTICO EN ESTUDIO",
+    "INJURIA MIOCÁRDICA AGUDA SECUNDARIA A SINDROME CEREBRO CORAZON, TIPO II",
+    "DISLIPIDEMIA DIAGNOSTICADA HACE APROXIMADAMENTE 2 MESES, SIN TRATAMIENTO"
   ],
   "aqx": [],
   "alergias": [],
   "diagnosticos_activos": [
-    "Insuficiencia cardíaca valvular descompensada",
-    "Síndrome nefrótico en estudio",
-    "Hipopotasemia severa recurrente (K 2.44)"
+    "SINDROME NEFRÓTICO",
+    "INSUFICIENCIA CARDIACA FEVI PRESERVADA 60% PERFIL HEMODINÁMICO A, ETIOLOGIA VALVULAR POR ESTENOSIS AÓRTICA SEVERA, ESTADIO C, NYHA II DESCOMPENSADA",
+    "HIPOKALEMIA LEVE EN REPOSICIÓN",
+    "BACTERIURIA ASINTOMATICA",
+    "ENCEFALOMALACIA"
   ],
   "diagnosticos_pasivos": [],
-  "dieta": "Hiposódica estricta",
-  "hidratacion": "Restricción hídrica",
-  "ckd_epi": "55.2 ml/min/1.73m2",
+  "dieta": null,
+  "hidratacion": null,
+  "ckd_epi": null,
   "medicaciones": [
     {
-      "nombre": "Citrato de Potasio",
-      "dosis": "2 cápsulas",
-      "via": "VO",
-      "frecuencia": "c/8 horas",
+      "nombre": "OMPERAZOL 20 MG P.O QD",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
       "fecha_inicio": null,
       "dias_tratamiento": null,
       "indicacion_cie10": null,
@@ -42,23 +45,114 @@
       "nota": null
     },
     {
-      "nombre": "Furosemida",
-      "dosis": "20 mg",
-      "via": "IV",
-      "frecuencia": "c/12 horas",
+      "nombre": "UROCIT 2 CAPSULAS VIA ORAL CADA 8 HORAS",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
       "fecha_inicio": null,
       "dias_tratamiento": null,
       "indicacion_cie10": null,
-      "suspendido": true,
+      "suspendido": false,
       "diferido": false,
       "prn": false,
-      "nota": "SUSPENDER por hipopotasemia severa (K 2.44 - 2.82)"
+      "nota": null
     },
     {
-      "nombre": "Atorvastatina",
-      "dosis": "40 mg",
-      "via": "VO",
-      "frecuencia": "QD",
+      "nombre": "ENOXAPARINA 40 MG SUBCUTANEO CADA 12 HORAS",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "PARACETAMOL 1 GRAMO INTRAVENOSO POR RAZONES NECESARIAS",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "ATORVASTATINA 40 MG VO QD ( ALTO RIESGO CARDIOVASCULAR",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "BETAHISTINA 48 MG VO QD",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "EMPAGLIFLOZINA 25 MG VIA ORAL CADA DIA",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "ENALAPRIL 5 MG VO QD",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "FUROSEMIDA 20 MG IV CADA 12 HORAS",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "POLIETILENGLICOL 1 CUCHARADA VIA ORAL CADA 12 HORAS",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
       "fecha_inicio": null,
       "dias_tratamiento": null,
       "indicacion_cie10": null,
@@ -72,59 +166,79 @@
     {
       "id": "PEND-9C-01",
       "tipo": "LABORATORIO",
-      "descripcion": "CONTROL DE ELECTROLITOS Y POTASIO SERICO STAT",
-      "prioridad": "STAT",
+      "descripcion": "PD RESULTADO RESULTADO DE ELECTROFORESIS DE PROTEÍNAS",
+      "prioridad": "RUTINA",
       "turno": "NOCTURNA_20_24",
-      "horario_programado": "STAT / 21:00",
-      "es_visita_nocturna": true,
+      "horario_programado": null,
+      "es_visita_nocturna": false,
       "estado": "PENDIENTE",
       "responsable": null,
       "resultado_obtenido": null
     },
     {
       "id": "PEND-9C-02",
-      "tipo": "IMAGEN_PROCEDIMIENTO",
-      "descripcion": "Pendiente informe de TAC simple de cráneo y UroTAC",
-      "prioridad": "URGENTE",
+      "tipo": "LABORATORIO",
+      "descripcion": "SE PROGRAMA CURETAJE PERIODONTAL DE PIEZA DENTAL 36 PARA EL DIA JUEVES 12",
+      "prioridad": "RUTINA",
       "turno": "NOCTURNA_20_24",
       "horario_programado": null,
-      "es_visita_nocturna": true,
+      "es_visita_nocturna": false,
       "estado": "PENDIENTE",
       "responsable": null,
       "resultado_obtenido": null
     },
     {
       "id": "PEND-9C-03",
-      "tipo": "INTERCONSULTA",
-      "descripcion": "Insistir derivación a IRM de Nefrología para perfil de glomerulopatías",
-      "prioridad": "URGENTE",
+      "tipo": "LABORATORIO",
+      "descripcion": "DE NOVIEMBRE DE 2026 A LAS 16H00",
+      "prioridad": "RUTINA",
       "turno": "NOCTURNA_20_24",
       "horario_programado": null,
-      "es_visita_nocturna": true,
+      "es_visita_nocturna": false,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
+    },
+    {
+      "id": "PEND-9C-04",
+      "tipo": "LABORATORIO",
+      "descripcion": "ODONTOLOGIA REALIZA PROCEDIMIENTO",
+      "prioridad": "RUTINA",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": null,
+      "es_visita_nocturna": false,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
+    },
+    {
+      "id": "PEND-9C-05",
+      "tipo": "LABORATORIO",
+      "descripcion": "INDICACIONES DE NEFROLOGIA",
+      "prioridad": "RUTINA",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": null,
+      "es_visita_nocturna": false,
       "estado": "PENDIENTE",
       "responsable": null,
       "resultado_obtenido": null
     }
   ],
   "observaciones": [
-    "Furosemida suspendida por hipokalemia grave recurrente."
+    "EKG CADA DIA",
+    "PD INFORME DE BODY TAC SIMPLE Y CONTRASTADA",
+    "ECO RENAL PD REALIZAR"
   ],
   "laboratorios": [
     {
-      "fecha_hora": "2026-11-08",
-      "tipo_estudio": "Electrolitos",
+      "fecha_hora": "2026-11-13",
+      "tipo_estudio": "Laboratorios / Gasometría",
       "valores": {
-        "potasio": 2.44,
-        "sodio": 142.9,
-        "cloro": 112,
-        "creatinina": 1.05
+        "resumen": "CLORO: 114 POTASIO: 3.47 SODIO: 143.3 CALCIO IÓNICO EN SUERO: 1.19 CALCIO TOTAL: 7.4 FÓSFORO: 3.1 MAGNESIO: 1.96"
       },
       "alerta_critica": null
     }
   ],
   "cultivos": [],
-  "alertas_criticas": [
-    "🚨 HIPOKALEMIA CRÍTICA (Potasio 2.44 mmol/L): Riesgo inminente de arritmias malignas",
-    "Furosemida suspendida temporalmente"
-  ]
+  "alertas_criticas": []
 }

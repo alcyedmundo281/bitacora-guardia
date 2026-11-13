@@ -1,43 +1,47 @@
 {
   "cama": "7",
   "area": "HOSPITALIZACION",
-  "servicio_tratante": "Medicina Interna",
-  "nombre_completo": "VINUEZA ROJAS ARTURO MIGUEL",
-  "hc": "239902",
+  "servicio_tratante": null,
+  "nombre_completo": "VINUEZA ROJAS ARTURO MIGUEL 77 AÑOS 239902",
+  "hc": "N/D",
   "cedula": null,
   "edad": "77 años",
-  "sexo": "M",
+  "sexo": null,
   "fecha_nacimiento": null,
   "fecha_ingreso": null,
   "dias_hospitalizacion": null,
   "app": [
-    "Hipertensión arterial (30 años)",
-    "Dislipidemia",
-    "Enfermedad renal crónica",
-    "Craneotomía con evacuación de hematoma subdural"
+    "ANTECEDENTES PERSONALES:",
+    "HIPERTENSION ARTERIAL DIAGNOSTICADO HACE 30 AÑOS",
+    "DISLIPIDEMIA",
+    "ENFERMEDAD RENAL CRONICA",
+    "ANTECEDENTES QUIRURGICOS:",
+    "APENDICECTOMIA",
+    "RECONSTRUCCION NASAL",
+    "CRANEOTOMIA FRONTO TEMPORO PARIETAL IZQUIERDA MAS EVACUACION DE"
   ],
-  "aqx": [
-    "Craniectomía descompresiva (sept 2026)"
-  ],
+  "aqx": [],
   "alergias": [],
   "diagnosticos_activos": [
-    "Traqueítis en portador de traqueóstomo",
-    "Hipertensión arterial",
-    "Enfermedad renal crónica estadio 3B (TFG CKD-EPI 31.84)",
-    "Infección de herida quirúrgica frontoparietal + empiema superado"
+    "TRAQUEITIS",
+    "HIPERTENSIÓN ARTERIAL",
+    "DISLIPIDEMIA",
+    "ENFERMEDAD RENAL CRÓNICA ESTADIO 3B (TFG POR CKD-EPI: 31,84)",
+    "PORTADOR DE TRAQUEOSTOMO",
+    "HEMATOMA SUBDURAL AGUDO HEMISFERICO IZQUIERDO PARIETAL DERECHO EVACUADO",
+    "NECROSIS DE COLGAJO EN CUERO CABELLUDO RESUELTO PARIETAL POSTERIOR IZQUIERDO +",
+    "INFECCION DE HERIDA QUIRURGICA FRONTO TEMPORO PARIETAL IZQUIERDA + EMPIEMA"
   ],
-  "diagnosticos_pasivos": [
-    "Hematoma subdural evacuado"
-  ],
-  "dieta": "Dieta enteral 300cc ART + Diben 900kcal/600cc por gastrostomía",
-  "hidratacion": "O2 por cánula nasal para SatO2 > 85%",
-  "ckd_epi": "35.99 ml/min/1.73m2 (Creatinina 1.78)",
+  "diagnosticos_pasivos": [],
+  "dieta": null,
+  "hidratacion": null,
+  "ckd_epi": null,
   "medicaciones": [
     {
-      "nombre": "Levetiracetam",
-      "dosis": "500 mg",
-      "via": "Gastrostomía",
-      "frecuencia": "c/12 horas",
+      "nombre": "LEVETIRACETAM 500 MILIGRAMOS POR GASTROSTOMIA CADA 12 HORAS",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
       "fecha_inicio": null,
       "dias_tratamiento": null,
       "indicacion_cie10": null,
@@ -47,10 +51,10 @@
       "nota": null
     },
     {
-      "nombre": "Enoxaparina",
-      "dosis": "40 mg",
-      "via": "SC",
-      "frecuencia": "QD",
+      "nombre": "ENOXAPARINA 40 MG SC QD",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
       "fecha_inicio": null,
       "dias_tratamiento": null,
       "indicacion_cie10": null,
@@ -60,10 +64,75 @@
       "nota": null
     },
     {
-      "nombre": "Buscapina",
-      "dosis": "1 tableta",
-      "via": "Gastrostomía",
-      "frecuencia": "c/8 horas",
+      "nombre": "BUSCAPINA 1 TABLETA POR GASTROSTOMIA C/8H",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "EMPAGLIFLOZINA 10 MILIGRAMOS POR SONDA OROGASTRICA CADA DIA",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "SIMVASTATINA 40 MILIGRAMOS POR SONDA OROGASTRICA CADA DIA",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "NEBULIZACIONES CON BROMURO DE IPRATROPIO 2 ML + SOLUCION SALINA 0.9% 5 ML",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "CADA 6 HORAS",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "LAGRIMAS ARTIFICIALES UNA GOTA CADA 2 HORAS AMBOS OJOS SIEMPRE",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
       "fecha_inicio": null,
       "dias_tratamiento": null,
       "indicacion_cie10": null,
@@ -73,49 +142,12 @@
       "nota": null
     }
   ],
-  "pendientes": [
-    {
-      "id": "PEND-7-01",
-      "tipo": "LABORATORIO",
-      "descripcion": "Control lunes de BH, Urea, Creatinina y Electrolitos",
-      "prioridad": "CONTROL",
-      "turno": "MADRUGADA_04_06",
-      "horario_programado": "05:00 AM",
-      "es_visita_nocturna": true,
-      "estado": "PENDIENTE",
-      "responsable": null,
-      "resultado_obtenido": null
-    },
-    {
-      "id": "PEND-7-02",
-      "tipo": "CUIDADO_ENFERMERIA",
-      "descripcion": "Aspiración de secreciones traqueales y curación por clínica de heridas",
-      "prioridad": "URGENTE",
-      "turno": "NOCTURNA_20_24",
-      "horario_programado": null,
-      "es_visita_nocturna": true,
-      "estado": "PENDIENTE",
-      "responsable": null,
-      "resultado_obtenido": null
-    }
-  ],
+  "pendientes": [],
   "observaciones": [
-    "Gram de secreción traqueal reportó bacilos gramnegativos."
+    "O: FTR RESPIRATORIA Y REHABILITACIÓN",
+    "CURACIONES AVANZADAS POR CLÍNICA DE HERIDAS"
   ],
-  "laboratorios": [
-    {
-      "fecha_hora": "2026-11-02",
-      "tipo_estudio": "BH y Creatinina",
-      "valores": {
-        "leucocitos": 7.99,
-        "hemoglobina": 12.4,
-        "creatinina": 1.78
-      },
-      "alerta_critica": null
-    }
-  ],
+  "laboratorios": [],
   "cultivos": [],
-  "alertas_criticas": [
-    "ERC 3B con TFG 31.84"
-  ]
+  "alertas_criticas": []
 }

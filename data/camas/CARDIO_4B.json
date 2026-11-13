@@ -1,40 +1,44 @@
 {
   "cama": "CARDIO 4B",
   "area": "PERIFERICOS",
-  "servicio_tratante": "Cardiología / ORL",
-  "nombre_completo": "GALEAS LOPEZ ROSA ELVIRA",
+  "servicio_tratante": null,
+  "nombre_completo": "0200150688 GALEAS LOPEZ ROSA ELVIRA H.C.: 1814762 ",
   "hc": "1814762",
-  "cedula": "0200150688",
-  "edad": "83 años 5 meses",
-  "sexo": "F",
+  "cedula": null,
+  "edad": "83 años",
+  "sexo": null,
   "fecha_nacimiento": null,
   "fecha_ingreso": null,
   "dias_hospitalizacion": null,
   "app": [
-    "Hipertensión arterial",
-    "Vértigo periférico",
-    "Hipotiroidismo",
-    "Fractura de rama isquiopubiana izquierda"
+    "HIPERTENSIÓN ARTERIAL",
+    "VERTIGO",
+    "HIPOTIROIDISMO",
+    "ANSIEDAD /DEPRESIÓN",
+    "POLIGLOBULIA"
   ],
   "aqx": [],
   "alergias": [],
   "diagnosticos_activos": [
-    "Hemorragia digestiva alta por úlceras Forrest III (sangrado detenido)",
-    "Anemia moderada posthemorrágica aguda",
-    "Insuficiencia respiratoria aguda en resolución"
+    "INSUFICIENCIA RESPIRATORIA AGUDA",
+    "SANGRADO DIGESTIVO ALTO POR ÚLCERAS GÁSTRICAS Y DUODENALES FORREST III, SANGRADO DETENIDO",
+    "ANEMIA MODERADA POSTHEMORRAGICA AGUDA",
+    "FRACTURA DE RAMA ISQUIOPUBIANA IZQUIERDA (MANEJO CONSERVADOR)",
+    "HIPOPROTEINEMIA - HIPOALBUMINEMIA LEVE",
+    "DELIRIO HIPOACTIVO SUPERADO",
+    "INSUFICIENCIA VENOSA PERIFÉRICA",
+    "DESHIDRATACIÓN MODERADA SUPERADA"
   ],
-  "diagnosticos_pasivos": [
-    "Delirio hipoactivo superado"
-  ],
-  "dieta": "Blanda hiposódica fraccionada",
-  "hidratacion": "Dextrosa 5% en SS 0.9% 1000 ml IV a 20 cc/h",
-  "ckd_epi": "80 ml/min/1.73m2 (Creatinina 0.65)",
+  "diagnosticos_pasivos": [],
+  "dieta": null,
+  "hidratacion": null,
+  "ckd_epi": null,
   "medicaciones": [
     {
-      "nombre": "Omeprazol",
-      "dosis": "40 mg",
-      "via": "IV",
-      "frecuencia": "c/12 horas",
+      "nombre": "******PACIENTE ALERGICO AL PESCADO Y MARISCOS******",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
       "fecha_inicio": null,
       "dias_tratamiento": null,
       "indicacion_cie10": null,
@@ -44,10 +48,10 @@
       "nota": null
     },
     {
-      "nombre": "Betahistina",
-      "dosis": "16 mg",
-      "via": "VO",
-      "frecuencia": "cada día por 10 días",
+      "nombre": "PARACETAMOL 1 GR VO POR RAZONES NECESARIAS",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
       "fecha_inicio": null,
       "dias_tratamiento": null,
       "indicacion_cie10": null,
@@ -57,24 +61,139 @@
       "nota": null
     },
     {
-      "nombre": "Rosuvastatina / Ezetimibe",
-      "dosis": "10 mg / 10 mg",
-      "via": "VO",
-      "frecuencia": "QD",
+      "nombre": "ENOXAPARINA 40 MG SC CADA DIA",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
       "fecha_inicio": null,
       "dias_tratamiento": null,
       "indicacion_cie10": null,
       "suspendido": false,
-      "diferido": true,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "LEVOTIROXINA 100 UG VO QD AM",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "AMLODIPINO 10 MG VO QD SUSPENDIDO****",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "FUROSEMIDA 20 MG CADA 48 HORAS DIFERIDO*****",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "EMPAGLIFLOZINA 10 MG VO QD",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "ALOPURINOL 150 MG VO CADA 48 HORAS",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "BICARBONATO DE SODIO 1 GR VO QD",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "FUROSEMIDA 40 MG VIA ORAL CADA DIA. GENERAR DIARIO",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
       "prn": false,
       "nota": null
     }
   ],
   "pendientes": [
     {
-      "id": "PEND-CARD4B-01",
-      "tipo": "INTERCONSULTA",
-      "descripcion": "Continuar fisioterapia respiratoria. Si persiste requerimiento de O2, reinterconsultar Neumología con gasometría",
+      "id": "PEND-CARDIO4B-01",
+      "tipo": "IMAGEN_PROCEDIMIENTO",
+      "descripcion": "E: TAC SIMPLE DE ENCEFALO, CUELLO, TORAX, ABDOMEN Y PELVIS PENDIENTE INFORME",
+      "prioridad": "URGENTE",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": null,
+      "es_visita_nocturna": true,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
+    },
+    {
+      "id": "PEND-CARDIO4B-02",
+      "tipo": "LABORATORIO",
+      "descripcion": "REPETIR COLONOSCOPIA POR INDICACION DE GASTROENTEROLOGIA NUEVO TURNO",
+      "prioridad": "RUTINA",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": null,
+      "es_visita_nocturna": false,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
+    },
+    {
+      "id": "PEND-CARDIO4B-03",
+      "tipo": "LABORATORIO",
+      "descripcion": "L: CONTROL DIARIO DE ELECTROLITOS",
       "prioridad": "CONTROL",
       "turno": "NOCTURNA_20_24",
       "horario_programado": null,
@@ -82,26 +201,130 @@
       "estado": "PENDIENTE",
       "responsable": null,
       "resultado_obtenido": null
+    },
+    {
+      "id": "PEND-CARDIO4B-04",
+      "tipo": "LABORATORIO",
+      "descripcion": "07-11-2026",
+      "prioridad": "RUTINA",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": null,
+      "es_visita_nocturna": false,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
+    },
+    {
+      "id": "PEND-CARDIO4B-05",
+      "tipo": "LABORATORIO",
+      "descripcion": "Leucocitos 5.12",
+      "prioridad": "RUTINA",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": null,
+      "es_visita_nocturna": false,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
+    },
+    {
+      "id": "PEND-CARDIO4B-06",
+      "tipo": "LABORATORIO",
+      "descripcion": "Hemoglobina 11.7",
+      "prioridad": "RUTINA",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": null,
+      "es_visita_nocturna": false,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
+    },
+    {
+      "id": "PEND-CARDIO4B-07",
+      "tipo": "LABORATORIO",
+      "descripcion": "Hematocrito 36.8",
+      "prioridad": "RUTINA",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": null,
+      "es_visita_nocturna": false,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
+    },
+    {
+      "id": "PEND-CARDIO4B-08",
+      "tipo": "LABORATORIO",
+      "descripcion": "Neutrofilo 3.33",
+      "prioridad": "RUTINA",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": null,
+      "es_visita_nocturna": false,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
+    },
+    {
+      "id": "PEND-CARDIO4B-09",
+      "tipo": "LABORATORIO",
+      "descripcion": "Plaquetas 309.000",
+      "prioridad": "RUTINA",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": null,
+      "es_visita_nocturna": false,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
+    },
+    {
+      "id": "PEND-CARDIO4B-10",
+      "tipo": "LABORATORIO",
+      "descripcion": "CLORO 102",
+      "prioridad": "RUTINA",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": null,
+      "es_visita_nocturna": false,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
+    },
+    {
+      "id": "PEND-CARDIO4B-11",
+      "tipo": "LABORATORIO",
+      "descripcion": "POTASIO 3.63",
+      "prioridad": "RUTINA",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": null,
+      "es_visita_nocturna": false,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
+    },
+    {
+      "id": "PEND-CARDIO4B-12",
+      "tipo": "LABORATORIO",
+      "descripcion": "SODIO 138.9",
+      "prioridad": "RUTINA",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": null,
+      "es_visita_nocturna": false,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
     }
   ],
   "observaciones": [
-    "Alta por Otorrinolaringología y Psiquiatría."
+    "TAC DE TÓRAX YA",
+    "VALORACIÓN POR NEUMOLOGÍA (O2 DOMICILIO)"
   ],
   "laboratorios": [
     {
-      "fecha_hora": "2026-11-07",
-      "tipo_estudio": "Control",
+      "fecha_hora": "2026-11-13",
+      "tipo_estudio": "Laboratorios / Gasometría",
       "valores": {
-        "hemoglobina": 11.7,
-        "hematocrito": 36.8,
-        "plaquetas": 309000,
-        "creatinina": 0.65
+        "resumen": "NEUMOLOGÍA: CONTINUAR CON FISIOTERAPIA RESPIRATORIA , SI PERSISTE REQUERIMIENTO DE 02 REINTERCONSULTAR CON GASOMETRÍA CARDIOLOGIA: SI LA TENSIÓN ARTERIAL SE ELEVA DE 140/90 ADMINISTRAR LOSARTÁN 50 MG VO QD TOMA DE TENSIÓN ARTERIAL DIARIA Y ANOTAR CONTROL POR CONSULTA EXTERNA DE CARDIOLOGÍA TURNO EXTRA 18 DE NOVIEMBRE/2026 CONSULTORIO 53, CARDIOLOGÍ"
       },
       "alerta_critica": null
     }
   ],
   "cultivos": [],
-  "alertas_criticas": [
-    "Úlceras gástricas y duodenales Forrest III"
-  ]
+  "alertas_criticas": []
 }

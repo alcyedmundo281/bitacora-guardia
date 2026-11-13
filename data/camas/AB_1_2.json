@@ -1,0 +1,173 @@
+{
+  "cama": "AB 1_2",
+  "area": "EMERGENCIA_OBSERVACION",
+  "servicio_tratante": null,
+  "nombre_completo": "GALLEGOS ACOSTA FERNANDA BETSABE C",
+  "hc": "1727494",
+  "cedula": "1850092782",
+  "edad": "22 AÑOS",
+  "sexo": null,
+  "fecha_nacimiento": null,
+  "fecha_ingreso": null,
+  "dias_hospitalizacion": null,
+  "app": [
+    "LUPUS ERITEMATOSO JUVENIL DESDE LOS 11 A#OS DE EDAD:",
+    "*MANIFESTACIÓN NEUROLÓGICA: EPILEPSIA PRIMERA CRISIS A LOS 12 A#OS DE EDAD",
+    "*PARAPARESIA ESPÁSTICA EN 2016",
+    "*HEMATOLÓGICO Y RENAL",
+    "HEPATITIS AUTOINMUNE VS HEPATITIS MEDICAMENTOSA",
+    "VEJIGA NEUROGÉNICA CON IVU RECURRENTES QUE RECIBE ALGUNOS ESQUEMAS DE ANTIBIÓTICOS (PROFILAXIS Y TRATAMIENTO)",
+    "ALERGIA AL PESCADO*********"
+  ],
+  "aqx": [],
+  "alergias": [],
+  "diagnosticos_activos": [
+    "HERPES ZÓSTER (CIE-10: B029)",
+    "LUPUS ERITEMATOSO SISTÉMICO (CIE-10: M321)"
+  ],
+  "diagnosticos_pasivos": [],
+  "dieta": null,
+  "hidratacion": null,
+  "ckd_epi": null,
+  "medicaciones": [
+    {
+      "nombre": "HIDROCORTISONA 50 MG IV QD (ORDEN NO. 34971591)",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "HIDROXICLOROQUINA 200 MG VO QD (ORDEN NO. 34971591)",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "GABAPENTINA 300 MG VO BID (ORDEN NO. 34971591)",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "TRAMADOL 50 MG IV PRN (ORDEN NO. 34971591)",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "METOCLOPRAMIDA 10 MG IV PRN PREVIO A TRAMADOL (ORDEN NO. 34971591)",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "AZATIOPRINA 50 MG VO QD ***SUSPENDER***",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "ACICLOVIR 800 MG TOMAR VIA ORAL 6AM- 10AM- 2PM-6PM- 10PM POR 10 DÍAS",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "PARACETAMOL 1 GRAMOS CADA 8 HORAS POR 5 DÍAS",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "PASTA LASSAR: OXIDO DE ZINC 25GR + ALMIDÓN DE ARROZ 25 GR+LANOLINA 25 GR + VASELINA 25 GR MPUE APLICAR CADA 8 HORAS EN L",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    }
+  ],
+  "pendientes": [
+    {
+      "id": "PEND-AB12-01",
+      "tipo": "IMAGEN_PROCEDIMIENTO",
+      "descripcion": "ECOGRAFÍA DE ABDOMEN (HEPATITIS AUTOINMUNE)",
+      "prioridad": "URGENTE",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": null,
+      "es_visita_nocturna": true,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
+    }
+  ],
+  "observaciones": [
+    "SEGUIMIENTO POR REUMATOLOGÍA",
+    "ALTA POR DERMATOLOGÍA",
+    "VALORACIÓN POR GASTROENTEROLOGÍA"
+  ],
+  "laboratorios": [],
+  "cultivos": [],
+  "alertas_criticas": []
+}

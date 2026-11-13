@@ -1,0 +1,156 @@
+{
+  "cama": "INFECTOLOGÍA",
+  "area": "PERIFERICOS",
+  "servicio_tratante": null,
+  "nombre_completo": "ESPINOZA GRANDA ESTELA EUFEMIA C",
+  "hc": "1736432",
+  "cedula": "1700669672",
+  "edad": "82 años",
+  "sexo": null,
+  "fecha_nacimiento": null,
+  "fecha_ingreso": null,
+  "dias_hospitalizacion": null,
+  "app": [
+    "HIPERTENSIÓN ARTERIAL;",
+    "HIPOTIROIDISMO;",
+    "EMBOLIA PULMONAR EN DICIEMBRE 2025 EN TRATAMIENTO CON RIVAROXABAN SUSPENDIÓ HACE 2 MESES POR SANGRADO VAGINAL",
+    "ANTECEDENTES QUIRÚRGICOS:",
+    "COLECISTECTOMÍA",
+    "SAFENECTOMIA; PROTESIS DE RODILLA DERECHA. CONCILIACION DE MEDICAMENTOS:",
+    "LEVOTIROXINA 75 MCG VIA ORAL CADA DIA, LOSARTAN 50 MG VIA ORAL CADA DIA,",
+    "RIVAROXABAN 20 MG VO QD HASTA HACE 2 MESES SUSPENDIO"
+  ],
+  "aqx": [],
+  "alergias": [],
+  "diagnosticos_activos": [
+    "IMPRESIÓN DIAGNÓSTICA:",
+    "TROMBOEMBOLIA PULMONAR ETIOLOGIA EN ESTUDIO ( SOSPECHA DE PATOLOGÍA ENDOMETRIAL MALIGNA)",
+    "SANGRADO VAGINAL EN ESTUDIO CIE-10: N939",
+    "LESIÓN RENAL AGUDA AKIN - SUPERADA CIE-10: N179",
+    "FRACTURA INVETERADA DE RADIO DISTAL DERECHO"
+  ],
+  "diagnosticos_pasivos": [],
+  "dieta": null,
+  "hidratacion": null,
+  "ckd_epi": null,
+  "medicaciones": [
+    {
+      "nombre": "ENOXAPARINA 60 MG SUBCUTANEO CADA 12 HORAS",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "PARACETAMOL 1 GRAMO CADA 8 HORAS",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "LEVOTIROXINA 50 MCG CADA DIA EN AYUNAS **1 HORA ANTES DEL DESAYUNO**",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "LOSARTAN 50 MILIGRAMO VIA ORAL CADA DIA",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "AMLODIPINO 10 MILIGRAMOS VIA ORAL STAT Y CADA DIA",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    }
+  ],
+  "pendientes": [
+    {
+      "id": "PEND-INFECTOLOGA-01",
+      "tipo": "LABORATORIO",
+      "descripcion": "E: (-)",
+      "prioridad": "RUTINA",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": null,
+      "es_visita_nocturna": false,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
+    },
+    {
+      "id": "PEND-INFECTOLOGA-02",
+      "tipo": "LABORATORIO",
+      "descripcion": "L: (-)",
+      "prioridad": "RUTINA",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": null,
+      "es_visita_nocturna": false,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
+    },
+    {
+      "id": "PEND-INFECTOLOGA-03",
+      "tipo": "LABORATORIO",
+      "descripcion": "C: NOVEDADES",
+      "prioridad": "RUTINA",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": null,
+      "es_visita_nocturna": false,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
+    }
+  ],
+  "observaciones": [
+    "O: REVALORACION POR GINECOLOGIA"
+  ],
+  "laboratorios": [
+    {
+      "fecha_hora": "2026-11-13",
+      "tipo_estudio": "Laboratorios / Gasometría",
+      "valores": {
+        "resumen": "UROCULTIVO: A/B, MICROORGANISMO: ESCHERICHIA COLI, GENTAMICINA SENSIBLE, AMPICILINA/SULBACTAM: SENSIBLE, TRIMETOPRIMA/SULFA: SENSIBLE, FOSFOMYCIN (URINE): SENSIBLE, NITROFURANTOÍNA: SENSIBLE, CIPROFLOXACINO: SENSIBLE, CEFAZOLINA (O): SENSIBLE, CONTAJE DE COLONIAS: 10.000 UFC/ML"
+      },
+      "alerta_critica": null
+    }
+  ],
+  "cultivos": [],
+  "alertas_criticas": []
+}

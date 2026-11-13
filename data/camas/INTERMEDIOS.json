@@ -1,0 +1,212 @@
+{
+  "cama": "INTERMEDIOS",
+  "area": "EMERGENCIA_OBSERVACION",
+  "servicio_tratante": null,
+  "nombre_completo": "GOMEZ ESPINOZA JUSTO ANGEL .",
+  "hc": "N/D",
+  "cedula": "1709837072",
+  "edad": "58 AÑOS",
+  "sexo": null,
+  "fecha_nacimiento": null,
+  "fecha_ingreso": null,
+  "dias_hospitalizacion": null,
+  "app": [
+    "EPILEPSIA",
+    "DIABETES MELLITUS TIPO 2 HACE 17 AÑOS",
+    "HIPERTENSION ARTERIAL",
+    "HIPOTIROIDISMO"
+  ],
+  "aqx": [],
+  "alergias": [],
+  "diagnosticos_activos": [
+    "SEPSIS DE PARTES BLANDAS",
+    "CELULITS MIEMBRO SUPERIOR DERECHO",
+    "LESION RENAL AGUDA KDIGO C1 U0",
+    "ESTADO HIPEROSMOLAR HIPERGLICEMICO/ CETOACIDOSIS DIABETICA SUPERADA",
+    "HIPERKALEMIA MODERADA SUPERADA"
+  ],
+  "diagnosticos_pasivos": [],
+  "dieta": null,
+  "hidratacion": null,
+  "ckd_epi": null,
+  "medicaciones": [
+    {
+      "nombre": "MEROPENEM 1 GRAMO INTRAVENOSO CADA 8 HORAS, FI: 10/11/2026 (B99)",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "VANCOMICINA 1 GRAMO INTRAVENOSO CADA 12 HORAS FIN: 10/11/2026 (B99)",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "PARACETAMOL 1 G IV PRN",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "ENOXAPARINA 40 MG SC QD",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "ACIDO VALPROICO 500 MG C/12H",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "METFORMINA 850 MG TID****SUSPENDER***",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "LOSARTAN 50 MG VO QD",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    }
+  ],
+  "pendientes": [
+    {
+      "id": "PEND-INTERMEDIOS-01",
+      "tipo": "LABORATORIO",
+      "descripcion": "EXAMENES: RESONANCIA DE CODO IZQUIERDO",
+      "prioridad": "RUTINA",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": null,
+      "es_visita_nocturna": false,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
+    },
+    {
+      "id": "PEND-INTERMEDIOS-02",
+      "tipo": "LABORATORIO",
+      "descripcion": "ELECTROLITOS STAT",
+      "prioridad": "STAT",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": null,
+      "es_visita_nocturna": true,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
+    },
+    {
+      "id": "PEND-INTERMEDIOS-03",
+      "tipo": "LABORATORIO",
+      "descripcion": "MAÑANA AM: ELECTROLITOS, UREA, CREATININA",
+      "prioridad": "CONTROL",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": null,
+      "es_visita_nocturna": true,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
+    },
+    {
+      "id": "PEND-INTERMEDIOS-04",
+      "tipo": "LABORATORIO",
+      "descripcion": "HEMOCULTIVOS PENDIENTE RESULTADOS, /VERIFICAR SE HAYA ENVIADO MUESTRA",
+      "prioridad": "STAT",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": null,
+      "es_visita_nocturna": true,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
+    },
+    {
+      "id": "PEND-INTERMEDIOS-05",
+      "tipo": "INTERCONSULTA",
+      "descripcion": "REINTERCONSULTAR A TRAUMATOLOGÍA CON RESULTADOS DE RESONANCIA DE CODO",
+      "prioridad": "URGENTE",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": null,
+      "es_visita_nocturna": true,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
+    },
+    {
+      "id": "PEND-INTERMEDIOS-06",
+      "tipo": "LABORATORIO",
+      "descripcion": "INDICACION DE ENDOCRINOLOGIA",
+      "prioridad": "RUTINA",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": null,
+      "es_visita_nocturna": false,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
+    }
+  ],
+  "observaciones": [],
+  "laboratorios": [
+    {
+      "fecha_hora": "2026-11-13",
+      "tipo_estudio": "Laboratorios / Gasometría",
+      "valores": {
+        "resumen": "Leucocitos (WBC)................: 11.50 Hemoglobina (HGB)...............: 11.1 Hematocrito (HCT)...............: 33.1 Volumen corp. medio (MCV).......: 90.60 Conc.media hemog.(MCH)..........: 30.5 Conc.corp.media (MCHC) de hemo..: 33.5 Volumen Medio Plaquetario(MPV)..: 8.7 Monocitos.......................: 0.69 Eosinófilos.....................: 0.0"
+      },
+      "alerta_critica": null
+    }
+  ],
+  "cultivos": [],
+  "alertas_criticas": []
+}

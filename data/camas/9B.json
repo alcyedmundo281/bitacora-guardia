@@ -1,41 +1,42 @@
 {
   "cama": "9B",
   "area": "HOSPITALIZACION",
-  "servicio_tratante": "Medicina Interna / Geriatría",
-  "nombre_completo": "CARRERA AGUIRRE MARTHA GRACIELA",
+  "servicio_tratante": null,
+  "nombre_completo": "CARRERA AGUIRRE MARTHA GRACIELA C",
   "hc": "2045964",
   "cedula": "1702915719",
-  "edad": "88 años 2 meses",
-  "sexo": "F",
+  "edad": "88 años",
+  "sexo": null,
   "fecha_nacimiento": null,
   "fecha_ingreso": null,
   "dias_hospitalizacion": null,
   "app": [
-    "Demencia no especificada",
-    "Hipertensión arterial",
-    "Pénfigo vulgar",
-    "Trastorno bipolar"
+    "DEMENCIA NO ESPECIFICADA DIAGNOSTICADA POR GERIATRIA",
+    "HIPERTENSIÓN ARTERIAL",
+    "PÉNFIGO VULGAR",
+    "INFECCION DE VIAS URINARIAS (HOSPITALIZADA SEPTIEMBRE 2025)",
+    "TRASTORNO BIPOLAR DIAGNOSTICADO 2023"
   ],
   "aqx": [],
   "alergias": [],
   "diagnosticos_activos": [
-    "Trastorno deglutorio severo por demencia",
-    "Anemia moderada macrocítica (Hb 7.5)",
-    "Zona de presión en sacro en cicatrización",
-    "Hipernatremia severa hipovolémica superada"
+    "TRASTORNO DEGLUTORIO EN CONTEXTO DE DEMENCIA TIPO ALZHEIMER",
+    "ANEMIA MODERADA MACROCÍTICA",
+    "ZONA DE PRESIÓN EN SACRO ANTERIOR EN CICATRIZACIÓN",
+    "NEUMONIA POR ASPIRACION SUPERADA",
+    "HIPERNATREMIA SEVERA HIPOVOLEMICA AGUDA SINTOMATICA SUPERADA",
+    "LESIÓN RENAL AGUDA KDIGO C2 SUPERADA"
   ],
-  "diagnosticos_pasivos": [
-    "Neumonía por aspiración superada"
-  ],
-  "dieta": "Dieta por SNG según indicación de Nutrición",
-  "hidratacion": "Agua libre por SNG 200 ml c/8h",
-  "ckd_epi": "75 ml/min/1.73m2",
+  "diagnosticos_pasivos": [],
+  "dieta": null,
+  "hidratacion": null,
+  "ckd_epi": null,
   "medicaciones": [
     {
-      "nombre": "Ácido Valproico",
-      "dosis": "250 mg tab",
-      "via": "VO (por SNG)",
-      "frecuencia": "BID por 10 días",
+      "nombre": "I. DEXTROSA 5% EN SOLUCION SALINA 1000 CC PASAR IV A 40 CC/H",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
       "fecha_inicio": null,
       "dias_tratamiento": null,
       "indicacion_cie10": null,
@@ -45,10 +46,114 @@
       "nota": null
     },
     {
-      "nombre": "Risperidona",
-      "dosis": "5 gotas",
-      "via": "VO (por SNG)",
-      "frecuencia": "TID",
+      "nombre": "PARACETAMOL 1 G IV PRN",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "ENOXAPARINA 40 MG SC QD",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "FUROSEMIDA 40 MG INTRAVENOSO CADA DIA",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "ESPIRONOLACTONA 25 MG POR SONDA NASOGASTRICA",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "***SUSPENDER*** AMPICILINA + SULBACTAM 3 G IV CADA 6 HORAS FI: 29/10/2026 CIE",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "INDICACIONES DE PSIQUIATRIA 04/11/2026",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "ACIDO VALPROICO 250MG TABLETA VO BID POR 10 DIAS",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "RISPERIDONA GOTAS: 5 GOTAS TID POR 10 DIAS",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "LOSARTAN 100 MILIGRAMOS VIA ORAL DIFERIDO*****************",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
       "fecha_inicio": null,
       "dias_tratamiento": null,
       "indicacion_cie10": null,
@@ -62,19 +167,19 @@
     {
       "id": "PEND-9B-01",
       "tipo": "LABORATORIO",
-      "descripcion": "CONTROL ESTRICTO DE ELECTROLITOS MAÑANA A LAS 05:00 AM",
-      "prioridad": "CONTROL",
-      "turno": "MADRUGADA_04_06",
-      "horario_programado": "05:00 AM",
-      "es_visita_nocturna": true,
+      "descripcion": "E. NO AMERITA",
+      "prioridad": "RUTINA",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": null,
+      "es_visita_nocturna": false,
       "estado": "PENDIENTE",
       "responsable": null,
       "resultado_obtenido": null
     },
     {
       "id": "PEND-9B-02",
-      "tipo": "CUIDADO_ENFERMERIA",
-      "descripcion": "Verificar tolerancia a nutrición enteral y residuos gástricos",
+      "tipo": "LABORATORIO",
+      "descripcion": "L. PENDIENTE RESULTADOS DE ELECTROLITOS 12/11/2026",
       "prioridad": "URGENTE",
       "turno": "NOCTURNA_20_24",
       "horario_programado": null,
@@ -82,26 +187,34 @@
       "estado": "PENDIENTE",
       "responsable": null,
       "resultado_obtenido": null
+    },
+    {
+      "id": "PEND-9B-03",
+      "tipo": "LABORATORIO",
+      "descripcion": "C. INDICACIONES DE GASTROENTEROLOGIA: GASTROSTOMIA 12/11/2026 16:00",
+      "prioridad": "RUTINA",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": null,
+      "es_visita_nocturna": false,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
     }
   ],
   "observaciones": [
-    "Mantener cabecera a 45 grados por alto riesgo de aspiración."
+    "GASTROSTOMÍA A LAS 16: 00 12/11/2026",
+    "INDICACIONES DE GASTROENTEROLOGIA POST PROCEDIMIENTO"
   ],
   "laboratorios": [
     {
-      "fecha_hora": "2026-11-08",
-      "tipo_estudio": "BH",
+      "fecha_hora": "2026-11-13",
+      "tipo_estudio": "Laboratorios / Gasometría",
       "valores": {
-        "hemoglobina": 7.5,
-        "hematocrito": 22.7,
-        "leucocitos": 4.83
+        "resumen": "2026/11/13 CLORO....: 95 POTASIO...: 3.73 SODIO..: 129.2 CALCIO IONICO EN SUERO..: 1.16 CALCIO IONICO EN SUERO..: 1.16 CALCIO TOTAL: 7.3 FOSFORO..: 3.5 MAGNESIO: 1.63 . 2026/11/11 CLORO....: 93 POTASIO...: 4.68 SODIO: 127.8"
       },
       "alerta_critica": null
     }
   ],
   "cultivos": [],
-  "alertas_criticas": [
-    "Control crítico de electrolitos a las 05:00 AM",
-    "Anemia severa (Hb 7.5 g/dL)"
-  ]
+  "alertas_criticas": []
 }

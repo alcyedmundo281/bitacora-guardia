@@ -1,0 +1,102 @@
+{
+  "cama": "EMER_5",
+  "area": "EMERGENCIA_OBSERVACION",
+  "servicio_tratante": null,
+  "nombre_completo": "CABEZAS ALMEIDA VICTOR MANUEL",
+  "hc": "2067347",
+  "cedula": null,
+  "edad": "78 años",
+  "sexo": null,
+  "fecha_nacimiento": null,
+  "fecha_ingreso": null,
+  "dias_hospitalizacion": null,
+  "app": [
+    "ANTECEDENTES PATOLOGICOS PERSONALES:",
+    "HIPERTENSION ARTERIAL",
+    "CA PROSTATA",
+    "INSUFICIENCIA RENAL DIALISIS BISEMANAL",
+    "ANTECEDENTES QUIRURGICOS:",
+    "APENDICECTOMIA"
+  ],
+  "aqx": [],
+  "alergias": [],
+  "diagnosticos_activos": [
+    "DIAGNÓSTICOS ACTIVOS:",
+    "CELULITIS DE OTROS SITIOS (L038)",
+    "ENFERMEDAD RENAL CRÓNICA (N185)",
+    "ÚLCERA DE DECÚBITO Y POR ÁREA DE PRESIÓN L899",
+    "TROMBOCITOPENIA SEVERA",
+    "DIAGNÓSTICOS PASIVOS:",
+    "HIPERTENSIÓN ARTERIAL",
+    "CA PRÓSTATA"
+  ],
+  "diagnosticos_pasivos": [],
+  "dieta": null,
+  "hidratacion": null,
+  "ckd_epi": null,
+  "medicaciones": [
+    {
+      "nombre": "MEROPENEM 1 GRAMO QD Y 1 GRAMO POSTERIOR A CADA DIÁLISIS FI: 11/11/2026",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "AMLODIPINO 10 MG VÍA ORAL CADA",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    }
+  ],
+  "pendientes": [
+    {
+      "id": "PEND-EMER5-01",
+      "tipo": "IMAGEN_PROCEDIMIENTO",
+      "descripcion": "PLACA ED PELVIS PENDIENTE REVISAR",
+      "prioridad": "URGENTE",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": null,
+      "es_visita_nocturna": true,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
+    },
+    {
+      "id": "PEND-EMER5-02",
+      "tipo": "LABORATORIO",
+      "descripcion": "EXAMENES LUEGO DE DIALISIS: BH, PCR, PROCALCITONINA",
+      "prioridad": "RUTINA",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": null,
+      "es_visita_nocturna": false,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
+    }
+  ],
+  "observaciones": [
+    "LABORATORIOS",
+    "2026/11/11 13:44",
+    "CALCULO DE PLAQUETAS............: 130.000",
+    "Leucocitos (WBC)................: 5.81",
+    "Hemoglobina (HGB)...............: 10.8",
+    "Hematocrito (HCT)...............: 33.4"
+  ],
+  "laboratorios": [],
+  "cultivos": [],
+  "alertas_criticas": []
+}

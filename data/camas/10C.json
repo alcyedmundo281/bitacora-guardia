@@ -1,52 +1,41 @@
 {
   "cama": "10C",
   "area": "HOSPITALIZACION",
-  "servicio_tratante": "Reumatología / Neurología",
+  "servicio_tratante": null,
   "nombre_completo": "CHANGO GADVAY MARIA ADELAIDA",
   "hc": "1996362",
-  "cedula": "1706938626",
-  "edad": "65 años",
-  "sexo": "F",
+  "cedula": null,
+  "edad": "65 AÑOS",
+  "sexo": null,
   "fecha_nacimiento": null,
   "fecha_ingreso": null,
   "dias_hospitalizacion": null,
   "app": [
-    "Artritis reumatoide (hace 14 años)",
-    "Fibromialgia",
-    "Úlcera sacra grado I"
+    "ARTRITIS REUMATOIDE HACE 14 AÑOS",
+    "FIBROMIALGIA HACE 10 MESES"
   ],
   "aqx": [],
   "alergias": [],
   "diagnosticos_activos": [
-    "Cuadriparesia en estudio relacionada a lesiones medulares",
-    "Artritis reumatoide descompensada (SDAI: 10)",
-    "Tromboembolia pulmonar superada"
+    "DIAGNOSTICOS ACTIVOS:",
+    "MIELITIS TRANSVERSA AUTOINMUNE / LESION INTRAMEDULAR C1 (EN RESOLUCION",
+    "PARCIAL)",
+    "ARTRITIS REUMATOIDE ACTIVA EN TRATAMIENTO CON INMUNOGLOBULINA",
+    "POLINEUROPATIA AXONAL SENSITIVO-MOTORA / ATROFIA MUSCULAR",
+    "HIPOPOTASEMIA MODERADA CRONICA / PROTEINURIA NO NEFROTICA",
+    "TROMBOEMBOLIA PULMONAR EN ESTUDIO BAJO ANTICOAGULACION",
+    "ULCERA POR PRESION SACRA GRADO I"
   ],
-  "diagnosticos_pasivos": [
-    "Neumonía por aspiración superada"
-  ],
-  "dieta": "Blanda fraccionada",
-  "hidratacion": "Solución salina 0.9% 1000 ml + 102 mEq NaCl a 40 ml/h",
-  "ckd_epi": "89.3 ml/min/1.73m2",
+  "diagnosticos_pasivos": [],
+  "dieta": null,
+  "hidratacion": null,
+  "ckd_epi": null,
   "medicaciones": [
     {
-      "nombre": "Metilprednisolona",
-      "dosis": "1 g en 250 ml SS 0.9%",
-      "via": "IV",
-      "frecuencia": "cada día (Pulso 2/5)",
-      "fecha_inicio": null,
-      "dias_tratamiento": "2/5",
-      "indicacion_cie10": null,
-      "suspendido": false,
-      "diferido": false,
-      "prn": false,
-      "nota": null
-    },
-    {
-      "nombre": "Sulfato de Magnesio",
-      "dosis": "1 ampolla",
-      "via": "IV",
-      "frecuencia": "c/12 horas",
+      "nombre": "IV PASAR EN 4 HORAS",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
       "fecha_inicio": null,
       "dias_tratamiento": null,
       "indicacion_cie10": null,
@@ -56,10 +45,75 @@
       "nota": null
     },
     {
-      "nombre": "Enoxaparina",
-      "dosis": "80 mg",
-      "via": "SC",
-      "frecuencia": "c/12 horas",
+      "nombre": "ENOXAPARINA 80MG SC CADA 12 HORAS",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "ESPIRONOLACTONA 50MG VO CADA DIA",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "TRAMADOL 50MG + 50ML SS 0.9% IV CADA 12 HORAS",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "METOCLOPRAMIDA 10MG IV ANTES DE TRAMADOL",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "LACTULOSA 60 ML VO CADA DIA",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "QUETIPINA 25MG VO HS (19H00)",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
       "fecha_inicio": null,
       "dias_tratamiento": null,
       "indicacion_cie10": null,
@@ -72,9 +126,9 @@
   "pendientes": [
     {
       "id": "PEND-10C-01",
-      "tipo": "IMAGEN_PROCEDIMIENTO",
-      "descripcion": "Pendiente resultados de RMN unión cráneo-cervical",
-      "prioridad": "STAT",
+      "tipo": "LABORATORIO",
+      "descripcion": "E: LABS: HBS, HBC, HEPATITIS C, VIH, QUANTIFERON PENDIENTE",
+      "prioridad": "URGENTE",
       "turno": "NOCTURNA_20_24",
       "horario_programado": null,
       "es_visita_nocturna": true,
@@ -85,10 +139,10 @@
     {
       "id": "PEND-10C-02",
       "tipo": "LABORATORIO",
-      "descripcion": "Control de Electrolitos y Magnesio a las 18h00 / control nocturno",
-      "prioridad": "CONTROL",
+      "descripcion": "L: HOY BH UREA CREATININA ELECTROLITOS DIMERO D MAGNESIO CALCIO IONICO",
+      "prioridad": "URGENTE",
       "turno": "NOCTURNA_20_24",
-      "horario_programado": "18:00 / 22:00",
+      "horario_programado": null,
       "es_visita_nocturna": true,
       "estado": "PENDIENTE",
       "responsable": null,
@@ -96,37 +150,56 @@
     },
     {
       "id": "PEND-10C-03",
-      "tipo": "CUIDADO_ENFERMERIA",
-      "descripcion": "Manejo urgente de dolor a nivel genital de gran intensidad",
-      "prioridad": "STAT",
+      "tipo": "INTERCONSULTA",
+      "descripcion": "C: ORDENES DE REUMATOLOGIA (DIARIO)",
+      "prioridad": "RUTINA",
       "turno": "NOCTURNA_20_24",
-      "horario_programado": "STAT",
+      "horario_programado": null,
+      "es_visita_nocturna": false,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
+    },
+    {
+      "id": "PEND-10C-04",
+      "tipo": "INTERCONSULTA",
+      "descripcion": "IC FISIROTERAPIA MOTORA",
+      "prioridad": "URGENTE",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": null,
       "es_visita_nocturna": true,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
+    },
+    {
+      "id": "PEND-10C-05",
+      "tipo": "LABORATORIO",
+      "descripcion": "O: NOVEDADES",
+      "prioridad": "RUTINA",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": null,
+      "es_visita_nocturna": false,
       "estado": "PENDIENTE",
       "responsable": null,
       "resultado_obtenido": null
     }
   ],
   "observaciones": [
-    "Presentó dolor a nivel genital de gran intensidad.",
-    "Staff médico convocado por déficit motor en progresión."
+    "LABORATORIOS (13H58): K: 3.46 (EN FRANCA MEJORIA TRAS REPOSICION AM), MG: 1.77,",
+    "NA: 135.3, CL: 102. FUNCION RENAL CONSERVADA (CR 0.42, UREA 33.4). DIMERO D EN",
+    "DESCENSO (2.12 VS 6.44 PREVIO). LEUCOCITOS 6.73, HB 11.6"
   ],
   "laboratorios": [
     {
-      "fecha_hora": "2026-11-07",
-      "tipo_estudio": "Reactantes y Hemograma",
+      "fecha_hora": "2026-11-13",
+      "tipo_estudio": "Laboratorios / Gasometría",
       "valores": {
-        "pcr": 45.9,
-        "leucocitos": 6.21,
-        "plaquetas": 523000,
-        "potasio": 2.81
+        "resumen": "2026/11/07 PCR CUANTITATIVO ULTRASENSIB..: 45.90 LEUCOCITOS (WBC 6.21 HEMOGLOBINA (HGB 12.2 HEMATOCRITO (HCT 37.9 PLAQUETAS 523.000 CLORO 105 POTASIO 2.81 SODIO 140.3 NITROGENO UREICO EN SUERO 10 UREA SUERO 21.8 CREATININA 0.36"
       },
       "alerta_critica": null
     }
   ],
   "cultivos": [],
-  "alertas_criticas": [
-    "Pulso de Metilprednisolona día 2/5",
-    "Cuadriparesia en estudio con dolor severo"
-  ]
+  "alertas_criticas": []
 }

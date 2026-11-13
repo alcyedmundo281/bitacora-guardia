@@ -1,0 +1,186 @@
+{
+  "cama": "NEUMOLOGIA 10C",
+  "area": "PERIFERICOS",
+  "servicio_tratante": null,
+  "nombre_completo": "C",
+  "hc": "625308",
+  "cedula": "1702923002",
+  "edad": "76 años",
+  "sexo": null,
+  "fecha_nacimiento": null,
+  "fecha_ingreso": null,
+  "dias_hospitalizacion": null,
+  "app": [
+    "HIPOTIROIDISMO / NODULO TIROIDEO",
+    "OBESIDAD",
+    "HIPERTENSIÓN ARTERIAL",
+    "DISLIPIDEMIA",
+    "GONARTROSIS BILATERAL",
+    "CÁNCER DE MAMA 2016, MASTECTOMÍA RADICAL",
+    "HERNIA INCISIONAL INCARCERADA + CELULITIS EN EL 2012",
+    "MASA PULMONAR DERECHA"
+  ],
+  "aqx": [],
+  "alergias": [],
+  "diagnosticos_activos": [
+    "DERRAME PLEURAL DE PREDOMINIO DERECHO",
+    "NÓDULO PULMONAR IZQUIERDO",
+    "HIPOTIROIDISMO",
+    "INFECCION DE VIAS URINARIAS POR E. COLI BLEE SUPERADA"
+  ],
+  "diagnosticos_pasivos": [],
+  "dieta": null,
+  "hidratacion": null,
+  "ckd_epi": null,
+  "medicaciones": [
+    {
+      "nombre": "ICKD-EPI 54,20 ML/MIN/1,73 M2 (CREATININA: 1,01 DEL 03/11/2026)",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "PARACETAMOL 1 G IV C/8H",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "TRAMADOL 50 MG IV C/8H",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "ENOXAPARINA 60 MG SC QD",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "FUROSEMIDA 20 MG IV CADA 12 HORAS",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "METOCLOPRAMIDA 10 MG IV PRN",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "QUETIAPINA 25 MG VO QD HS",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    }
+  ],
+  "pendientes": [
+    {
+      "id": "PEND-NEUMOLOGIA10C-01",
+      "tipo": "IMAGEN_PROCEDIMIENTO",
+      "descripcion": "PENDIENTE INFORME DE TC S/C DE TÓRAX ABDOMEN Y PELVIS",
+      "prioridad": "URGENTE",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": null,
+      "es_visita_nocturna": true,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
+    },
+    {
+      "id": "PEND-NEUMOLOGIA10C-02",
+      "tipo": "IMAGEN_PROCEDIMIENTO",
+      "descripcion": "PD HISTOPATOLOGICO PARTICULARCARCINOMA",
+      "prioridad": "RUTINA",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": null,
+      "es_visita_nocturna": false,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
+    },
+    {
+      "id": "PEND-NEUMOLOGIA10C-03",
+      "tipo": "LABORATORIO",
+      "descripcion": "ESCAMO CELULAR DE PULMON DERECHO",
+      "prioridad": "RUTINA",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": null,
+      "es_visita_nocturna": false,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
+    }
+  ],
+  "observaciones": [
+    "2026/11/07",
+    "Leucocitos: 9.29",
+    "Hemoglobina: 9.2",
+    "Hematocrito: 29.3",
+    "Neutrofilos 6.75",
+    "Plaquetas 406.000"
+  ],
+  "laboratorios": [
+    {
+      "fecha_hora": "2026-11-13",
+      "tipo_estudio": "Laboratorios / Gasometría",
+      "valores": {
+        "resumen": "UROCULTIVO NEGATIVO . ONCOLOGIA REVISION DE LAMINILLAS + IHQ + ESTUDIO DE EGFR + GAMMAGRAFIA OSEA Y TOMOGRAFIA DE PELVIS ABDOMEN Y TORAX (A CUENTA CON TACS)"
+      },
+      "alerta_critica": null
+    }
+  ],
+  "cultivos": [],
+  "alertas_criticas": []
+}

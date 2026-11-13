@@ -1,69 +1,49 @@
 {
   "cama": "9D",
   "area": "HOSPITALIZACION",
-  "servicio_tratante": "Endocrinología / MI",
-  "nombre_completo": "BARAHONA ALOBUELA DOLORES",
-  "hc": "1021400",
-  "cedula": "1703630655",
-  "edad": "77 años",
-  "sexo": "F",
+  "servicio_tratante": null,
+  "nombre_completo": "GUERRERO PAULA DOLORES NARCIZA",
+  "hc": "677814",
+  "cedula": null,
+  "edad": "63 años",
+  "sexo": null,
   "fecha_nacimiento": null,
   "fecha_ingreso": null,
   "dias_hospitalizacion": null,
   "app": [
-    "Insuficiencia suprarrenal primaria",
-    "Hipertensión arterial",
-    "IAM lateral y diafragmático",
-    "Aneurisma cerebral"
+    "ANTECEDENTES PATOLOGICOS PERSONAES",
+    "EPILEPSIA. SECUNDARIA A TRAUMATISMO HACE 17 AÑOS",
+    "HIPOTIROIDISMO",
+    "DISLIPIDEMIA",
+    "LESIONES VASCULARES CEREBRALES EN IMAGEN",
+    "HIPONATREMIA CRONICA",
+    "TROMBOSIS VENOSA PROFUNDA DE MIEMBRO INFERIOR DERECHA",
+    "RESIDENTE EN CENTRO DE CUIDADO, DEPENDIENTE DE TERCERAS PERSONAS"
   ],
-  "aqx": [
-    "Túnel carpiano derecho"
-  ],
+  "aqx": [],
   "alergias": [],
   "diagnosticos_activos": [
-    "Insuficiencia respiratoria aguda",
-    "Neumonía grave en comunidad (CURB-65 3 puntos)",
-    "Insuficiencia suprarrenal primaria descompensada",
-    "DHE corregido"
+    "DIAGNOSTICO:",
+    "ANEMIA MACROCITICA SEVERA AGUDA (CAIDA DE HB A 8.1 G/DL - EN SOPORTE",
+    "TRANSFUSIONAL)",
+    "SEPSIS DE FOCO PULMONAR / NEUMONIA ASPIRATIVA (DIA 4 DE TRATAMIENTO)",
+    "DESCARTE DE MENINGOENCEFALITIS VS. ENCEFALOPATIA TOXICO-METABOLICA",
+    "EPILEPSIA SECUNDARIA A TRAUMA / DEMENCIA VASCULAR",
+    "CONSTIPACION",
+    "HIPERNATREMIA MODERADA Y TROMBOCITOPENIA (RESUELTAS)"
   ],
   "diagnosticos_pasivos": [],
-  "dieta": "Blanda para diabético",
-  "hidratacion": "Dextrosa en SS 0.9% 1000 ml a 40 ml/h",
-  "ckd_epi": "78.14 ml/min/1.73m2",
+  "dieta": null,
+  "hidratacion": null,
+  "ckd_epi": null,
   "medicaciones": [
     {
-      "nombre": "Ampicilina / Sulbactam",
-      "dosis": "3 g",
-      "via": "IV",
-      "frecuencia": "c/8 horas",
-      "fecha_inicio": "2026-11-04",
-      "dias_tratamiento": "5/5",
-      "indicacion_cie10": "J18.9",
-      "suspendido": false,
-      "diferido": false,
-      "prn": false,
-      "nota": null
-    },
-    {
-      "nombre": "Claritromicina",
-      "dosis": "500 mg",
-      "via": "IV",
-      "frecuencia": "c/12 horas",
-      "fecha_inicio": "2026-11-04",
-      "dias_tratamiento": "5/5",
-      "indicacion_cie10": "J18.9",
-      "suspendido": false,
-      "diferido": false,
-      "prn": false,
-      "nota": null
-    },
-    {
-      "nombre": "Hidrocortisona",
-      "dosis": "50 mg",
-      "via": "IV",
-      "frecuencia": "c/8 horas",
+      "nombre": "IV PASAR 60ML/HORA",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
       "fecha_inicio": null,
-      "dias_tratamiento": "Día 5",
+      "dias_tratamiento": null,
       "indicacion_cie10": null,
       "suspendido": false,
       "diferido": false,
@@ -71,12 +51,103 @@
       "nota": null
     },
     {
-      "nombre": "Fludrocortisona",
-      "dosis": "0.1 mg",
-      "via": "VO",
-      "frecuencia": "cada mañana",
+      "nombre": "PIPERACILINA/TAZOBACTAM 4.5 GRAMOS IV CADA 6 HORAS (4/5) FI:09/11/2026 A419",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
       "fecha_inicio": null,
-      "dias_tratamiento": "Día 3",
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "ENOXAPARINA 40 MG SC CADA DIA",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "PARACETAMOL 1 GRAMO IV PRN",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "BROMURO DE IPATROPIO 2 PUFF CADA 8 HORAS",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "ATORVASTATINA 40 MG VO CADA DIA",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "ACIDO VALPROICO 1000MG VO CADA 12 HORAS",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "LEVOTIROXINA 125 MG VO CADA DIA",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "FUROSEMIDA 40MG IV DESPUES DE PAQUETE GLOBULAR",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
       "indicacion_cie10": null,
       "suspendido": false,
       "diferido": false,
@@ -88,19 +159,7 @@
     {
       "id": "PEND-9D-01",
       "tipo": "IMAGEN_PROCEDIMIENTO",
-      "descripcion": "RESONANCIA MAGNÉTICA SIMPLE Y CONTRASTADA DE ENCÉFALO (Orden 34934990) PENDIENTE REALIZAR",
-      "prioridad": "STAT",
-      "turno": "NOCTURNA_20_24",
-      "horario_programado": "STAT / Coordinar",
-      "es_visita_nocturna": true,
-      "estado": "PENDIENTE",
-      "responsable": null,
-      "resultado_obtenido": null
-    },
-    {
-      "id": "PEND-9D-02",
-      "tipo": "FARMACO_DOSIS",
-      "descripcion": "Evaluar suspensión de Ampicilina/Sulbactam y Claritromicina al completar hoy 5/5 días",
+      "descripcion": "PD RESULTADOS DE TAC DE TORAX",
       "prioridad": "URGENTE",
       "turno": "NOCTURNA_20_24",
       "horario_programado": null,
@@ -110,11 +169,11 @@
       "resultado_obtenido": null
     },
     {
-      "id": "PEND-9D-03",
-      "tipo": "INTERCONSULTA",
-      "descripcion": "Reinterconsultar a Otorrinolaringología para test de deglución",
+      "id": "PEND-9D-02",
+      "tipo": "LABORATORIO",
+      "descripcion": "PD RESULTADOS HEMOCULTIVO",
       "prioridad": "RUTINA",
-      "turno": "MANANA",
+      "turno": "NOCTURNA_20_24",
       "horario_programado": null,
       "es_visita_nocturna": false,
       "estado": "PENDIENTE",
@@ -123,24 +182,18 @@
     }
   ],
   "observaciones": [
-    "Conjuntivitis mucopurulenta en tratamiento con Tobramicina/Dexametasona."
+    "MAÑNA 05H00 BH UREA CREATININA ELECTROLITOS"
   ],
   "laboratorios": [
     {
-      "fecha_hora": "2026-11-08",
-      "tipo_estudio": "Control Glucosa y Electrolitos",
+      "fecha_hora": "2026-11-13",
+      "tipo_estudio": "Laboratorios / Gasometría",
       "valores": {
-        "glucosa": 83,
-        "sodio": 145.0,
-        "potasio": 3.53,
-        "cloro": 123
+        "resumen": "2026/11/12 HORA: 08:39 LEUCOCITOS (WBC): 5.72 HEMOGLOBINA (HGB): 8.1 HEMATOCRITO (HCT): 25.0 VOLUMEN CORP. MEDIO (MCV): 100.60 CONC. MEDIA HEMOG. (MCH): 32.4 CONC. CORP. MEDIA (MCHC) DE HEMO: 32.4 VOLUMEN MEDIO PLAQUETARIO (MPV): 11.5 MONOCITOS: 0.45 EOSINOFILOS: 0.05 LINFOCITOS: 2.65 NEUTROFILOS: 2.51 BASOFILOS: 0.030 PLAQUETAS: 117.000 RECUENTO D"
       },
       "alerta_critica": null
     }
   ],
   "cultivos": [],
-  "alertas_criticas": [
-    "Fin de esquema antibiótico dual (5/5 días)",
-    "Resonancia de encéfalo pendiente de coordinación urgente"
-  ]
+  "alertas_criticas": []
 }

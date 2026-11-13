@@ -1,0 +1,129 @@
+{
+  "cama": "TRASNPLANTE RENAL 8B",
+  "area": "PERIFERICOS",
+  "servicio_tratante": null,
+  "nombre_completo": "NOLIVOS CALDERON SILVIA ALEXANDRA C",
+  "hc": "642799",
+  "cedula": "1710357581",
+  "edad": "54 AÑOS",
+  "sexo": null,
+  "fecha_nacimiento": null,
+  "fecha_ingreso": null,
+  "dias_hospitalizacion": null,
+  "app": [
+    "HIPOTIROIDISMO",
+    "TROMBOEMBOLIA PULMONAR EN SEPTIEMBRE 2025",
+    "FIBROMIALGIA HACE 5 AÑOS EN TRATAMIENTO CON PREGABALINA POR 1 AÑO 4 AÑOS",
+    "SIN TRATAMIENTO",
+    "PSORIASIS TRATAMIENTO TÓPICOS",
+    "HIPERTENSIÓN PULMONAR",
+    "COVID 19 POR 3 OCASIONES"
+  ],
+  "aqx": [],
+  "alergias": [],
+  "diagnosticos_activos": [
+    "FIBROMIALGIA M797",
+    "INSUFICIENCIA RESPIRATORIA"
+  ],
+  "diagnosticos_pasivos": [],
+  "dieta": null,
+  "hidratacion": null,
+  "ckd_epi": null,
+  "medicaciones": [
+    {
+      "nombre": "PARACETAMOL 1 G IV STAT Y PRN",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "FLUOXETINA 20 MG VO QD",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "PREGABALINA 50 MG VO QD EN LA NOCHE",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "RIVAROXABAN 15 MG VO QD ( PACIENTE TIENE)",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "TRAMADOL 50 MILIGRAMOS INTRAVENOSO PRN (LENTO Y DILUIDO)",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    }
+  ],
+  "pendientes": [
+    {
+      "id": "PEND-TRASNPLANTERENAL8B-01",
+      "tipo": "LABORATORIO",
+      "descripcion": "ELECTROMIOGRAFÍA",
+      "prioridad": "RUTINA",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": null,
+      "es_visita_nocturna": false,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
+    },
+    {
+      "id": "PEND-TRASNPLANTERENAL8B-02",
+      "tipo": "INTERCONSULTA",
+      "descripcion": "LABORATORIOS POR DERIVACIÓN: ANA POR IFI, ANTI-CCP, PANEL DE MIOSITIS, ALDOLASA , SE ENTREGA 09/11/2026 SOLICITADO POR REUMATOLOGÍA",
+      "prioridad": "RUTINA",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": null,
+      "es_visita_nocturna": false,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
+    }
+  ],
+  "observaciones": [],
+  "laboratorios": [],
+  "cultivos": [],
+  "alertas_criticas": []
+}

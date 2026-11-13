@@ -1,0 +1,147 @@
+{
+  "cama": "NEUMOLOGÍA 8B",
+  "area": "PERIFERICOS",
+  "servicio_tratante": null,
+  "nombre_completo": "RODRIGUEZ QUIÑONEZ FRANKLIN",
+  "hc": "2087745",
+  "cedula": "0400506853",
+  "edad": "74 AÑOS",
+  "sexo": null,
+  "fecha_nacimiento": null,
+  "fecha_ingreso": null,
+  "dias_hospitalizacion": null,
+  "app": [
+    "PALUDISMO"
+  ],
+  "aqx": [],
+  "alergias": [],
+  "diagnosticos_activos": [
+    "SINDROME CONSTITUCIONAL",
+    "ANEMIA FERROPÉNICA CRÓNICA MODERADA",
+    "SANGRADO DIGESTIVO A DESCARTAR",
+    "REACCIÓN LEUCEMOIDE DE ETIOLOGIA INFECCIOSA VS. PARANEOPLÁSICA",
+    "COLANGITIS VS METÁSTASIS ABSCEDADAS",
+    "SINDROME COLESTASICO",
+    "LOES INTRAHEPÁTICOS Y ESPLÉNICOS EN EVALUACIÓN",
+    "HIPONATREMIA LEVE EUVOLEMICA ASINTOMATICA EN MANEJO CON CÁPSULAS DE SAL"
+  ],
+  "diagnosticos_pasivos": [],
+  "dieta": null,
+  "hidratacion": null,
+  "ckd_epi": null,
+  "medicaciones": [
+    {
+      "nombre": "PARACETAMOL 1 GRAMO VIA ORAL POR RAZONES NECESARIAS",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "TRAMADOL 50 MG IV PRN",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "ENOXAPARINA 40 MILIGRAMOS SUBCUTÁNEO CADA DIA",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "CAPSULAS DE SAL 1 GRAMO VIA ORAL CADA 8 HORAS",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "OMEPRAZOL 20 MG IV CADA DIA",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "TRIK 10ML CADA 12 HORAS",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "LACTULOSA 30 ML HS",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    }
+  ],
+  "pendientes": [
+    {
+      "id": "PEND-NEUMOLOGA8B-01",
+      "tipo": "LABORATORIO",
+      "descripcion": "CONTROL DIARIO DE ELECTROLITOS, BIOMETRÍA Y TIEMPOS DE COAGULACIÓN",
+      "prioridad": "CONTROL",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": null,
+      "es_visita_nocturna": true,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
+    }
+  ],
+  "observaciones": [
+    "INDICACIONES DE GASTROENTEROLOGÍA",
+    "INDICACIONES DE UROLOGIA Y CONTROL POR LA CONSULTA EXTERNA",
+    "BIOPSIA PERCUTÁNEA POR DR BORJA, AL MOMENTO CON PERMISO, REINTERCONSULTAR LUNES"
+  ],
+  "laboratorios": [],
+  "cultivos": [],
+  "alertas_criticas": []
+}

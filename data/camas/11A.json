@@ -1,65 +1,175 @@
 {
   "cama": "11A",
   "area": "HOSPITALIZACION",
-  "servicio_tratante": "Hematología / MI",
-  "nombre_completo": "NICOLALDE CENTENO CESAR ENRIQUE",
-  "hc": "554153",
-  "cedula": "1715905293",
-  "edad": "40 años",
-  "sexo": "M",
+  "servicio_tratante": null,
+  "nombre_completo": "YELA DÍAS NELSON ARNULFO",
+  "hc": "641333",
+  "cedula": "1705250726",
+  "edad": "N/D",
+  "sexo": null,
   "fecha_nacimiento": null,
   "fecha_ingreso": null,
   "dias_hospitalizacion": null,
   "app": [
-    "Síndrome de Down",
-    "Hipotiroidismo",
-    "Discapacidad intelectual 70%"
+    "ANTECEDENTES PATOLÓGICOS PERSONALES:",
+    "ENFERMEDAD RENAL CRÓNICA ESTADIO 5 SECUNDARIA A NEFROPATÍA DIABÉTICA EN HEMODIÁLISIS TRISEMANAL (MARTES, JUEVES Y SÁBADO) NO OLIGÚRICO",
+    "INFECCIÓN DE VÍAS URINARIAS NOSOCOMIAL POR KLEBSIELLA PNEUMONIAE KPC/ENTEROCOCCUS FAECALIS SUPERADA",
+    "DIABETES MELLITUS TIPO 2",
+    "DISLIPIDEMIA",
+    "HIPERTENSIÓN ARTERIAL SISTÉMICA",
+    "TAQUIARRITMIA CARDÍACA TIPO FIBRILACIÓN AURICULAR",
+    "HIPERPLASIA E HIPERTROFIA PROSTÁTICA BENIGNA"
   ],
   "aqx": [],
   "alergias": [],
   "diagnosticos_activos": [
-    "Bicitopenia en estudio (Plaquetas 13.000)",
-    "Hipoglicemia refractaria",
-    "Sospecha de síndrome paraneoplásico",
-    "Infección de vías urinarias",
-    "Hepatopatía en estudio"
+    "DIAGNÓSTICOS ACTIVOS:",
+    "NEUMONÍA ADQUIRIDA EN LA COMUNIDAD EN RESOLUCIÓN (CIE-10: J18.9)",
+    "ENFERMEDAD RENAL CRÓNICA ESTADIO 5 EN HEMODIÁLISIS (CKD-EPI: 13.14 ML/MIN) (CIE-10: N18.5)",
+    "DIABETES MELLITUS TIPO 2 (CIE-10: E11.9)",
+    "HIPERTENSIÓN ARTERIAL (CIE-10: I10)"
   ],
   "diagnosticos_pasivos": [],
-  "dieta": "Blanda para diabético con monitoreo estricto de glucosa",
-  "hidratacion": "Dextrosa al 5% 1000 ml IV a 60 cc/h",
-  "ckd_epi": "122.2 ml/min/1.73m2",
+  "dieta": null,
+  "hidratacion": null,
+  "ckd_epi": null,
   "medicaciones": [
     {
-      "nombre": "Enoxaparina",
-      "dosis": "40 mg",
-      "via": "SC",
-      "frecuencia": "cada día",
+      "nombre": "A PASAR 40ML/HORA",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
       "fecha_inicio": null,
       "dias_tratamiento": null,
       "indicacion_cie10": null,
-      "suspendido": true,
+      "suspendido": false,
       "diferido": false,
       "prn": false,
-      "nota": "SUSPENDER por trombocitopenia severa (Plaquetas 13.000)"
+      "nota": null
+    },
+    {
+      "nombre": "CEFTRIAXOONE 2 GRAMOS IV CADA DIA (1/3) FI: 12/11/2026 A419",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "HEPARINA SODICA 5000UI SC CADA 12 HORAS",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "LOSARTAN 100 MG VO CADA DIA",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "AMLODIPINA 10 MG VO CADA DIA",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "CARVEDILOL 6.25 MG VO CADA DIA",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "INSULINA NPH 32 UI SC AM",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "INSULINA NPH 14 UI SC PM",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "180-230 2UI",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "231-280 3UI",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
     }
   ],
   "pendientes": [
     {
       "id": "PEND-11A-01",
-      "tipo": "LABORATORIO",
-      "descripcion": "Monitoreo horario de glicemia capilar por hipoglicemia refractaria",
-      "prioridad": "STAT",
-      "turno": "NOCTURNA_20_24",
-      "horario_programado": "Horario (c/2 horas)",
-      "es_visita_nocturna": true,
-      "estado": "PENDIENTE",
-      "responsable": null,
-      "resultado_obtenido": null
-    },
-    {
-      "id": "PEND-11A-02",
       "tipo": "IMAGEN_PROCEDIMIENTO",
-      "descripcion": "Pendiente agendar turno Body TAC y TAC con protocolo de páncreas (Orden 34926151)",
+      "descripcion": "E: PD INFORME DE TAC DE TORAX",
       "prioridad": "URGENTE",
       "turno": "NOCTURNA_20_24",
       "horario_programado": null,
@@ -67,25 +177,73 @@
       "estado": "PENDIENTE",
       "responsable": null,
       "resultado_obtenido": null
+    },
+    {
+      "id": "PEND-11A-02",
+      "tipo": "LABORATORIO",
+      "descripcion": "GSA STAT",
+      "prioridad": "STAT",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": null,
+      "es_visita_nocturna": true,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
+    },
+    {
+      "id": "PEND-11A-03",
+      "tipo": "LABORATORIO",
+      "descripcion": "L: HOY BH UREA CREATININA ELECTROLITOS PCR PERFIL LIPIDICO HBA1C TSH",
+      "prioridad": "URGENTE",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": null,
+      "es_visita_nocturna": true,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
+    },
+    {
+      "id": "PEND-11A-04",
+      "tipo": "LABORATORIO",
+      "descripcion": "CALCIO IONICO",
+      "prioridad": "RUTINA",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": null,
+      "es_visita_nocturna": false,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
+    },
+    {
+      "id": "PEND-11A-05",
+      "tipo": "IMAGEN_PROCEDIMIENTO",
+      "descripcion": "LABORATORIOS (17H00): DESTACA MEJORIA DE AZOADOS POST-DIÁLISIS (UREA 67.8, CR",
+      "prioridad": "URGENTE",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": null,
+      "es_visita_nocturna": true,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
+    },
+    {
+      "id": "PEND-11A-06",
+      "tipo": "LABORATORIO",
+      "descripcion": "3.90). SODIO EN 134.0. PERSISTEN LEUCOCITOSIS (14.03) Y ANEMIA (HB 9.0)",
+      "prioridad": "RUTINA",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": null,
+      "es_visita_nocturna": false,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
     }
   ],
   "observaciones": [
-    "Alerta plaquetopenia severa confirmada por frotis."
+    "C: IC CENTRO DE HEMODIALISIS",
+    "IC NEUMOLOGIA (INICIO DE FTR)"
   ],
-  "laboratorios": [
-    {
-      "fecha_hora": "2026-11-05",
-      "tipo_estudio": "Recuento Plaquetario",
-      "valores": {
-        "plaquetas": 13000,
-        "leucocitos": 4.37
-      },
-      "alerta_critica": null
-    }
-  ],
+  "laboratorios": [],
   "cultivos": [],
-  "alertas_criticas": [
-    "🚨 TROMBOCITOPENIA CRÍTICA (Plaquetas 13.000): Riesgo hemorrágico severo",
-    "Hipoglicemias recurrentes"
-  ]
+  "alertas_criticas": []
 }

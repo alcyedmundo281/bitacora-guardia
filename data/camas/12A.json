@@ -1,56 +1,100 @@
 {
   "cama": "12A",
   "area": "HOSPITALIZACION",
-  "servicio_tratante": "Nefrología / MI",
+  "servicio_tratante": null,
   "nombre_completo": "CALDERON ALMEIDA SIMON BOLIVAR",
   "hc": "2007245",
   "cedula": "0601406994",
-  "edad": "68 años",
-  "sexo": "M",
+  "edad": "68 AÑOS",
+  "sexo": null,
   "fecha_nacimiento": null,
   "fecha_ingreso": null,
   "dias_hospitalizacion": null,
   "app": [
-    "Enfermedad renal crónica estadio 5 en hemodiálisis trisemanal",
-    "Diabetes mellitus tipo 2",
-    "Fibrilación auricular"
+    "ANTECEDENTES PERSONALES:",
+    "ARRITMIA CARDIACA",
+    "PORTADOR DE MARCAPASO",
+    "ACCIDENTE CEREBROVASCULAR ISQUÉMICO",
+    "ANTECEDENTES",
+    "APENDICECTOMIA",
+    "COLECISTECTOMIA"
   ],
-  "aqx": [
-    "Catéter tunelizado yugular derecho"
-  ],
+  "aqx": [],
   "alergias": [],
   "diagnosticos_activos": [
-    "Fiebre de origen no determinado en hemodiálisis",
-    "Arritmia cardíaca",
-    "Sospecha de bacteriemia asociada a catéter"
+    "DIAGNÓSTICOS",
+    "1.- ENDOCARDITIS ASOCIADA A CATETER",
+    "2.- ARRITMIA CARDIACA/MARCAPASO DC ENDOCARDITIS ASOCIADA A DISPOSITIVO",
+    "PASIVOS",
+    "1.- HERPES LABIAL",
+    "NO ALERGIAS"
   ],
   "diagnosticos_pasivos": [],
-  "dieta": "Dieta para paciente renal en hemodiálisis",
-  "hidratacion": "Restricción hídrica estricta (no oligúrico)",
-  "ckd_epi": "Estadío 5 (Hemodiálisis M-J-S)",
+  "dieta": null,
+  "hidratacion": null,
+  "ckd_epi": null,
   "medicaciones": [
     {
-      "nombre": "Paracetamol",
-      "dosis": "1 g",
-      "via": "IV",
-      "frecuencia": "PRN fiebre o dolor hasta c/8h",
+      "nombre": "CEFTRIAXONE 2 G IV QD CIE 10:I 339 FI:11-XI-2026 0/28",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
       "fecha_inicio": null,
       "dias_tratamiento": null,
       "indicacion_cie10": null,
       "suspendido": false,
       "diferido": false,
-      "prn": true,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "VANCOMICINA 1 G IV C/12H CIE 10:I 339 FI:12-XI-2026 1/28",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "PARACETAMOL 1 G IV PRN HASTA C/8H (FIEBRE O DOLOR)",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "RIBAROXABAN 20 MG P.O. QD 08H00",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
       "nota": null
     }
   ],
   "pendientes": [
     {
       "id": "PEND-12A-01",
-      "tipo": "LABORATORIO",
-      "descripcion": "TOMAR HEMOCULTIVOS X 2 ANTE PICO FEBRIL + Laboratorio central de proteínas y perfil hepático",
-      "prioridad": "STAT",
+      "tipo": "IMAGEN_PROCEDIMIENTO",
+      "descripcion": "E: ECOCARDIOGRAMA TRANSTORACICO JUEVES 12H00",
+      "prioridad": "URGENTE",
       "turno": "NOCTURNA_20_24",
-      "horario_programado": "STAT PRN",
+      "horario_programado": null,
       "es_visita_nocturna": true,
       "estado": "PENDIENTE",
       "responsable": null,
@@ -58,8 +102,32 @@
     },
     {
       "id": "PEND-12A-02",
-      "tipo": "IMAGEN_PROCEDIMIENTO",
-      "descripcion": "Coordinar Body TAC para búsqueda de foco infeccioso primario",
+      "tipo": "LABORATORIO",
+      "descripcion": "L: PENDIENTE LAB CENTRAL",
+      "prioridad": "URGENTE",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": null,
+      "es_visita_nocturna": true,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
+    },
+    {
+      "id": "PEND-12A-03",
+      "tipo": "INTERCONSULTA",
+      "descripcion": "ALTA POR MEDICINA INTERNA Y PASA A CARDIOLOGIA",
+      "prioridad": "RUTINA",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": null,
+      "es_visita_nocturna": false,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
+    },
+    {
+      "id": "PEND-12A-04",
+      "tipo": "INTERCONSULTA",
+      "descripcion": "SE REALIZA IC A ODONTOLOGIA PENDIENTE VALORACION",
       "prioridad": "URGENTE",
       "turno": "NOCTURNA_20_24",
       "horario_programado": null,
@@ -70,25 +138,19 @@
     }
   ],
   "observaciones": [
-    "Leucocitosis de 17.020 con PCR 53.30."
+    "O: REVALORACION POR CARDIOLOGIA",
+    "IC ODONTOLOGIA"
   ],
   "laboratorios": [
     {
-      "fecha_hora": "2026-11-09",
-      "tipo_estudio": "Infeccioso y Hematológico",
+      "fecha_hora": "2026-11-13",
+      "tipo_estudio": "Laboratorios / Gasometría",
       "valores": {
-        "leucocitos": 17.02,
-        "neutrofilos": 14.96,
-        "pcr": 53.3,
-        "procalcitonina": 0.97,
-        "inr": 1.89
+        "resumen": "2026/11/12 Leucocitos (WBC): 5.48 Hemoglobina (HGB): 15.3 Hematocrito (HCT): 47.0 Volumen corp. medio (MCV): 92.40 Conc. media hemog. (MCH): 30.0 Conc. corp. media (MCHC) de hemo: 32.6 Volumen Medio Plaquetario (MPV): 10.7 Monocitos: 0.48 Eosinófilos: 0.08 Linfocitos: 1.53 Neutrofilos: 3.32 Basófilos: 0.030 Plaquetas: 197.000 Recuento de globulos r"
       },
       "alerta_critica": null
     }
   ],
   "cultivos": [],
-  "alertas_criticas": [
-    "Fiebre no filiada en paciente con catéter de hemodiálisis",
-    "Leucocitosis 17.000"
-  ]
+  "alertas_criticas": []
 }

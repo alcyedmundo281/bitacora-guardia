@@ -1,0 +1,186 @@
+{
+  "cama": "INFECTO",
+  "area": "PERIFERICOS",
+  "servicio_tratante": null,
+  "nombre_completo": "CARDENAS CORONEL CESAR WASHINGTON C",
+  "hc": "N/D",
+  "cedula": "1700837642",
+  "edad": "92 años",
+  "sexo": null,
+  "fecha_nacimiento": null,
+  "fecha_ingreso": null,
+  "dias_hospitalizacion": null,
+  "app": [
+    "ADENOCARCINOMA DE PROSTATA ACINAR EN TTO CON LEUPROLIDE",
+    "HIPOTIROIDEO EN TTO LT4 50MCG VO QD",
+    "HTA SIN TTO",
+    "RINITIS ALERGICA EN TTO LORATADINA 10MG VO QD"
+  ],
+  "aqx": [],
+  "alergias": [],
+  "diagnosticos_activos": [
+    "ALTERACIÓN HIDROELECTROLÍTICA EN ESTUDIO",
+    "INFECCION DE VIAS URINARIA A DESCARTAR"
+  ],
+  "diagnosticos_pasivos": [],
+  "dieta": null,
+  "hidratacion": null,
+  "ckd_epi": null,
+  "medicaciones": [
+    {
+      "nombre": "BUPRENORFINA 20 MG SC 1/4 (UN CUARTO) DE PARCHE, CAMBIO NCADA 72 HORAS CIE: 10",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "PARACETAMOL 1 G P.O. CADA 8 HORAS",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "OMEPRAZOL 20 MG P.O. QD 07H00",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "POLIETILENCLICOL 17 G DILUIDO EN 1 VASO DE AGUA PRN",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "ZOPLICONA 7.5 MG P.O. HS (PCTE TIENE)",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "L: PENDIENTE UROCULTIVO",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    }
+  ],
+  "pendientes": [
+    {
+      "id": "PEND-INFECTO-01",
+      "tipo": "LABORATORIO",
+      "descripcion": "INDICACIONES DE TRAUMATOLOGIA",
+      "prioridad": "RUTINA",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": null,
+      "es_visita_nocturna": false,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
+    },
+    {
+      "id": "PEND-INFECTO-02",
+      "tipo": "LABORATORIO",
+      "descripcion": "INDICACIONES DE UROLOGIA",
+      "prioridad": "RUTINA",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": null,
+      "es_visita_nocturna": false,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
+    },
+    {
+      "id": "PEND-INFECTO-03",
+      "tipo": "INTERCONSULTA",
+      "descripcion": "REVALORACION POR NEUMOLOGIA",
+      "prioridad": "URGENTE",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": null,
+      "es_visita_nocturna": true,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
+    },
+    {
+      "id": "PEND-INFECTO-04",
+      "tipo": "LABORATORIO",
+      "descripcion": "VERIFICAR QUE SE COLOQUE PARCHE DE BUPRENORFINA",
+      "prioridad": "RUTINA",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": null,
+      "es_visita_nocturna": false,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
+    },
+    {
+      "id": "PEND-INFECTO-05",
+      "tipo": "LABORATORIO",
+      "descripcion": "UROCULTIVO RESULTADO: NEGATIVO 09/11/2026 SIN DESARROLLO EN 48H DE INCUBACI N",
+      "prioridad": "RUTINA",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": null,
+      "es_visita_nocturna": false,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
+    }
+  ],
+  "observaciones": [
+    "PENDIENTE UROCULTIVO"
+  ],
+  "laboratorios": [
+    {
+      "fecha_hora": "2026-11-13",
+      "tipo_estudio": "Laboratorios / Gasometría",
+      "valores": {
+        "resumen": "2026/11/11 ACIDO LACTICO...................: 1.9 BE..............................: -0.4 Ca..............................: 1.1 Cl..............................: 102.0 COHb............................: 2.9 Glu.............................: 123.0 HCO3............................: 23.3 Hct.............................: 37.4 K..........................."
+      },
+      "alerta_critica": null
+    }
+  ],
+  "cultivos": [],
+  "alertas_criticas": []
+}

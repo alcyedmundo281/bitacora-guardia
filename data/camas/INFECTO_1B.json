@@ -1,42 +1,113 @@
 {
   "cama": "INFECTO 1B",
   "area": "PERIFERICOS",
-  "servicio_tratante": "Infectología",
+  "servicio_tratante": null,
   "nombre_completo": "ANDRANGO SIMBAÑA GONZALO",
   "hc": "307712",
   "cedula": "1702481852",
-  "edad": "76 años",
-  "sexo": "M",
+  "edad": "76 AÑOS",
+  "sexo": null,
   "fecha_nacimiento": null,
   "fecha_ingreso": null,
   "dias_hospitalizacion": null,
   "app": [
-    "Hipotiroidismo",
-    "Hipertensión arterial",
-    "Incontinencia urinaria",
-    "No vidente",
-    "Vólvulo de colon"
+    "HIPOTIROIDISMO",
+    "HIPERTENSION ARTERIAL -INCONTINENCIA URINARIA",
+    "HIPOACUSIA BILATERAL",
+    "NO VIDENTFFE",
+    "VÓLVULO DE COLON SIGMOIDE",
+    "MASA A NIVEL ANAL DE RECIENTE DIAGNÓSTICO"
   ],
   "aqx": [],
   "alergias": [],
   "diagnosticos_activos": [
-    "Úlcera sacra e isquiática grado III-IV",
-    "Bacteriemia por Enterococcus faecalis",
-    "Derrame pleural bilateral"
+    "ÚLCERA SACRO ISQUIÁTICA GRADO III - IV",
+    "DERRAME PLEURAL BILATERAL",
+    "MASA PERIANAL (HEMANGIOMA CAPILAR)",
+    "HIDROCELE TESTICULAR SUPERADO",
+    "SANGRADO DIGESTIVO ALTO POR ESOFAGITIS EROSIVA DISTAL INTENSA GRADO D DE LA CLASIFICACIÓN DE LOS ÁNGELES",
+    "HIPOPOTASEMIA MODERADA SUPERADA",
+    "INFECCION DE VIAS URINARIAS",
+    "BACTERIEMIA POR E. FAECALIS"
   ],
   "diagnosticos_pasivos": [],
-  "dieta": "Hiperproteica blanda",
-  "hidratacion": "Vía salinizada",
-  "ckd_epi": "144 ml/min/1.73m2",
+  "dieta": null,
+  "hidratacion": null,
+  "ckd_epi": null,
   "medicaciones": [
     {
-      "nombre": "Ampicilina + Sulbactam",
-      "dosis": "3 g",
-      "via": "IV",
-      "frecuencia": "c/6 horas",
-      "fecha_inicio": "2026-10-30",
-      "dias_tratamiento": "Día 10",
-      "indicacion_cie10": "B99",
+      "nombre": "PARACETAMOL 1 GRAMO IV POR RAZONES NECESARIAS",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "LEVOTIROXINA 25 MCG VO 6:00 AM",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "CÁPSULAS DE SAL 1 G VO CADA DIA",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "AMPICILINA + SULBACTAM 3 GRAMOS INTRAVENOSO CADA 6 HORAS FI: 30-10-2026 DIA 13/14",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "AMIKACINA 1G IV CADA DIA POR 3 DÍAS (FI: 09/11/2026 D3/3 B99) SUSPENDER****",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "PROGRESIÓN DE DIETA SEGÚN TOLERANCIA",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
       "suspendido": false,
       "diferido": false,
       "prn": false,
@@ -45,58 +116,79 @@
   ],
   "pendientes": [
     {
-      "id": "PEND-INF1B-01",
-      "tipo": "ADMINISTRATIVO_QX",
-      "descripcion": "Verificar reserva y alistamiento de 2 paquetes globulares y 2 plasmas congelados para cirugía",
-      "prioridad": "STAT",
+      "id": "PEND-INFECTO1B-01",
+      "tipo": "LABORATORIO",
+      "descripcion": "CONTROL DIARIO DE ELECTROLITOS",
+      "prioridad": "CONTROL",
       "turno": "NOCTURNA_20_24",
-      "horario_programado": "STAT / 20:30",
+      "horario_programado": null,
       "es_visita_nocturna": true,
       "estado": "PENDIENTE",
       "responsable": null,
       "resultado_obtenido": null
     },
     {
-      "id": "PEND-INF1B-02",
-      "tipo": "LABORATORIO",
-      "descripcion": "Control diario de electrolitos y hematocrito prequirúrgico",
-      "prioridad": "CONTROL",
-      "turno": "MADRUGADA_04_06",
-      "horario_programado": "05:00 AM",
+      "id": "PEND-INFECTO1B-02",
+      "tipo": "INTERCONSULTA",
+      "descripcion": "REVALORACION POR INFECTOLOGÍA",
+      "prioridad": "URGENTE",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": null,
       "es_visita_nocturna": true,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
+    },
+    {
+      "id": "PEND-INFECTO1B-03",
+      "tipo": "LABORATORIO",
+      "descripcion": "INDICACIONES DE NUTRICIÓN",
+      "prioridad": "RUTINA",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": null,
+      "es_visita_nocturna": false,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
+    },
+    {
+      "id": "PEND-INFECTO1B-04",
+      "tipo": "LABORATORIO",
+      "descripcion": "INDICACIONES DE INFECTOLOGÍA",
+      "prioridad": "RUTINA",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": null,
+      "es_visita_nocturna": false,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
+    },
+    {
+      "id": "PEND-INFECTO1B-05",
+      "tipo": "LABORATORIO",
+      "descripcion": "INDICACIONES DE COLOPROCTOLOGÍA",
+      "prioridad": "RUTINA",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": null,
+      "es_visita_nocturna": false,
       "estado": "PENDIENTE",
       "responsable": null,
       "resultado_obtenido": null
     }
   ],
   "observaciones": [
-    "Cirugía por coloproctología programada."
+    "NPT TOTAL"
   ],
   "laboratorios": [
     {
-      "fecha_hora": "2026-11-07",
-      "tipo_estudio": "Hemocultivo",
+      "fecha_hora": "2026-11-13",
+      "tipo_estudio": "Laboratorios / Gasometría",
       "valores": {
-        "tiempo_deteccion_horas": 42.8
+        "resumen": "2026/11/07 Hora: 13:37 HEMOCULTIVO POR 1 MUESTRA. MICROORGANISMO: Enterococcus faecalis BENCILPENICILINA SENSIBLE / 4 ug/mL AMPICILINA SENSIBLE / <= 2 ug/mL Resultado: POSITIVO; Tiempo de Detecci n: 42.8 hs;"
       },
       "alerta_critica": null
     }
   ],
-  "cultivos": [
-    {
-      "fecha": "2026-11-07",
-      "muestra": "Hemocultivo",
-      "microorganismo": "Enterococcus faecalis",
-      "patron_resistencia": "Sensible a Bencilpenicilina y Ampicilina",
-      "sensible": [
-        "Bencilpenicilina",
-        "Ampicilina"
-      ],
-      "resistente": [],
-      "recuento_colonias": null
-    }
-  ],
-  "alertas_criticas": [
-    "Cirugía programada: Tener listos los 2 paquetes globulares y 2 plasmas en banco de sangre"
-  ]
+  "cultivos": [],
+  "alertas_criticas": []
 }

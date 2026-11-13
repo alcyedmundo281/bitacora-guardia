@@ -1,0 +1,163 @@
+{
+  "cama": "ABREVIADO 3B",
+  "area": "EMERGENCIA_OBSERVACION",
+  "servicio_tratante": null,
+  "nombre_completo": "LIDIOMA MINANGO KATHERINE ELIZABETH C",
+  "hc": "1786985",
+  "cedula": "1720905486",
+  "edad": "24 AÑOS",
+  "sexo": null,
+  "fecha_nacimiento": null,
+  "fecha_ingreso": null,
+  "dias_hospitalizacion": null,
+  "app": [
+    "ANTECEDENTES PATOLOGICOS PERSONALES:",
+    "CLINICOS:",
+    "MIOSITIS NECROTIZANTE INMUNOMEDIADA",
+    "QUIRURGICOS",
+    "APENDICECTOMIA",
+    "ALERGIAS:",
+    "NO REFIERE"
+  ],
+  "aqx": [],
+  "alergias": [],
+  "diagnosticos_activos": [
+    "MIOSITIS NECROTIZANTE INMUNOMEDIADA",
+    "REFRACTARIEDAD A CORTICOTERAPIA"
+  ],
+  "diagnosticos_pasivos": [],
+  "dieta": null,
+  "hidratacion": null,
+  "ckd_epi": null,
+  "medicaciones": [
+    {
+      "nombre": "PARACETAMOL 1 GR INTRAVENOSO POR RAZONES NECESARIAS",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "PREDNISONA 30 MG VO QD",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "OMEPRAZOL 20 MG VO QD",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "COTRIMOZAXOL 800 / 160 MG LUNES MIERCOLES Y VIERNES",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "VITAMINA D 2000 UI VO QD",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "AZATIOPRINA 100 MG VO QD TIENE",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    }
+  ],
+  "pendientes": [
+    {
+      "id": "PEND-ABREVIADO3B-01",
+      "tipo": "IMAGEN_PROCEDIMIENTO",
+      "descripcion": "PD TAC DE TORAX",
+      "prioridad": "URGENTE",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": null,
+      "es_visita_nocturna": true,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
+    },
+    {
+      "id": "PEND-ABREVIADO3B-02",
+      "tipo": "INTERCONSULTA",
+      "descripcion": "INDICACIONES DE REUMATOLOGIA",
+      "prioridad": "RUTINA",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": null,
+      "es_visita_nocturna": false,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
+    },
+    {
+      "id": "PEND-ABREVIADO3B-03",
+      "tipo": "IMAGEN_PROCEDIMIENTO",
+      "descripcion": "ECOCARDIOGRAMA PD TURNO",
+      "prioridad": "URGENTE",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": null,
+      "es_visita_nocturna": true,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
+    }
+  ],
+  "observaciones": [],
+  "laboratorios": [
+    {
+      "fecha_hora": "2026-11-13",
+      "tipo_estudio": "Laboratorios / Gasometría",
+      "valores": {
+        "resumen": "11/11/2026 PCR 1.11 / INR.1.19 (TP).: 12.9 (TTP): 27.3 LEUCOCITOS : 6.83 (HB).: 15.1 MONOCITOS.: 0.30 EOSINOFILOS.: 0.05 LINFOCITOS..: 2.51 NEUTROFILOS 3.90 PLAQU: 448.000 2026/11/04 PCR : 2.24 AST .: 133.0 ALT : 223.0 CPK...: 5798.0 * COLESTEROL.: 180 TRIGLI 92 F-ALKALINA...: 103 GGT...: 18 . CL: 108, K: 4.5, SODIO: 140. . CREA. 0.53 . EMO NO INFE"
+      },
+      "alerta_critica": null
+    }
+  ],
+  "cultivos": [],
+  "alertas_criticas": []
+}

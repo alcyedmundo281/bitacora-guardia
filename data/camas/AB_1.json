@@ -1,0 +1,107 @@
+{
+  "cama": "AB 1",
+  "area": "EMERGENCIA_OBSERVACION",
+  "servicio_tratante": null,
+  "nombre_completo": "BENAVIDES ANA LUCIA C",
+  "hc": "639501",
+  "cedula": "1000997724",
+  "edad": "70 años",
+  "sexo": null,
+  "fecha_nacimiento": null,
+  "fecha_ingreso": null,
+  "dias_hospitalizacion": null,
+  "app": [
+    "FRACTURA DE COSTILLAS DE LADO IZQUIERDO",
+    "INSUFICIENCIA CARDIACA CONGESTIVA",
+    "ENFERMEDAD RENAL CRÓNICA",
+    "HIPERTENSIÓN PORTAL",
+    "FIBROMIALGIA",
+    "HIPOTIROIDISMO",
+    "GOTA",
+    "ISQUEMIA MESENTÉRICA SEGMENTARIA"
+  ],
+  "aqx": [],
+  "alergias": [],
+  "diagnosticos_activos": [
+    "DERRAME PLEURAL TABICADO IZQUIERDO",
+    "NEUMONÍA ASOCIADA A CUIDADOS DE LA SALUD",
+    "DESCARTAR PROGRESIÓN DE PATOLOGIA ONCOLOGICA (CANCER DE MAMA/CERVIX)",
+    "PORTADORA DE YEYUNOSTOMÍA"
+  ],
+  "diagnosticos_pasivos": [],
+  "dieta": null,
+  "hidratacion": null,
+  "ckd_epi": null,
+  "medicaciones": [
+    {
+      "nombre": "SOLUCIÓN SALINA 0.9% 1000 ML PASAR 40 ML/HORA",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "MEROPENEM 1G IV CADA 8 HORAS (FI: 11/11/2026 D1 B99)",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "PARACETAMOL 1 GR IV CADA 8 HORAS",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "ENOXAPARINA 40 MG SC CADA DIA",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    }
+  ],
+  "pendientes": [
+    {
+      "id": "PEND-AB1-01",
+      "tipo": "LABORATORIO",
+      "descripcion": "LABORATORIO CENTRAL 13/11/2026: BIOMETRÍA, LDH, PCR, ELECTROLITOS, MAGNESIO, CALCIO IÓNICO, PROTEÍNAS TOTALES, ALBÚMINA",
+      "prioridad": "RUTINA",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": null,
+      "es_visita_nocturna": false,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
+    }
+  ],
+  "observaciones": [],
+  "laboratorios": [],
+  "cultivos": [],
+  "alertas_criticas": []
+}

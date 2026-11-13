@@ -1,0 +1,260 @@
+{
+  "cama": "ABV1",
+  "area": "EMERGENCIA_OBSERVACION",
+  "servicio_tratante": null,
+  "nombre_completo": "VASCONEZ RUALES CARLOS AUGUSTO",
+  "hc": "297135",
+  "cedula": "1700568841",
+  "edad": "87 AÑOS",
+  "sexo": null,
+  "fecha_nacimiento": null,
+  "fecha_ingreso": null,
+  "dias_hospitalizacion": null,
+  "app": [
+    "HIPERPLASIA PROSTATICA BENIGNA",
+    "GLAUCOMA",
+    "ENFERMEDAD RENAL CRÓNICA",
+    "NODULO TIROIDEO",
+    "SINDROME MIELODISPLASICO - MIELOMA MULTIPLE EN ESTUDIO"
+  ],
+  "aqx": [],
+  "alergias": [],
+  "diagnosticos_activos": [
+    "COLECCION SUBMENTONIANA",
+    "MASA CERVICAL IZQUIERDA EN ESTUDIO",
+    "PANCITOPENIA",
+    "ENFERMEDAD RENAL CRÓNICA REAGUDIZADA",
+    "DESCARTAR FOCO ODONTOGENICO",
+    "DESCARTAR ANGINA DE LUDWING",
+    "A DESCARTAR NEOPLASIA TIROIDEA",
+    "HIPONATREMIA LEVE"
+  ],
+  "diagnosticos_pasivos": [],
+  "dieta": null,
+  "hidratacion": null,
+  "ckd_epi": null,
+  "medicaciones": [
+    {
+      "nombre": "CEFEPIME 1 GRAMO IV CADA DOCE HORAS",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "VANCOMICINA 500 MG IV CADA 48 HORAS",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "PARACETAMOL",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "FLUCONAZOL 150 MG VIA ORAL QD",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "COTRIMOXAZOL 800/160 MG VIA ORAL QD",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "ACICLOVIR 800 MG VIA ORAL QD",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "HEPARINA SODICA 5000 UI BID",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "FUROSEMIDA 40 MG IV",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "OMEPRAZOL 20 MG IV QD",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "DEXAMETASONA 8 MG CADA 12 HORAS FI: 10/11/2026 (D1)",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    }
+  ],
+  "pendientes": [
+    {
+      "id": "PEND-ABV1-01",
+      "tipo": "IMAGEN_PROCEDIMIENTO",
+      "descripcion": "BODY TAC SIMPLE",
+      "prioridad": "URGENTE",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": null,
+      "es_visita_nocturna": true,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
+    },
+    {
+      "id": "PEND-ABV1-02",
+      "tipo": "INTERCONSULTA",
+      "descripcion": "ELECTROCARDIOGRAMA STAT",
+      "prioridad": "STAT",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": null,
+      "es_visita_nocturna": true,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
+    },
+    {
+      "id": "PEND-ABV1-03",
+      "tipo": "IMAGEN_PROCEDIMIENTO",
+      "descripcion": "ECOGRAFIA DE TIROIDES AGENDADA, PENDIENTE REALIZAR",
+      "prioridad": "URGENTE",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": null,
+      "es_visita_nocturna": true,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
+    },
+    {
+      "id": "PEND-ABV1-04",
+      "tipo": "LABORATORIO",
+      "descripcion": "PAAF DE MASA CERVICAL IZQUIERDA",
+      "prioridad": "RUTINA",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": null,
+      "es_visita_nocturna": false,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
+    },
+    {
+      "id": "PEND-ABV1-05",
+      "tipo": "LABORATORIO",
+      "descripcion": "L: -MAÑANA BH PCT , PCR , GLUCOSA, ELECTROLTIOS",
+      "prioridad": "CONTROL",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": null,
+      "es_visita_nocturna": true,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
+    },
+    {
+      "id": "PEND-ABV1-06",
+      "tipo": "LABORATORIO",
+      "descripcion": "GASOMETRÍA EN LA PRN",
+      "prioridad": "RUTINA",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": null,
+      "es_visita_nocturna": false,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
+    }
+  ],
+  "observaciones": [
+    "IC ODONTOLOGIA DESCARTAR FOCO ODONTOGENICO DE ABSCESO SUBMENTONIAN YA REALIZADA",
+    "IC A HEMATOLOGIA PANCITPENAI SD MIELODISPLASICO, VS MIELOMA REALIZADO",
+    "SEGUIMIENTO OTORRINOLARINGOLOGIA PD DEFINIR DRENAJE DE COLECCION",
+    "IC NEFROLOGIA POR ENF RENAL CRONICA ESTADIO 5 REALIZADA"
+  ],
+  "laboratorios": [
+    {
+      "fecha_hora": "2026-11-13",
+      "tipo_estudio": "Laboratorios / Gasometría",
+      "valores": {
+        "resumen": "13/11/2026 07:30: LEUCOCITOS: 0.51, NEUTROFILOS: 0.13, LINFOCITOS: 0.37, HEMOGLOBINA: 8.1, HEMATOCRITO: 26.1, VOLUMEN CORPUSCULAR MEDIO: 88.00, PLAQUETAS: 134.000 | 12/11/2026 10:16: GLUCOSA: 112, SODIO: 135.4, POTASIO: 5.18, CLORO: 109, PCR CUANTITATIVO ULTRASENSIBLE: 35.30, PROCALCITONINA: 0.21 | 12/11/2026 09:28: CREATININA: 3.44 LEUCOCITOS: 0.6"
+      },
+      "alerta_critica": null
+    }
+  ],
+  "cultivos": [],
+  "alertas_criticas": []
+}

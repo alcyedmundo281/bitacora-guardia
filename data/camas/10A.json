@@ -1,54 +1,42 @@
 {
   "cama": "10A",
   "area": "HOSPITALIZACION",
-  "servicio_tratante": "Neumología / Oncología",
-  "nombre_completo": "HERRERA OBANDO JESUS RAQUEL",
-  "hc": "797237",
-  "cedula": "1709863706",
-  "edad": "60 años",
-  "sexo": "F",
+  "servicio_tratante": null,
+  "nombre_completo": "MOSQUERA SALVADOR PATRICIA ALEXANDRA C",
+  "hc": "1334681",
+  "cedula": "1706511530",
+  "edad": "63 años",
+  "sexo": null,
   "fecha_nacimiento": null,
   "fecha_ingreso": null,
   "dias_hospitalizacion": null,
   "app": [
-    "Déficit de proteína C",
-    "Trombosis venosa profunda previa",
-    "EPID",
-    "Cardiopatía isquémica",
-    "ECV",
-    "Artritis reumatoidea"
+    "LITIASIS RENAL, YA HAN REALIZADO LITOTRICIA",
+    "COLELITIASIS DESDE ENERO 2026",
+    "OSTEOPOROSIS",
+    "PROLAPSO VESICAL DESDE HACE 4 MESES",
+    "INFECCION DE VIAS URINARIAS A REPETICIÓN"
   ],
   "aqx": [],
   "alergias": [],
   "diagnosticos_activos": [
-    "Masa pulmonar en estudio a descartar neoplasia",
-    "Insuficiencia respiratoria aguda PAFI 60 mmHg (SDRA grave)",
-    "Trombosis venosa profunda poplítea, solear y gemelar izquierda",
-    "Lesión lítica de L4 (posible sarcoma paravertebral)"
+    "SEPSIS A DOBLE FOCO URINARIO E INTESTINAL",
+    "DC INFECCIÓN POR CLOSTRIDIUM DIFFICILE",
+    "LESIÓN RENAL AGUDA KDIGO III CKD EPI: 14 ML/MIN",
+    "TROMBOCITOPENIA POR SEPSIS",
+    "HIPONATREMIA HIPOOSMOLAR HIPOVOLEMICA /HIPOKALEMIA. /ACIDEMIA METABÓLICA",
+    "FALLO MULTIORGANICO RENAL, HEPÁTICO, COAGULACIÓN. APACHE 13 PUNTOS"
   ],
   "diagnosticos_pasivos": [],
-  "dieta": "Blanda fraccionada",
-  "hidratacion": "Solución salina 0.9% 1000 ml + 10 mEq KCl a 40 ml/h",
-  "ckd_epi": "82.3 ml/min/1.73m2",
+  "dieta": null,
+  "hidratacion": null,
+  "ckd_epi": null,
   "medicaciones": [
     {
-      "nombre": "Meropenem",
-      "dosis": "1 g",
-      "via": "IV",
-      "frecuencia": "c/8 horas",
-      "fecha_inicio": "2026-11-04",
-      "dias_tratamiento": "4/5",
-      "indicacion_cie10": "A41.9",
-      "suspendido": false,
-      "diferido": false,
-      "prn": false,
-      "nota": null
-    },
-    {
-      "nombre": "Enoxaparina",
-      "dosis": "60 mg",
-      "via": "SC",
-      "frecuencia": "c/12 horas (dosis terapéutica por TVP)",
+      "nombre": "MEROPENEM 1 GRAMO IV CADA 8 HORAS (7) FI:05/11/2026 CIE: N390",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
       "fecha_inicio": null,
       "dias_tratamiento": null,
       "indicacion_cie10": null,
@@ -58,10 +46,36 @@
       "nota": null
     },
     {
-      "nombre": "Morfina",
-      "dosis": "20 mg en 98 ml SS 0.9%",
-      "via": "IV",
-      "frecuencia": "a 8 ml/h en infusión continua",
+      "nombre": "PARACETAMOL 1 GRAMO IV PRN",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "OMEPRAZOL 20MG VO QD",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "FUROSEMIDA 40MG IV 08H00 Y 20MG IV 18H00",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
       "fecha_inicio": null,
       "dias_tratamiento": null,
       "indicacion_cie10": null,
@@ -75,7 +89,7 @@
     {
       "id": "PEND-10A-01",
       "tipo": "IMAGEN_PROCEDIMIENTO",
-      "descripcion": "Insistir resultado de biopsia EBUS + crioterapia + biomolecular de lesión pulmonar (SOLCA)",
+      "descripcion": "UROTAC SIMPLE",
       "prioridad": "URGENTE",
       "turno": "NOCTURNA_20_24",
       "horario_programado": null,
@@ -87,35 +101,140 @@
     {
       "id": "PEND-10A-02",
       "tipo": "LABORATORIO",
-      "descripcion": "Rx de control evolutiva y gasometría de control por SDRA",
+      "descripcion": "RMN DE COLUMNA LUMBAR",
+      "prioridad": "RUTINA",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": null,
+      "es_visita_nocturna": false,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
+    },
+    {
+      "id": "PEND-10A-03",
+      "tipo": "LABORATORIO",
+      "descripcion": "ELECTROFORESIS DE PROTEINAS (TRAMITE DERIVACION)",
+      "prioridad": "RUTINA",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": null,
+      "es_visita_nocturna": false,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
+    },
+    {
+      "id": "PEND-10A-04",
+      "tipo": "LABORATORIO",
+      "descripcion": "PD RESULTADOS DE HEMOCULTIVOS",
+      "prioridad": "RUTINA",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": null,
+      "es_visita_nocturna": false,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
+    },
+    {
+      "id": "PEND-10A-05",
+      "tipo": "LABORATORIO",
+      "descripcion": "L: HOY BH UREA CREATININA ELECTROLITOS CALCIO IONICO (CONTEO MANUAL DE",
+      "prioridad": "URGENTE",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": null,
+      "es_visita_nocturna": true,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
+    },
+    {
+      "id": "PEND-10A-06",
+      "tipo": "LABORATORIO",
+      "descripcion": "PLAQUETAS,) DIMERO D,PERFIL LIPIDICO,PERFIL HEPATICO, LIPASA",
+      "prioridad": "RUTINA",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": null,
+      "es_visita_nocturna": false,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
+    },
+    {
+      "id": "PEND-10A-07",
+      "tipo": "IMAGEN_PROCEDIMIENTO",
+      "descripcion": "EKG STAT",
       "prioridad": "STAT",
       "turno": "NOCTURNA_20_24",
-      "horario_programado": "STAT / 21:00",
+      "horario_programado": null,
       "es_visita_nocturna": true,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
+    },
+    {
+      "id": "PEND-10A-08",
+      "tipo": "LABORATORIO",
+      "descripcion": "GSA PRN",
+      "prioridad": "RUTINA",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": null,
+      "es_visita_nocturna": false,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
+    },
+    {
+      "id": "PEND-10A-09",
+      "tipo": "LABORATORIO",
+      "descripcion": "ELECTROLITOS (GSA 16H26): K: 3.3 (DESCENSO EN RELACION AL SERICO MATUTINO DE",
+      "prioridad": "RUTINA",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": null,
+      "es_visita_nocturna": false,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
+    },
+    {
+      "id": "PEND-10A-10",
+      "tipo": "LABORATORIO",
+      "descripcion": "3.99), NA: 136, CL: 107",
+      "prioridad": "RUTINA",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": null,
+      "es_visita_nocturna": false,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
+    },
+    {
+      "id": "PEND-10A-11",
+      "tipo": "LABORATORIO",
+      "descripcion": "HEMOCULTIVOS NEGATIVOS",
+      "prioridad": "RUTINA",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": null,
+      "es_visita_nocturna": false,
       "estado": "PENDIENTE",
       "responsable": null,
       "resultado_obtenido": null
     }
   ],
   "observaciones": [
-    "Infusión continua de morfina por dolor intenso de lesión lítica L4."
+    "IC HEMATOLOGIA",
+    "IC CIRUGIA GENERAL",
+    "IC NEUMOLOGIA (INICIO DE FTR)",
+    "IC UROLOGIA"
   ],
   "laboratorios": [
     {
-      "fecha_hora": "2026-11-08",
-      "tipo_estudio": "BH y Plaquetas",
+      "fecha_hora": "2026-11-13",
+      "tipo_estudio": "Laboratorios / Gasometría",
       "valores": {
-        "leucocitos": 13.78,
-        "hemoglobina": 9.5,
-        "plaquetas": 197000,
-        "neutrofilos": 11.38
+        "resumen": "- LITIASIS RENAL, YA HAN REALIZADO LITOTRICIA - COLELITIASIS DESDE ENERO 2026 - OSTEOPOROSIS - PROLAPSO VESICAL DESDE HACE 4 MESES - INFECCION DE VIAS URINARIAS A REPETICIÓN"
       },
       "alerta_critica": null
     }
   ],
   "cultivos": [],
-  "alertas_criticas": [
-    "🚨 SDRA GRAVE con PAFI 60 mmHg",
-    "Anticoagulación terapéutica con Enoxaparina 60mg c/12h por TVP extensa"
-  ]
+  "alertas_criticas": []
 }

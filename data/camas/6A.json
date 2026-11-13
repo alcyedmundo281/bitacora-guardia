@@ -1,64 +1,42 @@
 {
   "cama": "6A",
   "area": "HOSPITALIZACION",
-  "servicio_tratante": "Medicina Interna",
+  "servicio_tratante": null,
   "nombre_completo": "RODRIGUEZ MORENO SEGUNDO EZEQUIEL",
   "hc": "2013397",
   "cedula": "1709777906",
-  "edad": "59 años",
-  "sexo": "M",
+  "edad": "59 AÑO",
+  "sexo": null,
   "fecha_nacimiento": null,
   "fecha_ingreso": null,
   "dias_hospitalizacion": null,
   "app": [
-    "Hipotiroidismo",
-    "Hipertensión arterial",
-    "Neumonía asociada a la comunidad (oct/2026)",
-    "Artritis reumatoide en seguimiento por Reumatología IESS"
+    "HIPOTIROIDISMO",
+    "HIPERTENSIÓN ARTERIAL",
+    "NEUMONIA ASOCIADA A LA COMUNIDAD FINALES DE OCTUBRE/2026, ENVIADO CON ANTIBIOTICOTERAPIA VIA ORAL + INHALADORES",
+    "HIPERTENSIÓN ARTERIAL",
+    "ARTRITIS REUMATOIDE EN SEGUIMIENTO POR REUMATOLOGÍA IESS DISPENSARIO",
+    "EN REVALORACIÓN AL MOMENTO",
+    "NEUMONIA HACE DOS AÑOS"
   ],
   "aqx": [],
   "alergias": [],
   "diagnosticos_activos": [
-    "Neumonía adquirida en la comunidad (CIE-10: J15.9)",
-    "Choque séptico de foco pulmonar superado (CIE-10: R57.2)",
-    "Insuficiencia renal aguda KDIGO C3 (CIE-10: N17.9)"
+    "INSUFICIENCIA RESPIRATORIA",
+    "NEUMONIA ADQUIRIDA EN LA COMUNIDAD. CIE 10: J159 SUPERADA",
+    "CHOQUE SÉPTICO DE FOCO PULMONAR SUPERADO CIE 10: R572",
+    "LESIÓN RENAL AGUDA KDIGO C3 CIE-10: N179 SUPERADO"
   ],
   "diagnosticos_pasivos": [],
-  "dieta": "Dieta general blanda",
-  "hidratacion": "Dispositivo salinizado sin heparina",
-  "ckd_epi": "84 ml/min/1.73m2",
+  "dieta": null,
+  "hidratacion": null,
+  "ckd_epi": null,
   "medicaciones": [
     {
-      "nombre": "Ampicilina / Sulbactam",
-      "dosis": "3 g",
-      "via": "IV",
-      "frecuencia": "c/6 horas",
-      "fecha_inicio": "2026-11-03",
-      "dias_tratamiento": "5/5",
-      "indicacion_cie10": "J15.9",
-      "suspendido": false,
-      "diferido": false,
-      "prn": false,
-      "nota": null
-    },
-    {
-      "nombre": "Paracetamol",
-      "dosis": "1 g",
-      "via": "VO",
-      "frecuencia": "c/8 horas",
-      "fecha_inicio": null,
-      "dias_tratamiento": null,
-      "indicacion_cie10": null,
-      "suspendido": false,
-      "diferido": false,
-      "prn": true,
-      "nota": null
-    },
-    {
-      "nombre": "Omeprazol",
-      "dosis": "40 mg",
-      "via": "IV",
-      "frecuencia": "cada día",
+      "nombre": "PARACETAMOL 1 GRAMO VIA ORAL CADA 8 HORAS",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
       "fecha_inicio": null,
       "dias_tratamiento": null,
       "indicacion_cie10": null,
@@ -68,10 +46,10 @@
       "nota": null
     },
     {
-      "nombre": "Enoxaparina",
-      "dosis": "60 mg",
-      "via": "SC",
-      "frecuencia": "cada día",
+      "nombre": "OMEPRAZOL 40 MILIGRAMOS INTRAVENOSO CADA DIA",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
       "fecha_inicio": null,
       "dias_tratamiento": null,
       "indicacion_cie10": null,
@@ -81,10 +59,10 @@
       "nota": null
     },
     {
-      "nombre": "Levotiroxina",
-      "dosis": "50 mcg",
-      "via": "VO",
-      "frecuencia": "cada día 06:00",
+      "nombre": "ENOXAPARINA 60 MG APLICAR SUBCUTANEO, CADA DIA",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
       "fecha_inicio": null,
       "dias_tratamiento": null,
       "indicacion_cie10": null,
@@ -94,10 +72,10 @@
       "nota": null
     },
     {
-      "nombre": "Tramadol",
-      "dosis": "50 mg",
-      "via": "IV",
-      "frecuencia": "c/6 horas diluido lento",
+      "nombre": "LEVOTIROXINA 50 MICROGRAMO VIA ORAL CADA DIA 06:00",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
       "fecha_inicio": null,
       "dias_tratamiento": null,
       "indicacion_cie10": null,
@@ -107,10 +85,75 @@
       "nota": null
     },
     {
-      "nombre": "Hidrocortisona",
-      "dosis": "150 mg",
-      "via": "IV",
-      "frecuencia": "cada día 08:00 AM",
+      "nombre": "TRAMADOL 50 MILIGRAMOS INTRAVENOSO POR RAZONES NECESARIAS",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "METOCLOPRAMIDA 10 MILIGRAMOS INTRAVENOSO POR RAZONES NECESARIAS",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "HIDROCORTISONA 150 MG IV QD 8 AM",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "TRI-K 10 ML DILUIR EN MEDIO VASO DE JUGO DE NARANJA VO CADA 8 HORAS (D3/3)",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "ENALAPRIL 10 MILIGRAMO VIA ORAL CADA DIA",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "PREDNISONA 20 MILIGRAMO CADA DIA ***SUSPENDE HACE 3 DIAS***",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
       "fecha_inicio": null,
       "dias_tratamiento": null,
       "indicacion_cie10": null,
@@ -123,33 +166,117 @@
   "pendientes": [
     {
       "id": "PEND-6A-01",
-      "tipo": "IMAGEN_PROCEDIMIENTO",
-      "descripcion": "Electrocardiograma (EKG) STAT",
-      "prioridad": "STAT",
+      "tipo": "LABORATORIO",
+      "descripcion": "PENDIENTE EXÁMENES GENERADOS EL 12/11/2026",
+      "prioridad": "URGENTE",
       "turno": "NOCTURNA_20_24",
       "horario_programado": null,
-      "es_visita_nocturna": false,
-      "estado": "COMPLETADO",
+      "es_visita_nocturna": true,
+      "estado": "PENDIENTE",
       "responsable": null,
-      "resultado_obtenido": "Ritmo sinusal normal"
+      "resultado_obtenido": null
     },
     {
       "id": "PEND-6A-02",
-      "tipo": "LABORATORIO",
-      "descripcion": "Gasometría arterial STAT + Electrolitos",
-      "prioridad": "STAT",
+      "tipo": "INTERCONSULTA",
+      "descripcion": "INDICACIONES DE REUMATOLOGÍA",
+      "prioridad": "RUTINA",
       "turno": "NOCTURNA_20_24",
       "horario_programado": null,
       "es_visita_nocturna": false,
-      "estado": "COMPLETADO",
+      "estado": "PENDIENTE",
       "responsable": null,
-      "resultado_obtenido": "Gases normales, lactato 1.1"
+      "resultado_obtenido": null
+    },
+    {
+      "id": "PEND-6A-03",
+      "tipo": "IMAGEN_PROCEDIMIENTO",
+      "descripcion": "PENDIENTE TAC SIMPLE DE TÓRAX",
+      "prioridad": "URGENTE",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": null,
+      "es_visita_nocturna": true,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
     },
     {
       "id": "PEND-6A-04",
-      "tipo": "FARMACO_DOSIS",
-      "descripcion": "Evaluar fin de ciclo de antibiótico (Día 5/5)",
+      "tipo": "LABORATORIO",
+      "descripcion": "C: COMUNICAR",
+      "prioridad": "RUTINA",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": null,
+      "es_visita_nocturna": false,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
+    },
+    {
+      "id": "PEND-6A-05",
+      "tipo": "INTERCONSULTA",
+      "descripcion": "VALORACIÓN POR NEUMOLOGÍA",
       "prioridad": "URGENTE",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": null,
+      "es_visita_nocturna": true,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
+    },
+    {
+      "id": "PEND-6A-06",
+      "tipo": "LABORATORIO",
+      "descripcion": "INICIO DE OXIGENO DOMICILIARIO",
+      "prioridad": "RUTINA",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": null,
+      "es_visita_nocturna": false,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
+    },
+    {
+      "id": "PEND-6A-07",
+      "tipo": "INTERCONSULTA",
+      "descripcion": "REUMATOLOGÍA",
+      "prioridad": "RUTINA",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": null,
+      "es_visita_nocturna": false,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
+    },
+    {
+      "id": "PEND-6A-08",
+      "tipo": "INTERCONSULTA",
+      "descripcion": "INDICACIONES DE DERMATOLOGÍA",
+      "prioridad": "RUTINA",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": null,
+      "es_visita_nocturna": false,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
+    },
+    {
+      "id": "PEND-6A-09",
+      "tipo": "LABORATORIO",
+      "descripcion": "UREA 10% SEMISOLIDO CUTANEO APLICAR TOPICO BID POR 15 DIAS EN MANOS",
+      "prioridad": "RUTINA",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": null,
+      "es_visita_nocturna": false,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
+    },
+    {
+      "id": "PEND-6A-10",
+      "tipo": "LABORATORIO",
+      "descripcion": "PROXIMO CONTROL: 06/11/2026",
+      "prioridad": "CONTROL",
       "turno": "NOCTURNA_20_24",
       "horario_programado": null,
       "es_visita_nocturna": true,
@@ -159,27 +286,23 @@
     }
   ],
   "observaciones": [
-    "Urea 10% semisólido cutáneo tópico BID por 15 días en manos.",
-    "Laboratorios reumatología orden 34926920."
+    "LABORATORIOS SOLICITADOS POR REUMATOLOGIA:",
+    "FACTOR REUMATOIDEO..............: 13.1",
+    "C3..............................: 0.85",
+    "C4..............................: 0.07",
+    "ANTICOAGULANTE LUPICO...........: 1.08",
+    "EXAMENES DE LABORATORIO POR SERVICIO BASE: FACTOR REUMATOIDE, ANTICOAGULANTE"
   ],
   "laboratorios": [
     {
-      "fecha_hora": "2026-11-06",
-      "tipo_estudio": "BH y Química",
+      "fecha_hora": "2026-11-13",
+      "tipo_estudio": "Laboratorios / Gasometría",
       "valores": {
-        "leucocitos": 2.52,
-        "hemoglobina": 10.4,
-        "hematocrito": 32.3,
-        "plaquetas": 84000,
-        "inr": 1.05,
-        "creatinina": 0.8
+        "resumen": "10/11/2026 ACIDO LACTICO.: 1.0 BE.: 5.5 Ca: 1.1 Cl: 100.0 COHb: 1.9 Glu: 130.0 HCO3: 28.8 Hct: 33.7 K.: 3.9 MetHb.: 0.2 Na.: 137.0 O2Hb: 61.8 O2SAT.: 63.1 PCO2.: 37.6 PHS: 7.493 PO2: 32.6 TCO2.: 30.0 Leucocitos (WBC)..: 4.98 Hemoglobina (HGB): 10.6 Hematocrito (HCT).: 33.0 Volumen corp. medio (MCV).: 85.40 Conc.media hemog.(MCH)..........: 27.4 Con"
       },
       "alerta_critica": null
     }
   ],
   "cultivos": [],
-  "alertas_criticas": [
-    "Leucopenia (WBC 2.52)",
-    "Ampicilina/Sulbactam cumpliendo día 4/5"
-  ]
+  "alertas_criticas": []
 }
