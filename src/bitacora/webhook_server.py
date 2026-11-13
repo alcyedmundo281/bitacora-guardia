@@ -20,6 +20,7 @@ from bitacora.bed_store import (
     list_camas_activas,
     registrar_resultado_cama,
 )
+from bitacora.excel_exporter import exportar_bitacora_xlsx, subir_xlsx_a_drive
 from bitacora.groq_agent import call_groq_clinical_parser, set_groq_api_key, test_groq_connection
 from bitacora.models import Paciente, Pendiente, PendientePrioridad, PendienteTipo, TurnoObjetivo
 from bitacora.pdf_generator import generar_bitacora_completa
@@ -57,22 +58,33 @@ app = FastAPI(
 
 
 def publicar_bitacora_diaria_pdf(chat_id: str | None = None) -> dict[str, Any]:
-    """Consolida la bitácora, genera el PDF con Quarto y lo envía al grupo de WhatsApp."""
+    """Consolida la bitácora, genera PDF + XLSX, los sube a Drive (si está configurado) y envía al grupo."""
     bitacora_path = get_active_bitacora_path()
     archivos = generar_bitacora_completa(bitacora_path)
+    xlsx_path = exportar_bitacora_xlsx(bitacora_path)
+    drive_res = subir_xlsx_a_drive(xlsx_path)
     bit_consolidada = consolidar_bitacora(bitacora_path)
     ahora_ec = now_ecuador()
     pdf_path = archivos.get("pdf", Path("reports/bitacora_guardia.pdf"))
 
+    drive_line = (
+        f"\n☁ *Excel en Google Drive:* {drive_res['webViewLink']}"
+        if drive_res.get("ok") and drive_res.get("webViewLink")
+        else ""
+    )
+
     caption = (
         f"🌅 *ENTREGA DE GUARDIA AUTOMÁTICA ({ahora_ec.strftime('%d/%m/%Y %H:%M')} Ecuador)*\n\n"
-        f"📄 *Bitácora Médica Oficial Consolidada (Quarto PDF & Web)*\n"
+        f"📄 *Bitácora Médica Oficial Consolidada (Quarto PDF, Web & Excel)*\n"
         f"🏥 *Periodo:* {bit_consolidada.periodo}\n"
         f"👥 *Pacientes Activos:* {len(bit_consolidada.pacientes)} camas censadas\n\n"
         "📥 *Descargar PDF:*\n"
         "👉 https://bitacora-guardia-production.up.railway.app/descargar/bitacora.pdf\n\n"
+        "📊 *Descargar Excel (.xlsx):*\n"
+        "👉 https://bitacora-guardia-production.up.railway.app/descargar/bitacora.xlsx\n\n"
         "🌐 *Ver reporte interactivo:*\n"
         "👉 https://bitacora-guardia-production.up.railway.app/descargar/bitacora.html"
+        f"{drive_line}"
     )
     res_envio = enviar_pdf_whatsapp(pdf_path=pdf_path, caption=caption, chat_id=chat_id)
     if res_envio.get("ok"):
@@ -80,7 +92,12 @@ def publicar_bitacora_diaria_pdf(chat_id: str | None = None) -> dict[str, Any]:
         logger.info("PDF diario de las 05:00 AM publicado exitosamente en WhatsApp.")
     else:
         logger.warning(f"No se pudo publicar el PDF diario aún: {res_envio}")
-    return {"ok": bool(res_envio.get("ok")), "envio": res_envio, "hora_ecuador": ahora_ec.isoformat()}
+    return {
+        "ok": bool(res_envio.get("ok")),
+        "envio": res_envio,
+        "drive": drive_res,
+        "hora_ecuador": ahora_ec.isoformat(),
+    }
 
 
 @app.on_event("startup")
@@ -209,6 +226,20 @@ def download_html() -> FileResponse:
     )
 
 
+@app.get("/descargar/bitacora.xlsx")
+def download_xlsx() -> FileResponse:
+    """Descarga directa de la bitácora médica consolidada en formato Excel (.xlsx)."""
+    bitacora_path = get_active_bitacora_path()
+    xlsx_path = exportar_bitacora_xlsx(bitacora_path)
+    if not xlsx_path.exists():
+        raise HTTPException(status_code=404, detail="No se pudo generar el archivo Excel.")
+    return FileResponse(
+        str(xlsx_path),
+        media_type="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+        filename="bitacora_guardia.xlsx",
+    )
+
+
 class SetGroqKeyPayload(BaseModel):
     key: str | None = None
     groq_api_key: str | None = None
@@ -303,10 +334,12 @@ async def receive_whatsapp_message(request: Request) -> dict[str, Any]:
                 "⏰ *5. RECORDATORIOS (HORA ECUADOR)*\n"
                 "• *Programar:* `Robotina recuérdanos a las 7 pm el sodio de 8A`\n"
                 "• *Consultar:* `Robotina recordatorios`\n\n"
-                "📄 *6. BITÁCORA PDF (ENTREGA DE GUARDIA)*\n"
-                "• *Automático:* Todos los días a las *05:00 AM (Ecuador)* envío el PDF al grupo.\n"
-                "• *Manual:* `Robotina genera el pdf`\n"
+                "📄 *6. BITÁCORA PDF Y EXCEL (ENTREGA DE GUARDIA)*\n"
+                "• *Automático:* Todos los días a las *05:00 AM (Ecuador)* envío el PDF al grupo y exporto el Excel.\n"
+                "• *Manual PDF:* `Robotina genera el pdf`\n"
+                "• *Manual Excel / Drive:* `Robotina guarda la bitácora en xlsx en el drive`\n"
                 "• 📥 PDF: https://bitacora-guardia-production.up.railway.app/descargar/bitacora.pdf\n"
+                "• 📊 Excel: https://bitacora-guardia-production.up.railway.app/descargar/bitacora.xlsx\n"
                 "• 🌐 Web: https://bitacora-guardia-production.up.railway.app/descargar/bitacora.html\n"
                 "━━━━━━━━━━━━━━━━━━━━━━\n"
                 "💡 _Si el QR se desconecta, entra a:_ https://bitacora-guardia-production.up.railway.app"
@@ -315,6 +348,53 @@ async def receive_whatsapp_message(request: Request) -> dict[str, Any]:
 
     bitacora_path = get_active_bitacora_path()
     bitacora = consolidar_bitacora(bitacora_path)
+
+    # 0.5 EXPORTAR BITÁCORA A EXCEL (.XLSX) Y SUBIR A GOOGLE DRIVE
+    if cmd_norm in ("excel", "xlsx", "!excel", "!xlsx") or any(
+        w in cmd_norm
+        for w in [
+            "en xlsx",
+            "en excel",
+            "a excel",
+            "a xlsx",
+            "el excel",
+            "el xlsx",
+            "guarda en drive",
+            "graba en drive",
+            "sube al drive",
+            "subir al drive",
+            "guardar en drive",
+            "grabar en drive",
+        ]
+    ):
+        xlsx_path = exportar_bitacora_xlsx(bitacora_path)
+        drive_res = subir_xlsx_a_drive(xlsx_path)
+        if drive_res.get("ok"):
+            drive_msg = (
+                f"☁ *Guardado en Google Drive ({drive_res.get('action', 'subido')}):*\n"
+                f"📁 Archivo: `{drive_res.get('name')}`\n"
+                f"🔗 {drive_res.get('webViewLink')}"
+            )
+        elif drive_res.get("needs_credentials"):
+            drive_msg = (
+                "⚠ *Nota Google Drive:* El archivo `.xlsx` se generó correctamente, pero falta "
+                "configurar `GOOGLE_SERVICE_ACCOUNT_JSON` en Railway para subirlo automáticamente a tu Drive."
+            )
+        else:
+            drive_msg = f"⚠ *No se pudo subir a Google Drive:* {drive_res.get('error', 'Error desconocido')}"
+
+        return {
+            "status": "success",
+            "tipo_accion": "EXPORTAR_XLSX_DRIVE",
+            "reply": (
+                "📊 *Bitácora Médica Exportada a Excel (.xlsx)*\n\n"
+                f"🏥 *Periodo:* {bitacora.periodo}\n"
+                f"👥 *Pacientes Activos:* {len(bitacora.pacientes)} camas consolidadas\n\n"
+                f"{drive_msg}\n\n"
+                "📥 *Descargar Excel directamente:*\n"
+                "👉 https://bitacora-guardia-production.up.railway.app/descargar/bitacora.xlsx"
+            ),
+        }
 
     # 1. ORQUESTADOR CLÍNICO GROQ (Groq decide qué script Python ejecutar o responde directamente)
     camas_info = [

@@ -247,6 +247,34 @@ def test_robotina_manual_operaciones() -> None:
         assert "05:00 AM" in data["reply"]
 
 
+def test_exportar_xlsx_y_comando_drive(tmp_path) -> None:
+    from openpyxl import load_workbook
+    from bitacora.excel_exporter import exportar_bitacora_xlsx
+
+    out_xlsx = tmp_path / "test_bitacora.xlsx"
+    exportar_bitacora_xlsx(output_path=out_xlsx)
+    assert out_xlsx.exists()
+
+    wb = load_workbook(out_xlsx)
+    assert wb.sheetnames == ["Censo Activo", "Pendientes Guardia", "Resumen"]
+    assert wb["Censo Activo"].max_row > 1
+
+    res_dl = client.get("/descargar/bitacora.xlsx")
+    assert res_dl.status_code == 200
+    assert res_dl.content[:2] == b"PK"
+
+    res_wa = client.post(
+        "/whatsapp/webhook",
+        json={"message": "Robotina graba la bitacora en xlsx en el drive"},
+    )
+    assert res_wa.status_code == 200
+    data = res_wa.json()
+    assert data["status"] == "success"
+    assert data["tipo_accion"] == "EXPORTAR_XLSX_DRIVE"
+    assert "bitacora.xlsx" in data["reply"]
+
+
+
 
 
 
