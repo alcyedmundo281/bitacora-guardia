@@ -1,7 +1,9 @@
+import fs from "node:fs";
 import http from "node:http";
 import { exec } from "node:child_process";
 import makeWASocket, {
   DisconnectReason,
+  fetchLatestBaileysVersion,
   useMultiFileAuthState,
 } from "@whiskeysockets/baileys";
 import pino from "pino";
@@ -491,7 +493,17 @@ async function startWhatsAppBridge() {
   const authDir = process.env.AUTH_DIR || "auth_session";
   const { state, saveCreds } = await useMultiFileAuthState(authDir);
 
+  let waVersion;
+  try {
+    const { version } = await fetchLatestBaileysVersion();
+    waVersion = version;
+    console.log("Usando version WA Web:", waVersion);
+  } catch (e) {
+    console.log("No se pudo obtener ultima version WA Web, usando por defecto.");
+  }
+
   const sock = makeWASocket({
+    ...(waVersion ? { version: waVersion } : {}),
     auth: state,
     printQRInTerminal: false,
     logger: pino({ level: "silent" }),
@@ -518,15 +530,21 @@ async function startWhatsAppBridge() {
 
     if (connection === "close") {
       const statusCode = lastDisconnect?.error?.output?.statusCode;
-      const shouldReconnect = statusCode !== DisconnectReason.loggedOut;
-      console.log(`Conexion cerrada (codigo ${statusCode}). Reconectando: ${shouldReconnect}`);
+      const isLoggedOut = statusCode === DisconnectReason.loggedOut || statusCode === 401;
+      console.log(`Conexion cerrada (codigo ${statusCode}). LoggedOut: ${isLoggedOut}`);
       currentStatus = "DESCONECTADO";
       currentQRDataUrl = null;
 
-      if (shouldReconnect) {
-        setTimeout(startWhatsAppBridge, 3000);
+      if (isLoggedOut) {
+        console.log("Sesion cerrada o expirada. Limpiando credenciales y regenerando QR...");
+        try {
+          fs.rmSync(authDir, { recursive: true, force: true });
+        } catch (e) {
+          console.error("Error limpiando authDir:", e.message);
+        }
+        setTimeout(startWhatsAppBridge, 2000);
       } else {
-        console.log("Sesion cerrada por el usuario. Limpiando credenciales...");
+        setTimeout(startWhatsAppBridge, 3000);
       }
     } else if (connection === "open") {
       currentStatus = "CONECTADO";
