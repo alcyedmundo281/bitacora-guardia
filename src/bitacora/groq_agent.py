@@ -114,16 +114,30 @@ def call_groq_clinical_parser(
         print("[GROQ AGENT]: ⚠ GROQ_API_KEY no configurada. Usando motor local de respaldo.", flush=True)
         return None
 
-    # Resumen detallado de camas para contexto clínico del prompt
+    # Contexto inteligente (<2500 tokens para respetar el límite de 8000 TPM de Groq):
+    # Índice compacto de todas las camas + detalle clínico completo de las camas mencionadas en el mensaje
+    msg_lower = mensaje.lower()
     if camas_activas:
-        camas_ctx = "\n".join(
-            [
-                f"- Cama {c.get('cama')} ({c.get('area', '')}): {c.get('nombre')} ({c.get('edad', 'N/D')} años) | "
-                f"Dx: {c.get('dx')} | Meds: {c.get('meds', 'N/D')} | Labs: {c.get('labs', 'N/D')} | "
-                f"Obs/Evol: {c.get('obs', 'N/D')} | Alertas: {c.get('alertas', 'N/D')} | Pendientes: {c.get('pendientes', 'N/D')}"
-                for c in camas_activas
-            ]
-        )
+        lines_ctx = []
+        for c in camas_activas:
+            cama_str = str(c.get("cama", ""))
+            nombre_str = str(c.get("nombre", ""))
+            es_mencionada = (
+                (cama_str.lower() in msg_lower)
+                or any(len(tok) > 3 and tok in msg_lower for tok in nombre_str.lower().split())
+            )
+            if es_mencionada:
+                lines_ctx.append(
+                    f"* Cama {cama_str} ({c.get('area', '')}): {nombre_str} ({c.get('edad', 'N/D')}a) | "
+                    f"Dx: {c.get('dx')} | Meds: {c.get('meds', 'N/D')} | Labs: {c.get('labs', 'N/D')} | "
+                    f"Obs: {c.get('obs', 'N/D')} | Alertas: {c.get('alertas', 'N/D')} | Pendientes: {c.get('pendientes', 'N/D')}"
+                )
+            else:
+                lines_ctx.append(
+                    f"- {cama_str} ({c.get('area', '')[:4]}): {nombre_str.split()[0]} {nombre_str.split()[1] if len(nombre_str.split()) > 1 else ''} | "
+                    f"Dx: {str(c.get('dx', ''))[:60]} | Alertas: {str(c.get('alertas', 'N/D'))[:50]}"
+                )
+        camas_ctx = "\n".join(lines_ctx)
     else:
         camas_ctx = "(Todas las camas están actualmente LIBRES)"
 
