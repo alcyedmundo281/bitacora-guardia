@@ -26,8 +26,12 @@ from bitacora.pdf_generator import generar_bitacora_completa
 from bitacora.reminders import (
     crear_recordatorio,
     emitir_alerta_whatsapp,
+    enviar_pdf_whatsapp,
     formatear_recordatorios,
+    mark_daily_pdf_published,
+    now_ecuador,
     parse_hora_recordatorio,
+    should_publish_daily_pdf,
     verificar_recordatorios_a_disparar,
 )
 from bitacora.schema import load_bitacora, save_bitacora
@@ -52,17 +56,48 @@ app = FastAPI(
 )
 
 
+def publicar_bitacora_diaria_pdf(chat_id: str | None = None) -> dict[str, Any]:
+    """Consolida la bitácora, genera el PDF con Quarto y lo envía al grupo de WhatsApp."""
+    bitacora_path = get_active_bitacora_path()
+    archivos = generar_bitacora_completa(bitacora_path)
+    bit_consolidada = consolidar_bitacora(bitacora_path)
+    ahora_ec = now_ecuador()
+    pdf_path = archivos.get("pdf", Path("reports/bitacora_guardia.pdf"))
+
+    caption = (
+        f"🌅 *ENTREGA DE GUARDIA AUTOMÁTICA ({ahora_ec.strftime('%d/%m/%Y %H:%M')} Ecuador)*\n\n"
+        f"📄 *Bitácora Médica Oficial Consolidada (Quarto PDF & Web)*\n"
+        f"🏥 *Periodo:* {bit_consolidada.periodo}\n"
+        f"👥 *Pacientes Activos:* {len(bit_consolidada.pacientes)} camas censadas\n\n"
+        "📥 *Descargar PDF:*\n"
+        "👉 https://bitacora-guardia-production.up.railway.app/descargar/bitacora.pdf\n\n"
+        "🌐 *Ver reporte interactivo:*\n"
+        "👉 https://bitacora-guardia-production.up.railway.app/descargar/bitacora.html"
+    )
+    res_envio = enviar_pdf_whatsapp(pdf_path=pdf_path, caption=caption, chat_id=chat_id)
+    if res_envio.get("ok"):
+        mark_daily_pdf_published(ahora_ec)
+        logger.info("PDF diario de las 05:00 AM publicado exitosamente en WhatsApp.")
+    else:
+        logger.warning(f"No se pudo publicar el PDF diario aún: {res_envio}")
+    return {"ok": bool(res_envio.get("ok")), "envio": res_envio, "hora_ecuador": ahora_ec.isoformat()}
+
+
 @app.on_event("startup")
 async def startup_event():
-    """Inicia el worker en segundo plano para verificar alarmas y recordatorios clínicos."""
+    """Inicia el worker en segundo plano para alarmas clínicas y publicación automática del PDF a las 05:00 AM Ecuador."""
     async def reminder_loop():
         while True:
             try:
                 alertas = verificar_recordatorios_a_disparar()
                 for al in alertas:
                     emitir_alerta_whatsapp(al)
+
+                if should_publish_daily_pdf():
+                    logger.info("Hora programada (05:00 AM Ecuador): generando y publicando PDF de bitácora...")
+                    await asyncio.to_thread(publicar_bitacora_diaria_pdf)
             except Exception as e:
-                logger.error(f"Error en worker de recordatorios: {e}")
+                logger.error(f"Error en worker de recordatorios y PDF diario: {e}")
             await asyncio.sleep(25)
 
     asyncio.create_task(reminder_loop())
@@ -194,6 +229,12 @@ def set_groq_key_endpoint(payload: SetGroqKeyPayload) -> dict[str, Any]:
     set_groq_api_key(k)
     diag = test_groq_connection(k)
     return {"status": "ok", "diagnostico": diag}
+
+
+@app.post("/api/publicar-pdf-ahora")
+def publicar_pdf_ahora(chat_id: str | None = None) -> dict[str, Any]:
+    """Genera el PDF de la bitácora y lo publica inmediatamente en el grupo de WhatsApp."""
+    return publicar_bitacora_diaria_pdf(chat_id=chat_id)
 
 
 @app.post("/whatsapp/webhook")

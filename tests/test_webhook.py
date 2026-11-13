@@ -212,5 +212,30 @@ def test_api_camas_endpoint() -> None:
     assert any(c["cama"] == "6A" for c in data["camas"])
 
 
+def test_daily_pdf_scheduler_ecuador_timezone(tmp_path, monkeypatch) -> None:
+    from datetime import datetime, timezone
+    from bitacora import reminders
+
+    state_file = tmp_path / "auto_pdf_state.json"
+    monkeypatch.setattr(reminders, "AUTO_PDF_STATE_FILE", state_file)
+
+    # 09:59 UTC == 04:59 Ecuador -> aún no debe publicar
+    dt_0459_ec = datetime(2026, 11, 13, 9, 59, tzinfo=timezone.utc).astimezone(reminders.ECUADOR_TZ)
+    assert reminders.should_publish_daily_pdf(ahora=dt_0459_ec) is False
+
+    # 10:00 UTC == 05:00 Ecuador -> debe publicar
+    dt_0500_ec = datetime(2026, 11, 13, 10, 0, tzinfo=timezone.utc).astimezone(reminders.ECUADOR_TZ)
+    assert reminders.should_publish_daily_pdf(ahora=dt_0500_ec) is True
+
+    # Tras marcar como publicado hoy, no debe volver a disparar el mismo día
+    reminders.mark_daily_pdf_published(ahora=dt_0500_ec)
+    assert reminders.should_publish_daily_pdf(ahora=dt_0500_ec) is False
+
+    # Al día siguiente a las 05:00 Ecuador sí debe volver a publicar
+    dt_next_day = datetime(2026, 11, 14, 10, 0, tzinfo=timezone.utc).astimezone(reminders.ECUADOR_TZ)
+    assert reminders.should_publish_daily_pdf(ahora=dt_next_day) is True
+
+
+
 
 

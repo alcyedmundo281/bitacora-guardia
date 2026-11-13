@@ -7,12 +7,21 @@ import re
 from datetime import datetime
 from pathlib import Path
 from typing import Any
+from zoneinfo import ZoneInfo
 import urllib.request
 import urllib.error
 
 logger = logging.getLogger(__name__)
 REMINDERS_FILE = Path("data/recordatorios.json")
+AUTO_PDF_STATE_FILE = Path("data/auto_pdf_state.json")
 BRIDGE_URL = os.getenv("BRIDGE_URL", "http://127.0.0.1:8080")
+ECUADOR_TZ = ZoneInfo("America/Guayaquil")
+AUTO_PDF_HOUR = os.getenv("AUTO_PDF_HOUR", "05:00")
+
+
+def now_ecuador() -> datetime:
+    """Retorna la fecha y hora actual en Ecuador (America/Guayaquil, UTC-5)."""
+    return datetime.now(ECUADOR_TZ)
 
 
 def get_reminders_path() -> Path:
@@ -77,7 +86,7 @@ def crear_recordatorio(
         "tarea": tarea,
         "chat_id": chat_id,
         "estado": "PENDIENTE",
-        "creado_en": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
+        "creado_en": now_ecuador().strftime("%Y-%m-%d %H:%M:%S"),
     }
     recs.append(nuevo)
     guardar_recordatorios(recs)
@@ -107,9 +116,10 @@ def formatear_recordatorios() -> str:
     return "\n".join(lines)
 
 
-def verificar_recordatorios_a_disparar() -> list[dict[str, Any]]:
-    """Verifica si ha llegado la hora de algún recordatorio pendiente."""
-    hora_actual = datetime.now().strftime("%H:%M")
+def verificar_recordatorios_a_disparar(ahora: datetime | None = None) -> list[dict[str, Any]]:
+    """Verifica si ha llegado la hora de algún recordatorio pendiente (hora de Ecuador)."""
+    ahora_ec = ahora or now_ecuador()
+    hora_actual = ahora_ec.strftime("%H:%M")
     recs = cargar_recordatorios()
     disparar = []
     modificado = False
@@ -117,7 +127,7 @@ def verificar_recordatorios_a_disparar() -> list[dict[str, Any]]:
     for r in recs:
         if r.get("estado") == "PENDIENTE" and r.get("hora_programada") == hora_actual:
             r["estado"] = "DISPARADO"
-            r["disparado_en"] = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+            r["disparado_en"] = ahora_ec.strftime("%Y-%m-%d %H:%M:%S")
             disparar.append(r)
             modificado = True
 
@@ -138,14 +148,82 @@ def emitir_alerta_whatsapp(recordatorio: dict[str, Any]) -> bool:
     )
 
     try:
-        data = json.dumps({"chatId": chat_id, "text": mensaje}).encode("utf-8")
+        data = json.dumps({"chatId": chat_id, "preferGroup": True, "text": mensaje}).encode("utf-8")
         req = urllib.request.Request(
             f"{BRIDGE_URL}/api/send-message",
             data=data,
             headers={"Content-Type": "application/json"},
         )
-        with urllib.request.urlopen(req, timeout=5) as resp:
+        with urllib.request.urlopen(req, timeout=10) as resp:
             return resp.status == 200
     except Exception as e:
         logger.error(f"Error emitiendo alerta de recordatorio a WhatsApp: {e}")
         return False
+
+
+def should_publish_daily_pdf(ahora: datetime | None = None, target_hhmm: str | None = None) -> bool:
+    """Determina si corresponde publicar automáticamente el PDF diario (05:00 AM Ecuador)."""
+    ahora_ec = ahora or now_ecuador()
+    objetivo = (target_hhmm or AUTO_PDF_HOUR).strip()
+    try:
+        target_h, target_m = [int(x) for x in objetivo.split(":", 1)]
+    except Exception:
+        target_h, target_m = 5, 0
+
+    # Ventana de 05:00 a 05:59 hora Ecuador para tolerar reinicios puntuales cerca de las 5 AM
+    if ahora_ec.hour != target_h or ahora_ec.minute < target_m:
+        return False
+
+    today_str = ahora_ec.strftime("%Y-%m-%d")
+    if AUTO_PDF_STATE_FILE.exists():
+        try:
+            state = json.loads(AUTO_PDF_STATE_FILE.read_text(encoding="utf-8"))
+            if state.get("last_published_date") == today_str:
+                return False
+        except Exception as e:
+            logger.warning(f"Error leyendo {AUTO_PDF_STATE_FILE}: {e}")
+
+    return True
+
+
+def mark_daily_pdf_published(ahora: datetime | None = None) -> None:
+    """Registra que el PDF diario ya fue publicado hoy en hora de Ecuador."""
+    ahora_ec = ahora or now_ecuador()
+    AUTO_PDF_STATE_FILE.parent.mkdir(parents=True, exist_ok=True)
+    payload = {
+        "last_published_date": ahora_ec.strftime("%Y-%m-%d"),
+        "published_at": ahora_ec.isoformat(),
+    }
+    AUTO_PDF_STATE_FILE.write_text(json.dumps(payload, indent=2, ensure_ascii=False), encoding="utf-8")
+
+
+def enviar_pdf_whatsapp(
+    pdf_path: Path,
+    caption: str,
+    chat_id: str | None = None,
+) -> dict[str, Any]:
+    """Envía el archivo PDF compilado al grupo de WhatsApp mediante el Bridge."""
+    payload: dict[str, Any] = {
+        "chatId": chat_id,
+        "preferGroup": True,
+        "text": caption,
+    }
+    if pdf_path.exists():
+        payload["documentPath"] = str(pdf_path.resolve())
+        payload["fileName"] = pdf_path.name
+        payload["mimetype"] = "application/pdf"
+        payload["caption"] = caption
+
+    try:
+        data = json.dumps(payload).encode("utf-8")
+        req = urllib.request.Request(
+            f"{BRIDGE_URL}/api/send-message",
+            data=data,
+            headers={"Content-Type": "application/json"},
+        )
+        with urllib.request.urlopen(req, timeout=20) as resp:
+            body = json.loads(resp.read().decode("utf-8") or "{}")
+            return {"ok": resp.status == 200, "status": resp.status, "response": body}
+    except Exception as e:
+        logger.error(f"Error enviando PDF diario a WhatsApp: {e}")
+        return {"ok": False, "error": str(e)}

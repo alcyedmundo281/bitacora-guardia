@@ -12,13 +12,38 @@ import qrcodeTerminal from "qrcode-terminal";
 
 const BACKEND_URL = process.env.BACKEND_URL || "http://127.0.0.1:8000";
 const WEB_PORT = parseInt(process.env.PORT, 10) || 8080;
+const LAST_CHAT_FILE = "data/last_chat_id.txt";
+const LAST_GROUP_FILE = "data/last_group_chat_id.txt";
+
+function loadSavedChatId(filePath) {
+  try {
+    if (fs.existsSync(filePath)) {
+      const val = fs.readFileSync(filePath, "utf-8").trim();
+      return val || null;
+    }
+  } catch (e) {
+    console.error(`Error leyendo ${filePath}:`, e.message);
+  }
+  return null;
+}
+
+function saveChatId(filePath, chatId) {
+  try {
+    fs.mkdirSync("data", { recursive: true });
+    fs.writeFileSync(filePath, chatId, "utf-8");
+  } catch (e) {
+    console.error(`Error guardando ${filePath}:`, e.message);
+  }
+}
 
 let currentQRDataUrl = null;
 let currentStatus = "INICIALIZANDO";
 let connectedNumber = null;
 let currentPairingCode = null;
 let globalSock = null;
-let lastActiveChatId = null;
+let lastActiveChatId = loadSavedChatId(LAST_CHAT_FILE);
+let lastGroupChatId = loadSavedChatId(LAST_GROUP_FILE);
+const mySentMessageIds = new Set();
 
 // Servidor Web local para mostrar el QR en alta definición en el navegador
 function requestHandler(req, res) {
@@ -36,6 +61,8 @@ function requestHandler(req, res) {
         qr: currentQRDataUrl,
         connectedNumber,
         pairingCode: currentPairingCode,
+        lastActiveChatId,
+        lastGroupChatId,
       })
     );
   }
@@ -76,27 +103,48 @@ function requestHandler(req, res) {
     return;
   }
 
-  // Endpoint API: Envío proactivo de mensajes a WhatsApp (Recordatorios y Alertas de Robotina)
+  // Endpoint API: Envío proactivo de mensajes y documentos PDF a WhatsApp
   if (parsedUrl.pathname === "/api/send-message" && req.method === "POST") {
     let body = "";
     req.on("data", (chunk) => (body += chunk));
     req.on("end", async () => {
       try {
         const payload = JSON.parse(body || "{}");
-        const chatId = payload.chatId || lastActiveChatId;
+        const chatId =
+          payload.chatId ||
+          (payload.preferGroup ? lastGroupChatId || lastActiveChatId : lastActiveChatId || lastGroupChatId);
         const text = payload.text;
-        if (!chatId || !text) {
+        const documentPath = payload.documentPath;
+
+        if (!chatId || (!text && !documentPath)) {
           res.writeHead(400, { "Content-Type": "application/json; charset=utf-8" });
-          return res.end(JSON.stringify({ error: "chatId y text son requeridos" }));
+          return res.end(JSON.stringify({ error: "chatId y text o documentPath son requeridos" }));
         }
-        if (!globalSock) {
+        if (!globalSock || currentStatus !== "CONECTADO") {
           res.writeHead(503, { "Content-Type": "application/json; charset=utf-8" });
           return res.end(JSON.stringify({ error: "Socket de WhatsApp no conectado aún" }));
         }
-        await globalSock.sendMessage(chatId, { text });
-        console.log(`[RECORDATORIO EMITIDO A ${chatId}]: "${text}"`);
+
+        let sent;
+        if (documentPath && fs.existsSync(documentPath)) {
+          const buffer = fs.readFileSync(documentPath);
+          sent = await globalSock.sendMessage(chatId, {
+            document: buffer,
+            mimetype: payload.mimetype || "application/pdf",
+            fileName: payload.fileName || "bitacora_guardia.pdf",
+            caption: payload.caption || text || "",
+          });
+          console.log(`[PDF PROACTIVO ENVIADO A ${chatId}]: ${payload.fileName || documentPath}`);
+        } else {
+          sent = await globalSock.sendMessage(chatId, { text });
+          console.log(`[MENSAJE PROACTIVO EMITIDO A ${chatId}]: "${text}"`);
+        }
+
+        if (sent?.key?.id) {
+          mySentMessageIds.add(sent.key.id);
+        }
         res.writeHead(200, { "Content-Type": "application/json; charset=utf-8" });
-        return res.end(JSON.stringify({ status: "ok" }));
+        return res.end(JSON.stringify({ status: "ok", chatId }));
       } catch (err) {
         console.error("Error enviando mensaje proactivo:", err.message);
         res.writeHead(500, { "Content-Type": "application/json; charset=utf-8" });
@@ -113,6 +161,7 @@ function requestHandler(req, res) {
     parsedUrl.pathname.startsWith("/debug/") ||
     parsedUrl.pathname === "/api/set-groq-key" ||
     parsedUrl.pathname === "/api/camas" ||
+    parsedUrl.pathname === "/api/publicar-pdf-ahora" ||
     parsedUrl.pathname === "/whatsapp/webhook"
   ) {
     const proxyReq = http.request(
@@ -558,8 +607,6 @@ async function startWhatsAppBridge() {
     }
   });
 
-  const mySentMessageIds = new Set();
-
   sock.ev.on("messages.upsert", async ({ messages, type }) => {
     // Procesar tanto mensajes de terceros ('notify') como del propio dispositivo vinculado ('append')
     if (type !== "notify" && type !== "append") return;
@@ -569,7 +616,14 @@ async function startWhatsAppBridge() {
 
       const chatId = msg.key.remoteJid;
       if (!chatId || chatId === "status@broadcast") continue;
-      lastActiveChatId = chatId;
+      if (lastActiveChatId !== chatId) {
+        lastActiveChatId = chatId;
+        saveChatId(LAST_CHAT_FILE, chatId);
+      }
+      if (chatId.endsWith("@g.us") && lastGroupChatId !== chatId) {
+        lastGroupChatId = chatId;
+        saveChatId(LAST_GROUP_FILE, chatId);
+      }
 
       // Desempaquetar mensajes ordinarios, temporales (ephemeral) o multimedia
       const m =
