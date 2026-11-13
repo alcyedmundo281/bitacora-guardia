@@ -1,0 +1,102 @@
+{
+  "cama": "INFECTO 1B",
+  "area": "PERIFERICOS",
+  "servicio_tratante": "Infectología",
+  "nombre_completo": "ANDRANGO SIMBAÑA GONZALO",
+  "hc": "307712",
+  "cedula": "1702481852",
+  "edad": "76 años",
+  "sexo": "M",
+  "fecha_nacimiento": null,
+  "fecha_ingreso": null,
+  "dias_hospitalizacion": null,
+  "app": [
+    "Hipotiroidismo",
+    "Hipertensión arterial",
+    "Incontinencia urinaria",
+    "No vidente",
+    "Vólvulo de colon"
+  ],
+  "aqx": [],
+  "alergias": [],
+  "diagnosticos_activos": [
+    "Úlcera sacra e isquiática grado III-IV",
+    "Bacteriemia por Enterococcus faecalis",
+    "Derrame pleural bilateral"
+  ],
+  "diagnosticos_pasivos": [],
+  "dieta": "Hiperproteica blanda",
+  "hidratacion": "Vía salinizada",
+  "ckd_epi": "144 ml/min/1.73m2",
+  "medicaciones": [
+    {
+      "nombre": "Ampicilina + Sulbactam",
+      "dosis": "3 g",
+      "via": "IV",
+      "frecuencia": "c/6 horas",
+      "fecha_inicio": "2026-10-30",
+      "dias_tratamiento": "Día 10",
+      "indicacion_cie10": "B99",
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    }
+  ],
+  "pendientes": [
+    {
+      "id": "PEND-INF1B-01",
+      "tipo": "ADMINISTRATIVO_QX",
+      "descripcion": "Verificar reserva y alistamiento de 2 paquetes globulares y 2 plasmas congelados para cirugía",
+      "prioridad": "STAT",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": "STAT / 20:30",
+      "es_visita_nocturna": true,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
+    },
+    {
+      "id": "PEND-INF1B-02",
+      "tipo": "LABORATORIO",
+      "descripcion": "Control diario de electrolitos y hematocrito prequirúrgico",
+      "prioridad": "CONTROL",
+      "turno": "MADRUGADA_04_06",
+      "horario_programado": "05:00 AM",
+      "es_visita_nocturna": true,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
+    }
+  ],
+  "observaciones": [
+    "Cirugía por coloproctología programada."
+  ],
+  "laboratorios": [
+    {
+      "fecha_hora": "2026-11-07",
+      "tipo_estudio": "Hemocultivo",
+      "valores": {
+        "tiempo_deteccion_horas": 42.8
+      },
+      "alerta_critica": null
+    }
+  ],
+  "cultivos": [
+    {
+      "fecha": "2026-11-07",
+      "muestra": "Hemocultivo",
+      "microorganismo": "Enterococcus faecalis",
+      "patron_resistencia": "Sensible a Bencilpenicilina y Ampicilina",
+      "sensible": [
+        "Bencilpenicilina",
+        "Ampicilina"
+      ],
+      "resistente": [],
+      "recuento_colonias": null
+    }
+  ],
+  "alertas_criticas": [
+    "Cirugía programada: Tener listos los 2 paquetes globulares y 2 plasmas en banco de sangre"
+  ]
+}

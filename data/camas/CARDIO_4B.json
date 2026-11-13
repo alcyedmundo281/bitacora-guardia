@@ -1,0 +1,107 @@
+{
+  "cama": "CARDIO 4B",
+  "area": "PERIFERICOS",
+  "servicio_tratante": "Cardiología / ORL",
+  "nombre_completo": "GALEAS LOPEZ ROSA ELVIRA",
+  "hc": "1814762",
+  "cedula": "0200150688",
+  "edad": "83 años 5 meses",
+  "sexo": "F",
+  "fecha_nacimiento": null,
+  "fecha_ingreso": null,
+  "dias_hospitalizacion": null,
+  "app": [
+    "Hipertensión arterial",
+    "Vértigo periférico",
+    "Hipotiroidismo",
+    "Fractura de rama isquiopubiana izquierda"
+  ],
+  "aqx": [],
+  "alergias": [],
+  "diagnosticos_activos": [
+    "Hemorragia digestiva alta por úlceras Forrest III (sangrado detenido)",
+    "Anemia moderada posthemorrágica aguda",
+    "Insuficiencia respiratoria aguda en resolución"
+  ],
+  "diagnosticos_pasivos": [
+    "Delirio hipoactivo superado"
+  ],
+  "dieta": "Blanda hiposódica fraccionada",
+  "hidratacion": "Dextrosa 5% en SS 0.9% 1000 ml IV a 20 cc/h",
+  "ckd_epi": "80 ml/min/1.73m2 (Creatinina 0.65)",
+  "medicaciones": [
+    {
+      "nombre": "Omeprazol",
+      "dosis": "40 mg",
+      "via": "IV",
+      "frecuencia": "c/12 horas",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "Betahistina",
+      "dosis": "16 mg",
+      "via": "VO",
+      "frecuencia": "cada día por 10 días",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "Rosuvastatina / Ezetimibe",
+      "dosis": "10 mg / 10 mg",
+      "via": "VO",
+      "frecuencia": "QD",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": true,
+      "prn": false,
+      "nota": null
+    }
+  ],
+  "pendientes": [
+    {
+      "id": "PEND-CARD4B-01",
+      "tipo": "INTERCONSULTA",
+      "descripcion": "Continuar fisioterapia respiratoria. Si persiste requerimiento de O2, reinterconsultar Neumología con gasometría",
+      "prioridad": "CONTROL",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": null,
+      "es_visita_nocturna": true,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
+    }
+  ],
+  "observaciones": [
+    "Alta por Otorrinolaringología y Psiquiatría."
+  ],
+  "laboratorios": [
+    {
+      "fecha_hora": "2026-11-07",
+      "tipo_estudio": "Control",
+      "valores": {
+        "hemoglobina": 11.7,
+        "hematocrito": 36.8,
+        "plaquetas": 309000,
+        "creatinina": 0.65
+      },
+      "alerta_critica": null
+    }
+  ],
+  "cultivos": [],
+  "alertas_criticas": [
+    "Úlceras gástricas y duodenales Forrest III"
+  ]
+}

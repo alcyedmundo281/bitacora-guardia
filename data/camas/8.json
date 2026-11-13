@@ -1,0 +1,139 @@
+{
+  "cama": "8",
+  "area": "HOSPITALIZACION",
+  "servicio_tratante": "Reumatología / MI",
+  "nombre_completo": "OÑA TELLO JOSELYN CAROLINA",
+  "hc": "1719421",
+  "cedula": "1719421001",
+  "edad": "30 años",
+  "sexo": "F",
+  "fecha_nacimiento": null,
+  "fecha_ingreso": null,
+  "dias_hospitalizacion": null,
+  "app": [
+    "Síndrome de Gardner",
+    "Artritis reumatoide CCP positivo",
+    "Poliposis adenomatosa",
+    "Colectomía total + ileostomía (2023)"
+  ],
+  "aqx": [
+    "Colectomía total íleo-recto anastomosis"
+  ],
+  "alergias": [],
+  "diagnosticos_activos": [
+    "Infección de partes blandas",
+    "Infección urinaria Tumbarello 5 puntos en resolución",
+    "Dolor crónico exacerbado",
+    "Proctorragia superada"
+  ],
+  "diagnosticos_pasivos": [
+    "LRA superada"
+  ],
+  "dieta": "Adecuada para ileostomía",
+  "hidratacion": "Solución salina 0.9% 1000 ml a 20 ml/h",
+  "ckd_epi": "70.4 ml/min/1.73m2",
+  "medicaciones": [
+    {
+      "nombre": "Oxacilina",
+      "dosis": "2 g",
+      "via": "IV",
+      "frecuencia": "c/4 horas",
+      "fecha_inicio": "2026-11-05",
+      "dias_tratamiento": "Día 4",
+      "indicacion_cie10": "A41.9",
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "Prednisona",
+      "dosis": "5 mg",
+      "via": "VO",
+      "frecuencia": "cada día",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "Carvedilol",
+      "dosis": "12.5 mg",
+      "via": "VO",
+      "frecuencia": "c/12 horas",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    }
+  ],
+  "pendientes": [
+    {
+      "id": "PEND-8-01",
+      "tipo": "INTERCONSULTA",
+      "descripcion": "Verificar valoración y seguimiento por Comité de Bioética",
+      "prioridad": "URGENTE",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": null,
+      "es_visita_nocturna": true,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
+    },
+    {
+      "id": "PEND-8-02",
+      "tipo": "INTERCONSULTA",
+      "descripcion": "Auditar indicaciones de Clínica del Dolor (Dra. Galiano) y Coloproctología",
+      "prioridad": "URGENTE",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": null,
+      "es_visita_nocturna": true,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
+    }
+  ],
+  "observaciones": [
+    "Seguimiento estricto de débito de ileostomía."
+  ],
+  "laboratorios": [
+    {
+      "fecha_hora": "2026-11-06",
+      "tipo_estudio": "PCR y Hemograma",
+      "valores": {
+        "pcr": 68.6,
+        "leucocitos": 9.82,
+        "hemoglobina": 10.7
+      },
+      "alerta_critica": null
+    }
+  ],
+  "cultivos": [
+    {
+      "fecha": "2026-11-05",
+      "muestra": "Urocultivo",
+      "microorganismo": "Proteus mirabilis",
+      "patron_resistencia": "Resistente a Gentamicina, TMP/SMX, Ciprofloxacino",
+      "sensible": [
+        "Amikacina",
+        "Ceftriaxona",
+        "Cefazolina"
+      ],
+      "resistente": [
+        "Gentamicina",
+        "Trimetoprima/Sulfa",
+        "Ciprofloxacino"
+      ],
+      "recuento_colonias": "> 100.000 UFC/ml"
+    }
+  ],
+  "alertas_criticas": [
+    "Proteus mirabilis resistente a fluoroquinolonas"
+  ]
+}

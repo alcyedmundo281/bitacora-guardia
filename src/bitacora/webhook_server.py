@@ -9,6 +9,17 @@ from fastapi import FastAPI, HTTPException, Request
 from fastapi.responses import FileResponse
 from pydantic import BaseModel
 
+from bitacora.bed_store import (
+    actualizar_evolucion_cama,
+    completar_pendiente_cama,
+    consolidar_bitacora,
+    crear_pendiente_cama,
+    egresar_paciente_cama,
+    get_cama,
+    ingresar_paciente_cama,
+    list_camas_activas,
+    registrar_resultado_cama,
+)
 from bitacora.groq_agent import call_groq_clinical_parser, set_groq_api_key, test_groq_connection
 from bitacora.models import Paciente, Pendiente, PendientePrioridad, PendienteTipo, TurnoObjetivo
 from bitacora.pdf_generator import generar_bitacora_completa
@@ -80,9 +91,15 @@ def format_paciente_card(pac: Paciente) -> str:
             lines.append(f"• {al}")
         lines.append("")
 
+    if pac.observaciones:
+        lines.append("📝 *Evolución / Notas:*")
+        for obs in pac.observaciones[-5:]:
+            lines.append(f"• {obs}")
+        lines.append("")
+
     if pac.laboratorios:
         lines.append("🔬 *Últimos Exámenes / Laboratorios:*")
-        for lab in pac.laboratorios:
+        for lab in pac.laboratorios[-4:]:
             vals_str = ", ".join(f"{k.capitalize()}: {v}" for k, v in lab.valores.items())
             lines.append(f"• *{lab.tipo_estudio}* ({lab.fecha_hora}): {vals_str}")
         lines.append("")
@@ -207,16 +224,25 @@ async def receive_whatsapp_message(request: Request) -> dict[str, Any]:
     texto_sin_robotina = strip_robotina(texto_limpio)
     cmd = texto_sin_robotina.lower()
     bitacora_path = get_active_bitacora_path()
-    bitacora = load_bitacora(bitacora_path)
+    bitacora = consolidar_bitacora(bitacora_path)
 
-    # 1. INTELIGENCIA CLÍNICA GROQ (Gemma / Llama 3)
-    # Preparamos el contexto actual de pacientes para el LLM
+    # 1. ORQUESTADOR CLÍNICO GROQ (Groq decide qué script Python ejecutar o responde directamente)
     camas_info = [
         {
             "cama": p.cama,
+            "area": p.area,
             "nombre": p.nombre_completo,
-            "dx": p.diagnosticos_activos[0] if p.diagnosticos_activos else "",
-            "pendientes": ", ".join(f"{pend.descripcion} [{pend.estado}]" for pend in p.pendientes),
+            "edad": p.edad,
+            "dx": "; ".join(p.diagnosticos_activos) if p.diagnosticos_activos else "N/D",
+            "meds": ", ".join(f"{m.nombre} {m.dosis}" for m in p.medicaciones if not m.suspendido) or "N/D",
+            "labs": ", ".join(f"{l.tipo_estudio} ({l.fecha_hora}): {l.valores}" for l in p.laboratorios[-3:]) or "N/D",
+            "obs": " | ".join(p.observaciones[-3:]) or "N/D",
+            "alertas": ", ".join(p.alertas_criticas) or "N/D",
+            "pendientes": ", ".join(
+                f"{pend.descripcion} [{pend.estado}]"
+                + (f" ({pend.resultado_obtenido})" if pend.resultado_obtenido else "")
+                for pend in p.pendientes
+            ) or "Ninguno",
         }
         for p in bitacora.pacientes
     ]
@@ -224,6 +250,102 @@ async def receive_whatsapp_message(request: Request) -> dict[str, Any]:
     groq_res = call_groq_clinical_parser(texto_limpio, camas_info)
     if groq_res and isinstance(groq_res, dict) and "intencion" in groq_res:
         intencion = groq_res["intencion"]
+
+        if intencion == "OTRO":
+            return {"status": "ignored", "reason": "Groq classified as non-clinical chatter", "text": texto_limpio}
+
+        if intencion == "RESPUESTA_DIRECTA" and groq_res.get("respuesta_directa"):
+            return {
+                "status": "success",
+                "tipo_accion": "RESPUESTA_GROQ",
+                "reply": str(groq_res["respuesta_directa"]),
+            }
+
+        if intencion == "EGRESAR_PACIENTE":
+            cama_target = str(groq_res.get("cama") or "").strip().upper()
+            if not cama_target and groq_res.get("paciente"):
+                p_query = normalize_text(str(groq_res["paciente"]))
+                for p in bitacora.pacientes:
+                    if any(tok in normalize_text(p.nombre_completo) for tok in p_query.split() if len(tok) > 3):
+                        cama_target = p.cama
+                        break
+            if not cama_target:
+                return {
+                    "status": "error",
+                    "reply": "⚠ Indica qué cama o paciente deseas egresar (ej: `Robotina saca al paciente de 6A`).",
+                }
+            motivo = str(groq_res.get("estudio") or groq_res.get("nota") or "Alta / Egreso")
+            res_eg = egresar_paciente_cama(cama_target, motivo=motivo)
+            if not res_eg["ok"]:
+                return {"status": "success", "tipo_accion": "CAMA_LIBRE", "reply": f"🏥 {res_eg['reason']}"}
+            return {
+                "status": "success",
+                "tipo_accion": "EGRESAR_PACIENTE",
+                "reply": (
+                    f"📤 *Paciente Egresado / Cama Liberada:*\n"
+                    f"🏥 *Cama {res_eg['cama']}:* {res_eg['paciente']}\n"
+                    f"📋 *Motivo:* {res_eg['motivo']}\n"
+                    f"🗂 _Matriz de cama {res_eg['cama']} archivada y bitácora consolidada._"
+                ),
+            }
+
+        if intencion == "INGRESAR_PACIENTE":
+            cama_target = str(groq_res.get("cama") or "").strip().upper()
+            nombre_pac = str(groq_res.get("paciente") or "").strip()
+            if not cama_target or not nombre_pac:
+                return {
+                    "status": "error",
+                    "reply": "⚠ Para ingresar un paciente necesito al menos la cama y el nombre (ej: `Robotina ingresa en 6A a Juan Pérez de 50 años con dx Neumonía`).",
+                }
+            edad_pac = str(groq_res.get("edad") or "N/D")
+            area_pac = str(groq_res.get("area") or "HOSPITALIZACION").upper()
+            if area_pac not in ("HOSPITALIZACION", "PERIFERICOS", "EMERGENCIA_OBSERVACION"):
+                area_pac = "HOSPITALIZACION"
+            dx_pac = groq_res.get("diagnostico")
+            obs_pac = groq_res.get("nota")
+            res_ing = ingresar_paciente_cama(
+                cama_id=cama_target,
+                nombre_completo=nombre_pac,
+                edad=edad_pac,
+                area=area_pac,  # type: ignore[arg-type]
+                diagnostico=dx_pac,
+                observacion=obs_pac,
+            )
+            pac_new = res_ing["paciente"]
+            return {
+                "status": "success",
+                "tipo_accion": "INGRESAR_PACIENTE",
+                "reply": (
+                    f"📥 *Nuevo Ingreso Registrado:*\n"
+                    f"🏥 *Cama {pac_new.cama}:* {pac_new.nombre_completo} ({pac_new.edad} años)\n"
+                    f"📍 *Área:* {pac_new.area}\n"
+                    f"🩺 *Dx:* {dx_pac or 'Por definir'}\n"
+                    f"🗂 _Matriz individual creada para cama {pac_new.cama}._"
+                ),
+            }
+
+        if intencion == "ACTUALIZAR_EVOLUCION":
+            cama_target = str(groq_res.get("cama") or "").strip().upper()
+            nota = str(groq_res.get("nota") or groq_res.get("resultado") or groq_res.get("estudio") or "").strip()
+            dx_new = groq_res.get("diagnostico")
+            if not cama_target or not nota:
+                return {
+                    "status": "error",
+                    "reply": "⚠ Indica la cama y la nota de evolución (ej: `Robotina evolución de 6A: paciente estable afebril`).",
+                }
+            res_ev = actualizar_evolucion_cama(cama_target, nota=nota, diagnostico=dx_new)
+            if not res_ev["ok"]:
+                return {"status": "error", "reply": f"⚠ {res_ev['reason']}"}
+            pac_ev = res_ev["paciente"]
+            return {
+                "status": "success",
+                "tipo_accion": "ACTUALIZAR_EVOLUCION",
+                "reply": (
+                    f"📝 *Evolución Registrada en Cama {pac_ev.cama}:*\n"
+                    f"👤 *Paciente:* {pac_ev.nombre_completo}\n"
+                    f"📌 *Nota:* {res_ev['nota']}"
+                ),
+            }
 
         if intencion == "CONSULTAR_RESUMEN":
             return {
@@ -233,6 +355,12 @@ async def receive_whatsapp_message(request: Request) -> dict[str, Any]:
             }
 
         if intencion == "CONSULTAR_CAMAS":
+            if not bitacora.pacientes:
+                return {
+                    "status": "success",
+                    "tipo_accion": "LISTA_CAMAS",
+                    "reply": "🏥 *No hay camas ocupadas actualmente en la bitácora.*",
+                }
             camas_str = ", ".join(f"*{p.cama}* ({p.nombre_completo.split()[0]})" for p in bitacora.pacientes)
             return {
                 "status": "success",
@@ -242,14 +370,15 @@ async def receive_whatsapp_message(request: Request) -> dict[str, Any]:
 
         if intencion == "GENERAR_PDF":
             generar_bitacora_completa(bitacora_path)
+            bit_consolidada = consolidar_bitacora(bitacora_path)
             return {
                 "status": "success",
                 "tipo_accion": "GENERAR_PDF",
                 "reply": (
-                    "📄 *Bitácora Médica Oficial Generada con Quarto (PDF & Web)*\n\n"
-                    f"🏥 *Periodo:* {bitacora.periodo}\n"
-                    f"👥 *Total Pacientes:* {len(bitacora.pacientes)} censados\n"
-                    f"🌙 *Checklist nocturno:* Actualizado con las novedades reportadas por WhatsApp.\n\n"
+                    "📄 *Bitácora Médica Oficial Consolidada y Generada con Quarto (PDF & Web)*\n\n"
+                    f"🏥 *Periodo:* {bit_consolidada.periodo}\n"
+                    f"👥 *Total Pacientes Activos:* {len(bit_consolidada.pacientes)} camas consolidadas\n"
+                    f"🌙 *Checklist nocturno:* Actualizado con las novedades de cada matriz de cama.\n\n"
                     "📥 *Descargar PDF para Entrega de Guardia:*\n"
                     "👉 https://bitacora-guardia-production.up.railway.app/descargar/bitacora.pdf\n\n"
                     "🌐 *Ver reporte interactivo en línea:*\n"
@@ -257,9 +386,38 @@ async def receive_whatsapp_message(request: Request) -> dict[str, Any]:
                 ),
             }
 
+        if intencion == "CREAR_PENDIENTE" and groq_res.get("cama"):
+            cama_target = str(groq_res["cama"]).strip().upper()
+            desc = str(groq_res.get("estudio") or groq_res.get("nota") or "Control clínico").strip()
+            prio = str(groq_res.get("prioridad") or "URGENTE").upper()
+            horario = groq_res.get("horario")
+            res_p = crear_pendiente_cama(cama_target, desc, prioridad=prio, horario=horario)
+            if not res_p["ok"]:
+                return {"status": "error", "reply": f"⚠ {res_p['reason']}"}
+            pac_p = res_p["paciente"]
+            return {
+                "status": "success",
+                "tipo_accion": "PENDIENTE_CREADO",
+                "reply": f"📌 *Cama {pac_p.cama}* ({pac_p.nombre_completo.split()[0]}): Pendiente registrado ➔ [{prio}] {desc}.",
+            }
+
+        if intencion == "COMPLETAR_PENDIENTE" and groq_res.get("cama"):
+            cama_target = str(groq_res["cama"]).strip().upper()
+            estudio = str(groq_res.get("estudio") or "").strip()
+            resultado = groq_res.get("resultado")
+            res_c = completar_pendiente_cama(cama_target, estudio=estudio, resultado=resultado)
+            if not res_c["ok"]:
+                return {"status": "error", "reply": f"⚠ {res_c['reason']}"}
+            pac_c = res_c["paciente"]
+            return {
+                "status": "success",
+                "tipo_accion": "PENDIENTE_COMPLETADO",
+                "reply": f"✅ *Pendiente completado en Cama {pac_c.cama}:* {res_c['descripcion']}",
+            }
+
         if intencion == "CREAR_RECORDATORIO":
             cama_target = str(groq_res.get("cama") or "").upper()
-            pac = next((p for p in bitacora.pacientes if p.cama.upper() == cama_target), None)
+            pac = get_cama(cama_target) if cama_target else None
             pac_nombre = pac.nombre_completo if pac else (groq_res.get("paciente") or "Paciente de guardia")
             cama_display = pac.cama if pac else (cama_target or "Guardia")
             hora_raw = groq_res.get("horario") or "07:00"
@@ -290,22 +448,22 @@ async def receive_whatsapp_message(request: Request) -> dict[str, Any]:
                 "status": "success",
                 "tipo_accion": "AYUDA",
                 "reply": (
-                    "🤖 *¡Hola! Soy Robotina, asistente clínica con IA (Groq 24/7)*\n\n"
+                    "🤖 *¡Hola! Soy Robotina, orquestadora clínica con Groq IA (24/7)*\n\n"
                     "Puedes hablarme con total lenguaje natural sin comandos rígidos:\n\n"
-                    "• *Reportar resultados:* `Robotina la gaso de 6a dio ph 6.9 y lactato 3`\n"
-                    "• *Consultar paciente o cama:* `Robotina cómo sigue don Rodriguez?` o `Robotina 6a`\n"
-                    "• *Checklist nocturno:* `Robotina qué pendientes críticos quedan?`\n"
-                    "• *Anotar tareas:* `Robotina anota hemocultivos urgente al de la 8 para las 23:00`"
+                    "• *Consultar paciente o exámenes:* `Robotina cómo sigue don Rodriguez?` o `qué antibiótico tiene 6A?`\n"
+                    "• *Ingresar / Sacar paciente:* `Robotina saca al paciente de 6A` o `ingresa en 6A a Juan Pérez 50a dx Neumonía`\n"
+                    "• *Evolución / Resultados:* `Robotina evolución 6A: estable` o `la gaso de 6a dio ph 6.9`\n"
+                    "• *Recordatorios y PDF Quarto:* `Robotina recuérdanos a las 7 el sodio de 8A` o `genera el pdf`"
                 ),
             }
 
         if intencion == "CONSULTAR_CAMA":
-            cama_target = str(groq_res.get("cama") or "").upper()
-            pac = next((p for p in bitacora.pacientes if p.cama.upper() == cama_target), None)
+            cama_target = str(groq_res.get("cama") or "").strip().upper()
+            pac = get_cama(cama_target) if cama_target else None
             if not pac and groq_res.get("paciente"):
-                p_query = str(groq_res["paciente"]).lower()
+                p_query = normalize_text(str(groq_res["paciente"]))
                 for p in bitacora.pacientes:
-                    if any(tok in p.nombre_completo.lower() for tok in p_query.split() if len(tok) > 3):
+                    if any(tok in normalize_text(p.nombre_completo) for tok in p_query.split() if len(tok) > 3):
                         pac = p
                         break
             if pac:
@@ -314,64 +472,34 @@ async def receive_whatsapp_message(request: Request) -> dict[str, Any]:
                     "tipo_accion": "CONSULTA_CAMA",
                     "reply": format_paciente_card(pac),
                 }
+            if cama_target:
+                return {
+                    "status": "success",
+                    "tipo_accion": "CAMA_LIBRE",
+                    "reply": f"🏥 *Cama {cama_target}:* Actualmente *LIBRE* (sin paciente asignado).",
+                }
 
         if intencion == "REGISTRAR_RESULTADO" and groq_res.get("cama"):
-            cama_target = str(groq_res["cama"]).upper()
-            pac = next((p for p in bitacora.pacientes if p.cama.upper() == cama_target), None)
-            if pac:
-                estudio = groq_res.get("estudio") or "Reporte"
-                val = groq_res.get("resultado") or ""
-                alerta = groq_res.get("comentario_clinico")
-                modificado = False
-                pend_desc = ""
-                pends_nuevos = []
+            cama_target = str(groq_res["cama"]).strip().upper()
+            estudio = groq_res.get("estudio") or "Reporte"
+            val = groq_res.get("resultado") or ""
+            alerta = groq_res.get("comentario_clinico")
+            res_reg = registrar_resultado_cama(cama_target, estudio, val, alerta=alerta)
+            if not res_reg["ok"]:
+                return {"status": "error", "reply": f"⚠ {res_reg['reason']}"}
+            pac = res_reg["paciente"]
+            reply_msg = (
+                f"✔ *Resultado registrado por Robotina (Groq IA):*\n"
+                f"🏥 *Cama {pac.cama}:* {pac.nombre_completo.split()[0]} {pac.nombre_completo.split()[-1] if len(pac.nombre_completo.split()) > 1 else ''}\n"
+                f"📋 *Estudio:* {res_reg['pend_desc']}\n"
+                f"📊 *Resultado:* `{val}`\n"
+                f"✅ *Estado:* COMPLETADO"
+            )
+            if alerta:
+                reply_msg += f"\n⚠ *Nota clínica:* {alerta}"
+            return {"status": "success", "tipo_accion": "RESULTADO_REGISTRADO", "reply": reply_msg}
 
-                for pend in pac.pendientes:
-                    coincide = bool(estudio.lower() in pend.descripcion.lower() or (estudio.lower().startswith("gas") and "gas" in pend.descripcion.lower()))
-                    if pend.es_visita_nocturna and pend.estado == "PENDIENTE" and (coincide or not modificado):
-                        pends_nuevos.append(
-                            pend.model_copy(update={"estado": "COMPLETADO", "resultado_obtenido": val})
-                        )
-                        modificado = True
-                        pend_desc = pend.descripcion
-                    else:
-                        pends_nuevos.append(pend)
-
-                if not modificado:
-                    nuevo_desc = f"{estudio} (WhatsApp)"
-                    nuevo_p = Pendiente(
-                        id=f"PEND-{cama_target}-GROQ",
-                        tipo=PendienteTipo.LABORATORIO,
-                        descripcion=nuevo_desc,
-                        prioridad=PendientePrioridad.STAT,
-                        turno=TurnoObjetivo.NOCTURNA_20_24,
-                        es_visita_nocturna=True,
-                        estado="COMPLETADO",
-                        resultado_obtenido=val,
-                    )
-                    pends_nuevos.append(nuevo_p)
-                    pend_desc = nuevo_desc
-
-                p_nuevo = pac.model_copy(update={"pendientes": pends_nuevos})
-                pacs_actualizados = [
-                    p_nuevo if p.cama.upper() == cama_target else p for p in bitacora.pacientes
-                ]
-                nueva_bit = bitacora.model_copy(update={"pacientes": pacs_actualizados})
-                save_bitacora(nueva_bit, bitacora_path)
-
-                reply_msg = (
-                    f"✔ *Resultado registrado por Robotina (IA):*\n"
-                    f"🏥 *Cama {cama_target}:* {pac.nombre_completo.split()[0]} {pac.nombre_completo.split()[-1] if len(pac.nombre_completo.split()) > 1 else ''}\n"
-                    f"📋 *Estudio:* {pend_desc}\n"
-                    f"📊 *Resultado:* `{val}`\n"
-                    f"✅ *Estado:* COMPLETADO"
-                )
-                if alerta:
-                    reply_msg += f"\n⚠ *Nota clínica:* {alerta}"
-
-                return {"status": "success", "tipo_accion": "RESULTADO_REGISTRADO", "reply": reply_msg}
-
-    # 2. MOTOR DE RESPALDO (REGLAS Y NLP LOCAL SI GROQ ESTÁ EN TIMEOUT O FUERA DE LÍNEA)
+    # 2. MOTOR DE RESPALDO (SOLO SI GROQ ESTÁ OFFLINE O SIN API KEY)
     # Comandos de consulta de resumen / checklist nocturno
     if cmd in ("!pendientes", "!guardia", "!resumen", "pendientes", "resumen", "guardia") or any(
         w in cmd for w in ["que pendientes hay", "que hay de pendientes", "que hay pendiente", "como van los pendientes", "checklist"]
@@ -543,53 +671,17 @@ async def receive_whatsapp_message(request: Request) -> dict[str, Any]:
     # Registro de resultado clínico
     if parsed["accion"] == "REGISTRAR_RESULTADO":
         resultado_valor = parsed.get("valor") or parsed["resultado"]
-        estudio_kw = (parsed.get("estudio") or "").lower()
-        modificado = False
-        pend_modificado_desc = ""
-        pends_nuevos = []
-
-        for pend in paciente.pendientes:
-            coincide_estudio = bool(estudio_kw and (estudio_kw in pend.descripcion.lower() or (estudio_kw == "gasometria" and "gas" in pend.descripcion.lower())))
-            if pend.es_visita_nocturna and pend.estado == "PENDIENTE" and (coincide_estudio or not modificado):
-                pends_nuevos.append(
-                    pend.model_copy(
-                        update={"estado": "COMPLETADO", "resultado_obtenido": resultado_valor}
-                    )
-                )
-                modificado = True
-                pend_modificado_desc = pend.descripcion
-            else:
-                pends_nuevos.append(pend)
-
-        if not modificado:
-            nuevo_desc = f"{parsed.get('estudio').capitalize() if parsed.get('estudio') else 'Reporte'} (WhatsApp)"
-            nuevo_p = Pendiente(
-                id=f"PEND-{cama}-WA",
-                tipo=PendienteTipo.LABORATORIO,
-                descripcion=nuevo_desc,
-                prioridad=PendientePrioridad.STAT,
-                turno=TurnoObjetivo.NOCTURNA_20_24,
-                es_visita_nocturna=True,
-                estado="COMPLETADO",
-                resultado_obtenido=resultado_valor,
-            )
-            pends_nuevos.append(nuevo_p)
-            pend_modificado_desc = nuevo_desc
-
-        p_nuevo = paciente.model_copy(update={"pendientes": pends_nuevos})
-        pacs_actualizados = [
-            p_nuevo if p.cama.upper() == cama.upper() else p for p in bitacora.pacientes
-        ]
-        nueva_bit = bitacora.model_copy(update={"pacientes": pacs_actualizados})
-        save_bitacora(nueva_bit, bitacora_path)
-
+        estudio_kw = parsed.get("estudio") or "Reporte"
+        res_reg = registrar_resultado_cama(cama, estudio_kw, resultado_valor)
+        if not res_reg["ok"]:
+            return {"status": "error", "reply": f"⚠ {res_reg['reason']}"}
         return {
             "status": "success",
             "tipo_accion": "RESULTADO_REGISTRADO",
             "reply": (
                 f"✔ *Resultado registrado por Robotina:*\n"
                 f"🏥 *Cama {cama}:* {paciente.nombre_completo.split()[0]} {paciente.nombre_completo.split()[-1] if len(paciente.nombre_completo.split()) > 1 else ''}\n"
-                f"📋 *Pendiente:* {pend_modificado_desc}\n"
+                f"📋 *Pendiente:* {res_reg['pend_desc']}\n"
                 f"📊 *Resultado:* `{resultado_valor}`\n"
                 f"✅ *Estado:* COMPLETADO"
             ),
@@ -597,25 +689,14 @@ async def receive_whatsapp_message(request: Request) -> dict[str, Any]:
 
     # Creación de nuevo pendiente
     elif parsed["accion"] == "CREAR_PENDIENTE":
-        nuevo_id = f"PEND-{cama.upper()}-{len(paciente.pendientes) + 1:02d}"
-        nuevo_pend = Pendiente(
-            id=nuevo_id,
-            tipo=parsed["tipo"],
-            descripcion=parsed["descripcion"],
-            prioridad=parsed["prioridad"],
-            turno=parsed["turno"],
-            horario_programado=parsed["horario"],
-            es_visita_nocturna=parsed["es_nocturna"],
-            estado="PENDIENTE",
+        res_p = crear_pendiente_cama(
+            cama,
+            parsed["descripcion"],
+            prioridad=parsed["prioridad"].value,
+            horario=parsed["horario"],
         )
-        nuevos_pends = list(paciente.pendientes) + [nuevo_pend]
-        p_nuevo = paciente.model_copy(update={"pendientes": nuevos_pends})
-        pacs_actualizados = [
-            p_nuevo if p.cama.upper() == cama.upper() else p for p in bitacora.pacientes
-        ]
-        nueva_bit = bitacora.model_copy(update={"pacientes": pacs_actualizados})
-        save_bitacora(nueva_bit, bitacora_path)
-
+        if not res_p["ok"]:
+            return {"status": "error", "reply": f"⚠ {res_p['reason']}"}
         return {
             "status": "success",
             "tipo_accion": "PENDIENTE_CREADO",
@@ -623,3 +704,13 @@ async def receive_whatsapp_message(request: Request) -> dict[str, Any]:
         }
 
     return {"status": "unhandled"}
+
+
+@app.get("/api/camas")
+def get_camas_matrix() -> dict[str, Any]:
+    """Lista todas las matrices individuales de camas activas."""
+    camas = list_camas_activas()
+    return {
+        "total_ocupadas": len(camas),
+        "camas": [p.model_dump(mode="json") for p in camas],
+    }

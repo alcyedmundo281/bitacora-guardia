@@ -1,0 +1,132 @@
+{
+  "cama": "10C",
+  "area": "HOSPITALIZACION",
+  "servicio_tratante": "Reumatología / Neurología",
+  "nombre_completo": "CHANGO GADVAY MARIA ADELAIDA",
+  "hc": "1996362",
+  "cedula": "1706938626",
+  "edad": "65 años",
+  "sexo": "F",
+  "fecha_nacimiento": null,
+  "fecha_ingreso": null,
+  "dias_hospitalizacion": null,
+  "app": [
+    "Artritis reumatoide (hace 14 años)",
+    "Fibromialgia",
+    "Úlcera sacra grado I"
+  ],
+  "aqx": [],
+  "alergias": [],
+  "diagnosticos_activos": [
+    "Cuadriparesia en estudio relacionada a lesiones medulares",
+    "Artritis reumatoide descompensada (SDAI: 10)",
+    "Tromboembolia pulmonar superada"
+  ],
+  "diagnosticos_pasivos": [
+    "Neumonía por aspiración superada"
+  ],
+  "dieta": "Blanda fraccionada",
+  "hidratacion": "Solución salina 0.9% 1000 ml + 102 mEq NaCl a 40 ml/h",
+  "ckd_epi": "89.3 ml/min/1.73m2",
+  "medicaciones": [
+    {
+      "nombre": "Metilprednisolona",
+      "dosis": "1 g en 250 ml SS 0.9%",
+      "via": "IV",
+      "frecuencia": "cada día (Pulso 2/5)",
+      "fecha_inicio": null,
+      "dias_tratamiento": "2/5",
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "Sulfato de Magnesio",
+      "dosis": "1 ampolla",
+      "via": "IV",
+      "frecuencia": "c/12 horas",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "Enoxaparina",
+      "dosis": "80 mg",
+      "via": "SC",
+      "frecuencia": "c/12 horas",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    }
+  ],
+  "pendientes": [
+    {
+      "id": "PEND-10C-01",
+      "tipo": "IMAGEN_PROCEDIMIENTO",
+      "descripcion": "Pendiente resultados de RMN unión cráneo-cervical",
+      "prioridad": "STAT",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": null,
+      "es_visita_nocturna": true,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
+    },
+    {
+      "id": "PEND-10C-02",
+      "tipo": "LABORATORIO",
+      "descripcion": "Control de Electrolitos y Magnesio a las 18h00 / control nocturno",
+      "prioridad": "CONTROL",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": "18:00 / 22:00",
+      "es_visita_nocturna": true,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
+    },
+    {
+      "id": "PEND-10C-03",
+      "tipo": "CUIDADO_ENFERMERIA",
+      "descripcion": "Manejo urgente de dolor a nivel genital de gran intensidad",
+      "prioridad": "STAT",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": "STAT",
+      "es_visita_nocturna": true,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
+    }
+  ],
+  "observaciones": [
+    "Presentó dolor a nivel genital de gran intensidad.",
+    "Staff médico convocado por déficit motor en progresión."
+  ],
+  "laboratorios": [
+    {
+      "fecha_hora": "2026-11-07",
+      "tipo_estudio": "Reactantes y Hemograma",
+      "valores": {
+        "pcr": 45.9,
+        "leucocitos": 6.21,
+        "plaquetas": 523000,
+        "potasio": 2.81
+      },
+      "alerta_critica": null
+    }
+  ],
+  "cultivos": [],
+  "alertas_criticas": [
+    "Pulso de Metilprednisolona día 2/5",
+    "Cuadriparesia en estudio con dolor severo"
+  ]
+}

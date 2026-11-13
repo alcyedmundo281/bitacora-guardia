@@ -1,0 +1,146 @@
+{
+  "cama": "9D",
+  "area": "HOSPITALIZACION",
+  "servicio_tratante": "Endocrinología / MI",
+  "nombre_completo": "BARAHONA ALOBUELA DOLORES",
+  "hc": "1021400",
+  "cedula": "1703630655",
+  "edad": "77 años",
+  "sexo": "F",
+  "fecha_nacimiento": null,
+  "fecha_ingreso": null,
+  "dias_hospitalizacion": null,
+  "app": [
+    "Insuficiencia suprarrenal primaria",
+    "Hipertensión arterial",
+    "IAM lateral y diafragmático",
+    "Aneurisma cerebral"
+  ],
+  "aqx": [
+    "Túnel carpiano derecho"
+  ],
+  "alergias": [],
+  "diagnosticos_activos": [
+    "Insuficiencia respiratoria aguda",
+    "Neumonía grave en comunidad (CURB-65 3 puntos)",
+    "Insuficiencia suprarrenal primaria descompensada",
+    "DHE corregido"
+  ],
+  "diagnosticos_pasivos": [],
+  "dieta": "Blanda para diabético",
+  "hidratacion": "Dextrosa en SS 0.9% 1000 ml a 40 ml/h",
+  "ckd_epi": "78.14 ml/min/1.73m2",
+  "medicaciones": [
+    {
+      "nombre": "Ampicilina / Sulbactam",
+      "dosis": "3 g",
+      "via": "IV",
+      "frecuencia": "c/8 horas",
+      "fecha_inicio": "2026-11-04",
+      "dias_tratamiento": "5/5",
+      "indicacion_cie10": "J18.9",
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "Claritromicina",
+      "dosis": "500 mg",
+      "via": "IV",
+      "frecuencia": "c/12 horas",
+      "fecha_inicio": "2026-11-04",
+      "dias_tratamiento": "5/5",
+      "indicacion_cie10": "J18.9",
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "Hidrocortisona",
+      "dosis": "50 mg",
+      "via": "IV",
+      "frecuencia": "c/8 horas",
+      "fecha_inicio": null,
+      "dias_tratamiento": "Día 5",
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "Fludrocortisona",
+      "dosis": "0.1 mg",
+      "via": "VO",
+      "frecuencia": "cada mañana",
+      "fecha_inicio": null,
+      "dias_tratamiento": "Día 3",
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    }
+  ],
+  "pendientes": [
+    {
+      "id": "PEND-9D-01",
+      "tipo": "IMAGEN_PROCEDIMIENTO",
+      "descripcion": "RESONANCIA MAGNÉTICA SIMPLE Y CONTRASTADA DE ENCÉFALO (Orden 34934990) PENDIENTE REALIZAR",
+      "prioridad": "STAT",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": "STAT / Coordinar",
+      "es_visita_nocturna": true,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
+    },
+    {
+      "id": "PEND-9D-02",
+      "tipo": "FARMACO_DOSIS",
+      "descripcion": "Evaluar suspensión de Ampicilina/Sulbactam y Claritromicina al completar hoy 5/5 días",
+      "prioridad": "URGENTE",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": null,
+      "es_visita_nocturna": true,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
+    },
+    {
+      "id": "PEND-9D-03",
+      "tipo": "INTERCONSULTA",
+      "descripcion": "Reinterconsultar a Otorrinolaringología para test de deglución",
+      "prioridad": "RUTINA",
+      "turno": "MANANA",
+      "horario_programado": null,
+      "es_visita_nocturna": false,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
+    }
+  ],
+  "observaciones": [
+    "Conjuntivitis mucopurulenta en tratamiento con Tobramicina/Dexametasona."
+  ],
+  "laboratorios": [
+    {
+      "fecha_hora": "2026-11-08",
+      "tipo_estudio": "Control Glucosa y Electrolitos",
+      "valores": {
+        "glucosa": 83,
+        "sodio": 145.0,
+        "potasio": 3.53,
+        "cloro": 123
+      },
+      "alerta_critica": null
+    }
+  ],
+  "cultivos": [],
+  "alertas_criticas": [
+    "Fin de esquema antibiótico dual (5/5 días)",
+    "Resonancia de encéfalo pendiente de coordinación urgente"
+  ]
+}

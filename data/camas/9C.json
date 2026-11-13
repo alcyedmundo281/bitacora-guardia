@@ -1,0 +1,130 @@
+{
+  "cama": "9C",
+  "area": "HOSPITALIZACION",
+  "servicio_tratante": "Cardiología / MI",
+  "nombre_completo": "MORENO BARRIGA BLANCA ALICIA",
+  "hc": "1734898",
+  "cedula": "0500728902",
+  "edad": "72 años",
+  "sexo": "F",
+  "fecha_nacimiento": null,
+  "fecha_ingreso": null,
+  "dias_hospitalizacion": null,
+  "app": [
+    "ACV isquémico territorios múltiples",
+    "Insuficiencia cardíaca FEVI preservada 60%",
+    "Estenosis aórtica severa NYHA II",
+    "Síndrome nefrótico en estudio"
+  ],
+  "aqx": [],
+  "alergias": [],
+  "diagnosticos_activos": [
+    "Insuficiencia cardíaca valvular descompensada",
+    "Síndrome nefrótico en estudio",
+    "Hipopotasemia severa recurrente (K 2.44)"
+  ],
+  "diagnosticos_pasivos": [],
+  "dieta": "Hiposódica estricta",
+  "hidratacion": "Restricción hídrica",
+  "ckd_epi": "55.2 ml/min/1.73m2",
+  "medicaciones": [
+    {
+      "nombre": "Citrato de Potasio",
+      "dosis": "2 cápsulas",
+      "via": "VO",
+      "frecuencia": "c/8 horas",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "Furosemida",
+      "dosis": "20 mg",
+      "via": "IV",
+      "frecuencia": "c/12 horas",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": true,
+      "diferido": false,
+      "prn": false,
+      "nota": "SUSPENDER por hipopotasemia severa (K 2.44 - 2.82)"
+    },
+    {
+      "nombre": "Atorvastatina",
+      "dosis": "40 mg",
+      "via": "VO",
+      "frecuencia": "QD",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    }
+  ],
+  "pendientes": [
+    {
+      "id": "PEND-9C-01",
+      "tipo": "LABORATORIO",
+      "descripcion": "CONTROL DE ELECTROLITOS Y POTASIO SERICO STAT",
+      "prioridad": "STAT",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": "STAT / 21:00",
+      "es_visita_nocturna": true,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
+    },
+    {
+      "id": "PEND-9C-02",
+      "tipo": "IMAGEN_PROCEDIMIENTO",
+      "descripcion": "Pendiente informe de TAC simple de cráneo y UroTAC",
+      "prioridad": "URGENTE",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": null,
+      "es_visita_nocturna": true,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
+    },
+    {
+      "id": "PEND-9C-03",
+      "tipo": "INTERCONSULTA",
+      "descripcion": "Insistir derivación a IRM de Nefrología para perfil de glomerulopatías",
+      "prioridad": "URGENTE",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": null,
+      "es_visita_nocturna": true,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
+    }
+  ],
+  "observaciones": [
+    "Furosemida suspendida por hipokalemia grave recurrente."
+  ],
+  "laboratorios": [
+    {
+      "fecha_hora": "2026-11-08",
+      "tipo_estudio": "Electrolitos",
+      "valores": {
+        "potasio": 2.44,
+        "sodio": 142.9,
+        "cloro": 112,
+        "creatinina": 1.05
+      },
+      "alerta_critica": null
+    }
+  ],
+  "cultivos": [],
+  "alertas_criticas": [
+    "🚨 HIPOKALEMIA CRÍTICA (Potasio 2.44 mmol/L): Riesgo inminente de arritmias malignas",
+    "Furosemida suspendida temporalmente"
+  ]
+}

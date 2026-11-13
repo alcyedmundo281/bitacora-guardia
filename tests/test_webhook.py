@@ -1,5 +1,6 @@
 """Pruebas del servidor Webhook de WhatsApp y Robotina."""
 
+import shutil
 from pathlib import Path
 import pytest
 from fastapi.testclient import TestClient
@@ -10,12 +11,32 @@ client = TestClient(app)
 
 @pytest.fixture(autouse=True)
 def preserve_bitacora_data():
-    """Guarda copia del archivo de bitácora y lo restaura tras las pruebas."""
+    """Guarda copia del archivo de bitácora y de data/camas/ y los restaura tras las pruebas."""
     path = Path("data/bitacora_2026_11_10.json")
+    camas_dir = Path("data/camas")
+    meta_file = Path("data/guardia_meta.json")
+
     original_content = path.read_bytes() if path.exists() else None
+    original_meta = meta_file.read_bytes() if meta_file.exists() else None
+    camas_backup: dict[str, bytes] = {}
+    if camas_dir.exists():
+        for f in camas_dir.glob("*.json"):
+            camas_backup[f.name] = f.read_bytes()
+
     yield
+
     if original_content and path.exists():
         path.write_bytes(original_content)
+    if original_meta:
+        meta_file.write_bytes(original_meta)
+    elif meta_file.exists():
+        meta_file.unlink()
+    if camas_dir.exists():
+        shutil.rmtree(camas_dir)
+    if camas_backup:
+        camas_dir.mkdir(parents=True, exist_ok=True)
+        for name, data in camas_backup.items():
+            (camas_dir / name).write_bytes(data)
 
 
 def test_webhook_health() -> None:
@@ -153,6 +174,43 @@ def test_robotina_screenshot_examenes_rodriguez() -> None:
     assert data["tipo_accion"] == "CONSULTA_CAMA"
     assert "RODRIGUEZ" in data["reply"]
     assert "6A" in data["reply"]
+
+
+def test_bed_store_discharge_and_admission() -> None:
+    from bitacora.bed_store import (
+        actualizar_evolucion_cama,
+        egresar_paciente_cama,
+        get_cama,
+        ingresar_paciente_cama,
+    )
+
+    # 1. Confirmar que 6A existe inicialmente
+    assert get_cama("6A") is not None
+
+    # 2. Sacar/egresar al paciente de 6A
+    res_eg = egresar_paciente_cama("6A", motivo="Alta médica")
+    assert res_eg["ok"] is True
+    assert get_cama("6A") is None  # Ya no ocupa esa cama
+
+    # 3. Ingresar un paciente nuevo en 6A y agregar evolución
+    res_ing = ingresar_paciente_cama("6A", "MARIA LOPEZ", edad="45", diagnostico="Sepsis urinaria")
+    assert res_ing["ok"] is True
+    res_ev = actualizar_evolucion_cama("6A", "Afebril, estable")
+    assert res_ev["ok"] is True
+
+    pac_nuevo = get_cama("6A")
+    assert pac_nuevo is not None
+    assert "MARIA LOPEZ" in pac_nuevo.nombre_completo
+    assert any("Afebril" in o for o in pac_nuevo.observaciones)
+
+
+def test_api_camas_endpoint() -> None:
+    res = client.get("/api/camas")
+    assert res.status_code == 200
+    data = res.json()
+    assert data["total_ocupadas"] > 0
+    assert any(c["cama"] == "6A" for c in data["camas"])
+
 
 
 

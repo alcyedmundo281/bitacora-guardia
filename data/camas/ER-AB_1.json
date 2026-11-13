@@ -1,0 +1,124 @@
+{
+  "cama": "ER-AB 1",
+  "area": "EMERGENCIA_OBSERVACION",
+  "servicio_tratante": "Emergencia / Oncología",
+  "nombre_completo": "MOLINA MURILLO MARIA JOSE",
+  "hc": "1304188",
+  "cedula": "1717438442",
+  "edad": "35 años",
+  "sexo": "F",
+  "fecha_nacimiento": null,
+  "fecha_ingreso": null,
+  "dias_hospitalizacion": null,
+  "app": [
+    "Cáncer de cérvix IIIB",
+    "Uropatía obstructiva",
+    "Nefrostomías bilaterales (julio 2026)"
+  ],
+  "aqx": [
+    "Nefrostomías bilaterales",
+    "Cesárea"
+  ],
+  "alergias": [],
+  "diagnosticos_activos": [
+    "Infección urinaria complicada Tumbarello 12 puntos",
+    "Lesión renal aguda KDIGO II"
+  ],
+  "diagnosticos_pasivos": [
+    "Cáncer de cérvix IIIB"
+  ],
+  "dieta": "Blanda hiposódica",
+  "hidratacion": "Solución salina 0.9% 1000 ml: bolo 250 ml, luego a 60 ml/h",
+  "ckd_epi": "28.6 ml/min/1.73m2 (Creatinina 2.24)",
+  "medicaciones": [
+    {
+      "nombre": "Meropenem",
+      "dosis": "1 g",
+      "via": "IV",
+      "frecuencia": "c/12 horas",
+      "fecha_inicio": "2026-11-08",
+      "dias_tratamiento": "Día 0",
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    }
+  ],
+  "pendientes": [
+    {
+      "id": "PEND-ERAB1-01",
+      "tipo": "LABORATORIO",
+      "descripcion": "EMO, Gram y UROCULTIVO STAT (¡Muestra vesical estricta, NO de nefrostomías!)",
+      "prioridad": "STAT",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": "STAT / Inmediato",
+      "es_visita_nocturna": true,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
+    },
+    {
+      "id": "PEND-ERAB1-02",
+      "tipo": "IMAGEN_PROCEDIMIENTO",
+      "descripcion": "Electrocardiograma STAT en este momento",
+      "prioridad": "STAT",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": null,
+      "es_visita_nocturna": true,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
+    },
+    {
+      "id": "PEND-ERAB1-03",
+      "tipo": "CUIDADO_ENFERMERIA",
+      "descripcion": "Criterio de alarma: Si descompensación neurológica/hemodinámica solicitar valoración UCI",
+      "prioridad": "URGENTE",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": null,
+      "es_visita_nocturna": true,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
+    }
+  ],
+  "observaciones": [
+    "Tomar muestra para urocultivo por sonda vesical, no de nefrostomías."
+  ],
+  "laboratorios": [
+    {
+      "fecha_hora": "2026-11-08 16:30",
+      "tipo_estudio": "Gasometría y Renal",
+      "valores": {
+        "lactato": 1.6,
+        "po2": 20.2,
+        "pcr": 126.0,
+        "procalcitonina": 1.44,
+        "creatinina": 2.24
+      },
+      "alerta_critica": null
+    }
+  ],
+  "cultivos": [
+    {
+      "fecha": "2026-10-11",
+      "muestra": "Urocultivo",
+      "microorganismo": "Klebsiella pneumoniae",
+      "patron_resistencia": "BLEE positivo",
+      "sensible": [
+        "Meropenem",
+        "Amikacina"
+      ],
+      "resistente": [
+        "Ceftriaxona",
+        "Ciprofloxacino"
+      ],
+      "recuento_colonias": null
+    }
+  ],
+  "alertas_criticas": [
+    "Infección urinaria por Klebsiella BLEE",
+    "Hipoxemia grave gasométrica (PO2 20.2 mmHg)"
+  ]
+}

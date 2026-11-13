@@ -1,0 +1,109 @@
+{
+  "cama": "CARDIO 3C",
+  "area": "PERIFERICOS",
+  "servicio_tratante": "Cardiología / Gastroenterología",
+  "nombre_completo": "HIDALGO NIETO CARLOS GONZALO",
+  "hc": "963279",
+  "cedula": null,
+  "edad": "72 años",
+  "sexo": "M",
+  "fecha_nacimiento": null,
+  "fecha_ingreso": null,
+  "dias_hospitalizacion": null,
+  "app": [
+    "Hipertensión arterial",
+    "Enfermedad renal crónica",
+    "Psoriasis",
+    "Hipotiroidismo"
+  ],
+  "aqx": [],
+  "alergias": [
+    "PESCADO",
+    "MARISCOS"
+  ],
+  "diagnosticos_activos": [
+    "Síndrome constitucional a descartar proceso oncológico",
+    "Proteinuria subnefrótica persistente"
+  ],
+  "diagnosticos_pasivos": [],
+  "dieta": "Líquida clara estricta (En preparación colónica)",
+  "hidratacion": "Vía salinizada",
+  "ckd_epi": "17 ml/min/1.73m2 (ERC avanzada)",
+  "medicaciones": [
+    {
+      "nombre": "Amlodipino",
+      "dosis": "10 mg",
+      "via": "VO",
+      "frecuencia": "QD",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": true,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "Alopurinol",
+      "dosis": "150 mg",
+      "via": "VO",
+      "frecuencia": "c/48 horas",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "Bicarbonato de Sodio",
+      "dosis": "1 g",
+      "via": "VO",
+      "frecuencia": "QD",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    }
+  ],
+  "pendientes": [
+    {
+      "id": "PEND-CARD3C-01",
+      "tipo": "IMAGEN_PROCEDIMIENTO",
+      "descripcion": "Verificar preparación colónica adecuada para EDA y COLONOSCOPIA MAÑANA 10/11/2026",
+      "prioridad": "STAT",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": "21:00",
+      "es_visita_nocturna": true,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
+    },
+    {
+      "id": "PEND-CARD3C-02",
+      "tipo": "IMAGEN_PROCEDIMIENTO",
+      "descripcion": "Hacer informar TAC simple de encéfalo, cuello, tórax, abdomen y pelvis",
+      "prioridad": "URGENTE",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": null,
+      "es_visita_nocturna": true,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
+    }
+  ],
+  "observaciones": [
+    "Paciente en preparación colónica para endoscopia matutina."
+  ],
+  "laboratorios": [],
+  "cultivos": [],
+  "alertas_criticas": [
+    "TFG muy reducida: CKD-EPI 17 ml/min",
+    "Alérgica a pescado y mariscos",
+    "Endoscopia alta y baja programada"
+  ]
+}

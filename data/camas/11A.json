@@ -1,0 +1,91 @@
+{
+  "cama": "11A",
+  "area": "HOSPITALIZACION",
+  "servicio_tratante": "Hematología / MI",
+  "nombre_completo": "NICOLALDE CENTENO CESAR ENRIQUE",
+  "hc": "554153",
+  "cedula": "1715905293",
+  "edad": "40 años",
+  "sexo": "M",
+  "fecha_nacimiento": null,
+  "fecha_ingreso": null,
+  "dias_hospitalizacion": null,
+  "app": [
+    "Síndrome de Down",
+    "Hipotiroidismo",
+    "Discapacidad intelectual 70%"
+  ],
+  "aqx": [],
+  "alergias": [],
+  "diagnosticos_activos": [
+    "Bicitopenia en estudio (Plaquetas 13.000)",
+    "Hipoglicemia refractaria",
+    "Sospecha de síndrome paraneoplásico",
+    "Infección de vías urinarias",
+    "Hepatopatía en estudio"
+  ],
+  "diagnosticos_pasivos": [],
+  "dieta": "Blanda para diabético con monitoreo estricto de glucosa",
+  "hidratacion": "Dextrosa al 5% 1000 ml IV a 60 cc/h",
+  "ckd_epi": "122.2 ml/min/1.73m2",
+  "medicaciones": [
+    {
+      "nombre": "Enoxaparina",
+      "dosis": "40 mg",
+      "via": "SC",
+      "frecuencia": "cada día",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": true,
+      "diferido": false,
+      "prn": false,
+      "nota": "SUSPENDER por trombocitopenia severa (Plaquetas 13.000)"
+    }
+  ],
+  "pendientes": [
+    {
+      "id": "PEND-11A-01",
+      "tipo": "LABORATORIO",
+      "descripcion": "Monitoreo horario de glicemia capilar por hipoglicemia refractaria",
+      "prioridad": "STAT",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": "Horario (c/2 horas)",
+      "es_visita_nocturna": true,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
+    },
+    {
+      "id": "PEND-11A-02",
+      "tipo": "IMAGEN_PROCEDIMIENTO",
+      "descripcion": "Pendiente agendar turno Body TAC y TAC con protocolo de páncreas (Orden 34926151)",
+      "prioridad": "URGENTE",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": null,
+      "es_visita_nocturna": true,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
+    }
+  ],
+  "observaciones": [
+    "Alerta plaquetopenia severa confirmada por frotis."
+  ],
+  "laboratorios": [
+    {
+      "fecha_hora": "2026-11-05",
+      "tipo_estudio": "Recuento Plaquetario",
+      "valores": {
+        "plaquetas": 13000,
+        "leucocitos": 4.37
+      },
+      "alerta_critica": null
+    }
+  ],
+  "cultivos": [],
+  "alertas_criticas": [
+    "🚨 TROMBOCITOPENIA CRÍTICA (Plaquetas 13.000): Riesgo hemorrágico severo",
+    "Hipoglicemias recurrentes"
+  ]
+}

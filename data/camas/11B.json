@@ -1,0 +1,119 @@
+{
+  "cama": "11B",
+  "area": "HOSPITALIZACION",
+  "servicio_tratante": "Reumatología / MI",
+  "nombre_completo": "PACHACAMA SUNTAXI FREDDY RODRIGO",
+  "hc": "20CELI84974",
+  "cedula": "1713637401",
+  "edad": "50 años",
+  "sexo": "M",
+  "fecha_nacimiento": null,
+  "fecha_ingreso": null,
+  "dias_hospitalizacion": null,
+  "app": [
+    "Lupus eritematoso sistémico (dx 2022)",
+    "Anemia moderada microcítica",
+    "TEP previo",
+    "Sepsis por Salmonella superada"
+  ],
+  "aqx": [],
+  "alergias": [],
+  "diagnosticos_activos": [
+    "Lupus eritematoso sistémico actividad alta (SLEDAI 2K: 10 puntos)",
+    "Nefritis lúpica clase IV probable",
+    "Derrame pleural loculado"
+  ],
+  "diagnosticos_pasivos": [],
+  "dieta": "Blanda normoproteica",
+  "hidratacion": "Vía salinizada",
+  "ckd_epi": "75 ml/min/1.73m2",
+  "medicaciones": [
+    {
+      "nombre": "Ceftriaxona",
+      "dosis": "2 g",
+      "via": "IV",
+      "frecuencia": "cada día",
+      "fecha_inicio": "2026-10-16",
+      "dias_tratamiento": "Día 24",
+      "indicacion_cie10": "B99",
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "Enoxaparina",
+      "dosis": "60 mg",
+      "via": "SC",
+      "frecuencia": "c/12 horas",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "Cotrimoxazol",
+      "dosis": "800/160 mg",
+      "via": "VO",
+      "frecuencia": "Martes, Jueves, Sábado a las 14:00",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    }
+  ],
+  "pendientes": [
+    {
+      "id": "PEND-11B-01",
+      "tipo": "ADMINISTRATIVO_QX",
+      "descripcion": "Preparación para broncoscopia y colocación de drenaje torácico MAÑANA",
+      "prioridad": "STAT",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": "STAT / NPO 24:00",
+      "es_visita_nocturna": true,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
+    }
+  ],
+  "observaciones": [
+    "Cultivo de líquido pleural: Salmonella enterica ssp enterica sensible a ceftriaxona."
+  ],
+  "laboratorios": [
+    {
+      "fecha_hora": "2026-11-01",
+      "tipo_estudio": "Control",
+      "valores": {
+        "pcr": 29.2,
+        "leucocitos": 7.0,
+        "plaquetas": 300000,
+        "creatinina": 0.58
+      },
+      "alerta_critica": null
+    }
+  ],
+  "cultivos": [
+    {
+      "fecha": "2026-10-25",
+      "muestra": "Líquido Pleural",
+      "microorganismo": "Salmonella enterica ssp enterica",
+      "patron_resistencia": null,
+      "sensible": [
+        "Ceftriaxona",
+        "Ciprofloxacino"
+      ],
+      "resistente": [],
+      "recuento_colonias": null
+    }
+  ],
+  "alertas_criticas": [
+    "Broncoscopia y tubo torácico programados para mañana (NPO desde medianoche)",
+    "Ceftriaxona día 24 de tratamiento"
+  ]
+}

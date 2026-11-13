@@ -108,57 +108,65 @@ def call_groq_clinical_parser(
     camas_activas: list[dict[str, Any]],
     api_key: str | None = None,
 ) -> dict[str, Any] | None:
-    """Interpreta cualquier mensaje informal/desestructurado de WhatsApp de un médico usando Groq."""
+    """Orquestador clínico con Groq: decide qué script Python ejecutar o responde directamente."""
     key = get_groq_api_key(api_key)
     if not key:
         print("[GROQ AGENT]: ⚠ GROQ_API_KEY no configurada. Usando motor local de respaldo.", flush=True)
         return None
 
-    # Resumen de camas para contexto clínico del prompt
-    camas_ctx = "\n".join(
-        [
-            f"- Cama {c.get('cama')}: {c.get('nombre')} | Dx: {c.get('dx')} | Pendientes: {c.get('pendientes')}"
-            for c in camas_activas
-        ]
-    )
+    # Resumen detallado de camas para contexto clínico del prompt
+    if camas_activas:
+        camas_ctx = "\n".join(
+            [
+                f"- Cama {c.get('cama')} ({c.get('area', '')}): {c.get('nombre')} ({c.get('edad', 'N/D')} años) | "
+                f"Dx: {c.get('dx')} | Meds: {c.get('meds', 'N/D')} | Labs: {c.get('labs', 'N/D')} | "
+                f"Obs/Evol: {c.get('obs', 'N/D')} | Alertas: {c.get('alertas', 'N/D')} | Pendientes: {c.get('pendientes', 'N/D')}"
+                for c in camas_activas
+            ]
+        )
+    else:
+        camas_ctx = "(Todas las camas están actualmente LIBRES)"
 
-    system_prompt = f"""Eres Robotina, asistente médica de guardia 24/7 en el hospital.
-Los médicos residentes y tratantes te escriben por WhatsApp con lenguaje coloquial, rápido, abreviaturas médicas y sin estructura fija.
-Tu objetivo es interpretar con precisión médica su intención clínica.
+    system_prompt = f"""Eres Robotina, la jefa clínica y orquestadora IA de la guardia médica 24/7 en WhatsApp.
+Los médicos residentes y tratantes te escriben con lenguaje natural, coloquial y abreviaturas médicas.
+Tu trabajo es DECIDIR qué acción/script del sistema corresponde ejecutar, o responder directamente una pregunta clínica puntual usando los datos reales de las camas.
 
-PACIENTES ACTUALES EN EL SERVICIO:
+MATRIZ ACTUAL DE CAMAS OCUPADAS (cada cama es un archivo independiente; si una cama no aparece aquí, está LIBRE):
 {camas_ctx}
 
-INSTRUCCIONES CLÍNICAS:
-1. 'intencion': Debe ser una de:
-   - 'REGISTRAR_RESULTADO': Si el médico reporta un dato de laboratorio, gasometría, signos, imagen o resultado (ej: 'Robotina la gasometria de 6a es pf 6.9', 'el lactato de la 6a dio 4', 'ekg de 6d sin arritmias', 'cultivo de orina de la 8 negativo').
-   - 'CREAR_PENDIENTE': Si el médico pide hacer una tarea o control (ej: 'anota gaso a las 21:30 para la 6a', 'ponle hemocultivos urgente al 8').
-   - 'CREAR_RECORDATORIO': Si el médico pide recordar o programar una alarma/aviso a una hora determinada (ej: 'Robotina recuérdanos a las 7 el sodio del sr rodriguez', 'recuerda a las 21:30 la gaso de 6a', 'alarma a las 5 am para glicemia').
-   - 'CONSULTAR_RECORDATORIOS': Si el médico pregunta por los recordatorios o alarmas activas (ej: 'Robotina recordatorios', 'qué alarmas hay programadas').
-   - 'CONSULTAR_CAMA': Si pregunta por un paciente o cama (ej: 'cómo está la 6a', 'datos de don Rodriguez', 'qué tiene pendiente la 8').
-   - 'CONSULTAR_RESUMEN': Si pide los pendientes de la noche o el checklist (ej: 'Robotina pendientes', 'resumen de guardia', 'qué hay para hoy').
-   - 'CONSULTAR_CAMAS': Si pide la lista de camas censadas (ej: 'Robotina camas', 'qué pacientes tenemos').
-   - 'GENERAR_PDF': Si pide generar o descargar la bitácora, el reporte o el PDF de la guardia (ej: 'Robotina genera la bitacora', 'Robotina genera el pdf', 'Robotina entrega de guardia', 'pasa el reporte').
-   - 'AYUDA': Si saluda o pregunta qué haces (ej: 'Robotina ayuda', 'hola', 'qué comandos tienes').
-   - 'OTRO': Si es un mensaje no relacionado.
+ACCIONES / SCRIPTS DISPONIBLES (elige exactamente una en 'intencion'):
+1. 'EGRESAR_PACIENTE': Sacar, dar de alta, egresar o liberar una cama (ej: "saca al paciente de 6a", "egreso de rodriguez", "alta de 6a", "libera la 8").
+2. 'INGRESAR_PACIENTE': Ingresar o asignar un paciente nuevo a una cama (ej: "ingresa en 6a a Maria Lopez de 45 años con dx neumonia", "nuevo paciente en 7: Carlos Ruiz 60a, HTA").
+3. 'ACTUALIZAR_EVOLUCION': Agregar nota de evolución, signos vitales, estado clínico o diagnóstico a un paciente (ej: "evolucion de 6a: paciente estable afebril", "anota en 6a que inició noradrenalina").
+4. 'REGISTRAR_RESULTADO': Reportar un resultado de laboratorio, gasometría, imagen o EKG (ej: "la gaso de 6a dio ph 6.9", "creatinina de 8 en 1.2").
+5. 'CREAR_PENDIENTE': Anotar un nuevo pendiente o tarea clínica en una cama (ej: "anota hemocultivos urgente para 6a", "ponle control de sodio 05:00 a la 8").
+6. 'COMPLETAR_PENDIENTE': Marcar un pendiente como hecho/completado sin resultado numérico (ej: "ya se hizo el ekg de 6a", "completa la interconsulta de 6a").
+7. 'CREAR_RECORDATORIO': Programar una alarma/recordatorio con hora específica (ej: "recuerdanos a las 7 el sodio de rodriguez", "alarma 21:30 gaso de 6a").
+8. 'CONSULTAR_RECORDATORIOS': Listar alarmas/recordatorios activos.
+9. 'CONSULTAR_CAMA': Ver la ficha clínica completa de una cama o paciente (ej: "cómo está la 6a", "datos de rodriguez", "qué exámenes tiene 6a").
+10. 'CONSULTAR_RESUMEN': Ver el checklist nocturno / resumen de pendientes de toda la guardia (ej: "pendientes", "resumen de guardia").
+11. 'CONSULTAR_CAMAS': Ver la lista de camas ocupadas actualmente (ej: "camas", "qué pacientes tenemos").
+12. 'GENERAR_PDF': Consolidar todas las matrices de camas y compilar la bitácora oficial en PDF/HTML con Quarto (ej: "genera el pdf", "bitacora con quarto", "entrega de guardia").
+13. 'RESPUESTA_DIRECTA': Cuando el médico hace una pregunta clínica específica que puedes responder directo con los datos de arriba (ej: "qué antibiótico tiene rodriguez?", "quién está en periféricos?", "qué pacientes tienen leucopenia?", "cuánto tuvo de plaquetas 6a?"). En este caso llena 'respuesta_directa' con una respuesta clara, breve y formateada para WhatsApp.
+14. 'AYUDA': Saludo o pregunta sobre qué puedes hacer.
+15. 'OTRO': Conversación social entre médicos que NO va dirigida a ti ni requiere acción clínica.
 
-2. 'cama': El código exacto de la cama (ej: '6A', '8', '6D', 'INFECTO 1B'). Si mencionan el apellido del paciente, asócialo a su cama respectiva. Si no aplica, null.
-3. 'estudio': El nombre médico del examen o acción (ej: 'Gasometría arterial', 'Lactato', 'EKG', 'Hemocultivos', 'TAC de cráneo', 'Control de Sodio').
-4. 'resultado': El valor numérico o reporte completo (ej: 'pf 6.9', 'Lactato 1.4 mmol/L', 'Ritmo sinusal normal').
-5. 'horario': Horario si lo mencionan (ej: '07:00', '21:30', '05:00') o null.
-6. 'prioridad': 'STAT' (si es crítico/inmediato), 'URGENTE', 'CONTROL' o 'RUTINA'.
-7. 'comentario_clinico': Breve advertencia o nota médica si el resultado es crítico (ej: 'Acidosis metabólica severa / riesgo vital', 'Lactato elevado'). Si es normal, null.
+CAMPOS DEL JSON:
+- "intencion": Una de las 15 opciones exactas.
+- "cama": Código exacto de la cama (ej: "6A", "8", "INFECTO 1B"). Si mencionan un apellido, asócialo a su cama. Si no aplica, null.
+- "paciente": Nombre completo del paciente (especialmente en INGRESAR_PACIENTE) o null.
+- "edad": Edad en texto si se menciona en INGRESAR_PACIENTE (ej: "45") o null.
+- "area": "HOSPITALIZACION" | "PERIFERICOS" | "EMERGENCIA_OBSERVACION" (para INGRESAR_PACIENTE si se deduce, por defecto "HOSPITALIZACION").
+- "diagnostico": Diagnóstico si se menciona en ingreso o evolución, o null.
+- "estudio": Nombre del estudio, pendiente o tarea (o motivo de egreso en EGRESAR_PACIENTE).
+- "resultado": Valor del resultado reportado o null.
+- "nota": Nota de evolución u observación clínica (para ACTUALIZAR_EVOLUCION) o null.
+- "prioridad": "STAT" | "URGENTE" | "CONTROL" | "RUTINA".
+- "horario": Hora en formato "HH:MM" si aplica (ej: "19:00", "07:00", "21:30") o null.
+- "comentario_clinico": Breve alerta médica si un resultado es crítico, o null.
+- "respuesta_directa": Texto listo para WhatsApp si intencion == "RESPUESTA_DIRECTA", o null.
 
-Responde ÚNICAMENTE un objeto JSON válido con este formato:
-{{
-  "intencion": "REGISTRAR_RESULTADO" | "CREAR_PENDIENTE" | "CREAR_RECORDATORIO" | "CONSULTAR_RECORDATORIOS" | "CONSULTAR_CAMA" | "CONSULTAR_RESUMEN" | "CONSULTAR_CAMAS" | "GENERAR_PDF" | "AYUDA" | "OTRO",
-  "cama": "6A",
-  "estudio": "Gasometría arterial",
-  "resultado": "pf 6.9",
-  "prioridad": "STAT",
-  "horario": null,
-  "comentario_clinico": null
-}}"""
+Responde ÚNICAMENTE con un objeto JSON válido."""
 
     # Probar secuencialmente con los modelos disponibles en Groq
     for model in MODELS_TO_TRY:
@@ -169,7 +177,7 @@ Responde ÚNICAMENTE un objeto JSON válido con este formato:
                 {"role": "user", "content": mensaje},
             ],
             "temperature": 0.1,
-            "max_tokens": 800,
+            "max_tokens": 900,
         }
 
         try:
@@ -182,13 +190,16 @@ Responde ÚNICAMENTE un objeto JSON válido con este formato:
                     "User-Agent": "Robotina-Clinical-Agent/1.0",
                 },
             )
-            with urllib.request.urlopen(req, timeout=6) as resp:
+            with urllib.request.urlopen(req, timeout=8) as resp:
                 data = json.loads(resp.read().decode("utf-8"))
                 content = data["choices"][0]["message"]["content"]
                 m_json = re.search(r"\{[\s\S]*\}", content)
                 if m_json:
                     parsed = json.loads(m_json.group(0))
-                    print(f"[GROQ ÉXITO ({model})]: Intención detectada: {parsed.get('intencion')} | Cama: {parsed.get('cama')}", flush=True)
+                    print(
+                        f"[GROQ ÉXITO ({model})]: Script={parsed.get('intencion')} | Cama={parsed.get('cama')}",
+                        flush=True,
+                    )
                     return parsed
         except urllib.error.HTTPError as e:
             err_msg = e.read().decode("utf-8", errors="ignore")

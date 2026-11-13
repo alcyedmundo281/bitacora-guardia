@@ -1,0 +1,14 @@
+{
+  "version_schema": "1.0.0",
+  "fecha_guardia": "2026-11-10",
+  "periodo": "10/11/2026 AL 11/11/2026",
+  "medicos_guardia": [
+    "MD MORAN (PG Reumatología IRM)",
+    "MD GOMEZ (PG Medicina Interna)"
+  ],
+  "enlaces_utiles": {
+    "cultivos_intranet": "http://172.16.98.198/account/signin",
+    "programacion_quirurgica": "https://docs.google.com/spreadsheets/d/16AmIt2Cj8iujxKCsbr-4S6KOg75ppkPGJGy3Zj7qwIQ/edit"
+  },
+  "ingresos_guardia": 1
+}

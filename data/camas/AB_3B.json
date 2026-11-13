@@ -1,0 +1,133 @@
+{
+  "cama": "AB 3B",
+  "area": "EMERGENCIA_OBSERVACION",
+  "servicio_tratante": "Emergencia / Cuidados Intermedios",
+  "nombre_completo": "MOSQUERA SALVADOR PATRICIA ALEXANDRA",
+  "hc": "1334681",
+  "cedula": "1706511530",
+  "edad": "63 años",
+  "sexo": "F",
+  "fecha_nacimiento": null,
+  "fecha_ingreso": null,
+  "dias_hospitalizacion": null,
+  "app": [
+    "Litiasis renal (litotricia)",
+    "Colelitiasis",
+    "Osteoporosis",
+    "Prolapso vesical",
+    "ITU a repetición"
+  ],
+  "aqx": [],
+  "alergias": [],
+  "diagnosticos_activos": [
+    "Sepsis a doble foco (urinario e intestinal)",
+    "Descarte de Clostridium difficile",
+    "Lesión renal aguda KDIGO III (TFG 14 ml/min)",
+    "Trombocitopenia severa por sepsis (Plaquetas 13.000)",
+    "Fallo multiorgánico"
+  ],
+  "diagnosticos_pasivos": [],
+  "dieta": "NPO",
+  "hidratacion": "Lactato de Ringer en bolo de 500 cc, luego a 150 ml/h",
+  "ckd_epi": "14 ml/min/1.73m2",
+  "medicaciones": [
+    {
+      "nombre": "Meropenem",
+      "dosis": "1 g",
+      "via": "IV",
+      "frecuencia": "c/8 horas",
+      "fecha_inicio": "2026-11-04",
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "Metronidazol",
+      "dosis": "500 mg",
+      "via": "IV",
+      "frecuencia": "c/8 horas",
+      "fecha_inicio": "2026-11-04",
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "Enoxaparina",
+      "dosis": "40 mg",
+      "via": "SC",
+      "frecuencia": "QD",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": true,
+      "diferido": false,
+      "prn": false,
+      "nota": "CONTRAINDICADO por plaquetopenia severa"
+    }
+  ],
+  "pendientes": [
+    {
+      "id": "PEND-AB3B-01",
+      "tipo": "LABORATORIO",
+      "descripcion": "Gasometría arterial STAT + Ácido láctico",
+      "prioridad": "STAT",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": "STAT / 20:00",
+      "es_visita_nocturna": true,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
+    },
+    {
+      "id": "PEND-AB3B-02",
+      "tipo": "LABORATORIO",
+      "descripcion": "Coprorasitario + PMN + Toxinas A y B para Clostridium difficile",
+      "prioridad": "URGENTE",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": "21:00",
+      "es_visita_nocturna": true,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
+    },
+    {
+      "id": "PEND-AB3B-03",
+      "tipo": "LABORATORIO",
+      "descripcion": "Urocultivo tomar muestra STAT",
+      "prioridad": "STAT",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": null,
+      "es_visita_nocturna": true,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
+    }
+  ],
+  "observaciones": [
+    "Paciente en choque séptico y falla multiorgánica. Monitoreo continuo."
+  ],
+  "laboratorios": [
+    {
+      "fecha_hora": "2026-11-07",
+      "tipo_estudio": "Control Crítico",
+      "valores": {
+        "plaquetas": 13000,
+        "leucocitos": 14.14,
+        "potasio": 3.39,
+        "sodio": 135.8
+      },
+      "alerta_critica": null
+    }
+  ],
+  "cultivos": [],
+  "alertas_criticas": [
+    "🚨 TROMBOCITOPENIA CRÍTICA (Plaquetas 13.000)",
+    "KDIGO III (TFG 14 ml/min)"
+  ]
+}

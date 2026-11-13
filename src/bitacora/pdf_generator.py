@@ -5,20 +5,20 @@ import shutil
 import subprocess
 from pathlib import Path
 
+from bitacora.bed_store import consolidar_bitacora
 from bitacora.models import BitacoraGuardia
 from bitacora.render_qmd import render_qmd
-from bitacora.schema import load_bitacora
 
 logger = logging.getLogger(__name__)
 
 
 def generar_bitacora_completa(
-    bitacora_path: Path,
+    bitacora_path: Path | None = None,
     output_dir: Path = Path("reports"),
 ) -> dict[str, Path]:
-    """Genera la bitácora médica completa en formato .qmd, .html y .pdf usando Quarto."""
+    """Consolida las matrices individuales de cada cama y compila .qmd, .html y .pdf con Quarto."""
     output_dir.mkdir(parents=True, exist_ok=True)
-    bitacora = load_bitacora(bitacora_path)
+    bitacora = consolidar_bitacora(sync_monolith_path=bitacora_path)
 
     qmd_path = output_dir / "bitacora_guardia.qmd"
     html_path = output_dir / "bitacora_guardia.html"

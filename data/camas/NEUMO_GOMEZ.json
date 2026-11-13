@@ -1,0 +1,146 @@
+{
+  "cama": "NEUMO GOMEZ",
+  "area": "PERIFERICOS",
+  "servicio_tratante": "Neumología / Oncología",
+  "nombre_completo": "GOMEZ ALMEIDA MARIO RENE",
+  "hc": "1274973",
+  "cedula": "1703534469",
+  "edad": "74 años",
+  "sexo": "M",
+  "fecha_nacimiento": null,
+  "fecha_ingreso": null,
+  "dias_hospitalizacion": null,
+  "app": [
+    "Hipotiroidismo",
+    "ITU a repetición",
+    "Derrame pleural en estudio",
+    "Anemia crónica CIE D63.0"
+  ],
+  "aqx": [],
+  "alergias": [],
+  "diagnosticos_activos": [
+    "Sepsis de foco urinario por Proteus BLEE",
+    "Compresión medular por lesiones líticas",
+    "Globo vesical resuelto (sonda vesical)"
+  ],
+  "diagnosticos_pasivos": [],
+  "dieta": "Blanda hipercalórica",
+  "hidratacion": "Vía salinizada",
+  "ckd_epi": "58 ml/min/1.73m2",
+  "medicaciones": [
+    {
+      "nombre": "Piperacilina / Tazobactam",
+      "dosis": "4.5 g",
+      "via": "IV",
+      "frecuencia": "c/6 horas",
+      "fecha_inicio": "2026-11-02",
+      "dias_tratamiento": "5/5",
+      "indicacion_cie10": "A41.9",
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "Morfina",
+      "dosis": "20 mg en 98 ml SS 0.9%",
+      "via": "IV",
+      "frecuencia": "a 2.5 ml/h en infusión continua",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "Gabapentina",
+      "dosis": "300 mg",
+      "via": "VO",
+      "frecuencia": "TID",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    }
+  ],
+  "pendientes": [
+    {
+      "id": "PEND-GOMEZ-01",
+      "tipo": "LABORATORIO",
+      "descripcion": "EMO POR SONDA VESICAL A LAS 05:00 AM + Biometría, PCR, Azoados",
+      "prioridad": "CONTROL",
+      "turno": "MADRUGADA_04_06",
+      "horario_programado": "05:00 AM",
+      "es_visita_nocturna": true,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
+    },
+    {
+      "id": "PEND-GOMEZ-02",
+      "tipo": "INTERCONSULTA",
+      "descripcion": "Auditar respuesta de interconsultas: Neurocirugía, Traumatología y Radioterapia",
+      "prioridad": "URGENTE",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": null,
+      "es_visita_nocturna": true,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
+    },
+    {
+      "id": "PEND-GOMEZ-03",
+      "tipo": "FARMACO_DOSIS",
+      "descripcion": "Fin de esquema de Piperacilina/Tazobactam (Día 5/5): valorar retiro o cambio por Proteus BLEE",
+      "prioridad": "URGENTE",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": null,
+      "es_visita_nocturna": true,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
+    }
+  ],
+  "observaciones": [
+    "Urocultivo: Proteus mirabilis productor de BLEE."
+  ],
+  "laboratorios": [
+    {
+      "fecha_hora": "2026-11-02",
+      "tipo_estudio": "PCR y Reactantes",
+      "valores": {
+        "pcr": 214,
+        "procalcitonina": 0.23,
+        "creatinina": 1.21
+      },
+      "alerta_critica": null
+    }
+  ],
+  "cultivos": [
+    {
+      "fecha": "2026-11-05",
+      "muestra": "Urocultivo",
+      "microorganismo": "Proteus mirabilis",
+      "patron_resistencia": "Productor de BLEE (Betalactamasas de espectro extendido)",
+      "sensible": [
+        "Carbapenémicos",
+        "Amikacina"
+      ],
+      "resistente": [
+        "Cefalosporinas",
+        "Penicilinas"
+      ],
+      "recuento_colonias": null
+    }
+  ],
+  "alertas_criticas": [
+    "Compresión medular por lesiones líticas: vigilar déficit neurológico agudo",
+    "Proteus mirabilis BLEE positivo",
+    "Pip/Tazo día 5/5"
+  ]
+}

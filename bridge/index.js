@@ -110,6 +110,7 @@ function requestHandler(req, res) {
     parsedUrl.pathname.startsWith("/reports/") ||
     parsedUrl.pathname.startsWith("/debug/") ||
     parsedUrl.pathname === "/api/set-groq-key" ||
+    parsedUrl.pathname === "/api/camas" ||
     parsedUrl.pathname === "/whatsapp/webhook"
   ) {
     const proxyReq = http.request(

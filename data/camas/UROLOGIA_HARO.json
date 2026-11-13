@@ -1,0 +1,79 @@
+{
+  "cama": "UROLOGIA HARO",
+  "area": "PERIFERICOS",
+  "servicio_tratante": "Urología",
+  "nombre_completo": "HARO PRADO DANNY ERNESTO",
+  "hc": "650799",
+  "cedula": "1711965382",
+  "edad": "49 años 10 meses",
+  "sexo": "M",
+  "fecha_nacimiento": null,
+  "fecha_ingreso": null,
+  "dias_hospitalizacion": null,
+  "app": [
+    "Hipertensión arterial",
+    "Nefrolitiasis",
+    "ITU a repetición con sepsis reciente (oct 2026)"
+  ],
+  "aqx": [],
+  "alergias": [],
+  "diagnosticos_activos": [
+    "Infección urinaria complicada / Pielonefritis aguda",
+    "Nefrolitiasis (CIE N20.0)",
+    "Hipertensión arterial esencial"
+  ],
+  "diagnosticos_pasivos": [],
+  "dieta": "Blanda hiposódica",
+  "hidratacion": "Vía salinizada",
+  "ckd_epi": "Conservada",
+  "medicaciones": [
+    {
+      "nombre": "Meropenem",
+      "dosis": "2 g",
+      "via": "IV",
+      "frecuencia": "c/8 horas",
+      "fecha_inicio": "2026-11-06",
+      "dias_tratamiento": "Día 3/7",
+      "indicacion_cie10": "N39.0",
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "Enoxaparina",
+      "dosis": "40 mg",
+      "via": "SC",
+      "frecuencia": "cada día",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    }
+  ],
+  "pendientes": [
+    {
+      "id": "PEND-HARO-01",
+      "tipo": "LABORATORIO",
+      "descripcion": "Control domingo de PCR, Biometría, Electrolitos, Urea y Creatinina",
+      "prioridad": "CONTROL",
+      "turno": "MADRUGADA_04_06",
+      "horario_programado": "05:00 AM",
+      "es_visita_nocturna": true,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
+    }
+  ],
+  "observaciones": [
+    "Paciente joven con antecedente de choque séptico urológico hace un mes."
+  ],
+  "laboratorios": [],
+  "cultivos": [],
+  "alertas_criticas": [
+    "Meropenem 2g c/8h en curso (Día 3/7)"
+  ]
+}

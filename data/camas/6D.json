@@ -1,0 +1,66 @@
+{
+  "cama": "6D",
+  "area": "HOSPITALIZACION",
+  "servicio_tratante": "Medicina Interna",
+  "nombre_completo": "LOPEZ PAZMINO RICARDO DARIO",
+  "hc": "2199041",
+  "cedula": "1711223344",
+  "edad": "48 años",
+  "sexo": "M",
+  "fecha_nacimiento": null,
+  "fecha_ingreso": null,
+  "dias_hospitalizacion": null,
+  "app": [
+    "Hipertensión arterial"
+  ],
+  "aqx": [
+    "Apendicectomía"
+  ],
+  "alergias": [
+    "PENICILINA"
+  ],
+  "diagnosticos_activos": [
+    "Crisis hipertensiva tipo urgencia"
+  ],
+  "diagnosticos_pasivos": [],
+  "dieta": "Hiposódica estricta",
+  "hidratacion": "Vía salinizada",
+  "ckd_epi": "95 ml/min/1.73m2",
+  "medicaciones": [
+    {
+      "nombre": "Amlodipino",
+      "dosis": "10 mg",
+      "via": "VO",
+      "frecuencia": "cada día",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    }
+  ],
+  "pendientes": [
+    {
+      "id": "PEND-6D-NUEVO-01",
+      "tipo": "LABORATORIO",
+      "descripcion": "Segunda curva de Troponina ultrasensible a las 22:00 + EKG",
+      "prioridad": "STAT",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": "22:00",
+      "es_visita_nocturna": true,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
+    }
+  ],
+  "observaciones": [
+    "Nuevo ingreso de guardia."
+  ],
+  "laboratorios": [],
+  "cultivos": [],
+  "alertas_criticas": [
+    "Alergia a PENICILINA"
+  ]
+}

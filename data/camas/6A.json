@@ -1,0 +1,185 @@
+{
+  "cama": "6A",
+  "area": "HOSPITALIZACION",
+  "servicio_tratante": "Medicina Interna",
+  "nombre_completo": "RODRIGUEZ MORENO SEGUNDO EZEQUIEL",
+  "hc": "2013397",
+  "cedula": "1709777906",
+  "edad": "59 años",
+  "sexo": "M",
+  "fecha_nacimiento": null,
+  "fecha_ingreso": null,
+  "dias_hospitalizacion": null,
+  "app": [
+    "Hipotiroidismo",
+    "Hipertensión arterial",
+    "Neumonía asociada a la comunidad (oct/2026)",
+    "Artritis reumatoide en seguimiento por Reumatología IESS"
+  ],
+  "aqx": [],
+  "alergias": [],
+  "diagnosticos_activos": [
+    "Neumonía adquirida en la comunidad (CIE-10: J15.9)",
+    "Choque séptico de foco pulmonar superado (CIE-10: R57.2)",
+    "Insuficiencia renal aguda KDIGO C3 (CIE-10: N17.9)"
+  ],
+  "diagnosticos_pasivos": [],
+  "dieta": "Dieta general blanda",
+  "hidratacion": "Dispositivo salinizado sin heparina",
+  "ckd_epi": "84 ml/min/1.73m2",
+  "medicaciones": [
+    {
+      "nombre": "Ampicilina / Sulbactam",
+      "dosis": "3 g",
+      "via": "IV",
+      "frecuencia": "c/6 horas",
+      "fecha_inicio": "2026-11-03",
+      "dias_tratamiento": "5/5",
+      "indicacion_cie10": "J15.9",
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "Paracetamol",
+      "dosis": "1 g",
+      "via": "VO",
+      "frecuencia": "c/8 horas",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": true,
+      "nota": null
+    },
+    {
+      "nombre": "Omeprazol",
+      "dosis": "40 mg",
+      "via": "IV",
+      "frecuencia": "cada día",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "Enoxaparina",
+      "dosis": "60 mg",
+      "via": "SC",
+      "frecuencia": "cada día",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "Levotiroxina",
+      "dosis": "50 mcg",
+      "via": "VO",
+      "frecuencia": "cada día 06:00",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "Tramadol",
+      "dosis": "50 mg",
+      "via": "IV",
+      "frecuencia": "c/6 horas diluido lento",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "Hidrocortisona",
+      "dosis": "150 mg",
+      "via": "IV",
+      "frecuencia": "cada día 08:00 AM",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    }
+  ],
+  "pendientes": [
+    {
+      "id": "PEND-6A-01",
+      "tipo": "IMAGEN_PROCEDIMIENTO",
+      "descripcion": "Electrocardiograma (EKG) STAT",
+      "prioridad": "STAT",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": null,
+      "es_visita_nocturna": false,
+      "estado": "COMPLETADO",
+      "responsable": null,
+      "resultado_obtenido": "Ritmo sinusal normal"
+    },
+    {
+      "id": "PEND-6A-02",
+      "tipo": "LABORATORIO",
+      "descripcion": "Gasometría arterial STAT + Electrolitos",
+      "prioridad": "STAT",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": null,
+      "es_visita_nocturna": false,
+      "estado": "COMPLETADO",
+      "responsable": null,
+      "resultado_obtenido": "Gases normales, lactato 1.1"
+    },
+    {
+      "id": "PEND-6A-04",
+      "tipo": "FARMACO_DOSIS",
+      "descripcion": "Evaluar fin de ciclo de antibiótico (Día 5/5)",
+      "prioridad": "URGENTE",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": null,
+      "es_visita_nocturna": true,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
+    }
+  ],
+  "observaciones": [
+    "Urea 10% semisólido cutáneo tópico BID por 15 días en manos.",
+    "Laboratorios reumatología orden 34926920."
+  ],
+  "laboratorios": [
+    {
+      "fecha_hora": "2026-11-06",
+      "tipo_estudio": "BH y Química",
+      "valores": {
+        "leucocitos": 2.52,
+        "hemoglobina": 10.4,
+        "hematocrito": 32.3,
+        "plaquetas": 84000,
+        "inr": 1.05,
+        "creatinina": 0.8
+      },
+      "alerta_critica": null
+    }
+  ],
+  "cultivos": [],
+  "alertas_criticas": [
+    "Leucopenia (WBC 2.52)",
+    "Ampicilina/Sulbactam cumpliendo día 4/5"
+  ]
+}

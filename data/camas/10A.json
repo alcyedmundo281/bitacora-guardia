@@ -1,0 +1,121 @@
+{
+  "cama": "10A",
+  "area": "HOSPITALIZACION",
+  "servicio_tratante": "Neumología / Oncología",
+  "nombre_completo": "HERRERA OBANDO JESUS RAQUEL",
+  "hc": "797237",
+  "cedula": "1709863706",
+  "edad": "60 años",
+  "sexo": "F",
+  "fecha_nacimiento": null,
+  "fecha_ingreso": null,
+  "dias_hospitalizacion": null,
+  "app": [
+    "Déficit de proteína C",
+    "Trombosis venosa profunda previa",
+    "EPID",
+    "Cardiopatía isquémica",
+    "ECV",
+    "Artritis reumatoidea"
+  ],
+  "aqx": [],
+  "alergias": [],
+  "diagnosticos_activos": [
+    "Masa pulmonar en estudio a descartar neoplasia",
+    "Insuficiencia respiratoria aguda PAFI 60 mmHg (SDRA grave)",
+    "Trombosis venosa profunda poplítea, solear y gemelar izquierda",
+    "Lesión lítica de L4 (posible sarcoma paravertebral)"
+  ],
+  "diagnosticos_pasivos": [],
+  "dieta": "Blanda fraccionada",
+  "hidratacion": "Solución salina 0.9% 1000 ml + 10 mEq KCl a 40 ml/h",
+  "ckd_epi": "82.3 ml/min/1.73m2",
+  "medicaciones": [
+    {
+      "nombre": "Meropenem",
+      "dosis": "1 g",
+      "via": "IV",
+      "frecuencia": "c/8 horas",
+      "fecha_inicio": "2026-11-04",
+      "dias_tratamiento": "4/5",
+      "indicacion_cie10": "A41.9",
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "Enoxaparina",
+      "dosis": "60 mg",
+      "via": "SC",
+      "frecuencia": "c/12 horas (dosis terapéutica por TVP)",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "Morfina",
+      "dosis": "20 mg en 98 ml SS 0.9%",
+      "via": "IV",
+      "frecuencia": "a 8 ml/h en infusión continua",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    }
+  ],
+  "pendientes": [
+    {
+      "id": "PEND-10A-01",
+      "tipo": "IMAGEN_PROCEDIMIENTO",
+      "descripcion": "Insistir resultado de biopsia EBUS + crioterapia + biomolecular de lesión pulmonar (SOLCA)",
+      "prioridad": "URGENTE",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": null,
+      "es_visita_nocturna": true,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
+    },
+    {
+      "id": "PEND-10A-02",
+      "tipo": "LABORATORIO",
+      "descripcion": "Rx de control evolutiva y gasometría de control por SDRA",
+      "prioridad": "STAT",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": "STAT / 21:00",
+      "es_visita_nocturna": true,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
+    }
+  ],
+  "observaciones": [
+    "Infusión continua de morfina por dolor intenso de lesión lítica L4."
+  ],
+  "laboratorios": [
+    {
+      "fecha_hora": "2026-11-08",
+      "tipo_estudio": "BH y Plaquetas",
+      "valores": {
+        "leucocitos": 13.78,
+        "hemoglobina": 9.5,
+        "plaquetas": 197000,
+        "neutrofilos": 11.38
+      },
+      "alerta_critica": null
+    }
+  ],
+  "cultivos": [],
+  "alertas_criticas": [
+    "🚨 SDRA GRAVE con PAFI 60 mmHg",
+    "Anticoagulación terapéutica con Enoxaparina 60mg c/12h por TVP extensa"
+  ]
+}

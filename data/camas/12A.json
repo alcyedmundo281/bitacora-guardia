@@ -1,0 +1,94 @@
+{
+  "cama": "12A",
+  "area": "HOSPITALIZACION",
+  "servicio_tratante": "Nefrología / MI",
+  "nombre_completo": "CALDERON ALMEIDA SIMON BOLIVAR",
+  "hc": "2007245",
+  "cedula": "0601406994",
+  "edad": "68 años",
+  "sexo": "M",
+  "fecha_nacimiento": null,
+  "fecha_ingreso": null,
+  "dias_hospitalizacion": null,
+  "app": [
+    "Enfermedad renal crónica estadio 5 en hemodiálisis trisemanal",
+    "Diabetes mellitus tipo 2",
+    "Fibrilación auricular"
+  ],
+  "aqx": [
+    "Catéter tunelizado yugular derecho"
+  ],
+  "alergias": [],
+  "diagnosticos_activos": [
+    "Fiebre de origen no determinado en hemodiálisis",
+    "Arritmia cardíaca",
+    "Sospecha de bacteriemia asociada a catéter"
+  ],
+  "diagnosticos_pasivos": [],
+  "dieta": "Dieta para paciente renal en hemodiálisis",
+  "hidratacion": "Restricción hídrica estricta (no oligúrico)",
+  "ckd_epi": "Estadío 5 (Hemodiálisis M-J-S)",
+  "medicaciones": [
+    {
+      "nombre": "Paracetamol",
+      "dosis": "1 g",
+      "via": "IV",
+      "frecuencia": "PRN fiebre o dolor hasta c/8h",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": true,
+      "nota": null
+    }
+  ],
+  "pendientes": [
+    {
+      "id": "PEND-12A-01",
+      "tipo": "LABORATORIO",
+      "descripcion": "TOMAR HEMOCULTIVOS X 2 ANTE PICO FEBRIL + Laboratorio central de proteínas y perfil hepático",
+      "prioridad": "STAT",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": "STAT PRN",
+      "es_visita_nocturna": true,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
+    },
+    {
+      "id": "PEND-12A-02",
+      "tipo": "IMAGEN_PROCEDIMIENTO",
+      "descripcion": "Coordinar Body TAC para búsqueda de foco infeccioso primario",
+      "prioridad": "URGENTE",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": null,
+      "es_visita_nocturna": true,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
+    }
+  ],
+  "observaciones": [
+    "Leucocitosis de 17.020 con PCR 53.30."
+  ],
+  "laboratorios": [
+    {
+      "fecha_hora": "2026-11-09",
+      "tipo_estudio": "Infeccioso y Hematológico",
+      "valores": {
+        "leucocitos": 17.02,
+        "neutrofilos": 14.96,
+        "pcr": 53.3,
+        "procalcitonina": 0.97,
+        "inr": 1.89
+      },
+      "alerta_critica": null
+    }
+  ],
+  "cultivos": [],
+  "alertas_criticas": [
+    "Fiebre no filiada en paciente con catéter de hemodiálisis",
+    "Leucocitosis 17.000"
+  ]
+}

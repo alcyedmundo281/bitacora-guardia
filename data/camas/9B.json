@@ -1,0 +1,107 @@
+{
+  "cama": "9B",
+  "area": "HOSPITALIZACION",
+  "servicio_tratante": "Medicina Interna / Geriatría",
+  "nombre_completo": "CARRERA AGUIRRE MARTHA GRACIELA",
+  "hc": "2045964",
+  "cedula": "1702915719",
+  "edad": "88 años 2 meses",
+  "sexo": "F",
+  "fecha_nacimiento": null,
+  "fecha_ingreso": null,
+  "dias_hospitalizacion": null,
+  "app": [
+    "Demencia no especificada",
+    "Hipertensión arterial",
+    "Pénfigo vulgar",
+    "Trastorno bipolar"
+  ],
+  "aqx": [],
+  "alergias": [],
+  "diagnosticos_activos": [
+    "Trastorno deglutorio severo por demencia",
+    "Anemia moderada macrocítica (Hb 7.5)",
+    "Zona de presión en sacro en cicatrización",
+    "Hipernatremia severa hipovolémica superada"
+  ],
+  "diagnosticos_pasivos": [
+    "Neumonía por aspiración superada"
+  ],
+  "dieta": "Dieta por SNG según indicación de Nutrición",
+  "hidratacion": "Agua libre por SNG 200 ml c/8h",
+  "ckd_epi": "75 ml/min/1.73m2",
+  "medicaciones": [
+    {
+      "nombre": "Ácido Valproico",
+      "dosis": "250 mg tab",
+      "via": "VO (por SNG)",
+      "frecuencia": "BID por 10 días",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "Risperidona",
+      "dosis": "5 gotas",
+      "via": "VO (por SNG)",
+      "frecuencia": "TID",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    }
+  ],
+  "pendientes": [
+    {
+      "id": "PEND-9B-01",
+      "tipo": "LABORATORIO",
+      "descripcion": "CONTROL ESTRICTO DE ELECTROLITOS MAÑANA A LAS 05:00 AM",
+      "prioridad": "CONTROL",
+      "turno": "MADRUGADA_04_06",
+      "horario_programado": "05:00 AM",
+      "es_visita_nocturna": true,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
+    },
+    {
+      "id": "PEND-9B-02",
+      "tipo": "CUIDADO_ENFERMERIA",
+      "descripcion": "Verificar tolerancia a nutrición enteral y residuos gástricos",
+      "prioridad": "URGENTE",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": null,
+      "es_visita_nocturna": true,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
+    }
+  ],
+  "observaciones": [
+    "Mantener cabecera a 45 grados por alto riesgo de aspiración."
+  ],
+  "laboratorios": [
+    {
+      "fecha_hora": "2026-11-08",
+      "tipo_estudio": "BH",
+      "valores": {
+        "hemoglobina": 7.5,
+        "hematocrito": 22.7,
+        "leucocitos": 4.83
+      },
+      "alerta_critica": null
+    }
+  ],
+  "cultivos": [],
+  "alertas_criticas": [
+    "Control crítico de electrolitos a las 05:00 AM",
+    "Anemia severa (Hb 7.5 g/dL)"
+  ]
+}

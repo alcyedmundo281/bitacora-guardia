@@ -1,0 +1,121 @@
+{
+  "cama": "7",
+  "area": "HOSPITALIZACION",
+  "servicio_tratante": "Medicina Interna",
+  "nombre_completo": "VINUEZA ROJAS ARTURO MIGUEL",
+  "hc": "239902",
+  "cedula": null,
+  "edad": "77 años",
+  "sexo": "M",
+  "fecha_nacimiento": null,
+  "fecha_ingreso": null,
+  "dias_hospitalizacion": null,
+  "app": [
+    "Hipertensión arterial (30 años)",
+    "Dislipidemia",
+    "Enfermedad renal crónica",
+    "Craneotomía con evacuación de hematoma subdural"
+  ],
+  "aqx": [
+    "Craniectomía descompresiva (sept 2026)"
+  ],
+  "alergias": [],
+  "diagnosticos_activos": [
+    "Traqueítis en portador de traqueóstomo",
+    "Hipertensión arterial",
+    "Enfermedad renal crónica estadio 3B (TFG CKD-EPI 31.84)",
+    "Infección de herida quirúrgica frontoparietal + empiema superado"
+  ],
+  "diagnosticos_pasivos": [
+    "Hematoma subdural evacuado"
+  ],
+  "dieta": "Dieta enteral 300cc ART + Diben 900kcal/600cc por gastrostomía",
+  "hidratacion": "O2 por cánula nasal para SatO2 > 85%",
+  "ckd_epi": "35.99 ml/min/1.73m2 (Creatinina 1.78)",
+  "medicaciones": [
+    {
+      "nombre": "Levetiracetam",
+      "dosis": "500 mg",
+      "via": "Gastrostomía",
+      "frecuencia": "c/12 horas",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "Enoxaparina",
+      "dosis": "40 mg",
+      "via": "SC",
+      "frecuencia": "QD",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "Buscapina",
+      "dosis": "1 tableta",
+      "via": "Gastrostomía",
+      "frecuencia": "c/8 horas",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    }
+  ],
+  "pendientes": [
+    {
+      "id": "PEND-7-01",
+      "tipo": "LABORATORIO",
+      "descripcion": "Control lunes de BH, Urea, Creatinina y Electrolitos",
+      "prioridad": "CONTROL",
+      "turno": "MADRUGADA_04_06",
+      "horario_programado": "05:00 AM",
+      "es_visita_nocturna": true,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
+    },
+    {
+      "id": "PEND-7-02",
+      "tipo": "CUIDADO_ENFERMERIA",
+      "descripcion": "Aspiración de secreciones traqueales y curación por clínica de heridas",
+      "prioridad": "URGENTE",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": null,
+      "es_visita_nocturna": true,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
+    }
+  ],
+  "observaciones": [
+    "Gram de secreción traqueal reportó bacilos gramnegativos."
+  ],
+  "laboratorios": [
+    {
+      "fecha_hora": "2026-11-02",
+      "tipo_estudio": "BH y Creatinina",
+      "valores": {
+        "leucocitos": 7.99,
+        "hemoglobina": 12.4,
+        "creatinina": 1.78
+      },
+      "alerta_critica": null
+    }
+  ],
+  "cultivos": [],
+  "alertas_criticas": [
+    "ERC 3B con TFG 31.84"
+  ]
+}

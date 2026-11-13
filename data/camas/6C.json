@@ -1,0 +1,135 @@
+{
+  "cama": "6C",
+  "area": "HOSPITALIZACION",
+  "servicio_tratante": "Medicina Interna",
+  "nombre_completo": "ALMEIDA JARAMILLO JUAN CARLOS",
+  "hc": "2086486",
+  "cedula": "1705956132",
+  "edad": "65 años",
+  "sexo": "M",
+  "fecha_nacimiento": null,
+  "fecha_ingreso": null,
+  "dias_hospitalizacion": null,
+  "app": [
+    "Hipertensión arterial (2004)",
+    "Diabetes mellitus (2014)",
+    "Cefalea",
+    "Dolor miembro superior derecho"
+  ],
+  "aqx": [],
+  "alergias": [
+    "POLLO",
+    "ARÁNDANOS",
+    "AVENA"
+  ],
+  "diagnosticos_activos": [
+    "Adenopatías generalizadas en estudio",
+    "Hipertensión arterial",
+    "Diabetes mellitus tipo 2",
+    "Síndrome constitucional en estudio"
+  ],
+  "diagnosticos_pasivos": [],
+  "dieta": "Dieta hiposódica y para diabético fraccionada en 5 tomas (EXCLUIR POLLO, ARÁNDANO Y AVENA)",
+  "hidratacion": "Dispositivo salinizado sin heparina",
+  "ckd_epi": "103.42 ml/min/1.73m2",
+  "medicaciones": [
+    {
+      "nombre": "Amlodipino",
+      "dosis": "5 mg",
+      "via": "VO",
+      "frecuencia": "QD PM",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "Amitriptilina",
+      "dosis": "25 mg",
+      "via": "VO",
+      "frecuencia": "QD PM",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "Insulina Glargina",
+      "dosis": "8 UI",
+      "via": "SC",
+      "frecuencia": "cada mañana",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "Enoxaparina",
+      "dosis": "40 mg",
+      "via": "SC",
+      "frecuencia": "cada día",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    }
+  ],
+  "pendientes": [
+    {
+      "id": "PEND-6C-01",
+      "tipo": "IMAGEN_PROCEDIMIENTO",
+      "descripcion": "Insistir reporte TAC cráneo, cuello, tórax, abdomen y pelvis",
+      "prioridad": "URGENTE",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": null,
+      "es_visita_nocturna": true,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
+    },
+    {
+      "id": "PEND-6C-02",
+      "tipo": "IMAGEN_PROCEDIMIENTO",
+      "descripcion": "Insistir ecografía de tiroides y EDA/Colonoscopia",
+      "prioridad": "RUTINA",
+      "turno": "MANANA",
+      "horario_programado": null,
+      "es_visita_nocturna": false,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
+    }
+  ],
+  "observaciones": [
+    "Alerta estricta de alergia alimentaria a nutrición."
+  ],
+  "laboratorios": [
+    {
+      "fecha_hora": "2026-11-06",
+      "tipo_estudio": "BH y Bioquímica",
+      "valores": {
+        "hemoglobina_glicosilada": 9.96,
+        "glucosa": 135,
+        "creatinina": 0.63,
+        "plaquetas": 255000
+      },
+      "alerta_critica": null
+    }
+  ],
+  "cultivos": [],
+  "alertas_criticas": [
+    "HbA1c: 9.96%"
+  ]
+}
