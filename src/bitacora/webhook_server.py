@@ -264,6 +264,55 @@ async def receive_whatsapp_message(request: Request) -> dict[str, Any]:
     texto_limpio = re.sub(r"^@\d+\s*", "", texto_mensaje).strip()
     texto_sin_robotina = strip_robotina(texto_limpio)
     cmd = texto_sin_robotina.lower()
+    cmd_norm = normalize_text(cmd)
+
+    # 0. MANUAL DE OPERACIONES DE ROBOTINA (respuesta directa e instantánea)
+    if cmd_norm in ("manual", "!manual", "manual de uso", "manual de operaciones") or any(
+        w in cmd_norm
+        for w in [
+            "manual de operaciones",
+            "dame el manual",
+            "dame tu manual",
+            "ver el manual",
+            "manual de robotina",
+        ]
+    ):
+        return {
+            "status": "success",
+            "tipo_accion": "MANUAL_OPERACIONES",
+            "reply": (
+                "📖 *MANUAL DE OPERACIONES — ROBOTINA (24/7)*\n"
+                "━━━━━━━━━━━━━━━━━━━━━━\n"
+                "No necesitas comandos rígidos: mencióname (`Robotina ...`) en lenguaje natural.\n\n"
+                "📋 *1. CONSULTAS CLÍNICAS*\n"
+                "• `Robotina cómo está la 6A` ➔ Ficha clínica, labs y pendientes.\n"
+                "• `Robotina qué exámenes tiene don Rodríguez` ➔ Busca por apellido.\n"
+                "• `Robotina qué antibiótico tiene 6A?` ➔ Consulta puntual con IA.\n"
+                "• `Robotina pendientes` ➔ Checklist nocturno de guardia.\n"
+                "• `Robotina camas` ➔ Lista de todas las camas censadas.\n\n"
+                "🔬 *2. RESULTADOS Y EVOLUCIÓN*\n"
+                "• `Robotina la gasometría de 6A es pH 7.38, lactato 1.2`\n"
+                "• `6A resultado: Sodio 136 normal`\n"
+                "• `Robotina evolución 6A: paciente afebril, estable`\n\n"
+                "📌 *3. PENDIENTES DE GUARDIA*\n"
+                "• *Crear:* `6A: Gasometría STAT 21:30` o `Robotina anota en 8A control de sodio`\n"
+                "• *Completar:* `Robotina ya se completó el sodio de 8A`\n\n"
+                "🏥 *4. INGRESOS Y EGRESOS*\n"
+                "• *Ingreso:* `Robotina ingresa en 6A a Juan Pérez de 54 años con dx Neumonía`\n"
+                "• *Egreso:* `Robotina saca al paciente de 6A por alta médica`\n\n"
+                "⏰ *5. RECORDATORIOS (HORA ECUADOR)*\n"
+                "• *Programar:* `Robotina recuérdanos a las 7 pm el sodio de 8A`\n"
+                "• *Consultar:* `Robotina recordatorios`\n\n"
+                "📄 *6. BITÁCORA PDF (ENTREGA DE GUARDIA)*\n"
+                "• *Automático:* Todos los días a las *05:00 AM (Ecuador)* envío el PDF al grupo.\n"
+                "• *Manual:* `Robotina genera el pdf`\n"
+                "• 📥 PDF: https://bitacora-guardia-production.up.railway.app/descargar/bitacora.pdf\n"
+                "• 🌐 Web: https://bitacora-guardia-production.up.railway.app/descargar/bitacora.html\n"
+                "━━━━━━━━━━━━━━━━━━━━━━\n"
+                "💡 _Si el QR se desconecta, entra a:_ https://bitacora-guardia-production.up.railway.app"
+            ),
+        }
+
     bitacora_path = get_active_bitacora_path()
     bitacora = consolidar_bitacora(bitacora_path)
 

@@ -236,6 +236,18 @@ def test_daily_pdf_scheduler_ecuador_timezone(tmp_path, monkeypatch) -> None:
     assert reminders.should_publish_daily_pdf(ahora=dt_next_day) is True
 
 
+def test_robotina_manual_operaciones() -> None:
+    for msg in ("Robotina dame tu manual de operaciones", "Robotina dame el manual"):
+        res = client.post("/whatsapp/webhook", json={"message": msg})
+        assert res.status_code == 200
+        data = res.json()
+        assert data["status"] == "success"
+        assert data["tipo_accion"] == "MANUAL_OPERACIONES"
+        assert "MANUAL DE OPERACIONES" in data["reply"]
+        assert "05:00 AM" in data["reply"]
+
+
+
 
 
 
