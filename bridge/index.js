@@ -110,9 +110,13 @@ function requestHandler(req, res) {
     req.on("end", async () => {
       try {
         const payload = JSON.parse(body || "{}");
+        const rawChatId = payload.chatId;
         const chatId =
-          payload.chatId ||
-          (payload.preferGroup ? lastGroupChatId || lastActiveChatId : lastActiveChatId || lastGroupChatId);
+          rawChatId && rawChatId.endsWith("@g.us")
+            ? rawChatId
+            : payload.preferGroup && lastGroupChatId
+              ? lastGroupChatId
+              : rawChatId || lastGroupChatId || lastActiveChatId;
         const text = payload.text;
         const documentPath = payload.documentPath;
 
