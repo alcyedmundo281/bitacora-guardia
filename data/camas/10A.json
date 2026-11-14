@@ -185,7 +185,7 @@
     {
       "id": "PEND-10A-09",
       "tipo": "LABORATORIO",
-      "descripcion": "ELECTROLITOS (GSA 16H26): K: 3.3 (DESCENSO EN RELACION AL SERICO MATUTINO DE",
+      "descripcion": "ELECTROLITOS (GSA 16H26): K: 3.3 (DESCENSO EN RELACIÓN AL SÉRICO MATUTINO DE",
       "prioridad": "RUTINA",
       "turno": "NOCTURNA_20_24",
       "horario_programado": null,
@@ -220,14 +220,14 @@
     }
   ],
   "observaciones": [
-    "IC HEMATOLOGIA",
-    "IC CIRUGIA GENERAL",
-    "IC NEUMOLOGIA (INICIO DE FTR)",
+    "IC HEMATOLOGÍA",
+    "IC CIRUGÍA GENERAL",
+    "IC NEUMOLOGÍA (INICIO DE FTR)",
     "IC UROLOGIA"
   ],
   "laboratorios": [
     {
-      "fecha_hora": "2026-11-13",
+      "fecha_hora": "2026-11-14",
       "tipo_estudio": "Laboratorios / Gasometría",
       "valores": {
         "resumen": "- LITIASIS RENAL, YA HAN REALIZADO LITOTRICIA - COLELITIASIS DESDE ENERO 2026 - OSTEOPOROSIS - PROLAPSO VESICAL DESDE HACE 4 MESES - INFECCION DE VIAS URINARIAS A REPETICIÓN"

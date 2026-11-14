@@ -83,6 +83,19 @@
       "nota": null
     },
     {
+      "nombre": "IBUPROFENO 400 MG VO QD X 15 DIAS",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
       "nombre": "PARACETAMOL 1 GR VIA ORAL CADA 8 HORAS",
       "dosis": "",
       "via": "",
@@ -96,59 +109,7 @@
       "nota": null
     },
     {
-      "nombre": "ENOXAPARINA 40 MG SC CADA DIA",
-      "dosis": "",
-      "via": "",
-      "frecuencia": "",
-      "fecha_inicio": null,
-      "dias_tratamiento": null,
-      "indicacion_cie10": null,
-      "suspendido": false,
-      "diferido": false,
-      "prn": false,
-      "nota": null
-    },
-    {
       "nombre": "INSULINA NPH 12 UI SC AM Y 6 I SC PM",
-      "dosis": "",
-      "via": "",
-      "frecuencia": "",
-      "fecha_inicio": null,
-      "dias_tratamiento": null,
-      "indicacion_cie10": null,
-      "suspendido": false,
-      "diferido": false,
-      "prn": false,
-      "nota": null
-    },
-    {
-      "nombre": "180 - 230 MG/DL: 2 UI SUBCUTANEO",
-      "dosis": "",
-      "via": "",
-      "frecuencia": "",
-      "fecha_inicio": null,
-      "dias_tratamiento": null,
-      "indicacion_cie10": null,
-      "suspendido": false,
-      "diferido": false,
-      "prn": false,
-      "nota": null
-    },
-    {
-      "nombre": "231 - 280 MG/DL: 4 UI SUBCUTANEO",
-      "dosis": "",
-      "via": "",
-      "frecuencia": "",
-      "fecha_inicio": null,
-      "dias_tratamiento": null,
-      "indicacion_cie10": null,
-      "suspendido": false,
-      "diferido": false,
-      "prn": false,
-      "nota": null
-    },
-    {
-      "nombre": "281 - 330 MG/DL: 6 UI SUBCUTANEO",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -249,7 +210,7 @@
     {
       "id": "PEND-6C-08",
       "tipo": "LABORATORIO",
-      "descripcion": "DIAGNOSTICO",
+      "descripcion": "DIAGNÓSTICO",
       "prioridad": "RUTINA",
       "turno": "NOCTURNA_20_24",
       "horario_programado": null,
@@ -310,7 +271,7 @@
   "observaciones": [],
   "laboratorios": [
     {
-      "fecha_hora": "2026-11-13",
+      "fecha_hora": "2026-11-14",
       "tipo_estudio": "Laboratorios / Gasometría",
       "valores": {
         "resumen": "2026/11/09 TSH.: 1.30 INR.: 1.14 TIEMPO DE PROTROMBINA (TP).: 12.4 TIEMPO DE TROMBOPLASTINA (TTP)..: 28.3 Leucocitos (WBC).: 5.67 Hemoglobina (HGB).: 16.0 Hematocrito (HCT).: 47.9 Eosinófilos %.: 2.7 Linfocitos %.: 36.6 Neutrofilos %.: 54.1 COLESTEROL HDL: 32.10 COLESTEROL LDL: 104.70 GLUCOSA.: 98 CLORO: 106 POTASIO: 3.84 SODIO: 138.2 CALCIO IONICO"

@@ -2,29 +2,31 @@
   "cama": "10C",
   "area": "HOSPITALIZACION",
   "servicio_tratante": null,
-  "nombre_completo": "CHANGO GADVAY MARIA ADELAIDA",
-  "hc": "1996362",
-  "cedula": null,
-  "edad": "65 AÑOS",
+  "nombre_completo": "BENAVIDES ANA LUCIA C",
+  "hc": "639501",
+  "cedula": "1000997724",
+  "edad": "70 años",
   "sexo": null,
   "fecha_nacimiento": null,
   "fecha_ingreso": null,
   "dias_hospitalizacion": null,
   "app": [
-    "ARTRITIS REUMATOIDE HACE 14 AÑOS",
-    "FIBROMIALGIA HACE 10 MESES"
+    "FRACTURA DE COSTILLAS DE LADO IZQUIERDO",
+    "INSUFICIENCIA CARDIACA CONGESTIVA",
+    "ENFERMEDAD RENAL CRÓNICA",
+    "HIPERTENSIÓN PORTAL",
+    "FIBROMIALGIA",
+    "HIPOTIROIDISMO",
+    "GOTA",
+    "ISQUEMIA MESENTÉRICA SEGMENTARIA"
   ],
   "aqx": [],
   "alergias": [],
   "diagnosticos_activos": [
-    "DIAGNOSTICOS ACTIVOS:",
-    "MIELITIS TRANSVERSA AUTOINMUNE / LESION INTRAMEDULAR C1 (EN RESOLUCION",
-    "PARCIAL)",
-    "ARTRITIS REUMATOIDE ACTIVA EN TRATAMIENTO CON INMUNOGLOBULINA",
-    "POLINEUROPATIA AXONAL SENSITIVO-MOTORA / ATROFIA MUSCULAR",
-    "HIPOPOTASEMIA MODERADA CRONICA / PROTEINURIA NO NEFROTICA",
-    "TROMBOEMBOLIA PULMONAR EN ESTUDIO BAJO ANTICOAGULACION",
-    "ULCERA POR PRESION SACRA GRADO I"
+    "DERRAME PLEURAL TABICADO IZQUIERDO",
+    "NEUMONÍA ASOCIADA A CUIDADOS DE LA SALUD",
+    "DESCARTAR PROGRESIÓN DE PATOLOGIA ONCOLOGICA (CANCER DE MAMA/CERVIX)",
+    "PORTADORA DE YEYUNOSTOMÍA"
   ],
   "diagnosticos_pasivos": [],
   "dieta": null,
@@ -32,7 +34,7 @@
   "ckd_epi": null,
   "medicaciones": [
     {
-      "nombre": "IV PASAR EN 4 HORAS",
+      "nombre": "SOLUCIÓN SALINA 0.9% 1000 ML PASAR 40 ML/HORA",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -45,7 +47,7 @@
       "nota": null
     },
     {
-      "nombre": "ENOXAPARINA 80MG SC CADA 12 HORAS",
+      "nombre": "MEROPENEM 1G IV CADA 8 HORAS (FI: 11/11/2026 D3 B99)",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -58,7 +60,7 @@
       "nota": null
     },
     {
-      "nombre": "ESPIRONOLACTONA 50MG VO CADA DIA",
+      "nombre": "PARACETAMOL 1 GR IV CADA 8 HORAS",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -71,46 +73,7 @@
       "nota": null
     },
     {
-      "nombre": "TRAMADOL 50MG + 50ML SS 0.9% IV CADA 12 HORAS",
-      "dosis": "",
-      "via": "",
-      "frecuencia": "",
-      "fecha_inicio": null,
-      "dias_tratamiento": null,
-      "indicacion_cie10": null,
-      "suspendido": false,
-      "diferido": false,
-      "prn": false,
-      "nota": null
-    },
-    {
-      "nombre": "METOCLOPRAMIDA 10MG IV ANTES DE TRAMADOL",
-      "dosis": "",
-      "via": "",
-      "frecuencia": "",
-      "fecha_inicio": null,
-      "dias_tratamiento": null,
-      "indicacion_cie10": null,
-      "suspendido": false,
-      "diferido": false,
-      "prn": false,
-      "nota": null
-    },
-    {
-      "nombre": "LACTULOSA 60 ML VO CADA DIA",
-      "dosis": "",
-      "via": "",
-      "frecuencia": "",
-      "fecha_inicio": null,
-      "dias_tratamiento": null,
-      "indicacion_cie10": null,
-      "suspendido": false,
-      "diferido": false,
-      "prn": false,
-      "nota": null
-    },
-    {
-      "nombre": "QUETIPINA 25MG VO HS (19H00)",
+      "nombre": "ENOXAPARINA 40 MG SC CADA DIA",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -127,55 +90,7 @@
     {
       "id": "PEND-10C-01",
       "tipo": "LABORATORIO",
-      "descripcion": "E: LABS: HBS, HBC, HEPATITIS C, VIH, QUANTIFERON PENDIENTE",
-      "prioridad": "URGENTE",
-      "turno": "NOCTURNA_20_24",
-      "horario_programado": null,
-      "es_visita_nocturna": true,
-      "estado": "PENDIENTE",
-      "responsable": null,
-      "resultado_obtenido": null
-    },
-    {
-      "id": "PEND-10C-02",
-      "tipo": "LABORATORIO",
-      "descripcion": "L: HOY BH UREA CREATININA ELECTROLITOS DIMERO D MAGNESIO CALCIO IONICO",
-      "prioridad": "URGENTE",
-      "turno": "NOCTURNA_20_24",
-      "horario_programado": null,
-      "es_visita_nocturna": true,
-      "estado": "PENDIENTE",
-      "responsable": null,
-      "resultado_obtenido": null
-    },
-    {
-      "id": "PEND-10C-03",
-      "tipo": "INTERCONSULTA",
-      "descripcion": "C: ORDENES DE REUMATOLOGIA (DIARIO)",
-      "prioridad": "RUTINA",
-      "turno": "NOCTURNA_20_24",
-      "horario_programado": null,
-      "es_visita_nocturna": false,
-      "estado": "PENDIENTE",
-      "responsable": null,
-      "resultado_obtenido": null
-    },
-    {
-      "id": "PEND-10C-04",
-      "tipo": "INTERCONSULTA",
-      "descripcion": "IC FISIROTERAPIA MOTORA",
-      "prioridad": "URGENTE",
-      "turno": "NOCTURNA_20_24",
-      "horario_programado": null,
-      "es_visita_nocturna": true,
-      "estado": "PENDIENTE",
-      "responsable": null,
-      "resultado_obtenido": null
-    },
-    {
-      "id": "PEND-10C-05",
-      "tipo": "LABORATORIO",
-      "descripcion": "O: NOVEDADES",
+      "descripcion": "LABORATORIO CENTRAL 13/11/2026: BIOMETRÍA, LDH, PCR, ELECTROLITOS, MAGNESIO, CALCIO IÓNICO, PROTEÍNAS TOTALES, ALBÚMINA",
       "prioridad": "RUTINA",
       "turno": "NOCTURNA_20_24",
       "horario_programado": null,
@@ -185,21 +100,8 @@
       "resultado_obtenido": null
     }
   ],
-  "observaciones": [
-    "LABORATORIOS (13H58): K: 3.46 (EN FRANCA MEJORIA TRAS REPOSICION AM), MG: 1.77,",
-    "NA: 135.3, CL: 102. FUNCION RENAL CONSERVADA (CR 0.42, UREA 33.4). DIMERO D EN",
-    "DESCENSO (2.12 VS 6.44 PREVIO). LEUCOCITOS 6.73, HB 11.6"
-  ],
-  "laboratorios": [
-    {
-      "fecha_hora": "2026-11-13",
-      "tipo_estudio": "Laboratorios / Gasometría",
-      "valores": {
-        "resumen": "2026/11/07 PCR CUANTITATIVO ULTRASENSIB..: 45.90 LEUCOCITOS (WBC 6.21 HEMOGLOBINA (HGB 12.2 HEMATOCRITO (HCT 37.9 PLAQUETAS 523.000 CLORO 105 POTASIO 2.81 SODIO 140.3 NITROGENO UREICO EN SUERO 10 UREA SUERO 21.8 CREATININA 0.36"
-      },
-      "alerta_critica": null
-    }
-  ],
+  "observaciones": [],
+  "laboratorios": [],
   "cultivos": [],
   "alertas_criticas": []
 }

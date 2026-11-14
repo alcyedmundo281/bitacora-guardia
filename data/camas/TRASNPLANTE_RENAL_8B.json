@@ -31,7 +31,7 @@
   "ckd_epi": null,
   "medicaciones": [
     {
-      "nombre": "PARACETAMOL 1 G IV STAT Y PRN",
+      "nombre": "LEVOTIROXINA 75 UG P.O. QD",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -44,7 +44,7 @@
       "nota": null
     },
     {
-      "nombre": "FLUOXETINA 20 MG VO QD",
+      "nombre": "PARACETAMOL 1 G P.O. PRN (DOLOR O FIEBRE)",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -57,33 +57,7 @@
       "nota": null
     },
     {
-      "nombre": "PREGABALINA 50 MG VO QD EN LA NOCHE",
-      "dosis": "",
-      "via": "",
-      "frecuencia": "",
-      "fecha_inicio": null,
-      "dias_tratamiento": null,
-      "indicacion_cie10": null,
-      "suspendido": false,
-      "diferido": false,
-      "prn": false,
-      "nota": null
-    },
-    {
-      "nombre": "RIVAROXABAN 15 MG VO QD ( PACIENTE TIENE)",
-      "dosis": "",
-      "via": "",
-      "frecuencia": "",
-      "fecha_inicio": null,
-      "dias_tratamiento": null,
-      "indicacion_cie10": null,
-      "suspendido": false,
-      "diferido": false,
-      "prn": false,
-      "nota": null
-    },
-    {
-      "nombre": "TRAMADOL 50 MILIGRAMOS INTRAVENOSO PRN (LENTO Y DILUIDO)",
+      "nombre": "TRAMADOL 50 MG IV LENTO Y DILUIDO PRN",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -100,11 +74,11 @@
     {
       "id": "PEND-TRASNPLANTERENAL8B-01",
       "tipo": "LABORATORIO",
-      "descripcion": "ELECTROMIOGRAFÍA",
-      "prioridad": "RUTINA",
+      "descripcion": "ELECTROMIOGRAFÍA PENDIENTE FECHA",
+      "prioridad": "URGENTE",
       "turno": "NOCTURNA_20_24",
       "horario_programado": null,
-      "es_visita_nocturna": false,
+      "es_visita_nocturna": true,
       "estado": "PENDIENTE",
       "responsable": null,
       "resultado_obtenido": null
@@ -123,7 +97,16 @@
     }
   ],
   "observaciones": [],
-  "laboratorios": [],
+  "laboratorios": [
+    {
+      "fecha_hora": "2026-11-14",
+      "tipo_estudio": "Laboratorios / Gasometría",
+      "valores": {
+        "resumen": "INTERCONSULTAR A NEUMOLOGIA SI SATURACION BAJA DE 85%, PREVIO GASOMETRIA"
+      },
+      "alerta_critica": null
+    }
+  ],
   "cultivos": [],
   "alertas_criticas": []
 }

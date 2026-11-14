@@ -1,29 +1,27 @@
 {
-  "cama": "ABREVIADO 3B",
-  "area": "EMERGENCIA_OBSERVACION",
+  "cama": "PERI_15",
+  "area": "PERIFERICOS",
   "servicio_tratante": null,
-  "nombre_completo": "LIDIOMA MINANGO KATHERINE ELIZABETH C",
-  "hc": "1786985",
-  "cedula": "1720905486",
-  "edad": "24 AÑOS",
+  "nombre_completo": "UBILLUS ARGUERO MARIA TERESA",
+  "hc": "2090357",
+  "cedula": "1723906507",
+  "edad": "35 AÑOS",
   "sexo": null,
   "fecha_nacimiento": null,
   "fecha_ingreso": null,
   "dias_hospitalizacion": null,
   "app": [
-    "ANTECEDENTES PATOLOGICOS PERSONALES:",
-    "CLINICOS:",
-    "MIOSITIS NECROTIZANTE INMUNOMEDIADA",
-    "QUIRURGICOS",
-    "APENDICECTOMIA",
-    "ALERGIAS:",
-    "NO REFIERE"
+    "PARALISIS FACIAL HACE 6 MESES",
+    "ANTECEDENTES QUIRÚRGICOS:",
+    "APENDICECTOMÍA",
+    "LIGADURA"
   ],
   "aqx": [],
   "alergias": [],
   "diagnosticos_activos": [
-    "MIOSITIS NECROTIZANTE INMUNOMEDIADA",
-    "REFRACTARIEDAD A CORTICOTERAPIA"
+    "390 OTROS TRASTORNOS DEL SISTEMA URINARIO",
+    "INFECCION DE VIAS URINARIAS, SITIO NO ESPECIFICADO",
+    "INFECCION DE VIAS URINARIAS, SITIO NO ESPECIFICADO"
   ],
   "diagnosticos_pasivos": [],
   "dieta": null,
@@ -31,7 +29,7 @@
   "ckd_epi": null,
   "medicaciones": [
     {
-      "nombre": "PARACETAMOL 1 GR INTRAVENOSO POR RAZONES NECESARIAS",
+      "nombre": "MEROPENEM 500 MG IV CADA 8 HORAS (O), CIE N39.0 FI 13/11/26",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -44,7 +42,7 @@
       "nota": null
     },
     {
-      "nombre": "PREDNISONA 30 MG VO QD",
+      "nombre": "PARACETAMOL 1 GRAMO INTRAVENOSO CADA 8 HORAS",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -57,7 +55,7 @@
       "nota": null
     },
     {
-      "nombre": "OMEPRAZOL 20 MG VO QD",
+      "nombre": "KETOROLACO 30 MG IV CADA 12 HORAS POR HOY Y DESDE MA#ANA SOLO PRN",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -70,7 +68,7 @@
       "nota": null
     },
     {
-      "nombre": "COTRIMOZAXOL 800 / 160 MG LUNES MIERCOLES Y VIERNES",
+      "nombre": "METOCLOPRAMIDA 10 MG IV CADA 12 HORAS",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -83,20 +81,7 @@
       "nota": null
     },
     {
-      "nombre": "VITAMINA D 2000 UI VO QD",
-      "dosis": "",
-      "via": "",
-      "frecuencia": "",
-      "fecha_inicio": null,
-      "dias_tratamiento": null,
-      "indicacion_cie10": null,
-      "suspendido": false,
-      "diferido": false,
-      "prn": false,
-      "nota": null
-    },
-    {
-      "nombre": "AZATIOPRINA 100 MG VO QD TIENE",
+      "nombre": "L: NA, POTASIO, CL, MAGNESIO, PCT, EMO, UROCULTIVO, GRAM STAT",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -111,9 +96,9 @@
   ],
   "pendientes": [
     {
-      "id": "PEND-ABREVIADO3B-01",
+      "id": "PEND-PERI15-01",
       "tipo": "IMAGEN_PROCEDIMIENTO",
-      "descripcion": "PD TAC DE TORAX",
+      "descripcion": "UROTAC SIMPLE. HACER INFORMAR",
       "prioridad": "URGENTE",
       "turno": "NOCTURNA_20_24",
       "horario_programado": null,
@@ -123,22 +108,10 @@
       "resultado_obtenido": null
     },
     {
-      "id": "PEND-ABREVIADO3B-02",
-      "tipo": "INTERCONSULTA",
-      "descripcion": "INDICACIONES DE REUMATOLOGIA",
-      "prioridad": "RUTINA",
-      "turno": "NOCTURNA_20_24",
-      "horario_programado": null,
-      "es_visita_nocturna": false,
-      "estado": "PENDIENTE",
-      "responsable": null,
-      "resultado_obtenido": null
-    },
-    {
-      "id": "PEND-ABREVIADO3B-03",
-      "tipo": "IMAGEN_PROCEDIMIENTO",
-      "descripcion": "ECOCARDIOGRAMA PD TURNO",
-      "prioridad": "URGENTE",
+      "id": "PEND-PERI15-02",
+      "tipo": "LABORATORIO",
+      "descripcion": "NA, POTASIO, CL, MAGNESIO, PCT, EMO, UROCULTIVO, GRAM STAT",
+      "prioridad": "STAT",
       "turno": "NOCTURNA_20_24",
       "horario_programado": null,
       "es_visita_nocturna": true,
@@ -148,16 +121,7 @@
     }
   ],
   "observaciones": [],
-  "laboratorios": [
-    {
-      "fecha_hora": "2026-11-13",
-      "tipo_estudio": "Laboratorios / Gasometría",
-      "valores": {
-        "resumen": "11/11/2026 PCR 1.11 / INR.1.19 (TP).: 12.9 (TTP): 27.3 LEUCOCITOS : 6.83 (HB).: 15.1 MONOCITOS.: 0.30 EOSINOFILOS.: 0.05 LINFOCITOS..: 2.51 NEUTROFILOS 3.90 PLAQU: 448.000 2026/11/04 PCR : 2.24 AST .: 133.0 ALT : 223.0 CPK...: 5798.0 * COLESTEROL.: 180 TRIGLI 92 F-ALKALINA...: 103 GGT...: 18 . CL: 108, K: 4.5, SODIO: 140. . CREA. 0.53 . EMO NO INFE"
-      },
-      "alerta_critica": null
-    }
-  ],
+  "laboratorios": [],
   "cultivos": [],
   "alertas_criticas": []
 }

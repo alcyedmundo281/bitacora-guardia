@@ -27,7 +27,7 @@
   "ckd_epi": null,
   "medicaciones": [
     {
-      "nombre": "TFG: 91.32 ML/MIN/M2 (CREATININA 0.57 2026/11/12 )",
+      "nombre": "AMPICILINA MAS SULBACTAM 3G IV CADA 6HORAS FI: 12.11.2026 D:1 CIE10: A419",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -40,7 +40,7 @@
       "nota": null
     },
     {
-      "nombre": "AMPICILINA MAS SULBACTAM 3G IV CADA 6HORAS FI: 12.11.2026 D:0 CIE10: A419",
+      "nombre": "PARACETAMOL 1G IV CADA 12 HORAS Y PRN",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -53,7 +53,20 @@
       "nota": null
     },
     {
-      "nombre": "PARACETAMOL 1G IV CADA 8 HORAS",
+      "nombre": "OMEPRAZOL 40 MG IV QD",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "ENOXAPARINA 40 MG SC CADA 24 HORAS MANTENER SI NO HAY SANGRADO",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -82,7 +95,19 @@
     {
       "id": "PEND-AB13-02",
       "tipo": "LABORATORIO",
-      "descripcion": "+OSMOLARIDAD URINARIA TSH + T4L",
+      "descripcion": "+OSMOLARIDAD URINARIA TSH + T4L **INSISTIR***",
+      "prioridad": "RUTINA",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": null,
+      "es_visita_nocturna": false,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
+    },
+    {
+      "id": "PEND-AB13-03",
+      "tipo": "LABORATORIO",
+      "descripcion": "L: LUNES BIOMETRIA HEMATICA, QUIMICA Y ELECTROLITOS",
       "prioridad": "RUTINA",
       "turno": "NOCTURNA_20_24",
       "horario_programado": null,
@@ -92,7 +117,10 @@
       "resultado_obtenido": null
     }
   ],
-  "observaciones": [],
+  "observaciones": [
+    "CONTROL SERIADO DE SODIO Y ELECTROLITOS CADA 4-6 HORAS DURANTE CORRECCION",
+    "ACTIVA"
+  ],
   "laboratorios": [],
   "cultivos": [],
   "alertas_criticas": []

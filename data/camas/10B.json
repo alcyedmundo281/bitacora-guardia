@@ -22,7 +22,7 @@
   "aqx": [],
   "alergias": [],
   "diagnosticos_activos": [
-    "CHOQUE SÉPTICO DE FOCO PULMONAR SUPEREDARP",
+    "CHOQUE SÉPTICO DE FOCO PULMONAR SUPEREDO",
     "TROMBOSIS VENOSO MI DERECHO",
     "FLUTTER AURICULAR DE CONDUCCIÓN VARIABLE",
     "CAHVAS 5 , HAS BLED 3",
@@ -34,7 +34,7 @@
   "ckd_epi": null,
   "medicaciones": [
     {
-      "nombre": "ENOXAPARINA 60 MG SC CADA 12 HORAS",
+      "nombre": "CEFEPIME 2 GRAMOS IV CADA 8 HORAS (0/7) FI: 13 NOV 2026 J189 (48 HORAS",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -47,7 +47,72 @@
       "nota": null
     },
     {
-      "nombre": "BISOPROLOL 2.5 MG VO QD",
+      "nombre": "CLINDAMICINA 600 MG IV CADA CADA 8 HORAS (D:0) FI: 13 NOV 2026 J189",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "ENOXAPARINA 40 MG SC CADA 12 HORAS",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "PARACETAMOL 1 GRAMOS IV CADA 8 HORAS",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "OMEPRAZOL 40 MG IV HS",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "BISOPROLOL 5 MG VO BID",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "ATORVASTATINA 40 MG VO HS",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -87,71 +152,6 @@
     },
     {
       "nombre": "INSULINA CRISTALINA POR ESCAPES:",
-      "dosis": "",
-      "via": "",
-      "frecuencia": "",
-      "fecha_inicio": null,
-      "dias_tratamiento": null,
-      "indicacion_cie10": null,
-      "suspendido": false,
-      "diferido": false,
-      "prn": false,
-      "nota": null
-    },
-    {
-      "nombre": "180 - 220 2 UI",
-      "dosis": "",
-      "via": "",
-      "frecuencia": "",
-      "fecha_inicio": null,
-      "dias_tratamiento": null,
-      "indicacion_cie10": null,
-      "suspendido": false,
-      "diferido": false,
-      "prn": false,
-      "nota": null
-    },
-    {
-      "nombre": "220 - 260 4 UI",
-      "dosis": "",
-      "via": "",
-      "frecuencia": "",
-      "fecha_inicio": null,
-      "dias_tratamiento": null,
-      "indicacion_cie10": null,
-      "suspendido": false,
-      "diferido": false,
-      "prn": false,
-      "nota": null
-    },
-    {
-      "nombre": "260 - 300 6 UI",
-      "dosis": "",
-      "via": "",
-      "frecuencia": "",
-      "fecha_inicio": null,
-      "dias_tratamiento": null,
-      "indicacion_cie10": null,
-      "suspendido": false,
-      "diferido": false,
-      "prn": false,
-      "nota": null
-    },
-    {
-      "nombre": "> 300 8 UI",
-      "dosis": "",
-      "via": "",
-      "frecuencia": "",
-      "fecha_inicio": null,
-      "dias_tratamiento": null,
-      "indicacion_cie10": null,
-      "suspendido": false,
-      "diferido": false,
-      "prn": false,
-      "nota": null
-    },
-    {
-      "nombre": "SI GLUCEMIA MENOR A 70, PASAR 200 ML DE DEXTROSA AL 10% Y REPETIR",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -275,11 +275,20 @@
     }
   ],
   "observaciones": [
-    "IC NEUROLOGIA",
-    "IC CARDIOLOGIA",
+    "IC NEUROLOGÍA",
+    "IC CARDIOLOGÍA",
     "IC TRABAJO SOCIAL"
   ],
-  "laboratorios": [],
+  "laboratorios": [
+    {
+      "fecha_hora": "2026-11-14",
+      "tipo_estudio": "Laboratorios / Gasometría",
+      "valores": {
+        "resumen": "CARDIO BISOPROLOL 5 BID ATB REINICIO, TAC CON PROCESO INFECCIOSO."
+      },
+      "alerta_critica": null
+    }
+  ],
   "cultivos": [],
   "alertas_criticas": []
 }

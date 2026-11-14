@@ -38,7 +38,7 @@
   "ckd_epi": null,
   "medicaciones": [
     {
-      "nombre": "CIPROFLOXACINO 500 MG VIA ORAL CADA 12 HORAS FI: 10/11/2026 D: 02",
+      "nombre": "MEROPENEM 500 MG VIA ORAL CADA 12 HORAS FI:13/11/2026 (DIA 0/5) (CIE10: A419)",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -51,7 +51,7 @@
       "nota": null
     },
     {
-      "nombre": "AMIKACINA 1 GRAMO VIA ORAL QD STA Y MAÑANA FI: 11/11/2026 D: 02/2",
+      "nombre": "AMIKACINA 1 GRAMO VÍA ORAL FI: 11/11/2026 D: 02/2 ***SUSPENDER***",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -64,7 +64,7 @@
       "nota": null
     },
     {
-      "nombre": "FLUCONAZOL 400 MG IV CADA DIA FI: 11/11/2026 D: 02/7",
+      "nombre": "FLUCONAZOL 400 MG IV CADA DIA FI: 11/11/2026 D: 03/7",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -240,7 +240,7 @@
   ],
   "laboratorios": [
     {
-      "fecha_hora": "2026-11-13",
+      "fecha_hora": "2026-11-14",
       "tipo_estudio": "Laboratorios / Gasometría",
       "valores": {
         "resumen": "UROCULTIVO: MICROORGANISMO: Proteus mirabilis AMIKACINA SENSIBLE / 4 ug/mL CEFTRIAXONA SENSIBLE / <= 0,25 ug/mL Cefazolina (O) SENSIBLE / <= 4 ug/mL GENTAMICINA RESISTENTE / 8 ug/mL TRIMETOPRIMA/SULFA RESISTENTE / >= 320 ug/mL CIPROFLOXACINO RESISTENTE / >= 4 ug/mL Resultado: Positivo; Contaje de Colonias: > 100.000 UFC/ml;"

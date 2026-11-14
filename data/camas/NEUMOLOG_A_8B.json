@@ -141,7 +141,16 @@
     "INDICACIONES DE UROLOGIA Y CONTROL POR LA CONSULTA EXTERNA",
     "BIOPSIA PERCUTÁNEA POR DR BORJA, AL MOMENTO CON PERMISO, REINTERCONSULTAR LUNES"
   ],
-  "laboratorios": [],
+  "laboratorios": [
+    {
+      "fecha_hora": "2026-11-14",
+      "tipo_estudio": "Laboratorios / Gasometría",
+      "valores": {
+        "resumen": "HOY SUSPENDE TRIK K: 3.9"
+      },
+      "alerta_critica": null
+    }
+  ],
   "cultivos": [],
   "alertas_criticas": []
 }

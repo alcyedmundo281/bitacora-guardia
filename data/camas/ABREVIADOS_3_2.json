@@ -1,0 +1,152 @@
+{
+  "cama": "ABREVIADOS 3_2",
+  "area": "EMERGENCIA_OBSERVACION",
+  "servicio_tratante": null,
+  "nombre_completo": "YAGUAPAZ HERNANDEZ HILDA GUADALUPE C",
+  "hc": "1998461",
+  "cedula": "1003728613",
+  "edad": "42 años",
+  "sexo": null,
+  "fecha_nacimiento": null,
+  "fecha_ingreso": null,
+  "dias_hospitalizacion": null,
+  "app": [
+    "ANTECEDENTES PERSONALES:",
+    "LUPUS ERITEMATOSO SISTEMICO DESDE HACE 10 AÑOS",
+    "INSUFICIENCIA RENAL CRONICA SIN NECESIDAD DE HEMODIALISIS AL MOMENTO",
+    "HIPERTENSION ARTERIAL SISTEMICA",
+    "CA DE CERVIX HACE 6 AÑOS YA TRATADO",
+    "ANTECEDENTES QUIRURGICOS:",
+    "APENDICECTOMAI",
+    "SALPINGETOMIA"
+  ],
+  "aqx": [],
+  "alergias": [],
+  "diagnosticos_activos": [
+    "DIAGNÓSTICO:",
+    "DERRAME PLEURAL BILATERAL",
+    "SOBRECARGA HÍDRICA",
+    "POLISEROSITIS A DC",
+    "TVP A DESCARTAR",
+    "LUPUS ERITEMATOSO SISTEMICO"
+  ],
+  "diagnosticos_pasivos": [],
+  "dieta": null,
+  "hidratacion": null,
+  "ckd_epi": null,
+  "medicaciones": [
+    {
+      "nombre": "PARACETAMOL 1 GR IV PRN",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "FUROSEMIDA 40 MG IV CADA 8 HORAS",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "CARVEDILOL 12.5MG VO BID",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "MICOFENOLATO 1 GR VO BID (2 TABLETAS 8 AM Y 2 TABLETAS PM)",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "HIDROXICLOROQUINA 200 MG TABLETA DIARIA 2 DE LA TARDE",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "PREDNISONA 5 MG TABLETA DIARIA 8 AM",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "AMLODIPINA 10 MG VIA ORAL CADA DIA",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    }
+  ],
+  "pendientes": [
+    {
+      "id": "PEND-ABREVIADOS32-01",
+      "tipo": "LABORATORIO",
+      "descripcion": "BIOMETRÍA, PCR, UREA, CREATININA, ELECTROLITOS, CALCIO IÓNICO, FÓSFORO, MAGNESIO, PROTEÍNAS TOTALES Y ALBÚMINA, HOY AM",
+      "prioridad": "URGENTE",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": null,
+      "es_visita_nocturna": true,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
+    }
+  ],
+  "observaciones": [
+    "VALORACION POR NEFROLOGIA",
+    "VALORACION POR REUMATOLOGIA",
+    "VALORACION POR CIRUGIA VASCULAR"
+  ],
+  "laboratorios": [],
+  "cultivos": [],
+  "alertas_criticas": []
+}

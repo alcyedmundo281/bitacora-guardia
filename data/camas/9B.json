@@ -33,19 +33,6 @@
   "ckd_epi": null,
   "medicaciones": [
     {
-      "nombre": "I. DEXTROSA 5% EN SOLUCION SALINA 1000 CC PASAR IV A 40 CC/H",
-      "dosis": "",
-      "via": "",
-      "frecuencia": "",
-      "fecha_inicio": null,
-      "dias_tratamiento": null,
-      "indicacion_cie10": null,
-      "suspendido": false,
-      "diferido": false,
-      "prn": false,
-      "nota": null
-    },
-    {
       "nombre": "PARACETAMOL 1 G IV PRN",
       "dosis": "",
       "via": "",
@@ -85,7 +72,7 @@
       "nota": null
     },
     {
-      "nombre": "ESPIRONOLACTONA 25 MG POR SONDA NASOGASTRICA",
+      "nombre": "ESPIRONOLACTONA 25 MG POR SONDA NASOGÁSTRICA",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -111,7 +98,7 @@
       "nota": null
     },
     {
-      "nombre": "INDICACIONES DE PSIQUIATRIA 04/11/2026",
+      "nombre": "DE GASTROSTOMIA DEXTROSA EN AGUA AL 10%, 50 ML CADA 6 HORAS",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -124,7 +111,7 @@
       "nota": null
     },
     {
-      "nombre": "ACIDO VALPROICO 250MG TABLETA VO BID POR 10 DIAS",
+      "nombre": "DILUIDA",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -137,7 +124,7 @@
       "nota": null
     },
     {
-      "nombre": "RISPERIDONA GOTAS: 5 GOTAS TID POR 10 DIAS",
+      "nombre": "CURACION DE AREA DE OSTOMIA CADA DIA CON SOLUCION SALINA Y POR",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -150,7 +137,20 @@
       "nota": null
     },
     {
-      "nombre": "LOSARTAN 100 MILIGRAMOS VIA ORAL DIFERIDO*****************",
+      "nombre": "ROTACION HORARIA - ANTI HORARIA DE SONDA QD",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "MEDIR RESIDUO GASTRICO ANTES DE SIGUIENTE ALIMENTACION",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -201,13 +201,10 @@
       "resultado_obtenido": null
     }
   ],
-  "observaciones": [
-    "GASTROSTOMÍA A LAS 16: 00 12/11/2026",
-    "INDICACIONES DE GASTROENTEROLOGIA POST PROCEDIMIENTO"
-  ],
+  "observaciones": [],
   "laboratorios": [
     {
-      "fecha_hora": "2026-11-13",
+      "fecha_hora": "2026-11-14",
       "tipo_estudio": "Laboratorios / Gasometría",
       "valores": {
         "resumen": "2026/11/13 CLORO....: 95 POTASIO...: 3.73 SODIO..: 129.2 CALCIO IONICO EN SUERO..: 1.16 CALCIO IONICO EN SUERO..: 1.16 CALCIO TOTAL: 7.3 FOSFORO..: 3.5 MAGNESIO: 1.63 . 2026/11/11 CLORO....: 93 POTASIO...: 4.68 SODIO: 127.8"

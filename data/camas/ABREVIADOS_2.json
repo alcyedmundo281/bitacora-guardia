@@ -150,20 +150,7 @@
       "nota": null
     }
   ],
-  "pendientes": [
-    {
-      "id": "PEND-ABREVIADOS2-01",
-      "tipo": "LABORATORIO",
-      "descripcion": "L: HBA1C Y TSH MAÑANA",
-      "prioridad": "CONTROL",
-      "turno": "NOCTURNA_20_24",
-      "horario_programado": null,
-      "es_visita_nocturna": true,
-      "estado": "PENDIENTE",
-      "responsable": null,
-      "resultado_obtenido": null
-    }
-  ],
+  "pendientes": [],
   "observaciones": [
     "2026/11/12",
     "ACIDO LACTICO...................: 2.4",

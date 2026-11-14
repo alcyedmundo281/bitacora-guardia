@@ -1,6 +1,6 @@
 {
-  "cama": "ABRE 1",
-  "area": "EMERGENCIA_OBSERVACION",
+  "cama": "HOSP_18",
+  "area": "HOSPITALIZACION",
   "servicio_tratante": null,
   "nombre_completo": "ORTIZ MARIA ANGELA C",
   "hc": "520780",
@@ -148,7 +148,7 @@
   ],
   "pendientes": [
     {
-      "id": "PEND-ABRE1-01",
+      "id": "PEND-HOSP18-01",
       "tipo": "LABORATORIO",
       "descripcion": "LUNES EXAMENES DE LABORATORIO DE CONTROL",
       "prioridad": "CONTROL",
@@ -160,7 +160,7 @@
       "resultado_obtenido": null
     },
     {
-      "id": "PEND-ABRE1-02",
+      "id": "PEND-HOSP18-02",
       "tipo": "LABORATORIO",
       "descripcion": "INDICACION DE INFECTOLOGIA",
       "prioridad": "RUTINA",
@@ -172,7 +172,7 @@
       "resultado_obtenido": null
     },
     {
-      "id": "PEND-ABRE1-03",
+      "id": "PEND-HOSP18-03",
       "tipo": "LABORATORIO",
       "descripcion": "PD RESULATDO DE UROCULTIVO",
       "prioridad": "RUTINA",
@@ -187,7 +187,7 @@
   "observaciones": [],
   "laboratorios": [
     {
-      "fecha_hora": "2026-11-13",
+      "fecha_hora": "2026-11-14",
       "tipo_estudio": "Laboratorios / Gasometría",
       "valores": {
         "resumen": "13/11/2026 PCR: 280, PCT: 20.2 . LEU: 10.3, HG: 12, HCTO: 36, NEU: 8.7, PLAQ: 185.000. CLORO: 96, POTASIO: 3.3, SODIO: 132. . UREA: 90 CREA: 1.77 . EMO INFECCIOSO"

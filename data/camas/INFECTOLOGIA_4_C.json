@@ -31,7 +31,7 @@
   "ckd_epi": null,
   "medicaciones": [
     {
-      "nombre": "IV PASAR A 32 ML/HORA",
+      "nombre": "INDICACIONES DE PSIQUIATRIA",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -44,20 +44,7 @@
       "nota": null
     },
     {
-      "nombre": "ACIDO VALPROICO 250 MG VO CADA 12 HORAS",
-      "dosis": "",
-      "via": "",
-      "frecuencia": "",
-      "fecha_inicio": null,
-      "dias_tratamiento": null,
-      "indicacion_cie10": null,
-      "suspendido": false,
-      "diferido": false,
-      "prn": false,
-      "nota": null
-    },
-    {
-      "nombre": "ENOXAPARINA 40MG SC CADA DIA",
+      "nombre": "HALOPERIDOL 5 MG VO PRN (AGITACION), NO SOBREPASAR 15 MG/DIA",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -74,6 +61,30 @@
     {
       "id": "PEND-INFECTOLOGIA4C-01",
       "tipo": "LABORATORIO",
+      "descripcion": "L: LAB URGENCIAS: ELECTROLITOS 20H00 Y 08H00",
+      "prioridad": "RUTINA",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": null,
+      "es_visita_nocturna": false,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
+    },
+    {
+      "id": "PEND-INFECTOLOGIA4C-02",
+      "tipo": "LABORATORIO",
+      "descripcion": "LAB GENERAL: CORTISOL A.M. ACTH, TSH, NA - K EN ORINA",
+      "prioridad": "RUTINA",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": null,
+      "es_visita_nocturna": false,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
+    },
+    {
+      "id": "PEND-INFECTOLOGIA4C-03",
+      "tipo": "LABORATORIO",
       "descripcion": "HEMOCULTIVO X 2 STAT",
       "prioridad": "STAT",
       "turno": "NOCTURNA_20_24",
@@ -82,33 +93,11 @@
       "estado": "PENDIENTE",
       "responsable": null,
       "resultado_obtenido": null
-    },
-    {
-      "id": "PEND-INFECTOLOGIA4C-02",
-      "tipo": "LABORATORIO",
-      "descripcion": "L: HOY 21H00 ELECTROLITOS MAGNESIO",
-      "prioridad": "URGENTE",
-      "turno": "NOCTURNA_20_24",
-      "horario_programado": null,
-      "es_visita_nocturna": true,
-      "estado": "PENDIENTE",
-      "responsable": null,
-      "resultado_obtenido": null
-    },
-    {
-      "id": "PEND-INFECTOLOGIA4C-03",
-      "tipo": "LABORATORIO",
-      "descripcion": "seguimiento por psiquiatria",
-      "prioridad": "RUTINA",
-      "turno": "NOCTURNA_20_24",
-      "horario_programado": null,
-      "es_visita_nocturna": false,
-      "estado": "PENDIENTE",
-      "responsable": null,
-      "resultado_obtenido": null
     }
   ],
-  "observaciones": [],
+  "observaciones": [
+    "REINTERCONSULTA A PSIQUIATRIA PARA CONTROL DE PATOLOGIA BASE"
+  ],
   "laboratorios": [],
   "cultivos": [],
   "alertas_criticas": []

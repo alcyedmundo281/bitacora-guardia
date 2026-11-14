@@ -43,19 +43,6 @@
       "nota": null
     },
     {
-      "nombre": "CAPSULAS DE SAL 1 GRAMO VIA ORAL QD",
-      "dosis": "",
-      "via": "",
-      "frecuencia": "",
-      "fecha_inicio": null,
-      "dias_tratamiento": null,
-      "indicacion_cie10": null,
-      "suspendido": false,
-      "diferido": false,
-      "prn": false,
-      "nota": null
-    },
-    {
       "nombre": "OMEPRAZOL 20 MG VO QD",
       "dosis": "",
       "via": "",
@@ -119,107 +106,63 @@
       "diferido": false,
       "prn": false,
       "nota": null
+    },
+    {
+      "nombre": "HIDROCORTISONA 50 MG IV CADA 12 HORAS DIA 1/5",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "METOTREXATO 15 MG VO SEMANAL",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "ACIDO FOLICO 1 MG VO QD",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "PREDNISONA 5 MG VO CADA 48 HORAS ******SUSPENDER*****",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
     }
   ],
   "pendientes": [
     {
       "id": "PEND-3B-01",
-      "tipo": "LABORATORIO",
-      "descripcion": "METOTREXATO 15 MG VO SEMANAL",
-      "prioridad": "RUTINA",
-      "turno": "NOCTURNA_20_24",
-      "horario_programado": null,
-      "es_visita_nocturna": false,
-      "estado": "PENDIENTE",
-      "responsable": null,
-      "resultado_obtenido": null
-    },
-    {
-      "id": "PEND-3B-02",
-      "tipo": "LABORATORIO",
-      "descripcion": "ACIDO FOLICO 1 MG VO QD",
-      "prioridad": "RUTINA",
-      "turno": "NOCTURNA_20_24",
-      "horario_programado": null,
-      "es_visita_nocturna": false,
-      "estado": "PENDIENTE",
-      "responsable": null,
-      "resultado_obtenido": null
-    },
-    {
-      "id": "PEND-3B-03",
-      "tipo": "LABORATORIO",
-      "descripcion": "PREDNISONA 5 MG VO CADA 48 HORAS",
-      "prioridad": "RUTINA",
-      "turno": "NOCTURNA_20_24",
-      "horario_programado": null,
-      "es_visita_nocturna": false,
-      "estado": "PENDIENTE",
-      "responsable": null,
-      "resultado_obtenido": null
-    },
-    {
-      "id": "PEND-3B-04",
-      "tipo": "LABORATORIO",
-      "descripcion": "CLOROQUINA 250 MG VO QD",
-      "prioridad": "RUTINA",
-      "turno": "NOCTURNA_20_24",
-      "horario_programado": null,
-      "es_visita_nocturna": false,
-      "estado": "PENDIENTE",
-      "responsable": null,
-      "resultado_obtenido": null
-    },
-    {
-      "id": "PEND-3B-05",
-      "tipo": "LABORATORIO",
-      "descripcion": "***SUSPENDER*** LOSARTAN 100 MG VO QD",
-      "prioridad": "RUTINA",
-      "turno": "NOCTURNA_20_24",
-      "horario_programado": null,
-      "es_visita_nocturna": false,
-      "estado": "PENDIENTE",
-      "responsable": null,
-      "resultado_obtenido": null
-    },
-    {
-      "id": "PEND-3B-06",
-      "tipo": "LABORATORIO",
-      "descripcion": "AMLODIPINO 5 MG VO QD",
-      "prioridad": "RUTINA",
-      "turno": "NOCTURNA_20_24",
-      "horario_programado": null,
-      "es_visita_nocturna": false,
-      "estado": "PENDIENTE",
-      "responsable": null,
-      "resultado_obtenido": null
-    },
-    {
-      "id": "PEND-3B-07",
-      "tipo": "LABORATORIO",
-      "descripcion": "QUETIAPINA 50 MG VO QD",
-      "prioridad": "RUTINA",
-      "turno": "NOCTURNA_20_24",
-      "horario_programado": null,
-      "es_visita_nocturna": false,
-      "estado": "PENDIENTE",
-      "responsable": null,
-      "resultado_obtenido": null
-    },
-    {
-      "id": "PEND-3B-08",
-      "tipo": "LABORATORIO",
-      "descripcion": "ESPIRONOLACTONA 25 MG VO QD",
-      "prioridad": "RUTINA",
-      "turno": "NOCTURNA_20_24",
-      "horario_programado": null,
-      "es_visita_nocturna": false,
-      "estado": "PENDIENTE",
-      "responsable": null,
-      "resultado_obtenido": null
-    },
-    {
-      "id": "PEND-3B-09",
       "tipo": "INTERCONSULTA",
       "descripcion": "C: IC A CLINICA DEL DOLOR YA REALIZADA POR DOLOR CRÓNICO DEBIDO A LESIONES CERVICALES",
       "prioridad": "STAT",
@@ -232,8 +175,7 @@
     }
   ],
   "observaciones": [
-    "L: LABORATORIO",
-    "ELECTROLITOS A LAS 21H00"
+    "L: ELECTROLITOS AM Y PM"
   ],
   "laboratorios": [],
   "cultivos": [],

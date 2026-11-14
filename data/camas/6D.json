@@ -70,7 +70,7 @@
       "nota": null
     },
     {
-      "nombre": "CEFTRIAXONA 1 GR IV CADA 12 HORAS (D:2) FI:10/11/2026 CIE10: A065",
+      "nombre": "CEFTRIAXONA 1 GR IV CADA 12 HORAS (D:4) FI:10/11/2026 CIE10: A065",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -83,7 +83,7 @@
       "nota": null
     },
     {
-      "nombre": "METRONIDAZOL 500 MG IV CADA 8 HORAS (D:2) FI:10/11/2026 CIE10: A065",
+      "nombre": "METRONIDAZOL 500 MG IV CADA 8 HORAS (D:4) FI:10/11/2026 CIE10: A065",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -152,7 +152,7 @@
     {
       "id": "PEND-6D-01",
       "tipo": "IMAGEN_PROCEDIMIENTO",
-      "descripcion": "E:PENDIENTE RX DE TÓRAX ANTEROPOSTERIOR Y LATERAL",
+      "descripcion": "E: PENDIENTE RX DE TÓRAX ANTEROPOSTERIOR Y LATERAL",
       "prioridad": "URGENTE",
       "turno": "NOCTURNA_20_24",
       "horario_programado": null,
@@ -164,7 +164,7 @@
     {
       "id": "PEND-6D-02",
       "tipo": "LABORATORIO",
-      "descripcion": "CIRUGIA PULMONAR ALTA",
+      "descripcion": "CIRUGÍA PULMONAR ALTA",
       "prioridad": "RUTINA",
       "turno": "NOCTURNA_20_24",
       "horario_programado": null,
@@ -177,10 +177,10 @@
   "observaciones": [],
   "laboratorios": [
     {
-      "fecha_hora": "2026-11-13",
+      "fecha_hora": "2026-11-14",
       "tipo_estudio": "Laboratorios / Gasometría",
       "valores": {
-        "resumen": "2026/11/12 PCR CUANTITATIVO ULTRASENSIBLE: 75.80 PROCALCITONINA LAB. CLINICO: 0.19 INR: 1.23 TIEMPO DE PROTROMBINA (TP): 13.3 TIEMPO DE TROMBOPLASTINA (TTP): 25.5 LEUCOCITOS (WBC): 4.65 HEMOGLOBINA (HGB): 13.7 HEMATOCRITO (HCT): 44.2 VOLUMEN CORP. MEDIO (MCV): 85.60 CONC. MEDIA HEMOG. (MCH): 26.6 LINFOCITOS: 0.78 NEUTROFILOS: 3.33 BASOFILOS: 0.040 "
+        "resumen": "2026/11/12 PCR CUANTITATIVO ULTRASENSIBLE: 75.80 PROCALCITONINA LAB. CLÍNICO: 0.19 INR: 1.23 TIEMPO DE PROTROMBINA (TP): 13.3 TIEMPO DE TROMBOPLASTINA (TTP): 25.5 LEUCOCITOS (WBC): 4.65 HEMOGLOBINA (HGB): 13.7 HEMATOCRITO (HCT): 44.2 VOLUMEN CORP. MEDIO (MCV): 85.60 CONC. MEDIA HEMOG. (MCH): 26.6 LINFOCITOS: 0.78 NEUTROFILOS: 3.33 BASÓFILOS: 0.040 "
       },
       "alerta_critica": null
     }

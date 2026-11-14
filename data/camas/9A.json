@@ -2,31 +2,29 @@
   "cama": "9A",
   "area": "HOSPITALIZACION",
   "servicio_tratante": null,
-  "nombre_completo": "ROSAS CORREA MARIA ESTHER C",
-  "hc": "124595",
-  "cedula": "0600433312",
-  "edad": "N/D",
+  "nombre_completo": "CHANCUSI COSTALES MONICA ELIZABETH C",
+  "hc": "347767",
+  "cedula": "1708946098",
+  "edad": "59 años",
   "sexo": null,
   "fecha_nacimiento": null,
   "fecha_ingreso": null,
   "dias_hospitalizacion": null,
   "app": [
-    "2010 CARDIOPATÍA ISQUÉMICA CRÓNICA SE DESCONOCE EVENTO AGUDO APARENTE IMPLANTE",
-    "DE 2 STENTS EN ARTERIA DESCONOCIDA (CLÍNICA PICHINCHA)",
-    "HIPOTIROIDISMO",
-    "HEMORRAGIA VÍTREA",
-    "ANTECEDENTES QUIRÚRGICOS",
-    "IMPLANTE DE 2 STENTS POR CARDIOPATÍA EN ARTERIA DESCONOCIDA",
-    "HISTERECTOMÍA",
-    "COLECISTECTOMÍA"
+    "ANTECEDENTES PERSONALES:",
+    "ANSIEDAD Y DEPRESIÓN DIAGNOSTICADA HACE 8 AÑOS",
+    "ANTECEDENTES QUIRURGICOS:",
+    "APENDICECTOMÍA",
+    "CESAREA X 3",
+    "OOFORECTOMÍA",
+    "HISTERECTOMIA ,",
+    "ALERGIAS A MEDICAMENTOS: PENICILINA"
   ],
   "aqx": [],
   "alergias": [],
   "diagnosticos_activos": [
-    "CA DE OVARIO CON ÍNDICE DE ROMA DE 97.9 (ALTO RIESGO PARA CÁNCER OVÁRICO EPITELIAL)",
-    "PERITONITIS BACTERIANA SUPERADA",
-    "DERRAME PLEURAL DERECHO. SUPERADO",
-    "HIPOACUSIA BILATERAL"
+    "EFECTO TOXICO ENVENENAMIENTO POR ANTIDEPRESIVO TRICICLICO CIE-10: T430 SUPERADO",
+    "TRASTORNO ANSIOSO DEPRESIVO CIE-10: F412"
   ],
   "diagnosticos_pasivos": [],
   "dieta": null,
@@ -34,7 +32,7 @@
   "ckd_epi": null,
   "medicaciones": [
     {
-      "nombre": "OMEPRAZOL 20 MG VIA ORAL CADA DIA AM",
+      "nombre": "ENOXAPARINA 40 MILIGRAMOS APLICAR SUBCUTANEO, CADA DIA",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -47,7 +45,7 @@
       "nota": null
     },
     {
-      "nombre": "ESPIRONOLACTONA 25 MG VO CADA DIA",
+      "nombre": "OMEPRAZOL 40 MILIGRAMOS INTRAVENOSO CADA DIA",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -60,7 +58,7 @@
       "nota": null
     },
     {
-      "nombre": "PARACETAMOL 1 GR VIA ORAL CADA 8 HORAS",
+      "nombre": "PARACETAMOL 1 GRAMO INTRAVENOSO POR RAZONES NECESARIAS",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -73,7 +71,7 @@
       "nota": null
     },
     {
-      "nombre": "TRAMADOL 100 MG IV CADA 12 HORAS",
+      "nombre": "SULFATO DE MAGNESIO 2 GRAMOS INTRAVENOSO CADA DIA",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -86,7 +84,7 @@
       "nota": null
     },
     {
-      "nombre": "METOCLOPRAMIDA 10 MG VO CADA 8 HORAS - 20 MIN ANTES DE CADA COMIDA",
+      "nombre": "METOCLOPRAMIDA 10 MILIGRAMOS IV CADA 8 HORAS",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -99,7 +97,7 @@
       "nota": null
     },
     {
-      "nombre": "MAGALDRATO CON SIMETICONA 10 CC POSTERIOR A CADA COMIDA",
+      "nombre": "******************INDICACIONES PSIQUIATRIA 13/11/26**************",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -112,46 +110,7 @@
       "nota": null
     },
     {
-      "nombre": "ENOXAPARINA 60 MG SC QD",
-      "dosis": "",
-      "via": "",
-      "frecuencia": "",
-      "fecha_inicio": null,
-      "dias_tratamiento": null,
-      "indicacion_cie10": null,
-      "suspendido": false,
-      "diferido": false,
-      "prn": false,
-      "nota": null
-    },
-    {
-      "nombre": "CAPSULAS DE SAL 1 GR MG VIA ORAL CADA DIA",
-      "dosis": "",
-      "via": "",
-      "frecuencia": "",
-      "fecha_inicio": null,
-      "dias_tratamiento": null,
-      "indicacion_cie10": null,
-      "suspendido": false,
-      "diferido": false,
-      "prn": false,
-      "nota": null
-    },
-    {
-      "nombre": "KETOROLACO 30 MG IV CADA 8 HORAS",
-      "dosis": "",
-      "via": "",
-      "frecuencia": "",
-      "fecha_inicio": null,
-      "dias_tratamiento": null,
-      "indicacion_cie10": null,
-      "suspendido": false,
-      "diferido": false,
-      "prn": false,
-      "nota": null
-    },
-    {
-      "nombre": "OMEPRAZOL 40 MG IV CADA DIA HORA SUEÑO",
+      "nombre": "RISPERIDONA 1 MG VO HS",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -168,11 +127,11 @@
     {
       "id": "PEND-9A-01",
       "tipo": "LABORATORIO",
-      "descripcion": "RADIOGRAFIA DE TORAX YA",
-      "prioridad": "STAT",
+      "descripcion": "SEGUIMIENTO POR PSIQUIATRIA",
+      "prioridad": "RUTINA",
       "turno": "NOCTURNA_20_24",
       "horario_programado": null,
-      "es_visita_nocturna": true,
+      "es_visita_nocturna": false,
       "estado": "PENDIENTE",
       "responsable": null,
       "resultado_obtenido": null
@@ -180,19 +139,7 @@
     {
       "id": "PEND-9A-02",
       "tipo": "LABORATORIO",
-      "descripcion": "HISOPADO RECTAL PARA BACTERIA RESISTENTES TOMADO",
-      "prioridad": "RUTINA",
-      "turno": "NOCTURNA_20_24",
-      "horario_programado": null,
-      "es_visita_nocturna": false,
-      "estado": "PENDIENTE",
-      "responsable": null,
-      "resultado_obtenido": null
-    },
-    {
-      "id": "PEND-9A-03",
-      "tipo": "LABORATORIO",
-      "descripcion": "DESTET DE OXIGENO",
+      "descripcion": "INDICACIONES DE PSIQUATRIA",
       "prioridad": "RUTINA",
       "turno": "NOCTURNA_20_24",
       "horario_programado": null,
@@ -202,20 +149,8 @@
       "resultado_obtenido": null
     }
   ],
-  "observaciones": [
-    "CITOLOGÍA DE BLOQUE CELULAR E INMUNOHISTOQUÍMICO EN BUSCA DE PRIMARIO",
-    "(PENDIENTE RESULTADO )"
-  ],
-  "laboratorios": [
-    {
-      "fecha_hora": "2026-11-13",
-      "tipo_estudio": "Laboratorios / Gasometría",
-      "valores": {
-        "resumen": "2026/11/01 HORA: CULTIVO DE LIQUIDO ASCÍTICO.....: A/B RESULTADOS: MICROORGANISMO: PSEUDOMONAS AERUGINOSA RESULTADO: POSITIVO; MICROORGANISMO RESISTENTE A CARBAPEN MICOS. NEGATIVO PARA PRODUCCI N E NZIM TICA DE CARBAPENEMASAS, RESISTENCIA MEDIADA POR IMPERMEABILIDAD; . 2026/11/12 ACIDO LACTICO: 2.2 GLU: 155.0 HCO3: 23.0 K: 4.1 NA: 131.0 O2HB: 87.4 "
-      },
-      "alerta_critica": null
-    }
-  ],
+  "observaciones": [],
+  "laboratorios": [],
   "cultivos": [],
   "alertas_criticas": []
 }

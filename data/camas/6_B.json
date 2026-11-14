@@ -1,6 +1,6 @@
 {
-  "cama": "EMER_5",
-  "area": "EMERGENCIA_OBSERVACION",
+  "cama": "6 B",
+  "area": "HOSPITALIZACION",
   "servicio_tratante": null,
   "nombre_completo": "CABEZAS ALMEIDA VICTOR MANUEL",
   "hc": "2067347",
@@ -15,8 +15,8 @@
     "HIPERTENSION ARTERIAL",
     "CA PROSTATA",
     "INSUFICIENCIA RENAL DIALISIS BISEMANAL",
-    "ANTECEDENTES QUIRURGICOS:",
-    "APENDICECTOMIA"
+    "ANTECEDENTES QUIRÚRGICOS:",
+    "APENDICECTOMÍA"
   ],
   "aqx": [],
   "alergias": [],
@@ -64,7 +64,7 @@
   ],
   "pendientes": [
     {
-      "id": "PEND-EMER5-01",
+      "id": "PEND-6B-01",
       "tipo": "IMAGEN_PROCEDIMIENTO",
       "descripcion": "PLACA ED PELVIS PENDIENTE REVISAR",
       "prioridad": "URGENTE",
@@ -76,9 +76,9 @@
       "resultado_obtenido": null
     },
     {
-      "id": "PEND-EMER5-02",
+      "id": "PEND-6B-02",
       "tipo": "LABORATORIO",
-      "descripcion": "EXAMENES LUEGO DE DIALISIS: BH, PCR, PROCALCITONINA",
+      "descripcion": "EXAMENES LUEGO DE DIÁLISIS: BH, PCR, PROCALCITONINA",
       "prioridad": "RUTINA",
       "turno": "NOCTURNA_20_24",
       "horario_programado": null,
@@ -91,10 +91,10 @@
   "observaciones": [
     "LABORATORIOS",
     "2026/11/11 13:44",
-    "CALCULO DE PLAQUETAS............: 130.000",
-    "Leucocitos (WBC)................: 5.81",
-    "Hemoglobina (HGB)...............: 10.8",
-    "Hematocrito (HCT)...............: 33.4"
+    "CÁLCULO DE PLAQUETAS 130.000",
+    "Leucocitos (WBC 5.81",
+    "Hemoglobina (HGB 10.8",
+    "Hematocrito (HCT 33.4"
   ],
   "laboratorios": [],
   "cultivos": [],

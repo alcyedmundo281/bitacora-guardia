@@ -1,10 +1,10 @@
 {
   "version_schema": "1.0.0",
-  "fecha_guardia": "2026-11-13",
-  "periodo": "13/11/2026 AL 14/11/2026",
+  "fecha_guardia": "2026-11-14",
+  "periodo": "14/11/2026",
   "medicos_guardia": [
     "MD. ZAMBRANO PG MEDICINA INTERNA",
-    "MD. BUENDIA MRA"
+    "MD. BUENDIA MRA MED INTERNA"
   ],
   "enlaces_utiles": {
     "censo_drive": "https://docs.google.com/document/d/1dm-8m2VOlTZfwYeORxcFuTDuFi2xitho/edit"

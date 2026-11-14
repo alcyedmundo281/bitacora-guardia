@@ -20,7 +20,10 @@
   "alergias": [],
   "diagnosticos_activos": [
     "ALTERACIÓN HIDROELECTROLÍTICA EN ESTUDIO",
-    "INFECCION DE VIAS URINARIA A DESCARTAR"
+    "INFECCION DE VIAS URINARIA A DESCARTAR",
+    "OTRAS ESPONDILOPATIAS INFLAMATORIAS",
+    "INFECCION DE DISCO INTERVERTEBRAL (PIOGENA)",
+    "INFECCION DE DISCO INTERVERTEBRAL (PIOGENA)"
   ],
   "diagnosticos_pasivos": [],
   "dieta": null,
@@ -28,7 +31,7 @@
   "ckd_epi": null,
   "medicaciones": [
     {
-      "nombre": "BUPRENORFINA 20 MG SC 1/4 (UN CUARTO) DE PARCHE, CAMBIO NCADA 72 HORAS CIE: 10",
+      "nombre": "BUPRENORFINA 20 MG SC 1/4 (UN CUARTO) DE PARCHE, CAMBIO CADA 72 HORAS CIE: 10",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -41,7 +44,20 @@
       "nota": null
     },
     {
-      "nombre": "PARACETAMOL 1 G P.O. CADA 8 HORAS",
+      "nombre": "LEVOTIROXINA 50 UG P.O. QD",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "PARACETAMOL 1 G I.V. PRN ( DOLOR )",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -67,7 +83,7 @@
       "nota": null
     },
     {
-      "nombre": "POLIETILENCLICOL 17 G DILUIDO EN 1 VASO DE AGUA PRN",
+      "nombre": "POLIETILENGLICOL 17 G DILUIDO EN 1 VASO DE AGUA PRN",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -93,7 +109,7 @@
       "nota": null
     },
     {
-      "nombre": "L: PENDIENTE UROCULTIVO",
+      "nombre": "CEFAZOLINA 1 G IV C/8H CIE 10:M463 DI: 13-XI-2026 D:0/28",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -110,7 +126,7 @@
     {
       "id": "PEND-INFECTO-01",
       "tipo": "LABORATORIO",
-      "descripcion": "INDICACIONES DE TRAUMATOLOGIA",
+      "descripcion": "INDICACIONES DE UROLOGIA",
       "prioridad": "RUTINA",
       "turno": "NOCTURNA_20_24",
       "horario_programado": null,
@@ -122,7 +138,7 @@
     {
       "id": "PEND-INFECTO-02",
       "tipo": "LABORATORIO",
-      "descripcion": "INDICACIONES DE UROLOGIA",
+      "descripcion": "CAMBIO DE PARCHE DOMINGO",
       "prioridad": "RUTINA",
       "turno": "NOCTURNA_20_24",
       "horario_programado": null,
@@ -133,32 +149,8 @@
     },
     {
       "id": "PEND-INFECTO-03",
-      "tipo": "INTERCONSULTA",
-      "descripcion": "REVALORACION POR NEUMOLOGIA",
-      "prioridad": "URGENTE",
-      "turno": "NOCTURNA_20_24",
-      "horario_programado": null,
-      "es_visita_nocturna": true,
-      "estado": "PENDIENTE",
-      "responsable": null,
-      "resultado_obtenido": null
-    },
-    {
-      "id": "PEND-INFECTO-04",
       "tipo": "LABORATORIO",
-      "descripcion": "VERIFICAR QUE SE COLOQUE PARCHE DE BUPRENORFINA",
-      "prioridad": "RUTINA",
-      "turno": "NOCTURNA_20_24",
-      "horario_programado": null,
-      "es_visita_nocturna": false,
-      "estado": "PENDIENTE",
-      "responsable": null,
-      "resultado_obtenido": null
-    },
-    {
-      "id": "PEND-INFECTO-05",
-      "tipo": "LABORATORIO",
-      "descripcion": "UROCULTIVO RESULTADO: NEGATIVO 09/11/2026 SIN DESARROLLO EN 48H DE INCUBACI N",
+      "descripcion": "UROCULTIVO RESULTADO: NEGATIVO",
       "prioridad": "RUTINA",
       "turno": "NOCTURNA_20_24",
       "horario_programado": null,
@@ -169,11 +161,13 @@
     }
   ],
   "observaciones": [
-    "PENDIENTE UROCULTIVO"
+    "UROCULTIVO NEGATIVO",
+    "HEMOCULTIVOS PENDIENTES SACADOS 13/11/2026",
+    "SE SOLICITA RMN DE COLUMNA CERVICAL, DORSAL Y LUMBAR PENDIENTE REALIZACION"
   ],
   "laboratorios": [
     {
-      "fecha_hora": "2026-11-13",
+      "fecha_hora": "2026-11-14",
       "tipo_estudio": "Laboratorios / Gasometría",
       "valores": {
         "resumen": "2026/11/11 ACIDO LACTICO...................: 1.9 BE..............................: -0.4 Ca..............................: 1.1 Cl..............................: 102.0 COHb............................: 2.9 Glu.............................: 123.0 HCO3............................: 23.3 Hct.............................: 37.4 K..........................."

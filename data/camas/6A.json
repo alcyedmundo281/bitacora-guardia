@@ -33,7 +33,7 @@
   "ckd_epi": null,
   "medicaciones": [
     {
-      "nombre": "PARACETAMOL 1 GRAMO VIA ORAL CADA 8 HORAS",
+      "nombre": "PARACETAMOL 1 GRAMO VÍA ORAL CADA 8 HORAS",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -263,7 +263,7 @@
     {
       "id": "PEND-6A-09",
       "tipo": "LABORATORIO",
-      "descripcion": "UREA 10% SEMISOLIDO CUTANEO APLICAR TOPICO BID POR 15 DIAS EN MANOS",
+      "descripcion": "UREA 10% SEMISÓLIDO CUTANEO APLICAR TOPICO BID POR 15 DIAS EN MANOS",
       "prioridad": "RUTINA",
       "turno": "NOCTURNA_20_24",
       "horario_programado": null,
@@ -286,19 +286,19 @@
     }
   ],
   "observaciones": [
-    "LABORATORIOS SOLICITADOS POR REUMATOLOGIA:",
-    "FACTOR REUMATOIDEO..............: 13.1",
-    "C3..............................: 0.85",
-    "C4..............................: 0.07",
-    "ANTICOAGULANTE LUPICO...........: 1.08",
+    "LABORATORIOS SOLICITADOS POR REUMATOLOGÍA:",
+    "FACTOR REUMATOIDEO 13.1",
+    "C3 0.85",
+    "C4 0.07",
+    "ANTICOAGULANTE LUPICO 1.08",
     "EXAMENES DE LABORATORIO POR SERVICIO BASE: FACTOR REUMATOIDE, ANTICOAGULANTE"
   ],
   "laboratorios": [
     {
-      "fecha_hora": "2026-11-13",
+      "fecha_hora": "2026-11-14",
       "tipo_estudio": "Laboratorios / Gasometría",
       "valores": {
-        "resumen": "10/11/2026 ACIDO LACTICO.: 1.0 BE.: 5.5 Ca: 1.1 Cl: 100.0 COHb: 1.9 Glu: 130.0 HCO3: 28.8 Hct: 33.7 K.: 3.9 MetHb.: 0.2 Na.: 137.0 O2Hb: 61.8 O2SAT.: 63.1 PCO2.: 37.6 PHS: 7.493 PO2: 32.6 TCO2.: 30.0 Leucocitos (WBC)..: 4.98 Hemoglobina (HGB): 10.6 Hematocrito (HCT).: 33.0 Volumen corp. medio (MCV).: 85.40 Conc.media hemog.(MCH)..........: 27.4 Con"
+        "resumen": "10/11/2026 ÁCIDO LÁCTICO.: 1.0 BE.: 5.5 Ca: 1.1 Cl: 100.0 COHb: 1.9 Glu: 130.0 HCO3: 28.8 Hct: 33.7 K.: 3.9 MetHb.: 0.2 Na.: 137.0 O2Hb: 61.8 O2SAT.: 63.1 PCO2.: 37.6 PHS: 7.493 PO2: 32.6 TCO2.: 30.0 Leucocitos (WBC)..: 4.98 Hemoglobina (HGB): 10.6 Hematocrito (HCT).: 33.0 Volumen corp. medio (MCV).: 85.40 Conc.media hemog.(MCH)..........: 27.4 Con"
       },
       "alerta_critica": null
     }

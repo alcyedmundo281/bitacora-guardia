@@ -26,7 +26,7 @@
     "IMPRESION DIAGNOSTICA",
     "ACTIVOS:",
     "INFECCION DEL TRACTO URINARIO COMPLICADA E. COLI BLEE",
-    "EXACERBACION DE EPID"
+    "EXACERBACIÓN DE EPID"
   ],
   "diagnosticos_pasivos": [],
   "dieta": null,
@@ -181,7 +181,7 @@
   "observaciones": [],
   "laboratorios": [
     {
-      "fecha_hora": "2026-11-13",
+      "fecha_hora": "2026-11-14",
       "tipo_estudio": "Laboratorios / Gasometría",
       "valores": {
         "resumen": "13/11/2026 LEU: 10.66, HG: 14.8, HCTO: 45, NEU: 9.57, PLAQ: 327.000. . CLORO: 105, POTASIO: 4.05, SODIO:141 . CREA: 0.55"

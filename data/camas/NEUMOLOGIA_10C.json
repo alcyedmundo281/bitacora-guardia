@@ -141,7 +141,7 @@
     {
       "id": "PEND-NEUMOLOGIA10C-02",
       "tipo": "IMAGEN_PROCEDIMIENTO",
-      "descripcion": "PD HISTOPATOLOGICO PARTICULARCARCINOMA",
+      "descripcion": "PD HISTOPATOLÓGICO PARTICULAR CARCINOMA",
       "prioridad": "RUTINA",
       "turno": "NOCTURNA_20_24",
       "horario_programado": null,
@@ -153,7 +153,7 @@
     {
       "id": "PEND-NEUMOLOGIA10C-03",
       "tipo": "LABORATORIO",
-      "descripcion": "ESCAMO CELULAR DE PULMON DERECHO",
+      "descripcion": "ESCAMO CELULAR DE PULMÓN DERECHO",
       "prioridad": "RUTINA",
       "turno": "NOCTURNA_20_24",
       "horario_programado": null,
@@ -173,7 +173,7 @@
   ],
   "laboratorios": [
     {
-      "fecha_hora": "2026-11-13",
+      "fecha_hora": "2026-11-14",
       "tipo_estudio": "Laboratorios / Gasometría",
       "valores": {
         "resumen": "UROCULTIVO NEGATIVO . ONCOLOGIA REVISION DE LAMINILLAS + IHQ + ESTUDIO DE EGFR + GAMMAGRAFIA OSEA Y TOMOGRAFIA DE PELVIS ABDOMEN Y TORAX (A CUENTA CON TACS)"

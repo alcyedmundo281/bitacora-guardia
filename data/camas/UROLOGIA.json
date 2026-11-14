@@ -23,7 +23,7 @@
   "aqx": [],
   "alergias": [],
   "diagnosticos_activos": [
-    "INFECCION DE VIAS URINARIAS TUMBARELLO DE 2 PUNTOS A DESCARTAR",
+    "INFECCION DE VIAS URINARIAS TUMBARELLO DE 2 SUPERADA",
     "ARTRITIS REUMATOIDEA DE ALTA ACTIVIDAD DAS28 DE 5.7 9"
   ],
   "diagnosticos_pasivos": [],
@@ -32,7 +32,7 @@
   "ckd_epi": null,
   "medicaciones": [
     {
-      "nombre": "OMEPRAZOL 20 MG VO QD",
+      "nombre": "M.FILTRADO GLOMERULAR 30.91 ML/MIN/1.73 M2 : CREATININA 1.79",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -45,7 +45,7 @@
       "nota": null
     },
     {
-      "nombre": "CEFAZOLINA 1 G IV STAT Y C/8H (1/10) CIE 10 B99 FI: 11/11/2026",
+      "nombre": "1. OMEPRAZOL 20 MG VO QD",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -58,7 +58,72 @@
       "nota": null
     },
     {
-      "nombre": "TRAMADOL 50 MG IV LENTO Y DILUIDO PRN",
+      "nombre": "2. CEFAZOLINA 1 G IV C/8H (1/10) CIE 10 B99 FI: 11/11/2026 D: 2/7",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "3. ENOXAPARINA 60 MG SD STAT Y QD",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "HIDROCORTISONA 100 MG IV QD",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "HIDROXICLOROQUINA 200 MG VO QD (PACIENTE DISPONE )",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "PARACETAMOL 1 G IV C/8H",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "TRAMADOL 50 MG IV LENTO Y DILUIDO PRN (DOLOR INTENSO)",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -75,7 +140,7 @@
     {
       "id": "PEND-UROLOGIA-01",
       "tipo": "LABORATORIO",
-      "descripcion": "ALZA TERMICA 38 GRADOS CENTIGRADOS EL 11/11/2026 Y FLEBITIS DE EXTREMIDAD SUPERIOR IZQUIERDA,SE INDICA ANTIBIOTICOTERAPIA, POTENCIAR ANALGESIA Y MEDIDAS LOCALES",
+      "descripcion": "FLEBITIS DE EXTREMIDAD SUPERIOR IZQUIERDA,SE INDICA ANTIBIOTICOTERAPIA, POTENCIAR ANALGESIA Y MEDIDAS LOCALES",
       "prioridad": "RUTINA",
       "turno": "NOCTURNA_20_24",
       "horario_programado": null,
@@ -85,7 +150,9 @@
       "resultado_obtenido": null
     }
   ],
-  "observaciones": [],
+  "observaciones": [
+    "INTERCONSULTA A VASCULAR PARA DESCARTAR PRESENCIA DE COAGULOS"
+  ],
   "laboratorios": [],
   "cultivos": [],
   "alertas_criticas": []

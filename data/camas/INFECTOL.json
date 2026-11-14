@@ -1,6 +1,6 @@
 {
-  "cama": "ABV 3 B",
-  "area": "EMERGENCIA_OBSERVACION",
+  "cama": "INFECTOL",
+  "area": "PERIFERICOS",
   "servicio_tratante": null,
   "nombre_completo": "LOPEZ FIGUEROA OLGA MARLENE C",
   "hc": "1556289",
@@ -36,7 +36,7 @@
   "ckd_epi": null,
   "medicaciones": [
     {
-      "nombre": "CEFEPIME 2 GRAMOS IV STAT Y LUEGO 1 GR CADA 8 HORAS . FI: 11/11/2026 D: 1/5",
+      "nombre": "CEFEPIME 1 GR CADA 8 HORAS . FI: 11/11/2026 D: 3/5",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -116,7 +116,7 @@
   ],
   "pendientes": [
     {
-      "id": "PEND-ABV3B-01",
+      "id": "PEND-INFECTOL-01",
       "tipo": "IMAGEN_PROCEDIMIENTO",
       "descripcion": "PENDIENTE ECO DE HIGADO A DESCARTAR CIRROSIS",
       "prioridad": "URGENTE",
