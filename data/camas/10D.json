@@ -26,7 +26,7 @@
     "INFECCIÓN O ABSCESO DE PARTES BLANDAS",
     "INFECCIÓN VÍAS URINARIAS TUMBARELLO 5 PUNTOS EN RESOLUCIÓN",
     "DOLOR CRÓNICO EXACERBADO",
-    "PROCTORRAGIA OAKLAND DE 20 PUNTOS",
+    "PROCTORRAGIA OAKLAND DE 20 PUNTOS SUPERADA",
     "PROLONGACIÓN DE",
     "TIEMPOS DE COAGULACIÓN **SUSPERADA**",
     "ENFERMEDAD RENAL AGUDA SUPERADA *** SUPERADA**",
@@ -38,7 +38,7 @@
   "ckd_epi": null,
   "medicaciones": [
     {
-      "nombre": "MEROPENEM 500 MG VIA ORAL CADA 12 HORAS FI:13/11/2026 (DIA 0/5) (CIE10: A419)",
+      "nombre": "MEROPENEM 500 MG VIA ORAL CADA 12 HORAS FI:13/11/2026 (DIA 3/5) (CIE10: A419)",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -240,7 +240,7 @@
   ],
   "laboratorios": [
     {
-      "fecha_hora": "2026-11-14",
+      "fecha_hora": "2026-11-16",
       "tipo_estudio": "Laboratorios / Gasometría",
       "valores": {
         "resumen": "UROCULTIVO: MICROORGANISMO: Proteus mirabilis AMIKACINA SENSIBLE / 4 ug/mL CEFTRIAXONA SENSIBLE / <= 0,25 ug/mL Cefazolina (O) SENSIBLE / <= 4 ug/mL GENTAMICINA RESISTENTE / 8 ug/mL TRIMETOPRIMA/SULFA RESISTENTE / >= 320 ug/mL CIPROFLOXACINO RESISTENTE / >= 4 ug/mL Resultado: Positivo; Contaje de Colonias: > 100.000 UFC/ml;"

@@ -2,31 +2,30 @@
   "cama": "12A",
   "area": "HOSPITALIZACION",
   "servicio_tratante": null,
-  "nombre_completo": "NICOLALDE CENTENO CESAR ENRIQUE",
-  "hc": "554153",
-  "cedula": "1715905293",
-  "edad": "40 AÑOS",
+  "nombre_completo": "CHIPANTAXI GUAÑA MARIANA",
+  "hc": "521857",
+  "cedula": null,
+  "edad": "N/D",
   "sexo": null,
   "fecha_nacimiento": null,
   "fecha_ingreso": null,
   "dias_hospitalizacion": null,
   "app": [
-    "SINDROME . DE DOWN",
-    "HIPOTIROIDISMO",
-    "POLIGLOBULIA",
-    "DISCAPACIDAD INTELECTUAL DEL 70%"
+    "GASTRITIS",
+    "HIPOTIROIDISMO CON BOCIO MULTINODULAR SIN SOSPECHA DE MALIGNIDAD",
+    "PARALISIS FACIAL PERIFERICA",
+    "DISLIPIDEMIA SECUNDARIA",
+    "POLIARTROSIS"
   ],
   "aqx": [],
   "alergias": [],
   "diagnosticos_activos": [
-    "HEPATOPATÍA EN ESTUDIO EN ESTUDIO DE POSIBLE HEPATITIS TÓXICA VS MEDICAMENTOSAS",
-    "NEUTEOFEMIA CON ANTIBIOTICO TERAPI EMPÍRICA",
-    "BICITOPENIA EN ESTUDIO",
-    "TRAUMA CRANEOENCEFÁLICO LEVE",
-    "HIPOGLICEMIA REFRACTARIA SUPERADA",
-    "DC. PARANEOPLÁSICO",
-    "INFECCION DE VIAS URINARIAS",
-    "SINDROME HEPÁTICO MIXTO COLESTÁSICO Y CITOLITICO"
+    "CARCINOMATOSIS RETROPERITONEAL",
+    "SINDROME CONSTITUCIONAL EN ESTUDIO",
+    "ASCITIS",
+    "DERRAME PLEURAL PREDOMINIO IZQUIERDO",
+    "HIPOTIROIDISMO",
+    "DOLOR ABDOMINAL CRONICO"
   ],
   "diagnosticos_pasivos": [],
   "dieta": null,
@@ -34,7 +33,7 @@
   "ckd_epi": null,
   "medicaciones": [
     {
-      "nombre": "CEFEPIME 2 GRAMOS IV CADA 8 HORAS (2/3) FI:10/11/2026",
+      "nombre": "TRAMADOL 100 MG DILUIDO IV LENTO CADA 8 HORAS",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -47,7 +46,7 @@
       "nota": null
     },
     {
-      "nombre": "ACICLOVIR 400MG VO CADA 12 HORAS (1/5)",
+      "nombre": "METOCLOPRAMIDA 10 MG DILUIDO IV LENTO POR RAZONES NECESARIAS",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -60,7 +59,7 @@
       "nota": null
     },
     {
-      "nombre": "FLUCONAZOL 400MG VO CADA DIA (1/5)",
+      "nombre": "LACTULOSA 10 ML VIA ORAL CADA 12 HORAS Y SUSPENDER AL TENER DIARREAS",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -73,46 +72,7 @@
       "nota": null
     },
     {
-      "nombre": "LEVOTIROXINA 75MCG VO CADA DIA",
-      "dosis": "",
-      "via": "",
-      "frecuencia": "",
-      "fecha_inicio": null,
-      "dias_tratamiento": null,
-      "indicacion_cie10": null,
-      "suspendido": false,
-      "diferido": false,
-      "prn": false,
-      "nota": null
-    },
-    {
-      "nombre": "TRAMADOL 50MG + 50ML SS 0.9% IV PASAR PRN",
-      "dosis": "",
-      "via": "",
-      "frecuencia": "",
-      "fecha_inicio": null,
-      "dias_tratamiento": null,
-      "indicacion_cie10": null,
-      "suspendido": false,
-      "diferido": false,
-      "prn": false,
-      "nota": null
-    },
-    {
-      "nombre": "RISPERIDONA 8 GOTAS VO PRN (AGITACION PSICOMOTRIZ)",
-      "dosis": "",
-      "via": "",
-      "frecuencia": "",
-      "fecha_inicio": null,
-      "dias_tratamiento": null,
-      "indicacion_cie10": null,
-      "suspendido": false,
-      "diferido": false,
-      "prn": false,
-      "nota": null
-    },
-    {
-      "nombre": "QUETIAPINA 25 MG VO HS , ADICIONAR 25 MG VO HS PRN",
+      "nombre": "ENOXAPARINA 60 MG SC CADA DIA",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -128,20 +88,8 @@
   "pendientes": [
     {
       "id": "PEND-12A-01",
-      "tipo": "LABORATORIO",
-      "descripcion": "PD RESULTADOS DE BIOPSIA",
-      "prioridad": "RUTINA",
-      "turno": "NOCTURNA_20_24",
-      "horario_programado": null,
-      "es_visita_nocturna": false,
-      "estado": "PENDIENTE",
-      "responsable": null,
-      "resultado_obtenido": null
-    },
-    {
-      "id": "PEND-12A-02",
-      "tipo": "IMAGEN_PROCEDIMIENTO",
-      "descripcion": "PD REALIZACION ECO DOPPLER PORTAL",
+      "tipo": "INTERCONSULTA",
+      "descripcion": "INTERCONSULTA NEUMOLOGIA PARA TRAMITE DE OXIGENO",
       "prioridad": "URGENTE",
       "turno": "NOCTURNA_20_24",
       "horario_programado": null,
@@ -151,130 +99,27 @@
       "resultado_obtenido": null
     },
     {
-      "id": "PEND-12A-03",
+      "id": "PEND-12A-02",
       "tipo": "LABORATORIO",
-      "descripcion": "11.11.2026",
-      "prioridad": "RUTINA",
+      "descripcion": "BAJAR A AVERIGUAR FECHA DE BIOPSIA, YA ENTREGADO EL TRAMITE, AUN NO APROBADO POR RADIOLOGIA INTERVENCIONISTA",
+      "prioridad": "STAT",
       "turno": "NOCTURNA_20_24",
       "horario_programado": null,
-      "es_visita_nocturna": false,
-      "estado": "PENDIENTE",
-      "responsable": null,
-      "resultado_obtenido": null
-    },
-    {
-      "id": "PEND-12A-04",
-      "tipo": "LABORATORIO",
-      "descripcion": "MEDULOGRAMA: DILUIDO, NO VALORABLE",
-      "prioridad": "RUTINA",
-      "turno": "NOCTURNA_20_24",
-      "horario_programado": null,
-      "es_visita_nocturna": false,
-      "estado": "PENDIENTE",
-      "responsable": null,
-      "resultado_obtenido": null
-    },
-    {
-      "id": "PEND-12A-05",
-      "tipo": "LABORATORIO",
-      "descripcion": "IMPRONTA: DILUIDO NO VALORABLE",
-      "prioridad": "RUTINA",
-      "turno": "NOCTURNA_20_24",
-      "horario_programado": null,
-      "es_visita_nocturna": false,
-      "estado": "PENDIENTE",
-      "responsable": null,
-      "resultado_obtenido": null
-    },
-    {
-      "id": "PEND-12A-06",
-      "tipo": "LABORATORIO",
-      "descripcion": "10.11.2026 FROTIS DE SANGRE PERIFERICA",
-      "prioridad": "RUTINA",
-      "turno": "NOCTURNA_20_24",
-      "horario_programado": null,
-      "es_visita_nocturna": false,
-      "estado": "PENDIENTE",
-      "responsable": null,
-      "resultado_obtenido": null
-    },
-    {
-      "id": "PEND-12A-07",
-      "tipo": "LABORATORIO",
-      "descripcion": "FORMULA DIFERENCIAL MANUAL",
-      "prioridad": "RUTINA",
-      "turno": "NOCTURNA_20_24",
-      "horario_programado": null,
-      "es_visita_nocturna": false,
-      "estado": "PENDIENTE",
-      "responsable": null,
-      "resultado_obtenido": null
-    },
-    {
-      "id": "PEND-12A-08",
-      "tipo": "LABORATORIO",
-      "descripcion": "SEGMENTADOS: 68 %",
-      "prioridad": "RUTINA",
-      "turno": "NOCTURNA_20_24",
-      "horario_programado": null,
-      "es_visita_nocturna": false,
-      "estado": "PENDIENTE",
-      "responsable": null,
-      "resultado_obtenido": null
-    },
-    {
-      "id": "PEND-12A-09",
-      "tipo": "LABORATORIO",
-      "descripcion": "LINFOCITOS: 16 %",
-      "prioridad": "RUTINA",
-      "turno": "NOCTURNA_20_24",
-      "horario_programado": null,
-      "es_visita_nocturna": false,
-      "estado": "PENDIENTE",
-      "responsable": null,
-      "resultado_obtenido": null
-    },
-    {
-      "id": "PEND-12A-10",
-      "tipo": "LABORATORIO",
-      "descripcion": "MONOCITOS:16 %",
-      "prioridad": "RUTINA",
-      "turno": "NOCTURNA_20_24",
-      "horario_programado": null,
-      "es_visita_nocturna": false,
-      "estado": "PENDIENTE",
-      "responsable": null,
-      "resultado_obtenido": null
-    },
-    {
-      "id": "PEND-12A-11",
-      "tipo": "LABORATORIO",
-      "descripcion": "HIPOSEGMENTADOS +++",
-      "prioridad": "RUTINA",
-      "turno": "NOCTURNA_20_24",
-      "horario_programado": null,
-      "es_visita_nocturna": false,
+      "es_visita_nocturna": true,
       "estado": "PENDIENTE",
       "responsable": null,
       "resultado_obtenido": null
     }
   ],
   "observaciones": [
-    "L: PD RESULTADOS DE LAB CENTRAL",
-    "C: ORDENES DE HEMATOLOGIA",
-    "ORDENES DE PSIQUIATRIA",
-    "O: NOVEDADES"
+    "2026/11/12",
+    "BE..............................: 5.1",
+    "Ca..............................: 1.1",
+    "Cl..............................: 104.0",
+    "COHb............................: 2.1",
+    "Glu.............................: 93.0"
   ],
-  "laboratorios": [
-    {
-      "fecha_hora": "2026-11-14",
-      "tipo_estudio": "Laboratorios / Gasometría",
-      "valores": {
-        "resumen": "22026/11/12 PCR CUANTITATIVO ULTRASENSIBLE: 78.40 Leucocitos (WBC): 2.11 Hemoglobina (HGB): 11.8 Hematocrito (HCT): 35.4 Volumen corp. medio (MCV): 95.60 Conc. media hemog. (MCH): 31.8 Neutrofilos: 1.68 Basófilos: 0.000 Plaquetas: 55.000 CLORO: 100 POTASIO: 3.46 SODIO: 136.7 NITROGENO UREICO EN SUERO: 17 UREA SUERO: 37.1 CREATININA: 0.44"
-      },
-      "alerta_critica": null
-    }
-  ],
+  "laboratorios": [],
   "cultivos": [],
   "alertas_criticas": []
 }

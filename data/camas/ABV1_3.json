@@ -1,33 +1,33 @@
 {
-  "cama": "CARDIO 4B",
-  "area": "PERIFERICOS",
+  "cama": "ABV1_3",
+  "area": "EMERGENCIA_OBSERVACION",
   "servicio_tratante": null,
-  "nombre_completo": "0200150688 GALEAS LOPEZ ROSA ELVIRA H.C.: 1814762 ",
-  "hc": "1814762",
+  "nombre_completo": "PACIENTE: VASCONEZ RUALES CARLOS AUGUSTO",
+  "hc": "N/D",
   "cedula": null,
-  "edad": "83 años",
+  "edad": "87 AÑOS",
   "sexo": null,
   "fecha_nacimiento": null,
   "fecha_ingreso": null,
   "dias_hospitalizacion": null,
   "app": [
-    "HIPERTENSIÓN ARTERIAL",
-    "VERTIGO",
-    "HIPOTIROIDISMO",
-    "ANSIEDAD /DEPRESIÓN",
-    "POLIGLOBULIA"
+    "HIPERPLASIA PROSTATICA BENIGNA",
+    "GLAUCOMA",
+    "ENFERMEDAD RENAL CRONICA",
+    "NODULO TIROIDEO",
+    "SINDROME MIELODISPLASICO - MIELOMA MULTIPLE EN ESTUDIO"
   ],
   "aqx": [],
   "alergias": [],
   "diagnosticos_activos": [
-    "INSUFICIENCIA RESPIRATORIA AGUDA",
-    "SANGRADO DIGESTIVO ALTO POR ÚLCERAS GÁSTRICAS Y DUODENALES FORREST III, SANGRADO DETENIDO",
-    "ANEMIA MODERADA POSTHEMORRAGICA AGUDA",
-    "FRACTURA DE RAMA ISQUIOPUBIANA IZQUIERDA (MANEJO CONSERVADOR)",
-    "HIPOPROTEINEMIA - HIPOALBUMINEMIA LEVE",
-    "DELIRIO HIPOACTIVO SUPERADO",
-    "INSUFICIENCIA VENOSA PERIFÉRICA",
-    "DESHIDRATACIÓN MODERADA SUPERADA"
+    "COLECCION SUBMENTONIANA ORL NO DRENA TODAVIA",
+    "MASA CERVICAL IZQUIERDA EN ESTUDIO PENDIENTE PAAF",
+    "PANCITOPENIA NEUTROPENIA SEVERA",
+    "ENFERMEDAD RENAL CRONICA REAGUDIZADA ESTADIO 5",
+    "DESCARTAR FOCO ODONTOGENICO PENDIENTE ODONTOLOGIA REVIZAR POSTERIOR A VALORACION DE HEMATOLOGIA",
+    "DESCARTAR ANGINA DE LUDWIG",
+    "A DESCARTAR NEOPLASIA TIROIDEA",
+    "HIPONATREMIA SUPERADA"
   ],
   "diagnosticos_pasivos": [],
   "dieta": null,
@@ -35,7 +35,7 @@
   "ckd_epi": null,
   "medicaciones": [
     {
-      "nombre": "******PACIENTE ALERGICO AL PESCADO Y MARISCOS******",
+      "nombre": "CEFEPIME 1 GRAMO INTRAVENOSO CADA 12 HORAS FI: 12-11-2026 CIE-10: L039 (DÍA 3)",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -48,7 +48,7 @@
       "nota": null
     },
     {
-      "nombre": "PARACETAMOL 1 GR VO POR RAZONES NECESARIAS",
+      "nombre": "VANCOMICINA 500 MG INTRAVENOSO CADA 48 HORAS FI: 12-11-2026 CIE-10: L039 (DÍA 4), PRÓXIMA DOSIS LUNES 16 DE NOVIEMBRE 20",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -61,7 +61,7 @@
       "nota": null
     },
     {
-      "nombre": "ENOXAPARINA 40 MG SC CADA DIA",
+      "nombre": "PARACETAMOL 1 GRAMO VÍA ORAL CADA 8 HORAS",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -74,7 +74,7 @@
       "nota": null
     },
     {
-      "nombre": "LEVOTIROXINA 100 UG VO QD AM",
+      "nombre": "FLUCONAZOL 150 MILIGRAMOS VÍA ORAL CADA DÍA FECHA DE INICIO 12/11/2026 CIE A419 (DÍA 4)",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -87,7 +87,7 @@
       "nota": null
     },
     {
-      "nombre": "AMLODIPINO 10 MG VO QD SUSPENDIDO****",
+      "nombre": "COTRIMOXAZOL 800/160 MILIGRAMOS VÍA ORAL LUNES, MIÉRCOLES Y VIERNES FECHA DE INICIO 12/11/2026 CIE A419",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -100,7 +100,7 @@
       "nota": null
     },
     {
-      "nombre": "FUROSEMIDA 20 MG CADA 48 HORAS DIFERIDO*****",
+      "nombre": "ACICLOVIR 800 MILIGRAMOS VÍA ORAL CADA DÍA FECHA DE INICIO 12/11/2026 CIE A419 (DÍA 4)",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -113,7 +113,7 @@
       "nota": null
     },
     {
-      "nombre": "EMPAGLIFLOZINA 10 MG VO QD",
+      "nombre": "HEPARINA SÓDICA 5000 UI SUBCUTÁNEA CADA 12 HORAS",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -126,7 +126,7 @@
       "nota": null
     },
     {
-      "nombre": "ALOPURINOL 150 MG VO CADA 48 HORAS",
+      "nombre": "FUROSEMIDA 40 MILIGRAMOS INTRAVENOSO CADA DÍA (DÍA 3/3)",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -139,7 +139,7 @@
       "nota": null
     },
     {
-      "nombre": "BICARBONATO DE SODIO 1 GR VO QD",
+      "nombre": "OMEPRAZOL 20 MILIGRAMOS INTRAVENOSO CADA DÍA",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -152,7 +152,7 @@
       "nota": null
     },
     {
-      "nombre": "FUROSEMIDA 40 MG VIA ORAL CADA DIA. GENERAR DIARIO",
+      "nombre": "DEXAMETASONA 8 MILIGRAMOS IV CADA 12 HORAS FECHA DE INICIO 10/11/2026 (DÍA 5)",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -167,9 +167,93 @@
   ],
   "pendientes": [
     {
-      "id": "PEND-CARDIO4B-01",
-      "tipo": "IMAGEN_PROCEDIMIENTO",
-      "descripcion": "E: TAC SIMPLE DE ENCEFALO, CUELLO, TORAX, ABDOMEN Y PELVIS PENDIENTE INFORME",
+      "id": "PEND-ABV13-01",
+      "tipo": "LABORATORIO",
+      "descripcion": "E: EXÁMENES Y PROCEDIMIENTOS:",
+      "prioridad": "RUTINA",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": null,
+      "es_visita_nocturna": false,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
+    },
+    {
+      "id": "PEND-ABV13-02",
+      "tipo": "LABORATORIO",
+      "descripcion": "BIOPSIA DE MÉDULA ÓSEA EL LUNES 16/11/2026 PREVIA AUTORIZACIÓN DE CONSENTIMIENTO INFORMADO (HEMATOLOGÍA)",
+      "prioridad": "RUTINA",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": null,
+      "es_visita_nocturna": false,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
+    },
+    {
+      "id": "PEND-ABV13-03",
+      "tipo": "LABORATORIO",
+      "descripcion": "PAAF DE MASA CERVICAL AL MEJORAR LOS NEUTRÓFILOS",
+      "prioridad": "RUTINA",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": null,
+      "es_visita_nocturna": false,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
+    },
+    {
+      "id": "PEND-ABV13-04",
+      "tipo": "LABORATORIO",
+      "descripcion": "L: LABORATORIO:",
+      "prioridad": "RUTINA",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": null,
+      "es_visita_nocturna": false,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
+    },
+    {
+      "id": "PEND-ABV13-05",
+      "tipo": "LABORATORIO",
+      "descripcion": "16/11/2026: BIOMETRÍA HEMÁTICA COMPLETA, ELECTROLITOS, CREATININA, UREA",
+      "prioridad": "RUTINA",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": null,
+      "es_visita_nocturna": false,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
+    },
+    {
+      "id": "PEND-ABV13-06",
+      "tipo": "LABORATORIO",
+      "descripcion": "FROTIS DE SANGRE PERIFÉRICA (HEMATOLOGÍA)",
+      "prioridad": "RUTINA",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": null,
+      "es_visita_nocturna": false,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
+    },
+    {
+      "id": "PEND-ABV13-07",
+      "tipo": "LABORATORIO",
+      "descripcion": "HIERRO SÉRICO, FERRITINA, CAPACIDAD DE FIJACIÓN DE HIERRO, TRANSFERRINA, VITAMINA B12, ÁCIDO FÓLICO (HEMATOLOGÍA)",
+      "prioridad": "RUTINA",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": null,
+      "es_visita_nocturna": false,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
+    },
+    {
+      "id": "PEND-ABV13-08",
+      "tipo": "LABORATORIO",
+      "descripcion": "PENDIENTE RESULTADO DE HEMOCULTIVOS",
       "prioridad": "URGENTE",
       "turno": "NOCTURNA_20_24",
       "horario_programado": null,
@@ -179,22 +263,10 @@
       "resultado_obtenido": null
     },
     {
-      "id": "PEND-CARDIO4B-02",
-      "tipo": "LABORATORIO",
-      "descripcion": "REPETIR COLONOSCOPIA POR INDICACION DE GASTROENTEROLOGIA NUEVO TURNO",
-      "prioridad": "RUTINA",
-      "turno": "NOCTURNA_20_24",
-      "horario_programado": null,
-      "es_visita_nocturna": false,
-      "estado": "PENDIENTE",
-      "responsable": null,
-      "resultado_obtenido": null
-    },
-    {
-      "id": "PEND-CARDIO4B-03",
-      "tipo": "LABORATORIO",
-      "descripcion": "L: CONTROL DIARIO DE ELECTROLITOS",
-      "prioridad": "CONTROL",
+      "id": "PEND-ABV13-09",
+      "tipo": "INTERCONSULTA",
+      "descripcion": "C: INTERCONSULTAS:",
+      "prioridad": "URGENTE",
       "turno": "NOCTURNA_20_24",
       "horario_programado": null,
       "es_visita_nocturna": true,
@@ -203,9 +275,9 @@
       "resultado_obtenido": null
     },
     {
-      "id": "PEND-CARDIO4B-04",
+      "id": "PEND-ABV13-10",
       "tipo": "LABORATORIO",
-      "descripcion": "07-11-2026",
+      "descripcion": "SEGUIMIENTO POR OTORRINOLARINGOLOGÍA PARA DEFINIR DRENAJE DE COLECCIÓN",
       "prioridad": "RUTINA",
       "turno": "NOCTURNA_20_24",
       "horario_programado": null,
@@ -215,116 +287,32 @@
       "resultado_obtenido": null
     },
     {
-      "id": "PEND-CARDIO4B-05",
-      "tipo": "LABORATORIO",
-      "descripcion": "Leucocitos 5.12",
-      "prioridad": "RUTINA",
+      "id": "PEND-ABV13-11",
+      "tipo": "INTERCONSULTA",
+      "descripcion": "HEMATOLOGÍA: REINTERCONSULTAR CON RESULTADOS",
+      "prioridad": "URGENTE",
       "turno": "NOCTURNA_20_24",
       "horario_programado": null,
-      "es_visita_nocturna": false,
+      "es_visita_nocturna": true,
       "estado": "PENDIENTE",
       "responsable": null,
       "resultado_obtenido": null
     },
     {
-      "id": "PEND-CARDIO4B-06",
-      "tipo": "LABORATORIO",
-      "descripcion": "Hemoglobina 11.7",
-      "prioridad": "RUTINA",
+      "id": "PEND-ABV13-12",
+      "tipo": "INTERCONSULTA",
+      "descripcion": "PENDIENTE DEFINICIÓN DE CONDUCTA POR CIRUGÍA ONCOLÓGICA",
+      "prioridad": "URGENTE",
       "turno": "NOCTURNA_20_24",
       "horario_programado": null,
-      "es_visita_nocturna": false,
-      "estado": "PENDIENTE",
-      "responsable": null,
-      "resultado_obtenido": null
-    },
-    {
-      "id": "PEND-CARDIO4B-07",
-      "tipo": "LABORATORIO",
-      "descripcion": "Hematocrito 36.8",
-      "prioridad": "RUTINA",
-      "turno": "NOCTURNA_20_24",
-      "horario_programado": null,
-      "es_visita_nocturna": false,
-      "estado": "PENDIENTE",
-      "responsable": null,
-      "resultado_obtenido": null
-    },
-    {
-      "id": "PEND-CARDIO4B-08",
-      "tipo": "LABORATORIO",
-      "descripcion": "Neutrofilo 3.33",
-      "prioridad": "RUTINA",
-      "turno": "NOCTURNA_20_24",
-      "horario_programado": null,
-      "es_visita_nocturna": false,
-      "estado": "PENDIENTE",
-      "responsable": null,
-      "resultado_obtenido": null
-    },
-    {
-      "id": "PEND-CARDIO4B-09",
-      "tipo": "LABORATORIO",
-      "descripcion": "Plaquetas 309.000",
-      "prioridad": "RUTINA",
-      "turno": "NOCTURNA_20_24",
-      "horario_programado": null,
-      "es_visita_nocturna": false,
-      "estado": "PENDIENTE",
-      "responsable": null,
-      "resultado_obtenido": null
-    },
-    {
-      "id": "PEND-CARDIO4B-10",
-      "tipo": "LABORATORIO",
-      "descripcion": "CLORO 102",
-      "prioridad": "RUTINA",
-      "turno": "NOCTURNA_20_24",
-      "horario_programado": null,
-      "es_visita_nocturna": false,
-      "estado": "PENDIENTE",
-      "responsable": null,
-      "resultado_obtenido": null
-    },
-    {
-      "id": "PEND-CARDIO4B-11",
-      "tipo": "LABORATORIO",
-      "descripcion": "POTASIO 3.63",
-      "prioridad": "RUTINA",
-      "turno": "NOCTURNA_20_24",
-      "horario_programado": null,
-      "es_visita_nocturna": false,
-      "estado": "PENDIENTE",
-      "responsable": null,
-      "resultado_obtenido": null
-    },
-    {
-      "id": "PEND-CARDIO4B-12",
-      "tipo": "LABORATORIO",
-      "descripcion": "SODIO 138.9",
-      "prioridad": "RUTINA",
-      "turno": "NOCTURNA_20_24",
-      "horario_programado": null,
-      "es_visita_nocturna": false,
+      "es_visita_nocturna": true,
       "estado": "PENDIENTE",
       "responsable": null,
       "resultado_obtenido": null
     }
   ],
-  "observaciones": [
-    "TAC DE TÓRAX YA",
-    "VALORACIÓN POR NEUMOLOGÍA (O2 DOMICILIO)"
-  ],
-  "laboratorios": [
-    {
-      "fecha_hora": "2026-11-14",
-      "tipo_estudio": "Laboratorios / Gasometría",
-      "valores": {
-        "resumen": "NEUMOLOGÍA: CONTINUAR CON FISIOTERAPIA RESPIRATORIA , SI PERSISTE REQUERIMIENTO DE 02 REINTERCONSULTAR CON GASOMETRÍA CARDIOLOGIA: SI LA TENSIÓN ARTERIAL SE ELEVA DE 140/90 ADMINISTRAR LOSARTÁN 50 MG VO QD TOMA DE TENSIÓN ARTERIAL DIARIA Y ANOTAR CONTROL POR CONSULTA EXTERNA DE CARDIOLOGÍA TURNO EXTRA 18 DE NOVIEMBRE/2026 CONSULTORIO 53, CARDIOLOGÍ"
-      },
-      "alerta_critica": null
-    }
-  ],
+  "observaciones": [],
+  "laboratorios": [],
   "cultivos": [],
   "alertas_criticas": []
 }

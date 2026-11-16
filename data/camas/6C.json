@@ -2,28 +2,31 @@
   "cama": "6C",
   "area": "HOSPITALIZACION",
   "servicio_tratante": null,
-  "nombre_completo": "ALMEIDA JARAMILLO JUAN CARLOS C",
-  "hc": "2086486",
-  "cedula": "1705956132",
-  "edad": "65 años",
+  "nombre_completo": "NICOLALDE CENTENO CESAR ENRIQUE",
+  "hc": "554153",
+  "cedula": "1715905293",
+  "edad": "40 AÑOS",
   "sexo": null,
   "fecha_nacimiento": null,
   "fecha_ingreso": null,
   "dias_hospitalizacion": null,
   "app": [
-    "ANTECEDENTES PATOLÓGICOS PERSONALES:",
-    "HIPERTENSIÓN ARTERIAL DIAGNOSTICADA EN EL 2004",
-    "DIABETES MELLITUS DIAGNOSTICADA EN EL 2014",
-    "CEFALEA DESDE EL 2020",
-    "DOLOR EN MIEMBRO SUPERIOR DERECHO DESDE HACE 3 MESES"
+    "SINDROME . DE DOWN",
+    "HIPOTIROIDISMO",
+    "POLIGLOBULIA",
+    "DISCAPACIDAD INTELECTUAL DEL 70%"
   ],
   "aqx": [],
   "alergias": [],
   "diagnosticos_activos": [
-    "ADENOPATÍAS GENERALIZADAS (CERVICALES, AXILARES, INGUINALES)",
-    "HIPERTENSIÓN ARTERIAL",
-    "DIABETES MELLITUS",
-    "SINDROME CONSTITUCIONAL"
+    "HEPATOPATÍA EN ESTUDIO EN ESTUDIO DE POSIBLE HEPATITIS TÓXICA VS MEDICAMENTOSAS",
+    "NEUTEOFEMIA CON ANTIBIOTICO TERAPI EMPÍRICA",
+    "BICITOPENIA EN ESTUDIO",
+    "TRAUMA CRANEOENCEFÁLICO LEVE",
+    "HIPOGLICEMIA REFRACTARIA SUPERADA",
+    "DC. PARANEOPLÁSICO",
+    "INFECCION DE VIAS URINARIAS",
+    "SINDROME HEPÁTICO MIXTO COLESTÁSICO Y CITOLITICO"
   ],
   "diagnosticos_pasivos": [],
   "dieta": null,
@@ -31,7 +34,7 @@
   "ckd_epi": null,
   "medicaciones": [
     {
-      "nombre": "AMLODIPINO 5 MG VO QD PM",
+      "nombre": "CEFEPIME 2 GRAMOS IV CADA 8 HORAS (5/5) FI:10/11/2026",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -44,7 +47,7 @@
       "nota": null
     },
     {
-      "nombre": "METFORMINA 850 MG VO TID * SUSPENDER *",
+      "nombre": "ACICLOVIR 400 MG VO CADA 12 HORAS (4/5)",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -57,7 +60,7 @@
       "nota": null
     },
     {
-      "nombre": "AMITRIPTILINA 25 MG VO QD PM",
+      "nombre": "FLUCONAZOL 300 MG VO CADA DIA (4/5)",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -70,7 +73,7 @@
       "nota": null
     },
     {
-      "nombre": "TRAMADOL 10 GOTAS VO BID",
+      "nombre": "LEVOTIROXINA 75 MCG VO CADA DIA",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -83,7 +86,7 @@
       "nota": null
     },
     {
-      "nombre": "IBUPROFENO 400 MG VO QD X 15 DIAS",
+      "nombre": "TRAMADOL 50MG + 50ML SS 0.9% IV PASAR PRN",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -96,7 +99,7 @@
       "nota": null
     },
     {
-      "nombre": "PARACETAMOL 1 GR VIA ORAL CADA 8 HORAS",
+      "nombre": "RISPERIDONA 8 GOTAS VO PRN (AGITACIÓN PSICOMOTRIZ)",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -109,7 +112,7 @@
       "nota": null
     },
     {
-      "nombre": "INSULINA NPH 12 UI SC AM Y 6 I SC PM",
+      "nombre": "QUETIAPINA 25 MG VO HS , ADICIONAR 25 MG VO HS PRN",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -125,24 +128,24 @@
   "pendientes": [
     {
       "id": "PEND-6C-01",
-      "tipo": "LABORATORIO",
-      "descripcion": "E: EXAMENES Y PROCEDIMIENTOS:",
-      "prioridad": "RUTINA",
+      "tipo": "INTERCONSULTA",
+      "descripcion": "VALORACION POR GASTROENTEROLOGÍA CON RESULTADOS DEL PERFIL HEPÁTICO DEL 15/11/2026",
+      "prioridad": "URGENTE",
       "turno": "NOCTURNA_20_24",
       "horario_programado": null,
-      "es_visita_nocturna": false,
+      "es_visita_nocturna": true,
       "estado": "PENDIENTE",
       "responsable": null,
       "resultado_obtenido": null
     },
     {
       "id": "PEND-6C-02",
-      "tipo": "IMAGEN_PROCEDIMIENTO",
-      "descripcion": "TAC SIMPLE DE CRÁNEO PENDIENTE",
-      "prioridad": "URGENTE",
+      "tipo": "LABORATORIO",
+      "descripcion": "RESULTADO DE BIOPSIA DE MÉDULA ÓSEA (11/11/2026)",
+      "prioridad": "RUTINA",
       "turno": "NOCTURNA_20_24",
       "horario_programado": null,
-      "es_visita_nocturna": true,
+      "es_visita_nocturna": false,
       "estado": "PENDIENTE",
       "responsable": null,
       "resultado_obtenido": null
@@ -150,19 +153,7 @@
     {
       "id": "PEND-6C-03",
       "tipo": "LABORATORIO",
-      "descripcion": "PENDIENTE REALIZACIÓN",
-      "prioridad": "URGENTE",
-      "turno": "NOCTURNA_20_24",
-      "horario_programado": null,
-      "es_visita_nocturna": true,
-      "estado": "PENDIENTE",
-      "responsable": null,
-      "resultado_obtenido": null
-    },
-    {
-      "id": "PEND-6C-04",
-      "tipo": "LABORATORIO",
-      "descripcion": "RMN SIMPLE DE COLUMNA CERVICAL MADRUGADA DEL 13 DE NOVIEMBRE",
+      "descripcion": "RESULTADO DE CITOMETRÍA DE FLUJO (ENVIADA A SOLCA, 11/11/2026)",
       "prioridad": "RUTINA",
       "turno": "NOCTURNA_20_24",
       "horario_programado": null,
@@ -172,9 +163,9 @@
       "resultado_obtenido": null
     },
     {
-      "id": "PEND-6C-05",
-      "tipo": "LABORATORIO",
-      "descripcion": "PAAF DE GANGLIO CERVICAL (IMAGEN) PENDIENTE REALIZACIÓN",
+      "id": "PEND-6C-04",
+      "tipo": "INTERCONSULTA",
+      "descripcion": "REINTERCONSULTAR A HEMATOLOGÍA CON RESULTADOS",
       "prioridad": "URGENTE",
       "turno": "NOCTURNA_20_24",
       "horario_programado": null,
@@ -184,9 +175,21 @@
       "resultado_obtenido": null
     },
     {
+      "id": "PEND-6C-05",
+      "tipo": "LABORATORIO",
+      "descripcion": "11.11.2026",
+      "prioridad": "RUTINA",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": null,
+      "es_visita_nocturna": false,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
+    },
+    {
       "id": "PEND-6C-06",
-      "tipo": "INTERCONSULTA",
-      "descripcion": "INDICACIONES DE CIRUGÍA ONCOLÓGICA",
+      "tipo": "LABORATORIO",
+      "descripcion": "MEDULOGRAMA: DILUIDO, NO VALORABLE",
       "prioridad": "RUTINA",
       "turno": "NOCTURNA_20_24",
       "horario_programado": null,
@@ -198,7 +201,7 @@
     {
       "id": "PEND-6C-07",
       "tipo": "LABORATORIO",
-      "descripcion": "2026/11/11 12:04 ENDOSCOPIA",
+      "descripcion": "IMPRONTA: DILUIDO NO VALORABLE",
       "prioridad": "RUTINA",
       "turno": "NOCTURNA_20_24",
       "horario_programado": null,
@@ -210,7 +213,7 @@
     {
       "id": "PEND-6C-08",
       "tipo": "LABORATORIO",
-      "descripcion": "DIAGNÓSTICO",
+      "descripcion": "10.11.2026 FROTIS DE SANGRE PERIFERICA",
       "prioridad": "RUTINA",
       "turno": "NOCTURNA_20_24",
       "horario_programado": null,
@@ -222,7 +225,7 @@
     {
       "id": "PEND-6C-09",
       "tipo": "LABORATORIO",
-      "descripcion": "LESION DE ASPECTO PAPILOMATOSO EN ESOFAGO MEDIO RESECADO",
+      "descripcion": "FORMULA DIFERENCIAL MANUAL",
       "prioridad": "RUTINA",
       "turno": "NOCTURNA_20_24",
       "horario_programado": null,
@@ -234,7 +237,7 @@
     {
       "id": "PEND-6C-10",
       "tipo": "LABORATORIO",
-      "descripcion": "GASTROPATIA ERITEMATOSA LEVE DE ANTRO",
+      "descripcion": "SEGMENTADOS: 68 %",
       "prioridad": "RUTINA",
       "turno": "NOCTURNA_20_24",
       "horario_programado": null,
@@ -246,7 +249,7 @@
     {
       "id": "PEND-6C-11",
       "tipo": "LABORATORIO",
-      "descripcion": "CICATRIZ LINEAL DE ULCERA PREVIA EN CUERPO SAKITA MIWA H2",
+      "descripcion": "LINFOCITOS: 16 %",
       "prioridad": "RUTINA",
       "turno": "NOCTURNA_20_24",
       "horario_programado": null,
@@ -258,7 +261,7 @@
     {
       "id": "PEND-6C-12",
       "tipo": "LABORATORIO",
-      "descripcion": "ESTUDIO NEGATIVO PARA LESIONES NEOPLASICAS",
+      "descripcion": "MONOCITOS:16 %",
       "prioridad": "RUTINA",
       "turno": "NOCTURNA_20_24",
       "horario_programado": null,
@@ -268,13 +271,18 @@
       "resultado_obtenido": null
     }
   ],
-  "observaciones": [],
+  "observaciones": [
+    "L: PD RESULTADOS DE LAB CENTRAL",
+    "C: ORDENES DE HEMATOLOGIA",
+    "ORDENES DE PSIQUIATRIA",
+    "O: NOVEDADES"
+  ],
   "laboratorios": [
     {
-      "fecha_hora": "2026-11-14",
+      "fecha_hora": "2026-11-16",
       "tipo_estudio": "Laboratorios / Gasometría",
       "valores": {
-        "resumen": "2026/11/09 TSH.: 1.30 INR.: 1.14 TIEMPO DE PROTROMBINA (TP).: 12.4 TIEMPO DE TROMBOPLASTINA (TTP)..: 28.3 Leucocitos (WBC).: 5.67 Hemoglobina (HGB).: 16.0 Hematocrito (HCT).: 47.9 Eosinófilos %.: 2.7 Linfocitos %.: 36.6 Neutrofilos %.: 54.1 COLESTEROL HDL: 32.10 COLESTEROL LDL: 104.70 GLUCOSA.: 98 CLORO: 106 POTASIO: 3.84 SODIO: 138.2 CALCIO IONICO"
+        "resumen": "22026/11/12 PCR CUANTITATIVO ULTRASENSIBLE: 78.40 Leucocitos (WBC): 2.11 Hemoglobina (HGB): 11.8 Hematocrito (HCT): 35.4 Volumen corp. medio (MCV): 95.60 Conc. media hemog. (MCH): 31.8 Neutrofilos: 1.68 Basófilos: 0.000 Plaquetas: 55.000 CLORO: 100 POTASIO: 3.46 SODIO: 136.7 NITROGENO UREICO EN SUERO: 17 UREA SUERO: 37.1 CREATININA: 0.44"
       },
       "alerta_critica": null
     }

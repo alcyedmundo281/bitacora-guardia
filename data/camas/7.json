@@ -129,7 +129,33 @@
       "nota": null
     },
     {
-      "nombre": "LAGRIMAS ARTIFICIALES UNA GOTA CADA 2 HORAS AMBOS OJOS SIEMPRE",
+      "nombre": "LAGRIMAS ARTIFICIALES UNA GOTA CADA 2 HORAS AMBOS OJOS SIEMPRE D: DIETA ENTERAL DE 300CC ART+ DIBEN 900KCAL/600CC DIBEN ",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "LEVETIRACETAM 500 MILIGRAMOS POR GASTROSTOMIA CADA 12 HORAS",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "ENOXAPARINA 40 MG SC QD",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -142,7 +168,80 @@
       "nota": null
     }
   ],
-  "pendientes": [],
+  "pendientes": [
+    {
+      "id": "PEND-7-01",
+      "tipo": "LABORATORIO",
+      "descripcion": "16/11/2026: BIOMETRÍA HEMÁTICA COMPLETA, UREA, CREATININA, ELECTROLITOS",
+      "prioridad": "RUTINA",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": null,
+      "es_visita_nocturna": false,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
+    },
+    {
+      "id": "PEND-7-02",
+      "tipo": "LABORATORIO",
+      "descripcion": "TFG POR CKD-EPI: 42.2 ML/MIN/1.73 M2 (CREATININA 1.56 DEL 09/11/2026)",
+      "prioridad": "RUTINA",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": null,
+      "es_visita_nocturna": false,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
+    },
+    {
+      "id": "PEND-7-03",
+      "tipo": "IMAGEN_PROCEDIMIENTO",
+      "descripcion": "AISLAMIENTO DE CONTACTO",
+      "prioridad": "URGENTE",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": null,
+      "es_visita_nocturna": true,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
+    },
+    {
+      "id": "PEND-7-04",
+      "tipo": "IMAGEN_PROCEDIMIENTO",
+      "descripcion": "TERAPIA RESPIRATORIA, REHABILITACIÓN FÍSICA Y PROCESO DE DECANULACIÓN",
+      "prioridad": "URGENTE",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": null,
+      "es_visita_nocturna": true,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
+    },
+    {
+      "id": "PEND-7-05",
+      "tipo": "INTERCONSULTA",
+      "descripcion": "ASPIRACIÓN DE SECRECIONES DOS VECES AL DÍA Y EN CASO NECESARIO (NEUMOLOGÍA)",
+      "prioridad": "RUTINA",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": null,
+      "es_visita_nocturna": false,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
+    },
+    {
+      "id": "PEND-7-06",
+      "tipo": "LABORATORIO",
+      "descripcion": "CURACIONES AVANZADAS POR CLÍNICA DE HERIDAS",
+      "prioridad": "RUTINA",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": null,
+      "es_visita_nocturna": false,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
+    }
+  ],
   "observaciones": [
     "O: FTR RESPIRATORIA Y REHABILITACIÓN",
     "CURACIONES AVANZADAS POR CLÍNICA DE HERIDAS"

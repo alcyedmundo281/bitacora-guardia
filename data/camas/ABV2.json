@@ -2,21 +2,29 @@
   "cama": "ABV2",
   "area": "EMERGENCIA_OBSERVACION",
   "servicio_tratante": null,
-  "nombre_completo": "MALDONADO CAYAMBE DARWIN BENITO C",
-  "hc": "2090778",
-  "cedula": "1711695302",
-  "edad": "55 años",
+  "nombre_completo": "PACIENTE: SALAZAR GARZON LUIS RIGOBERTO",
+  "hc": "N/D",
+  "cedula": null,
+  "edad": "70 AÑOS",
   "sexo": null,
   "fecha_nacimiento": null,
   "fecha_ingreso": null,
   "dias_hospitalizacion": null,
   "app": [
-    "INFARTO AGUDO DE MIOCARDIO"
+    "ANTECEDENTES PERSONALES:",
+    "HIPERPLASIA PROSTÁTICA BENIGNA DIAGNOSTICADO HACE 3 MESES",
+    "HIPERTENSIÓN ARTERIAL",
+    "OBESIDAD",
+    "CARCINOMA DE CARCINOMA EN UN GANGLIO RETROPERITONEAL (¿¿¿¿ORIGEN A DETERMINAR NO SÉ DEFINIR BIEN EN REPORTE, INDICA SER METASTÁSICO????)",
+    "ANTECEDENTES QUIRÚRGICOS:",
+    "COLECISTECTOMÍA HACE 1 AÑO",
+    "21/5/26 LAPAROTOMÍA EXPLORATORIA MÁS REPARO DE LESIÓN ACCIDENTAL DE COLON A NIVEL DE UNIÓN COLON SIGMOIDES MÁS TOMA DE BIOPSIA DE GANGLIO EN BIFURCACIÓN DE ILIACA DERECHA"
   ],
   "aqx": [],
   "alergias": [],
   "diagnosticos_activos": [
-    "SINDROME CONSTITUCIONAL EN ESTUDIO"
+    "NEUMONIA ADQUIRIDA EN LA COMUNIDAD CURB 65 2 PUNTOS, FINE 140 PUNTOS (CLASE V, MORTALIDAD DEL 27%)",
+    "TRASTORNO HIDROELECTROLÍTICA - HIPOKALEMIA MODERADA - HIPONATREMIA SEVERA HIPOVOLEMICA HIPOOSMOLAR AGUDA SINTOMATICA - HIPOMAGNESEMIA"
   ],
   "diagnosticos_pasivos": [],
   "dieta": null,
@@ -24,7 +32,7 @@
   "ckd_epi": null,
   "medicaciones": [
     {
-      "nombre": "PARACETAMOL 1 GRAMO IV PRN",
+      "nombre": "CEFTRIAXONA 1 GRAMOS INTRAVENOSO CADA DOCE HORAS (FI: 14/11/26 ) CIE10 J189 D1",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -37,7 +45,59 @@
       "nota": null
     },
     {
-      "nombre": "ENOXAPARINA 40 MG SC CADA DIA",
+      "nombre": "CLARITROMICINA 500 MILIGRAMOS INTRAVENOSO CADA 12 HORAS (FI:14/11/2026) CIE 10",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "BROMURO DE IPRATROPIO 2 PUFF CADA 8 HORAS",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "SULFATO DE MAGNESIO AL 20% 1 AMPOLLA INTRAVENOSA CADA DIA FI: 15/11/2026 (1/3)",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "DOXAZOSINA 0.4 MG VO QD",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "LOSARTAN 100MG VO QD",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -54,7 +114,7 @@
     {
       "id": "PEND-ABV2-01",
       "tipo": "LABORATORIO",
-      "descripcion": "EDA MÁS COLONOSCOPIA AGENDAR TURNO. VERIFICAR QUE DISPONGA DE PEDIDO Y TOMAR",
+      "descripcion": "ELECTROLITOS PM",
       "prioridad": "RUTINA",
       "turno": "NOCTURNA_20_24",
       "horario_programado": null,
@@ -66,7 +126,7 @@
     {
       "id": "PEND-ABV2-02",
       "tipo": "LABORATORIO",
-      "descripcion": "TURNO",
+      "descripcion": "BH, FUNCION RENAL, ELECTROLITOS 16/11/2026",
       "prioridad": "RUTINA",
       "turno": "NOCTURNA_20_24",
       "horario_programado": null,
@@ -77,36 +137,27 @@
     },
     {
       "id": "PEND-ABV2-03",
-      "tipo": "IMAGEN_PROCEDIMIENTO",
-      "descripcion": "ECOGRAFIA VESCICO PROSTATICA",
-      "prioridad": "STAT",
-      "turno": "NOCTURNA_20_24",
-      "horario_programado": null,
-      "es_visita_nocturna": true,
-      "estado": "PENDIENTE",
-      "responsable": null,
-      "resultado_obtenido": null
-    },
-    {
-      "id": "PEND-ABV2-04",
       "tipo": "LABORATORIO",
-      "descripcion": "MAÑANA AM: PSA TOTAL Y LIBRE, CEA, AFP",
-      "prioridad": "CONTROL",
+      "descripcion": "GASOMETRÍA ARTERIAL SIN OXÍGENO",
+      "prioridad": "RUTINA",
       "turno": "NOCTURNA_20_24",
       "horario_programado": null,
-      "es_visita_nocturna": true,
+      "es_visita_nocturna": false,
       "estado": "PENDIENTE",
       "responsable": null,
       "resultado_obtenido": null
     }
   ],
-  "observaciones": [],
+  "observaciones": [
+    "COPROPARASITARIO",
+    "PMN.. 1 %"
+  ],
   "laboratorios": [
     {
-      "fecha_hora": "2026-11-14",
+      "fecha_hora": "2026-11-16",
       "tipo_estudio": "Laboratorios / Gasometría",
       "valores": {
-        "resumen": "2026/11/12 Hora: 13:58 CA 19-9...........: 2.00 CA-125..........................: 1006.00 CA 15-3.........................: 101 CLORO...........................: 100 POTASIO.........................: 4.03 SODIO...........................: 135.3 NITROGENO UREICO EN SUERO.......: 12 UREA SUERO......................: 25.2 CREATININA..................."
+        "resumen": "Leucocitos (WBC)................: 5.77 Hemoglobina (HGB)...............: 13.7 Hematocrito (HCT)...............: 40.4 Volumen corp. medio (MCV).......: 85.30 Conc.media hemog.(MCH)..........: 28.8 Conc.corp.media (MCHC) de hemo..: 33.9 Volumen Medio Plaquetario(MPV)..: 8.0 Monocitos.......................: 0.31 Eosinófilos.....................: 0.71"
       },
       "alerta_critica": null
     }

@@ -1,0 +1,299 @@
+{
+  "cama": "ER / RECUPERACION QX",
+  "area": "EMERGENCIA_OBSERVACION",
+  "servicio_tratante": null,
+  "nombre_completo": "GOMEZ ESPINOZA JUSTO ANGEL .",
+  "hc": "N/D",
+  "cedula": "1709837072",
+  "edad": "58 AÑOS",
+  "sexo": null,
+  "fecha_nacimiento": null,
+  "fecha_ingreso": null,
+  "dias_hospitalizacion": null,
+  "app": [
+    "EPILEPSIA",
+    "DIABETES MELLITUS TIPO 2 HACE 17 AÑOS",
+    "HIPERTENSION ARTERIAL",
+    "HIPOTIROIDISMO"
+  ],
+  "aqx": [],
+  "alergias": [],
+  "diagnosticos_activos": [
+    "SEPSIS DE PARTES BLANDAS",
+    "CELULITS MIEMBRO SUPERIOR DERECHO",
+    "LESION RENAL AGUDA KDIGO C1 U0",
+    "ESTADO HIPEROSMOLAR HIPERGLICEMICO/ CETOACIDOSIS DIABETICA SUPERADA",
+    "HIPERKALEMIA MODERADA SUPERADA"
+  ],
+  "diagnosticos_pasivos": [],
+  "dieta": null,
+  "hidratacion": null,
+  "ckd_epi": null,
+  "medicaciones": [
+    {
+      "nombre": "MEROPENEM 1 GRAMO INTRAVENOSO CADA 8 HORAS, FI: 10/11/2026 (B99) (DÍA 5)",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "VANCOMICINA 1 GRAMO INTRAVENOSO CADA 12 HORAS, FI: 10/11/2026 (B99) (DÍA 5)",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "PARACETAMOL 1 GRAMO INTRAVENOSO CADA 8 HORAS",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "FUROSEMIDA 20 MG INTRAVENOSO CADA 12 HORAS",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "ENOXAPARINA 40 MG SUBCUTÁNEO CADA DÍA (REINICIAR 12 HORAS POSTERIOR A PROCEDIMIENTO DEL 14/11/2026)",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "ÁCIDO VALPROICO 500 MG VÍA ORAL CADA 12 HORAS",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "METFORMINA 850 MG VÍA ORAL TRES VECES AL DÍA: SUSPENDIDA",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "LOSARTÁN 50 MG VÍA ORAL CADA DÍA: SUSPENDIDO",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    }
+  ],
+  "pendientes": [
+    {
+      "id": "PEND-ERRECUPERACIONQX-01",
+      "tipo": "LABORATORIO",
+      "descripcion": "E: EXÁMENES Y PROCEDIMIENTOS:",
+      "prioridad": "RUTINA",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": null,
+      "es_visita_nocturna": false,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
+    },
+    {
+      "id": "PEND-ERRECUPERACIONQX-02",
+      "tipo": "LABORATORIO",
+      "descripcion": "RESONANCIA MAGNÉTICA DE CODO IZQUIERDO: HACER INFORMAR",
+      "prioridad": "RUTINA",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": null,
+      "es_visita_nocturna": false,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
+    },
+    {
+      "id": "PEND-ERRECUPERACIONQX-03",
+      "tipo": "LABORATORIO",
+      "descripcion": "CURACIÓN A PIE DE CAMA 15/11/2026 POR CIRUGÍA PLÁSTICA",
+      "prioridad": "RUTINA",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": null,
+      "es_visita_nocturna": false,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
+    },
+    {
+      "id": "PEND-ERRECUPERACIONQX-04",
+      "tipo": "LABORATORIO",
+      "descripcion": "L: LABORATORIO:",
+      "prioridad": "RUTINA",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": null,
+      "es_visita_nocturna": false,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
+    },
+    {
+      "id": "PEND-ERRECUPERACIONQX-05",
+      "tipo": "LABORATORIO",
+      "descripcion": "LUNES 16/11/2026: BIOMETRÍA, UREA, CREATININA, ELECTROLITOS, PROCALCITONINA, PCR, TIEMPOS DE COAGULACIÓN, AST, ALT, BILIRRUBINAS",
+      "prioridad": "RUTINA",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": null,
+      "es_visita_nocturna": false,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
+    },
+    {
+      "id": "PEND-ERRECUPERACIONQX-06",
+      "tipo": "LABORATORIO",
+      "descripcion": "PERFIL DIABÉTICO Y TIROIDEO ORDEN 34973297: PENDIENTE RESULTADOS",
+      "prioridad": "URGENTE",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": null,
+      "es_visita_nocturna": true,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
+    },
+    {
+      "id": "PEND-ERRECUPERACIONQX-07",
+      "tipo": "LABORATORIO",
+      "descripcion": "HEMOCULTIVOS: PENDIENTE RESULTADOS",
+      "prioridad": "URGENTE",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": null,
+      "es_visita_nocturna": true,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
+    },
+    {
+      "id": "PEND-ERRECUPERACIONQX-08",
+      "tipo": "LABORATORIO",
+      "descripcion": "CULTIVO DE HERIDA EN CODO (13/11/2026): PENDIENTE RESULTADOS",
+      "prioridad": "URGENTE",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": null,
+      "es_visita_nocturna": true,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
+    },
+    {
+      "id": "PEND-ERRECUPERACIONQX-09",
+      "tipo": "LABORATORIO",
+      "descripcion": "CULTIVOS DE CODO IZQUIERDO X 4 (14/11/2026): PENDIENTE RESULTADOS",
+      "prioridad": "URGENTE",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": null,
+      "es_visita_nocturna": true,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
+    },
+    {
+      "id": "PEND-ERRECUPERACIONQX-10",
+      "tipo": "INTERCONSULTA",
+      "descripcion": "C: INTERCONSULTAS:",
+      "prioridad": "URGENTE",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": null,
+      "es_visita_nocturna": true,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
+    },
+    {
+      "id": "PEND-ERRECUPERACIONQX-11",
+      "tipo": "LABORATORIO",
+      "descripcion": "SEGUIMIENTO POR TRAUMATOLOGÍA (VALORA NUEVA LIMPIEZA QUIRÚRGICA)",
+      "prioridad": "RUTINA",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": null,
+      "es_visita_nocturna": false,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
+    },
+    {
+      "id": "PEND-ERRECUPERACIONQX-12",
+      "tipo": "LABORATORIO",
+      "descripcion": "SEGUIMIENTO POR CIRUGÍA PLÁSTICA",
+      "prioridad": "RUTINA",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": null,
+      "es_visita_nocturna": false,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
+    }
+  ],
+  "observaciones": [
+    "AYER LIMPIEZA QUIRURGICA EXAMENES DE CONTROL HOY"
+  ],
+  "laboratorios": [
+    {
+      "fecha_hora": "2026-11-16",
+      "tipo_estudio": "Laboratorios / Gasometría",
+      "valores": {
+        "resumen": "Leucocitos (WBC 11.50 Hemoglobina (HGB 11.1 Hematocrito (HCT 33.1 Conc.corp.media (MCHC) de hemo: 33.5 Volumen Medio Plaquetario(MPV): 8.7 Monocitos 0.69 Eosinófilos 0.05 Linfocitos 1.07 Neutrofilos 9.54 Basófilos 0.020 Plaquetas 246.000 GLUCOSA 125 CLORO 93 POTASIO 3.02 SODIO 117.6 NITROGENO UREICO EN SUERO 17 UREA SUERO 36.9 CREATININA 0.53"
+      },
+      "alerta_critica": null
+    }
+  ],
+  "cultivos": [],
+  "alertas_criticas": []
+}

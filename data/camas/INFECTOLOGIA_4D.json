@@ -35,7 +35,7 @@
   "ckd_epi": null,
   "medicaciones": [
     {
-      "nombre": "PARACETAMOL 1 GR IV CADA 8 HORAS",
+      "nombre": "PARACETAMOL 1 G VO CADA 8 HORAS",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -48,7 +48,7 @@
       "nota": null
     },
     {
-      "nombre": "FUROSEMIDA 20 MG IV 07H00 AM Y 14H00",
+      "nombre": "FUROSEMIDA 20 MG IV C/6H",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -61,7 +61,7 @@
       "nota": null
     },
     {
-      "nombre": "OMEPRAZOL 40 MG IV QD",
+      "nombre": "OMEPRAZOL 20 MG VO QD",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -74,7 +74,7 @@
       "nota": null
     },
     {
-      "nombre": "APIXABAN 2,5 MG VO BID TIENE PACIENTE MEDICACIÓN CRÓNICA",
+      "nombre": "APIXABAN 2,5 MG VO BID TIENE PACIENTE MEDICACION CRONICA",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -87,7 +87,7 @@
       "nota": null
     },
     {
-      "nombre": "CARVEDILOL 3,125 MG VO BID MEDICACIÓN CRÓNICA",
+      "nombre": "CARVEDILOL 3,125 MG VO BID MEDICACION CRONICA",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -100,7 +100,7 @@
       "nota": null
     },
     {
-      "nombre": "EMPAGLIFOZINA 25 MG MG VO QD MEDICACIÓN CRÓNICA",
+      "nombre": "EMPAGLIFOZINA 25 MG MG VO QD MEDICACION CRONICA",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -126,7 +126,33 @@
       "nota": null
     },
     {
-      "nombre": "LACTULOSA 20 CC VO HS",
+      "nombre": "LACTULOSA 20 CC VIA ORAL CADA 12 HORAS",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "TOMAR UNA CAPSULA DE SAL CADA 12 HORAS",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "FUROSEMIDA 20 MG IV CADA 6 HORAS, SI TA MAYOR A 90/60 MMHG",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -143,8 +169,80 @@
     {
       "id": "PEND-INFECTOLOGIA4D-01",
       "tipo": "LABORATORIO",
-      "descripcion": "REPETIR ELECTROLITOS STAT + UREA, CREATININA",
+      "descripcion": "16/11/2026 BIOMETRÍA HEMÁTICA COMPLETA, UREA, CREATININA, ELECTROLITOS",
+      "prioridad": "RUTINA",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": null,
+      "es_visita_nocturna": false,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
+    },
+    {
+      "id": "PEND-INFECTOLOGIA4D-02",
+      "tipo": "LABORATORIO",
+      "descripcion": "MAGALDRATO + SIMETICONA 15 ML VÍA ORAL STAT Y LUEGO CADA 8 HORAS (30 MINUTOS DESPUÉS DE CADA COMIDA PRINCIPAL)",
       "prioridad": "STAT",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": null,
+      "es_visita_nocturna": true,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
+    },
+    {
+      "id": "PEND-INFECTOLOGIA4D-03",
+      "tipo": "LABORATORIO",
+      "descripcion": "FUROSEMIDA 20 MG INTRAVENOSO CADA 6 HORAS SI TA MAYOR A 90/60 MMHG (NEFROLOGÍA)",
+      "prioridad": "RUTINA",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": null,
+      "es_visita_nocturna": false,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
+    },
+    {
+      "id": "PEND-INFECTOLOGIA4D-04",
+      "tipo": "LABORATORIO",
+      "descripcion": "EMO MÁS UROCULTIVO; CISTOSCOPIA (ORDEN DE UROLOGÍA)",
+      "prioridad": "RUTINA",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": null,
+      "es_visita_nocturna": false,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
+    },
+    {
+      "id": "PEND-INFECTOLOGIA4D-05",
+      "tipo": "LABORATORIO",
+      "descripcion": "SONDA VESICAL PERMANENTE CON CAMBIO CADA 15 DÍAS",
+      "prioridad": "RUTINA",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": null,
+      "es_visita_nocturna": false,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
+    },
+    {
+      "id": "PEND-INFECTOLOGIA4D-06",
+      "tipo": "LABORATORIO",
+      "descripcion": "CURACIÓN DE HERIDAS DE LOS PIES POR CLÍNICA DE HERIDAS",
+      "prioridad": "RUTINA",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": null,
+      "es_visita_nocturna": false,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
+    },
+    {
+      "id": "PEND-INFECTOLOGIA4D-07",
+      "tipo": "LABORATORIO",
+      "descripcion": "CONTROL POR CONSULTA EXTERNA DE NEFROLOGÍA Y UROLOGÍA",
+      "prioridad": "CONTROL",
       "turno": "NOCTURNA_20_24",
       "horario_programado": null,
       "es_visita_nocturna": true,

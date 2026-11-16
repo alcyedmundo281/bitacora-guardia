@@ -75,7 +75,7 @@
       "nota": null
     },
     {
-      "nombre": "AMPICILINA + SULBACTAM 3 GRAMOS INTRAVENOSO CADA 6 HORAS FI: 30-10-2026 DIA 13/14",
+      "nombre": "GLUCONATO DE CALCIO 1 AMP IV LUNES / MIÉRCOLES / VIERNES",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -88,7 +88,7 @@
       "nota": null
     },
     {
-      "nombre": "AMIKACINA 1G IV CADA DIA POR 3 DÍAS (FI: 09/11/2026 D3/3 B99) SUSPENDER****",
+      "nombre": "SULFATO DE MG 1 AMP IV MARTES / JUEVES /SÁBADO",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -101,7 +101,59 @@
       "nota": null
     },
     {
-      "nombre": "PROGRESIÓN DE DIETA SEGÚN TOLERANCIA",
+      "nombre": "ACIDO ASCÓRBICO 1 AMP IV CADA DIA",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "COMPLEJO B 3 CC IV LUNES Y VIERNES",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "FITOMENADIONA 1 AMP IV LUNES",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "INSULINA SC POR ESCAPES SEGÚN GLUCEMIAS",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "OMEPRAZOL 40 MG INTRAVENOSO CADA 12 HORAS",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -118,6 +170,18 @@
     {
       "id": "PEND-INFECTO1B-01",
       "tipo": "LABORATORIO",
+      "descripcion": "16/11/2026: BIOMETRÍA HEMÁTICA COMPLETA, UREA, CREATININA, ELECTROLITOS, MAGNESIO, FÓSFORO",
+      "prioridad": "RUTINA",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": null,
+      "es_visita_nocturna": false,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
+    },
+    {
+      "id": "PEND-INFECTO1B-02",
+      "tipo": "LABORATORIO",
       "descripcion": "CONTROL DIARIO DE ELECTROLITOS",
       "prioridad": "CONTROL",
       "turno": "NOCTURNA_20_24",
@@ -128,21 +192,9 @@
       "resultado_obtenido": null
     },
     {
-      "id": "PEND-INFECTO1B-02",
-      "tipo": "INTERCONSULTA",
-      "descripcion": "REVALORACION POR INFECTOLOGÍA",
-      "prioridad": "URGENTE",
-      "turno": "NOCTURNA_20_24",
-      "horario_programado": null,
-      "es_visita_nocturna": true,
-      "estado": "PENDIENTE",
-      "responsable": null,
-      "resultado_obtenido": null
-    },
-    {
       "id": "PEND-INFECTO1B-03",
       "tipo": "LABORATORIO",
-      "descripcion": "INDICACIONES DE NUTRICIÓN",
+      "descripcion": "TFG POR CKD-EPI: 124.9 ML/MIN/1.73 M2 (CREATININA 0.33 DEL 12/11/2026)",
       "prioridad": "RUTINA",
       "turno": "NOCTURNA_20_24",
       "horario_programado": null,
@@ -154,7 +206,7 @@
     {
       "id": "PEND-INFECTO1B-04",
       "tipo": "LABORATORIO",
-      "descripcion": "INDICACIONES DE INFECTOLOGÍA",
+      "descripcion": "RESULTADO DE CULTIVO DE HERIDA (LIMPIEZA QUIRÚRGICA 14/11/2026)",
       "prioridad": "RUTINA",
       "turno": "NOCTURNA_20_24",
       "horario_programado": null,
@@ -165,6 +217,90 @@
     },
     {
       "id": "PEND-INFECTO1B-05",
+      "tipo": "IMAGEN_PROCEDIMIENTO",
+      "descripcion": "AISLAMIENTO DE CONTACTO HASTA EL ALTA",
+      "prioridad": "URGENTE",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": null,
+      "es_visita_nocturna": true,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
+    },
+    {
+      "id": "PEND-INFECTO1B-06",
+      "tipo": "LABORATORIO",
+      "descripcion": "NUTRICIÓN PARENTERAL TOTAL (RECÁLCULO POR CIRUGÍA GENERAL) Y DIETA INDICADA POR NUTRICIÓN",
+      "prioridad": "RUTINA",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": null,
+      "es_visita_nocturna": false,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
+    },
+    {
+      "id": "PEND-INFECTO1B-07",
+      "tipo": "LABORATORIO",
+      "descripcion": "CURACIONES POR CLÍNICA DE HERIDAS; CAMBIOS DE POSICIÓN CADA 2 HORAS; MEDIDAS ANTIESCARAS ESTRICTAS",
+      "prioridad": "RUTINA",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": null,
+      "es_visita_nocturna": false,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
+    },
+    {
+      "id": "PEND-INFECTO1B-08",
+      "tipo": "INTERCONSULTA",
+      "descripcion": "CONTROL POR CONSULTA EXTERNA DE CIRUGÍA PLÁSTICA EL 01/12/2026 08H00 (DR. MENA) Y DE COLOPROCTOLOGÍA EL 02/12/2026 17H00 (DR. MERCHÁN); REINTERCONSULTAR SI CONTINÚA HOSPITALIZADO",
+      "prioridad": "URGENTE",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": null,
+      "es_visita_nocturna": true,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
+    },
+    {
+      "id": "PEND-INFECTO1B-09",
+      "tipo": "LABORATORIO",
+      "descripcion": "ENDOSCOPIA DIGESTIVA ALTA DE CONTROL (DICIEMBRE 2026)",
+      "prioridad": "CONTROL",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": null,
+      "es_visita_nocturna": true,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
+    },
+    {
+      "id": "PEND-INFECTO1B-10",
+      "tipo": "LABORATORIO",
+      "descripcion": "INDICACIONES DE NUTRICIÓN",
+      "prioridad": "RUTINA",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": null,
+      "es_visita_nocturna": false,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
+    },
+    {
+      "id": "PEND-INFECTO1B-11",
+      "tipo": "LABORATORIO",
+      "descripcion": "INDICACIONES DE INFECTOLOGÍA",
+      "prioridad": "RUTINA",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": null,
+      "es_visita_nocturna": false,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
+    },
+    {
+      "id": "PEND-INFECTO1B-12",
       "tipo": "LABORATORIO",
       "descripcion": "INDICACIONES DE COLOPROCTOLOGÍA",
       "prioridad": "RUTINA",
@@ -181,7 +317,7 @@
   ],
   "laboratorios": [
     {
-      "fecha_hora": "2026-11-14",
+      "fecha_hora": "2026-11-16",
       "tipo_estudio": "Laboratorios / Gasometría",
       "valores": {
         "resumen": "2026/11/07 Hora: 13:37 HEMOCULTIVO POR 1 MUESTRA. MICROORGANISMO: Enterococcus faecalis BENCILPENICILINA SENSIBLE / 4 ug/mL AMPICILINA SENSIBLE / <= 2 ug/mL Resultado: POSITIVO; Tiempo de Detecci n: 42.8 hs;"

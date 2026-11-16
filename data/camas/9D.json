@@ -24,13 +24,11 @@
   "alergias": [],
   "diagnosticos_activos": [
     "DIAGNOSTICO:",
-    "ANEMIA MACROCITICA SEVERA AGUDA (CAIDA DE HB A 8.1 G/DL - EN SOPORTE",
-    "TRANSFUSIONAL)",
-    "SEPSIS DE FOCO PULMONAR / NEUMONIA ASPIRATIVA (DIA 4 DE TRATAMIENTO)",
-    "DESCARTE DE MENINGOENCEFALITIS VS. ENCEFALOPATIA TOXICO-METABOLICA",
+    "SÍNDROME ANÉMICO MACROCÍTICO AGUDO RESUELTO TRAS SOPORTE TRANSFUSIONAL (HB 11.9 VS 8.1 G/DL)",
+    "SEPSIS DE FOCO PULMONAR / NEUMONÍA ASPIRATIVA (ESQUEMA ROTADO EL 13/11)",
+    "SÍNDROME NEUROLÓGICO (DESCARTE DE MENINGOENCEFALITIS VS ENCEFALOPATÍA TÓXICO-METABÓLICA)",
     "EPILEPSIA SECUNDARIA A TRAUMA / DEMENCIA VASCULAR",
-    "CONSTIPACION",
-    "HIPERNATREMIA MODERADA Y TROMBOCITOPENIA (RESUELTAS)"
+    "TROMBOCITOPENIA Y HIPERNATREMIA MODERADA RESUELTAS (SODIO 140.0 MEQ/L, PLAQUETAS 151.000)"
   ],
   "diagnosticos_pasivos": [],
   "dieta": null,
@@ -38,7 +36,7 @@
   "ckd_epi": null,
   "medicaciones": [
     {
-      "nombre": "IV PASAR 60ML/HORA",
+      "nombre": "AMPICILINA/SULBACTAM 3 GR IV CADA 6 HORAS FI: 13/11/2026 (DIA 2 ) CIE 10",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -51,7 +49,7 @@
       "nota": null
     },
     {
-      "nombre": "PIPERACILINA/TAZOBACTAM 4.5 GRAMOS IV CADA 6 HORAS (4/5) FI:09/11/2026 A419",
+      "nombre": "UROCIT 2 TABLETAS CADA 8 HORAS",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -116,7 +114,7 @@
       "nota": null
     },
     {
-      "nombre": "ACIDO VALPROICO 1000MG VO CADA 12 HORAS",
+      "nombre": "ACIDO VALPROICO 1000 MG VO CADA 12 HORAS",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -129,7 +127,7 @@
       "nota": null
     },
     {
-      "nombre": "LEVOTIROXINA 125 MG VO CADA DIA",
+      "nombre": "LEVOTIROXINA 150 MG VO CADA DIA",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -142,7 +140,7 @@
       "nota": null
     },
     {
-      "nombre": "FUROSEMIDA 40MG IV DESPUES DE PAQUETE GLOBULAR",
+      "nombre": "METILPREDNISOLONA 125 MG IV CADA DIA 1/3",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -179,14 +177,62 @@
       "estado": "PENDIENTE",
       "responsable": null,
       "resultado_obtenido": null
+    },
+    {
+      "id": "PEND-9D-03",
+      "tipo": "LABORATORIO",
+      "descripcion": "TENSIÓN ARTERIAL: 95/50 MMHG (TAM 80 MMHG), FRECUENCIA CARDÍACA: 73 LPM, SATURACIÓN DE OXÍGENO: 92% (1L), TEMPERATURA: 35.9 °C",
+      "prioridad": "RUTINA",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": null,
+      "es_visita_nocturna": false,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
+    },
+    {
+      "id": "PEND-9D-04",
+      "tipo": "LABORATORIO",
+      "descripcion": "INGESTA 1850",
+      "prioridad": "RUTINA",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": null,
+      "es_visita_nocturna": false,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
+    },
+    {
+      "id": "PEND-9D-05",
+      "tipo": "LABORATORIO",
+      "descripcion": "EXCRETA 700",
+      "prioridad": "RUTINA",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": null,
+      "es_visita_nocturna": false,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
+    },
+    {
+      "id": "PEND-9D-06",
+      "tipo": "LABORATORIO",
+      "descripcion": "BALANCE1150",
+      "prioridad": "RUTINA",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": null,
+      "es_visita_nocturna": false,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
     }
   ],
   "observaciones": [
-    "MAÑANA 05H00 BH UREA CREATININA ELECTROLITOS"
+    "PARACLÍNICOS (15/11/2026): CLORO 102, POTASIO 4.22, SODIO 135, 1. LABORATORIOS 13/11/2026: LEUCOCITOS 5.18 K (NEUTRÓFILOS 2.59 K), HEMOGLOBINA 11.9 G/DL (RECUPERACIÓN NOTABLE POST-TRANSFUSIÓN RESPECTO A 8.1 G/DL DEL 12/11),"
   ],
   "laboratorios": [
     {
-      "fecha_hora": "2026-11-14",
+      "fecha_hora": "2026-11-16",
       "tipo_estudio": "Laboratorios / Gasometría",
       "valores": {
         "resumen": "2026/11/12 HORA: 08:39 LEUCOCITOS (WBC): 5.72 HEMOGLOBINA (HGB): 8.1 HEMATOCRITO (HCT): 25.0 VOLUMEN CORP. MEDIO (MCV): 100.60 CONC. MEDIA HEMOG. (MCH): 32.4 CONC. CORP. MEDIA (MCHC) DE HEMO: 32.4 VOLUMEN MEDIO PLAQUETARIO (MPV): 11.5 MONOCITOS: 0.45 EOSINOFILOS: 0.05 LINFOCITOS: 2.65 NEUTROFILOS: 2.51 BASOFILOS: 0.030 PLAQUETAS: 117.000 RECUENTO D"

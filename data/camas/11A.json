@@ -35,7 +35,7 @@
   "ckd_epi": null,
   "medicaciones": [
     {
-      "nombre": "A PASAR 40ML/HORA",
+      "nombre": "CEFTRIAXONA 2 GRAMOS IV CADA DIA (4/5) FI: 12/11/2026 A419",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -48,20 +48,7 @@
       "nota": null
     },
     {
-      "nombre": "CEFTRIAXOONE 2 GRAMOS IV CADA DIA (3/5) FI: 12/11/2026 A419",
-      "dosis": "",
-      "via": "",
-      "frecuencia": "",
-      "fecha_inicio": null,
-      "dias_tratamiento": null,
-      "indicacion_cie10": null,
-      "suspendido": false,
-      "diferido": false,
-      "prn": false,
-      "nota": null
-    },
-    {
-      "nombre": "HEPARINA SODICA 5000UI SC CADA 12 HORAS",
+      "nombre": "HEPARINA SODICA 5000 UI SC CADA 12 HORAS LOS DÍAS QUE NO HACE DIÁLISIS",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -113,7 +100,7 @@
       "nota": null
     },
     {
-      "nombre": "INSULINA NPH 32 UI SC AM",
+      "nombre": "INSULINA NPH 24 UI + 2UI INSULINA CRISTALINA SC AM",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -126,7 +113,20 @@
       "nota": null
     },
     {
-      "nombre": "INSULINA NPH 14 UI SC PM",
+      "nombre": "INSULINA CRISTALINA 4UI SC 12H00",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "INSULINA NPH 10 UI + 2UI INSULINA CRISTALINA SC PM",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -168,12 +168,12 @@
   "pendientes": [
     {
       "id": "PEND-11A-01",
-      "tipo": "IMAGEN_PROCEDIMIENTO",
-      "descripcion": "E: PD INFORME DE TAC DE TORAX",
-      "prioridad": "URGENTE",
+      "tipo": "LABORATORIO",
+      "descripcion": "16/11/2026: BIOMETRÍA, ELECTROLITOS, UREA Y CREATININA",
+      "prioridad": "RUTINA",
       "turno": "NOCTURNA_20_24",
       "horario_programado": null,
-      "es_visita_nocturna": true,
+      "es_visita_nocturna": false,
       "estado": "PENDIENTE",
       "responsable": null,
       "resultado_obtenido": null
@@ -181,19 +181,19 @@
     {
       "id": "PEND-11A-02",
       "tipo": "LABORATORIO",
-      "descripcion": "GSA STAT",
-      "prioridad": "STAT",
+      "descripcion": "CEFTRIAXONA 2 G INTRAVENOSO CADA DÍA DÍA 4/5 (INICIO 12/11/2026)",
+      "prioridad": "RUTINA",
       "turno": "NOCTURNA_20_24",
       "horario_programado": null,
-      "es_visita_nocturna": true,
+      "es_visita_nocturna": false,
       "estado": "PENDIENTE",
       "responsable": null,
       "resultado_obtenido": null
     },
     {
       "id": "PEND-11A-03",
-      "tipo": "LABORATORIO",
-      "descripcion": "L: HOY BH UREA CREATININA ELECTROLITOS PCR PERFIL LIPIDICO HBA1C TSH",
+      "tipo": "INTERCONSULTA",
+      "descripcion": "HEMODIÁLISIS 16/11/2026 PREVIA VALORACIÓN DE LABORATORIOS ACTUALIZADOS Y BALANCE DIARIO",
       "prioridad": "URGENTE",
       "turno": "NOCTURNA_20_24",
       "horario_programado": null,
@@ -205,7 +205,7 @@
     {
       "id": "PEND-11A-04",
       "tipo": "LABORATORIO",
-      "descripcion": "CALCIO IONICO",
+      "descripcion": "RESTRICCIÓN ESTRICTA DE LÍQUIDOS PARENTERALES, NO LACTATO DE RINGER",
       "prioridad": "RUTINA",
       "turno": "NOCTURNA_20_24",
       "horario_programado": null,
@@ -240,8 +240,7 @@
     }
   ],
   "observaciones": [
-    "C: IC CENTRO DE HEMODIALISIS",
-    "IC NEUMOLOGIA (INICIO DE FTR)"
+    "C: IC CENTRO DE HEMODIALISIS"
   ],
   "laboratorios": [],
   "cultivos": [],

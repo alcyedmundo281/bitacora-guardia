@@ -143,10 +143,10 @@
   ],
   "laboratorios": [
     {
-      "fecha_hora": "2026-11-14",
+      "fecha_hora": "2026-11-16",
       "tipo_estudio": "Laboratorios / Gasometría",
       "valores": {
-        "resumen": "HOY SUSPENDE TRIK K: 3.9"
+        "resumen": "15/10/2026 INR.............................: 1.32 TIEMPO DE PROTROMBINA (TP)......: 14.3 TIEMPO DE TROMBOPLASTINA (TTP)..: 32.7 } . Leucocitos (WBC)................: 53.92 Hemoglobina (HGB)...............: 10.8 Hematocrito (HCT)...............: 33.8 Volumen corp. medio (MCV).......: 83.50 Conc.media hemog.(MCH)..........: 26.6 Conc.corp.media (MCHC"
       },
       "alerta_critica": null
     }

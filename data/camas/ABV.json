@@ -1,27 +1,31 @@
 {
-  "cama": "CARDIO 3C",
-  "area": "PERIFERICOS",
+  "cama": "ABV",
+  "area": "EMERGENCIA_OBSERVACION",
   "servicio_tratante": null,
-  "nombre_completo": "HIDALGO NIETO CARLOS GONZALO 72 AÑOS",
-  "hc": "963279",
-  "cedula": null,
-  "edad": "72 años",
+  "nombre_completo": "MORA GAIBOR JORGE RAMIRO C",
+  "hc": "1948799",
+  "cedula": "0200146611",
+  "edad": "83 años",
   "sexo": null,
   "fecha_nacimiento": null,
   "fecha_ingreso": null,
   "dias_hospitalizacion": null,
   "app": [
+    "ANTECEDENTES PATOLÓGICOS PERSONALES:",
+    "SMD IPSS RIESGO INTERMEDIO SIN CITOGENÉTICO",
+    "LEUCEMIA MIELOIDE AGUDA SECUNDARIO SINDROME MIELODISPLÁSICO",
+    "DIABETES MELLITUS TIPO 2",
     "HIPERTENSIÓN ARTERIAL",
-    "ENFEREMEDAD RENAL CRONICA",
-    "PSORIASIS",
-    "HIPOROIDISMO",
-    "PROTEINURIA SUBNEFROTICA PERSISTENTE DE CAUSA NO FILIADA",
-    "******PACIENTE ALÉRGICO AL PESCADO Y MARISCOS******"
+    "HIPOACUSIA",
+    "INSUFICIENCIA CARDIACA",
+    "BLOQUEO AV TOTAL DE PROBABLE ORIGEN NODAL + FIBRILACIÓN AURICULAR"
   ],
   "aqx": [],
   "alergias": [],
   "diagnosticos_activos": [
-    "SINDROME CONSTITUCIONAL A DESCARTAR PROCESO ONCOLÓGICO"
+    "DIAGNÓSTICOS ACTIVOS:",
+    "INFECCIÓN DE VÍAS URINARIAS",
+    "ENFERMEDAD RENAL CRÓNICA REAGUDIZADA"
   ],
   "diagnosticos_pasivos": [],
   "dieta": null,
@@ -29,7 +33,7 @@
   "ckd_epi": null,
   "medicaciones": [
     {
-      "nombre": "PARACETAMOL 1 GR VO CADA 8 HORAS",
+      "nombre": "PARACETAMOL 1 GR VÍA INTRAVENOSA POR RAZONES NECESARIAS",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -42,7 +46,7 @@
       "nota": null
     },
     {
-      "nombre": "LEVOTIROXINA 100 UG VO QD AM",
+      "nombre": "MEROPENEM 1 GRAMO INTRAVENOSO CADA 8 HORAS 1ER DÍA, LUEGO AJUSTE A FILTRADO GLOMERULAR POR SERVICIO BASE (FI: 15/11/2026",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -55,7 +59,7 @@
       "nota": null
     },
     {
-      "nombre": "AMLODIPINO 10 MG VO QD SUSPENDIDO",
+      "nombre": "ENOXAPARINA AJUSTADO A FUNCION RENAL: 50 MILIGRAMOS SUBCUTÁNEO CADA 12 HORAS",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -68,7 +72,7 @@
       "nota": null
     },
     {
-      "nombre": "FUROSEMIDA 20 MG CADA 48 HORAS",
+      "nombre": "OMEPRAZOL 40 MG VO QD",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -81,7 +85,7 @@
       "nota": null
     },
     {
-      "nombre": "EMPAGLIFLOZINA 10 MG VO QD",
+      "nombre": "TAMSULOSINA 0.4 MG VO QD",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -94,7 +98,7 @@
       "nota": null
     },
     {
-      "nombre": "ALOPURINOL 150 MG VO CADA 48 HORAS",
+      "nombre": "SIMVASTATINA 40 MG VO QD",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -107,7 +111,46 @@
       "nota": null
     },
     {
-      "nombre": "BICARBONATO DE SODIO 1 GR VO QD",
+      "nombre": "LOSARTAN 50 MG VO QD SOLO SI TENSIONES ARTERIALES MAYORES A 140/90 MMHG",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "METFORMINA 850 MG ***DIFERIR***",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "FUROSEMIDA 40 MG ***DIFERIR***",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "ESPIRONOLACTONA 25 MG ***DIFERIR***",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -122,9 +165,9 @@
   ],
   "pendientes": [
     {
-      "id": "PEND-CARDIO3C-01",
+      "id": "PEND-ABV-01",
       "tipo": "IMAGEN_PROCEDIMIENTO",
-      "descripcion": "TAC SIMPLE DE ENCÉFALO, CUELLO, TÓRAX, ABDOMEN Y PELVIS. (HACER INFORMAR)",
+      "descripcion": "ECOGRAFÍA RENAL SOLICITADA POR NEFROLOGÍA (Orden No. 35003556)",
       "prioridad": "URGENTE",
       "turno": "NOCTURNA_20_24",
       "horario_programado": null,
@@ -134,33 +177,9 @@
       "resultado_obtenido": null
     },
     {
-      "id": "PEND-CARDIO3C-02",
+      "id": "PEND-ABV-02",
       "tipo": "LABORATORIO",
-      "descripcion": "EDA Y COLONOSCOPIA REALIZADA: REPETIR COLONOSCOPIA PENDIENTE TURNO",
-      "prioridad": "URGENTE",
-      "turno": "NOCTURNA_20_24",
-      "horario_programado": null,
-      "es_visita_nocturna": true,
-      "estado": "PENDIENTE",
-      "responsable": null,
-      "resultado_obtenido": null
-    },
-    {
-      "id": "PEND-CARDIO3C-03",
-      "tipo": "INTERCONSULTA",
-      "descripcion": "VALORACIÓN POR CIRUGÍA VASCULAR (INSUFICIENCIA ARTERIAL CRONICA): ALTA",
-      "prioridad": "URGENTE",
-      "turno": "NOCTURNA_20_24",
-      "horario_programado": null,
-      "es_visita_nocturna": true,
-      "estado": "PENDIENTE",
-      "responsable": null,
-      "resultado_obtenido": null
-    },
-    {
-      "id": "PEND-CARDIO3C-04",
-      "tipo": "LABORATORIO",
-      "descripcion": "SEGUIMIENTO POR NEFROLOGÍA",
+      "descripcion": "16/11/2026: BIOMETRÍA HEMÁTICA COMPLETA, UREA, CREATININA, ELECTROLITOS, MAGNESIO, CALCIO, GASOMETRÍA VENOSA, PCR",
       "prioridad": "RUTINA",
       "turno": "NOCTURNA_20_24",
       "horario_programado": null,
@@ -168,9 +187,28 @@
       "estado": "PENDIENTE",
       "responsable": null,
       "resultado_obtenido": null
+    },
+    {
+      "id": "PEND-ABV-03",
+      "tipo": "LABORATORIO",
+      "descripcion": "UROCULTIVO PENDIENTE RESULTADOS (Orden No. 35003554, Orden No. 35002630)",
+      "prioridad": "URGENTE",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": null,
+      "es_visita_nocturna": true,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
     }
   ],
-  "observaciones": [],
+  "observaciones": [
+    "2026/11/15",
+    "PROCALCITONINA LAB. CLINICO.....: 3.88",
+    "Leucocitos (WBC)................: 1.44",
+    "Hemoglobina (HGB)...............: 8.2",
+    "Hematocrito (HCT)...............: 26.1",
+    "Volumen corp. medio (MCV).......: 104.70"
+  ],
   "laboratorios": [],
   "cultivos": [],
   "alertas_criticas": []

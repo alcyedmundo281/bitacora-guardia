@@ -1,25 +1,30 @@
 {
-  "cama": "AB 1_3",
+  "cama": "ABV 3B_2",
   "area": "EMERGENCIA_OBSERVACION",
   "servicio_tratante": null,
-  "nombre_completo": "RODRIGUEZ VILLAMAR CECILIA AUGUSTA",
+  "nombre_completo": "CHAVEZ VITERI JUAN LUIS EDUARDO",
   "hc": "N/D",
-  "cedula": "1703966620",
-  "edad": "74 AÑOS",
+  "cedula": "1703067353",
+  "edad": "80 AÑOS",
   "sexo": null,
   "fecha_nacimiento": null,
   "fecha_ingreso": null,
   "dias_hospitalizacion": null,
   "app": [
-    "DIABETES MELLITUS TIPO 2",
-    "ITU A REPETICIÓN"
+    "HIPERPLASIA PROSTATICA",
+    "HIPERTENSION ARTERIAL",
+    "POLIGLOBULIA",
+    "HIPERURICEMIA"
   ],
   "aqx": [],
   "alergias": [],
   "diagnosticos_activos": [
-    "SEPSIS DE FOCO URINARIO",
-    "HIPONATREMIA SEVERA HIPERVOLEMICA HIPOOSMOLAR CRONICA",
-    "HEPATOPATIA EN ESTUDIO"
+    "SEPSIS FOCO URINARIO",
+    "INFECCION DE TRACTO URINARIO COMPLICADA",
+    "ACIDOSIS METABÓLICA",
+    "HEMATURIA MACROSCOPICA",
+    "LESION RENAL AGUDA SOBRE ENFERMEDAD RENAL CRÓNICA DE ETIOLOGIA POSRENAL (OBSTRUCTIVA)",
+    "HIPERKALEMIA MODERADA SUPERADA"
   ],
   "diagnosticos_pasivos": [],
   "dieta": null,
@@ -27,7 +32,7 @@
   "ckd_epi": null,
   "medicaciones": [
     {
-      "nombre": "AMPICILINA MAS SULBACTAM 3G IV CADA 6HORAS FI: 12.11.2026 D:1 CIE10: A419",
+      "nombre": "CEFTRIAXONA 1 GRAMO IV CADA 12 HORAS, FI 13/11/2026, CIE-10: N390 D2",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -40,7 +45,7 @@
       "nota": null
     },
     {
-      "nombre": "PARACETAMOL 1G IV CADA 12 HORAS Y PRN",
+      "nombre": "PARACETAMOL 1 IV CADA 8 HORAS",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -53,20 +58,7 @@
       "nota": null
     },
     {
-      "nombre": "OMEPRAZOL 40 MG IV QD",
-      "dosis": "",
-      "via": "",
-      "frecuencia": "",
-      "fecha_inicio": null,
-      "dias_tratamiento": null,
-      "indicacion_cie10": null,
-      "suspendido": false,
-      "diferido": false,
-      "prn": false,
-      "nota": null
-    },
-    {
-      "nombre": "ENOXAPARINA 40 MG SC CADA 24 HORAS MANTENER SI NO HAY SANGRADO",
+      "nombre": "METOCLOPRAMIDA 10 MG IV PRN",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -81,9 +73,21 @@
   ],
   "pendientes": [
     {
-      "id": "PEND-AB13-01",
+      "id": "PEND-ABV3B2-01",
       "tipo": "LABORATORIO",
-      "descripcion": "OSMOLARIDAD SERICA/PLASMATICA ELECTROLITOS CORTISOL SERICO 08H. NA URINARIO",
+      "descripcion": "HOY 15/11/2026 ELETROLITOS, UREA, CREATININA, GASOMETRIA",
+      "prioridad": "URGENTE",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": null,
+      "es_visita_nocturna": true,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
+    },
+    {
+      "id": "PEND-ABV3B2-02",
+      "tipo": "LABORATORIO",
+      "descripcion": "LUNES 16/11/2026",
       "prioridad": "RUTINA",
       "turno": "NOCTURNA_20_24",
       "horario_programado": null,
@@ -93,9 +97,9 @@
       "resultado_obtenido": null
     },
     {
-      "id": "PEND-AB13-02",
+      "id": "PEND-ABV3B2-03",
       "tipo": "LABORATORIO",
-      "descripcion": "+OSMOLARIDAD URINARIA TSH + T4L **INSISTIR***",
+      "descripcion": "BIOMETRIA HEMATICA, UREA, CREATININA, ELECTROLITOS, PCR, PROCALCITONINA",
       "prioridad": "RUTINA",
       "turno": "NOCTURNA_20_24",
       "horario_programado": null,
@@ -105,22 +109,19 @@
       "resultado_obtenido": null
     },
     {
-      "id": "PEND-AB13-03",
+      "id": "PEND-ABV3B2-04",
       "tipo": "LABORATORIO",
-      "descripcion": "L: LUNES BIOMETRIA HEMATICA, QUIMICA Y ELECTROLITOS",
-      "prioridad": "RUTINA",
+      "descripcion": "PENDIENTE RESULTADO UROCULTIVO",
+      "prioridad": "URGENTE",
       "turno": "NOCTURNA_20_24",
       "horario_programado": null,
-      "es_visita_nocturna": false,
+      "es_visita_nocturna": true,
       "estado": "PENDIENTE",
       "responsable": null,
       "resultado_obtenido": null
     }
   ],
-  "observaciones": [
-    "CONTROL SERIADO DE SODIO Y ELECTROLITOS CADA 4-6 HORAS DURANTE CORRECCION",
-    "ACTIVA"
-  ],
+  "observaciones": [],
   "laboratorios": [],
   "cultivos": [],
   "alertas_criticas": []

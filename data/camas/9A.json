@@ -13,18 +13,19 @@
   "app": [
     "ANTECEDENTES PERSONALES:",
     "ANSIEDAD Y DEPRESIÓN DIAGNOSTICADA HACE 8 AÑOS",
+    "TRASTORNO BIPOLAR",
     "ANTECEDENTES QUIRURGICOS:",
     "APENDICECTOMÍA",
     "CESAREA X 3",
     "OOFORECTOMÍA",
-    "HISTERECTOMIA ,",
-    "ALERGIAS A MEDICAMENTOS: PENICILINA"
+    "HISTERECTOMIA ,"
   ],
   "aqx": [],
   "alergias": [],
   "diagnosticos_activos": [
     "EFECTO TOXICO ENVENENAMIENTO POR ANTIDEPRESIVO TRICICLICO CIE-10: T430 SUPERADO",
-    "TRASTORNO ANSIOSO DEPRESIVO CIE-10: F412"
+    "TRASTORNO ANSIOSO DEPRESIVO CIE-10: F412",
+    "TRAUMATISMO CRANEO ENCEFALICO LEVE"
   ],
   "diagnosticos_pasivos": [],
   "dieta": null,
@@ -71,7 +72,7 @@
       "nota": null
     },
     {
-      "nombre": "SULFATO DE MAGNESIO 2 GRAMOS INTRAVENOSO CADA DIA",
+      "nombre": "PARACETAMOL 1 GRAMO VO CADA 8 HORAS",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -97,7 +98,7 @@
       "nota": null
     },
     {
-      "nombre": "******************INDICACIONES PSIQUIATRIA 13/11/26**************",
+      "nombre": "INDICACIONES DE PSIQUIATRIA",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -110,7 +111,46 @@
       "nota": null
     },
     {
-      "nombre": "RISPERIDONA 1 MG VO HS",
+      "nombre": "FLUOXETINA 20 MG VO AM",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "QUETIAPINA 100 MG VO HS",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "RISPERIDONA 1.5 MG VO BID",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "HALOPERIDOL 5 MG VO PRN EN CASO DE AGITACION PSICOMOTRIZ FRANCA PREVIA",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -127,19 +167,7 @@
     {
       "id": "PEND-9A-01",
       "tipo": "LABORATORIO",
-      "descripcion": "SEGUIMIENTO POR PSIQUIATRIA",
-      "prioridad": "RUTINA",
-      "turno": "NOCTURNA_20_24",
-      "horario_programado": null,
-      "es_visita_nocturna": false,
-      "estado": "PENDIENTE",
-      "responsable": null,
-      "resultado_obtenido": null
-    },
-    {
-      "id": "PEND-9A-02",
-      "tipo": "LABORATORIO",
-      "descripcion": "INDICACIONES DE PSIQUATRIA",
+      "descripcion": "TENSIÓN ARTERIAL: 103/53 MMHG, FRECUENCIA CARDÍACA: 78 LPM, FRECUENCIA RESPIRATORIA: 19 RPM, SATURACIÓN DE OXÍGENO: 90% (AIRE AMBIENTE), TEMPERATURA: 36.1 °C",
       "prioridad": "RUTINA",
       "turno": "NOCTURNA_20_24",
       "horario_programado": null,
@@ -149,8 +177,19 @@
       "resultado_obtenido": null
     }
   ],
-  "observaciones": [],
-  "laboratorios": [],
+  "observaciones": [
+    "PARACLÍNICOS (14/11/2026): LEUCOCITOS 11.42 K, HEMOGLOBINA 13.1 G/DL, HEMATOCRITO 39.6%, PLAQUETAS 377.000. PCR ULTRASENSIBLE 19.0 MG/L, TP 12.0, INR 1.10, TTP 26.8. SODIO 141.5 MEQ/L, POTASIO 3.49 MEQ/L, CLORO 107 MEQ/L, UREA 58.0 MG/DL, CREATININA 0.54 MG/DL, MAGNESIO 2.10 MG/DL"
+  ],
+  "laboratorios": [
+    {
+      "fecha_hora": "2026-11-16",
+      "tipo_estudio": "Laboratorios / Gasometría",
+      "valores": {
+        "resumen": "MARTES PASARIA A PSIQUIATRIA"
+      },
+      "alerta_critica": null
+    }
+  ],
   "cultivos": [],
   "alertas_criticas": []
 }

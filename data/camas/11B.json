@@ -24,7 +24,7 @@
   "diagnosticos_activos": [
     "LUPUS ERITEMATOSO SISTEMICO SLEDAI 2K 10 PUNTOS ACTIVIDAD ALTA",
     "NEFRITIS LÚPICA",
-    "DERRAME PLEURAL LOCULADO",
+    "DERRAME PLEURAL LOCULADO RESUELTO",
     "ANEMIA MODERADA MICROCÍTICA HIPOCRÓMICA"
   ],
   "diagnosticos_pasivos": [],
@@ -178,18 +178,6 @@
     },
     {
       "id": "PEND-11B-02",
-      "tipo": "LABORATORIO",
-      "descripcion": "L: BIOMETRIA, ELECTROLITOS, FUNCION RENAL 12/11/2026",
-      "prioridad": "RUTINA",
-      "turno": "NOCTURNA_20_24",
-      "horario_programado": null,
-      "es_visita_nocturna": false,
-      "estado": "PENDIENTE",
-      "responsable": null,
-      "resultado_obtenido": null
-    },
-    {
-      "id": "PEND-11B-03",
       "tipo": "INTERCONSULTA",
       "descripcion": "BRONCOSCOPIA:10-11-2026",
       "prioridad": "RUTINA",
@@ -201,7 +189,7 @@
       "resultado_obtenido": null
     },
     {
-      "id": "PEND-11B-04",
+      "id": "PEND-11B-03",
       "tipo": "LABORATORIO",
       "descripcion": "INFILTRACION GRADO II DE CARINA SECUNDARIA ENTRE LOBULO SUPERIOR E INFERIOR",
       "prioridad": "RUTINA",
@@ -213,7 +201,7 @@
       "resultado_obtenido": null
     },
     {
-      "id": "PEND-11B-05",
+      "id": "PEND-11B-04",
       "tipo": "LABORATORIO",
       "descripcion": "IZQUIERDO",
       "prioridad": "RUTINA",
@@ -225,7 +213,7 @@
       "resultado_obtenido": null
     },
     {
-      "id": "PEND-11B-06",
+      "id": "PEND-11B-05",
       "tipo": "LABORATORIO",
       "descripcion": "TRAQUEOBRONQUITIS LEVE NO PURULENTA",
       "prioridad": "RUTINA",
@@ -247,10 +235,10 @@
   ],
   "laboratorios": [
     {
-      "fecha_hora": "2026-11-14",
+      "fecha_hora": "2026-11-16",
       "tipo_estudio": "Laboratorios / Gasometría",
       "valores": {
-        "resumen": "CULTIVO DE LIQ. PLEURAL: MICROORGANISMO: SALMONELLA ENTERICA SSP ENTÉRICA . SENSIBLE A CEFTRIAXONA . LABORATORIOS RECIENTES: HB EN DESCENSO (10.7 G/DL), LEUCOCITOS NORMALES (8.67), FUNCION RENAL CONSERVADA (CR 0.58), ELECTROLITOS EN RANGO (K 3.5). PCR EN DESCENSO CLARO (17.00 PREVIA)."
+        "resumen": "CULTIVO DE LIQ. PLEURAL: MICROORGANISMO: SALMONELLA ENTERICA SSP ENTÉRICA . SENSIBLE A CEFTRIAXONA . RETIRO DE TUBO TORACICO EL 13/11 . PARACLÍNICOS (13/11/2026): PCR ULTRASENSIBLE 112.0 MG/L. LEUCOCITOS 8.49 K (NEUTRÓFILOS 6.66 K, LINFOCITOS 1.21 K), HEMOGLOBINA 11.6 G/DL, HEMATOCRITO 38.1%, PLAQUETAS 392.000. SODIO 142.7 MEQ/L, POTASIO 3.32 MEQ/L"
       },
       "alerta_critica": null
     }

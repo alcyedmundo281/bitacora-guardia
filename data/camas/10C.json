@@ -34,20 +34,7 @@
   "ckd_epi": null,
   "medicaciones": [
     {
-      "nombre": "SOLUCIÓN SALINA 0.9% 1000 ML PASAR 40 ML/HORA",
-      "dosis": "",
-      "via": "",
-      "frecuencia": "",
-      "fecha_inicio": null,
-      "dias_tratamiento": null,
-      "indicacion_cie10": null,
-      "suspendido": false,
-      "diferido": false,
-      "prn": false,
-      "nota": null
-    },
-    {
-      "nombre": "MEROPENEM 1G IV CADA 8 HORAS (FI: 11/11/2026 D3 B99)",
+      "nombre": "MEROPENEM 1G IV CADA 8 HORAS (FI: 11/11/2026 D4 CIE 10 B99)",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -73,7 +60,20 @@
       "nota": null
     },
     {
-      "nombre": "ENOXAPARINA 40 MG SC CADA DIA",
+      "nombre": "ENOXAPARINA 40 MG SC CADA DIA***SUSPENDER*** RETOMAR 12 HORAS POSTERIOR A",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "METAMIZOL 1 GR PRN",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -90,7 +90,103 @@
     {
       "id": "PEND-10C-01",
       "tipo": "LABORATORIO",
-      "descripcion": "LABORATORIO CENTRAL 13/11/2026: BIOMETRÍA, LDH, PCR, ELECTROLITOS, MAGNESIO, CALCIO IÓNICO, PROTEÍNAS TOTALES, ALBÚMINA",
+      "descripcion": "INDICACIONES DE CIRUGÍA PULMONAR (POSTQUIRÚRGICO, TUBO TORÁCICO IZQUIERDO 28 FR)",
+      "prioridad": "RUTINA",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": null,
+      "es_visita_nocturna": false,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
+    },
+    {
+      "id": "PEND-10C-02",
+      "tipo": "IMAGEN_PROCEDIMIENTO",
+      "descripcion": "RESULTADOS DE CITOLOGÍA DE LÍQUIDO PLEURAL, HISTOPATOLÓGICO DE PLEURA PARIETAL Y CULTIVO DE LÍQUIDO PLEURAL Y GLERA PLEUROPULMONAR",
+      "prioridad": "RUTINA",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": null,
+      "es_visita_nocturna": false,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
+    },
+    {
+      "id": "PEND-10C-03",
+      "tipo": "LABORATORIO",
+      "descripcion": "MEROPENEM 1 G INTRAVENOSO CADA 8 HORAS DÍA 4 (INICIO 11/11/2026)",
+      "prioridad": "RUTINA",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": null,
+      "es_visita_nocturna": false,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
+    },
+    {
+      "id": "PEND-10C-04",
+      "tipo": "LABORATORIO",
+      "descripcion": "REINICIAR ENOXAPARINA 12 HORAS POSTERIOR A PROCEDIMIENTO",
+      "prioridad": "RUTINA",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": null,
+      "es_visita_nocturna": false,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
+    },
+    {
+      "id": "PEND-10C-05",
+      "tipo": "LABORATORIO",
+      "descripcion": "PROBAR TOLERANCIA ORAL POSTERIOR A PROCEDIMIENTO",
+      "prioridad": "RUTINA",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": null,
+      "es_visita_nocturna": false,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
+    },
+    {
+      "id": "PEND-10C-06",
+      "tipo": "LABORATORIO",
+      "descripcion": "BIOMETRÍA, UREA, CREATININA Y ELECTROLITOS STAT",
+      "prioridad": "STAT",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": null,
+      "es_visita_nocturna": true,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
+    },
+    {
+      "id": "PEND-10C-07",
+      "tipo": "LABORATORIO",
+      "descripcion": "LUNES 16/11/2026: BIOMETRÍA, QUÍMICA, ELECTROLITOS, GLUCOSA, PCR, PROCALCITONINA",
+      "prioridad": "RUTINA",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": null,
+      "es_visita_nocturna": false,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
+    },
+    {
+      "id": "PEND-10C-08",
+      "tipo": "LABORATORIO",
+      "descripcion": "INDICACIONES DE GASTROENTEROLOGÍA: MAGALDRATO MÁS SIMETICONA 10 ML VÍA ORAL 30 MINUTOS DESPUÉS DE CADA COMIDA PRINCIPAL",
+      "prioridad": "RUTINA",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": null,
+      "es_visita_nocturna": false,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
+    },
+    {
+      "id": "PEND-10C-09",
+      "tipo": "INTERCONSULTA",
+      "descripcion": "SEGUIMIENTO POR NEUMOLOGÍA Y CIRUGÍA GENERAL",
       "prioridad": "RUTINA",
       "turno": "NOCTURNA_20_24",
       "horario_programado": null,
@@ -100,7 +196,9 @@
       "resultado_obtenido": null
     }
   ],
-  "observaciones": [],
+  "observaciones": [
+    "HOY PROCEDIIEMINTO POR CIRUGIA PULMONAR"
+  ],
   "laboratorios": [],
   "cultivos": [],
   "alertas_criticas": []

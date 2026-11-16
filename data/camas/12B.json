@@ -1,6 +1,6 @@
 {
-  "cama": "INFECTOLOGÍA",
-  "area": "PERIFERICOS",
+  "cama": "12B",
+  "area": "HOSPITALIZACION",
   "servicio_tratante": null,
   "nombre_completo": "ESPINOZA GRANDA ESTELA EUFEMIA C",
   "hc": "1736432",
@@ -17,8 +17,8 @@
     "ANTECEDENTES QUIRÚRGICOS:",
     "COLECISTECTOMÍA",
     "SAFENECTOMIA; PROTESIS DE RODILLA DERECHA. CONCILIACION DE MEDICAMENTOS:",
-    "LEVOTIROXINA 75 MCG VIA ORAL CADA DIA, LOSARTAN 50 MG VIA ORAL CADA DIA,",
-    "RIVAROXABAN 20 MG VO QD HASTA HACE 2 MESES SUSPENDIO"
+    "LEVOTIROXINA 75 MCG VIA ORAL CADA DIA,",
+    "LOSARTAN 50 MG VIA ORAL CADA DIA,"
   ],
   "aqx": [],
   "alergias": [],
@@ -102,9 +102,9 @@
   ],
   "pendientes": [
     {
-      "id": "PEND-INFECTOLOGA-01",
+      "id": "PEND-12B-01",
       "tipo": "LABORATORIO",
-      "descripcion": "E: (-)",
+      "descripcion": "UROCULTIVO: A/B, MICROORGANISMO: ESCHERICHIA COLI, GENTAMICINA SENSIBLE, AMPICILINA/SULBACTAM: SENSIBLE, TRIMETOPRIMA/SULFA: SENSIBLE, FOSFOMYCIN (URINE): SENSIBLE,",
       "prioridad": "RUTINA",
       "turno": "NOCTURNA_20_24",
       "horario_programado": null,
@@ -114,9 +114,9 @@
       "resultado_obtenido": null
     },
     {
-      "id": "PEND-INFECTOLOGA-02",
+      "id": "PEND-12B-02",
       "tipo": "LABORATORIO",
-      "descripcion": "L: (-)",
+      "descripcion": "NITROFURANTOÍNA: SENSIBLE, CIPROFLOXACINO: SENSIBLE, CEFAZOLINA (O): SENSIBLE, CONTAJE DE COLONIAS: 10.000 UFC/ML",
       "prioridad": "RUTINA",
       "turno": "NOCTURNA_20_24",
       "horario_programado": null,
@@ -126,9 +126,21 @@
       "resultado_obtenido": null
     },
     {
-      "id": "PEND-INFECTOLOGA-03",
+      "id": "PEND-12B-03",
       "tipo": "LABORATORIO",
-      "descripcion": "C: NOVEDADES",
+      "descripcion": "04/11/2026: LEUCOCITOS: 5.77, HEMOGLBINA 14.0, HEMATOCRITO 43.5, PLAQUETAS",
+      "prioridad": "RUTINA",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": null,
+      "es_visita_nocturna": false,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
+    },
+    {
+      "id": "PEND-12B-04",
+      "tipo": "LABORATORIO",
+      "descripcion": "173000, NEUTROFILOS 71%, UREA 50, CREATININA 0.63, GSA PH 7.43, PO2 61.7, PCO2 39.1, HCO3 26.2, EB 2.0",
       "prioridad": "RUTINA",
       "turno": "NOCTURNA_20_24",
       "horario_programado": null,
@@ -139,14 +151,15 @@
     }
   ],
   "observaciones": [
-    "O: REVALORACION POR GINECOLOGIA"
+    "O: REVALORACION POR GINECOLOGIA",
+    "NO RCP"
   ],
   "laboratorios": [
     {
-      "fecha_hora": "2026-11-14",
+      "fecha_hora": "2026-11-16",
       "tipo_estudio": "Laboratorios / Gasometría",
       "valores": {
-        "resumen": "UROCULTIVO: A/B, MICROORGANISMO: ESCHERICHIA COLI, GENTAMICINA SENSIBLE, AMPICILINA/SULBACTAM: SENSIBLE, TRIMETOPRIMA/SULFA: SENSIBLE, FOSFOMYCIN (URINE): SENSIBLE, NITROFURANTOÍNA: SENSIBLE, CIPROFLOXACINO: SENSIBLE, CEFAZOLINA (O): SENSIBLE, CONTAJE DE COLONIAS: 10.000 UFC/ML"
+        "resumen": "PENDIENTE REVALORACION POR CARDIOLOGÍA PACIENTE YA CUENTA CON EKG"
       },
       "alerta_critica": null
     }

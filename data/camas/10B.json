@@ -23,9 +23,11 @@
   "alergias": [],
   "diagnosticos_activos": [
     "CHOQUE SÉPTICO DE FOCO PULMONAR SUPEREDO",
-    "TROMBOSIS VENOSO MI DERECHO",
-    "FLUTTER AURICULAR DE CONDUCCIÓN VARIABLE",
-    "CAHVAS 5 , HAS BLED 3",
+    "NEUMONÍA NO ESPECIFICADA (BRONCOASPIRATIVA SECUNDARIA A DISFAGIA PSEUDOBULBAR)",
+    "ENFERMEDAD CEREBROVASCULAR ISQUÉMICA CRÓNICA SECUELAR DE ETIOLOGÍA CARDIOEMBÓLICA",
+    "FLUTTER AURICULAR CON RESPUESTA VENTRICULAR CONTROLADA (CHA2DS2-VASC 5, HAS-BLED 3)",
+    "LESIÓN RENAL AGUDA KDIGO 2 EN RESOLUCIÓN (CREATININA 1.31 VS 1.99 PREVIA)",
+    "HIPOTIROIDISMO / TROMBOSIS ARTERIAL ISQUÉMICA MID PREVIA SUPERADA",
     "PO 250.5, SAFI 233"
   ],
   "diagnosticos_pasivos": [],
@@ -34,7 +36,7 @@
   "ckd_epi": null,
   "medicaciones": [
     {
-      "nombre": "CEFEPIME 2 GRAMOS IV CADA 8 HORAS (0/7) FI: 13 NOV 2026 J189 (48 HORAS",
+      "nombre": "CLORURO DE SODIO 0.9% 1000 ML PASAR A 40 ML/HORA EN 24 HORAS",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -47,7 +49,20 @@
       "nota": null
     },
     {
-      "nombre": "CLINDAMICINA 600 MG IV CADA CADA 8 HORAS (D:0) FI: 13 NOV 2026 J189",
+      "nombre": "CEFEPIME 2 GRAMOS IV CADA 8 HORAS (2/7) FI: 13 NOV 2026 J189 (48 HORAS",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "CLINDAMICINA 600 MG IV CADA CADA 8 HORAS (D:2) FI: 13 NOV 2026 J189",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -149,42 +164,29 @@
       "diferido": false,
       "prn": false,
       "nota": null
-    },
-    {
-      "nombre": "INSULINA CRISTALINA POR ESCAPES:",
-      "dosis": "",
-      "via": "",
-      "frecuencia": "",
-      "fecha_inicio": null,
-      "dias_tratamiento": null,
-      "indicacion_cie10": null,
-      "suspendido": false,
-      "diferido": false,
-      "prn": false,
-      "nota": null
     }
   ],
   "pendientes": [
     {
       "id": "PEND-10B-01",
       "tipo": "LABORATORIO",
-      "descripcion": "E: RMN DE ENCEFALO AGENDAR HOY EN LA MAÑANA",
-      "prioridad": "URGENTE",
+      "descripcion": "E: RMN DE ENCEFALO NO SE REALIZA POR INESTABILIDAD EN FIN DE SEMANA ABUNDANTES SECRECIONES HASTA 800 ML",
+      "prioridad": "RUTINA",
       "turno": "NOCTURNA_20_24",
       "horario_programado": null,
-      "es_visita_nocturna": true,
+      "es_visita_nocturna": false,
       "estado": "PENDIENTE",
       "responsable": null,
       "resultado_obtenido": null
     },
     {
       "id": "PEND-10B-02",
-      "tipo": "IMAGEN_PROCEDIMIENTO",
-      "descripcion": "EKG CADA DIA (STAT)",
-      "prioridad": "STAT",
+      "tipo": "LABORATORIO",
+      "descripcion": "HACE PICOS DE HIPERGLICEMIA EN LA NOCHE SE CORRIGIERON ULTIMA GLICEMIA 180",
+      "prioridad": "RUTINA",
       "turno": "NOCTURNA_20_24",
       "horario_programado": null,
-      "es_visita_nocturna": true,
+      "es_visita_nocturna": false,
       "estado": "PENDIENTE",
       "responsable": null,
       "resultado_obtenido": null
@@ -192,11 +194,11 @@
     {
       "id": "PEND-10B-03",
       "tipo": "LABORATORIO",
-      "descripcion": "L: HOY BH UREA CREATININA ELECTROITOS CALCIO IONICO MAGNESIO DIMERO D",
-      "prioridad": "URGENTE",
+      "descripcion": "PARACLÍNICOS (15/11/2026): GLUCOSA 180 MG/DL PM POSTERIOR A CORRECCIÓN Y BOLO DE SOLUCIÓN SALINA",
+      "prioridad": "RUTINA",
       "turno": "NOCTURNA_20_24",
       "horario_programado": null,
-      "es_visita_nocturna": true,
+      "es_visita_nocturna": false,
       "estado": "PENDIENTE",
       "responsable": null,
       "resultado_obtenido": null
@@ -204,7 +206,7 @@
     {
       "id": "PEND-10B-04",
       "tipo": "LABORATORIO",
-      "descripcion": "PCR PERFIL HEPATICO",
+      "descripcion": "ACIDO LACTICO 2.9, SODIO 148.2 MEQ/L, POTASIO 4.22 MEQ/L, CLORO 120 MEQ/L, BUN 77 MG/DL, UREA 133 MG/DL, CREATININA 1.19 MG/DL (MEJORÍA FRANCA RESPECTO A 1.99 DEL 12/11",
       "prioridad": "RUTINA",
       "turno": "NOCTURNA_20_24",
       "horario_programado": null,
@@ -216,7 +218,7 @@
     {
       "id": "PEND-10B-05",
       "tipo": "LABORATORIO",
-      "descripcion": "GSA PRN",
+      "descripcion": "INGESTA 2080",
       "prioridad": "RUTINA",
       "turno": "NOCTURNA_20_24",
       "horario_programado": null,
@@ -228,7 +230,7 @@
     {
       "id": "PEND-10B-06",
       "tipo": "LABORATORIO",
-      "descripcion": "LABORATORIOS (17H02): ELEVACION AGUDA DE AZOADOS CON CR 1.99 (PREVIA 0.84) Y",
+      "descripcion": "EXCRETA 500",
       "prioridad": "RUTINA",
       "turno": "NOCTURNA_20_24",
       "horario_programado": null,
@@ -240,31 +242,7 @@
     {
       "id": "PEND-10B-07",
       "tipo": "LABORATORIO",
-      "descripcion": "UREA 185 (BUN 86). ELECTROLITOS CONSERVADOS (K 4.36, NA 141.9, MG 2.14, CA",
-      "prioridad": "RUTINA",
-      "turno": "NOCTURNA_20_24",
-      "horario_programado": null,
-      "es_visita_nocturna": false,
-      "estado": "PENDIENTE",
-      "responsable": null,
-      "resultado_obtenido": null
-    },
-    {
-      "id": "PEND-10B-08",
-      "tipo": "LABORATORIO",
-      "descripcion": "IONICO 1.32). PERFIL INFECCIOSO EN DESCENSO (LEUCOCITOS 7.17, PCR 21.7). INR",
-      "prioridad": "RUTINA",
-      "turno": "NOCTURNA_20_24",
-      "horario_programado": null,
-      "es_visita_nocturna": false,
-      "estado": "PENDIENTE",
-      "responsable": null,
-      "resultado_obtenido": null
-    },
-    {
-      "id": "PEND-10B-09",
-      "tipo": "LABORATORIO",
-      "descripcion": "1.74",
+      "descripcion": "BALANCE 1580",
       "prioridad": "RUTINA",
       "turno": "NOCTURNA_20_24",
       "horario_programado": null,
@@ -281,10 +259,10 @@
   ],
   "laboratorios": [
     {
-      "fecha_hora": "2026-11-14",
+      "fecha_hora": "2026-11-16",
       "tipo_estudio": "Laboratorios / Gasometría",
       "valores": {
-        "resumen": "CARDIO BISOPROLOL 5 BID ATB REINICIO, TAC CON PROCESO INFECCIOSO."
+        "resumen": "CARDIO BISOPROLOL 5 BID ATB REINICIO, TAC CON PROCESO INFECCIOSO. TENSIÓN ARTERIAL: 103/67 MMHG (TAM 120 MMHG), FRECUENCIA CARDÍACA: 83 LPM (MANUAL), FRECUENCIA RESPIRATORIA: 16 RPM, SATURACIÓN DE OXÍGENO: 85% (2 L), TEMPERATURA: 36.2 °C. BALANCE 24 H: INGESTA 2080 CC, ELIMINACIÓN 500 CC, DIFERENCIA 1580 CC."
       },
       "alerta_critica": null
     }

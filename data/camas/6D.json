@@ -70,7 +70,7 @@
       "nota": null
     },
     {
-      "nombre": "CEFTRIAXONA 1 GR IV CADA 12 HORAS (D:4) FI:10/11/2026 CIE10: A065",
+      "nombre": "CEFTRIAXONA 1 GR IV CADA 12 HORAS (D:5) FI:10/11/2026 CIE10: A065",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -83,7 +83,7 @@
       "nota": null
     },
     {
-      "nombre": "METRONIDAZOL 500 MG IV CADA 8 HORAS (D:4) FI:10/11/2026 CIE10: A065",
+      "nombre": "METRONIDAZOL 500 MG IV CADA 8 HORAS (D:5) FI:10/11/2026 CIE10: A065",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -151,20 +151,8 @@
   "pendientes": [
     {
       "id": "PEND-6D-01",
-      "tipo": "IMAGEN_PROCEDIMIENTO",
-      "descripcion": "E: PENDIENTE RX DE TÓRAX ANTEROPOSTERIOR Y LATERAL",
-      "prioridad": "URGENTE",
-      "turno": "NOCTURNA_20_24",
-      "horario_programado": null,
-      "es_visita_nocturna": true,
-      "estado": "PENDIENTE",
-      "responsable": null,
-      "resultado_obtenido": null
-    },
-    {
-      "id": "PEND-6D-02",
       "tipo": "LABORATORIO",
-      "descripcion": "CIRUGÍA PULMONAR ALTA",
+      "descripcion": "TENSIÓN ARTERIAL: 98/52 MMHG, FRECUENCIA CARDÍACA:74 LPM, FRECUENCIA RESPIRATORIA: 19 RPM, SATURACIÓN DE OXÍGENO: 91% (CÁNULA NASAL CON FIO2 AL 24%), TEMPERATURA: 36 °C",
       "prioridad": "RUTINA",
       "turno": "NOCTURNA_20_24",
       "horario_programado": null,
@@ -174,10 +162,13 @@
       "resultado_obtenido": null
     }
   ],
-  "observaciones": [],
+  "observaciones": [
+    "TAC DE ABDOMEN DESCRIBE COLECCIÓN SECUNDARIO A MASA, PD TRAMITE PARA EXAMENES POR RADIOINTERVENCIONISMO",
+    "DRENAN LIQUIDO PLEURAL 10/11/2026 (EXUDADI) CIRUGÍA PULMONAR ALTA"
+  ],
   "laboratorios": [
     {
-      "fecha_hora": "2026-11-14",
+      "fecha_hora": "2026-11-16",
       "tipo_estudio": "Laboratorios / Gasometría",
       "valores": {
         "resumen": "2026/11/12 PCR CUANTITATIVO ULTRASENSIBLE: 75.80 PROCALCITONINA LAB. CLÍNICO: 0.19 INR: 1.23 TIEMPO DE PROTROMBINA (TP): 13.3 TIEMPO DE TROMBOPLASTINA (TTP): 25.5 LEUCOCITOS (WBC): 4.65 HEMOGLOBINA (HGB): 13.7 HEMATOCRITO (HCT): 44.2 VOLUMEN CORP. MEDIO (MCV): 85.60 CONC. MEDIA HEMOG. (MCH): 26.6 LINFOCITOS: 0.78 NEUTROFILOS: 3.33 BASÓFILOS: 0.040 "

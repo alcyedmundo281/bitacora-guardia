@@ -23,7 +23,7 @@
     "SEPSIS A DOBLE FOCO URINARIO E INTESTINAL",
     "DC INFECCIÓN POR CLOSTRIDIUM DIFFICILE",
     "LESIÓN RENAL AGUDA KDIGO III CKD EPI: 14 ML/MIN",
-    "TROMBOCITOPENIA POR SEPSIS",
+    "TROMBOCITOPENIA POR SEPSIS SUPERADA",
     "HIPONATREMIA HIPOOSMOLAR HIPOVOLEMICA /HIPOKALEMIA. /ACIDEMIA METABÓLICA",
     "FALLO MULTIORGANICO RENAL, HEPÁTICO, COAGULACIÓN. APACHE 13 PUNTOS"
   ],
@@ -33,7 +33,20 @@
   "ckd_epi": null,
   "medicaciones": [
     {
-      "nombre": "MEROPENEM 1 GRAMO IV CADA 8 HORAS (7) FI:05/11/2026 CIE: N390",
+      "nombre": "MEROPENEM 1 GRAMO IV CADA 8 HORAS (9/10) FI:05/11/2026 CIE: A419",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "VANCOMICINA 1 GRAMO IV CADA 12 HORAS (3/5) FI:13/11/2026 CIE: A419",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -83,13 +96,51 @@
       "diferido": false,
       "prn": false,
       "nota": null
+    },
+    {
+      "nombre": "METOCLOPRAMIDA 10 MG IV ADMINISTRAR PREVIO A TRAMADOL CADA 12 HORAS",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "TRAMADOL 50 MG IV PASAR LENTO Y DILUIDO",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
     }
   ],
   "pendientes": [
     {
       "id": "PEND-10A-01",
+      "tipo": "LABORATORIO",
+      "descripcion": "RESULTADOS DE HEMOCULTIVOS, EMO Y UROCULTIVO",
+      "prioridad": "RUTINA",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": null,
+      "es_visita_nocturna": false,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
+    },
+    {
+      "id": "PEND-10A-02",
       "tipo": "IMAGEN_PROCEDIMIENTO",
-      "descripcion": "UROTAC SIMPLE",
+      "descripcion": "TAC BODY SIMPLE Y CONTRASTADA SOLICITADA POR HEMATOLOGÍA, PENDIENTE",
       "prioridad": "URGENTE",
       "turno": "NOCTURNA_20_24",
       "horario_programado": null,
@@ -99,25 +150,13 @@
       "resultado_obtenido": null
     },
     {
-      "id": "PEND-10A-02",
-      "tipo": "LABORATORIO",
-      "descripcion": "RMN DE COLUMNA LUMBAR",
-      "prioridad": "RUTINA",
-      "turno": "NOCTURNA_20_24",
-      "horario_programado": null,
-      "es_visita_nocturna": false,
-      "estado": "PENDIENTE",
-      "responsable": null,
-      "resultado_obtenido": null
-    },
-    {
       "id": "PEND-10A-03",
       "tipo": "LABORATORIO",
-      "descripcion": "ELECTROFORESIS DE PROTEINAS (TRAMITE DERIVACION)",
-      "prioridad": "RUTINA",
+      "descripcion": "RESONANCIA MAGNÉTICA DE COLUMNA REALIZADA EL 15/11/2026 PENDIENTE INFORME",
+      "prioridad": "URGENTE",
       "turno": "NOCTURNA_20_24",
       "horario_programado": null,
-      "es_visita_nocturna": false,
+      "es_visita_nocturna": true,
       "estado": "PENDIENTE",
       "responsable": null,
       "resultado_obtenido": null
@@ -125,7 +164,7 @@
     {
       "id": "PEND-10A-04",
       "tipo": "LABORATORIO",
-      "descripcion": "PD RESULTADOS DE HEMOCULTIVOS",
+      "descripcion": "ELECTROFORESIS DE PROTEÍNAS (TRÁMITE DE DERIVACIÓN)",
       "prioridad": "RUTINA",
       "turno": "NOCTURNA_20_24",
       "horario_programado": null,
@@ -136,8 +175,8 @@
     },
     {
       "id": "PEND-10A-05",
-      "tipo": "LABORATORIO",
-      "descripcion": "L: HOY BH UREA CREATININA ELECTROLITOS CALCIO IONICO (CONTEO MANUAL DE",
+      "tipo": "INTERCONSULTA",
+      "descripcion": "LABORATORIOS SOLICITADOS POR HEMATOLOGÍA (ORDEN NO. 34995274) Y FROTIS DE SANGRE PERIFÉRICA; REVALORACIÓN POR HEMATOLOGÍA CON RESULTADOS",
       "prioridad": "URGENTE",
       "turno": "NOCTURNA_20_24",
       "horario_programado": null,
@@ -149,7 +188,7 @@
     {
       "id": "PEND-10A-06",
       "tipo": "LABORATORIO",
-      "descripcion": "PLAQUETAS,) DIMERO D,PERFIL LIPIDICO,PERFIL HEPATICO, LIPASA",
+      "descripcion": "FISIOTERAPIA RESPIRATORIA MÁS INCENTIVO",
       "prioridad": "RUTINA",
       "turno": "NOCTURNA_20_24",
       "horario_programado": null,
@@ -160,9 +199,9 @@
     },
     {
       "id": "PEND-10A-07",
-      "tipo": "IMAGEN_PROCEDIMIENTO",
-      "descripcion": "EKG STAT",
-      "prioridad": "STAT",
+      "tipo": "LABORATORIO",
+      "descripcion": "CONTROL POR CONSULTA EXTERNA DE CIRUGÍA GENERAL (COLECISTECTOMÍA DIFERIDA)",
+      "prioridad": "CONTROL",
       "turno": "NOCTURNA_20_24",
       "horario_programado": null,
       "es_visita_nocturna": true,
@@ -173,7 +212,7 @@
     {
       "id": "PEND-10A-08",
       "tipo": "LABORATORIO",
-      "descripcion": "GSA PRN",
+      "descripcion": "GASOMETRÍA EN CASO NECESARIO",
       "prioridad": "RUTINA",
       "turno": "NOCTURNA_20_24",
       "horario_programado": null,
@@ -184,6 +223,18 @@
     },
     {
       "id": "PEND-10A-09",
+      "tipo": "IMAGEN_PROCEDIMIENTO",
+      "descripcion": "ÓRDENES DE GINECOLOGÍA: CLOTRIMAZOL 2% VIA VAGINAL HORA SUE#O QD 0/3 (ORDEN 35005695)",
+      "prioridad": "URGENTE",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": null,
+      "es_visita_nocturna": true,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
+    },
+    {
+      "id": "PEND-10A-10",
       "tipo": "LABORATORIO",
       "descripcion": "ELECTROLITOS (GSA 16H26): K: 3.3 (DESCENSO EN RELACIÓN AL SÉRICO MATUTINO DE",
       "prioridad": "RUTINA",
@@ -195,7 +246,7 @@
       "resultado_obtenido": null
     },
     {
-      "id": "PEND-10A-10",
+      "id": "PEND-10A-11",
       "tipo": "LABORATORIO",
       "descripcion": "3.99), NA: 136, CL: 107",
       "prioridad": "RUTINA",
@@ -207,7 +258,7 @@
       "resultado_obtenido": null
     },
     {
-      "id": "PEND-10A-11",
+      "id": "PEND-10A-12",
       "tipo": "LABORATORIO",
       "descripcion": "HEMOCULTIVOS NEGATIVOS",
       "prioridad": "RUTINA",
@@ -223,14 +274,15 @@
     "IC HEMATOLOGÍA",
     "IC CIRUGÍA GENERAL",
     "IC NEUMOLOGÍA (INICIO DE FTR)",
-    "IC UROLOGIA"
+    "IC UROLOGIA",
+    "SE OPTRIMIZA ANALGESIA"
   ],
   "laboratorios": [
     {
-      "fecha_hora": "2026-11-14",
+      "fecha_hora": "2026-11-16",
       "tipo_estudio": "Laboratorios / Gasometría",
       "valores": {
-        "resumen": "- LITIASIS RENAL, YA HAN REALIZADO LITOTRICIA - COLELITIASIS DESDE ENERO 2026 - OSTEOPOROSIS - PROLAPSO VESICAL DESDE HACE 4 MESES - INFECCION DE VIAS URINARIAS A REPETICIÓN"
+        "resumen": "HEMOCULTIVOS NEGATIVOS. - LITIASIS RENAL, YA HAN REALIZADO LITOTRICIA - COLELITIASIS DESDE ENERO 2026 - OSTEOPOROSIS - PROLAPSO VESICAL DESDE HACE 4 MESES - INFECCION DE VIAS URINARIAS A REPETICIÓN"
       },
       "alerta_critica": null
     }

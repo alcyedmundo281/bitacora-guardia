@@ -28,19 +28,6 @@
   "ckd_epi": null,
   "medicaciones": [
     {
-      "nombre": "CLORURO DE SODIO 0.9% 1000 ML PASAR IV 60 ML/H",
-      "dosis": "",
-      "via": "",
-      "frecuencia": "",
-      "fecha_inicio": null,
-      "dias_tratamiento": null,
-      "indicacion_cie10": null,
-      "suspendido": false,
-      "diferido": false,
-      "prn": false,
-      "nota": null
-    },
-    {
       "nombre": "PARACETAMOL 1G IV CADA 8 HORAS",
       "dosis": "",
       "via": "",
@@ -80,11 +67,38 @@
       "nota": null
     }
   ],
-  "pendientes": [],
-  "observaciones": [],
+  "pendientes": [
+    {
+      "id": "PEND-CRITICOS-01",
+      "tipo": "LABORATORIO",
+      "descripcion": "PENDIENTE ELECTROLITOS HOY POST CORRECCION DE HIPOKALEMIA",
+      "prioridad": "URGENTE",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": null,
+      "es_visita_nocturna": true,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
+    },
+    {
+      "id": "PEND-CRITICOS-02",
+      "tipo": "LABORATORIO",
+      "descripcion": "LUNES LAB CENTRAL: 16/11/2026: BIOMETRÍA, QUÍMICA, PCR, PROCALCITONINA, ELECTROLITOS, AST, ALT",
+      "prioridad": "RUTINA",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": null,
+      "es_visita_nocturna": false,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
+    }
+  ],
+  "observaciones": [
+    "MEJOR HIDRATADO, CON POSIBILIDAD DE INGESTA ORAL DE LIQUIDOS, ADECUADA DIURESIS"
+  ],
   "laboratorios": [
     {
-      "fecha_hora": "2026-11-14",
+      "fecha_hora": "2026-11-16",
       "tipo_estudio": "Laboratorios / Gasometría",
       "valores": {
         "resumen": "MAS DE 24 HORAS SIN VASOACTIVO, SE PUEDE ENCARGAR"

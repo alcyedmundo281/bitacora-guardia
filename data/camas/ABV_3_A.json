@@ -34,7 +34,7 @@
   "ckd_epi": null,
   "medicaciones": [
     {
-      "nombre": "MEROPENEM 1 GR INTRAVENOSO CADA 8 HORAS FI 12/11/2026 CIE10 B99 D1/5",
+      "nombre": "MEROPENEM 1 GR INTRAVENOSO CADA 8 HORAS FI 12/11/2026 CIE10 B99 D 4/5",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -142,6 +142,18 @@
     {
       "id": "PEND-ABV3A-01",
       "tipo": "LABORATORIO",
+      "descripcion": "ELECTROLITOS DE CONTROL STAT POR ESTADO DE CORRECCION DE HIPERNATREMIA",
+      "prioridad": "STAT",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": null,
+      "es_visita_nocturna": true,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
+    },
+    {
+      "id": "PEND-ABV3A-02",
+      "tipo": "LABORATORIO",
       "descripcion": "LUNES EXAMENES DE LABORATORIO DE CONTROL",
       "prioridad": "CONTROL",
       "turno": "NOCTURNA_20_24",
@@ -152,7 +164,7 @@
       "resultado_obtenido": null
     },
     {
-      "id": "PEND-ABV3A-02",
+      "id": "PEND-ABV3A-03",
       "tipo": "LABORATORIO",
       "descripcion": "NO TRIBUTARIO DE RCP",
       "prioridad": "RUTINA",
@@ -164,10 +176,13 @@
       "resultado_obtenido": null
     }
   ],
-  "observaciones": [],
+  "observaciones": [
+    "DEPOSICIONES DIARREICAS LA NOCHE DEL 14/11 QUE SE AUTOLIMITAN",
+    "FAMILIAR EXPRESA DESEO DE REEMPLAZAR NUTRITUBO POR METODO DEFINITIVO"
+  ],
   "laboratorios": [
     {
-      "fecha_hora": "2026-11-14",
+      "fecha_hora": "2026-11-16",
       "tipo_estudio": "Laboratorios / Gasometría",
       "valores": {
         "resumen": "13/11/2026 LEU: 10.9, HG: 11, HCTO: 35, NEU: 9.9, PLAQ: 234.000 . CLO: 117, K: 4.3, SODIO: 151 . CREA: 1.00 ."

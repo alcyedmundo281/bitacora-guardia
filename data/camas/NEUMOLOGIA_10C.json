@@ -23,10 +23,11 @@
   "aqx": [],
   "alergias": [],
   "diagnosticos_activos": [
-    "DERRAME PLEURAL DE PREDOMINIO DERECHO",
+    "MASA DE PULMON DERECHO",
     "NÓDULO PULMONAR IZQUIERDO",
     "HIPOTIROIDISMO",
-    "INFECCION DE VIAS URINARIAS POR E. COLI BLEE SUPERADA"
+    "INFECCION DE VIAS URINARIAS POR E. COLI BLEE SUPERADA",
+    "TROMBOEMBOLIA PULMONAR EL 14-11-2026"
   ],
   "diagnosticos_pasivos": [],
   "dieta": null,
@@ -73,7 +74,7 @@
       "nota": null
     },
     {
-      "nombre": "ENOXAPARINA 60 MG SC QD",
+      "nombre": "ENOXAPARINA 70 MG SC BID INICIO 14-11-2026",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -173,7 +174,7 @@
   ],
   "laboratorios": [
     {
-      "fecha_hora": "2026-11-14",
+      "fecha_hora": "2026-11-16",
       "tipo_estudio": "Laboratorios / Gasometría",
       "valores": {
         "resumen": "UROCULTIVO NEGATIVO . ONCOLOGIA REVISION DE LAMINILLAS + IHQ + ESTUDIO DE EGFR + GAMMAGRAFIA OSEA Y TOMOGRAFIA DE PELVIS ABDOMEN Y TORAX (A CUENTA CON TACS)"

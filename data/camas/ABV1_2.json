@@ -1,29 +1,26 @@
 {
-  "cama": "INTERMEDIOS",
+  "cama": "ABV1_2",
   "area": "EMERGENCIA_OBSERVACION",
   "servicio_tratante": null,
-  "nombre_completo": "GOMEZ ESPINOZA JUSTO ANGEL .",
-  "hc": "N/D",
-  "cedula": "1709837072",
-  "edad": "58 AÑOS",
+  "nombre_completo": "IZQUIERDO CORREA SHIRLY DEL CARMEN",
+  "hc": "2058466",
+  "cedula": "1757419278",
+  "edad": "50 años",
   "sexo": null,
   "fecha_nacimiento": null,
   "fecha_ingreso": null,
   "dias_hospitalizacion": null,
   "app": [
-    "EPILEPSIA",
-    "DIABETES MELLITUS TIPO 2 HACE 17 AÑOS",
-    "HIPERTENSION ARTERIAL",
-    "HIPOTIROIDISMO"
+    "CANCER DE CERVIX ESTADIO IIIC1",
+    "ATENCION PALIATIVA",
+    "UROPATIA OBSTRUCTIVA DE ORIGEN MALIGNO"
   ],
   "aqx": [],
   "alergias": [],
   "diagnosticos_activos": [
-    "SEPSIS DE PARTES BLANDAS",
-    "CELULITS MIEMBRO SUPERIOR DERECHO",
-    "LESION RENAL AGUDA KDIGO C1 U0",
-    "ESTADO HIPEROSMOLAR HIPERGLICEMICO/ CETOACIDOSIS DIABETICA SUPERADA",
-    "HIPERKALEMIA MODERADA SUPERADA"
+    "INFECCIÓN DE TRACTO URINARIO",
+    "UROPATIA OBSTRUCTIVA DE ORIGEN MALIGNO",
+    "ANEMIA MODERADA NORMOCÍTICA NORMOCROMICA"
   ],
   "diagnosticos_pasivos": [],
   "dieta": null,
@@ -31,7 +28,7 @@
   "ckd_epi": null,
   "medicaciones": [
     {
-      "nombre": "MEROPENEM 1 GRAMO INTRAVENOSO CADA 8 HORAS, FI: 10/11/2026 (B99)",
+      "nombre": "SOLUCIÓN SALINA 0.9% 1000 ML INTRAVENOSO A 40 ML/H",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -44,7 +41,7 @@
       "nota": null
     },
     {
-      "nombre": "VANCOMICINA 1 GRAMO INTRAVENOSO CADA 12 HORAS FIN: 10/11/2026 (B99)",
+      "nombre": "CEFTAZIDIMA 2 G INTRAVENOSO CADA 8 HORAS FI 14/11/2026 CIE-10: N390 (DÍA 1)",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -57,7 +54,7 @@
       "nota": null
     },
     {
-      "nombre": "PARACETAMOL 1 G IV PRN",
+      "nombre": "PARACETAMOL 1 G INTRAVENOSO CADA 8 HORAS",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -70,7 +67,7 @@
       "nota": null
     },
     {
-      "nombre": "ENOXAPARINA 40 MG SC QD",
+      "nombre": "TRAMADOL 100 MG EN 100 ML DE CLORURO DE SODIO 0.9% INTRAVENOSO CADA 8 HORAS",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -83,33 +80,7 @@
       "nota": null
     },
     {
-      "nombre": "ACIDO VALPROICO 500 MG C/12H",
-      "dosis": "",
-      "via": "",
-      "frecuencia": "",
-      "fecha_inicio": null,
-      "dias_tratamiento": null,
-      "indicacion_cie10": null,
-      "suspendido": false,
-      "diferido": false,
-      "prn": false,
-      "nota": null
-    },
-    {
-      "nombre": "METFORMINA 850 MG TID****SUSPENDER***",
-      "dosis": "",
-      "via": "",
-      "frecuencia": "",
-      "fecha_inicio": null,
-      "dias_tratamiento": null,
-      "indicacion_cie10": null,
-      "suspendido": false,
-      "diferido": false,
-      "prn": false,
-      "nota": null
-    },
-    {
-      "nombre": "LOSARTAN 50 MG VO QD",
+      "nombre": "METOCLOPRAMIDA 10 MG INTRAVENOSO EN CASO DE NÁUSEAS O VÓMITOS",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -124,9 +95,9 @@
   ],
   "pendientes": [
     {
-      "id": "PEND-INTERMEDIOS-01",
+      "id": "PEND-ABV12-01",
       "tipo": "LABORATORIO",
-      "descripcion": "EXAMENES: RESONANCIA DE CODO IZQUIERDO",
+      "descripcion": "E: EXÁMENES Y PROCEDIMIENTOS:",
       "prioridad": "RUTINA",
       "turno": "NOCTURNA_20_24",
       "horario_programado": null,
@@ -136,45 +107,9 @@
       "resultado_obtenido": null
     },
     {
-      "id": "PEND-INTERMEDIOS-02",
-      "tipo": "LABORATORIO",
-      "descripcion": "ELECTROLITOS STAT",
-      "prioridad": "STAT",
-      "turno": "NOCTURNA_20_24",
-      "horario_programado": null,
-      "es_visita_nocturna": true,
-      "estado": "PENDIENTE",
-      "responsable": null,
-      "resultado_obtenido": null
-    },
-    {
-      "id": "PEND-INTERMEDIOS-03",
-      "tipo": "LABORATORIO",
-      "descripcion": "MAÑANA AM: ELECTROLITOS, UREA, CREATININA",
-      "prioridad": "CONTROL",
-      "turno": "NOCTURNA_20_24",
-      "horario_programado": null,
-      "es_visita_nocturna": true,
-      "estado": "PENDIENTE",
-      "responsable": null,
-      "resultado_obtenido": null
-    },
-    {
-      "id": "PEND-INTERMEDIOS-04",
-      "tipo": "LABORATORIO",
-      "descripcion": "HEMOCULTIVOS PENDIENTE RESULTADOS, /VERIFICAR SE HAYA ENVIADO MUESTRA",
-      "prioridad": "STAT",
-      "turno": "NOCTURNA_20_24",
-      "horario_programado": null,
-      "es_visita_nocturna": true,
-      "estado": "PENDIENTE",
-      "responsable": null,
-      "resultado_obtenido": null
-    },
-    {
-      "id": "PEND-INTERMEDIOS-05",
-      "tipo": "INTERCONSULTA",
-      "descripcion": "REINTERCONSULTAR A TRAUMATOLOGÍA CON RESULTADOS DE RESONANCIA DE CODO",
+      "id": "PEND-ABV12-02",
+      "tipo": "IMAGEN_PROCEDIMIENTO",
+      "descripcion": "UROTAC SIMPLE (UROLOGÍA)",
       "prioridad": "URGENTE",
       "turno": "NOCTURNA_20_24",
       "horario_programado": null,
@@ -184,9 +119,9 @@
       "resultado_obtenido": null
     },
     {
-      "id": "PEND-INTERMEDIOS-06",
+      "id": "PEND-ABV12-03",
       "tipo": "LABORATORIO",
-      "descripcion": "INDICACION DE ENDOCRINOLOGIA",
+      "descripcion": "L: LABORATORIO:",
       "prioridad": "RUTINA",
       "turno": "NOCTURNA_20_24",
       "horario_programado": null,
@@ -194,19 +129,70 @@
       "estado": "PENDIENTE",
       "responsable": null,
       "resultado_obtenido": null
+    },
+    {
+      "id": "PEND-ABV12-04",
+      "tipo": "LABORATORIO",
+      "descripcion": "LUNES 16/11/2026: BIOMETRÍA, PCR, ELECTROLITOS, UREA, CREATININA",
+      "prioridad": "RUTINA",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": null,
+      "es_visita_nocturna": false,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
+    },
+    {
+      "id": "PEND-ABV12-05",
+      "tipo": "LABORATORIO",
+      "descripcion": "UROCULTIVO: PENDIENTE RESULTADO",
+      "prioridad": "URGENTE",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": null,
+      "es_visita_nocturna": true,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
+    },
+    {
+      "id": "PEND-ABV12-06",
+      "tipo": "INTERCONSULTA",
+      "descripcion": "C: INTERCONSULTAS:",
+      "prioridad": "URGENTE",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": null,
+      "es_visita_nocturna": true,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
+    },
+    {
+      "id": "PEND-ABV12-07",
+      "tipo": "IMAGEN_PROCEDIMIENTO",
+      "descripcion": "SEGUIMIENTO POR UROLOGÍA: REVALORACIÓN CON RESULTADOS DE UROTAC",
+      "prioridad": "URGENTE",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": null,
+      "es_visita_nocturna": true,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
+    },
+    {
+      "id": "PEND-ABV12-08",
+      "tipo": "INTERCONSULTA",
+      "descripcion": "INFECTOLOGÍA: REINTERCONSULTAR CON RESULTADOS DE CULTIVOS",
+      "prioridad": "URGENTE",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": null,
+      "es_visita_nocturna": true,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
     }
   ],
   "observaciones": [],
-  "laboratorios": [
-    {
-      "fecha_hora": "2026-11-14",
-      "tipo_estudio": "Laboratorios / Gasometría",
-      "valores": {
-        "resumen": "Leucocitos (WBC 11.50 Hemoglobina (HGB 11.1 Hematocrito (HCT 33.1 Conc.corp.media (MCHC) de hemo: 33.5 Volumen Medio Plaquetario(MPV): 8.7 Monocitos 0.69 Eosinófilos 0.05 Linfocitos 1.07 Neutrofilos 9.54 Basófilos 0.020 Plaquetas 246.000 GLUCOSA 125 CLORO 93 POTASIO 3.02 SODIO 117.6 NITROGENO UREICO EN SUERO 17 UREA SUERO 36.9 CREATININA 0.53"
-      },
-      "alerta_critica": null
-    }
-  ],
+  "laboratorios": [],
   "cultivos": [],
   "alertas_criticas": []
 }

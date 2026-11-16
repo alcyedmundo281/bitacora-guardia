@@ -31,7 +31,7 @@
   "ckd_epi": null,
   "medicaciones": [
     {
-      "nombre": "INDICACIONES DE PSIQUIATRIA",
+      "nombre": "ENOXAPARINA 40MG SC CADA DIA",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -44,7 +44,72 @@
       "nota": null
     },
     {
-      "nombre": "HALOPERIDOL 5 MG VO PRN (AGITACION), NO SOBREPASAR 15 MG/DIA",
+      "nombre": "CAPSULAS DE SAL 1 GRAMO CADA 12 HORAS",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "************INDICACIONES DE PSIQUIATRIA 13/11/26***********",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "OLANZAPINA 2,5 MG VO HS",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "QUETIAPINA 200 MILIGRAMOS VIA ORAL AL ACOSTARSE",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "CLONAZEPAM 2 MILIGRAMOS : 1.5MG VO HS",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "ACIDO VALPROICO VO 250MG QD HS",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -61,7 +126,7 @@
     {
       "id": "PEND-INFECTOLOGIA4C-01",
       "tipo": "LABORATORIO",
-      "descripcion": "L: LAB URGENCIAS: ELECTROLITOS 20H00 Y 08H00",
+      "descripcion": "ELECTROLITOS AM Y PM DIARIOS",
       "prioridad": "RUTINA",
       "turno": "NOCTURNA_20_24",
       "horario_programado": null,
@@ -73,7 +138,7 @@
     {
       "id": "PEND-INFECTOLOGIA4C-02",
       "tipo": "LABORATORIO",
-      "descripcion": "LAB GENERAL: CORTISOL A.M. ACTH, TSH, NA - K EN ORINA",
+      "descripcion": "LUNES 16/11/2026: CORTISOL AM, ACTH, TSH, SODIO Y POTASIO EN ORINA",
       "prioridad": "RUTINA",
       "turno": "NOCTURNA_20_24",
       "horario_programado": null,
@@ -85,19 +150,41 @@
     {
       "id": "PEND-INFECTOLOGIA4C-03",
       "tipo": "LABORATORIO",
-      "descripcion": "HEMOCULTIVO X 2 STAT",
-      "prioridad": "STAT",
+      "descripcion": "RESTRICCIÓN HÍDRICA Y DIETA NORMOSÓDICA; CÁPSULAS DE SAL 1 G CADA 12 HORAS",
+      "prioridad": "RUTINA",
       "turno": "NOCTURNA_20_24",
       "horario_programado": null,
-      "es_visita_nocturna": true,
+      "es_visita_nocturna": false,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
+    },
+    {
+      "id": "PEND-INFECTOLOGIA4C-04",
+      "tipo": "LABORATORIO",
+      "descripcion": "VIGILANCIA NEUROLÓGICA",
+      "prioridad": "RUTINA",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": null,
+      "es_visita_nocturna": false,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
+    },
+    {
+      "id": "PEND-INFECTOLOGIA4C-05",
+      "tipo": "LABORATORIO",
+      "descripcion": "INDICACIONES DE PSIQUIATRÍA; SEGUIMIENTO POR PSIQUIATRÍA AL ALTA",
+      "prioridad": "RUTINA",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": null,
+      "es_visita_nocturna": false,
       "estado": "PENDIENTE",
       "responsable": null,
       "resultado_obtenido": null
     }
   ],
-  "observaciones": [
-    "REINTERCONSULTA A PSIQUIATRIA PARA CONTROL DE PATOLOGIA BASE"
-  ],
+  "observaciones": [],
   "laboratorios": [],
   "cultivos": [],
   "alertas_criticas": []

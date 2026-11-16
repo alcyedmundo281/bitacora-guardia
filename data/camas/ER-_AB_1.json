@@ -34,7 +34,7 @@
   "ckd_epi": null,
   "medicaciones": [
     {
-      "nombre": "SOLUCIÓN SALINA 0.9% 1000ML PASAR ENDOVENOSO 250 ML EN ESTE MOMENTO, LUEGO MANTENER IV A 80 ML/H",
+      "nombre": "SOLUCIÓN SALINA 0.9% 1000 ML INTRAVENOSO A 80 ML/H",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -47,7 +47,7 @@
       "nota": null
     },
     {
-      "nombre": "OMEPRAZOL 20 MG VÍA ORAL QD 6AM",
+      "nombre": "OMEPRAZOL 20 MG VÍA ORAL CADA DÍA 06H00",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -60,7 +60,7 @@
       "nota": null
     },
     {
-      "nombre": "CEFTRIAXONA 2 GR ENDOVENOSO EN ESTE MOMENTO, LUEGO MANTENER CADA DIA. FI: 13/11/2025 D: 1 CIE 10 N390)",
+      "nombre": "CEFTRIAXONA 2 G INTRAVENOSO CADA DÍA FI: 13/11/2026 CIE-10 N390 (DÍA 3)",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -73,7 +73,7 @@
       "nota": null
     },
     {
-      "nombre": "PARACETAMOL 1 GR ENDOVENOSO CADA 8 HORAS",
+      "nombre": "PARACETAMOL 1 G INTRAVENOSO CADA 8 HORAS",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -86,7 +86,7 @@
       "nota": null
     },
     {
-      "nombre": "METOCLOPRAMIDA 10 MG ENDOVENOSO EN CASO DE NÁUSEAS O VÓMITOS",
+      "nombre": "METOCLOPRAMIDA 10 MG INTRAVENOSO EN CASO DE NÁUSEAS O VÓMITOS",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -102,20 +102,8 @@
   "pendientes": [
     {
       "id": "PEND-ERAB1-01",
-      "tipo": "IMAGEN_PROCEDIMIENTO",
-      "descripcion": "TAC SIMPLE DE ABDOMEN EN ESTE MOMENTO",
-      "prioridad": "URGENTE",
-      "turno": "NOCTURNA_20_24",
-      "horario_programado": null,
-      "es_visita_nocturna": true,
-      "estado": "PENDIENTE",
-      "responsable": null,
-      "resultado_obtenido": null
-    },
-    {
-      "id": "PEND-ERAB1-02",
       "tipo": "LABORATORIO",
-      "descripcion": "ELECTROLITOS, UREA, CREATININA 14/11/2026",
+      "descripcion": "E: EXÁMENES Y PROCEDIMIENTOS:",
       "prioridad": "RUTINA",
       "turno": "NOCTURNA_20_24",
       "horario_programado": null,
@@ -125,9 +113,21 @@
       "resultado_obtenido": null
     },
     {
+      "id": "PEND-ERAB1-02",
+      "tipo": "IMAGEN_PROCEDIMIENTO",
+      "descripcion": "TAC SIMPLE DE ABDOMEN: PENDIENTE INFORME",
+      "prioridad": "URGENTE",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": null,
+      "es_visita_nocturna": true,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
+    },
+    {
       "id": "PEND-ERAB1-03",
       "tipo": "LABORATORIO",
-      "descripcion": "LABORATORIO LUNES 16/10/2025 AM, BIOMETRÍA, GLUCOSA, UREA, CREATININA, ELECTROLITOS: NA, K, CL, MG, CALCIO",
+      "descripcion": "L: LABORATORIO:",
       "prioridad": "RUTINA",
       "turno": "NOCTURNA_20_24",
       "horario_programado": null,
@@ -138,20 +138,8 @@
     },
     {
       "id": "PEND-ERAB1-04",
-      "tipo": "INTERCONSULTA",
-      "descripcion": "INDICACIONES DE ONCOLOGÍA",
-      "prioridad": "RUTINA",
-      "turno": "NOCTURNA_20_24",
-      "horario_programado": null,
-      "es_visita_nocturna": false,
-      "estado": "PENDIENTE",
-      "responsable": null,
-      "resultado_obtenido": null
-    },
-    {
-      "id": "PEND-ERAB1-05",
       "tipo": "LABORATORIO",
-      "descripcion": "COMUNICAR NOVEDADES",
+      "descripcion": "LUNES 16/11/2026 AM: BIOMETRÍA, GLUCOSA, UREA, CREATININA, ELECTROLITOS: NA, K, CL, MG, CALCIO",
       "prioridad": "RUTINA",
       "turno": "NOCTURNA_20_24",
       "horario_programado": null,

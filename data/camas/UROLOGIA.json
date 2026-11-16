@@ -23,7 +23,7 @@
   "aqx": [],
   "alergias": [],
   "diagnosticos_activos": [
-    "INFECCION DE VIAS URINARIAS TUMBARELLO DE 2 SUPERADA",
+    "INFECCION DE VIAS URINARIAS TUMBARELLO DE 2",
     "ARTRITIS REUMATOIDEA DE ALTA ACTIVIDAD DAS28 DE 5.7 9"
   ],
   "diagnosticos_pasivos": [],
@@ -58,7 +58,7 @@
       "nota": null
     },
     {
-      "nombre": "2. CEFAZOLINA 1 G IV C/8H (1/10) CIE 10 B99 FI: 11/11/2026 D: 2/7",
+      "nombre": "2. CEFAZOLINA 1 G IV C/8H (1/10) CIE 10 B99 FI: 11/11/2026 D: 4/7",
       "dosis": "",
       "via": "",
       "frecuencia": "",

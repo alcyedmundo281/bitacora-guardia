@@ -167,7 +167,7 @@
     {
       "id": "PEND-9B-01",
       "tipo": "LABORATORIO",
-      "descripcion": "E. NO AMERITA",
+      "descripcion": "GASTROSTOMIA 12/11/2026 16:00 SIN COMPLICACIONES",
       "prioridad": "RUTINA",
       "turno": "NOCTURNA_20_24",
       "horario_programado": null,
@@ -179,11 +179,11 @@
     {
       "id": "PEND-9B-02",
       "tipo": "LABORATORIO",
-      "descripcion": "L. PENDIENTE RESULTADOS DE ELECTROLITOS 12/11/2026",
-      "prioridad": "URGENTE",
+      "descripcion": "TENSIÓN ARTERIAL: 127/54 MMHG, FRECUENCIA CARDÍACA: 69 LPM, FRECUENCIA RESPIRATORIA: 18 RPM, SATURACIÓN DE OXÍGENO: 96% (CÁNULA NASAL A FIO2 28%), TEMPERATURA: 36. °C",
+      "prioridad": "RUTINA",
       "turno": "NOCTURNA_20_24",
       "horario_programado": null,
-      "es_visita_nocturna": true,
+      "es_visita_nocturna": false,
       "estado": "PENDIENTE",
       "responsable": null,
       "resultado_obtenido": null
@@ -191,7 +191,7 @@
     {
       "id": "PEND-9B-03",
       "tipo": "LABORATORIO",
-      "descripcion": "C. INDICACIONES DE GASTROENTEROLOGIA: GASTROSTOMIA 12/11/2026 16:00",
+      "descripcion": "SINDROMES GERIATRICOS DISMOVILIDAD ETADI 5 B, FRAGILIDAD AVANZADA,KARNOFSKY 20 , NECPAL POSITIVO ESTADIO 3,",
       "prioridad": "RUTINA",
       "turno": "NOCTURNA_20_24",
       "horario_programado": null,
@@ -201,13 +201,19 @@
       "resultado_obtenido": null
     }
   ],
-  "observaciones": [],
+  "observaciones": [
+    "ESCALAS",
+    "PADUA 6 PUNTOS RIESGO ALTO",
+    "PSI 178 CLASE V",
+    "CURB 65 3 PUNTOS",
+    "NEWS 2 13 PUNTOS"
+  ],
   "laboratorios": [
     {
-      "fecha_hora": "2026-11-14",
+      "fecha_hora": "2026-11-16",
       "tipo_estudio": "Laboratorios / Gasometría",
       "valores": {
-        "resumen": "2026/11/13 CLORO....: 95 POTASIO...: 3.73 SODIO..: 129.2 CALCIO IONICO EN SUERO..: 1.16 CALCIO IONICO EN SUERO..: 1.16 CALCIO TOTAL: 7.3 FOSFORO..: 3.5 MAGNESIO: 1.63 . 2026/11/11 CLORO....: 93 POTASIO...: 4.68 SODIO: 127.8"
+        "resumen": "PARACLÍNICOS (15/11/2026): PCR 127, LEUCOCITOS 5, HB 11,6, PLAQUETAS 198, CLORO 91, POTASIO 3,50, SODIO 124, UREA 42,4, CREATININA 0,30. LABORATORIOS 13/11/2026: SODIO 129.2 MEQ/L, POTASIO 3.73 MEQ/L, CLORO 95 MEQ/L, CALCIO TOTAL 7.3, MAGNESIO 1.63 MG/DL. (11/11/2026): LEUCOCITOS 3.83 K, HEMOGLOBINA 8.0 G/DL, HEMATOCRITO 25.1%, PLAQUETAS 302.000, C"
       },
       "alerta_critica": null
     }

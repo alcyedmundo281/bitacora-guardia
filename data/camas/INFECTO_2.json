@@ -1,11 +1,11 @@
 {
-  "cama": "ABREVIADOS 2",
-  "area": "EMERGENCIA_OBSERVACION",
+  "cama": "INFECTO_2",
+  "area": "PERIFERICOS",
   "servicio_tratante": null,
   "nombre_completo": "FREIRE LOPEZ MARCO FERNANDO",
-  "hc": "987792",
-  "cedula": null,
-  "edad": "79 años",
+  "hc": "N/D",
+  "cedula": "0600039846",
+  "edad": "79 AÑOS",
   "sexo": null,
   "fecha_nacimiento": null,
   "fecha_ingreso": null,
@@ -23,9 +23,9 @@
   "alergias": [],
   "diagnosticos_activos": [
     "DIAGNOSTICO:",
-    "NEUMONIA ADQUIRIDA EN LA COMUNIDAD CURBA 65 2 PUNTOS, PSI 149",
+    "NEUMONIA ADQUIRIDA EN LA COMUNIDAD CURB 65 2 PUNTOS, PSI 149",
     "FALLA RENAL AGUDA",
-    "DESCOMPENSACION DIABETICA"
+    "DESCOMPENSACIÓN DIABÉTICA SIMPLE"
   ],
   "diagnosticos_pasivos": [],
   "dieta": null,
@@ -33,7 +33,7 @@
   "ckd_epi": null,
   "medicaciones": [
     {
-      "nombre": "LIQUIDOS ORALES",
+      "nombre": "CLORURO DE SODIO 1000 ML IV PASAR A 40 ML/HORA",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -59,7 +59,20 @@
       "nota": null
     },
     {
-      "nombre": "CLARITROMICINA 500 MG VIA ORAL CADA 12 HORAS CIE10 J47",
+      "nombre": "CLARITROMICINA 500 MG VIA ORAL CADA 12 HORAS CIE10 J47 FI: 12/11/2026 (DIA 3)",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "PARACETAMOL 1GR VO CADA 8 HORAS",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -152,14 +165,19 @@
   ],
   "pendientes": [],
   "observaciones": [
-    "2026/11/12",
-    "ACIDO LACTICO...................: 2.4",
-    "BE..............................: -0.9 CA..............................: 1.1",
-    "CL..............................: 104.0 COHB............................: 1.9",
-    "GLU.............................: 260.0 HCO3............................: 24.3",
-    "O2SAT...........................: 65.5 PCO2............................: 42.1"
+    "TRAMADOL 50 MG IV STAT",
+    "METOCLOPRAMIDA 10 MG IV STAT"
   ],
-  "laboratorios": [],
+  "laboratorios": [
+    {
+      "fecha_hora": "2026-11-16",
+      "tipo_estudio": "Laboratorios / Gasometría",
+      "valores": {
+        "resumen": "2026/11/12 ACIDO LACTICO...................: 2.4 BE..............................: -0.9 CA..............................: 1.1 CL..............................: 104.0 COHB............................: 1.9 GLU.............................: 260.0 HCO3............................: 24.3 O2SAT...........................: 65.5 PCO2........................"
+      },
+      "alerta_critica": null
+    }
+  ],
   "cultivos": [],
   "alertas_criticas": []
 }

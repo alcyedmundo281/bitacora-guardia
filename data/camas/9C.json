@@ -31,7 +31,7 @@
   "ckd_epi": null,
   "medicaciones": [
     {
-      "nombre": "OMPERAZOL 20 MG P.O QD",
+      "nombre": "OMEPRAZOL 20 MG P.O QD",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -44,7 +44,7 @@
       "nota": null
     },
     {
-      "nombre": "UROCIT 2 CAPSULAS VIA ORAL CADA 8 HORAS",
+      "nombre": "UROCIT 2 CÁPSULAS VÍA ORAL CADA 8 HORAS",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -57,7 +57,7 @@
       "nota": null
     },
     {
-      "nombre": "ENOXAPARINA 40 MG SUBCUTANEO CADA 12 HORAS",
+      "nombre": "ENOXAPARINA 40 MG SUBCUTÁNEO CADA 12 HORAS SUSPENDER, RETOMAR 12 HORAS POSTERIOR A PROCEDIMIENTO",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -109,7 +109,7 @@
       "nota": null
     },
     {
-      "nombre": "EMPAGLIFLOZINA 25 MG VIA ORAL CADA DIA",
+      "nombre": "EMPAGLIFLOZINA 25 MG VÍA ORAL CADA DIA ***********SUSPENDER********",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -148,7 +148,7 @@
       "nota": null
     },
     {
-      "nombre": "POLIETILENGLICOL 1 CUCHARADA VIA ORAL CADA 12 HORAS",
+      "nombre": "POLIETILENGLICOL 1 CUCHARADA VÍA ORAL CADA 12 HORAS",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -177,30 +177,6 @@
     {
       "id": "PEND-9C-02",
       "tipo": "LABORATORIO",
-      "descripcion": "SE PROGRAMA CURETAJE PERIODONTAL DE PIEZA DENTAL 36 PARA EL DIA JUEVES 12",
-      "prioridad": "RUTINA",
-      "turno": "NOCTURNA_20_24",
-      "horario_programado": null,
-      "es_visita_nocturna": false,
-      "estado": "PENDIENTE",
-      "responsable": null,
-      "resultado_obtenido": null
-    },
-    {
-      "id": "PEND-9C-03",
-      "tipo": "LABORATORIO",
-      "descripcion": "DE NOVIEMBRE DE 2026 A LAS 16H00",
-      "prioridad": "RUTINA",
-      "turno": "NOCTURNA_20_24",
-      "horario_programado": null,
-      "es_visita_nocturna": false,
-      "estado": "PENDIENTE",
-      "responsable": null,
-      "resultado_obtenido": null
-    },
-    {
-      "id": "PEND-9C-04",
-      "tipo": "LABORATORIO",
       "descripcion": "ODONTOLOGIA REALIZA PROCEDIMIENTO",
       "prioridad": "RUTINA",
       "turno": "NOCTURNA_20_24",
@@ -211,7 +187,7 @@
       "resultado_obtenido": null
     },
     {
-      "id": "PEND-9C-05",
+      "id": "PEND-9C-03",
       "tipo": "LABORATORIO",
       "descripcion": "INDICACIONES DE NEFROLOGIA",
       "prioridad": "RUTINA",
@@ -226,12 +202,11 @@
   "observaciones": [
     "EKG CADA DIA",
     "PD INFORME DE BODY TAC SIMPLE Y CONTRASTADA",
-    "ECO RENAL PD REALIZAR",
-    "EDA Y COLONOSCOPIA EL DIA DOMINGO 15-11-2026 YA EN PREPARACION"
+    "ECO RENAL PD REALIZAR"
   ],
   "laboratorios": [
     {
-      "fecha_hora": "2026-11-14",
+      "fecha_hora": "2026-11-16",
       "tipo_estudio": "Laboratorios / Gasometría",
       "valores": {
         "resumen": "CLORO: 114 POTASIO: 3.47 SODIO: 143.3 CALCIO IÓNICO EN SUERO: 1.19 CALCIO TOTAL: 7.4 FÓSFORO: 3.1 MAGNESIO: 1.96"

@@ -172,19 +172,19 @@
     {
       "id": "PEND-ABRV3A-01",
       "tipo": "LABORATORIO",
-      "descripcion": "HEMOCULTIVOS X 2 HOY",
-      "prioridad": "URGENTE",
+      "descripcion": "E: EXÁMENES Y PROCEDIMIENTOS:",
+      "prioridad": "RUTINA",
       "turno": "NOCTURNA_20_24",
       "horario_programado": null,
-      "es_visita_nocturna": true,
+      "es_visita_nocturna": false,
       "estado": "PENDIENTE",
       "responsable": null,
       "resultado_obtenido": null
     },
     {
       "id": "PEND-ABRV3A-02",
-      "tipo": "INTERCONSULTA",
-      "descripcion": "VALORACION POR HEMAOTLOGIA E INFECTOLOGIA",
+      "tipo": "IMAGEN_PROCEDIMIENTO",
+      "descripcion": "TAC SIMPLE DE ABDOMEN Y PELVIS (SOLICITADA EL 14/11/2026): PENDIENTE",
       "prioridad": "URGENTE",
       "turno": "NOCTURNA_20_24",
       "horario_programado": null,
@@ -196,7 +196,7 @@
     {
       "id": "PEND-ABRV3A-03",
       "tipo": "LABORATORIO",
-      "descripcion": "PD RESULTADO DE UROCULTIVO, HEMOCULTIVO,",
+      "descripcion": "L: LABORATORIO:",
       "prioridad": "RUTINA",
       "turno": "NOCTURNA_20_24",
       "horario_programado": null,
@@ -207,8 +207,8 @@
     },
     {
       "id": "PEND-ABRV3A-04",
-      "tipo": "IMAGEN_PROCEDIMIENTO",
-      "descripcion": "TAC SIMPLE DE ALBOMEN Y PELVIS PENDIENTE",
+      "tipo": "LABORATORIO",
+      "descripcion": "HEMOCULTIVOS X 2: PENDIENTE RESULTADOS",
       "prioridad": "URGENTE",
       "turno": "NOCTURNA_20_24",
       "horario_programado": null,
@@ -220,7 +220,43 @@
     {
       "id": "PEND-ABRV3A-05",
       "tipo": "LABORATORIO",
-      "descripcion": "PET SCAN HOY",
+      "descripcion": "UROCULTIVO: PENDIENTE RESULTADO",
+      "prioridad": "URGENTE",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": null,
+      "es_visita_nocturna": true,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
+    },
+    {
+      "id": "PEND-ABRV3A-06",
+      "tipo": "LABORATORIO",
+      "descripcion": "CULTIVO DE ESPUTO INDUCIDO: PENDIENTE",
+      "prioridad": "URGENTE",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": null,
+      "es_visita_nocturna": true,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
+    },
+    {
+      "id": "PEND-ABRV3A-07",
+      "tipo": "INTERCONSULTA",
+      "descripcion": "C: INTERCONSULTAS:",
+      "prioridad": "URGENTE",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": null,
+      "es_visita_nocturna": true,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
+    },
+    {
+      "id": "PEND-ABRV3A-08",
+      "tipo": "INTERCONSULTA",
+      "descripcion": "INDICACIONES DE INFECTOLOGÍA: REINTERCONSULTAR CON RESULTADOS DE CULTIVOS",
       "prioridad": "URGENTE",
       "turno": "NOCTURNA_20_24",
       "horario_programado": null,
@@ -235,7 +271,7 @@
   ],
   "laboratorios": [
     {
-      "fecha_hora": "2026-11-14",
+      "fecha_hora": "2026-11-16",
       "tipo_estudio": "Laboratorios / Gasometría",
       "valores": {
         "resumen": "13/11/2026 IGG: 7, IGM: 0.22, LEU: 24, HG: 10, HCTO: 31, PLAQ: 328.000, FERRITINA: 1043, TRIGLI: 241, . EMO NO INFECCIOSO. . PCR: 96, PCT: 0.47 . CLO: 98, K: 5.0, SODIO: 132 . crea: 1.8"

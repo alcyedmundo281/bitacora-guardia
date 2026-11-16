@@ -2,31 +2,24 @@
   "cama": "AB 1",
   "area": "EMERGENCIA_OBSERVACION",
   "servicio_tratante": null,
-  "nombre_completo": "BENAVIDES ANA LUCIA C",
-  "hc": "639501",
-  "cedula": "1000997724",
-  "edad": "70 años",
+  "nombre_completo": "RODRIGUEZ VILLAMAR CECILIA AUGUSTA",
+  "hc": "N/D",
+  "cedula": "1703966620",
+  "edad": "74 AÑOS",
   "sexo": null,
   "fecha_nacimiento": null,
   "fecha_ingreso": null,
   "dias_hospitalizacion": null,
   "app": [
-    "FRACTURA DE COSTILLAS DE LADO IZQUIERDO",
-    "INSUFICIENCIA CARDIACA CONGESTIVA",
-    "ENFERMEDAD RENAL CRÓNICA",
-    "HIPERTENSIÓN PORTAL",
-    "FIBROMIALGIA",
-    "HIPOTIROIDISMO",
-    "GOTA",
-    "ISQUEMIA MESENTÉRICA SEGMENTARIA"
+    "DIABETES MELLITUS TIPO 2",
+    "ITU A REPETICIÓN"
   ],
   "aqx": [],
   "alergias": [],
   "diagnosticos_activos": [
-    "DERRAME PLEURAL TABICADO IZQUIERDO",
-    "NEUMONÍA ASOCIADA A CUIDADOS DE LA SALUD",
-    "DESCARTAR PROGRESIÓN DE PATOLOGIA ONCOLOGICA (CANCER DE MAMA/CERVIX)",
-    "PORTADORA DE YEYUNOSTOMÍA"
+    "SEPSIS DE FOCO URINARIO",
+    "HIPONATREMIA SEVERA HIPERVOLEMICA HIPOOSMOLAR CRONICA",
+    "HEPATOPATIA EN ESTUDIO"
   ],
   "diagnosticos_pasivos": [],
   "dieta": null,
@@ -34,7 +27,7 @@
   "ckd_epi": null,
   "medicaciones": [
     {
-      "nombre": "SOLUCIÓN SALINA 0.9% 1000 ML PASAR 40 ML/HORA",
+      "nombre": "AMPICILINA MAS SULBACTAM 3G IV CADA 6HORAS FI: 12.11.2026 D:1 CIE10: A419",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -47,7 +40,7 @@
       "nota": null
     },
     {
-      "nombre": "MEROPENEM 1G IV CADA 8 HORAS (FI: 11/11/2026 D1 B99)",
+      "nombre": "PARACETAMOL 1G IV CADA 12 HORAS Y PRN",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -60,7 +53,7 @@
       "nota": null
     },
     {
-      "nombre": "PARACETAMOL 1 GR IV CADA 8 HORAS",
+      "nombre": "OMEPRAZOL 40 MG IV QD",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -73,7 +66,7 @@
       "nota": null
     },
     {
-      "nombre": "ENOXAPARINA 40 MG SC CADA DIA",
+      "nombre": "ENOXAPARINA 40 MG SC CADA 24 HORAS MANTENER SI NO HAY SANGRADO",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -90,7 +83,31 @@
     {
       "id": "PEND-AB1-01",
       "tipo": "LABORATORIO",
-      "descripcion": "LABORATORIO CENTRAL 13/11/2026: BIOMETRÍA, LDH, PCR, ELECTROLITOS, MAGNESIO, CALCIO IÓNICO, PROTEÍNAS TOTALES, ALBÚMINA",
+      "descripcion": "OSMOLARIDAD SERICA/PLASMATICA ELECTROLITOS CORTISOL SERICO 08H. NA URINARIO",
+      "prioridad": "RUTINA",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": null,
+      "es_visita_nocturna": false,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
+    },
+    {
+      "id": "PEND-AB1-02",
+      "tipo": "LABORATORIO",
+      "descripcion": "+OSMOLARIDAD URINARIA TSH + T4L **INSISTIR***",
+      "prioridad": "RUTINA",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": null,
+      "es_visita_nocturna": false,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
+    },
+    {
+      "id": "PEND-AB1-03",
+      "tipo": "LABORATORIO",
+      "descripcion": "L: LUNES BIOMETRIA HEMATICA, QUIMICA Y ELECTROLITOS",
       "prioridad": "RUTINA",
       "turno": "NOCTURNA_20_24",
       "horario_programado": null,
@@ -100,7 +117,10 @@
       "resultado_obtenido": null
     }
   ],
-  "observaciones": [],
+  "observaciones": [
+    "CONTROL SERIADO DE SODIO Y ELECTROLITOS CADA 4-6 HORAS DURANTE CORRECCION",
+    "ACTIVA"
+  ],
   "laboratorios": [],
   "cultivos": [],
   "alertas_criticas": []

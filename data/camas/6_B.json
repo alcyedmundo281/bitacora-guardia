@@ -22,13 +22,13 @@
   "alergias": [],
   "diagnosticos_activos": [
     "DIAGNÓSTICOS ACTIVOS:",
-    "CELULITIS DE OTROS SITIOS (L038)",
-    "ENFERMEDAD RENAL CRÓNICA (N185)",
-    "ÚLCERA DE DECÚBITO Y POR ÁREA DE PRESIÓN L899",
+    "SEPSIS DE FOCO ABDOMINAL",
+    "CELULITIS DE OTROS SITIOS (L038) LRINEC 4 AL MOMENTO",
+    "ENFERMEDAD RENAL CRÓNICA KDIGO 5 (N185)",
+    "ÚLCERA DE DECÚBITO Y POR ÁREA DE PRESIÓN SACROCOXIGEA EN CURACIONES CON CLINICA DE HERIDAS L899",
     "TROMBOCITOPENIA SEVERA",
     "DIAGNÓSTICOS PASIVOS:",
-    "HIPERTENSIÓN ARTERIAL",
-    "CA PRÓSTATA"
+    "HIPERTENSIÓN ARTERIAL"
   ],
   "diagnosticos_pasivos": [],
   "dieta": null,
@@ -36,7 +36,7 @@
   "ckd_epi": null,
   "medicaciones": [
     {
-      "nombre": "MEROPENEM 1 GRAMO QD Y 1 GRAMO POSTERIOR A CADA DIÁLISIS FI: 11/11/2026",
+      "nombre": "DISH + CUIDADOS",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -49,7 +49,72 @@
       "nota": null
     },
     {
-      "nombre": "AMLODIPINO 10 MG VÍA ORAL CADA",
+      "nombre": "MEROPENEM 1 G IV CADA 48 HORAS FI: 11/11/2026 CIE 10: B99 (DIA 4)",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "AMIKACINA 1GR IV POSTERIOR A DIALISIS DOSIS UNICA FECHA DE INICIO 09/11/2026",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "CEFEPIME 1GR IV STAT Y 1 GR POSTERIOR A DIALISIS. FECHA DE INICIO 09/11/2026,",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "TRAMADOL 50 MG IV CADA 12 HORAS",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "METOCLOPRAMIDA 10 MG ENDOVENOSO CADA 12 HORAS",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "AMLODIPINO 10 MG VIA ORAL CADA *SUSPENDER (TENSIONES BAJAS)",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -66,11 +131,11 @@
     {
       "id": "PEND-6B-01",
       "tipo": "IMAGEN_PROCEDIMIENTO",
-      "descripcion": "PLACA ED PELVIS PENDIENTE REVISAR",
-      "prioridad": "URGENTE",
+      "descripcion": "PLACA DE PELVIS 11/11/2026 MASA PEL",
+      "prioridad": "RUTINA",
       "turno": "NOCTURNA_20_24",
       "horario_programado": null,
-      "es_visita_nocturna": true,
+      "es_visita_nocturna": false,
       "estado": "PENDIENTE",
       "responsable": null,
       "resultado_obtenido": null
@@ -78,7 +143,91 @@
     {
       "id": "PEND-6B-02",
       "tipo": "LABORATORIO",
-      "descripcion": "EXAMENES LUEGO DE DIÁLISIS: BH, PCR, PROCALCITONINA",
+      "descripcion": "VICA HETEROGENEA DE 10.7 X 10.6 X 10.2 CM EN ANTERO POSTERIOR, TRANSVE",
+      "prioridad": "RUTINA",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": null,
+      "es_visita_nocturna": false,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
+    },
+    {
+      "id": "PEND-6B-03",
+      "tipo": "LABORATORIO",
+      "descripcion": "RSO Y CRANEO CAUDAL RESPECTIVAMENTE, QUE INFILTRA LA VEJIGA Y PARED AN",
+      "prioridad": "RUTINA",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": null,
+      "es_visita_nocturna": false,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
+    },
+    {
+      "id": "PEND-6B-04",
+      "tipo": "LABORATORIO",
+      "descripcion": "TERIOR DEL RECTO .LIQUIDO LIBRE EN ESPACIO SUBFRENICOS Y CORREDERA PAR",
+      "prioridad": "RUTINA",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": null,
+      "es_visita_nocturna": false,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
+    },
+    {
+      "id": "PEND-6B-05",
+      "tipo": "LABORATORIO",
+      "descripcion": "SV PM:",
+      "prioridad": "RUTINA",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": null,
+      "es_visita_nocturna": false,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
+    },
+    {
+      "id": "PEND-6B-06",
+      "tipo": "LABORATORIO",
+      "descripcion": "TENSIÓN ARTERIAL: 116 / 61",
+      "prioridad": "RUTINA",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": null,
+      "es_visita_nocturna": false,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
+    },
+    {
+      "id": "PEND-6B-07",
+      "tipo": "LABORATORIO",
+      "descripcion": "FRECUENCIA RESPIRATORIA: 17",
+      "prioridad": "RUTINA",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": null,
+      "es_visita_nocturna": false,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
+    },
+    {
+      "id": "PEND-6B-08",
+      "tipo": "LABORATORIO",
+      "descripcion": "FRECUENCIA CARDIACA: 95 . TEMPERATURA: 36° GRADOS",
+      "prioridad": "RUTINA",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": null,
+      "es_visita_nocturna": false,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
+    },
+    {
+      "id": "PEND-6B-09",
+      "tipo": "LABORATORIO",
+      "descripcion": "SATURACIÓN: 95 FIO 28%",
       "prioridad": "RUTINA",
       "turno": "NOCTURNA_20_24",
       "horario_programado": null,
@@ -89,14 +238,23 @@
     }
   ],
   "observaciones": [
+    "LABORATORIOS 15/11/2026: PCR 132, LEUCOS 5,88, HB 10,1, PLAQUETAS 80.000, CLORO 100, POTASIO 3,91, SODIO 137,7, UREA 184, CREATININA 6,37",
     "LABORATORIOS",
     "2026/11/11 13:44",
     "CÁLCULO DE PLAQUETAS 130.000",
     "Leucocitos (WBC 5.81",
-    "Hemoglobina (HGB 10.8",
-    "Hematocrito (HCT 33.4"
+    "Hemoglobina (HGB 10.8"
   ],
-  "laboratorios": [],
+  "laboratorios": [
+    {
+      "fecha_hora": "2026-11-16",
+      "tipo_estudio": "Laboratorios / Gasometría",
+      "valores": {
+        "resumen": "PORTADOR DE SONDA VESICAL INGESTA 560 ELIMINA200 BALANCE 360 EDEMA EN MIEMBROS INFERIORES"
+      },
+      "alerta_critica": null
+    }
+  ],
   "cultivos": [],
   "alertas_criticas": []
 }

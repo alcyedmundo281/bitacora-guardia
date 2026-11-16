@@ -1,6 +1,6 @@
 {
-  "cama": "PERI_15",
-  "area": "PERIFERICOS",
+  "cama": "ABV 3B",
+  "area": "EMERGENCIA_OBSERVACION",
   "servicio_tratante": null,
   "nombre_completo": "UBILLUS ARGUERO MARIA TERESA",
   "hc": "2090357",
@@ -29,7 +29,7 @@
   "ckd_epi": null,
   "medicaciones": [
     {
-      "nombre": "MEROPENEM 500 MG IV CADA 8 HORAS (O), CIE N39.0 FI 13/11/26",
+      "nombre": "SOLUCIÓN SALINA 0.9% 1000 ML INTRAVENOSO A 60 ML/H",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -42,7 +42,7 @@
       "nota": null
     },
     {
-      "nombre": "PARACETAMOL 1 GRAMO INTRAVENOSO CADA 8 HORAS",
+      "nombre": "MEROPENEM 500 MG INTRAVENOSO CADA 8 HORAS, CIE N39.0, FI 13/11/2026 (DÍA 2)",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -55,7 +55,7 @@
       "nota": null
     },
     {
-      "nombre": "KETOROLACO 30 MG IV CADA 12 HORAS POR HOY Y DESDE MA#ANA SOLO PRN",
+      "nombre": "PARACETAMOL 1 GRAMO INTRAVENOSO CADA 6 HORAS",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -68,7 +68,7 @@
       "nota": null
     },
     {
-      "nombre": "METOCLOPRAMIDA 10 MG IV CADA 12 HORAS",
+      "nombre": "KETOROLACO 30 MG INTRAVENOSO POR RAZONES NECESARIAS",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -81,7 +81,7 @@
       "nota": null
     },
     {
-      "nombre": "L: NA, POTASIO, CL, MAGNESIO, PCT, EMO, UROCULTIVO, GRAM STAT",
+      "nombre": "METOCLOPRAMIDA 10 MG INTRAVENOSO CADA 12 HORAS",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -96,9 +96,21 @@
   ],
   "pendientes": [
     {
-      "id": "PEND-PERI15-01",
+      "id": "PEND-ABV3B-01",
+      "tipo": "LABORATORIO",
+      "descripcion": "E: EXÁMENES Y PROCEDIMIENTOS:",
+      "prioridad": "RUTINA",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": null,
+      "es_visita_nocturna": false,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
+    },
+    {
+      "id": "PEND-ABV3B-02",
       "tipo": "IMAGEN_PROCEDIMIENTO",
-      "descripcion": "UROTAC SIMPLE. HACER INFORMAR",
+      "descripcion": "UROTAC SIMPLE: PENDIENTE INFORME",
       "prioridad": "URGENTE",
       "turno": "NOCTURNA_20_24",
       "horario_programado": null,
@@ -108,13 +120,25 @@
       "resultado_obtenido": null
     },
     {
-      "id": "PEND-PERI15-02",
+      "id": "PEND-ABV3B-03",
       "tipo": "LABORATORIO",
-      "descripcion": "NA, POTASIO, CL, MAGNESIO, PCT, EMO, UROCULTIVO, GRAM STAT",
-      "prioridad": "STAT",
+      "descripcion": "L: LABORATORIO:",
+      "prioridad": "RUTINA",
       "turno": "NOCTURNA_20_24",
       "horario_programado": null,
-      "es_visita_nocturna": true,
+      "es_visita_nocturna": false,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
+    },
+    {
+      "id": "PEND-ABV3B-04",
+      "tipo": "LABORATORIO",
+      "descripcion": "16/11/2026: BIOMETRÍA HEMÁTICA COMPLETA, UREA, CREATININA, ELECTROLITOS",
+      "prioridad": "RUTINA",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": null,
+      "es_visita_nocturna": false,
       "estado": "PENDIENTE",
       "responsable": null,
       "resultado_obtenido": null

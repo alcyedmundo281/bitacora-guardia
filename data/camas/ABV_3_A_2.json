@@ -1,29 +1,34 @@
 {
-  "cama": "AB 1_2",
+  "cama": "ABV 3 A_2",
   "area": "EMERGENCIA_OBSERVACION",
   "servicio_tratante": null,
-  "nombre_completo": "GALLEGOS ACOSTA FERNANDA BETSABE C",
-  "hc": "1727494",
-  "cedula": "1850092782",
-  "edad": "22 AÑOS",
+  "nombre_completo": "1701783563 RODRIGUEZ LOPEZ LUIS MAURICIO H.C.: 109",
+  "hc": "109675",
+  "cedula": null,
+  "edad": "83 AÑOS",
   "sexo": null,
   "fecha_nacimiento": null,
   "fecha_ingreso": null,
   "dias_hospitalizacion": null,
   "app": [
-    "LUPUS ERITEMATOSO JUVENIL DESDE LOS 11 A#OS DE EDAD:",
-    "*MANIFESTACIÓN NEUROLÓGICA: EPILEPSIA PRIMERA CRISIS A LOS 12 A#OS DE EDAD",
-    "*PARAPARESIA ESPÁSTICA EN 2016",
-    "*HEMATOLÓGICO Y RENAL",
-    "HEPATITIS AUTOINMUNE VS HEPATITIS MEDICAMENTOSA",
-    "VEJIGA NEUROGÉNICA CON IVU RECURRENTES QUE RECIBE ALGUNOS ESQUEMAS DE ANTIBIÓTICOS (PROFILAXIS Y TRATAMIENTO)",
-    "ALERGIA AL PESCADO*********"
+    "CARDIOPATIA ISQUEMICA CRONICA: RVM -> HACE AL MENOS 20 AÑOS // ICP EN PUENTES",
+    "HACE AL MENOS 10 AÑOS",
+    "* IC CON FEVI PRESERVADA, CF II, EST C",
+    "* ENFERMEDAD RENAL CRÓNICA EST 3A A3",
+    "* ENFERMEDAD PULMONAR CRÓNICA",
+    "* USO DE OXÍGENO DOMICILIARIO 12 HORAS DIARIA",
+    "* FIBRILACIÓN AURICULAR PERSISTENTE VALVULAR",
+    "* POLICITEMIA SECUNDARIA"
   ],
   "aqx": [],
   "alergias": [],
   "diagnosticos_activos": [
-    "HERPES ZÓSTER (CIE-10: B029)",
-    "LUPUS ERITEMATOSO SISTÉMICO (CIE-10: M321)"
+    "SANGRADO DIGESTIVO DE PROBABLE ORIGEN BAJO, OAKLAND 17 AUTOLIMITADO EN PACIENTE ANTICOAGULADO (AUTOLIMITADA)",
+    "TRASTORNO HIDROELECTROLÍTICO SEVERO (HIPERNATREMIA HIPEROSMOLAR + HIPOPOTASEMIA)",
+    "ENFERMEDAD RENAL CRÓNICA REAGUDIZADA (KDIGO 3 / UREMIA)",
+    "ENCEFALOPATÍA MULTIFACTORIAL (METABÓLICA/URÉMICA/HIPOVOLÉMICA) - GLASGOW 9/15",
+    "FIBRILACIÓN AURICULAR PERSISTENTE / INSUFICIENCIA CARDÍACA / CARDIOPATÍA ISQUÉMICA",
+    "NEOPLASIA DE BASE / LIMITACIÓN DEL ESFU"
   ],
   "diagnosticos_pasivos": [],
   "dieta": null,
@@ -31,7 +36,7 @@
   "ckd_epi": null,
   "medicaciones": [
     {
-      "nombre": "HIDROCORTISONA 50 MG IV QD (ORDEN NO. 34971591)",
+      "nombre": "DEXTROSA EN AGUA AL 5% 1000 ML PASAR IV A 60 ML HORA",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -44,7 +49,7 @@
       "nota": null
     },
     {
-      "nombre": "HIDROXICLOROQUINA 200 MG VO QD (ORDEN NO. 34971591)",
+      "nombre": "DEXTROSA EN AGUA AL 5% 300 ML + CLORURO DE POTASIO 30 MEQ PASAR IV EN 3 HORAS*** SUSPENDER****",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -57,7 +62,7 @@
       "nota": null
     },
     {
-      "nombre": "GABAPENTINA 300 MG VO BID (ORDEN NO. 34971591)",
+      "nombre": "HEPARINA SODICA 5.000 UNIDADES SUBCUTANEO QD **SUSPENDER EN CASO DE",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -70,7 +75,7 @@
       "nota": null
     },
     {
-      "nombre": "TRAMADOL 50 MG IV PRN (ORDEN NO. 34971591)",
+      "nombre": "SANGRADO**",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -83,7 +88,7 @@
       "nota": null
     },
     {
-      "nombre": "METOCLOPRAMIDA 10 MG IV PRN PREVIO A TRAMADOL (ORDEN NO. 34971591)",
+      "nombre": "SULFATO DE MAGNESIO 20% IV QD (D2/3)",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -96,7 +101,7 @@
       "nota": null
     },
     {
-      "nombre": "AZATIOPRINA 50 MG VO QD ***SUSPENDER***",
+      "nombre": "SI LA GLUCOSA ES MENOR 70 MG DL DEXTROSA 10 % 200 ML IV BOLO PRN",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -109,7 +114,7 @@
       "nota": null
     },
     {
-      "nombre": "ACICLOVIR 800 MG TOMAR VIA ORAL 6AM- 10AM- 2PM-6PM- 10PM POR 10 DÍAS",
+      "nombre": "BISOPROLOL 1,25 MG VO POR SOG AM",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -122,7 +127,7 @@
       "nota": null
     },
     {
-      "nombre": "PARACETAMOL 1 GRAMOS CADA 8 HORAS POR 5 DÍAS",
+      "nombre": "APIXABAN 2,5 MG VO BID **SUSPENDER**",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -135,7 +140,7 @@
       "nota": null
     },
     {
-      "nombre": "PASTA LASSAR: OXIDO DE ZINC 25GR + ALMIDÓN DE ARROZ 25 GR+LANOLINA 25 GR + VASELINA 25 GR MPUE APLICAR CADA 8 HORAS EN L",
+      "nombre": "LEUPROLIDE 11,25 AMP CADA 3 MESES",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -150,9 +155,9 @@
   ],
   "pendientes": [
     {
-      "id": "PEND-AB12-01",
-      "tipo": "IMAGEN_PROCEDIMIENTO",
-      "descripcion": "ECOGRAFÍA DE ABDOMEN (HEPATITIS AUTOINMUNE)",
+      "id": "PEND-ABV3A2-01",
+      "tipo": "LABORATORIO",
+      "descripcion": "HOY, ELECTROLITOS, EN ESTE MOMENTO",
       "prioridad": "URGENTE",
       "turno": "NOCTURNA_20_24",
       "horario_programado": null,
@@ -160,12 +165,37 @@
       "estado": "PENDIENTE",
       "responsable": null,
       "resultado_obtenido": null
+    },
+    {
+      "id": "PEND-ABV3A2-02",
+      "tipo": "LABORATORIO",
+      "descripcion": "DOMINGO: BH PCT , PCR , GLUCOSA, ELECTROLTIOS",
+      "prioridad": "RUTINA",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": null,
+      "es_visita_nocturna": false,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
+    },
+    {
+      "id": "PEND-ABV3A2-03",
+      "tipo": "LABORATORIO",
+      "descripcion": "GASOMETRIA EN LA PRN",
+      "prioridad": "RUTINA",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": null,
+      "es_visita_nocturna": false,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
     }
   ],
   "observaciones": [
-    "SEGUIMIENTO POR REUMATOLOGÍA",
-    "ALTA POR DERMATOLOGÍA",
-    "VALORACIÓN POR GASTROENTEROLOGÍA"
+    "2026/11/15",
+    "CLORO...........................: 126",
+    "POTASIO.........................: 2.68",
+    "SODIO...........................: 154.7"
   ],
   "laboratorios": [],
   "cultivos": [],
