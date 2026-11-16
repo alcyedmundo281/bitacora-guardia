@@ -869,7 +869,7 @@ async def receive_whatsapp_message(request: Request) -> dict[str, Any]:
         }
 
     cama = parsed["cama"]
-    paciente = next((p for p in bitacora.pacientes if p.cama.upper() == cama.upper()), None)
+    paciente = get_cama(cama)
     if not paciente:
         camas_disponibles = ", ".join(p.cama for p in bitacora.pacientes[:8]) + "..."
         return {
