@@ -287,6 +287,18 @@ def test_no_false_positive_patient_match_on_add() -> None:
     assert "cama" in data["reply"].lower() or "no encontré" in data["reply"].lower()
 
 
+def test_consulta_cama_6b_con_espacio() -> None:
+    res = client.post(
+        "/whatsapp/webhook",
+        json={"message": "Robotina como esta 6B"},
+    )
+    assert res.status_code == 200
+    data = res.json()
+    assert data["status"] == "success"
+    assert "CABEZAS" in data["reply"]
+
+
+
 
 
 

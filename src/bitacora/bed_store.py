@@ -99,10 +99,15 @@ def save_cama(paciente: Paciente) -> Path:
     return file_path
 
 
+def _norm_cama_key(cama: str) -> str:
+    return re.sub(r"[^A-Z0-9]", "", cama.strip().upper())
+
+
 def get_cama(cama_id: str) -> Paciente | None:
-    """Lee el archivo individual de una cama específica."""
+    """Lee el archivo individual de una cama específica (tolerando espacios o guiones)."""
     ensure_bed_store_initialized()
     target = cama_id.strip().upper()
+    target_norm = _norm_cama_key(target)
     direct_path = CAMAS_DIR / _safe_filename(target)
     if direct_path.exists():
         try:
@@ -110,11 +115,11 @@ def get_cama(cama_id: str) -> Paciente | None:
         except Exception as e:
             logger.error(f"Error leyendo cama {direct_path}: {e}")
 
-    # Búsqueda flexible si hay diferencia de espacios/guiones
+    # Búsqueda flexible ignorando espacios/guiones (ej: "6 B" == "6B", "AB 2" == "AB2")
     for p_file in sorted(CAMAS_DIR.glob("*.json")):
         try:
             pac = Paciente.model_validate_json(p_file.read_text(encoding="utf-8"))
-            if pac.cama.strip().upper() == target:
+            if pac.cama.strip().upper() == target or _norm_cama_key(pac.cama) == target_norm:
                 return pac
         except Exception:
             continue
