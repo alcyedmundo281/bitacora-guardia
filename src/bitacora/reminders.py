@@ -227,3 +227,58 @@ def enviar_pdf_whatsapp(
     except Exception as e:
         logger.error(f"Error enviando PDF diario a WhatsApp: {e}")
         return {"ok": False, "error": str(e)}
+
+
+AUTO_SYNC_14H_STATE_FILE = Path("data/auto_sync_14h_state.json")
+AUTO_SYNC_14H_HOUR = os.getenv("AUTO_SYNC_14H_HOUR", "14:00")
+
+
+def should_run_daily_14h_sync(ahora: datetime | None = None, target_hhmm: str | None = None) -> bool:
+    """Determina si corresponde sincronizar evoluciones desde Drive hoy a las 14:00 Ecuador."""
+    ahora_ec = ahora or now_ecuador()
+    objetivo = (target_hhmm or AUTO_SYNC_14H_HOUR).strip()
+    try:
+        target_h, target_m = [int(x) for x in objetivo.split(":", 1)]
+    except Exception:
+        target_h, target_m = 14, 0
+
+    if ahora_ec.hour != target_h or ahora_ec.minute < target_m:
+        return False
+
+    today_str = ahora_ec.strftime("%Y-%m-%d")
+    if AUTO_SYNC_14H_STATE_FILE.exists():
+        try:
+            state = json.loads(AUTO_SYNC_14H_STATE_FILE.read_text(encoding="utf-8"))
+            if state.get("last_synced_date") == today_str:
+                return False
+        except Exception as e:
+            logger.warning(f"Error leyendo {AUTO_SYNC_14H_STATE_FILE}: {e}")
+    return True
+
+
+def mark_daily_14h_sync_done(ahora: datetime | None = None) -> None:
+    """Registra que la sincronización de evoluciones de las 14:00 ya corrió hoy."""
+    ahora_ec = ahora or now_ecuador()
+    AUTO_SYNC_14H_STATE_FILE.parent.mkdir(parents=True, exist_ok=True)
+    payload = {
+        "last_synced_date": ahora_ec.strftime("%Y-%m-%d"),
+        "synced_at": ahora_ec.isoformat(),
+    }
+    AUTO_SYNC_14H_STATE_FILE.write_text(json.dumps(payload, indent=2, ensure_ascii=False), encoding="utf-8")
+
+
+def enviar_mensaje_whatsapp(texto: str, chat_id: str | None = None) -> dict[str, Any]:
+    """Envía un mensaje proactivo de texto al grupo de WhatsApp mediante el Bridge."""
+    try:
+        data = json.dumps({"chatId": chat_id, "preferGroup": True, "text": texto}).encode("utf-8")
+        req = urllib.request.Request(
+            f"{BRIDGE_URL}/api/send-message",
+            data=data,
+            headers={"Content-Type": "application/json"},
+        )
+        with urllib.request.urlopen(req, timeout=15) as resp:
+            body = json.loads(resp.read().decode("utf-8") or "{}")
+            return {"ok": resp.status == 200, "status": resp.status, "response": body}
+    except Exception as e:
+        logger.error(f"Error enviando mensaje a WhatsApp: {e}")
+        return {"ok": False, "error": str(e)}

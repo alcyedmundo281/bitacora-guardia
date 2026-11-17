@@ -300,6 +300,38 @@ def test_consulta_cama_6b_con_espacio() -> None:
     assert "CABEZAS" in data["reply"]
 
 
+def test_drive_evolutions_parser_and_14h_scheduler(tmp_path, monkeypatch) -> None:
+    from datetime import datetime, timezone
+    from bitacora import reminders
+    from bitacora.drive_evolutions_sync import _extract_latest_evolution
+
+    state_file = tmp_path / "auto_sync_14h_state.json"
+    monkeypatch.setattr(reminders, "AUTO_SYNC_14H_STATE_FILE", state_file)
+
+    # 18:59 UTC == 13:59 Ecuador -> aún no corre
+    dt_1359_ec = datetime(2026, 11, 17, 18, 59, tzinfo=timezone.utc).astimezone(reminders.ECUADOR_TZ)
+    assert reminders.should_run_daily_14h_sync(ahora=dt_1359_ec) is False
+
+    # 19:00 UTC == 14:00 Ecuador -> sí corre
+    dt_1400_ec = datetime(2026, 11, 17, 19, 0, tzinfo=timezone.utc).astimezone(reminders.ECUADOR_TZ)
+    assert reminders.should_run_daily_14h_sync(ahora=dt_1400_ec) is True
+    reminders.mark_daily_14h_sync_done(ahora=dt_1400_ec)
+    assert reminders.should_run_daily_14h_sync(ahora=dt_1400_ec) is False
+
+    sample_doc = (
+        "EVOLUCION PM DE MEDICINA INTERNA\n"
+        "DG:\n- SEPSIS URINARIA\n"
+        "O:\nTA: 120/70 MMHG\nFC: 88X\n"
+        "A:\nPaciente estable en mejoría clínica.\n"
+        "P:\n- PENDIENTE: TAC BODY S/C\n- CONTROL BH MAÑANA\n"
+    )
+    parsed = _extract_latest_evolution(sample_doc)
+    assert "TA: 120/70 MMHG" in parsed["sv"]
+    assert "estable" in parsed["analisis"]
+    assert any("TAC BODY" in p for p in parsed["pendientes"])
+
+
+
 
 
 

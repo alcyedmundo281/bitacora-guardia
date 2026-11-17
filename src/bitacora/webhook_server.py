@@ -20,6 +20,7 @@ from bitacora.bed_store import (
     list_camas_activas,
     registrar_resultado_cama,
 )
+from bitacora.drive_evolutions_sync import sincronizar_evoluciones_drive
 from bitacora.excel_exporter import exportar_bitacora_xlsx, subir_xlsx_a_drive
 from bitacora.groq_agent import call_groq_clinical_parser, set_groq_api_key, test_groq_connection
 from bitacora.models import Paciente, Pendiente, PendientePrioridad, PendienteTipo, TurnoObjetivo
@@ -27,12 +28,15 @@ from bitacora.pdf_generator import generar_bitacora_completa
 from bitacora.reminders import (
     crear_recordatorio,
     emitir_alerta_whatsapp,
+    enviar_mensaje_whatsapp,
     enviar_pdf_whatsapp,
     formatear_recordatorios,
+    mark_daily_14h_sync_done,
     mark_daily_pdf_published,
     now_ecuador,
     parse_hora_recordatorio,
     should_publish_daily_pdf,
+    should_run_daily_14h_sync,
     verificar_recordatorios_a_disparar,
 )
 from bitacora.schema import load_bitacora, save_bitacora
@@ -136,9 +140,32 @@ def publicar_bitacora_diaria_pdf(chat_id: str | None = None) -> dict[str, Any]:
     }
 
 
+def ejecutar_sync_evoluciones_14h() -> dict[str, Any]:
+    """Sincroniza las evoluciones de Drive, regenera PDF/Excel y notifica al grupo de WhatsApp."""
+    ahora_ec = now_ecuador()
+    res = sincronizar_evoluciones_drive()
+    if res.get("ok"):
+        camas = ", ".join(res.get("updated_beds") or []) or "Ninguna coincidencia"
+        msg = (
+            f"🔄 *ACTUALIZACIÓN AUTOMÁTICA DE BITÁCORA ({ahora_ec.strftime('%d/%m/%Y %H:%M')} Ecuador)*\n\n"
+            f"📂 *Docs de evolución leídos:* {res.get('docs_leidos', 0)}\n"
+            f"🏥 *Camas actualizadas:* {camas}\n\n"
+            "📊 *Excel actualizado (9 columnas):*\n"
+            "👉 https://bitacora-guardia-production.up.railway.app/descargar/bitacora.xlsx\n\n"
+            "📥 *PDF actualizado:*\n"
+            "👉 https://bitacora-guardia-production.up.railway.app/descargar/bitacora.pdf"
+        )
+        enviar_mensaje_whatsapp(msg)
+        mark_daily_14h_sync_done(ahora_ec)
+    elif res.get("needs_credentials"):
+        logger.warning("Sync 14:00 omitido: falta GOOGLE_SERVICE_ACCOUNT_JSON en Railway.")
+        mark_daily_14h_sync_done(ahora_ec)
+    return res
+
+
 @app.on_event("startup")
 async def startup_event():
-    """Inicia el worker en segundo plano para alarmas clínicas y publicación automática del PDF a las 05:00 AM Ecuador."""
+    """Inicia el worker para alarmas clínicas, PDF 05:00 AM y sync de evoluciones 14:00 Ecuador."""
     async def reminder_loop():
         while True:
             try:
@@ -149,8 +176,12 @@ async def startup_event():
                 if should_publish_daily_pdf():
                     logger.info("Hora programada (05:00 AM Ecuador): generando y publicando PDF de bitácora...")
                     await asyncio.to_thread(publicar_bitacora_diaria_pdf)
+
+                if should_run_daily_14h_sync():
+                    logger.info("Hora programada (14:00 Ecuador): sincronizando evoluciones de Drive...")
+                    await asyncio.to_thread(ejecutar_sync_evoluciones_14h)
             except Exception as e:
-                logger.error(f"Error en worker de recordatorios y PDF diario: {e}")
+                logger.error(f"Error en worker de recordatorios, PDF y sync 14:00: {e}")
             await asyncio.sleep(25)
 
     asyncio.create_task(reminder_loop())
@@ -302,6 +333,12 @@ def set_groq_key_endpoint(payload: SetGroqKeyPayload) -> dict[str, Any]:
 def publicar_pdf_ahora(chat_id: str | None = None) -> dict[str, Any]:
     """Genera el PDF de la bitácora y lo publica inmediatamente en el grupo de WhatsApp."""
     return publicar_bitacora_diaria_pdf(chat_id=chat_id)
+
+
+@app.post("/api/sincronizar-evoluciones")
+def sincronizar_evoluciones_endpoint(folder_id: str | None = None) -> dict[str, Any]:
+    """Sincroniza manualmente las evoluciones de Drive y regenera PDF y Excel."""
+    return sincronizar_evoluciones_drive(folder_id=folder_id)
 
 
 @app.post("/whatsapp/webhook")
