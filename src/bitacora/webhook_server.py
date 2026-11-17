@@ -375,7 +375,7 @@ def publicar_pdf_ahora(chat_id: str | None = None) -> dict[str, Any]:
     return publicar_bitacora_diaria_pdf(chat_id=chat_id)
 
 
-@app.post("/api/sincronizar-evoluciones")
+@app.api_route("/api/sincronizar-evoluciones", methods=["GET", "POST"])
 def sincronizar_evoluciones_endpoint(folder_id: str | None = None) -> dict[str, Any]:
     """Sincroniza manualmente las evoluciones de Drive y regenera PDF y Excel."""
     return sincronizar_evoluciones_drive(folder_id=folder_id)

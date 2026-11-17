@@ -166,6 +166,7 @@ function requestHandler(req, res) {
     parsedUrl.pathname === "/api/set-groq-key" ||
     parsedUrl.pathname === "/api/camas" ||
     parsedUrl.pathname === "/api/publicar-pdf-ahora" ||
+    parsedUrl.pathname === "/api/sincronizar-evoluciones" ||
     parsedUrl.pathname === "/whatsapp/webhook"
   ) {
     const proxyReq = http.request(
