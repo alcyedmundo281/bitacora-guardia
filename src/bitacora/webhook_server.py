@@ -565,12 +565,20 @@ async def receive_whatsapp_message(request: Request) -> dict[str, Any]:
 
         if intencion == "EGRESAR_PACIENTE":
             cama_target = str(groq_res.get("cama") or "").strip().upper()
-            if not cama_target and groq_res.get("paciente"):
-                pac_query = str(groq_res["paciente"])
+            pac_query = str(groq_res.get("paciente") or "").strip()
+
+            # Extraer también cualquier nombre que el usuario haya puesto en el mensaje (ej: "paciente Vasconez Norma")
+            m_pac_msg = re.search(r"(?:paciente|sr\.?|sra\.?|don|doña)\s+([a-záéíóúñA-ZÁÉÍÓÚÑ ]{4,40})(?:\s+se\s+va|\s+alta|\s+egres|\s+por\s+favor|\s+falleci|\.|\,|$)", texto_limpio, re.IGNORECASE)
+            if m_pac_msg and not pac_query:
+                pac_query = m_pac_msg.group(1).strip()
+
+            # SI EL USUARIO ESPECIFICÓ UN PACIENTE (con o sin cama deducida por Groq):
+            if pac_query:
                 pac_match = find_patient_by_name(pac_query, bitacora.pacientes)
                 if pac_match:
                     cama_target = pac_match.cama
                 else:
+                    # Si Groq asoció incorrectamente a otro paciente (ej: Carlos en vez de Norma)
                     cands = find_partial_candidates(pac_query, bitacora.pacientes)
                     if cands:
                         cands_txt = "\n".join(f"• *Cama {c.cama}:* {c.nombre_completo}" for c in cands)
@@ -578,14 +586,15 @@ async def receive_whatsapp_message(request: Request) -> dict[str, Any]:
                             "status": "error",
                             "reply": (
                                 f"⚠ No encontré coincidencia exacta para *{pac_query}* en la bitácora activa.\n\n"
-                                f"Pacientes con apellido similar:\n{cands_txt}\n\n"
-                                "Por seguridad no egresé ninguna cama. Indícame la *cama exacta* (ej: `Robotina da de alta la cama ...`)."
+                                f"Pacientes censados con apellido similar:\n{cands_txt}\n\n"
+                                "Por seguridad no egresé ninguna cama. Por favor indícame la *cama exacta* (ej: `Robotina da de alta la cama ...`)."
                             ),
                         }
                     return {
                         "status": "error",
-                        "reply": f"⚠ No encontré a *{pac_query}* en la bitácora activa. Indícame la cama exacta si ya fue trasladado o dado de alta.",
+                        "reply": f"⚠ No encontré a *{pac_query}* en la bitácora activa. Por favor indícame la cama exacta si deseas liberarla.",
                     }
+
             if not cama_target:
                 return {
                     "status": "error",

@@ -463,6 +463,27 @@ def test_egresar_vasconez_norma_no_egresa_vasconez_carlos(monkeypatch) -> None:
     assert "no egresé ninguna cama" in data_err["reply"].lower()
     assert get_cama("ABV1") is not None
 
+    # 3. Si Groq devuelve cama="ABV 1" erróneamente cuando el usuario pidió "Vasconez Pedro":
+    monkeypatch.setattr(
+        ws,
+        "call_groq_clinical_parser",
+        lambda msg, camas: {
+            "intencion": "EGRESAR_PACIENTE",
+            "cama": "ABV 1",
+            "paciente": "Vasconez Pedro",
+            "estudio": "alta",
+        },
+    )
+    res_err2 = client.post(
+        "/whatsapp/webhook",
+        json={"message": "Robotina por favor, paciente Vasconez Pedro se va de alta"},
+    )
+    assert res_err2.status_code == 200
+    data_err2 = res_err2.json()
+    assert data_err2["status"] == "error"
+    assert "no egresé ninguna cama" in data_err2["reply"].lower()
+    assert get_cama("ABV1") is not None
+
 
 
 

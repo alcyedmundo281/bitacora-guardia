@@ -167,8 +167,8 @@ ACCIONES / SCRIPTS DISPONIBLES (elige exactamente una en 'intencion'):
 
 CAMPOS DEL JSON:
 - "intencion": Una de las 15 opciones exactas.
-- "cama": Código exacto de la cama (ej: "6A", "8", "INFECTO 1B"). Si mencionan un apellido, asócialo a su cama. Si no aplica, null.
-- "paciente": Nombre completo del paciente (especialmente en INGRESAR_PACIENTE) o null.
+- "cama": Código exacto de la cama (ej: "6A", "8", "INFECTO 1B"). ATENCIÓN: Si el usuario menciona un paciente por nombre (ej: "Vasconez Norma"), SOLO pon la cama si el nombre completo del paciente coincide con el censado en esa cama. Si el paciente NO está en la matriz o solo coincide un apellido común (ej: Carlos vs Norma), pon "cama": null y "paciente": "nombre dicho por el usuario".
+- "paciente": Nombre del paciente mencionado en el mensaje (ej: "Vasconez Norma" o en INGRESAR_PACIENTE) o null.
 - "edad": Edad en texto si se menciona en INGRESAR_PACIENTE (ej: "45") o null.
 - "area": "HOSPITALIZACION" | "PERIFERICOS" | "EMERGENCIA_OBSERVACION" (para INGRESAR_PACIENTE si se deduce, por defecto "HOSPITALIZACION").
 - "diagnostico": Diagnóstico si se menciona en ingreso o evolución, o null.
