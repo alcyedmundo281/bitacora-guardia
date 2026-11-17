@@ -248,16 +248,16 @@ def sincronizar_evoluciones_drive(
             new_obs.append(f"SV ({ahora_str}): {parsed['sv']}")
         if parsed["analisis"]:
             new_obs.append(f"Evolución Drive ({ahora_str}): {parsed['analisis']}")
-        if new_obs:
-            pac.observaciones = (pac.observaciones[-3:] + new_obs)[-6:]
+        updated_obs = (list(pac.observaciones)[-3:] + new_obs)[-6:] if new_obs else list(pac.observaciones)
 
-        existing_desc = {p.descripcion.upper() for p in pac.pendientes}
+        updated_pendientes = list(pac.pendientes)
+        existing_desc = {p.descripcion.upper() for p in updated_pendientes}
         for idx_offset, p_txt in enumerate(parsed["pendientes"], start=1):
             if p_txt.upper() not in existing_desc:
                 prio = PendientePrioridad.STAT if "STAT" in p_txt.upper() else PendientePrioridad.URGENTE
-                pac.pendientes.append(
+                updated_pendientes.append(
                     Pendiente(
-                        id=f"PEND-{re.sub(r'[^A-Z0-9]', '', pac.cama)}-EV{len(pac.pendientes) + idx_offset:02d}",
+                        id=f"PEND-{re.sub(r'[^A-Z0-9]', '', pac.cama)}-EV{len(updated_pendientes) + idx_offset:02d}",
                         tipo=PendienteTipo.LABORATORIO,
                         descripcion=p_txt[:220],
                         prioridad=prio,
@@ -267,6 +267,7 @@ def sincronizar_evoluciones_drive(
                     )
                 )
 
+        pac = pac.model_copy(update={"observaciones": updated_obs, "pendientes": updated_pendientes})
         save_cama(pac)
         updated_beds.append(pac.cama)
 

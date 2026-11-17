@@ -391,6 +391,24 @@ def test_nota_robotina_en_google_doc(monkeypatch) -> None:
     assert res_no_creds["ok"] is False
     assert res_no_creds.get("needs_credentials") is True
 
+    # Sincronización completa con doc mockeado no debe fallar por frozen_instance
+    monkeypatch.setattr(
+        des,
+        "_fetch_docs_via_service_account",
+        lambda fid: [
+            {
+                "id": "doc-6b",
+                "name": f"6B {pac.nombre_completo}",
+                "text": "EVOLUCION PM\nO:\nTA: 118/72\nA:\nEstable.\nP:\n- PENDIENTE: CONTROL BH\n",
+            }
+        ]
+        if fid == des.DEFAULT_EVOLUTIONS_FOLDER_IDS[0]
+        else [],
+    )
+    res_sync = des.sincronizar_evoluciones_drive(regenerar_reportes=False)
+    assert res_sync["ok"] is True
+    assert "6B" in res_sync["updated_beds"]
+
 
 
 
