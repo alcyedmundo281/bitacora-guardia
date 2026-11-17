@@ -308,6 +308,8 @@ def test_drive_evolutions_parser_and_14h_scheduler(tmp_path, monkeypatch) -> Non
     assert "1hHA5TOBhrQOk08c3x9wCL7AuCgLEQ3qD" in DEFAULT_EVOLUTIONS_FOLDER_IDS  # Dr. Gaibor
     assert "1hNWIU4oCkJK4o6L0h-0yhKM4EgYT3D1l" in DEFAULT_EVOLUTIONS_FOLDER_IDS  # Dr. Torres
     assert "1iTf4TwBVllqAVHOrWi9Ba6qvS18Vr8u5" in DEFAULT_EVOLUTIONS_FOLDER_IDS  # Dr. Mosquera
+    assert "1AVYnXUVeh8DYCJCjqhX_eHedl_etQ-1e" in DEFAULT_EVOLUTIONS_FOLDER_IDS  # Dr. Medrano
+    assert "1fasHbbJdKBdMZB6PmAtIMNjRP7qSZs7T" in DEFAULT_EVOLUTIONS_FOLDER_IDS  # Dr. Montenegro
 
     state_file = tmp_path / "auto_sync_14h_state.json"
     multi_state_file = tmp_path / "auto_sync_state.json"
