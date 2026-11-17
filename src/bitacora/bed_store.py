@@ -139,6 +139,27 @@ def list_camas_activas() -> list[Paciente]:
     return pacientes
 
 
+def archivar_camas_ausentes(camas_activas: set[str]) -> list[str]:
+    """Archiva camas previas en data/camas/ que ya no figuran en el nuevo censo."""
+    CAMAS_DIR.mkdir(parents=True, exist_ok=True)
+    HISTORIAL_DIR.mkdir(parents=True, exist_ok=True)
+    activas_norm = {_norm_cama_key(c) for c in camas_activas}
+    archivadas: list[str] = []
+    ts = datetime.now().strftime("%Y%m%d_%H%M%S")
+
+    for p_file in sorted(CAMAS_DIR.glob("*.json")):
+        try:
+            pac = Paciente.model_validate_json(p_file.read_text(encoding="utf-8"))
+            if _norm_cama_key(pac.cama) not in activas_norm:
+                dest = HISTORIAL_DIR / f"{p_file.stem}_egreso_{ts}.json"
+                dest.write_text(p_file.read_text(encoding="utf-8"), encoding="utf-8")
+                p_file.unlink()
+                archivadas.append(pac.cama)
+        except Exception as e:
+            logger.error(f"Error archivando cama ausente {p_file}: {e}")
+    return archivadas
+
+
 def consolidar_bitacora(sync_monolith_path: Path | None = None) -> BitacoraGuardia:
     """Consolida todas las matrices individuales de camas en una BitacoraGuardia unificada para Quarto."""
     ensure_bed_store_initialized(sync_monolith_path)

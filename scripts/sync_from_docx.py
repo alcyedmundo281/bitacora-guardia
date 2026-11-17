@@ -9,7 +9,15 @@ from typing import Literal
 
 import docx
 
-from bitacora.bed_store import CAMAS_DIR, HISTORIAL_DIR, META_FILE, consolidar_bitacora, save_cama
+from bitacora.bed_store import (
+    CAMAS_DIR,
+    HISTORIAL_DIR,
+    META_FILE,
+    archivar_camas_ausentes,
+    consolidar_bitacora,
+    get_cama,
+    save_cama,
+)
 from bitacora.models import (
     LaboratorioReciente,
     Medicacion,
@@ -199,6 +207,19 @@ def sync_docx_to_bed_store(docx_path: Path) -> int:
                     )
                 )
 
+            # Baja frecuencia: si el mismo paciente continúa en la cama y el doc nuevo omitió APP/Dx/CI/HC, conservarlos
+            prev = get_cama(cama_raw)
+            if prev and prev.nombre_completo.split()[:2] == nombre.split()[:2]:
+                if not app and prev.app:
+                    app = prev.app
+                if not dx_activos and prev.diagnosticos_activos:
+                    dx_activos = prev.diagnosticos_activos
+                if hc == "N/D" and prev.hc != "N/D":
+                    hc = prev.hc
+                if not ci and prev.cedula:
+                    ci = prev.cedula
+
+            # Alta frecuencia: se renueva limpiamente con los datos vigentes de esta guardia
             pac = Paciente(
                 cama=cama_raw,
                 area=area,
@@ -216,6 +237,9 @@ def sync_docx_to_bed_store(docx_path: Path) -> int:
             save_cama(pac)
             total += 1
 
+    archivadas = archivar_camas_ausentes(set(seen_beds.keys()))
+    if archivadas:
+        print(f"Camas archivadas por egreso/ausencia ({len(archivadas)}): {', '.join(archivadas)}")
     consolidar_bitacora()
     return total
 

@@ -256,8 +256,10 @@ def test_exportar_xlsx_y_comando_drive(tmp_path) -> None:
     assert out_xlsx.exists()
 
     wb = load_workbook(out_xlsx)
-    assert wb.sheetnames == ["Censo Activo", "Pendientes Guardia", "Resumen"]
-    assert wb["Censo Activo"].max_row > 1
+    assert wb.sheetnames == ["Bitácora Guardia", "Pendientes Guardia", "Resumen"]
+    assert wb["Bitácora Guardia"].max_column == 9
+    assert wb["Bitácora Guardia"].max_row > 3
+    assert wb["Bitácora Guardia"].cell(2, 1).value == "CENSO Y EQUIPO"
 
     res_dl = client.get("/descargar/bitacora.xlsx")
     assert res_dl.status_code == 200
