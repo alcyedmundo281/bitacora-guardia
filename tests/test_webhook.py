@@ -98,7 +98,7 @@ def test_robotina_consulta_cama() -> None:
     data = res.json()
     assert data["status"] == "success"
     assert "6A" in data["reply"]
-    assert "RODRIGUEZ" in data["reply"]
+    assert "RODRIGUEZ" in data["reply"].replace("Í", "I")
 
 
 def test_robotina_ayuda() -> None:
@@ -140,7 +140,7 @@ def test_robotina_crear_recordatorio() -> None:
     assert data["status"] == "success"
     assert data["tipo_accion"] == "CREAR_RECORDATORIO"
     assert "07:00" in data["reply"]
-    assert "RODRIGUEZ" in data["reply"]
+    assert "RODRIGUEZ" in data["reply"].replace("Í", "I")
     assert "6A" in data["reply"]
 
 
@@ -172,7 +172,7 @@ def test_robotina_screenshot_examenes_rodriguez() -> None:
     data = res.json()
     assert data["status"] == "success"
     assert data["tipo_accion"] == "CONSULTA_CAMA"
-    assert "RODRIGUEZ" in data["reply"]
+    assert "RODRIGUEZ" in data["reply"].replace("Í", "I")
     assert "6A" in data["reply"]
 
 
