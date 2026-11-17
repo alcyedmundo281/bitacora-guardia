@@ -33,10 +33,12 @@ from bitacora.reminders import (
     formatear_recordatorios,
     mark_daily_14h_sync_done,
     mark_daily_pdf_published,
+    mark_scheduled_sync_done,
     now_ecuador,
     parse_hora_recordatorio,
     should_publish_daily_pdf,
     should_run_daily_14h_sync,
+    should_run_scheduled_sync,
     verificar_recordatorios_a_disparar,
 )
 from bitacora.schema import load_bitacora, save_bitacora
@@ -140,14 +142,14 @@ def publicar_bitacora_diaria_pdf(chat_id: str | None = None) -> dict[str, Any]:
     }
 
 
-def ejecutar_sync_evoluciones_14h() -> dict[str, Any]:
-    """Sincroniza las evoluciones de Drive, regenera PDF/Excel y notifica al grupo de WhatsApp."""
+def ejecutar_sync_evoluciones_programada(slot: str = "14:00") -> dict[str, Any]:
+    """Sincroniza las evoluciones de Drive (Gaibor, Torres, Mosquera), regenera PDF/Excel y notifica al grupo."""
     ahora_ec = now_ecuador()
     res = sincronizar_evoluciones_drive()
     if res.get("ok"):
         camas = ", ".join(res.get("updated_beds") or []) or "Ninguna coincidencia"
         msg = (
-            f"🔄 *ACTUALIZACIÓN AUTOMÁTICA DE BITÁCORA ({ahora_ec.strftime('%d/%m/%Y %H:%M')} Ecuador)*\n\n"
+            f"🔄 *ACTUALIZACIÓN AUTOMÁTICA DE BITÁCORA ({ahora_ec.strftime('%d/%m/%Y %H:%M')} Ecuador - {slot})*\n\n"
             f"📂 *Docs de evolución leídos:* {res.get('docs_leidos', 0)}\n"
             f"🏥 *Camas actualizadas:* {camas}\n\n"
             "📊 *Excel actualizado (9 columnas):*\n"
@@ -156,16 +158,20 @@ def ejecutar_sync_evoluciones_14h() -> dict[str, Any]:
             "👉 https://bitacora-guardia-production.up.railway.app/descargar/bitacora.pdf"
         )
         enviar_mensaje_whatsapp(msg)
-        mark_daily_14h_sync_done(ahora_ec)
+        mark_scheduled_sync_done(slot, ahora_ec)
     elif res.get("needs_credentials"):
-        logger.warning("Sync 14:00 omitido: falta GOOGLE_SERVICE_ACCOUNT_JSON en Railway.")
-        mark_daily_14h_sync_done(ahora_ec)
+        logger.warning(f"Sync {slot} omitido: falta GOOGLE_SERVICE_ACCOUNT_JSON en Railway.")
+        mark_scheduled_sync_done(slot, ahora_ec)
     return res
+
+
+def ejecutar_sync_evoluciones_14h() -> dict[str, Any]:
+    return ejecutar_sync_evoluciones_programada("14:00")
 
 
 @app.on_event("startup")
 async def startup_event():
-    """Inicia el worker para alarmas clínicas, PDF 05:00 AM y sync de evoluciones 14:00 Ecuador."""
+    """Inicia el worker para alarmas clínicas, PDF 05:00 AM y sync de evoluciones 14:00 y 22:00 Ecuador."""
     async def reminder_loop():
         while True:
             try:
@@ -177,11 +183,12 @@ async def startup_event():
                     logger.info("Hora programada (05:00 AM Ecuador): generando y publicando PDF de bitácora...")
                     await asyncio.to_thread(publicar_bitacora_diaria_pdf)
 
-                if should_run_daily_14h_sync():
-                    logger.info("Hora programada (14:00 Ecuador): sincronizando evoluciones de Drive...")
-                    await asyncio.to_thread(ejecutar_sync_evoluciones_14h)
+                sync_slot = should_run_scheduled_sync()
+                if sync_slot:
+                    logger.info(f"Hora programada ({sync_slot} Ecuador): sincronizando evoluciones de Drive...")
+                    await asyncio.to_thread(ejecutar_sync_evoluciones_programada, sync_slot)
             except Exception as e:
-                logger.error(f"Error en worker de recordatorios, PDF y sync 14:00: {e}")
+                logger.error(f"Error en worker de recordatorios, PDF y sync 14:00/22:00: {e}")
             await asyncio.sleep(25)
 
     asyncio.create_task(reminder_loop())

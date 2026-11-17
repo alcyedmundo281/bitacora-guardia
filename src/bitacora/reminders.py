@@ -231,6 +231,64 @@ def enviar_pdf_whatsapp(
 
 AUTO_SYNC_14H_STATE_FILE = Path("data/auto_sync_14h_state.json")
 AUTO_SYNC_14H_HOUR = os.getenv("AUTO_SYNC_14H_HOUR", "14:00")
+AUTO_SYNC_STATE_FILE = Path("data/auto_sync_state.json")
+AUTO_SYNC_HOURS = [
+    h.strip()
+    for h in os.getenv("AUTO_SYNC_HOURS", "14:00,22:00").split(",")
+    if h.strip()
+]
+
+
+def should_run_scheduled_sync(
+    ahora: datetime | None = None,
+    target_hours: list[str] | None = None,
+) -> str | None:
+    """Retorna la hora programada ('14:00' o '22:00') si corresponde sincronizar ahora en Ecuador."""
+    ahora_ec = ahora or now_ecuador()
+    slots = target_hours if target_hours is not None else AUTO_SYNC_HOURS
+    today_str = ahora_ec.strftime("%Y-%m-%d")
+
+    done_slots: list[str] = []
+    if AUTO_SYNC_STATE_FILE.exists():
+        try:
+            state = json.loads(AUTO_SYNC_STATE_FILE.read_text(encoding="utf-8"))
+            if state.get("date") == today_str:
+                done_slots = list(state.get("synced_slots") or [])
+        except Exception as e:
+            logger.warning(f"Error leyendo {AUTO_SYNC_STATE_FILE}: {e}")
+
+    for slot in slots:
+        try:
+            target_h, target_m = [int(x) for x in slot.split(":", 1)]
+        except Exception:
+            continue
+        if ahora_ec.hour == target_h and ahora_ec.minute >= target_m and slot not in done_slots:
+            return slot
+    return None
+
+
+def mark_scheduled_sync_done(slot: str, ahora: datetime | None = None) -> None:
+    """Registra que el turno de sincronización indicado ya corrió hoy en hora de Ecuador."""
+    ahora_ec = ahora or now_ecuador()
+    today_str = ahora_ec.strftime("%Y-%m-%d")
+    done_slots: list[str] = []
+    if AUTO_SYNC_STATE_FILE.exists():
+        try:
+            prev = json.loads(AUTO_SYNC_STATE_FILE.read_text(encoding="utf-8"))
+            if prev.get("date") == today_str:
+                done_slots = list(prev.get("synced_slots") or [])
+        except Exception:
+            done_slots = []
+    if slot not in done_slots:
+        done_slots.append(slot)
+
+    AUTO_SYNC_STATE_FILE.parent.mkdir(parents=True, exist_ok=True)
+    payload = {
+        "date": today_str,
+        "synced_slots": done_slots,
+        "last_synced_at": ahora_ec.isoformat(),
+    }
+    AUTO_SYNC_STATE_FILE.write_text(json.dumps(payload, indent=2, ensure_ascii=False), encoding="utf-8")
 
 
 def should_run_daily_14h_sync(ahora: datetime | None = None, target_hhmm: str | None = None) -> bool:

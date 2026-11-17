@@ -18,11 +18,36 @@ from bitacora.reminders import now_ecuador
 
 logger = logging.getLogger(__name__)
 
+import unicodedata
+
+DEFAULT_EVOLUTIONS_FOLDER_IDS = [
+    "1hHA5TOBhrQOk08c3x9wCL7AuCgLEQ3qD",  # DR. GAIBOR ***NOVIEMBRE 2026***
+    "1hNWIU4oCkJK4o6L0h-0yhKM4EgYT3D1l",  # DR TORRES 2026
+    "1iTf4TwBVllqAVHOrWi9Ba6qvS18Vr8u5",  # DR. MOSQUERA 10/2026
+]
 EVOLUTIONS_FOLDER_ID = os.getenv(
     "GOOGLE_EVOLUTIONS_FOLDER_ID",
-    "1hHA5TOBhrQOk08c3x9wCL7AuCgLEQ3qD",
+    DEFAULT_EVOLUTIONS_FOLDER_IDS[0],
 )
 EXCLUDED_FOLDERS = {"ALTAS", "PRESENTACIONES"}
+
+
+def _get_target_folder_ids(folder_id: str | None = None) -> list[str]:
+    if folder_id:
+        return [f.strip() for f in folder_id.split(",") if f.strip()]
+    env_multi = os.getenv("GOOGLE_EVOLUTIONS_FOLDER_IDS", "").strip()
+    if env_multi:
+        return [f.strip() for f in env_multi.split(",") if f.strip()]
+    env_single = os.getenv("GOOGLE_EVOLUTIONS_FOLDER_ID", "").strip()
+    if env_single:
+        return [env_single]
+    return list(DEFAULT_EVOLUTIONS_FOLDER_IDS)
+
+
+def _strip_accents(text: str) -> str:
+    return "".join(
+        ch for ch in unicodedata.normalize("NFKD", text) if not unicodedata.combining(ch)
+    )
 
 
 def _clean_block_lines(block: str) -> list[str]:
@@ -80,12 +105,12 @@ def _match_patient_for_doc(doc_name: str, pacientes: list[Paciente]) -> Paciente
             return pac
 
     # 2. Emparejar por apellidos en el nombre del documento
-    doc_norm = re.sub(r"[^A-Z0-9 ]", " ", doc_name.upper()).split()
+    doc_norm = re.sub(r"[^A-Z0-9 ]", " ", _strip_accents(doc_name.upper())).split()
     doc_tokens = {t for t in doc_norm if len(t) > 3}
     best_pac = None
     best_score = 0
     for p in pacientes:
-        p_words = re.findall(r"[A-Z0-9]+", p.nombre_completo.upper())
+        p_words = re.findall(r"[A-Z0-9]+", _strip_accents(p.nombre_completo.upper()))
         surnames = set(p_words[:2]) if len(p_words) >= 3 else set(p_words[:1])
         score = sum(2 if w in surnames else 1 for w in set(p_words) if w in doc_tokens)
         if score >= 2 and score > best_score:
@@ -173,20 +198,28 @@ def sincronizar_evoluciones_drive(
     folder_id: str | None = None,
     regenerar_reportes: bool = True,
 ) -> dict[str, Any]:
-    """Lee los Google Docs de evoluciones en Drive, actualiza alta frecuencia de camas y regenera PDF/XLSX."""
-    target_folder = folder_id or EVOLUTIONS_FOLDER_ID
-    docs = _fetch_docs_via_service_account(target_folder)
+    """Lee los Google Docs de evoluciones en Drive (Gaibor, Torres, Mosquera), actualiza alta frecuencia y regenera PDF/XLSX."""
+    target_folders = _get_target_folder_ids(folder_id)
+    docs_by_id: dict[str, dict[str, str]] = {}
     source = "service_account"
-    if not docs:
-        docs = _fetch_docs_via_gdrive_cli(target_folder)
-        source = "gdrive_cli"
 
+    for fid in target_folders:
+        fetched = _fetch_docs_via_service_account(fid)
+        if not fetched:
+            fetched = _fetch_docs_via_gdrive_cli(fid)
+            if fetched:
+                source = "gdrive_cli"
+        for d in fetched:
+            docs_by_id[d["id"]] = d
+
+    docs = list(docs_by_id.values())
     if not docs:
         return {
             "ok": False,
             "needs_credentials": not bool(_load_drive_service_account_info()),
+            "folder_ids": target_folders,
             "updated_beds": [],
-            "reason": "No se encontraron documentos accesibles en la carpeta de evoluciones (o falta GOOGLE_SERVICE_ACCOUNT_JSON en Railway).",
+            "reason": "No se encontraron documentos accesibles en las carpetas de evoluciones (o falta GOOGLE_SERVICE_ACCOUNT_JSON en Railway).",
         }
 
     pacientes = list_camas_activas()
@@ -237,6 +270,7 @@ def sincronizar_evoluciones_drive(
     return {
         "ok": True,
         "source": source,
+        "folder_ids": target_folders,
         "docs_leidos": len(docs),
         "updated_beds": updated_beds,
         "drive_upload": drive_res,

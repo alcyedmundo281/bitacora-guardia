@@ -303,20 +303,41 @@ def test_consulta_cama_6b_con_espacio() -> None:
 def test_drive_evolutions_parser_and_14h_scheduler(tmp_path, monkeypatch) -> None:
     from datetime import datetime, timezone
     from bitacora import reminders
-    from bitacora.drive_evolutions_sync import _extract_latest_evolution
+    from bitacora.drive_evolutions_sync import DEFAULT_EVOLUTIONS_FOLDER_IDS, _extract_latest_evolution
+
+    assert "1hHA5TOBhrQOk08c3x9wCL7AuCgLEQ3qD" in DEFAULT_EVOLUTIONS_FOLDER_IDS  # Dr. Gaibor
+    assert "1hNWIU4oCkJK4o6L0h-0yhKM4EgYT3D1l" in DEFAULT_EVOLUTIONS_FOLDER_IDS  # Dr. Torres
+    assert "1iTf4TwBVllqAVHOrWi9Ba6qvS18Vr8u5" in DEFAULT_EVOLUTIONS_FOLDER_IDS  # Dr. Mosquera
 
     state_file = tmp_path / "auto_sync_14h_state.json"
+    multi_state_file = tmp_path / "auto_sync_state.json"
     monkeypatch.setattr(reminders, "AUTO_SYNC_14H_STATE_FILE", state_file)
+    monkeypatch.setattr(reminders, "AUTO_SYNC_STATE_FILE", multi_state_file)
 
     # 18:59 UTC == 13:59 Ecuador -> aún no corre
     dt_1359_ec = datetime(2026, 11, 17, 18, 59, tzinfo=timezone.utc).astimezone(reminders.ECUADOR_TZ)
     assert reminders.should_run_daily_14h_sync(ahora=dt_1359_ec) is False
+    assert reminders.should_run_scheduled_sync(ahora=dt_1359_ec) is None
 
-    # 19:00 UTC == 14:00 Ecuador -> sí corre
+    # 19:00 UTC == 14:00 Ecuador -> sí corre '14:00'
     dt_1400_ec = datetime(2026, 11, 17, 19, 0, tzinfo=timezone.utc).astimezone(reminders.ECUADOR_TZ)
     assert reminders.should_run_daily_14h_sync(ahora=dt_1400_ec) is True
     reminders.mark_daily_14h_sync_done(ahora=dt_1400_ec)
     assert reminders.should_run_daily_14h_sync(ahora=dt_1400_ec) is False
+
+    assert reminders.should_run_scheduled_sync(ahora=dt_1400_ec) == "14:00"
+    reminders.mark_scheduled_sync_done("14:00", ahora=dt_1400_ec)
+    assert reminders.should_run_scheduled_sync(ahora=dt_1400_ec) is None
+
+    # 02:59 UTC del día siguiente == 21:59 Ecuador -> aún no corre 22:00
+    dt_2159_ec = datetime(2026, 11, 18, 2, 59, tzinfo=timezone.utc).astimezone(reminders.ECUADOR_TZ)
+    assert reminders.should_run_scheduled_sync(ahora=dt_2159_ec) is None
+
+    # 03:00 UTC del día siguiente == 22:00 Ecuador -> sí corre '22:00'
+    dt_2200_ec = datetime(2026, 11, 18, 3, 0, tzinfo=timezone.utc).astimezone(reminders.ECUADOR_TZ)
+    assert reminders.should_run_scheduled_sync(ahora=dt_2200_ec) == "22:00"
+    reminders.mark_scheduled_sync_done("22:00", ahora=dt_2200_ec)
+    assert reminders.should_run_scheduled_sync(ahora=dt_2200_ec) is None
 
     sample_doc = (
         "EVOLUCION PM DE MEDICINA INTERNA\n"
