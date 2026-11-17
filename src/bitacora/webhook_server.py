@@ -28,6 +28,7 @@ from bitacora.pdf_generator import generar_bitacora_completa
 from bitacora.reminders import (
     crear_recordatorio,
     emitir_alerta_whatsapp,
+    enviar_archivo_whatsapp,
     enviar_mensaje_whatsapp,
     enviar_pdf_whatsapp,
     formatear_recordatorios,
@@ -41,6 +42,7 @@ from bitacora.reminders import (
     should_run_scheduled_sync,
     verificar_recordatorios_a_disparar,
 )
+from bitacora.schedule_loader import obtener_responsables_guardia
 from bitacora.schema import load_bitacora, save_bitacora
 from bitacora.whatsapp_bot import (
     BED_REGEX,
@@ -143,21 +145,40 @@ def publicar_bitacora_diaria_pdf(chat_id: str | None = None) -> dict[str, Any]:
 
 
 def ejecutar_sync_evoluciones_programada(slot: str = "14:00") -> dict[str, Any]:
-    """Sincroniza las evoluciones de Drive (Gaibor, Torres, Mosquera), regenera PDF/Excel y notifica al grupo."""
+    """Sincroniza las evoluciones de Drive (Gaibor, Torres, Mosquera), regenera PDF/Excel y publica archivos al grupo."""
     ahora_ec = now_ecuador()
     res = sincronizar_evoluciones_drive()
     if res.get("ok"):
         camas = ", ".join(res.get("updated_beds") or []) or "Ninguna coincidencia"
-        msg = (
-            f"🔄 *ACTUALIZACIÓN AUTOMÁTICA DE BITÁCORA ({ahora_ec.strftime('%d/%m/%Y %H:%M')} Ecuador - {slot})*\n\n"
+        guardia = obtener_responsables_guardia(ahora_ec, refresh_drive=False)
+        resp_list = guardia.get("medicos_guardia") or []
+        resp_txt = "\n".join(f"  • {r}" for r in resp_list) if resp_list else "  • Equipo de Guardia"
+
+        caption_xlsx = (
+            f"🔄 *BITÁCORA SINCRONIZADA ({ahora_ec.strftime('%d/%m/%Y %H:%M')} Ecuador - {slot})*\n\n"
+            f"👨‍⚕️ *Responsables de guardia:*\n{resp_txt}\n\n"
             f"📂 *Docs de evolución leídos:* {res.get('docs_leidos', 0)}\n"
             f"🏥 *Camas actualizadas:* {camas}\n\n"
-            "📊 *Excel actualizado (9 columnas):*\n"
-            "👉 https://bitacora-guardia-production.up.railway.app/descargar/bitacora.xlsx\n\n"
-            "📥 *PDF actualizado:*\n"
+            "📥 *Descarga directa Excel:*\n"
+            "👉 https://bitacora-guardia-production.up.railway.app/descargar/bitacora.xlsx\n"
+            "📥 *Descarga directa PDF:*\n"
             "👉 https://bitacora-guardia-production.up.railway.app/descargar/bitacora.pdf"
         )
-        enviar_mensaje_whatsapp(msg)
+        xlsx_path = Path("reports/bitacora_guardia.xlsx")
+        pdf_path = Path("reports/bitacora_guardia.pdf")
+        if xlsx_path.exists():
+            enviar_archivo_whatsapp(
+                file_path=xlsx_path,
+                caption=caption_xlsx,
+                mimetype="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+            )
+        else:
+            enviar_mensaje_whatsapp(caption_xlsx)
+        if pdf_path.exists():
+            enviar_pdf_whatsapp(
+                pdf_path=pdf_path,
+                caption=f"📄 *Bitácora PDF sincronizada ({ahora_ec.strftime('%d/%m/%Y')} - {slot})*",
+            )
         mark_scheduled_sync_done(slot, ahora_ec)
     elif res.get("needs_credentials"):
         logger.warning(f"Sync {slot} omitido: falta GOOGLE_SERVICE_ACCOUNT_JSON en Railway.")

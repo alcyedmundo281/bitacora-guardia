@@ -12,6 +12,7 @@ from openpyxl.utils import get_column_letter
 
 from bitacora.bed_store import consolidar_bitacora
 from bitacora.reminders import now_ecuador
+from bitacora.schedule_loader import obtener_responsables_guardia
 
 logger = logging.getLogger(__name__)
 
@@ -38,6 +39,9 @@ def exportar_bitacora_xlsx(
     output_path.parent.mkdir(parents=True, exist_ok=True)
     bitacora = consolidar_bitacora(sync_monolith_path=bitacora_path)
     ahora_ec = now_ecuador()
+    guardia_hoy = obtener_responsables_guardia(ahora_ec, refresh_drive=True)
+    if guardia_hoy.get("medicos_guardia"):
+        bitacora = bitacora.model_copy(update={"medicos_guardia": guardia_hoy["medicos_guardia"]})
 
     wb = Workbook()
 
@@ -82,7 +86,7 @@ def exportar_bitacora_xlsx(
     medicos_txt = "\n".join(f"• {m}" for m in bitacora.medicos_guardia) if bitacora.medicos_guardia else "• Equipo de Guardia"
     censo_row = [
         "CENSO Y EQUIPO",
-        f"BITÁCORA MEDICINA INTERNA {bitacora.periodo}\n{medicos_txt}",
+        f"BITÁCORA MEDICINA INTERNA {bitacora.periodo}\nRESPONSABLES DE GUARDIA ({ahora_ec.strftime('%d/%m/%Y')}):\n{medicos_txt}",
         (
             "CENSO:\n"
             f"• Emergencia: {len(emerg_list)}\n"

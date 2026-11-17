@@ -352,6 +352,28 @@ def test_drive_evolutions_parser_and_14h_scheduler(tmp_path, monkeypatch) -> Non
     assert any("TAC BODY" in p for p in parsed["pendientes"])
 
 
+def test_horario_guardias_responsables_en_excel(tmp_path) -> None:
+    from datetime import date
+    import openpyxl
+    from bitacora.excel_exporter import exportar_bitacora_xlsx
+    from bitacora.schedule_loader import obtener_responsables_guardia
+
+    res = obtener_responsables_guardia(fecha=date(2026, 11, 17), refresh_drive=False)
+    assert res["ok"] is True
+    joined = " | ".join(res["medicos_guardia"])
+    assert "SALAZAR ESCOBAR JESSICA FERNANDA" in joined
+    assert "YUMBOPATIN RAMOS JONATHAN" in joined
+
+    out_xlsx = tmp_path / "test_bitacora.xlsx"
+    exportar_bitacora_xlsx(output_path=out_xlsx)
+    wb = openpyxl.load_workbook(out_xlsx, data_only=True)
+    ws = wb["Bitácora Guardia"]
+    censo_equipo_cell = str(ws.cell(2, 2).value or "")
+    assert "RESPONSABLES DE GUARDIA" in censo_equipo_cell
+    assert "SALAZAR ESCOBAR JESSICA FERNANDA" in censo_equipo_cell
+
+
+
 
 
 

@@ -197,21 +197,22 @@ def mark_daily_pdf_published(ahora: datetime | None = None) -> None:
     AUTO_PDF_STATE_FILE.write_text(json.dumps(payload, indent=2, ensure_ascii=False), encoding="utf-8")
 
 
-def enviar_pdf_whatsapp(
-    pdf_path: Path,
+def enviar_archivo_whatsapp(
+    file_path: Path,
     caption: str,
+    mimetype: str = "application/pdf",
     chat_id: str | None = None,
 ) -> dict[str, Any]:
-    """Envía el archivo PDF compilado al grupo de WhatsApp mediante el Bridge."""
+    """Envía un archivo (PDF, Excel .xlsx, etc.) al grupo de WhatsApp mediante el Bridge."""
     payload: dict[str, Any] = {
         "chatId": chat_id,
         "preferGroup": True,
         "text": caption,
     }
-    if pdf_path.exists():
-        payload["documentPath"] = str(pdf_path.resolve())
-        payload["fileName"] = pdf_path.name
-        payload["mimetype"] = "application/pdf"
+    if file_path.exists():
+        payload["documentPath"] = str(file_path.resolve())
+        payload["fileName"] = file_path.name
+        payload["mimetype"] = mimetype
         payload["caption"] = caption
 
     try:
@@ -225,8 +226,22 @@ def enviar_pdf_whatsapp(
             body = json.loads(resp.read().decode("utf-8") or "{}")
             return {"ok": resp.status == 200, "status": resp.status, "response": body}
     except Exception as e:
-        logger.error(f"Error enviando PDF diario a WhatsApp: {e}")
+        logger.error(f"Error enviando archivo {file_path.name} a WhatsApp: {e}")
         return {"ok": False, "error": str(e)}
+
+
+def enviar_pdf_whatsapp(
+    pdf_path: Path,
+    caption: str,
+    chat_id: str | None = None,
+) -> dict[str, Any]:
+    """Envía el archivo PDF compilado al grupo de WhatsApp mediante el Bridge."""
+    return enviar_archivo_whatsapp(
+        file_path=pdf_path,
+        caption=caption,
+        mimetype="application/pdf",
+        chat_id=chat_id,
+    )
 
 
 AUTO_SYNC_14H_STATE_FILE = Path("data/auto_sync_14h_state.json")

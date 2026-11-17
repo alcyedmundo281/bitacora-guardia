@@ -7,7 +7,9 @@ from pathlib import Path
 
 from bitacora.bed_store import consolidar_bitacora
 from bitacora.models import BitacoraGuardia
+from bitacora.reminders import now_ecuador
 from bitacora.render_qmd import render_qmd
+from bitacora.schedule_loader import obtener_responsables_guardia
 
 logger = logging.getLogger(__name__)
 
@@ -19,6 +21,9 @@ def generar_bitacora_completa(
     """Consolida las matrices individuales de cada cama y compila .qmd, .html y .pdf con Quarto."""
     output_dir.mkdir(parents=True, exist_ok=True)
     bitacora = consolidar_bitacora(sync_monolith_path=bitacora_path)
+    guardia_hoy = obtener_responsables_guardia(now_ecuador(), refresh_drive=False)
+    if guardia_hoy.get("medicos_guardia"):
+        bitacora = bitacora.model_copy(update={"medicos_guardia": guardia_hoy["medicos_guardia"]})
 
     qmd_path = output_dir / "bitacora_guardia.qmd"
     html_path = output_dir / "bitacora_guardia.html"
