@@ -74,12 +74,13 @@ _NAME_STOPWORDS = {
 
 
 def find_patient_by_name(query: str, pacientes: list[Paciente]) -> Paciente | None:
-    """Busca un paciente dando mayor peso a apellidos que a nombres de pila comunes."""
+    """Busca un paciente dando mayor peso a apellidos; si la consulta tiene 2+ palabras exige al menos 2 coincidencias."""
     q_norm = normalize_text(query)
     tokens = set(t for t in re.findall(r"[a-z0-9]+", q_norm) if len(t) > 3 and t not in _NAME_STOPWORDS)
     if not tokens:
         return None
 
+    min_matches = 2 if len(tokens) >= 2 else 1
     best_pac: Paciente | None = None
     best_score = 0
 
@@ -89,14 +90,28 @@ def find_patient_by_name(query: str, pacientes: list[Paciente]) -> Paciente | No
             continue
         # En formato estándar (APELLIDO1 APELLIDO2 NOMBRE1 NOMBRE2), los primeros 2 tokens son apellidos
         surnames = set(p_words[:2]) if len(p_words) >= 3 else {p_words[0]}
-        score = 0
-        for w in set(p_words):
-            if w in tokens:
-                score += 2 if w in surnames else 1
+        matched_words = [w for w in set(p_words) if w in tokens]
+        if len(matched_words) < min_matches:
+            continue
+        score = sum(2 if w in surnames else 1 for w in matched_words)
         if score >= 2 and score > best_score:
             best_score = score
             best_pac = p
     return best_pac
+
+
+def find_partial_candidates(query: str, pacientes: list[Paciente]) -> list[Paciente]:
+    """Retorna pacientes con coincidencia parcial de apellido para pedir aclaración sin actuar por error."""
+    q_norm = normalize_text(query)
+    tokens = set(t for t in re.findall(r"[a-z0-9]+", q_norm) if len(t) > 3 and t not in _NAME_STOPWORDS)
+    if not tokens:
+        return []
+    matches: list[Paciente] = []
+    for p in pacientes:
+        p_words = set(re.findall(r"[a-z0-9]+", normalize_text(p.nombre_completo)))
+        if p_words & tokens:
+            matches.append(p)
+    return matches[:5]
 
 def _disparar_nota_robotina_doc(paciente: Paciente, categoria: str, detalle: str) -> None:
     """Programa en segundo plano la escritura de una Nota de Robotina en el Google Doc del paciente."""
@@ -551,11 +566,26 @@ async def receive_whatsapp_message(request: Request) -> dict[str, Any]:
         if intencion == "EGRESAR_PACIENTE":
             cama_target = str(groq_res.get("cama") or "").strip().upper()
             if not cama_target and groq_res.get("paciente"):
-                p_query = normalize_text(str(groq_res["paciente"]))
-                for p in bitacora.pacientes:
-                    if any(tok in normalize_text(p.nombre_completo) for tok in p_query.split() if len(tok) > 3):
-                        cama_target = p.cama
-                        break
+                pac_query = str(groq_res["paciente"])
+                pac_match = find_patient_by_name(pac_query, bitacora.pacientes)
+                if pac_match:
+                    cama_target = pac_match.cama
+                else:
+                    cands = find_partial_candidates(pac_query, bitacora.pacientes)
+                    if cands:
+                        cands_txt = "\n".join(f"• *Cama {c.cama}:* {c.nombre_completo}" for c in cands)
+                        return {
+                            "status": "error",
+                            "reply": (
+                                f"⚠ No encontré coincidencia exacta para *{pac_query}* en la bitácora activa.\n\n"
+                                f"Pacientes con apellido similar:\n{cands_txt}\n\n"
+                                "Por seguridad no egresé ninguna cama. Indícame la *cama exacta* (ej: `Robotina da de alta la cama ...`)."
+                            ),
+                        }
+                    return {
+                        "status": "error",
+                        "reply": f"⚠ No encontré a *{pac_query}* en la bitácora activa. Indícame la cama exacta si ya fue trasladado o dado de alta.",
+                    }
             if not cama_target:
                 return {
                     "status": "error",

@@ -413,6 +413,58 @@ def test_nota_robotina_en_google_doc(monkeypatch) -> None:
     assert "6B" in res_sync["updated_beds"]
 
 
+def test_egresar_vasconez_norma_no_egresa_vasconez_carlos(monkeypatch) -> None:
+    from bitacora import webhook_server as ws
+    from bitacora.bed_store import get_cama, list_camas_activas
+
+    # 1. 'Vasconez Norma' debe encontrar exactamente a UROLOGÍA (VÁSCONEZ FUENTES NORMA MARINA) y NO a ABV1
+    pac_norma = ws.find_patient_by_name("Vasconez Norma", list_camas_activas())
+    assert pac_norma is not None
+    assert pac_norma.cama == "UROLOGÍA"
+
+    # 2. 'Vasconez Pedro' NO debe emparejar con 'VASCONEZ RUALES CARLOS AUGUSTO' (ABV1)
+    assert ws.find_patient_by_name("Vasconez Pedro", list_camas_activas()) is None
+
+    monkeypatch.setattr(
+        ws,
+        "call_groq_clinical_parser",
+        lambda msg, camas: {
+            "intencion": "EGRESAR_PACIENTE",
+            "paciente": "Vasconez Norma",
+            "estudio": "alta",
+        },
+    )
+    res_ok = client.post(
+        "/whatsapp/webhook",
+        json={"message": "Robotina por favor, paciente Vasconez Norma se va de alta, por favor quítala de la bitácora."},
+    )
+    assert res_ok.status_code == 200
+    data_ok = res_ok.json()
+    assert data_ok["status"] == "success"
+    assert "UROLOGÍA" in data_ok["reply"]
+    assert get_cama("ABV1") is not None
+
+    monkeypatch.setattr(
+        ws,
+        "call_groq_clinical_parser",
+        lambda msg, camas: {
+            "intencion": "EGRESAR_PACIENTE",
+            "paciente": "Vasconez Pedro",
+            "estudio": "alta",
+        },
+    )
+    res_err = client.post(
+        "/whatsapp/webhook",
+        json={"message": "Robotina da de alta a Vasconez Pedro"},
+    )
+    assert res_err.status_code == 200
+    data_err = res_err.json()
+    assert data_err["status"] == "error"
+    assert "no egresé ninguna cama" in data_err["reply"].lower()
+    assert get_cama("ABV1") is not None
+
+
+
 
 
 
