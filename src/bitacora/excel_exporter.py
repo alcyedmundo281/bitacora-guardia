@@ -281,13 +281,30 @@ def _load_drive_service_account_info() -> dict[str, Any] | None:
     """Carga el JSON de Service Account desde GOOGLE_SERVICE_ACCOUNT_JSON o archivo local."""
     raw = os.getenv("GOOGLE_SERVICE_ACCOUNT_JSON", "").strip()
     if raw:
+        if (raw.startswith("'") and raw.endswith("'")) or (raw.startswith('"') and raw.endswith('"')):
+            raw = raw[1:-1].strip()
         if raw.startswith("{"):
-            return json.loads(raw)
+            try:
+                info = json.loads(raw, strict=False)
+                if isinstance(info, dict) and isinstance(info.get("private_key"), str):
+                    info["private_key"] = info["private_key"].replace("\\n", "\n")
+                return info
+            except Exception as e:
+                logger.error(f"Error parseando GOOGLE_SERVICE_ACCOUNT_JSON: {e}")
+                return None
         p = Path(raw)
         if p.exists():
-            return json.loads(p.read_text(encoding="utf-8"))
+            try:
+                return json.loads(p.read_text(encoding="utf-8"), strict=False)
+            except Exception as e:
+                logger.error(f"Error leyendo archivo {p}: {e}")
+                return None
     if SERVICE_ACCOUNT_FILE.exists():
-        return json.loads(SERVICE_ACCOUNT_FILE.read_text(encoding="utf-8"))
+        try:
+            return json.loads(SERVICE_ACCOUNT_FILE.read_text(encoding="utf-8"), strict=False)
+        except Exception as e:
+            logger.error(f"Error leyendo {SERVICE_ACCOUNT_FILE}: {e}")
+            return None
     return None
 
 

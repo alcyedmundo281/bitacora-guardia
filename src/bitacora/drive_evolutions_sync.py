@@ -201,14 +201,23 @@ def sincronizar_evoluciones_drive(
     """Lee los Google Docs de evoluciones en Drive (Gaibor, Torres, Mosquera), actualiza alta frecuencia y regenera PDF/XLSX."""
     target_folders = _get_target_folder_ids(folder_id)
     docs_by_id: dict[str, dict[str, str]] = {}
+    errors: list[str] = []
     source = "service_account"
 
     for fid in target_folders:
-        fetched = _fetch_docs_via_service_account(fid)
+        fetched: list[dict[str, str]] = []
+        try:
+            fetched = _fetch_docs_via_service_account(fid)
+        except Exception as e:
+            logger.error(f"Error leyendo carpeta Drive {fid} con Service Account: {e}")
+            errors.append(f"{fid}: {e}")
         if not fetched:
-            fetched = _fetch_docs_via_gdrive_cli(fid)
-            if fetched:
-                source = "gdrive_cli"
+            try:
+                fetched = _fetch_docs_via_gdrive_cli(fid)
+                if fetched:
+                    source = "gdrive_cli"
+            except Exception as e:
+                errors.append(f"cli {fid}: {e}")
         for d in fetched:
             docs_by_id[d["id"]] = d
 
@@ -219,6 +228,7 @@ def sincronizar_evoluciones_drive(
             "needs_credentials": not bool(_load_drive_service_account_info()),
             "folder_ids": target_folders,
             "updated_beds": [],
+            "errors": errors,
             "reason": "No se encontraron documentos accesibles en las carpetas de evoluciones (o falta GOOGLE_SERVICE_ACCOUNT_JSON en Railway).",
         }
 
