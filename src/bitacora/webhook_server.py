@@ -20,7 +20,10 @@ from bitacora.bed_store import (
     list_camas_activas,
     registrar_resultado_cama,
 )
-from bitacora.drive_evolutions_sync import sincronizar_evoluciones_drive
+from bitacora.drive_evolutions_sync import (
+    escribir_nota_robotina_en_drive_doc,
+    sincronizar_evoluciones_drive,
+)
 from bitacora.excel_exporter import exportar_bitacora_xlsx, subir_xlsx_a_drive
 from bitacora.groq_agent import call_groq_clinical_parser, set_groq_api_key, test_groq_connection
 from bitacora.models import Paciente, Pendiente, PendientePrioridad, PendienteTipo, TurnoObjetivo
@@ -94,6 +97,15 @@ def find_patient_by_name(query: str, pacientes: list[Paciente]) -> Paciente | No
             best_score = score
             best_pac = p
     return best_pac
+
+def _disparar_nota_robotina_doc(paciente: Paciente, categoria: str, detalle: str) -> None:
+    """Programa en segundo plano la escritura de una Nota de Robotina en el Google Doc del paciente."""
+    try:
+        loop = asyncio.get_running_loop()
+        loop.create_task(asyncio.to_thread(escribir_nota_robotina_en_drive_doc, paciente, categoria, detalle))
+    except RuntimeError:
+        pass
+
 
 app = FastAPI(
     title="WhatsApp Webhook - Bitácora Médica & Robotina",
@@ -583,6 +595,7 @@ async def receive_whatsapp_message(request: Request) -> dict[str, Any]:
                 observacion=obs_pac,
             )
             pac_new = res_ing["paciente"]
+            _disparar_nota_robotina_doc(pac_new, "INGRESO", f"Cama {pac_new.cama} | Dx: {dx_pac or 'Por definir'}")
             return {
                 "status": "success",
                 "tipo_accion": "INGRESAR_PACIENTE",
@@ -608,6 +621,7 @@ async def receive_whatsapp_message(request: Request) -> dict[str, Any]:
             if not res_ev["ok"]:
                 return {"status": "error", "reply": f"⚠ {res_ev['reason']}"}
             pac_ev = res_ev["paciente"]
+            _disparar_nota_robotina_doc(pac_ev, "EVOLUCIÓN", res_ev["nota"])
             return {
                 "status": "success",
                 "tipo_accion": "ACTUALIZAR_EVOLUCION",
@@ -666,6 +680,7 @@ async def receive_whatsapp_message(request: Request) -> dict[str, Any]:
             if not res_p["ok"]:
                 return {"status": "error", "reply": f"⚠ {res_p['reason']}"}
             pac_p = res_p["paciente"]
+            _disparar_nota_robotina_doc(pac_p, "PENDIENTE", f"[{prio}] {desc}")
             return {
                 "status": "success",
                 "tipo_accion": "PENDIENTE_CREADO",
@@ -680,6 +695,11 @@ async def receive_whatsapp_message(request: Request) -> dict[str, Any]:
             if not res_c["ok"]:
                 return {"status": "error", "reply": f"⚠ {res_c['reason']}"}
             pac_c = res_c["paciente"]
+            _disparar_nota_robotina_doc(
+                pac_c,
+                "PENDIENTE COMPLETADO",
+                f"{res_c['descripcion']}" + (f" -> {resultado}" if resultado else ""),
+            )
             return {
                 "status": "success",
                 "tipo_accion": "PENDIENTE_COMPLETADO",
@@ -761,6 +781,11 @@ async def receive_whatsapp_message(request: Request) -> dict[str, Any]:
             if not res_reg["ok"]:
                 return {"status": "error", "reply": f"⚠ {res_reg['reason']}"}
             pac = res_reg["paciente"]
+            _disparar_nota_robotina_doc(
+                pac,
+                "RESULTADO",
+                f"{res_reg['pend_desc']}: {val}" + (f" (Nota: {alerta})" if alerta else ""),
+            )
             reply_msg = (
                 f"✔ *Resultado registrado por Robotina (Groq IA):*\n"
                 f"🏥 *Cama {pac.cama}:* {pac.nombre_completo.split()[0]} {pac.nombre_completo.split()[-1] if len(pac.nombre_completo.split()) > 1 else ''}\n"
@@ -957,6 +982,11 @@ async def receive_whatsapp_message(request: Request) -> dict[str, Any]:
         res_reg = registrar_resultado_cama(cama, estudio_kw, resultado_valor)
         if not res_reg["ok"]:
             return {"status": "error", "reply": f"⚠ {res_reg['reason']}"}
+        _disparar_nota_robotina_doc(
+            res_reg["paciente"],
+            "RESULTADO",
+            f"{res_reg['pend_desc']}: {resultado_valor}",
+        )
         return {
             "status": "success",
             "tipo_accion": "RESULTADO_REGISTRADO",
@@ -979,6 +1009,11 @@ async def receive_whatsapp_message(request: Request) -> dict[str, Any]:
         )
         if not res_p["ok"]:
             return {"status": "error", "reply": f"⚠ {res_p['reason']}"}
+        _disparar_nota_robotina_doc(
+            res_p["paciente"],
+            "PENDIENTE",
+            f"[{parsed['prioridad'].value}] {parsed['descripcion']}",
+        )
         return {
             "status": "success",
             "tipo_accion": "PENDIENTE_CREADO",

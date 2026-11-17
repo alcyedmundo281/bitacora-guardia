@@ -275,3 +275,120 @@ def sincronizar_evoluciones_drive(
         "updated_beds": updated_beds,
         "drive_upload": drive_res,
     }
+
+
+_DOC_INDEX_CACHE: dict[str, Any] = {"ts": 0.0, "docs": []}
+_DOC_INDEX_TTL_SECONDS = 600.0
+
+
+def _list_drive_doc_headers(sa_info: dict[str, Any], force_refresh: bool = False) -> list[dict[str, str]]:
+    """Lista (id, name) de los Google Docs en las carpetas de Gaibor, Torres y Mosquera con caché de 10 min."""
+    import time
+
+    now_ts = time.monotonic()
+    if not force_refresh and _DOC_INDEX_CACHE["docs"] and (now_ts - _DOC_INDEX_CACHE["ts"]) < _DOC_INDEX_TTL_SECONDS:
+        return list(_DOC_INDEX_CACHE["docs"])
+
+    from google.oauth2 import service_account
+    from googleapiclient.discovery import build
+
+    creds = service_account.Credentials.from_service_account_info(
+        sa_info,
+        scopes=["https://www.googleapis.com/auth/drive.readonly"],
+    )
+    service = build("drive", "v3", credentials=creds, cache_discovery=False)
+
+    docs_by_id: dict[str, dict[str, str]] = {}
+    for fid in _get_target_folder_ids():
+        q = (
+            f"'{fid}' in parents and trashed = false "
+            "and mimeType = 'application/vnd.google-apps.document'"
+        )
+        files = (
+            service.files()
+            .list(
+                q=q,
+                fields="files(id, name)",
+                supportsAllDrives=True,
+                includeItemsFromAllDrives=True,
+            )
+            .execute()
+            .get("files", [])
+        )
+        for f in files:
+            docs_by_id[f["id"]] = {"id": f["id"], "name": f["name"]}
+
+    result = list(docs_by_id.values())
+    _DOC_INDEX_CACHE["ts"] = now_ts
+    _DOC_INDEX_CACHE["docs"] = result
+    return result
+
+
+def format_robotina_doc_note(paciente: Paciente, categoria: str, detalle: str) -> str:
+    """Formatea el bloque de Nota de Robotina con fecha/hora de Ecuador."""
+    ahora_str = now_ecuador().strftime("%d/%m/%Y %H:%M")
+    return (
+        f"\n\n--- NOTA DE ROBOTINA ({ahora_str} Ecuador | {categoria}) ---\n"
+        f"• Cama {paciente.cama}: {detalle.strip()}\n"
+    )
+
+
+def escribir_nota_robotina_en_drive_doc(
+    paciente: Paciente,
+    categoria: str,
+    detalle: str,
+) -> dict[str, Any]:
+    """Agrega una 'Nota de Robotina' al final del Google Doc del paciente en Drive."""
+    sa_info = _load_drive_service_account_info()
+    if not sa_info:
+        return {"ok": False, "needs_credentials": True, "reason": "Falta GOOGLE_SERVICE_ACCOUNT_JSON"}
+
+    try:
+        headers = _list_drive_doc_headers(sa_info)
+        matched_doc: dict[str, str] | None = None
+        for h in headers:
+            if _match_patient_for_doc(h["name"], [paciente]):
+                matched_doc = h
+                break
+
+        if not matched_doc:
+            # Reintentar refrescando caché por si se creó un doc nuevo hoy
+            headers = _list_drive_doc_headers(sa_info, force_refresh=True)
+            for h in headers:
+                if _match_patient_for_doc(h["name"], [paciente]):
+                    matched_doc = h
+                    break
+
+        if not matched_doc:
+            return {"ok": False, "reason": f"No se encontró Google Doc en Drive para {paciente.cama} ({paciente.nombre_completo})"}
+
+        from google.oauth2 import service_account
+        from googleapiclient.discovery import build
+
+        creds = service_account.Credentials.from_service_account_info(
+            sa_info,
+            scopes=["https://www.googleapis.com/auth/documents"],
+        )
+        docs_service = build("docs", "v1", credentials=creds, cache_discovery=False)
+        nota_texto = format_robotina_doc_note(paciente, categoria, detalle)
+
+        docs_service.documents().batchUpdate(
+            documentId=matched_doc["id"],
+            body={
+                "requests": [
+                    {
+                        "insertText": {
+                            "endOfSegmentLocation": {"segmentId": ""},
+                            "text": nota_texto,
+                        }
+                    }
+                ]
+            },
+        ).execute()
+
+        logger.info(f"Nota de Robotina escrita en Google Doc '{matched_doc['name']}' ({matched_doc['id']})")
+        return {"ok": True, "doc_id": matched_doc["id"], "doc_name": matched_doc["name"]}
+    except Exception as e:
+        logger.warning(f"No se pudo escribir Nota de Robotina en Google Doc para {paciente.cama}: {e}")
+        return {"ok": False, "error": str(e)}
+

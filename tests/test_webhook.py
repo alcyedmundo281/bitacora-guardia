@@ -373,6 +373,26 @@ def test_horario_guardias_responsables_en_excel(tmp_path) -> None:
     assert "SALAZAR ESCOBAR JESSICA FERNANDA" in censo_equipo_cell
 
 
+def test_nota_robotina_en_google_doc(monkeypatch) -> None:
+    from bitacora import drive_evolutions_sync as des
+    from bitacora.bed_store import get_cama
+
+    pac = get_cama("6B")
+    assert pac is not None
+
+    nota = des.format_robotina_doc_note(pac, "RESULTADO", "Lactato 1.4 mmol/L")
+    assert "NOTA DE ROBOTINA" in nota
+    assert "Cama 6B" in nota
+    assert "Lactato 1.4 mmol/L" in nota
+
+    # Sin credenciales debe retornar needs_credentials=True sin lanzar excepción
+    monkeypatch.setattr(des, "_load_drive_service_account_info", lambda: None)
+    res_no_creds = des.escribir_nota_robotina_en_drive_doc(pac, "RESULTADO", "Lactato 1.4")
+    assert res_no_creds["ok"] is False
+    assert res_no_creds.get("needs_credentials") is True
+
+
+
 
 
 
