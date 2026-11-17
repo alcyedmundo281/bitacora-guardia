@@ -1,24 +1,23 @@
 {
   "cama": "ABRV 3B",
-  "area": "EMERGENCIA_OBSERVACION",
+  "area": "HOSPITALIZACION",
   "servicio_tratante": null,
-  "nombre_completo": "GAVIN YERBABUENA MARIA CRISTINA C",
+  "nombre_completo": "GAVÍN YERBABUENA MARÍA CRISTINA",
   "hc": "1597943",
   "cedula": "0602991937",
   "edad": "49 años",
   "sexo": null,
   "fecha_nacimiento": null,
   "fecha_ingreso": null,
-  "dias_hospitalizacion": null,
+  "dias_hospitalizacion": 3,
   "app": [
-    "GASTRITIS",
-    "INFECCIÓN POR H. PYLORI"
+    "Clínicos: Gastritis; Infección por Helicobacter pylori."
   ],
   "aqx": [],
   "alergias": [],
   "diagnosticos_activos": [
-    "SEPSIS DE FOCO GASTROINTESTINAL",
-    "HIPOKALEMIA LEVE"
+    "Sepsis de foco gastrointestinal (CIE-10: A09.0).",
+    "Hipokalemia leve (K 3.3 mEq/L)."
   ],
   "diagnosticos_pasivos": [],
   "dieta": null,
@@ -26,7 +25,7 @@
   "ckd_epi": null,
   "medicaciones": [
     {
-      "nombre": "CLORURO DE SODIO AL 0.9% PASAR INTRAVENOSO A 60ML/H",
+      "nombre": "TFGe CKD-EPI: 105.8 mL/min/1.73 m² (calculada con Cr 0.64 mg/dL del 13/11/2026).",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -39,7 +38,7 @@
       "nota": null
     },
     {
-      "nombre": "METRONIDAZOL 500 MG INTRAVENOSO CADA 8 HORAS CIE10 A090 FI 13/11/2026",
+      "nombre": "Cloruro de sodio al 0.9% pasar IV a 60 mL/h + reponer pérdidas gastrointestinales cc por cc con Lactato de Ringer.",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -52,7 +51,7 @@
       "nota": null
     },
     {
-      "nombre": "OMEPRAZOL 40 MG INTRAVENOSO CADA DIA",
+      "nombre": "Metronidazol 500 mg IV c/8h (FI: 13/11/2026, CIE-10: A09.0).",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -65,7 +64,7 @@
       "nota": null
     },
     {
-      "nombre": "PARACETAMOL 1 GR INTRAVENOSO CADA 8 HORAS",
+      "nombre": "Omeprazol 40 mg IV QD",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -78,7 +77,7 @@
       "nota": null
     },
     {
-      "nombre": "METOCLOPRAMIDA 10 MG INTRAVENOSO CADA 8 HORAS",
+      "nombre": "Paracetamol 1 g IV c/8h",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -91,7 +90,7 @@
       "nota": null
     },
     {
-      "nombre": "ENOXAPARINA 40 MG SC CADA DIA",
+      "nombre": "Metoclopramida 10 mg IV c/8h",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -99,6 +98,32 @@
       "dias_tratamiento": null,
       "indicacion_cie10": null,
       "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "Enoxaparina 40 mg SC QD.",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "SUSPENDIDO: Suspender Ceftriaxona.",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": true,
       "diferido": false,
       "prn": false,
       "nota": null
@@ -108,7 +133,7 @@
     {
       "id": "PEND-ABRV3B-01",
       "tipo": "IMAGEN_PROCEDIMIENTO",
-      "descripcion": "PD INFORME DE TAC DE ABDOMEN",
+      "descripcion": "Recabar informe de TAC de abdomen.",
       "prioridad": "URGENTE",
       "turno": "NOCTURNA_20_24",
       "horario_programado": null,
@@ -120,7 +145,7 @@
     {
       "id": "PEND-ABRV3B-02",
       "tipo": "LABORATORIO",
-      "descripcion": "LUNES EXAMENES DE CONTROL",
+      "descripcion": "Revisar exámenes de control del lunes 16/11/2026.",
       "prioridad": "CONTROL",
       "turno": "NOCTURNA_20_24",
       "horario_programado": null,
@@ -132,7 +157,19 @@
     {
       "id": "PEND-ABRV3B-03",
       "tipo": "LABORATORIO",
-      "descripcion": "CLOSTRIDIIUM TOXINA A Y B HOY",
+      "descripcion": "Recabar resultado de Toxina A y B para Clostridioides difficile solicitada hoy.",
+      "prioridad": "URGENTE",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": null,
+      "es_visita_nocturna": true,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
+    },
+    {
+      "id": "PEND-ABRV3B-04",
+      "tipo": "IMAGEN_PROCEDIMIENTO",
+      "descripcion": "TAC de abdomen: Realizada, pendiente informe oficial.",
       "prioridad": "URGENTE",
       "turno": "NOCTURNA_20_24",
       "horario_programado": null,
@@ -142,13 +179,15 @@
       "resultado_obtenido": null
     }
   ],
-  "observaciones": [],
+  "observaciones": [
+    "Cuantificar estrictamente pérdidas diarreicas para reposición cc por cc con Lactato de Ringer, revisar electrolitos de control del lunes (K+ previo en 3.3 mEq/L) y recabar resultado de Toxina A y B de C. difficile e informe de TAC abdominal."
+  ],
   "laboratorios": [
     {
-      "fecha_hora": "2026-11-16",
-      "tipo_estudio": "Laboratorios / Gasometría",
+      "fecha_hora": "13/11/2026",
+      "tipo_estudio": "Laboratorio",
       "valores": {
-        "resumen": "13/11/2026 PCR: 108, PCT: 3.7. LEU: 16.4, HG: 14.5, HCTO: 44.3, NEU: 14.9, PLAQ: 367.000. . CLORO: 105. POATSIO: 3.3, SODIO: 137. . UREA: 22, CREA: 0.64"
+        "resumen": "PCR 108 mg/L, Procalcitonina 3.7 ng/mL; Leucocitos 16.4 K/µL (Neu 14.9 K/µL), Hb 14.5 g/dL, Hto 44.3%, Plaquetas 367.000/µL; Urea 22 mg/dL, Creatinina 0.64 mg/dL; Na 137 mEq/L, Potasio 3.3 mEq/L, Cl 105 mEq/L."
       },
       "alerta_critica": null
     }

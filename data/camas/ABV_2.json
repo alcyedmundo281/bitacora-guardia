@@ -1,0 +1,187 @@
+{
+  "cama": "ABV 2",
+  "area": "HOSPITALIZACION",
+  "servicio_tratante": null,
+  "nombre_completo": "SALAZAR GARZÓN LUIS RIGOBERTO",
+  "hc": "164447",
+  "cedula": "1704874377",
+  "edad": "70 años",
+  "sexo": null,
+  "fecha_nacimiento": null,
+  "fecha_ingreso": null,
+  "dias_hospitalizacion": 3,
+  "app": [
+    "Clínicos: Hiperplasia prostática benigna (diagnosticada hace 3 meses); Hipertensión arterial; Obesidad; Carcinoma en ganglio retroperitoneal de origen a determinar (probable metastásico).",
+    "Quirúrgicos: Colecistectomía (hace 1 año); 21/05/2026: Laparotomía exploratoria + reparo de lesión accidental de colon en unión recto-sigmoidea + biopsia de ganglio en bifurcación ilíaca derecha; 26/05/2026: Laparotomía exploratoria + lavado peritoneal + hemicolectomía izquierda + omentectomía parcial + confección de colostomía + drenaje."
+  ],
+  "aqx": [],
+  "alergias": [],
+  "diagnosticos_activos": [
+    "Neumonía adquirida en la comunidad (CURB-65: 2 puntos, PSI/Fine: 140 puntos, Clase V, mortalidad 27%, CIE-10: J18.9).",
+    "Trastorno hidroelectrolítico triple: Hiponatremia severa hipovolémica hipoosmolar aguda sintomática en corrección (Na 118.9 → 122.9 → 126.7 mEq/L) + Hipokalemia moderada persistente (K 2.52 → 2.83 → 2.93 mEq/L) + Hipomagnesemia."
+  ],
+  "diagnosticos_pasivos": [],
+  "dieta": null,
+  "hidratacion": null,
+  "ckd_epi": null,
+  "medicaciones": [
+    {
+      "nombre": "TFGe CKD-EPI: 109.2 mL/min/1.73 m² (calculada con Cr 0.46 mg/dL).",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "Ceftriaxona 1 g IV c/12h (FI: 14/11/2026, Día 2, CIE-10: J18.9)",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "Claritromicina 500 mg IV c/12h (FI: 14/11/2026, Día 2).",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "Bromuro de ipratropio 2 puffs c/8h",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "Sulfato de magnesio al 20% 1 ampolla IV QD (FI: 15/11/2026, 1/3).",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "Conciliación habitual: Doxazosina 0.4 mg VO QD",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "Losartán 100 mg VO QD.",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    }
+  ],
+  "pendientes": [
+    {
+      "id": "PEND-ABV2-01",
+      "tipo": "LABORATORIO",
+      "descripcion": "Control seriado de electrolitos (Na, K, Cl, Mg) y reposición activa de potasio.",
+      "prioridad": "CONTROL",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": null,
+      "es_visita_nocturna": true,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
+    },
+    {
+      "id": "PEND-ABV2-02",
+      "tipo": "IMAGEN_PROCEDIMIENTO",
+      "descripcion": "Imagen torácica compatible con NAC PSI 140 Clase V.",
+      "prioridad": "URGENTE",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": null,
+      "es_visita_nocturna": true,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
+    }
+  ],
+  "observaciones": [
+    "ATENCIÓN GUARDIA PM: El sodio sérico ha subido adecuadamente (118.9 → 122.9 → 126.7 mEq/L), pero PERSISTE HIPOKALEMIA MODERADA (K 2.93 mEq/L) mientras recibe Claritromicina 500 mg IV c/12h (riesgo de prolongación del QTc/arritmias); indicar reposición de potasio además del Sulfato de Mg y vigilar pérdidas por colostomía."
+  ],
+  "laboratorios": [
+    {
+      "fecha_hora": "28/09/2026",
+      "tipo_estudio": "Laboratorio",
+      "valores": {
+        "resumen": "Na 135.9, K 3.37, Cl 101."
+      },
+      "alerta_critica": null
+    },
+    {
+      "fecha_hora": "13/11/2026 (14:13)",
+      "tipo_estudio": "Laboratorio",
+      "valores": {
+        "resumen": "PCR ultrasensible 61.70 mg/L; Leucocitos 7.62 K/µL (Neu 4.84, Linf 1.65, Eos 0.62), Hb 14.5 g/dL, Hto 41.2%, VCM 81.2 fL, Plaquetas 333.000/µL; Glucosa 116 mg/dL, BUN 7 mg/dL, Urea 14.2 mg/dL, Creatinina 0.46 mg/dL; Sodio 118.9 mEq/L, Potasio 2.52 mEq/L, Cloro 84 mEq/L."
+      },
+      "alerta_critica": null
+    },
+    {
+      "fecha_hora": "14/11/2026",
+      "tipo_estudio": "Laboratorio",
+      "valores": {
+        "resumen": "Procalcitonina 3.17 ng/mL; Sodio 122.9 mEq/L, Potasio 2.83 mEq/L, Cloro 87 mEq/L."
+      },
+      "alerta_critica": null
+    },
+    {
+      "fecha_hora": "15/11/2026",
+      "tipo_estudio": "Laboratorio",
+      "valores": {
+        "resumen": "Leucocitos 5.77 K/µL (Neu 3.43, Linf 1.24, Eos 0.71), Hb 13.7 g/dL, Hto 40.4%, VCM 85.3 fL, Plaquetas 381.000/µL; Sodio 126.7 mEq/L, Potasio 2.93 mEq/L, Cloro 92 mEq/L; Coproparasitario: PMN 1%."
+      },
+      "alerta_critica": null
+    }
+  ],
+  "cultivos": [],
+  "alertas_criticas": [
+    "ATENCIÓN GUARDIA PM: El sodio sérico ha subido adecuadamente (118.9 → 122.9 → 126.7 mEq/L), pero PERSISTE HIPOKALEMIA MODERADA (K 2.93 mEq/L) mientras recibe Claritromicina 500 mg IV c/12h (riesgo de prolongación del QTc/arritmias); indicar reposición de potasio además del Sulfato de Mg y vigilar pérdidas por colostomía."
+  ]
+}

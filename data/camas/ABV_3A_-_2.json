@@ -1,0 +1,213 @@
+{
+  "cama": "ABV 3A - 2",
+  "area": "HOSPITALIZACION",
+  "servicio_tratante": null,
+  "nombre_completo": "RODRÍGUEZ LÓPEZ LUIS MAURICIO",
+  "hc": "109675",
+  "cedula": "1701783563",
+  "edad": "83 años 9 meses",
+  "sexo": null,
+  "fecha_nacimiento": null,
+  "fecha_ingreso": null,
+  "dias_hospitalizacion": 4,
+  "app": [
+    "Clínicos: Cardiopatía isquémica crónica (RVM hace ≥20 años, ICP en puentes hace ≥10 años); Insuficiencia cardíaca FEVI preservada CF II, estadio C; Enfermedad renal crónica estadio 3a A3; Enfermedad pulmonar crónica (oxígeno domiciliario 12h/día); Fibrilación auricular persistente valvular; Policitemia secundaria; Anticoagulación por Hematología; Carcinoma basocelular nasal sin tratamiento ni seguimiento desde 2019."
+  ],
+  "aqx": [],
+  "alergias": [],
+  "diagnosticos_activos": [
+    "Sangrado digestivo de probable origen bajo (Oakland 17 puntos), autolimitado en paciente anticoagulado.",
+    "Trastorno hidroelectrolítico severo (Hipernatremia hiperosmolar Na 154.7 mEq/L + Hipopotasemia K 2.68 mEq/L).",
+    "Enfermedad renal crónica reagudizada (KDIGO 3 / uremia, Cr 2.36 mg/dL).",
+    "Encefalopatía multifactorial (metabólica / urémica / hipovolémica) — Glasgow 9/15.",
+    "Fibrilación auricular persistente / Insuficiencia cardíaca / Cardiopatía isquémica.",
+    "Neoplasia de base / Limitación del esfuerzo terapéutico."
+  ],
+  "diagnosticos_pasivos": [],
+  "dieta": null,
+  "hidratacion": null,
+  "ckd_epi": null,
+  "medicaciones": [
+    {
+      "nombre": "TFGe CKD-EPI: 27 mL/min/1.73 m² (Cr 2.36 mg/dL del 12/11/2026).",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "Dextrosa en agua al 5% 1000 mL pasar IV a 60 mL/h.",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "Sulfato de magnesio 20% IV QD (D2/3)",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "Si glucosa <70 mg/dL: Dextrosa 10% 200 mL IV en bolo PRN.",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "Heparina sódica 5000 UI SC QD (suspender en caso de sangrado).",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "Medicación habitual: Bisoprolol 1.25 mg VO por SOG AM",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "Bromuro de ipratropio 18 mcg 1 cápsula inhalada PM",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "Leuprolide 11.25 mg amp c/3 meses.",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "SUSPENDIDOS: Dextrosa 5% 300 mL + KCl 30 mEq IV en 3h (consta suspender en nota, pero reevaluar por K 2.68 del 15/11)",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": true,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "Apixabán 2.5 mg VO BID (suspender por sangrado digestivo).",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    }
+  ],
+  "pendientes": [
+    {
+      "id": "PEND-ABV3A2-01",
+      "tipo": "LABORATORIO",
+      "descripcion": "Procesar y revisar electrolitos de control HOY en este momento.",
+      "prioridad": "URGENTE",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": null,
+      "es_visita_nocturna": true,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
+    },
+    {
+      "id": "PEND-ABV3A2-02",
+      "tipo": "LABORATORIO",
+      "descripcion": "Revisar BH, procalcitonina, PCR, glucosa, electrolitos y gasometría PRN.",
+      "prioridad": "URGENTE",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": null,
+      "es_visita_nocturna": true,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
+    }
+  ],
+  "observaciones": [
+    "ALERTA CRÍTICA GUARDIA PM (LIMITACIÓN DEL ESFUERZO TERAPÉUTICO): Paciente con Glasgow 9/15, hipernatremia severa (154.7 mEq/L) e hipokalemia moderada-severa (2.68 mEq/L); revisar electrolitos STAT de hoy para corregir potasio (alto riesgo arrítmico en FA/cardiopatía isquémica) y ajustar agua libre con Dextrosa 5% a 60 mL/h. Vigilar sangrado digestivo bajo."
+  ],
+  "laboratorios": [
+    {
+      "fecha_hora": "12/11/2026",
+      "tipo_estudio": "Laboratorio",
+      "valores": {
+        "resumen": "Creatinina 2.36 mg/dL (CKD-EPI 27 mL/min/1.73 m²)."
+      },
+      "alerta_critica": null
+    },
+    {
+      "fecha_hora": "15/11/2026",
+      "tipo_estudio": "Laboratorio",
+      "valores": {
+        "resumen": "Sodio 154.7 mEq/L, Potasio 2.68 mEq/L, Cloro 126 mEq/L."
+      },
+      "alerta_critica": null
+    }
+  ],
+  "cultivos": [],
+  "alertas_criticas": [
+    "ALERTA CRÍTICA GUARDIA PM (LIMITACIÓN DEL ESFUERZO TERAPÉUTICO): Paciente con Glasgow 9/15, hipernatremia severa (154.7 mEq/L) e hipokalemia moderada-severa (2.68 mEq/L); revisar electrolitos STAT de hoy para corregir potasio (alto riesgo arrítmico en FA/cardiopatía isquémica) y ajustar agua libre con Dextrosa 5% a 60 mL/h. Vigilar sangrado digestivo bajo."
+  ]
+}

@@ -1,33 +1,28 @@
 {
-  "cama": "INFECTOLOGIA 4D",
-  "area": "PERIFERICOS",
+  "cama": "ABV 3A",
+  "area": "HOSPITALIZACION",
   "servicio_tratante": null,
-  "nombre_completo": "GUERRON CASARES VICTOR MISAEL C",
-  "hc": "165405",
-  "cedula": "1702873785",
-  "edad": "81 AÑOS",
+  "nombre_completo": "CAMACHO PINEDA RICAURTE DE JESÚS",
+  "hc": "2087368",
+  "cedula": "0700618523",
+  "edad": "75 años",
   "sexo": null,
   "fecha_nacimiento": null,
   "fecha_ingreso": null,
-  "dias_hospitalizacion": null,
+  "dias_hospitalizacion": 4,
   "app": [
-    "SINDROME CORONARIO CRONICO POR CARDIOPATIA ISQUEMICA CRONICA CON",
-    "REVASCULARIZACION CORONARIA, 2 PUENTES EN 2010 CON FEVI BAJA EN PREVENCION",
-    "SECUNDARIA",
-    "INSUFICIENCIA CARDIACA PERFIL HEMODINAMICO A ETIOLOGIA ISQUEMICA. FEVI",
-    "REDUCIDA",
-    "ESTENOSIS AORTICA MODERADA",
-    "FIBRILACION AURICULAR PAROXISTICA JUNIO 2025",
-    "DISLIPIDEMIA"
+    "Clínicos: Enfermedad de Parkinson en tratamiento con Levodopa; Hipertensión arterial sin tratamiento actual; Cáncer de próstata etapa I (recibió radioterapia en SOLCA).",
+    "Quirúrgicos: Artroscopia de rodilla derecha; Colecistectomía."
   ],
   "aqx": [],
   "alergias": [],
   "diagnosticos_activos": [
-    "DERRAME PLEURAL BILATERAL, PREDOMINIO DERECHO, LOCULADO",
-    "ENFERMEDAD RENAL CRÓNICA REAGUDIZADA SECUNDARIA A USO DE CONTRASTE",
-    "HIPONATREMIA SEVERA",
-    "HIPERKALEMIA SEVERA",
-    "INSUFICIENCIA CARDIACA NYHA III ESTADIO C"
+    "Infección de vías urinarias.",
+    "Insuficiencia respiratoria tipo 1.",
+    "Neumonía adquirida en la comunidad (CURB-65: 3 puntos, PSI: 165, Clase V).",
+    "Úlceras de presión grado III.",
+    "Enfermedad renal aguda o crónica reagudizada.",
+    "Hipernatremia en estado de corrección (Na 151 mEq/L)."
   ],
   "diagnosticos_pasivos": [],
   "dieta": null,
@@ -35,7 +30,7 @@
   "ckd_epi": null,
   "medicaciones": [
     {
-      "nombre": "PARACETAMOL 1 G VO CADA 8 HORAS",
+      "nombre": "TFGe CKD-EPI: 75.8 mL/min/1.73 m² (calculada con Cr 1.00 mg/dL del 13/11/2026).",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -48,7 +43,7 @@
       "nota": null
     },
     {
-      "nombre": "FUROSEMIDA 20 MG IV C/6H",
+      "nombre": "Dieta enteral por nutritubo",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -61,7 +56,7 @@
       "nota": null
     },
     {
-      "nombre": "OMEPRAZOL 20 MG VO QD",
+      "nombre": "DISH.",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -74,7 +69,7 @@
       "nota": null
     },
     {
-      "nombre": "APIXABAN 2,5 MG VO BID TIENE PACIENTE MEDICACION CRONICA",
+      "nombre": "Meropenem 1 g IV c/8h (FI: 12/11/2026, D: 4/5, CIE-10: B99).",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -87,7 +82,7 @@
       "nota": null
     },
     {
-      "nombre": "CARVEDILOL 3,125 MG VO BID MEDICACION CRONICA",
+      "nombre": "Salbutamol 2 puffs c/12h",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -100,7 +95,7 @@
       "nota": null
     },
     {
-      "nombre": "EMPAGLIFOZINA 25 MG MG VO QD MEDICACION CRONICA",
+      "nombre": "Bromuro de ipratropio 2 puffs c/8h",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -113,7 +108,7 @@
       "nota": null
     },
     {
-      "nombre": "LEVOTIROXINA 75 UG VO QD",
+      "nombre": "N-acetilcisteína 300 mg IV c/12h (D2/3).",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -126,7 +121,7 @@
       "nota": null
     },
     {
-      "nombre": "LACTULOSA 20 CC VIA ORAL CADA 12 HORAS",
+      "nombre": "Paracetamol 1 g IV PRN",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -139,7 +134,7 @@
       "nota": null
     },
     {
-      "nombre": "TOMAR UNA CAPSULA DE SAL CADA 12 HORAS",
+      "nombre": "Heparina sódica 5000 UI SC QD",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -152,7 +147,33 @@
       "nota": null
     },
     {
-      "nombre": "FUROSEMIDA 20 MG IV CADA 6 HORAS, SI TA MAYOR A 90/60 MMHG",
+      "nombre": "Quetiapina 12.5 mg VO 18h00.",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "Levodopa/Carbidopa 250/25 mg: 1 tableta VO 5 veces al día.",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "Insulina cristalina SC por esquema si hay hiperglicemias.",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -167,21 +188,9 @@
   ],
   "pendientes": [
     {
-      "id": "PEND-INFECTOLOGIA4D-01",
+      "id": "PEND-ABV3A-01",
       "tipo": "LABORATORIO",
-      "descripcion": "16/11/2026 BIOMETRÍA HEMÁTICA COMPLETA, UREA, CREATININA, ELECTROLITOS",
-      "prioridad": "RUTINA",
-      "turno": "NOCTURNA_20_24",
-      "horario_programado": null,
-      "es_visita_nocturna": false,
-      "estado": "PENDIENTE",
-      "responsable": null,
-      "resultado_obtenido": null
-    },
-    {
-      "id": "PEND-INFECTOLOGIA4D-02",
-      "tipo": "LABORATORIO",
-      "descripcion": "MAGALDRATO + SIMETICONA 15 ML VÍA ORAL STAT Y LUEGO CADA 8 HORAS (30 MINUTOS DESPUÉS DE CADA COMIDA PRINCIPAL)",
+      "descripcion": "Electrolitos de control STAT por estado de corrección de hipernatremia.",
       "prioridad": "STAT",
       "turno": "NOCTURNA_20_24",
       "horario_programado": null,
@@ -191,58 +200,34 @@
       "resultado_obtenido": null
     },
     {
-      "id": "PEND-INFECTOLOGIA4D-03",
+      "id": "PEND-ABV3A-02",
       "tipo": "LABORATORIO",
-      "descripcion": "FUROSEMIDA 20 MG INTRAVENOSO CADA 6 HORAS SI TA MAYOR A 90/60 MMHG (NEFROLOGÍA)",
-      "prioridad": "RUTINA",
-      "turno": "NOCTURNA_20_24",
-      "horario_programado": null,
-      "es_visita_nocturna": false,
-      "estado": "PENDIENTE",
-      "responsable": null,
-      "resultado_obtenido": null
-    },
-    {
-      "id": "PEND-INFECTOLOGIA4D-04",
-      "tipo": "LABORATORIO",
-      "descripcion": "EMO MÁS UROCULTIVO; CISTOSCOPIA (ORDEN DE UROLOGÍA)",
-      "prioridad": "RUTINA",
-      "turno": "NOCTURNA_20_24",
-      "horario_programado": null,
-      "es_visita_nocturna": false,
-      "estado": "PENDIENTE",
-      "responsable": null,
-      "resultado_obtenido": null
-    },
-    {
-      "id": "PEND-INFECTOLOGIA4D-05",
-      "tipo": "LABORATORIO",
-      "descripcion": "SONDA VESICAL PERMANENTE CON CAMBIO CADA 15 DÍAS",
-      "prioridad": "RUTINA",
-      "turno": "NOCTURNA_20_24",
-      "horario_programado": null,
-      "es_visita_nocturna": false,
-      "estado": "PENDIENTE",
-      "responsable": null,
-      "resultado_obtenido": null
-    },
-    {
-      "id": "PEND-INFECTOLOGIA4D-06",
-      "tipo": "LABORATORIO",
-      "descripcion": "CURACIÓN DE HERIDAS DE LOS PIES POR CLÍNICA DE HERIDAS",
-      "prioridad": "RUTINA",
-      "turno": "NOCTURNA_20_24",
-      "horario_programado": null,
-      "es_visita_nocturna": false,
-      "estado": "PENDIENTE",
-      "responsable": null,
-      "resultado_obtenido": null
-    },
-    {
-      "id": "PEND-INFECTOLOGIA4D-07",
-      "tipo": "LABORATORIO",
-      "descripcion": "CONTROL POR CONSULTA EXTERNA DE NEFROLOGÍA Y UROLOGÍA",
+      "descripcion": "Revisar exámenes de laboratorio de control del lunes 16/11/2026.",
       "prioridad": "CONTROL",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": null,
+      "es_visita_nocturna": true,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
+    },
+    {
+      "id": "PEND-ABV3A-03",
+      "tipo": "LABORATORIO",
+      "descripcion": "Gestionar reemplazo de nutritubo por vía definitiva (gastrostomía) según solicitud familiar.",
+      "prioridad": "URGENTE",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": null,
+      "es_visita_nocturna": true,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
+    },
+    {
+      "id": "PEND-ABV3A-04",
+      "tipo": "IMAGEN_PROCEDIMIENTO",
+      "descripcion": "Estudios radiológicos/tomográficos de tórax compatibles con NAC PSI 165 Clase V.",
+      "prioridad": "URGENTE",
       "turno": "NOCTURNA_20_24",
       "horario_programado": null,
       "es_visita_nocturna": true,
@@ -252,14 +237,18 @@
     }
   ],
   "observaciones": [
-    "12/11/2206",
-    "SODIO 120.5",
-    "POTASIO 5.20",
-    "17:40",
-    "POTASIO: 5.22",
-    "SODIO: 119.9"
+    "TECHO TERAPÉUTICO: NO TRIBUTARIO DE RCP. Presentó deposiciones diarreicas la noche del 14/11 que se autolimitaron; revisar electrolitos STAT para titular aporte de agua libre por sonda (Na 151 mEq/L) y asegurar administración estricta de Levodopa/Carbidopa (5 tomas/día)."
   ],
-  "laboratorios": [],
+  "laboratorios": [
+    {
+      "fecha_hora": "13/11/2026",
+      "tipo_estudio": "Laboratorio",
+      "valores": {
+        "resumen": "Leucocitos 10.9 K/µL (Neu 9.9 K/µL), Hb 11.0 g/dL, Hto 35%, Plaquetas 234.000/µL; Creatinina 1.00 mg/dL, Sodio 151 mEq/L, Potasio 4.3 mEq/L, Cloro 117 mEq/L."
+      },
+      "alerta_critica": null
+    }
+  ],
   "cultivos": [],
   "alertas_criticas": []
 }

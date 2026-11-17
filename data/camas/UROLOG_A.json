@@ -1,0 +1,210 @@
+{
+  "cama": "UROLOGÍA",
+  "area": "HOSPITALIZACION",
+  "servicio_tratante": null,
+  "nombre_completo": "VÁSCONEZ FUENTES NORMA MARINA",
+  "hc": "486665",
+  "cedula": "1802075893",
+  "edad": "57 años 8 meses",
+  "sexo": null,
+  "fecha_nacimiento": null,
+  "fecha_ingreso": null,
+  "dias_hospitalizacion": 5,
+  "app": [
+    "Clínicos: Artritis reumatoide diagnosticada a los 40 años (FR: 538, Anti-CCP: 496, ANA 1/160 patrón nuclear homogéneo); Trastorno de córnea (post-trauma + artritis); Enfermedad renal crónica (¿secundaria a AINEs?) en estudio por Nefrología; Herpes ocular bilateral (abril 2024); Meningitis bacteriana y otitis media derecha (abril 2024); Glucosa alterada en ayunas; Hipertrigliceridemia (Gemfibrozilo); Rinofaringitis crónica."
+  ],
+  "aqx": [],
+  "alergias": [],
+  "diagnosticos_activos": [
+    "Infección de vías urinarias (Tumbarello 2 puntos).",
+    "Artritis reumatoidea de alta actividad (DAS28: 5.79).",
+    "Trombosis venosa superficial de vena cefálica / tromboflebitis de extremidad superior izquierda.",
+    "Enfermedad renal crónica en estudio (TFGe 30.91 mL/min/1.73 m²)."
+  ],
+  "diagnosticos_pasivos": [],
+  "dieta": null,
+  "hidratacion": null,
+  "ckd_epi": null,
+  "medicaciones": [
+    {
+      "nombre": "TFGe CKD-EPI: 30.91 mL/min/1.73 m² (Creatinina 1.79 mg/dL).",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "DISH",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "Omeprazol 20 mg VO QD",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "Enoxaparina 60 mg SC QD.",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "Cefazolina 1 g IV c/8h (FI: 11/11/2026, D: 4/7, CIE-10: B99) + medidas locales en miembro superior izquierdo.",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "Reumatología: Hidrocortisona 100 mg IV QD",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "Hidroxicloroquina 200 mg VO QD (paciente dispone)",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "Paracetamol 1 g IV c/8h",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "Tramadol 50 mg IV lento y diluido PRN dolor intenso.",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    }
+  ],
+  "pendientes": [
+    {
+      "id": "PEND-UROLOGA-01",
+      "tipo": "INTERCONSULTA",
+      "descripcion": "Interconsulta a Cirugía Vascular para descartar presencia de coágulos profundos en extremidad superior izquierda.",
+      "prioridad": "URGENTE",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": null,
+      "es_visita_nocturna": true,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
+    },
+    {
+      "id": "PEND-UROLOGA-02",
+      "tipo": "INTERCONSULTA",
+      "descripcion": "Concretar PREALTA una vez realizada la valoración vascular.",
+      "prioridad": "URGENTE",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": null,
+      "es_visita_nocturna": true,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
+    },
+    {
+      "id": "PEND-UROLOGA-03",
+      "tipo": "IMAGEN_PROCEDIMIENTO",
+      "descripcion": "Pendiente evaluación Doppler / Cirugía Vascular de extremidad superior izquierda por tromboflebitis de vena cefálica.",
+      "prioridad": "URGENTE",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": null,
+      "es_visita_nocturna": true,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
+    }
+  ],
+  "observaciones": [
+    "Paciente en PREALTA; vigilar evolución de signos flogóticos en miembro superior izquierdo, mantener medidas locales, evitar estrictamente AINEs (TFGe 30.9 mL/min) e insistir en respuesta de Cirugía Vascular."
+  ],
+  "laboratorios": [
+    {
+      "fecha_hora": "17/11/2026",
+      "tipo_estudio": "Laboratorio",
+      "valores": {
+        "resumen": "Perfil autoinmune: FR 538, Anti-CCP 496, ANA 1/160 nuclear homogéneo."
+      },
+      "alerta_critica": null
+    },
+    {
+      "fecha_hora": "17/11/2026",
+      "tipo_estudio": "Laboratorio",
+      "valores": {
+        "resumen": "Función renal: Creatinina 1.79 mg/dL (TFGe 30.91 mL/min/1.73 m²)."
+      },
+      "alerta_critica": null
+    }
+  ],
+  "cultivos": [],
+  "alertas_criticas": [
+    "Paciente en PREALTA; vigilar evolución de signos flogóticos en miembro superior izquierdo, mantener medidas locales, evitar estrictamente AINEs (TFGe 30.9 mL/min) e insistir en respuesta de Cirugía Vascular."
+  ]
+}

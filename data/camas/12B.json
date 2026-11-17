@@ -2,32 +2,25 @@
   "cama": "12B",
   "area": "HOSPITALIZACION",
   "servicio_tratante": null,
-  "nombre_completo": "ESPINOZA GRANDA ESTELA EUFEMIA C",
+  "nombre_completo": "ESPINOZA GRANDA ESTELA EUFEMIA",
   "hc": "1736432",
   "cedula": "1700669672",
-  "edad": "82 años",
+  "edad": "82 años 3 meses",
   "sexo": null,
   "fecha_nacimiento": null,
   "fecha_ingreso": null,
-  "dias_hospitalizacion": null,
+  "dias_hospitalizacion": 14,
   "app": [
-    "HIPERTENSIÓN ARTERIAL;",
-    "HIPOTIROIDISMO;",
-    "EMBOLIA PULMONAR EN DICIEMBRE 2025 EN TRATAMIENTO CON RIVAROXABAN SUSPENDIÓ HACE 2 MESES POR SANGRADO VAGINAL",
-    "ANTECEDENTES QUIRÚRGICOS:",
-    "COLECISTECTOMÍA",
-    "SAFENECTOMIA; PROTESIS DE RODILLA DERECHA. CONCILIACION DE MEDICAMENTOS:",
-    "LEVOTIROXINA 75 MCG VIA ORAL CADA DIA,",
-    "LOSARTAN 50 MG VIA ORAL CADA DIA,"
+    "Clínicos: Hipertensión arterial; Hipotiroidismo; Embolia pulmonar en diciembre 2025 (en tratamiento con Rivaroxabán 20 mg VO QD, suspendido hace 2 meses por sangrado vaginal).",
+    "Quirúrgicos: Colecistectomía; Safenectomía; Prótesis de rodilla derecha."
   ],
   "aqx": [],
   "alergias": [],
   "diagnosticos_activos": [
-    "IMPRESIÓN DIAGNÓSTICA:",
-    "TROMBOEMBOLIA PULMONAR ETIOLOGIA EN ESTUDIO ( SOSPECHA DE PATOLOGÍA ENDOMETRIAL MALIGNA)",
-    "SANGRADO VAGINAL EN ESTUDIO CIE-10: N939",
-    "LESIÓN RENAL AGUDA AKIN - SUPERADA CIE-10: N179",
-    "FRACTURA INVETERADA DE RADIO DISTAL DERECHO"
+    "Tromboembolia pulmonar de etiología en estudio (sospecha de patología endometrial maligna).",
+    "Sangrado vaginal en estudio (CIE-10: N93.9).",
+    "Lesión renal aguda AKIN superada (CIE-10: N17.9).",
+    "Fractura inveterada de radio distal derecho."
   ],
   "diagnosticos_pasivos": [],
   "dieta": null,
@@ -35,7 +28,7 @@
   "ckd_epi": null,
   "medicaciones": [
     {
-      "nombre": "ENOXAPARINA 60 MG SUBCUTANEO CADA 12 HORAS",
+      "nombre": "TFGe CKD-EPI: 55.2 mL/min/1.73 m² (con Cr 1.06 del 02/11/2026; con Cr 0.63 mg/dL del 04/11/2026 equivale a 89.6 mL/min/1.73 m²).",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -48,7 +41,7 @@
       "nota": null
     },
     {
-      "nombre": "PARACETAMOL 1 GRAMO CADA 8 HORAS",
+      "nombre": "Dieta blanda a tolerancia",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -61,7 +54,7 @@
       "nota": null
     },
     {
-      "nombre": "LEVOTIROXINA 50 MCG CADA DIA EN AYUNAS **1 HORA ANTES DEL DESAYUNO**",
+      "nombre": "DISH.",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -74,7 +67,7 @@
       "nota": null
     },
     {
-      "nombre": "LOSARTAN 50 MILIGRAMO VIA ORAL CADA DIA",
+      "nombre": "Enoxaparina 60 mg SC c/12h",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -87,7 +80,46 @@
       "nota": null
     },
     {
-      "nombre": "AMLODIPINO 10 MILIGRAMOS VIA ORAL STAT Y CADA DIA",
+      "nombre": "Paracetamol 1 g c/8h.",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "Levotiroxina 50 mcg VO QD en ayunas (1h antes del desayuno)",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "Losartán 50 mg VO QD",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "Amlodipino 10 mg VO STAT y QD.",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -103,24 +135,24 @@
   "pendientes": [
     {
       "id": "PEND-12B-01",
-      "tipo": "LABORATORIO",
-      "descripcion": "UROCULTIVO: A/B, MICROORGANISMO: ESCHERICHIA COLI, GENTAMICINA SENSIBLE, AMPICILINA/SULBACTAM: SENSIBLE, TRIMETOPRIMA/SULFA: SENSIBLE, FOSFOMYCIN (URINE): SENSIBLE,",
-      "prioridad": "RUTINA",
+      "tipo": "INTERCONSULTA",
+      "descripcion": "Revaloración por Ginecología.",
+      "prioridad": "URGENTE",
       "turno": "NOCTURNA_20_24",
       "horario_programado": null,
-      "es_visita_nocturna": false,
+      "es_visita_nocturna": true,
       "estado": "PENDIENTE",
       "responsable": null,
       "resultado_obtenido": null
     },
     {
       "id": "PEND-12B-02",
-      "tipo": "LABORATORIO",
-      "descripcion": "NITROFURANTOÍNA: SENSIBLE, CIPROFLOXACINO: SENSIBLE, CEFAZOLINA (O): SENSIBLE, CONTAJE DE COLONIAS: 10.000 UFC/ML",
-      "prioridad": "RUTINA",
+      "tipo": "INTERCONSULTA",
+      "descripcion": "Revaloración por Cardiología (paciente ya cuenta con EKG).",
+      "prioridad": "URGENTE",
       "turno": "NOCTURNA_20_24",
       "horario_programado": null,
-      "es_visita_nocturna": false,
+      "es_visita_nocturna": true,
       "estado": "PENDIENTE",
       "responsable": null,
       "resultado_obtenido": null
@@ -128,42 +160,59 @@
     {
       "id": "PEND-12B-03",
       "tipo": "LABORATORIO",
-      "descripcion": "04/11/2026: LEUCOCITOS: 5.77, HEMOGLBINA 14.0, HEMATOCRITO 43.5, PLAQUETAS",
-      "prioridad": "RUTINA",
+      "descripcion": "Gasometría diaria según evolución.",
+      "prioridad": "CONTROL",
       "turno": "NOCTURNA_20_24",
       "horario_programado": null,
-      "es_visita_nocturna": false,
+      "es_visita_nocturna": true,
       "estado": "PENDIENTE",
       "responsable": null,
       "resultado_obtenido": null
     },
     {
       "id": "PEND-12B-04",
-      "tipo": "LABORATORIO",
-      "descripcion": "173000, NEUTROFILOS 71%, UREA 50, CREATININA 0.63, GSA PH 7.43, PO2 61.7, PCO2 39.1, HCO3 26.2, EB 2.0",
-      "prioridad": "RUTINA",
+      "tipo": "INTERCONSULTA",
+      "descripcion": "EKG realizado (listo para revaloración por Cardiología); estudios ginecológicos y de TEP en seguimiento.",
+      "prioridad": "CONTROL",
       "turno": "NOCTURNA_20_24",
       "horario_programado": null,
-      "es_visita_nocturna": false,
+      "es_visita_nocturna": true,
       "estado": "PENDIENTE",
       "responsable": null,
       "resultado_obtenido": null
     }
   ],
   "observaciones": [
-    "O: REVALORACION POR GINECOLOGIA",
-    "NO RCP"
+    "TECHO TERAPÉUTICO: NO RCP. Vigilar activamente sangrado transvaginal durante la guardia PM dado que recibe anticoagulación terapéutica con Enoxaparina 60 mg SC c/12h; insistir en revaloración por Ginecología y Cardiología."
   ],
   "laboratorios": [
     {
-      "fecha_hora": "2026-11-16",
-      "tipo_estudio": "Laboratorios / Gasometría",
+      "fecha_hora": "02/11/2026",
+      "tipo_estudio": "Laboratorio",
       "valores": {
-        "resumen": "PENDIENTE REVALORACION POR CARDIOLOGÍA PACIENTE YA CUENTA CON EKG"
+        "resumen": "Creatinina 1.06 mg/dL (CKD-EPI 55.2)."
+      },
+      "alerta_critica": null
+    },
+    {
+      "fecha_hora": "04/11/2026",
+      "tipo_estudio": "Laboratorio",
+      "valores": {
+        "resumen": "Leucocitos 5.77 K/µL (Neu 71%), Hb 14.0 g/dL, Hto 43.5%, Plaquetas 173.000/µL; Urea 50 mg/dL, Creatinina 0.63 mg/dL; GSA: pH 7.43, pO2 61.7 mmHg, pCO2 39.1 mmHg, HCO3 26.2 mmol/L, EB 2.0."
+      },
+      "alerta_critica": null
+    },
+    {
+      "fecha_hora": "17/11/2026",
+      "tipo_estudio": "Laboratorio",
+      "valores": {
+        "resumen": "Urocultivo: Escherichia coli 10.000 UFC/mL (Sensible a Gentamicina, Ampicilina/Sulbactam, TMP/SMX, Fosfomicina, Nitrofurantoína, Ciprofloxacino y Cefazolina)."
       },
       "alerta_critica": null
     }
   ],
   "cultivos": [],
-  "alertas_criticas": []
+  "alertas_criticas": [
+    "TECHO TERAPÉUTICO: NO RCP. Vigilar activamente sangrado transvaginal durante la guardia PM dado que recibe anticoagulación terapéutica con Enoxaparina 60 mg SC c/12h; insistir en revaloración por Ginecología y Cardiología."
+  ]
 }

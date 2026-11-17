@@ -2,30 +2,26 @@
   "cama": "9B",
   "area": "HOSPITALIZACION",
   "servicio_tratante": null,
-  "nombre_completo": "CARRERA AGUIRRE MARTHA GRACIELA C",
+  "nombre_completo": "CARRERA AGUIRRE MARTHA GRACIELA",
   "hc": "2045964",
   "cedula": "1702915719",
-  "edad": "88 años",
+  "edad": "88 años 2 meses",
   "sexo": null,
   "fecha_nacimiento": null,
   "fecha_ingreso": null,
-  "dias_hospitalizacion": null,
+  "dias_hospitalizacion": 18,
   "app": [
-    "DEMENCIA NO ESPECIFICADA DIAGNOSTICADA POR GERIATRIA",
-    "HIPERTENSIÓN ARTERIAL",
-    "PÉNFIGO VULGAR",
-    "INFECCION DE VIAS URINARIAS (HOSPITALIZADA SEPTIEMBRE 2025)",
-    "TRASTORNO BIPOLAR DIAGNOSTICADO 2023"
+    "Clínicos: Demencia no especificada diagnosticada por Geriatría; Hipertensión arterial; Pénfigo vulgar; Infección de vías urinarias (hospitalizada en septiembre 2025); Trastorno bipolar (diagnosticado en 2023). Síndromes geriátricos: Dismovilidad estadio 5B, fragilidad avanzada, Karnofsky 20 pts, NECPAL positivo estadio 3. Escalas al ingreso: Padua 6 pts, PSI 178 Clase V, CURB-65 3 pts, NEWS-2 13 pts."
   ],
   "aqx": [],
   "alergias": [],
   "diagnosticos_activos": [
-    "TRASTORNO DEGLUTORIO EN CONTEXTO DE DEMENCIA TIPO ALZHEIMER",
-    "ANEMIA MODERADA MACROCÍTICA",
-    "ZONA DE PRESIÓN EN SACRO ANTERIOR EN CICATRIZACIÓN",
-    "NEUMONIA POR ASPIRACION SUPERADA",
-    "HIPERNATREMIA SEVERA HIPOVOLEMICA AGUDA SINTOMATICA SUPERADA",
-    "LESIÓN RENAL AGUDA KDIGO C2 SUPERADA"
+    "Trastorno deglutorio en contexto de demencia tipo Alzheimer (portadora de gastrostomía desde 12/11/2026).",
+    "Anemia moderada macrocítica.",
+    "Zona de presión en sacro anterior en cicatrización.",
+    "Neumonía por aspiración superada.",
+    "Hipernatremia severa hipovolémica aguda sintomática superada (actualmente con hiponatremia de 124 mEq/L del 15/11).",
+    "Lesión renal aguda KDIGO C2 superada."
   ],
   "diagnosticos_pasivos": [],
   "dieta": null,
@@ -33,7 +29,7 @@
   "ckd_epi": null,
   "medicaciones": [
     {
-      "nombre": "PARACETAMOL 1 G IV PRN",
+      "nombre": "TFGe CKD-EPI: 91.5 mL/min/1.73 m² (calculada con Cr 0.30 mg/dL del 15/11/2026; sobrestimada por sarcopenia severa).",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -46,7 +42,7 @@
       "nota": null
     },
     {
-      "nombre": "ENOXAPARINA 40 MG SC QD",
+      "nombre": "Dieta por sonda/gastrostomía indicada por Nutrición",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -59,7 +55,7 @@
       "nota": null
     },
     {
-      "nombre": "FUROSEMIDA 40 MG INTRAVENOSO CADA DIA",
+      "nombre": "DISH.",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -72,7 +68,7 @@
       "nota": null
     },
     {
-      "nombre": "ESPIRONOLACTONA 25 MG POR SONDA NASOGÁSTRICA",
+      "nombre": "Ampicilina/Sulbactam 3 g IV c/6h (FI: 29/10/2026, CIE-10: J18.9, D6/6)",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -85,7 +81,7 @@
       "nota": null
     },
     {
-      "nombre": "***SUSPENDER*** AMPICILINA + SULBACTAM 3 G IV CADA 6 HORAS FI: 29/10/2026 CIE",
+      "nombre": "Enoxaparina 40 mg SC QD",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -98,7 +94,7 @@
       "nota": null
     },
     {
-      "nombre": "DE GASTROSTOMIA DEXTROSA EN AGUA AL 10%, 50 ML CADA 6 HORAS",
+      "nombre": "Paracetamol 1 g IV PRN.",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -111,7 +107,7 @@
       "nota": null
     },
     {
-      "nombre": "DILUIDA",
+      "nombre": "Furosemida 40 mg por sonda",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -124,7 +120,7 @@
       "nota": null
     },
     {
-      "nombre": "CURACION DE AREA DE OSTOMIA CADA DIA CON SOLUCION SALINA Y POR",
+      "nombre": "Espironolactona 25 mg por sonda",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -137,7 +133,7 @@
       "nota": null
     },
     {
-      "nombre": "ROTACION HORARIA - ANTI HORARIA DE SONDA QD",
+      "nombre": "Cápsula de sal 500 mg VO/sonda QD",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -150,7 +146,85 @@
       "nota": null
     },
     {
-      "nombre": "MEDIR RESIDUO GASTRICO ANTES DE SIGUIENTE ALIMENTACION",
+      "nombre": "Amlodipino 10 mg VO STAT y QD.",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "Psiquiatría (04/11/2026): Ácido valproico 250 mg VO BID por 10 días",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "Risperidona 5 gotas TID por 10 días.",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "Gastroenterología (12/11/2026): Curación diaria de ostomía con SS 0.9%, rotación horaria-antihoraria de sonda QD, medir residuo gástrico pre",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "SUSPENDIDOS/DIFERIDOS: Enema Fleet PM (suspender)",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": true,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "Losartán 100 mg VO (diferido)",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "Quetiapina 50 mg VO HS triturado (diferido).",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -167,11 +241,11 @@
     {
       "id": "PEND-9B-01",
       "tipo": "LABORATORIO",
-      "descripcion": "GASTROSTOMIA 12/11/2026 16:00 SIN COMPLICACIONES",
-      "prioridad": "RUTINA",
+      "descripcion": "Reevaluar manejo de sodio sérico y diuréticos ante descenso de Na a 124 mEq/L el 15/11/2026.",
+      "prioridad": "URGENTE",
       "turno": "NOCTURNA_20_24",
       "horario_programado": null,
-      "es_visita_nocturna": false,
+      "es_visita_nocturna": true,
       "estado": "PENDIENTE",
       "responsable": null,
       "resultado_obtenido": null
@@ -179,45 +253,75 @@
     {
       "id": "PEND-9B-02",
       "tipo": "LABORATORIO",
-      "descripcion": "TENSIÓN ARTERIAL: 127/54 MMHG, FRECUENCIA CARDÍACA: 69 LPM, FRECUENCIA RESPIRATORIA: 18 RPM, SATURACIÓN DE OXÍGENO: 96% (CÁNULA NASAL A FIO2 28%), TEMPERATURA: 36. °C",
-      "prioridad": "RUTINA",
+      "descripcion": "Cumplir cuidados estrictos de gastrostomía y protocolo antirreflujo/broncoaspiración.",
+      "prioridad": "URGENTE",
       "turno": "NOCTURNA_20_24",
       "horario_programado": null,
-      "es_visita_nocturna": false,
+      "es_visita_nocturna": true,
       "estado": "PENDIENTE",
       "responsable": null,
       "resultado_obtenido": null
     },
     {
       "id": "PEND-9B-03",
-      "tipo": "LABORATORIO",
-      "descripcion": "SINDROMES GERIATRICOS DISMOVILIDAD ETADI 5 B, FRAGILIDAD AVANZADA,KARNOFSKY 20 , NECPAL POSITIVO ESTADIO 3,",
-      "prioridad": "RUTINA",
+      "tipo": "IMAGEN_PROCEDIMIENTO",
+      "descripcion": "12/11/2026 (16:00 — Gastrostomía endoscópica): Realizada sin complicaciones.",
+      "prioridad": "URGENTE",
       "turno": "NOCTURNA_20_24",
       "horario_programado": null,
-      "es_visita_nocturna": false,
+      "es_visita_nocturna": true,
       "estado": "PENDIENTE",
       "responsable": null,
       "resultado_obtenido": null
     }
   ],
   "observaciones": [
-    "ESCALAS",
-    "PADUA 6 PUNTOS RIESGO ALTO",
-    "PSI 178 CLASE V",
-    "CURB 65 3 PUNTOS",
-    "NEWS 2 13 PUNTOS"
+    "SV: TA 127/54 mmHg, FC 69 lpm, FR 18 rpm, SatO2 96% (cánula nasal FiO2 28%), T 36.0 °C. ATENCIÓN GUARDIA PM: Presenta hiponatremia moderada (Na 124 mEq/L el 15/11) y ascenso de PCR (127 mg/L); revisar pertinencia de mantener Furosemida 40 mg + Espironolactona 25 mg, vigilar ostomía y asegurar posición semisentada 90 min post-nutrición."
   ],
   "laboratorios": [
     {
-      "fecha_hora": "2026-11-16",
-      "tipo_estudio": "Laboratorios / Gasometría",
+      "fecha_hora": "08/11/2026",
+      "tipo_estudio": "Laboratorio",
       "valores": {
-        "resumen": "PARACLÍNICOS (15/11/2026): PCR 127, LEUCOCITOS 5, HB 11,6, PLAQUETAS 198, CLORO 91, POTASIO 3,50, SODIO 124, UREA 42,4, CREATININA 0,30. LABORATORIOS 13/11/2026: SODIO 129.2 MEQ/L, POTASIO 3.73 MEQ/L, CLORO 95 MEQ/L, CALCIO TOTAL 7.3, MAGNESIO 1.63 MG/DL. (11/11/2026): LEUCOCITOS 3.83 K, HEMOGLOBINA 8.0 G/DL, HEMATOCRITO 25.1%, PLAQUETAS 302.000, C"
+        "resumen": "Leucocitos 4.60 K/µL (Neu 2.83, Linf 1.39), Hb 9.3 g/dL, Hto 28.0%, VCM 96.9 fL, Plaquetas 351.000/µL; TP 12.4 s, INR 1.14, TTP 28.4 s."
+      },
+      "alerta_critica": null
+    },
+    {
+      "fecha_hora": "09/11/2026",
+      "tipo_estudio": "Laboratorio",
+      "valores": {
+        "resumen": "Na 131.7, K 4.24, Cl 98. | 10/11/2026: Na 128.3, K 4.30, Cl 95."
+      },
+      "alerta_critica": null
+    },
+    {
+      "fecha_hora": "11/11/2026",
+      "tipo_estudio": "Laboratorio",
+      "valores": {
+        "resumen": "Leucocitos 3.83 K/µL, Hb 8.0 g/dL, Hto 25.1%, Plaquetas 302.000/µL; Urea 47.6 mg/dL, Cr 0.36 mg/dL, PCR 42.3 mg/L."
+      },
+      "alerta_critica": null
+    },
+    {
+      "fecha_hora": "13/11/2026",
+      "tipo_estudio": "Laboratorio",
+      "valores": {
+        "resumen": "Na 129.2 mEq/L, K 3.73 mEq/L, Cl 95 mEq/L, Ca total 7.3 mg/dL, Mg 1.63 mg/dL."
+      },
+      "alerta_critica": null
+    },
+    {
+      "fecha_hora": "15/11/2026",
+      "tipo_estudio": "Laboratorio",
+      "valores": {
+        "resumen": "PCR 127 mg/L, Leucocitos 5.0 K/µL, Hb 11.6 g/dL, Plaquetas 198.000/µL, Urea 42.4 mg/dL, Creatinina 0.30 mg/dL, Sodio 124 mEq/L, Potasio 3.50 mEq/L, Cloro 91 mEq/L."
       },
       "alerta_critica": null
     }
   ],
   "cultivos": [],
-  "alertas_criticas": []
+  "alertas_criticas": [
+    "SV: TA 127/54 mmHg, FC 69 lpm, FR 18 rpm, SatO2 96% (cánula nasal FiO2 28%), T 36.0 °C. ATENCIÓN GUARDIA PM: Presenta hiponatremia moderada (Na 124 mEq/L el 15/11) y ascenso de PCR (127 mg/L); revisar pertinencia de mantener Furosemida 40 mg + Espironolactona 25 mg, vigilar ostomía y asegurar posición semisentada 90 min post-nutrición."
+  ]
 }

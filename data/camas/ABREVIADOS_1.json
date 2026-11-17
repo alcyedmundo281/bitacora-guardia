@@ -1,0 +1,214 @@
+{
+  "cama": "ABREVIADOS 1",
+  "area": "HOSPITALIZACION",
+  "servicio_tratante": null,
+  "nombre_completo": "ESPINOZA MANTECA JORGE HERNÁN",
+  "hc": "1781250",
+  "cedula": "1000421956",
+  "edad": "78 años 4 meses",
+  "sexo": null,
+  "fecha_nacimiento": null,
+  "fecha_ingreso": null,
+  "dias_hospitalizacion": 3,
+  "app": [
+    "Clínicos: Hipertensión arterial (en tratamiento con Amlodipina 10 mg QD y Losartán 100 mg QD); Gastritis secundaria a estenosis duodenal péptica desde hace >20 años; Hepatitis de probable origen tóxico (enólico vs farmacológico) en abril 2024; Encefalopatía hepática superada en abril 2024; Síncopes a repetición; Extrasístoles ventriculares; Alcoholismo previo; Tabaquismo; Estenosis uretral; Enfermedad renal crónica estadio G3a."
+  ],
+  "aqx": [],
+  "alergias": [],
+  "diagnosticos_activos": [
+    "Neumonía adquirida en la comunidad (CURB-65: 3 puntos, CIE-10: J18.9).",
+    "Lesión renal aguda sobre enfermedad renal crónica KDIGO C1U0.",
+    "Encefalopatía metabólica vs infecciosa.",
+    "Descartar cirrosis hepática.",
+    "Síncopes a repetición.",
+    "Fractura incompleta de trocánter mayor izquierdo.",
+    "Deshidratación moderada a severa."
+  ],
+  "diagnosticos_pasivos": [],
+  "dieta": null,
+  "hidratacion": null,
+  "ckd_epi": null,
+  "medicaciones": [
+    {
+      "nombre": "TFGe CKD-EPI: 25.03 mL/min/1.73 m².",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "Dextrosa 5% en Solución Salina 0.9% 1000 mL pasar IV a 60 mL/h.",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "Ampicilina/Sulbactam 3 g IV c/6h (FI: 13/11/2026, D3/5, CIE-10: J18.9 — verificar ajuste renal por TFGe 25.03 mL/min).",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "Paracetamol 1 g IV c/8h",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "Enoxaparina 40 mg SC QD.",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "DIFERIDOS: Amlodipino 10 mg VO QD, Losartán 100 mg VO QD y Tamsulosina 0.4 mg VO QD.",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    }
+  ],
+  "pendientes": [
+    {
+      "id": "PEND-ABREVIADOS1-01",
+      "tipo": "IMAGEN_PROCEDIMIENTO",
+      "descripcion": "Realizar Ecografía abdominal (hígado y vías biliares).",
+      "prioridad": "URGENTE",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": null,
+      "es_visita_nocturna": true,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
+    },
+    {
+      "id": "PEND-ABREVIADOS1-02",
+      "tipo": "LABORATORIO",
+      "descripcion": "Realizar Resonancia Magnética de cadera izquierda.",
+      "prioridad": "URGENTE",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": null,
+      "es_visita_nocturna": true,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
+    },
+    {
+      "id": "PEND-ABREVIADOS1-03",
+      "tipo": "LABORATORIO",
+      "descripcion": "Recabar resultados de laboratorio de hoy (16/11/2026).",
+      "prioridad": "URGENTE",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": null,
+      "es_visita_nocturna": true,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
+    },
+    {
+      "id": "PEND-ABREVIADOS1-04",
+      "tipo": "INTERCONSULTA",
+      "descripcion": "Valoración por Neurología (con resultados de RMN y Electroencefalograma).",
+      "prioridad": "URGENTE",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": null,
+      "es_visita_nocturna": true,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
+    },
+    {
+      "id": "PEND-ABREVIADOS1-05",
+      "tipo": "IMAGEN_PROCEDIMIENTO",
+      "descripcion": "Ecografía abdominal (hígado y vías biliares): Pendiente.",
+      "prioridad": "URGENTE",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": null,
+      "es_visita_nocturna": true,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
+    },
+    {
+      "id": "PEND-ABREVIADOS1-06",
+      "tipo": "IMAGEN_PROCEDIMIENTO",
+      "descripcion": "RMN de cadera izquierda (fractura incompleta de trocánter mayor): Pendiente.",
+      "prioridad": "URGENTE",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": null,
+      "es_visita_nocturna": true,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
+    },
+    {
+      "id": "PEND-ABREVIADOS1-07",
+      "tipo": "INTERCONSULTA",
+      "descripcion": "RMN cerebral y Electroencefalograma para valoración por Neurología: Pendientes.",
+      "prioridad": "URGENTE",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": null,
+      "es_visita_nocturna": true,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
+    }
+  ],
+  "observaciones": [
+    "Revisar laboratorios de hoy para evaluar respuesta de la LRA sobre ERC a la hidratación IV (Dextrosa 5% en SS 0.9% a 60 mL/h), ajustar intervalo de Ampicilina/Sulbactam según TFGe (25.03 mL/min), mantener reposo/cuidado ortopédico de cadera izquierda y vigilar sensorio."
+  ],
+  "laboratorios": [
+    {
+      "fecha_hora": "17/11/2026",
+      "tipo_estudio": "Laboratorio",
+      "valores": {
+        "resumen": "Función renal documentada al ingreso con TFGe CKD-EPI de 25.03 mL/min/1.73 m²; pendientes resultados de laboratorio de hoy 16/11/2026."
+      },
+      "alerta_critica": null
+    }
+  ],
+  "cultivos": [],
+  "alertas_criticas": [
+    "Revisar laboratorios de hoy para evaluar respuesta de la LRA sobre ERC a la hidratación IV (Dextrosa 5% en SS 0.9% a 60 mL/h), ajustar intervalo de Ampicilina/Sulbactam según TFGe (25.03 mL/min), mantener reposo/cuidado ortopédico de cadera izquierda y vigilar sensorio."
+  ]
+}

@@ -1,6 +1,6 @@
 {
   "cama": "ABRV 2",
-  "area": "EMERGENCIA_OBSERVACION",
+  "area": "HOSPITALIZACION",
   "servicio_tratante": null,
   "nombre_completo": "CALVA SALAS GRETA",
   "hc": "1158688",
@@ -9,23 +9,17 @@
   "sexo": null,
   "fecha_nacimiento": null,
   "fecha_ingreso": null,
-  "dias_hospitalizacion": null,
+  "dias_hospitalizacion": 4,
   "app": [
-    "TROMBOCITOPENIA INMUNE",
-    "DIABETES",
-    "HIPERTENSION ARTERIAL",
-    "HIPOTIROIDISMO",
-    "ARTRITIS REUMATOIDE HACE 10 AÑOS",
-    "GASTRITIS CRONICA CON H. PYLORI +, RECIBE TRATAMIENTO ERRADICADOR",
-    "POLIPOS COLONICOS, ALGUNOS HIPERPLASICOS, OTROS CON FOCOS DE DISPLASIA, TODOS",
-    "SON RESECADOS, BORDES LIBRES, SE RECOMIENDA CONTROLES"
+    "Clínicos: Trombocitopenia inmune (PTI); Diabetes mellitus; Hipertensión arterial; Hipotiroidismo; Artritis reumatoide (hace 10 años); Gastritis crónica por H. pylori (recibió tratamiento erradicador); Pólipos colónicos (hiperplásicos y con focos de displasia, resecados con bordes libres); Esteatosis hepática; Litiasis renal en seguimiento por Urología."
   ],
   "aqx": [],
   "alergias": [],
   "diagnosticos_activos": [
-    "INFECCION DE TRACTO URINARIO COMPLICADA TUMBARELLO 2 PUNTOS",
-    "INSUFICIENCIA RENAL AGUDA KDIGO 1",
-    "HIPONATREMIA LEVE"
+    "Infección del tracto urinario complicada (Tumbarello 2 puntos, CIE-10: N39.0).",
+    "Insuficiencia renal aguda KDIGO 1.",
+    "Hiponatremia leve (Na 134 mEq/L).",
+    "Trombocitopenia inmune activa (Plaquetas 51.000/µL)."
   ],
   "diagnosticos_pasivos": [],
   "dieta": null,
@@ -33,7 +27,7 @@
   "ckd_epi": null,
   "medicaciones": [
     {
-      "nombre": "CEFTRIAXONA 2 GR INTRAVENOSO CADA DIA D2/5 CIE 10: N390 FI:12/11/26",
+      "nombre": "TFGe CKD-EPI: 42.1 mL/min/1.73 m² (calculada con Cr 1.37 mg/dL del 13/11/2026).",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -46,7 +40,7 @@
       "nota": null
     },
     {
-      "nombre": "HIDROCORTISONA 50 MG INTRAVENOSO CADA DIA",
+      "nombre": "Dieta blanda gástrica",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -59,7 +53,7 @@
       "nota": null
     },
     {
-      "nombre": "OMEPRAZOL 40 MG INTRAVENOSO CADA DIA",
+      "nombre": "DISH.",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -72,7 +66,7 @@
       "nota": null
     },
     {
-      "nombre": "PARACETAMOL 1GR INTRAVENOSO CADA 8 HORAS",
+      "nombre": "Ceftriaxona 2 g IV QD (FI: 12/11/2026, D2/5 — día 4 real al 16/11, CIE-10: N39.0).",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -85,7 +79,7 @@
       "nota": null
     },
     {
-      "nombre": "PREDNISONA 5MG DIARIOS * DIFERIDO *",
+      "nombre": "Hidrocortisona 50 mg IV QD",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -98,7 +92,7 @@
       "nota": null
     },
     {
-      "nombre": "ELTROMBOPAG 50MG VO QD",
+      "nombre": "Eltrombopag 50 mg VO QD",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -111,7 +105,7 @@
       "nota": null
     },
     {
-      "nombre": "LEVOTIROXINA 50 MCG VO QD",
+      "nombre": "Omeprazol 40 mg IV QD",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -124,7 +118,7 @@
       "nota": null
     },
     {
-      "nombre": "LOSARTAN 100 MG VO QD AM * DIFERIDO *",
+      "nombre": "Paracetamol 1 g IV c/8h",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -137,7 +131,7 @@
       "nota": null
     },
     {
-      "nombre": "AMLODIPINO 10MG VO QD PM * DIFERIDO *",
+      "nombre": "Levotiroxina 50 mcg VO QD.",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -150,7 +144,46 @@
       "nota": null
     },
     {
-      "nombre": "EMPAGLIFOZINA 10 MG CADA DIA * DIFERIDO *",
+      "nombre": "DIFERIDOS: Prednisona 5 mg VO QD",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "Losartán 100 mg VO QD AM",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "Amlodipino 10 mg VO QD PM",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "Empagliflozina 10 mg VO QD.",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -167,11 +200,11 @@
     {
       "id": "PEND-ABRV2-01",
       "tipo": "LABORATORIO",
-      "descripcion": "PD UROCULTIVO",
-      "prioridad": "RUTINA",
+      "descripcion": "Recabar resultado de urocultivo.",
+      "prioridad": "URGENTE",
       "turno": "NOCTURNA_20_24",
       "horario_programado": null,
-      "es_visita_nocturna": false,
+      "es_visita_nocturna": true,
       "estado": "PENDIENTE",
       "responsable": null,
       "resultado_obtenido": null
@@ -179,8 +212,20 @@
     {
       "id": "PEND-ABRV2-02",
       "tipo": "LABORATORIO",
-      "descripcion": "EXAMENES DE CONTROL PARA EL DIA LUNES",
+      "descripcion": "Revisar exámenes de laboratorio de control del lunes 16/11/2026.",
       "prioridad": "CONTROL",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": null,
+      "es_visita_nocturna": true,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
+    },
+    {
+      "id": "PEND-ABRV2-03",
+      "tipo": "IMAGEN_PROCEDIMIENTO",
+      "descripcion": "Estudios urológicos previos por litiasis renal.",
+      "prioridad": "URGENTE",
       "turno": "NOCTURNA_20_24",
       "horario_programado": null,
       "es_visita_nocturna": true,
@@ -189,17 +234,21 @@
       "resultado_obtenido": null
     }
   ],
-  "observaciones": [],
+  "observaciones": [
+    "Revisar biometría hemática y función renal del lunes 16/11 (vigilar respuesta plaquetaria a Eltrombopag 50 mg + Hidrocortisona 50 mg IV y resolución de LRA KDIGO 1); valorar reducción de dosis de Levotiroxina ante TSH suprimida (0.02 mUI/L)."
+  ],
   "laboratorios": [
     {
-      "fecha_hora": "2026-11-16",
-      "tipo_estudio": "Laboratorios / Gasometría",
+      "fecha_hora": "13/11/2026",
+      "tipo_estudio": "Laboratorio",
       "valores": {
-        "resumen": "13/11/2026 TSH: 0.02, LEU: 13,8, HG: 12.4, HCTO: 39, NEU: 12.6, PLAQ: 51.000 . H GLICOSILADA: 5.9, COLESTEROL: 15.6 . COLESTEROL LDL: 55.4, GLUCOSA: 101, CLORO: 101, POTASIO: 4.19 SODIO: 134. . UREA: 79, CREA: 1.37"
+        "resumen": "TSH 0.02 mUI/L, Leucocitos 13.8 K/µL (Neu 12.6 K/µL), Hb 12.4 g/dL, Hto 39%, Plaquetas 51.000/µL; HbA1c 5.9%, Glucosa 101 mg/dL, Colesterol 15.6, LDL 55.4 mg/dL; Urea 79 mg/dL, Creatinina 1.37 mg/dL; Na 134 mEq/L, K 4.19 mEq/L, Cl 101 mEq/L."
       },
       "alerta_critica": null
     }
   ],
   "cultivos": [],
-  "alertas_criticas": []
+  "alertas_criticas": [
+    "Revisar biometría hemática y función renal del lunes 16/11 (vigilar respuesta plaquetaria a Eltrombopag 50 mg + Hidrocortisona 50 mg IV y resolución de LRA KDIGO 1); valorar reducción de dosis de Levotiroxina ante TSH suprimida (0.02 mUI/L)."
+  ]
 }

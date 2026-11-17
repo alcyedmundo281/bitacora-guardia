@@ -1,0 +1,268 @@
+{
+  "cama": "HAB 7",
+  "area": "HOSPITALIZACION",
+  "servicio_tratante": null,
+  "nombre_completo": "VINUEZA ROJAS ARTURO MIGUEL",
+  "hc": "239902",
+  "cedula": null,
+  "edad": "77 años",
+  "sexo": null,
+  "fecha_nacimiento": null,
+  "fecha_ingreso": null,
+  "dias_hospitalizacion": 54,
+  "app": [
+    "Clínicos: Hipertensión arterial (diagnosticada hace 30 años); Dislipidemia; Enfermedad renal crónica.",
+    "Quirúrgicos: Apendicectomía; Reconstrucción nasal; Craneotomía frontotemporoparietal izquierda + evacuación de hematoma subdural agudo; 23/09/2026: Craniectomía frontoparietal izquierda + limpieza quirúrgica + duroplastia con parche Neudura XL + tiempo de Cirugía Plástica."
+  ],
+  "aqx": [],
+  "alergias": [],
+  "diagnosticos_activos": [
+    "Hematoma subdural agudo hemisférico izquierdo evacuado, con secuelas neurológicas.",
+    "Traqueítis / colonización bacteriana de vía aérea por Stenotrophomonas maltophilia y Klebsiella pneumoniae KPC.",
+    "Traqueostomía funcional con dificultad para decanulación por secreciones abundantes.",
+    "Enfermedad renal crónica estadio 3b.",
+    "Hipertensión arterial y Dislipidemia.",
+    "Antecedente de infección de herida quirúrgica y empiema epidural superados."
+  ],
+  "diagnosticos_pasivos": [],
+  "dieta": null,
+  "hidratacion": null,
+  "ckd_epi": null,
+  "medicaciones": [
+    {
+      "nombre": "TFGe CKD-EPI previa: 35.99 mL/min/1.73 m² (Cr 1.78 del 02/11/2026)",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "TFGe CKD-EPI actualizada (16/11/2026): 43.1 mL/min/1.73 m² (calculada con Cr 1.55 mg/dL del 16/11/2026).",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "Dieta enteral por gastrostomía: 300 cc ART + Diben 900 kcal/600 mL (3 frascos)",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "DISH.",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "Levetiracetam 500 mg por gastrostomía c/12h",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "Enoxaparina 40 mg SC QD",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "Buscapina 1 tab por gastrostomía c/8h.",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "Empagliflozina 10 mg QD",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "Simvastatina 40 mg QD.",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "Bromuro de ipratropio 2 mL + SS 0.9% 5 mL nebulizado c/6h",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "Lágrimas artificiales 1 gota AO c/2h",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "O2 por cánula nasal si SatO2 ≤ 85%.",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    }
+  ],
+  "pendientes": [
+    {
+      "id": "PEND-HAB7-01",
+      "tipo": "LABORATORIO",
+      "descripcion": "Actualizar cálculo de TFGe en evolución diaria con creatinina del 16/11 (1.55 mg/dL).",
+      "prioridad": "CONTROL",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": null,
+      "es_visita_nocturna": true,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
+    },
+    {
+      "id": "PEND-HAB7-02",
+      "tipo": "IMAGEN_PROCEDIMIENTO",
+      "descripcion": "Mantener aislamiento/precauciones de contacto, posición semifowler, sedestación en sillón BID, control de SV c/8h y prevención de UPP/caídas.",
+      "prioridad": "CONTROL",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": null,
+      "es_visita_nocturna": true,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
+    },
+    {
+      "id": "PEND-HAB7-03",
+      "tipo": "IMAGEN_PROCEDIMIENTO",
+      "descripcion": "Controles tomográficos craneales previos post-craniectomía y evacuación de hematoma subdural / empiema epidural.",
+      "prioridad": "CONTROL",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": null,
+      "es_visita_nocturna": true,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
+    }
+  ],
+  "observaciones": [
+    "Paciente despierto, Glasgow 14/15, pupilas isocóricas reactivas, SatO2 91% al aire ambiente; traqueostomía funcional con secreciones blanquecinas abundantes; gastrostomía funcional; herida quirúrgica limpia sin signos de infección. Vigilar en guardia PM fiebre o desaturación ante ascenso de leucocitos (12.530 con Neu 11.000 del 16/11) y mantener aspiración frecuente de traqueostomía y precauciones de contacto por KPC."
+  ],
+  "laboratorios": [
+    {
+      "fecha_hora": "20/10/2026 (Cultivo de secreción traqueal)",
+      "tipo_estudio": "Laboratorio",
+      "valores": {
+        "resumen": "Bacilos gramnegativos; aislamiento de Stenotrophomonas maltophilia y Klebsiella pneumoniae KPC."
+      },
+      "alerta_critica": null
+    },
+    {
+      "fecha_hora": "02/11/2026",
+      "tipo_estudio": "Laboratorio",
+      "valores": {
+        "resumen": "Creatinina 1.78 mg/dL (TFGe 35.99)."
+      },
+      "alerta_critica": null
+    },
+    {
+      "fecha_hora": "09/11/2026",
+      "tipo_estudio": "Laboratorio",
+      "valores": {
+        "resumen": "Leucocitos 6.390/µL, Hb 13.2 g/dL, Plaquetas 354.000/µL; Urea 97 mg/dL, Cr 1.56 mg/dL; Na 134.7, K 4.04."
+      },
+      "alerta_critica": null
+    },
+    {
+      "fecha_hora": "16/11/2026",
+      "tipo_estudio": "Laboratorio",
+      "valores": {
+        "resumen": "Leucocitos 12.530/µL (Neutrófilos 11.000/µL — leucocitosis con neutrofilia), Hb 13.2 g/dL, Plaquetas 383.000/µL; Urea 86.1 mg/dL, BUN 40 mg/dL, Creatinina 1.55 mg/dL; Na 134.4 mEq/L, K 4.6 mEq/L, Cl 97 mEq/L."
+      },
+      "alerta_critica": null
+    }
+  ],
+  "cultivos": [],
+  "alertas_criticas": [
+    "Paciente despierto, Glasgow 14/15, pupilas isocóricas reactivas, SatO2 91% al aire ambiente; traqueostomía funcional con secreciones blanquecinas abundantes; gastrostomía funcional; herida quirúrgica limpia sin signos de infección. Vigilar en guardia PM fiebre o desaturación ante ascenso de leucocitos (12.530 con Neu 11.000 del 16/11) y mantener aspiración frecuente de traqueostomía y precauciones de contacto por KPC."
+  ]
+}

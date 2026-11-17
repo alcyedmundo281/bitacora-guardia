@@ -1,0 +1,296 @@
+{
+  "cama": "NEUMOLOGÍA 10C",
+  "area": "HOSPITALIZACION",
+  "servicio_tratante": null,
+  "nombre_completo": "NARVÁEZ CALDERÓN ROSA ELENA",
+  "hc": "625308",
+  "cedula": "1702923002",
+  "edad": "76 años",
+  "sexo": null,
+  "fecha_nacimiento": null,
+  "fecha_ingreso": null,
+  "dias_hospitalizacion": 14,
+  "app": [
+    "Clínicos: Cáncer de mama tratado con mastectomía radical en 2016; Hipotiroidismo; Carcinoma escamocelular de pulmón derecho (reportado en valoración por Cirugía de Tórax); Cor pulmonale severo."
+  ],
+  "aqx": [],
+  "alergias": [],
+  "diagnosticos_activos": [
+    "Tromboembolia pulmonar aguda masiva/submasiva (defecto de llenado en arteria pulmonar principal y ramas segmentarias en Angio-TAC), asociada a sospecha clínica de TVP en miembros inferiores (edema 3/4, doloroso, caliente, Homans positivo).",
+    "Cor pulmonale severo con requerimiento de oxígeno suplementario.",
+    "Carcinoma escamocelular de pulmón derecho con derrame pleural derecho y drenaje pleural actualmente sin débito.",
+    "Hiponatremia e hipocloremia en progresión (Na 127.7 mEq/L, Cl 91 mEq/L el 14/11; probable asociación a diuréticos o SIADH paraneoplásico).",
+    "Distensión abdominal y dolor a la palpación profunda con hernias incisionales reductibles sin irritación peritoneal.",
+    "Anemia normocítica (Hb 9.3 g/dL)."
+  ],
+  "diagnosticos_pasivos": [],
+  "dieta": null,
+  "hidratacion": null,
+  "ckd_epi": null,
+  "medicaciones": [
+    {
+      "nombre": "TFGe CKD-EPI: 64.71 mL/min/1.73 m² (Cr 0.87 mg/dL del 07/11/2026).",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "Oxígeno por cánula nasal para SatO2 objetivo de 88–90%.",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "Enoxaparina 70 mg SC c/12h",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "Furosemida 40 mg VO c/12h (reevaluar frente a hiponatremia en progresión).",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "Paracetamol 1 g VO c/8h",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "Tramadol 100 mg VO c/8h",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "Metoclopramida 10 mg IV PRN",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "Quetiapina 25 mg VO HS",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "Enema Fleet PRN.",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    }
+  ],
+  "pendientes": [
+    {
+      "id": "PEND-NEUMOLOGA10C-01",
+      "tipo": "LABORATORIO",
+      "descripcion": "Recabar informe de TC simple de tórax, abdomen y pelvis.",
+      "prioridad": "URGENTE",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": null,
+      "es_visita_nocturna": true,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
+    },
+    {
+      "id": "PEND-NEUMOLOGA10C-02",
+      "tipo": "INTERCONSULTA",
+      "descripcion": "Valoración por Oncología con revisión de placas y resultado de histopatología particular de biopsia pulmonar.",
+      "prioridad": "URGENTE",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": null,
+      "es_visita_nocturna": true,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
+    },
+    {
+      "id": "PEND-NEUMOLOGA10C-03",
+      "tipo": "LABORATORIO",
+      "descripcion": "Revisión por Cirugía de Tórax para definir retiro del drenaje pleural derecho (actualmente no productivo).",
+      "prioridad": "URGENTE",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": null,
+      "es_visita_nocturna": true,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
+    },
+    {
+      "id": "PEND-NEUMOLOGA10C-04",
+      "tipo": "LABORATORIO",
+      "descripcion": "Control de electrolitos, magnesio y creatinina actual por laboratorio central.",
+      "prioridad": "CONTROL",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": null,
+      "es_visita_nocturna": true,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
+    },
+    {
+      "id": "PEND-NEUMOLOGA10C-05",
+      "tipo": "LABORATORIO",
+      "descripcion": "Control estricto de ingesta y excreta registrado en AS400.",
+      "prioridad": "CONTROL",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": null,
+      "es_visita_nocturna": true,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
+    },
+    {
+      "id": "PEND-NEUMOLOGA10C-06",
+      "tipo": "IMAGEN_PROCEDIMIENTO",
+      "descripcion": "Angio-TAC pulmonar: Defecto de llenado en arteria pulmonar principal y ramas segmentarias (TEP aguda masiva/submasiva).",
+      "prioridad": "URGENTE",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": null,
+      "es_visita_nocturna": true,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
+    },
+    {
+      "id": "PEND-NEUMOLOGA10C-07",
+      "tipo": "IMAGEN_PROCEDIMIENTO",
+      "descripcion": "Ecocardiograma: Cor pulmonale severo con sobrecarga de cavidades derechas.",
+      "prioridad": "URGENTE",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": null,
+      "es_visita_nocturna": true,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
+    },
+    {
+      "id": "PEND-NEUMOLOGA10C-08",
+      "tipo": "IMAGEN_PROCEDIMIENTO",
+      "descripcion": "TC simple de tórax, abdomen y pelvis: Pendiente de informe.",
+      "prioridad": "URGENTE",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": null,
+      "es_visita_nocturna": true,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
+    }
+  ],
+  "observaciones": [
+    "DATOS A VERIFICAR EN GUARDIA PM: Mantener SatO2 entre 88–90%, vigilar signos de sangrado (Enoxaparina 70 mg c/12h), evaluar distensión abdominal (Enema Fleet PRN) y verificar pauta de Furosemida 40 mg VO c/12h dado el descenso progresivo de sodio (127.7 mEq/L)."
+  ],
+  "laboratorios": [
+    {
+      "fecha_hora": "24/09/2025",
+      "tipo_estudio": "Laboratorio",
+      "valores": {
+        "resumen": "HbA1c 6.11%. | 02/10/2026: TSH 0.021 mUI/L."
+      },
+      "alerta_critica": null
+    },
+    {
+      "fecha_hora": "02/11/2026 (Gasometría)",
+      "tipo_estudio": "Laboratorio",
+      "valores": {
+        "resumen": "pH 7.455, pCO2 35.2 mmHg, pO2 67.4 mmHg, HCO3 24.7 mmol/L, SatO2 94.6%, Lactato 0.9 mmol/L."
+      },
+      "alerta_critica": null
+    },
+    {
+      "fecha_hora": "03/11/2026",
+      "tipo_estudio": "Laboratorio",
+      "valores": {
+        "resumen": "Leucocitos 8.92 K/µL (Neu 6.30 K/µL), Hb 9.3 g/dL, Hto 29.3%, VCM 87.4 fL, Plaquetas 465.000/µL; Procalcitonina 2.08 ng/mL, TP 13.5 s, INR 1.25, TTP 33 s; BUN 36 mg/dL, Urea 77.4 mg/dL, Cr 1.01 mg/dL, Na 134.2, K 4.66, Cl 101."
+      },
+      "alerta_critica": null
+    },
+    {
+      "fecha_hora": "07/11/2026",
+      "tipo_estudio": "Laboratorio",
+      "valores": {
+        "resumen": "Creatinina 0.87 mg/dL (TFGe 64.71)."
+      },
+      "alerta_critica": null
+    },
+    {
+      "fecha_hora": "14/11/2026",
+      "tipo_estudio": "Laboratorio",
+      "valores": {
+        "resumen": "Dímero D 20.45, Sodio 127.7 mEq/L, Potasio 4.16 mEq/L, Cloro 91 mEq/L."
+      },
+      "alerta_critica": null
+    }
+  ],
+  "cultivos": [],
+  "alertas_criticas": [
+    "DATOS A VERIFICAR EN GUARDIA PM: Mantener SatO2 entre 88–90%, vigilar signos de sangrado (Enoxaparina 70 mg c/12h), evaluar distensión abdominal (Enema Fleet PRN) y verificar pauta de Furosemida 40 mg VO c/12h dado el descenso progresivo de sodio (127.7 mEq/L)."
+  ]
+}

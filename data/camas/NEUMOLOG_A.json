@@ -1,0 +1,251 @@
+{
+  "cama": "NEUMOLOGÍA",
+  "area": "HOSPITALIZACION",
+  "servicio_tratante": null,
+  "nombre_completo": "GÓMEZ ALMEIDA MARIO RENÉ",
+  "hc": "1274973",
+  "cedula": "1703534469",
+  "edad": "74 años",
+  "sexo": null,
+  "fecha_nacimiento": null,
+  "fecha_ingreso": null,
+  "dias_hospitalizacion": 18,
+  "app": [
+    "Clínicos: Hipotiroidismo; Infecciones de vías urinarias a repetición; Derrame pleural en estudio; Síndrome constitucional; Anemia crónica."
+  ],
+  "aqx": [],
+  "alergias": [],
+  "diagnosticos_activos": [
+    "Masa pleural derecha con lesiones osteolíticas e infiltración de pared torácica y canal medular T6–T10 (sospecha de neoplasia avanzada, pendiente histopatología e inmunohistoquímica).",
+    "Compresión medular T6–T10 secundaria a infiltración ósea.",
+    "Dolor oncológico somático y neuropático.",
+    "Infección urinaria complicada por Proteus mirabilis BLEE en portador de sonda vesical.",
+    "Derrame pleural derecho tabicado con atelectasias asociadas.",
+    "Síndrome diarreico agudo en estudio (descartar Clostridioides difficile).",
+    "Úlceras por presión: grado III sacrococcígea y grado II en talón.",
+    "Anemia crónica e hiponatremia/hipokalemia previas."
+  ],
+  "diagnosticos_pasivos": [],
+  "dieta": null,
+  "hidratacion": null,
+  "ckd_epi": null,
+  "medicaciones": [
+    {
+      "nombre": "TFGe CKD-EPI: 105 mL/min/1.73 m² (Cr 0.54 mg/dL del 07/11/2026).",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "Soporte nutricional hiperproteico con Diben.",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "Bomba de Morfina: 20 mg/100 mL pasar a 7 mL/h IV",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "Gabapentina 300 mg VO nocturna",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "Paracetamol 1 g c/8h.",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "Fosfomicina 3 g (indicada para ITU; valorar inicio de Meropenem o Amikacina según evolución clínica y función renal).",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    }
+  ],
+  "pendientes": [
+    {
+      "id": "PEND-NEUMOLOGA-01",
+      "tipo": "LABORATORIO",
+      "descripcion": "Cambio de sonda Foley programado para el 17/11/2026 y toma de urocultivo de control.",
+      "prioridad": "CONTROL",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": null,
+      "es_visita_nocturna": true,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
+    },
+    {
+      "id": "PEND-NEUMOLOGA-02",
+      "tipo": "LABORATORIO",
+      "descripcion": "Solicitar coproparasitario/PMN y FilmArray gastrointestinal en heces.",
+      "prioridad": "URGENTE",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": null,
+      "es_visita_nocturna": true,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
+    },
+    {
+      "id": "PEND-NEUMOLOGA-03",
+      "tipo": "LABORATORIO",
+      "descripcion": "Solicitar BH, PCR, azoados, electrolitos, magnesio, fósforo y albúmina.",
+      "prioridad": "URGENTE",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": null,
+      "es_visita_nocturna": true,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
+    },
+    {
+      "id": "PEND-NEUMOLOGA-04",
+      "tipo": "LABORATORIO",
+      "descripcion": "Recabar resultado de biopsia e inmunohistoquímica de lesiones pleurales.",
+      "prioridad": "URGENTE",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": null,
+      "es_visita_nocturna": true,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
+    },
+    {
+      "id": "PEND-NEUMOLOGA-05",
+      "tipo": "IMAGEN_PROCEDIMIENTO",
+      "descripcion": "05/10/2025 (Eco abdominal): ~12 quistes hepáticos, colédoco 4 mm, derrame pleural derecho.",
+      "prioridad": "URGENTE",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": null,
+      "es_visita_nocturna": true,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
+    },
+    {
+      "id": "PEND-NEUMOLOGA-06",
+      "tipo": "IMAGEN_PROCEDIMIENTO",
+      "descripcion": "13/10/2026 (TAC de tórax y pelvis): Derrame pleural derecho (50%), atelectasia compresiva LID y masas pleurales vegetantes con destrucción osteolítica costal posterior.",
+      "prioridad": "URGENTE",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": null,
+      "es_visita_nocturna": true,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
+    },
+    {
+      "id": "PEND-NEUMOLOGA-07",
+      "tipo": "IMAGEN_PROCEDIMIENTO",
+      "descripcion": "04/11/2026 (TAC de tórax contrastada): Lesiones pleurales derechas con infiltración de pared torácica, osteólisis costal y extensión al canal medular T6–T10; derrame pleural tabicado y adenomegalia pretraqueal de 13 mm.",
+      "prioridad": "URGENTE",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": null,
+      "es_visita_nocturna": true,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
+    },
+    {
+      "id": "PEND-NEUMOLOGA-08",
+      "tipo": "IMAGEN_PROCEDIMIENTO",
+      "descripcion": "04/11/2026 (TAC de abdomen/pelvis y cuello): Hepatomegalia poliquística, colédoco dilatado de 16 mm, quistes renales bilaterales; quiste óseo aneurismático en odontoides.",
+      "prioridad": "URGENTE",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": null,
+      "es_visita_nocturna": true,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
+    }
+  ],
+  "observaciones": [
+    "PUNTOS CRÍTICOS PARA LA GUARDIA PM: 1) Control del dolor oncológico con bomba de morfina a 7 mL/h; 2) Vigilancia neurológica estricta (fuerza/sensibilidad en MMII) por compromiso medular T6–T10; 3) Dejar listo cambio de sonda Foley mañana 17/11/2026; 4) Recolectar muestra de heces para FilmArray GI y vigilar hidratación/potasio por diarrea."
+  ],
+  "laboratorios": [
+    {
+      "fecha_hora": "29/10/2026",
+      "tipo_estudio": "Laboratorio",
+      "valores": {
+        "resumen": "Hb 9.2 g/dL, Hto 28.7%, Leucocitos 5.15 K/µL, Plaquetas 360.000/µL."
+      },
+      "alerta_critica": null
+    },
+    {
+      "fecha_hora": "02/11/2026",
+      "tipo_estudio": "Laboratorio",
+      "valores": {
+        "resumen": "Hb 11.6 g/dL, Leucocitos 6.64 K/µL, Plaquetas 373.000/µL; PCR 214 mg/L, PCT 0.23 ng/mL; Cr 1.21 mg/dL, Na 133.8, K 4.40; EMO piúrico."
+      },
+      "alerta_critica": null
+    },
+    {
+      "fecha_hora": "05/11/2026 (Urocultivo)",
+      "tipo_estudio": "Laboratorio",
+      "valores": {
+        "resumen": "Proteus mirabilis BLEE >100.000 UFC/mL (Sensible a Amikacina, Gentamicina y Meropenem; Resistente a Ceftriaxona, Ceftazidima y Cefepima)."
+      },
+      "alerta_critica": null
+    },
+    {
+      "fecha_hora": "07/11/2026",
+      "tipo_estudio": "Laboratorio",
+      "valores": {
+        "resumen": "Hb 9.1 g/dL, Leucocitos 4.80 K/µL, Plaquetas 406.000/µL; PCR 99.8 mg/L; Urea 37.8 mg/dL, Creatinina 0.54 mg/dL, Na 132.6 mEq/L, Potasio 2.96 mEq/L. | EMO reciente: Leucocitos 500, nitritos (+), piocitos 284.8, bacterias +++."
+      },
+      "alerta_critica": null
+    }
+  ],
+  "cultivos": [],
+  "alertas_criticas": [
+    "PUNTOS CRÍTICOS PARA LA GUARDIA PM: 1) Control del dolor oncológico con bomba de morfina a 7 mL/h; 2) Vigilancia neurológica estricta (fuerza/sensibilidad en MMII) por compromiso medular T6–T10; 3) Dejar listo cambio de sonda Foley mañana 17/11/2026; 4) Recolectar muestra de heces para FilmArray GI y vigilar hidratación/potasio por diarrea."
+  ]
+}

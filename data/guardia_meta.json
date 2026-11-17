@@ -1,14 +1,11 @@
 {
   "version_schema": "1.0.0",
-  "fecha_guardia": "2026-11-16",
-  "periodo": "16/11/2026",
+  "fecha_guardia": "2026-11-17",
+  "periodo": "16/11/2026 AL 17/11/2026",
   "medicos_guardia": [
-    "DRA.. MASAPANTA PG HEMATOLOGIA",
-    "DRA.MORA PG REUMATOLOGIA",
-    "MD LUDEÑA MRA MEDICINA INTERNA"
+    "Dra. Masapanta (PG Hematología)",
+    "Dra. Mora (PG Reumatología)",
+    "Md. Ludeña (MRA Medicina Interna)"
   ],
-  "enlaces_utiles": {
-    "censo_drive": "https://docs.google.com/document/d/1dm-8m2VOlTZfwYeORxcFuTDuFi2xitho/edit"
-  },
-  "ingresos_guardia": 0
+  "enlaces_utiles": {}
 }

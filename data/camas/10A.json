@@ -2,30 +2,27 @@
   "cama": "10A",
   "area": "HOSPITALIZACION",
   "servicio_tratante": null,
-  "nombre_completo": "MOSQUERA SALVADOR PATRICIA ALEXANDRA C",
+  "nombre_completo": "MOSQUERA SALVADOR PATRICIA ALEXANDRA",
   "hc": "1334681",
   "cedula": "1706511530",
-  "edad": "63 años",
+  "edad": "63 años 24 días",
   "sexo": null,
   "fecha_nacimiento": null,
   "fecha_ingreso": null,
-  "dias_hospitalizacion": null,
+  "dias_hospitalizacion": 4,
   "app": [
-    "LITIASIS RENAL, YA HAN REALIZADO LITOTRICIA",
-    "COLELITIASIS DESDE ENERO 2026",
-    "OSTEOPOROSIS",
-    "PROLAPSO VESICAL DESDE HACE 4 MESES",
-    "INFECCION DE VIAS URINARIAS A REPETICIÓN"
+    "Clínicos: Litiasis renal (con litotricia previa); Colelitiasis desde enero 2026; Osteoporosis; Prolapso vesical desde hace 4 meses; Infecciones de vías urinarias a repetición."
   ],
   "aqx": [],
   "alergias": [],
   "diagnosticos_activos": [
-    "SEPSIS A DOBLE FOCO URINARIO E INTESTINAL",
-    "DC INFECCIÓN POR CLOSTRIDIUM DIFFICILE",
-    "LESIÓN RENAL AGUDA KDIGO III CKD EPI: 14 ML/MIN",
-    "TROMBOCITOPENIA POR SEPSIS SUPERADA",
-    "HIPONATREMIA HIPOOSMOLAR HIPOVOLEMICA /HIPOKALEMIA. /ACIDEMIA METABÓLICA",
-    "FALLO MULTIORGANICO RENAL, HEPÁTICO, COAGULACIÓN. APACHE 13 PUNTOS"
+    "Septicemia por bacilos gramnegativos (hemocultivos del 12/11/2026 con reporte preliminar verbal positivo).",
+    "Sepsis de foco urinario: pielonefritis obstructiva secundaria a litiasis renal.",
+    "Litiasis renal bilateral, portadora de catéter doble J izquierdo (colocado el 12/11/2026).",
+    "Lesiones líticas en columna torácica (descartar gammapatía monoclonal).",
+    "Sospecha de tromboembolia pulmonar (Wells: riesgo intermedio).",
+    "Colelitiasis y Derrame pleural bilateral.",
+    "Pancreatitis biliar BISAP 2 superada."
   ],
   "diagnosticos_pasivos": [],
   "dieta": null,
@@ -33,7 +30,7 @@
   "ckd_epi": null,
   "medicaciones": [
     {
-      "nombre": "MEROPENEM 1 GRAMO IV CADA 8 HORAS (9/10) FI:05/11/2026 CIE: A419",
+      "nombre": "TFGe CKD-EPI: 72.92 mL/min/1.73 m².",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -46,7 +43,7 @@
       "nota": null
     },
     {
-      "nombre": "VANCOMICINA 1 GRAMO IV CADA 12 HORAS (3/5) FI:13/11/2026 CIE: A419",
+      "nombre": "Enoxaparina 60 mg SC c/12h",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -59,7 +56,7 @@
       "nota": null
     },
     {
-      "nombre": "PARACETAMOL 1 GRAMO IV PRN",
+      "nombre": "Omeprazol 20 mg VO QD",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -72,7 +69,7 @@
       "nota": null
     },
     {
-      "nombre": "OMEPRAZOL 20MG VO QD",
+      "nombre": "Furosemida 20 mg IV c/8h.",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -85,33 +82,20 @@
       "nota": null
     },
     {
-      "nombre": "FUROSEMIDA 40MG IV 08H00 Y 20MG IV 18H00",
+      "nombre": "SUSPENDIDOS: Suspender Meropenem",
       "dosis": "",
       "via": "",
       "frecuencia": "",
       "fecha_inicio": null,
       "dias_tratamiento": null,
       "indicacion_cie10": null,
-      "suspendido": false,
+      "suspendido": true,
       "diferido": false,
       "prn": false,
       "nota": null
     },
     {
-      "nombre": "METOCLOPRAMIDA 10 MG IV ADMINISTRAR PREVIO A TRAMADOL CADA 12 HORAS",
-      "dosis": "",
-      "via": "",
-      "frecuencia": "",
-      "fecha_inicio": null,
-      "dias_tratamiento": null,
-      "indicacion_cie10": null,
-      "suspendido": false,
-      "diferido": false,
-      "prn": false,
-      "nota": null
-    },
-    {
-      "nombre": "TRAMADOL 50 MG IV PASAR LENTO Y DILUIDO",
+      "nombre": "Suspender Vancomicina.",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -128,19 +112,19 @@
     {
       "id": "PEND-10A-01",
       "tipo": "LABORATORIO",
-      "descripcion": "RESULTADOS DE HEMOCULTIVOS, EMO Y UROCULTIVO",
-      "prioridad": "RUTINA",
+      "descripcion": "Retiro de sonda vesical posterior a reeducación vesical.",
+      "prioridad": "URGENTE",
       "turno": "NOCTURNA_20_24",
       "horario_programado": null,
-      "es_visita_nocturna": false,
+      "es_visita_nocturna": true,
       "estado": "PENDIENTE",
       "responsable": null,
       "resultado_obtenido": null
     },
     {
       "id": "PEND-10A-02",
-      "tipo": "IMAGEN_PROCEDIMIENTO",
-      "descripcion": "TAC BODY SIMPLE Y CONTRASTADA SOLICITADA POR HEMATOLOGÍA, PENDIENTE",
+      "tipo": "LABORATORIO",
+      "descripcion": "Recabar resultado definitivo y antibiograma de hemocultivos del 12/11/2026.",
       "prioridad": "URGENTE",
       "turno": "NOCTURNA_20_24",
       "horario_programado": null,
@@ -151,8 +135,8 @@
     },
     {
       "id": "PEND-10A-03",
-      "tipo": "LABORATORIO",
-      "descripcion": "RESONANCIA MAGNÉTICA DE COLUMNA REALIZADA EL 15/11/2026 PENDIENTE INFORME",
+      "tipo": "IMAGEN_PROCEDIMIENTO",
+      "descripcion": "Agendar TAC BODY simple y contrastada.",
       "prioridad": "URGENTE",
       "turno": "NOCTURNA_20_24",
       "horario_programado": null,
@@ -163,20 +147,20 @@
     },
     {
       "id": "PEND-10A-04",
-      "tipo": "LABORATORIO",
-      "descripcion": "ELECTROFORESIS DE PROTEÍNAS (TRÁMITE DE DERIVACIÓN)",
-      "prioridad": "RUTINA",
+      "tipo": "IMAGEN_PROCEDIMIENTO",
+      "descripcion": "Recabar informe de RMN de columna lumbar (realizada el 15/11/2026).",
+      "prioridad": "URGENTE",
       "turno": "NOCTURNA_20_24",
       "horario_programado": null,
-      "es_visita_nocturna": false,
+      "es_visita_nocturna": true,
       "estado": "PENDIENTE",
       "responsable": null,
       "resultado_obtenido": null
     },
     {
       "id": "PEND-10A-05",
-      "tipo": "INTERCONSULTA",
-      "descripcion": "LABORATORIOS SOLICITADOS POR HEMATOLOGÍA (ORDEN NO. 34995274) Y FROTIS DE SANGRE PERIFÉRICA; REVALORACIÓN POR HEMATOLOGÍA CON RESULTADOS",
+      "tipo": "LABORATORIO",
+      "descripcion": "Trámite de derivación para electroforesis de proteínas.",
       "prioridad": "URGENTE",
       "turno": "NOCTURNA_20_24",
       "horario_programado": null,
@@ -188,11 +172,11 @@
     {
       "id": "PEND-10A-06",
       "tipo": "LABORATORIO",
-      "descripcion": "FISIOTERAPIA RESPIRATORIA MÁS INCENTIVO",
-      "prioridad": "RUTINA",
+      "descripcion": "Laboratorio programado 17/11/2026 a las 05h00: BH, urea, creatinina, electrolitos y dímero D.",
+      "prioridad": "URGENTE",
       "turno": "NOCTURNA_20_24",
       "horario_programado": null,
-      "es_visita_nocturna": false,
+      "es_visita_nocturna": true,
       "estado": "PENDIENTE",
       "responsable": null,
       "resultado_obtenido": null
@@ -200,8 +184,8 @@
     {
       "id": "PEND-10A-07",
       "tipo": "LABORATORIO",
-      "descripcion": "CONTROL POR CONSULTA EXTERNA DE CIRUGÍA GENERAL (COLECISTECTOMÍA DIFERIDA)",
-      "prioridad": "CONTROL",
+      "descripcion": "Cumplir órdenes de Urología.",
+      "prioridad": "URGENTE",
       "turno": "NOCTURNA_20_24",
       "horario_programado": null,
       "es_visita_nocturna": true,
@@ -211,12 +195,12 @@
     },
     {
       "id": "PEND-10A-08",
-      "tipo": "LABORATORIO",
-      "descripcion": "GASOMETRÍA EN CASO NECESARIO",
-      "prioridad": "RUTINA",
+      "tipo": "IMAGEN_PROCEDIMIENTO",
+      "descripcion": "12/11/2026: Colocación de catéter doble J izquierdo.",
+      "prioridad": "URGENTE",
       "turno": "NOCTURNA_20_24",
       "horario_programado": null,
-      "es_visita_nocturna": false,
+      "es_visita_nocturna": true,
       "estado": "PENDIENTE",
       "responsable": null,
       "resultado_obtenido": null
@@ -224,7 +208,7 @@
     {
       "id": "PEND-10A-09",
       "tipo": "IMAGEN_PROCEDIMIENTO",
-      "descripcion": "ÓRDENES DE GINECOLOGÍA: CLOTRIMAZOL 2% VIA VAGINAL HORA SUE#O QD 0/3 (ORDEN 35005695)",
+      "descripcion": "15/11/2026 (RMN de columna lumbar): Realizada, pendiente informe (estudio de lesiones líticas vertebrales).",
       "prioridad": "URGENTE",
       "turno": "NOCTURNA_20_24",
       "horario_programado": null,
@@ -235,54 +219,34 @@
     },
     {
       "id": "PEND-10A-10",
-      "tipo": "LABORATORIO",
-      "descripcion": "ELECTROLITOS (GSA 16H26): K: 3.3 (DESCENSO EN RELACIÓN AL SÉRICO MATUTINO DE",
-      "prioridad": "RUTINA",
+      "tipo": "IMAGEN_PROCEDIMIENTO",
+      "descripcion": "TAC BODY simple y contrastada: Pendiente agendar.",
+      "prioridad": "URGENTE",
       "turno": "NOCTURNA_20_24",
       "horario_programado": null,
-      "es_visita_nocturna": false,
-      "estado": "PENDIENTE",
-      "responsable": null,
-      "resultado_obtenido": null
-    },
-    {
-      "id": "PEND-10A-11",
-      "tipo": "LABORATORIO",
-      "descripcion": "3.99), NA: 136, CL: 107",
-      "prioridad": "RUTINA",
-      "turno": "NOCTURNA_20_24",
-      "horario_programado": null,
-      "es_visita_nocturna": false,
-      "estado": "PENDIENTE",
-      "responsable": null,
-      "resultado_obtenido": null
-    },
-    {
-      "id": "PEND-10A-12",
-      "tipo": "LABORATORIO",
-      "descripcion": "HEMOCULTIVOS NEGATIVOS",
-      "prioridad": "RUTINA",
-      "turno": "NOCTURNA_20_24",
-      "horario_programado": null,
-      "es_visita_nocturna": false,
+      "es_visita_nocturna": true,
       "estado": "PENDIENTE",
       "responsable": null,
       "resultado_obtenido": null
     }
   ],
   "observaciones": [
-    "IC HEMATOLOGÍA",
-    "IC CIRUGÍA GENERAL",
-    "IC NEUMOLOGÍA (INICIO DE FTR)",
-    "IC UROLOGIA",
-    "SE OPTRIMIZA ANALGESIA"
+    "Paciente en PREALTA, clínicamente estable, afebril, sin dolor ni edema periférico; SatO2 91% con FiO2 28%; Balance hídrico: -1.840 mL/24h. ATENCIÓN GUARDIA PM: Verificar con médico de base/Infectología la suspensión de Meropenem habiendo reporte preliminar de bacilos gramnegativos en hemocultivos del 12/11; dejar listas las órdenes de laboratorio para mañana 17/11 05h00."
   ],
   "laboratorios": [
     {
-      "fecha_hora": "2026-11-16",
-      "tipo_estudio": "Laboratorios / Gasometría",
+      "fecha_hora": "12/11/2026 (Hemocultivos)",
+      "tipo_estudio": "Laboratorio",
       "valores": {
-        "resumen": "HEMOCULTIVOS NEGATIVOS. - LITIASIS RENAL, YA HAN REALIZADO LITOTRICIA - COLELITIASIS DESDE ENERO 2026 - OSTEOPOROSIS - PROLAPSO VESICAL DESDE HACE 4 MESES - INFECCION DE VIAS URINARIAS A REPETICIÓN"
+        "resumen": "Reporte preliminar verbal positivo para bacilos gramnegativos. | Urocultivo: Negativo a las 48 horas."
+      },
+      "alerta_critica": null
+    },
+    {
+      "fecha_hora": "16/11/2026 (BH)",
+      "tipo_estudio": "Laboratorio",
+      "valores": {
+        "resumen": "Leucocitos 6.000/µL, Hb 10.1 g/dL, Plaquetas 221.000/µL (recuperación de líneas celulares)."
       },
       "alerta_critica": null
     }

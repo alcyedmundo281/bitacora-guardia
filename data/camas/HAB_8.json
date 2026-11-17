@@ -1,0 +1,69 @@
+{
+  "cama": "HAB 8",
+  "area": "HOSPITALIZACION",
+  "servicio_tratante": null,
+  "nombre_completo": "CAMA ENCARGO DE INFECTOLOGÍA",
+  "hc": "N/D",
+  "cedula": null,
+  "edad": "N/D",
+  "sexo": null,
+  "fecha_nacimiento": null,
+  "fecha_ingreso": null,
+  "dias_hospitalizacion": null,
+  "app": [
+    "Paciente a cargo del servicio de Infectología."
+  ],
+  "aqx": [],
+  "alergias": [],
+  "diagnosticos_activos": [
+    "Encargo administrativo de cama a Infectología."
+  ],
+  "diagnosticos_pasivos": [],
+  "dieta": null,
+  "hidratacion": null,
+  "ckd_epi": null,
+  "medicaciones": [
+    {
+      "nombre": "Manejo farmacológico y TFGe a cargo del servicio tratante (Infectología).",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    }
+  ],
+  "pendientes": [
+    {
+      "id": "PEND-HAB8-01",
+      "tipo": "LABORATORIO",
+      "descripcion": "Seguimiento por servicio tratante (Infectología).",
+      "prioridad": "CONTROL",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": null,
+      "es_visita_nocturna": true,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
+    }
+  ],
+  "observaciones": [
+    "Cama registrada únicamente como encargo de Infectología; verificar en censo nocturno si continúa ocupada por dicho servicio."
+  ],
+  "laboratorios": [
+    {
+      "fecha_hora": "17/11/2026",
+      "tipo_estudio": "Laboratorio",
+      "valores": {
+        "resumen": "Sin laboratorios consignados en bitácora de Medicina Interna."
+      },
+      "alerta_critica": null
+    }
+  ],
+  "cultivos": [],
+  "alertas_criticas": []
+}

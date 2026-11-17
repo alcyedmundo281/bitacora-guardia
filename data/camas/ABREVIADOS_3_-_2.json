@@ -1,33 +1,27 @@
 {
-  "cama": "NEUMOLOGIA 10C",
-  "area": "PERIFERICOS",
+  "cama": "ABREVIADOS 3 - 2",
+  "area": "HOSPITALIZACION",
   "servicio_tratante": null,
-  "nombre_completo": "C",
-  "hc": "625308",
-  "cedula": "1702923002",
-  "edad": "76 años",
+  "nombre_completo": "YAGUAPAZ HERNÁNDEZ HILDA GUADALUPE",
+  "hc": "1998461",
+  "cedula": "1003728613",
+  "edad": "42 años 3 meses",
   "sexo": null,
   "fecha_nacimiento": null,
   "fecha_ingreso": null,
   "dias_hospitalizacion": null,
   "app": [
-    "HIPOTIROIDISMO / NODULO TIROIDEO",
-    "OBESIDAD",
-    "HIPERTENSIÓN ARTERIAL",
-    "DISLIPIDEMIA",
-    "GONARTROSIS BILATERAL",
-    "CÁNCER DE MAMA 2016, MASTECTOMÍA RADICAL",
-    "HERNIA INCISIONAL INCARCERADA + CELULITIS EN EL 2012",
-    "MASA PULMONAR DERECHA"
+    "Clínicos: Lupus eritematoso sistémico (desde hace 10 años); Insuficiencia renal crónica sin necesidad de hemodiálisis al momento; Hipertensión arterial sistémica; Cáncer de cérvix hace 6 años ya tratado.",
+    "Quirúrgicos: Apendicectomía; Salpingectomía.",
+    "Alergias: Niega alergias a medicamentos o alimentos."
   ],
   "aqx": [],
   "alergias": [],
   "diagnosticos_activos": [
-    "MASA DE PULMON DERECHO",
-    "NÓDULO PULMONAR IZQUIERDO",
-    "HIPOTIROIDISMO",
-    "INFECCION DE VIAS URINARIAS POR E. COLI BLEE SUPERADA",
-    "TROMBOEMBOLIA PULMONAR EL 14-11-2026"
+    "Derrame pleural bilateral / Poliserositis a descartar.",
+    "Sobrecarga hídrica.",
+    "Trombosis venosa profunda (TVP) a descartar.",
+    "Lupus eritematoso sistémico."
   ],
   "diagnosticos_pasivos": [],
   "dieta": null,
@@ -35,7 +29,7 @@
   "ckd_epi": null,
   "medicaciones": [
     {
-      "nombre": "ICKD-EPI 54,20 ML/MIN/1,73 M2 (CREATININA: 1,01 DEL 03/11/2026)",
+      "nombre": "TFGe CKD-EPI: [Pendiente resultado de creatinina de hoy AM 16/11/2026; antecedente de ERC pre-diálisis].",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -48,7 +42,7 @@
       "nota": null
     },
     {
-      "nombre": "PARACETAMOL 1 G IV C/8H",
+      "nombre": "Furosemida 40 mg IV c/8h",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -61,7 +55,7 @@
       "nota": null
     },
     {
-      "nombre": "TRAMADOL 50 MG IV C/8H",
+      "nombre": "Paracetamol 1 g IV PRN.",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -74,7 +68,7 @@
       "nota": null
     },
     {
-      "nombre": "ENOXAPARINA 70 MG SC BID INICIO 14-11-2026",
+      "nombre": "Medicación habitual: Micofenolato mofetilo 1 g VO BID (2 tabletas 08h00 y 2 tabletas PM)",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -87,7 +81,7 @@
       "nota": null
     },
     {
-      "nombre": "FUROSEMIDA 20 MG IV CADA 12 HORAS",
+      "nombre": "Hidroxicloroquina 200 mg VO QD (14h00)",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -100,7 +94,7 @@
       "nota": null
     },
     {
-      "nombre": "METOCLOPRAMIDA 10 MG IV PRN",
+      "nombre": "Prednisona 5 mg VO QD (08h00)",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -113,7 +107,20 @@
       "nota": null
     },
     {
-      "nombre": "QUETIAPINA 25 MG VO QD HS",
+      "nombre": "Carvedilol 12.5 mg VO BID",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "Amlodipina 10 mg VO QD.",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -128,9 +135,9 @@
   ],
   "pendientes": [
     {
-      "id": "PEND-NEUMOLOGIA10C-01",
-      "tipo": "IMAGEN_PROCEDIMIENTO",
-      "descripcion": "PENDIENTE INFORME DE TC S/C DE TÓRAX ABDOMEN Y PELVIS",
+      "id": "PEND-ABREVIADOS32-01",
+      "tipo": "LABORATORIO",
+      "descripcion": "Recabar resultados de laboratorio de hoy AM: Biometría, PCR, urea, creatinina, electrolitos, calcio iónico, fósforo, magnesio, proteínas totales y albúmina.",
       "prioridad": "URGENTE",
       "turno": "NOCTURNA_20_24",
       "horario_programado": null,
@@ -140,44 +147,39 @@
       "resultado_obtenido": null
     },
     {
-      "id": "PEND-NEUMOLOGIA10C-02",
-      "tipo": "IMAGEN_PROCEDIMIENTO",
-      "descripcion": "PD HISTOPATOLÓGICO PARTICULAR CARCINOMA",
-      "prioridad": "RUTINA",
+      "id": "PEND-ABREVIADOS32-02",
+      "tipo": "INTERCONSULTA",
+      "descripcion": "Valoración por Nefrología, Reumatología y Cirugía Vascular.",
+      "prioridad": "URGENTE",
       "turno": "NOCTURNA_20_24",
       "horario_programado": null,
-      "es_visita_nocturna": false,
+      "es_visita_nocturna": true,
       "estado": "PENDIENTE",
       "responsable": null,
       "resultado_obtenido": null
     },
     {
-      "id": "PEND-NEUMOLOGIA10C-03",
-      "tipo": "LABORATORIO",
-      "descripcion": "ESCAMO CELULAR DE PULMÓN DERECHO",
-      "prioridad": "RUTINA",
+      "id": "PEND-ABREVIADOS32-03",
+      "tipo": "INTERCONSULTA",
+      "descripcion": "Estudios de imagen torácica por derrame pleural bilateral; pendiente Eco Doppler venoso / valoración por Cirugía Vascular.",
+      "prioridad": "URGENTE",
       "turno": "NOCTURNA_20_24",
       "horario_programado": null,
-      "es_visita_nocturna": false,
+      "es_visita_nocturna": true,
       "estado": "PENDIENTE",
       "responsable": null,
       "resultado_obtenido": null
     }
   ],
   "observaciones": [
-    "2026/11/07",
-    "Leucocitos: 9.29",
-    "Hemoglobina: 9.2",
-    "Hematocrito: 29.3",
-    "Neutrofilos 6.75",
-    "Plaquetas 406.000"
+    "Revisar de forma prioritaria en la guardia PM los resultados de función renal, potasio y albúmina de hoy AM, cuantificar balance hídrico/diuresis con Furosemida 40 mg IV c/8h y dar seguimiento a interconsultas de Nefrología, Reumatología y Cirugía Vascular."
   ],
   "laboratorios": [
     {
-      "fecha_hora": "2026-11-16",
-      "tipo_estudio": "Laboratorios / Gasometría",
+      "fecha_hora": "17/11/2026",
+      "tipo_estudio": "Laboratorio",
       "valores": {
-        "resumen": "UROCULTIVO NEGATIVO . ONCOLOGIA REVISION DE LAMINILLAS + IHQ + ESTUDIO DE EGFR + GAMMAGRAFIA OSEA Y TOMOGRAFIA DE PELVIS ABDOMEN Y TORAX (A CUENTA CON TACS)"
+        "resumen": "16/11/2026 AM: En proceso biometría, PCR, azoados, electrolitos completos y proteínas/albúmina."
       },
       "alerta_critica": null
     }

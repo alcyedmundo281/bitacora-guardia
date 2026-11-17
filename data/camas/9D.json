@@ -4,31 +4,23 @@
   "servicio_tratante": null,
   "nombre_completo": "GUERRERO PAULA DOLORES NARCIZA",
   "hc": "677814",
-  "cedula": null,
-  "edad": "63 años",
+  "cedula": "0601895592",
+  "edad": "63 años 10 meses",
   "sexo": null,
   "fecha_nacimiento": null,
   "fecha_ingreso": null,
-  "dias_hospitalizacion": null,
+  "dias_hospitalizacion": 4,
   "app": [
-    "ANTECEDENTES PATOLOGICOS PERSONAES",
-    "EPILEPSIA. SECUNDARIA A TRAUMATISMO HACE 17 AÑOS",
-    "HIPOTIROIDISMO",
-    "DISLIPIDEMIA",
-    "LESIONES VASCULARES CEREBRALES EN IMAGEN",
-    "HIPONATREMIA CRONICA",
-    "TROMBOSIS VENOSA PROFUNDA DE MIEMBRO INFERIOR DERECHA",
-    "RESIDENTE EN CENTRO DE CUIDADO, DEPENDIENTE DE TERCERAS PERSONAS"
+    "Clínicos: Epilepsia secundaria a traumatismo hace 17 años; Hipotiroidismo; Dislipidemia; Lesiones vasculares cerebrales en imagen; Hiponatremia crónica; Trombosis venosa profunda de miembro inferior derecho; Demencia vascular; ITU hace 1 mes (hospitalizada 6 días, trombocitopenia secundaria a ácido valproico)."
   ],
   "aqx": [],
   "alergias": [],
   "diagnosticos_activos": [
-    "DIAGNOSTICO:",
-    "SÍNDROME ANÉMICO MACROCÍTICO AGUDO RESUELTO TRAS SOPORTE TRANSFUSIONAL (HB 11.9 VS 8.1 G/DL)",
-    "SEPSIS DE FOCO PULMONAR / NEUMONÍA ASPIRATIVA (ESQUEMA ROTADO EL 13/11)",
-    "SÍNDROME NEUROLÓGICO (DESCARTE DE MENINGOENCEFALITIS VS ENCEFALOPATÍA TÓXICO-METABÓLICA)",
-    "EPILEPSIA SECUNDARIA A TRAUMA / DEMENCIA VASCULAR",
-    "TROMBOCITOPENIA Y HIPERNATREMIA MODERADA RESUELTAS (SODIO 140.0 MEQ/L, PLAQUETAS 151.000)"
+    "Síndrome anémico macrocítico agudo resuelto tras soporte transfusional (Hb 11.9 vs 8.1 g/dL).",
+    "Sepsis de foco pulmonar / Neumonía aspirativa (esquema antibiótico rotado el 13/11/2026).",
+    "Síndrome neurológico (descarte de meningoencefalitis vs encefalopatía tóxico-metabólica).",
+    "Epilepsia secundaria a trauma / Demencia vascular.",
+    "Trombocitopenia e hipernatremia moderada resueltas (Na 140.0 → 135.1 mEq/L, Plaquetas 151.000/µL)."
   ],
   "diagnosticos_pasivos": [],
   "dieta": null,
@@ -36,7 +28,7 @@
   "ckd_epi": null,
   "medicaciones": [
     {
-      "nombre": "AMPICILINA/SULBACTAM 3 GR IV CADA 6 HORAS FI: 13/11/2026 (DIA 2 ) CIE 10",
+      "nombre": "TFGe CKD-EPI: 82.3 mL/min/1.73 m².",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -49,7 +41,7 @@
       "nota": null
     },
     {
-      "nombre": "UROCIT 2 TABLETAS CADA 8 HORAS",
+      "nombre": "DISH",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -62,7 +54,7 @@
       "nota": null
     },
     {
-      "nombre": "ENOXAPARINA 40 MG SC CADA DIA",
+      "nombre": "Ampicilina/Sulbactam 3 g IV c/6h (FI: 13/11/2026, Día 2/3, CIE-10: A41.9 / J18.9).",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -75,7 +67,7 @@
       "nota": null
     },
     {
-      "nombre": "PARACETAMOL 1 GRAMO IV PRN",
+      "nombre": "Urocit-K 2 tabletas VO c/8h",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -88,7 +80,7 @@
       "nota": null
     },
     {
-      "nombre": "BROMURO DE IPATROPIO 2 PUFF CADA 8 HORAS",
+      "nombre": "Enoxaparina 40 mg SC QD",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -101,7 +93,7 @@
       "nota": null
     },
     {
-      "nombre": "ATORVASTATINA 40 MG VO CADA DIA",
+      "nombre": "Paracetamol 1 g IV PRN",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -114,7 +106,7 @@
       "nota": null
     },
     {
-      "nombre": "ACIDO VALPROICO 1000 MG VO CADA 12 HORAS",
+      "nombre": "Bromuro de ipratropio 2 puffs c/8h.",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -127,7 +119,7 @@
       "nota": null
     },
     {
-      "nombre": "LEVOTIROXINA 150 MG VO CADA DIA",
+      "nombre": "Atorvastatina 40 mg VO QD",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -140,7 +132,33 @@
       "nota": null
     },
     {
-      "nombre": "METILPREDNISOLONA 125 MG IV CADA DIA 1/3",
+      "nombre": "Ácido valproico 1000 mg VO c/12h",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "Levotiroxina 150 mcg VO QD",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "Metilprednisolona 125 mg IV QD (1/3).",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -157,7 +175,7 @@
     {
       "id": "PEND-9D-01",
       "tipo": "IMAGEN_PROCEDIMIENTO",
-      "descripcion": "PD RESULTADOS DE TAC DE TORAX",
+      "descripcion": "Recabar resultado e informe oficial de TAC de tórax.",
       "prioridad": "URGENTE",
       "turno": "NOCTURNA_20_24",
       "horario_programado": null,
@@ -168,78 +186,56 @@
     },
     {
       "id": "PEND-9D-02",
-      "tipo": "LABORATORIO",
-      "descripcion": "PD RESULTADOS HEMOCULTIVO",
-      "prioridad": "RUTINA",
+      "tipo": "IMAGEN_PROCEDIMIENTO",
+      "descripcion": "TAC de tórax: Realizada, pendiente resultado/informe.",
+      "prioridad": "URGENTE",
       "turno": "NOCTURNA_20_24",
       "horario_programado": null,
-      "es_visita_nocturna": false,
-      "estado": "PENDIENTE",
-      "responsable": null,
-      "resultado_obtenido": null
-    },
-    {
-      "id": "PEND-9D-03",
-      "tipo": "LABORATORIO",
-      "descripcion": "TENSIÓN ARTERIAL: 95/50 MMHG (TAM 80 MMHG), FRECUENCIA CARDÍACA: 73 LPM, SATURACIÓN DE OXÍGENO: 92% (1L), TEMPERATURA: 35.9 °C",
-      "prioridad": "RUTINA",
-      "turno": "NOCTURNA_20_24",
-      "horario_programado": null,
-      "es_visita_nocturna": false,
-      "estado": "PENDIENTE",
-      "responsable": null,
-      "resultado_obtenido": null
-    },
-    {
-      "id": "PEND-9D-04",
-      "tipo": "LABORATORIO",
-      "descripcion": "INGESTA 1850",
-      "prioridad": "RUTINA",
-      "turno": "NOCTURNA_20_24",
-      "horario_programado": null,
-      "es_visita_nocturna": false,
-      "estado": "PENDIENTE",
-      "responsable": null,
-      "resultado_obtenido": null
-    },
-    {
-      "id": "PEND-9D-05",
-      "tipo": "LABORATORIO",
-      "descripcion": "EXCRETA 700",
-      "prioridad": "RUTINA",
-      "turno": "NOCTURNA_20_24",
-      "horario_programado": null,
-      "es_visita_nocturna": false,
-      "estado": "PENDIENTE",
-      "responsable": null,
-      "resultado_obtenido": null
-    },
-    {
-      "id": "PEND-9D-06",
-      "tipo": "LABORATORIO",
-      "descripcion": "BALANCE1150",
-      "prioridad": "RUTINA",
-      "turno": "NOCTURNA_20_24",
-      "horario_programado": null,
-      "es_visita_nocturna": false,
+      "es_visita_nocturna": true,
       "estado": "PENDIENTE",
       "responsable": null,
       "resultado_obtenido": null
     }
   ],
   "observaciones": [
-    "PARACLÍNICOS (15/11/2026): CLORO 102, POTASIO 4.22, SODIO 135, 1. LABORATORIOS 13/11/2026: LEUCOCITOS 5.18 K (NEUTRÓFILOS 2.59 K), HEMOGLOBINA 11.9 G/DL (RECUPERACIÓN NOTABLE POST-TRANSFUSIÓN RESPECTO A 8.1 G/DL DEL 12/11),"
+    "SV: TA 95/50 mmHg (TAM 80 mmHg), FC 73 lpm, SatO2 92% (con O2 a 1 L/min), T 35.9 °C. Balance hídrico: Ingesta 1850 mL / Excreta 700 mL / Balance +1150 mL. Vigilar estado neurológico, presión arterial y recuento plaquetario dado uso de Ácido valproico 1000 mg c/12h (antecedente de trombocitopenia por valproato)."
   ],
   "laboratorios": [
     {
-      "fecha_hora": "2026-11-16",
-      "tipo_estudio": "Laboratorios / Gasometría",
+      "fecha_hora": "12/11/2026",
+      "tipo_estudio": "Laboratorio",
       "valores": {
-        "resumen": "2026/11/12 HORA: 08:39 LEUCOCITOS (WBC): 5.72 HEMOGLOBINA (HGB): 8.1 HEMATOCRITO (HCT): 25.0 VOLUMEN CORP. MEDIO (MCV): 100.60 CONC. MEDIA HEMOG. (MCH): 32.4 CONC. CORP. MEDIA (MCHC) DE HEMO: 32.4 VOLUMEN MEDIO PLAQUETARIO (MPV): 11.5 MONOCITOS: 0.45 EOSINOFILOS: 0.05 LINFOCITOS: 2.65 NEUTROFILOS: 2.51 BASOFILOS: 0.030 PLAQUETAS: 117.000 RECUENTO D"
+        "resumen": "Hb 8.1 g/dL (pre-transfusión)."
+      },
+      "alerta_critica": null
+    },
+    {
+      "fecha_hora": "13/11/2026",
+      "tipo_estudio": "Laboratorio",
+      "valores": {
+        "resumen": "Leucocitos 5.18 K/µL (Neu 2.59 K/µL), Hb 11.9 g/dL (post-transfusión), Plaquetas 151.000/µL; Hemocultivos negativos."
+      },
+      "alerta_critica": null
+    },
+    {
+      "fecha_hora": "17/11/2026",
+      "tipo_estudio": "Laboratorio",
+      "valores": {
+        "resumen": "Control previo: Na 136.4, K 4.54, Cl 102."
+      },
+      "alerta_critica": null
+    },
+    {
+      "fecha_hora": "15/11/2026",
+      "tipo_estudio": "Laboratorio",
+      "valores": {
+        "resumen": "Na 135.1 mEq/L, K 4.22 mEq/L, Cl 102 mEq/L, Magnesio 2.00 mg/dL."
       },
       "alerta_critica": null
     }
   ],
   "cultivos": [],
-  "alertas_criticas": []
+  "alertas_criticas": [
+    "SV: TA 95/50 mmHg (TAM 80 mmHg), FC 73 lpm, SatO2 92% (con O2 a 1 L/min), T 35.9 °C. Balance hídrico: Ingesta 1850 mL / Excreta 700 mL / Balance +1150 mL. Vigilar estado neurológico, presión arterial y recuento plaquetario dado uso de Ácido valproico 1000 mg c/12h (antecedente de trombocitopenia por valproato)."
+  ]
 }

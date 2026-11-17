@@ -1,36 +1,25 @@
 {
-  "cama": "7",
+  "cama": "ER / RECUPERACIÓN QX",
   "area": "HOSPITALIZACION",
   "servicio_tratante": null,
-  "nombre_completo": "VINUEZA ROJAS ARTURO MIGUEL 77 AÑOS 239902",
-  "hc": "N/D",
-  "cedula": null,
-  "edad": "77 años",
+  "nombre_completo": "GÓMEZ ESPINOZA JUSTO ÁNGEL",
+  "hc": "2090550",
+  "cedula": "1709837072",
+  "edad": "58 años",
   "sexo": null,
   "fecha_nacimiento": null,
   "fecha_ingreso": null,
-  "dias_hospitalizacion": null,
+  "dias_hospitalizacion": 6,
   "app": [
-    "ANTECEDENTES PERSONALES:",
-    "HIPERTENSION ARTERIAL DIAGNOSTICADO HACE 30 AÑOS",
-    "DISLIPIDEMIA",
-    "ENFERMEDAD RENAL CRONICA",
-    "ANTECEDENTES QUIRURGICOS:",
-    "APENDICECTOMIA",
-    "RECONSTRUCCION NASAL",
-    "CRANEOTOMIA FRONTO TEMPORO PARIETAL IZQUIERDA MAS EVACUACION DE"
+    "Clínicos: Epilepsia; Diabetes mellitus tipo 2 (hace 17 años); Hipertensión arterial; Hipotiroidismo."
   ],
   "aqx": [],
   "alergias": [],
   "diagnosticos_activos": [
-    "TRAQUEITIS",
-    "HIPERTENSIÓN ARTERIAL",
-    "DISLIPIDEMIA",
-    "ENFERMEDAD RENAL CRÓNICA ESTADIO 3B (TFG POR CKD-EPI: 31,84)",
-    "PORTADOR DE TRAQUEOSTOMO",
-    "HEMATOMA SUBDURAL AGUDO HEMISFERICO IZQUIERDO PARIETAL DERECHO EVACUADO",
-    "NECROSIS DE COLGAJO EN CUERO CABELLUDO RESUELTO PARIETAL POSTERIOR IZQUIERDO +",
-    "INFECCION DE HERIDA QUIRURGICA FRONTO TEMPORO PARIETAL IZQUIERDA + EMPIEMA"
+    "Sepsis de partes blandas / Celulitis de miembro superior derecho (y compromiso de codo izquierdo en estudio).",
+    "Lesión renal aguda KDIGO C1 U0 superada.",
+    "Estado hiperosmolar hiperglicémico / Cetoacidosis diabética superada.",
+    "Hiperkalemia moderada superada (actualmente con hiponatremia severa de 117.6 mEq/L e hipokalemia de 3.02 mEq/L)."
   ],
   "diagnosticos_pasivos": [],
   "dieta": null,
@@ -38,7 +27,7 @@
   "ckd_epi": null,
   "medicaciones": [
     {
-      "nombre": "LEVETIRACETAM 500 MILIGRAMOS POR GASTROSTOMIA CADA 12 HORAS",
+      "nombre": "TFGe CKD-EPI: 111.4 mL/min/1.73 m² (calculada con Cr 0.53 mg/dL).",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -51,7 +40,7 @@
       "nota": null
     },
     {
-      "nombre": "ENOXAPARINA 40 MG SC QD",
+      "nombre": "Meropenem 1 g IV c/8h (FI: 10/11/2026, Día 6, CIE-10: B99)",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -64,7 +53,7 @@
       "nota": null
     },
     {
-      "nombre": "BUSCAPINA 1 TABLETA POR GASTROSTOMIA C/8H",
+      "nombre": "Vancomicina 1 g IV c/12h (FI: 10/11/2026, Día 6, CIE-10: B99).",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -77,7 +66,7 @@
       "nota": null
     },
     {
-      "nombre": "EMPAGLIFLOZINA 10 MILIGRAMOS POR SONDA OROGASTRICA CADA DIA",
+      "nombre": "Paracetamol 1 g IV c/8h",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -90,7 +79,7 @@
       "nota": null
     },
     {
-      "nombre": "SIMVASTATINA 40 MILIGRAMOS POR SONDA OROGASTRICA CADA DIA",
+      "nombre": "Furosemida 20 mg IV c/12h (reevaluar por Na 117.6 mEq/L).",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -103,7 +92,7 @@
       "nota": null
     },
     {
-      "nombre": "NEBULIZACIONES CON BROMURO DE IPRATROPIO 2 ML + SOLUCION SALINA 0.9% 5 ML",
+      "nombre": "Enoxaparina 40 mg SC QD (reiniciar 12h posterior a procedimiento del 14/11/2026).",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -116,7 +105,7 @@
       "nota": null
     },
     {
-      "nombre": "CADA 6 HORAS",
+      "nombre": "Ácido valproico 500 mg VO c/12h",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -129,7 +118,7 @@
       "nota": null
     },
     {
-      "nombre": "LAGRIMAS ARTIFICIALES UNA GOTA CADA 2 HORAS AMBOS OJOS SIEMPRE D: DIETA ENTERAL DE 300CC ART+ DIBEN 900KCAL/600CC DIBEN ",
+      "nombre": "Esquema de Endocrinología para hiperglicemias.",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -142,20 +131,20 @@
       "nota": null
     },
     {
-      "nombre": "LEVETIRACETAM 500 MILIGRAMOS POR GASTROSTOMIA CADA 12 HORAS",
+      "nombre": "SUSPENDIDOS: Metformina 850 mg VO TID (suspendida)",
       "dosis": "",
       "via": "",
       "frecuencia": "",
       "fecha_inicio": null,
       "dias_tratamiento": null,
       "indicacion_cie10": null,
-      "suspendido": false,
+      "suspendido": true,
       "diferido": false,
       "prn": false,
       "nota": null
     },
     {
-      "nombre": "ENOXAPARINA 40 MG SC QD",
+      "nombre": "Losartán 50 mg VO QD (suspendido).",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -170,33 +159,9 @@
   ],
   "pendientes": [
     {
-      "id": "PEND-7-01",
+      "id": "PEND-ERRECUPERACINQX-01",
       "tipo": "LABORATORIO",
-      "descripcion": "16/11/2026: BIOMETRÍA HEMÁTICA COMPLETA, UREA, CREATININA, ELECTROLITOS",
-      "prioridad": "RUTINA",
-      "turno": "NOCTURNA_20_24",
-      "horario_programado": null,
-      "es_visita_nocturna": false,
-      "estado": "PENDIENTE",
-      "responsable": null,
-      "resultado_obtenido": null
-    },
-    {
-      "id": "PEND-7-02",
-      "tipo": "LABORATORIO",
-      "descripcion": "TFG POR CKD-EPI: 42.2 ML/MIN/1.73 M2 (CREATININA 1.56 DEL 09/11/2026)",
-      "prioridad": "RUTINA",
-      "turno": "NOCTURNA_20_24",
-      "horario_programado": null,
-      "es_visita_nocturna": false,
-      "estado": "PENDIENTE",
-      "responsable": null,
-      "resultado_obtenido": null
-    },
-    {
-      "id": "PEND-7-03",
-      "tipo": "IMAGEN_PROCEDIMIENTO",
-      "descripcion": "AISLAMIENTO DE CONTACTO",
+      "descripcion": "Hacer informar Resonancia Magnética de codo izquierdo.",
       "prioridad": "URGENTE",
       "turno": "NOCTURNA_20_24",
       "horario_programado": null,
@@ -206,9 +171,9 @@
       "resultado_obtenido": null
     },
     {
-      "id": "PEND-7-04",
-      "tipo": "IMAGEN_PROCEDIMIENTO",
-      "descripcion": "TERAPIA RESPIRATORIA, REHABILITACIÓN FÍSICA Y PROCESO DE DECANULACIÓN",
+      "id": "PEND-ERRECUPERACINQX-02",
+      "tipo": "LABORATORIO",
+      "descripcion": "Recabar resultados de hemocultivos, cultivo de herida en codo (13/11/2026) y cultivos de codo izquierdo ×4 (14/11/2026).",
       "prioridad": "URGENTE",
       "turno": "NOCTURNA_20_24",
       "horario_programado": null,
@@ -218,35 +183,43 @@
       "resultado_obtenido": null
     },
     {
-      "id": "PEND-7-05",
+      "id": "PEND-ERRECUPERACINQX-03",
       "tipo": "INTERCONSULTA",
-      "descripcion": "ASPIRACIÓN DE SECRECIONES DOS VECES AL DÍA Y EN CASO NECESARIO (NEUMOLOGÍA)",
-      "prioridad": "RUTINA",
+      "descripcion": "Seguimiento por Traumatología (valora nueva limpieza quirúrgica), Cirugía Plástica (curación a pie de cama realizada el 15/11/2026) y revaloración por Endocrinología.",
+      "prioridad": "CONTROL",
       "turno": "NOCTURNA_20_24",
       "horario_programado": null,
-      "es_visita_nocturna": false,
+      "es_visita_nocturna": true,
       "estado": "PENDIENTE",
       "responsable": null,
       "resultado_obtenido": null
     },
     {
-      "id": "PEND-7-06",
-      "tipo": "LABORATORIO",
-      "descripcion": "CURACIONES AVANZADAS POR CLÍNICA DE HERIDAS",
-      "prioridad": "RUTINA",
+      "id": "PEND-ERRECUPERACINQX-04",
+      "tipo": "IMAGEN_PROCEDIMIENTO",
+      "descripcion": "RMN de codo izquierdo: Realizada, pendiente informe oficial.",
+      "prioridad": "URGENTE",
       "turno": "NOCTURNA_20_24",
       "horario_programado": null,
-      "es_visita_nocturna": false,
+      "es_visita_nocturna": true,
       "estado": "PENDIENTE",
       "responsable": null,
       "resultado_obtenido": null
     }
   ],
   "observaciones": [
-    "O: FTR RESPIRATORIA Y REHABILITACIÓN",
-    "CURACIONES AVANZADAS POR CLÍNICA DE HERIDAS"
+    "ALERTA ELECTROLÍTICA GUARDIA PM: Laboratorio reporta Sodio 117.6 mEq/L y Potasio 3.02 mEq/L mientras tiene indicada Furosemida 20 mg IV c/12h; verificar control de electrolitos actual, suspender/ajustar Furosemida, reponer potasio e insistir en informe de RMN de codo para Traumatología."
   ],
-  "laboratorios": [],
+  "laboratorios": [
+    {
+      "fecha_hora": "17/11/2026",
+      "tipo_estudio": "Laboratorio",
+      "valores": {
+        "resumen": "Control reciente: Leucocitos 11.50 K/µL (Neu 9.54, Linf 1.07, Mon 0.69), Hb 11.1 g/dL, Hto 33.1%, CHCM 33.5 g/dL, Plaquetas 246.000/µL (VPM 8.7 fL); Glucosa 125 mg/dL, BUN 17 mg/dL, Urea 36.9 mg/dL, Creatinina 0.53 mg/dL; Sodio 117.6 mEq/L, Potasio 3.02 mEq/L, Cloro 93 mEq/L."
+      },
+      "alerta_critica": null
+    }
+  ],
   "cultivos": [],
   "alertas_criticas": []
 }

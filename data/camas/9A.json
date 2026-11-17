@@ -2,30 +2,25 @@
   "cama": "9A",
   "area": "HOSPITALIZACION",
   "servicio_tratante": null,
-  "nombre_completo": "CHANCUSI COSTALES MONICA ELIZABETH C",
+  "nombre_completo": "CHANCUSI COSTALES MÓNICA ELIZABETH",
   "hc": "347767",
   "cedula": "1708946098",
-  "edad": "59 años",
+  "edad": "59 años 6 meses",
   "sexo": null,
   "fecha_nacimiento": null,
   "fecha_ingreso": null,
-  "dias_hospitalizacion": null,
+  "dias_hospitalizacion": 6,
   "app": [
-    "ANTECEDENTES PERSONALES:",
-    "ANSIEDAD Y DEPRESIÓN DIAGNOSTICADA HACE 8 AÑOS",
-    "TRASTORNO BIPOLAR",
-    "ANTECEDENTES QUIRURGICOS:",
-    "APENDICECTOMÍA",
-    "CESAREA X 3",
-    "OOFORECTOMÍA",
-    "HISTERECTOMIA ,"
+    "Clínicos: Ansiedad y depresión diagnosticada hace 8 años; Trastorno bipolar.",
+    "Quirúrgicos: Apendicectomía; Cesárea ×3; Ooforectomía; Histerectomía.",
+    "Alergias: ALERGIA A PENICILINA (alergias alimentarias: niega)."
   ],
   "aqx": [],
   "alergias": [],
   "diagnosticos_activos": [
-    "EFECTO TOXICO ENVENENAMIENTO POR ANTIDEPRESIVO TRICICLICO CIE-10: T430 SUPERADO",
-    "TRASTORNO ANSIOSO DEPRESIVO CIE-10: F412",
-    "TRAUMATISMO CRANEO ENCEFALICO LEVE"
+    "Efecto tóxico / envenenamiento por antidepresivo tricíclico (CIE-10: T43.0) superado (requirió UCI, intubación y vasoactivos del 10 al 13/11/2026).",
+    "Trastorno ansioso depresivo (CIE-10: F41.2).",
+    "Traumatismo craneoencefálico leve."
   ],
   "diagnosticos_pasivos": [],
   "dieta": null,
@@ -33,7 +28,7 @@
   "ckd_epi": null,
   "medicaciones": [
     {
-      "nombre": "ENOXAPARINA 40 MILIGRAMOS APLICAR SUBCUTANEO, CADA DIA",
+      "nombre": "TFGe CKD-EPI: 105.7 mL/min/1.73 m² (calculada con Cr 0.54 mg/dL del 14/11/2026).",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -46,7 +41,7 @@
       "nota": null
     },
     {
-      "nombre": "OMEPRAZOL 40 MILIGRAMOS INTRAVENOSO CADA DIA",
+      "nombre": "Omeprazol 40 mg IV QD",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -59,7 +54,7 @@
       "nota": null
     },
     {
-      "nombre": "PARACETAMOL 1 GRAMO INTRAVENOSO POR RAZONES NECESARIAS",
+      "nombre": "Paracetamol 1 g VO c/8h",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -72,7 +67,7 @@
       "nota": null
     },
     {
-      "nombre": "PARACETAMOL 1 GRAMO VO CADA 8 HORAS",
+      "nombre": "Metoclopramida 10 mg VO PRN.",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -85,7 +80,7 @@
       "nota": null
     },
     {
-      "nombre": "METOCLOPRAMIDA 10 MILIGRAMOS IV CADA 8 HORAS",
+      "nombre": "Indicaciones de Psiquiatría (16/11/2026): Fluoxetina 20 mg VO AM",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -98,7 +93,7 @@
       "nota": null
     },
     {
-      "nombre": "INDICACIONES DE PSIQUIATRIA",
+      "nombre": "Quetiapina 100 mg VO HS",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -111,7 +106,7 @@
       "nota": null
     },
     {
-      "nombre": "FLUOXETINA 20 MG VO AM",
+      "nombre": "Risperidona 1.5 mg VO BID",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -124,7 +119,7 @@
       "nota": null
     },
     {
-      "nombre": "QUETIAPINA 100 MG VO HS",
+      "nombre": "Haloperidol 5 mg VO PRN en caso de agitación psicomotriz franca (previa valoración de signos vitales y autorización del médico de base).",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -137,27 +132,14 @@
       "nota": null
     },
     {
-      "nombre": "RISPERIDONA 1.5 MG VO BID",
+      "nombre": "SUSPENDIDO: Enoxaparina 40 mg SC QD (suspender por alta/movilización).",
       "dosis": "",
       "via": "",
       "frecuencia": "",
       "fecha_inicio": null,
       "dias_tratamiento": null,
       "indicacion_cie10": null,
-      "suspendido": false,
-      "diferido": false,
-      "prn": false,
-      "nota": null
-    },
-    {
-      "nombre": "HALOPERIDOL 5 MG VO PRN EN CASO DE AGITACION PSICOMOTRIZ FRANCA PREVIA",
-      "dosis": "",
-      "via": "",
-      "frecuencia": "",
-      "fecha_inicio": null,
-      "dias_tratamiento": null,
-      "indicacion_cie10": null,
-      "suspendido": false,
+      "suspendido": true,
       "diferido": false,
       "prn": false,
       "nota": null
@@ -167,29 +149,43 @@
     {
       "id": "PEND-9A-01",
       "tipo": "LABORATORIO",
-      "descripcion": "TENSIÓN ARTERIAL: 103/53 MMHG, FRECUENCIA CARDÍACA: 78 LPM, FRECUENCIA RESPIRATORIA: 19 RPM, SATURACIÓN DE OXÍGENO: 90% (AIRE AMBIENTE), TEMPERATURA: 36.1 °C",
-      "prioridad": "RUTINA",
+      "descripcion": "Ejecutar ALTA de Medicina Interna con PASE A PSIQUIATRÍA.",
+      "prioridad": "URGENTE",
       "turno": "NOCTURNA_20_24",
       "horario_programado": null,
-      "es_visita_nocturna": false,
+      "es_visita_nocturna": true,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
+    },
+    {
+      "id": "PEND-9A-02",
+      "tipo": "IMAGEN_PROCEDIMIENTO",
+      "descripcion": "Evaluación por traumatismo craneoencefálico leve sin lesiones intracraneales agudas reportadas.",
+      "prioridad": "URGENTE",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": null,
+      "es_visita_nocturna": true,
       "estado": "PENDIENTE",
       "responsable": null,
       "resultado_obtenido": null
     }
   ],
   "observaciones": [
-    "PARACLÍNICOS (14/11/2026): LEUCOCITOS 11.42 K, HEMOGLOBINA 13.1 G/DL, HEMATOCRITO 39.6%, PLAQUETAS 377.000. PCR ULTRASENSIBLE 19.0 MG/L, TP 12.0, INR 1.10, TTP 26.8. SODIO 141.5 MEQ/L, POTASIO 3.49 MEQ/L, CLORO 107 MEQ/L, UREA 58.0 MG/DL, CREATININA 0.54 MG/DL, MAGNESIO 2.10 MG/DL"
+    "SV: TA 103/53 mmHg, FC 78 lpm, FR 19 rpm, SatO2 90% (aire ambiente), T 36.1 °C. Vigilar conducta, riesgo autolítico o agitación psicomotriz mientras se concreta el traslado efectivo a Psiquiatría. Recordar alergia a Penicilina."
   ],
   "laboratorios": [
     {
-      "fecha_hora": "2026-11-16",
-      "tipo_estudio": "Laboratorios / Gasometría",
+      "fecha_hora": "14/11/2026",
+      "tipo_estudio": "Laboratorio",
       "valores": {
-        "resumen": "MARTES PASARIA A PSIQUIATRIA"
+        "resumen": "PCR cuantitativo ultrasensible 19.00 mg/L; TP 12.0 s, INR 1.10, TTP 26.8 s; Leucocitos 11.42 K/µL (Neu 7.72, Linf 2.66, Mon 0.86, Eos 0.01), Hb 13.1 g/dL, Hto 39.6%, VCM 87.5 fL, HCM 28.9 pg, CHCM 33.1 g/dL, Plaquetas 377.000/µL (VPM 8.4 fL); BUN 27 mg/dL, Urea 58.0 mg/dL, Creatinina 0.54 mg/dL, Na 141.5 mEq/L, K 3.49 mEq/L, Cl 107 mEq/L, Magnesio 2.10 mg/dL."
       },
       "alerta_critica": null
     }
   ],
   "cultivos": [],
-  "alertas_criticas": []
+  "alertas_criticas": [
+    "SV: TA 103/53 mmHg, FC 78 lpm, FR 19 rpm, SatO2 90% (aire ambiente), T 36.1 °C. Vigilar conducta, riesgo autolítico o agitación psicomotriz mientras se concreta el traslado efectivo a Psiquiatría. Recordar alergia a Penicilina."
+  ]
 }

@@ -1,27 +1,24 @@
 {
   "cama": "ABV 3B",
-  "area": "EMERGENCIA_OBSERVACION",
+  "area": "HOSPITALIZACION",
   "servicio_tratante": null,
-  "nombre_completo": "UBILLUS ARGUERO MARIA TERESA",
+  "nombre_completo": "UBILLUS ARGUERO MARÍA TERESA",
   "hc": "2090357",
   "cedula": "1723906507",
-  "edad": "35 AÑOS",
+  "edad": "35 años 6 meses",
   "sexo": null,
   "fecha_nacimiento": null,
   "fecha_ingreso": null,
-  "dias_hospitalizacion": null,
+  "dias_hospitalizacion": 3,
   "app": [
-    "PARALISIS FACIAL HACE 6 MESES",
-    "ANTECEDENTES QUIRÚRGICOS:",
-    "APENDICECTOMÍA",
-    "LIGADURA"
+    "Clínicos: Parálisis facial hace 6 meses.",
+    "Quirúrgicos: Apendicectomía; Ligadura tubárica."
   ],
   "aqx": [],
   "alergias": [],
   "diagnosticos_activos": [
-    "390 OTROS TRASTORNOS DEL SISTEMA URINARIO",
-    "INFECCION DE VIAS URINARIAS, SITIO NO ESPECIFICADO",
-    "INFECCION DE VIAS URINARIAS, SITIO NO ESPECIFICADO"
+    "Infección de vías urinarias, sitio no especificado (CIE-10: N39.0).",
+    "Otros trastornos del sistema urinario."
   ],
   "diagnosticos_pasivos": [],
   "dieta": null,
@@ -29,7 +26,7 @@
   "ckd_epi": null,
   "medicaciones": [
     {
-      "nombre": "SOLUCIÓN SALINA 0.9% 1000 ML INTRAVENOSO A 60 ML/H",
+      "nombre": "TFGe CKD-EPI: 108.5 mL/min/1.73 m² (Cr 0.72 mg/dL del 13/11/2026).",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -42,7 +39,7 @@
       "nota": null
     },
     {
-      "nombre": "MEROPENEM 500 MG INTRAVENOSO CADA 8 HORAS, CIE N39.0, FI 13/11/2026 (DÍA 2)",
+      "nombre": "Solución salina 0.9% 1000 mL IV a 60 mL/h.",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -55,7 +52,7 @@
       "nota": null
     },
     {
-      "nombre": "PARACETAMOL 1 GRAMO INTRAVENOSO CADA 6 HORAS",
+      "nombre": "Meropenem 500 mg IV c/8h (FI: 13/11/2026, Día 2/3, CIE-10: N39.0).",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -68,7 +65,7 @@
       "nota": null
     },
     {
-      "nombre": "KETOROLACO 30 MG INTRAVENOSO POR RAZONES NECESARIAS",
+      "nombre": "Paracetamol 1 g IV c/6h",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -81,7 +78,20 @@
       "nota": null
     },
     {
-      "nombre": "METOCLOPRAMIDA 10 MG INTRAVENOSO CADA 12 HORAS",
+      "nombre": "Ketorolaco 30 mg IV PRN",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "Metoclopramida 10 mg IV c/12h.",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -97,20 +107,20 @@
   "pendientes": [
     {
       "id": "PEND-ABV3B-01",
-      "tipo": "LABORATORIO",
-      "descripcion": "E: EXÁMENES Y PROCEDIMIENTOS:",
-      "prioridad": "RUTINA",
+      "tipo": "IMAGEN_PROCEDIMIENTO",
+      "descripcion": "Recabar informe de UroTAC simple.",
+      "prioridad": "URGENTE",
       "turno": "NOCTURNA_20_24",
       "horario_programado": null,
-      "es_visita_nocturna": false,
+      "es_visita_nocturna": true,
       "estado": "PENDIENTE",
       "responsable": null,
       "resultado_obtenido": null
     },
     {
       "id": "PEND-ABV3B-02",
-      "tipo": "IMAGEN_PROCEDIMIENTO",
-      "descripcion": "UROTAC SIMPLE: PENDIENTE INFORME",
+      "tipo": "LABORATORIO",
+      "descripcion": "Revisar laboratorios del 16/11/2026: BH completa, urea, creatinina y electrolitos.",
       "prioridad": "URGENTE",
       "turno": "NOCTURNA_20_24",
       "horario_programado": null,
@@ -121,31 +131,40 @@
     },
     {
       "id": "PEND-ABV3B-03",
-      "tipo": "LABORATORIO",
-      "descripcion": "L: LABORATORIO:",
-      "prioridad": "RUTINA",
+      "tipo": "IMAGEN_PROCEDIMIENTO",
+      "descripcion": "UroTAC simple: Realizada, pendiente informe.",
+      "prioridad": "URGENTE",
       "turno": "NOCTURNA_20_24",
       "horario_programado": null,
-      "es_visita_nocturna": false,
-      "estado": "PENDIENTE",
-      "responsable": null,
-      "resultado_obtenido": null
-    },
-    {
-      "id": "PEND-ABV3B-04",
-      "tipo": "LABORATORIO",
-      "descripcion": "16/11/2026: BIOMETRÍA HEMÁTICA COMPLETA, UREA, CREATININA, ELECTROLITOS",
-      "prioridad": "RUTINA",
-      "turno": "NOCTURNA_20_24",
-      "horario_programado": null,
-      "es_visita_nocturna": false,
+      "es_visita_nocturna": true,
       "estado": "PENDIENTE",
       "responsable": null,
       "resultado_obtenido": null
     }
   ],
-  "observaciones": [],
-  "laboratorios": [],
+  "observaciones": [
+    "Revisar informe de UroTAC simple para descartar litiasis obstructiva o colecciones renales, verificar biometría y función renal del 16/11 y vigilar curva térmica."
+  ],
+  "laboratorios": [
+    {
+      "fecha_hora": "13/11/2026",
+      "tipo_estudio": "Laboratorio",
+      "valores": {
+        "resumen": "Creatinina 0.72 mg/dL (CKD-EPI 108.5 mL/min/1.73 m²)."
+      },
+      "alerta_critica": null
+    },
+    {
+      "fecha_hora": "16/11/2026",
+      "tipo_estudio": "Laboratorio",
+      "valores": {
+        "resumen": "BH, azoados y electrolitos en proceso."
+      },
+      "alerta_critica": null
+    }
+  ],
   "cultivos": [],
-  "alertas_criticas": []
+  "alertas_criticas": [
+    "Revisar informe de UroTAC simple para descartar litiasis obstructiva o colecciones renales, verificar biometría y función renal del 16/11 y vigilar curva térmica."
+  ]
 }

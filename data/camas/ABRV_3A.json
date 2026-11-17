@@ -1,36 +1,27 @@
 {
   "cama": "ABRV 3A",
-  "area": "EMERGENCIA_OBSERVACION",
+  "area": "HOSPITALIZACION",
   "servicio_tratante": null,
-  "nombre_completo": "VARGAS BAUTISTA ANA PIEDAD C",
+  "nombre_completo": "VARGAS BAUTISTA ANA PIEDAD",
   "hc": "1234469",
   "cedula": "1800447821",
-  "edad": "80 años",
+  "edad": "80 años 11 meses",
   "sexo": null,
   "fecha_nacimiento": null,
   "fecha_ingreso": null,
-  "dias_hospitalizacion": null,
+  "dias_hospitalizacion": 4,
   "app": [
-    "INFECCION DE VIAS URINARIAS COMPLICADA POR ESCHERICHIA COLI MULTISENSIBLE",
-    "BACTERIEMIA POR COCOS GRAM POSITIVOS EN ESTUDIO (CIE-10: A49.0)",
-    "CANDIDURIA POR CANDIDA TROPICALIS (CIE-10: B37.4)",
-    "T",
-    "TROMBOSIS VENOSA PROFUNDA CRONICA DE MIEMBRO INFERIOR IZQUIERDO",
-    "ENFERMEDAD PULMONAR INTERSTICIAL DIFUSA (EPID) / PATRON PROBABLE NIU",
-    "INSUFICIENCIA RESPIRATORIA CRONICA - OXIGENO DOMICILIARIO",
-    "INSUFICIENCIA CARDIACA CONGESTIVA - FEVI 70%"
+    "Clínicos: Trombosis venosa profunda crónica de miembro inferior izquierdo; Enfermedad pulmonar intersticial difusa (EPID) / patrón probable NIU; Insuficiencia respiratoria crónica (usuaria de oxígeno domiciliario); Insuficiencia cardíaca congestiva (FEVI 70%); Hipertensión pulmonar."
   ],
   "aqx": [],
   "alergias": [],
   "diagnosticos_activos": [
-    "INFECCION DE VIAS URINARIAS COMPLICADA POR ESCHERICHIA COLI MULTISENSIBLE",
-    "BACTERIEMIA POR COCOS GRAM POSITIVOS EN ESTUDIO (CIE-10: A49.0)",
-    "CANDIDURIA POR CANDIDA TROPICALIS (CIE-10: B37.4)",
-    "T",
-    "TROMBOSIS VENOSA PROFUNDA CRONICA DE MIEMBRO INFERIOR IZQUIERDO",
-    "ENFERMEDAD PULMONAR INTERSTICIAL DIFUSA (EPID) / PATRON PROBABLE NIU",
-    "INSUFICIENCIA RESPIRATORIA CRONICA - OXIGENO DOMICILIARIO",
-    "INSUFICIENCIA CARDIACA CONGESTIVA - FEVI 70%"
+    "Infección de vías urinarias complicada por Escherichia coli multisensible.",
+    "Bacteriemia por cocos grampositivos en estudio (CIE-10: A49.0).",
+    "Candiduria por Candida tropicalis (CIE-10: B37.4).",
+    "Trombosis venosa profunda crónica de miembro inferior izquierdo.",
+    "EPID / patrón probable NIU con insuficiencia respiratoria crónica.",
+    "Insuficiencia cardíaca congestiva (FEVI 70%) e hipertensión pulmonar."
   ],
   "diagnosticos_pasivos": [],
   "dieta": null,
@@ -38,7 +29,7 @@
   "ckd_epi": null,
   "medicaciones": [
     {
-      "nombre": "MEROPENEM 1 GRAMOS INTRAVENOSO CADA 12 HORAS FI:12-11-2026 CIE:10 B99 D1",
+      "nombre": "TFGe CKD-EPI: 35.4 mL/min/1.73 m² (Cr 1.40 mg/dL del 15/11/2026).",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -51,7 +42,7 @@
       "nota": null
     },
     {
-      "nombre": "FUROSEMIDA 20 MG VIA ORAL CADA DIA",
+      "nombre": "Dieta blanda gástrica hiperproteica",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -64,7 +55,7 @@
       "nota": null
     },
     {
-      "nombre": "APIXABAN 5 MG VIA ORAL CADA 12 HORAS",
+      "nombre": "DISH.",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -77,7 +68,7 @@
       "nota": null
     },
     {
-      "nombre": "ALOPURINOL 150 MG VIA ORAL CADA DIA",
+      "nombre": "Meropenem 1 g IV c/12h (FI: 12/11/2026, Día 3/4, CIE-10: B99).",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -90,7 +81,7 @@
       "nota": null
     },
     {
-      "nombre": "BROMURO DE IPRATROPIO 2 PUFFS CADA 8 HORAS",
+      "nombre": "Furosemida 20 mg VO QD",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -103,7 +94,7 @@
       "nota": null
     },
     {
-      "nombre": "ESPIRONOLACTONA 25 MILIGRAMOS VIA ORAL CADA DIA",
+      "nombre": "Espironolactona 25 mg VO QD",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -116,7 +107,7 @@
       "nota": null
     },
     {
-      "nombre": "DAPAGLIFOZINA 10 MG VIA ORAL CADA DIA",
+      "nombre": "Apixabán 5 mg VO c/12h",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -129,7 +120,7 @@
       "nota": null
     },
     {
-      "nombre": "CARVEDILOL 3.125 MG VIA ORAL CADA DIA",
+      "nombre": "Dapagliflozina 10 mg VO QD",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -142,7 +133,7 @@
       "nota": null
     },
     {
-      "nombre": "PARACETAMOL 1 GRAMO INTRAVENOSO POR RAZONES NECESARIAS",
+      "nombre": "Carvedilol 3.125 mg VO QD.",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -155,7 +146,72 @@
       "nota": null
     },
     {
-      "nombre": "GABAPENTINA 300 MG VIA ORAL CADA 8 HORAS",
+      "nombre": "Alopurinol 150 mg VO QD",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "Bromuro de ipratropio 2 puffs c/8h",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "Paracetamol 1 g IV PRN",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "Gabapentina 300 mg VO c/8h",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "Diosmina 1000 mg VO QD",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "Lágrimas artificiales 1 gota AO c/3h continuo.",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -171,20 +227,20 @@
   "pendientes": [
     {
       "id": "PEND-ABRV3A-01",
-      "tipo": "LABORATORIO",
-      "descripcion": "E: EXÁMENES Y PROCEDIMIENTOS:",
-      "prioridad": "RUTINA",
+      "tipo": "IMAGEN_PROCEDIMIENTO",
+      "descripcion": "Realizar/recabar TAC simple de abdomen y pelvis (solicitada el 14/11/2026).",
+      "prioridad": "URGENTE",
       "turno": "NOCTURNA_20_24",
       "horario_programado": null,
-      "es_visita_nocturna": false,
+      "es_visita_nocturna": true,
       "estado": "PENDIENTE",
       "responsable": null,
       "resultado_obtenido": null
     },
     {
       "id": "PEND-ABRV3A-02",
-      "tipo": "IMAGEN_PROCEDIMIENTO",
-      "descripcion": "TAC SIMPLE DE ABDOMEN Y PELVIS (SOLICITADA EL 14/11/2026): PENDIENTE",
+      "tipo": "LABORATORIO",
+      "descripcion": "Recabar resultados de hemocultivos ×2, urocultivo y cultivo de esputo inducido.",
       "prioridad": "URGENTE",
       "turno": "NOCTURNA_20_24",
       "horario_programado": null,
@@ -195,68 +251,20 @@
     },
     {
       "id": "PEND-ABRV3A-03",
-      "tipo": "LABORATORIO",
-      "descripcion": "L: LABORATORIO:",
-      "prioridad": "RUTINA",
+      "tipo": "INTERCONSULTA",
+      "descripcion": "Reinterconsultar a Infectología con resultados de cultivos (evaluar cobertura para cocos grampositivos).",
+      "prioridad": "URGENTE",
       "turno": "NOCTURNA_20_24",
       "horario_programado": null,
-      "es_visita_nocturna": false,
+      "es_visita_nocturna": true,
       "estado": "PENDIENTE",
       "responsable": null,
       "resultado_obtenido": null
     },
     {
       "id": "PEND-ABRV3A-04",
-      "tipo": "LABORATORIO",
-      "descripcion": "HEMOCULTIVOS X 2: PENDIENTE RESULTADOS",
-      "prioridad": "URGENTE",
-      "turno": "NOCTURNA_20_24",
-      "horario_programado": null,
-      "es_visita_nocturna": true,
-      "estado": "PENDIENTE",
-      "responsable": null,
-      "resultado_obtenido": null
-    },
-    {
-      "id": "PEND-ABRV3A-05",
-      "tipo": "LABORATORIO",
-      "descripcion": "UROCULTIVO: PENDIENTE RESULTADO",
-      "prioridad": "URGENTE",
-      "turno": "NOCTURNA_20_24",
-      "horario_programado": null,
-      "es_visita_nocturna": true,
-      "estado": "PENDIENTE",
-      "responsable": null,
-      "resultado_obtenido": null
-    },
-    {
-      "id": "PEND-ABRV3A-06",
-      "tipo": "LABORATORIO",
-      "descripcion": "CULTIVO DE ESPUTO INDUCIDO: PENDIENTE",
-      "prioridad": "URGENTE",
-      "turno": "NOCTURNA_20_24",
-      "horario_programado": null,
-      "es_visita_nocturna": true,
-      "estado": "PENDIENTE",
-      "responsable": null,
-      "resultado_obtenido": null
-    },
-    {
-      "id": "PEND-ABRV3A-07",
-      "tipo": "INTERCONSULTA",
-      "descripcion": "C: INTERCONSULTAS:",
-      "prioridad": "URGENTE",
-      "turno": "NOCTURNA_20_24",
-      "horario_programado": null,
-      "es_visita_nocturna": true,
-      "estado": "PENDIENTE",
-      "responsable": null,
-      "resultado_obtenido": null
-    },
-    {
-      "id": "PEND-ABRV3A-08",
-      "tipo": "INTERCONSULTA",
-      "descripcion": "INDICACIONES DE INFECTOLOGÍA: REINTERCONSULTAR CON RESULTADOS DE CULTIVOS",
+      "tipo": "IMAGEN_PROCEDIMIENTO",
+      "descripcion": "TAC simple de abdomen y pelvis (solicitada el 14/11/2026): Pendiente realización/informe.",
       "prioridad": "URGENTE",
       "turno": "NOCTURNA_20_24",
       "horario_programado": null,
@@ -267,18 +275,28 @@
     }
   ],
   "observaciones": [
-    "INDICACIONES DE INFECTOLOGIA"
+    "Vigilar en guardia PM: 1) Potasio sérico (5.0 mEq/L recibiendo Espironolactona 25 mg QD con TFGe 35.4 mL/min); 2) Somnolencia por Gabapentina 300 mg c/8h (dosis elevada para TFGe 35 mL/min); 3) Tipificación de cocos grampositivos en hemocultivos para definir si requiere asociar glucopéptido."
   ],
   "laboratorios": [
     {
-      "fecha_hora": "2026-11-16",
-      "tipo_estudio": "Laboratorios / Gasometría",
+      "fecha_hora": "13/11/2026",
+      "tipo_estudio": "Laboratorio",
       "valores": {
-        "resumen": "13/11/2026 IGG: 7, IGM: 0.22, LEU: 24, HG: 10, HCTO: 31, PLAQ: 328.000, FERRITINA: 1043, TRIGLI: 241, . EMO NO INFECCIOSO. . PCR: 96, PCT: 0.47 . CLO: 98, K: 5.0, SODIO: 132 . crea: 1.8"
+        "resumen": "Leucocitos 24.0 K/µL, Hb 10.0 g/dL, Hto 31%, Plaquetas 328.000/µL; PCR 96 mg/L, PCT 0.47 ng/mL; Ferritina 1043 ng/mL, Triglicéridos 241 mg/dL, IgG 7, IgM 0.22; Creatinina 1.8 mg/dL, Na 132 mEq/L, Potasio 5.0 mEq/L, Cl 98 mEq/L; EMO no infeccioso."
+      },
+      "alerta_critica": null
+    },
+    {
+      "fecha_hora": "15/11/2026",
+      "tipo_estudio": "Laboratorio",
+      "valores": {
+        "resumen": "Creatinina 1.40 mg/dL (CKD-EPI 35.4 mL/min/1.73 m²)."
       },
       "alerta_critica": null
     }
   ],
   "cultivos": [],
-  "alertas_criticas": []
+  "alertas_criticas": [
+    "Vigilar en guardia PM: 1) Potasio sérico (5.0 mEq/L recibiendo Espironolactona 25 mg QD con TFGe 35.4 mL/min); 2) Somnolencia por Gabapentina 300 mg c/8h (dosis elevada para TFGe 35 mL/min); 3) Tipificación de cocos grampositivos en hemocultivos para definir si requiere asociar glucopéptido."
+  ]
 }

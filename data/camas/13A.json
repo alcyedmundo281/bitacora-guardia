@@ -2,26 +2,24 @@
   "cama": "13A",
   "area": "HOSPITALIZACION",
   "servicio_tratante": null,
-  "nombre_completo": "ORTIZ MARIA ANGELA C",
+  "nombre_completo": "ORTIZ MARÍA ÁNGELA",
   "hc": "520780",
   "cedula": "1702106038",
   "edad": "98 años",
   "sexo": null,
   "fecha_nacimiento": null,
   "fecha_ingreso": null,
-  "dias_hospitalizacion": null,
+  "dias_hospitalizacion": 3,
   "app": [
-    "HIPERTENSION ARTERIAL",
-    "INSOMNIO",
-    "ARTROSIS"
+    "Clínicos: Hipertensión arterial; Insomnio; Artrosis."
   ],
   "aqx": [],
   "alergias": [],
   "diagnosticos_activos": [
-    "SEPSIS DE FOCO URINARIO",
-    "LESION RENAL AGUDA KDIGO II",
-    "HIPOKALEMIA LEVE",
-    "HIPONATREMIA LEVE HIPOVOLEMICA ISOSMOLAR AGUDA ASINTOMATICA"
+    "Sepsis de foco urinario (CIE-10: N39.0).",
+    "Lesión renal aguda KDIGO II.",
+    "Hipokalemia leve (K 3.3 mEq/L).",
+    "Hiponatremia leve hipovolémica isosmolar aguda asintomática (Na 132 mEq/L)."
   ],
   "diagnosticos_pasivos": [],
   "dieta": null,
@@ -29,7 +27,7 @@
   "ckd_epi": null,
   "medicaciones": [
     {
-      "nombre": "MEROPENEM 1G INTRAVENOSO CADA 12 HORAS (FI: 13/11/2026 DIA 2 CIE N390) *",
+      "nombre": "TFGe CKD-EPI: 24.3 mL/min/1.73 m² (calculada con Cr 1.77 mg/dL del 13/11/2026).",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -42,7 +40,7 @@
       "nota": null
     },
     {
-      "nombre": "PARACETAMOL 1 GRAMO INTRAVENOSO POR RAZONES NECESARIAS",
+      "nombre": "Meropenem 1 g IV c/12h (FI: 13/11/2026, Día 2/3, CIE-10: N39.0 — ajustado el 14/11/2026).",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -55,7 +53,7 @@
       "nota": null
     },
     {
-      "nombre": "FUROSEMIDA 20 MG INTRAVENOSO CADA DIA",
+      "nombre": "Paracetamol 1 g IV PRN",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -68,7 +66,7 @@
       "nota": null
     },
     {
-      "nombre": "QUETIAPINA 25 MG VIA ORAL HORA SUE#O,",
+      "nombre": "Furosemida 20 mg IV QD",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -81,7 +79,7 @@
       "nota": null
     },
     {
-      "nombre": "BROMURO DE IPATROPIO 2 PUFFS CADA 8 HORAS",
+      "nombre": "Omeprazol 40 mg IV QD",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -94,7 +92,7 @@
       "nota": null
     },
     {
-      "nombre": "ESCITALOPRAM 10 MG VIA ORAL CADA DIA AM, P",
+      "nombre": "Heparina sódica 5000 UI SC QD.",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -107,7 +105,7 @@
       "nota": null
     },
     {
-      "nombre": "HEPARINA SODICA 5000 UI SC CADA DIA",
+      "nombre": "Risperidona 5 gotas AM y 10 gotas HS",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -120,7 +118,59 @@
       "nota": null
     },
     {
-      "nombre": "OMEPRAZOL 40 MG INTRAVENOSO CADA DIA",
+      "nombre": "Quetiapina 25 mg VO HS",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "Escitalopram 10 mg VO QD AM",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "Bromuro de ipratropio 2 puffs c/8h.",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "SUSPENDIDOS: Valsartán/Hidroclorotiazida (suspender)",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": true,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "Carvedilol (suspender).",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -137,7 +187,7 @@
     {
       "id": "PEND-13A-01",
       "tipo": "INTERCONSULTA",
-      "descripcion": "RESULTADO DE UROCULTIVO; REINTERCONSULTAR A INFECTOLOGÍA CON RESULTADOS",
+      "descripcion": "Recabar resultado de urocultivo y reinterconsultar a Infectología con resultados.",
       "prioridad": "URGENTE",
       "turno": "NOCTURNA_20_24",
       "horario_programado": null,
@@ -149,11 +199,11 @@
     {
       "id": "PEND-13A-02",
       "tipo": "LABORATORIO",
-      "descripcion": "LUNES 16/11/2026: BIOMETRÍA HEMÁTICA, PCR, ELECTROLITOS, FUNCIÓN RENAL",
-      "prioridad": "RUTINA",
+      "descripcion": "Revisar laboratorios de control del lunes 16/11/2026: BH, PCR, electrolitos y función renal.",
+      "prioridad": "CONTROL",
       "turno": "NOCTURNA_20_24",
       "horario_programado": null,
-      "es_visita_nocturna": false,
+      "es_visita_nocturna": true,
       "estado": "PENDIENTE",
       "responsable": null,
       "resultado_obtenido": null
@@ -161,39 +211,31 @@
     {
       "id": "PEND-13A-03",
       "tipo": "LABORATORIO",
-      "descripcion": "MEDIDAS HELP PARA PREVENCIÓN DE SÍNDROME CONFUSIONAL (GERIATRÍA)",
-      "prioridad": "RUTINA",
+      "descripcion": "Aplicar medidas HELP para prevención de síndrome confusional agudo (Geriatría).",
+      "prioridad": "URGENTE",
       "turno": "NOCTURNA_20_24",
       "horario_programado": null,
-      "es_visita_nocturna": false,
-      "estado": "PENDIENTE",
-      "responsable": null,
-      "resultado_obtenido": null
-    },
-    {
-      "id": "PEND-13A-04",
-      "tipo": "LABORATORIO",
-      "descripcion": "NO TRIBUTARIA DE MEDIDAS INVASIVAS / NO UTI / NO RCP",
-      "prioridad": "RUTINA",
-      "turno": "NOCTURNA_20_24",
-      "horario_programado": null,
-      "es_visita_nocturna": false,
+      "es_visita_nocturna": true,
       "estado": "PENDIENTE",
       "responsable": null,
       "resultado_obtenido": null
     }
   ],
-  "observaciones": [],
+  "observaciones": [
+    "TECHO TERAPÉUTICO: NO TRIBUTARIA DE MEDIDAS INVASIVAS / NO UTI / NO RCP. Revisar laboratorios del 16/11 (vigilar función renal y K+ dado uso de Furosemida 20 mg IV), verificar ajuste de dosis de Meropenem para TFGe 24.3 mL/min y mantener medidas anti-delirium (HELP)."
+  ],
   "laboratorios": [
     {
-      "fecha_hora": "2026-11-16",
-      "tipo_estudio": "Laboratorios / Gasometría",
+      "fecha_hora": "13/11/2026",
+      "tipo_estudio": "Laboratorio",
       "valores": {
-        "resumen": "13/11/2026 PCR: 280, PCT: 20.2 . LEU: 10.3, HG: 12, HCTO: 36, NEU: 8.7, PLAQ: 185.000. CLORO: 96, POTASIO: 3.3, SODIO: 132. . UREA: 90 CREA: 1.77 . EMO INFECCIOSO"
+        "resumen": "PCR 280 mg/L, Procalcitonina 20.2 ng/mL; Leucocitos 10.3 K/µL (Neu 8.7 K/µL), Hb 12.0 g/dL, Hto 36%, Plaquetas 185.000/µL; Urea 90 mg/dL, Creatinina 1.77 mg/dL; Na 132 mEq/L, Potasio 3.3 mEq/L, Cl 96 mEq/L; EMO infeccioso."
       },
       "alerta_critica": null
     }
   ],
   "cultivos": [],
-  "alertas_criticas": []
+  "alertas_criticas": [
+    "TECHO TERAPÉUTICO: NO TRIBUTARIA DE MEDIDAS INVASIVAS / NO UTI / NO RCP. Revisar laboratorios del 16/11 (vigilar función renal y K+ dado uso de Furosemida 20 mg IV), verificar ajuste de dosis de Meropenem para TFGe 24.3 mL/min y mantener medidas anti-delirium (HELP)."
+  ]
 }

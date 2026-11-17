@@ -5,32 +5,25 @@
   "nombre_completo": "OÑA TELLO JOSELYN CAROLINA",
   "hc": "1719421",
   "cedula": null,
-  "edad": "30 AÑOS",
+  "edad": "30 años",
   "sexo": null,
   "fecha_nacimiento": null,
   "fecha_ingreso": null,
-  "dias_hospitalizacion": null,
+  "dias_hospitalizacion": 20,
   "app": [
-    "ANTECEDENTES PATOLOGICOS PERSONALES",
-    "SINDROME DE GARDNER",
-    "ARTRITIS REUMATOIDE, POLIARTRITIS CCP POSITIVO (DG A LOS 22 AÑOS)",
-    "POLIPOMATOSIS ADENOMATOSA FAMILIAR HACE 14 AÑOS",
-    "FISTULA ANAL",
-    "OBSTRUCCIÓN INTESTINAL PARCIAL",
-    "ANEMIA CRÓNICA",
-    "TRASTORNO ELECTROLÍTICO CRÓNICO"
+    "Clínicos: Síndrome de Gardner; Polipomatosis adenomatosa familiar (hace 14 años, polipectomías c/6 meses); Artritis reumatoide / poliartritis Anti-CCP positivo (DG a los 22 años); Fístula anal; Obstrucción intestinal parcial; Anemia crónica; Trastorno electrolítico crónico; IVU Tumbarello 7 pts (abril 2026).",
+    "Quirúrgicos: Resección de lipoma en espalda (hace 3 años); Colectomía total + anastomosis íleo-recto + ileostomía (06/03/2023); Resección tumoral de pared + plastia y malla retromuscular; Laparotomías exploratorias (10/02/2025 y 16/02/2025)."
   ],
   "aqx": [],
   "alergias": [],
   "diagnosticos_activos": [
-    "INFECCIÓN O ABSCESO DE PARTES BLANDAS",
-    "INFECCIÓN VÍAS URINARIAS TUMBARELLO 5 PUNTOS EN RESOLUCIÓN",
-    "DOLOR CRÓNICO EXACERBADO",
-    "PROCTORRAGIA OAKLAND DE 20 PUNTOS SUPERADA",
-    "PROLONGACIÓN DE",
-    "TIEMPOS DE COAGULACIÓN **SUSPERADA**",
-    "ENFERMEDAD RENAL AGUDA SUPERADA *** SUPERADA**",
-    "REACCION AL ESTRES GRAVE Y TRASTORNOS DE ADAPTACIÓN"
+    "Infección o absceso de partes blandas.",
+    "Infección de vías urinarias (Tumbarello 5 puntos) en resolución (Proteus mirabilis).",
+    "Dolor crónico exacerbado.",
+    "Proctorragia (Oakland 20 puntos) superada.",
+    "Prolongación de tiempos de coagulación superada.",
+    "Enfermedad renal aguda superada.",
+    "Reacción al estrés grave y trastornos de adaptación."
   ],
   "diagnosticos_pasivos": [],
   "dieta": null,
@@ -38,7 +31,7 @@
   "ckd_epi": null,
   "medicaciones": [
     {
-      "nombre": "MEROPENEM 500 MG VIA ORAL CADA 12 HORAS FI:13/11/2026 (DIA 3/5) (CIE10: A419)",
+      "nombre": "TFGe CKD-EPI: 122 mL/min/1.73 m².",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -51,7 +44,7 @@
       "nota": null
     },
     {
-      "nombre": "AMIKACINA 1 GRAMO VÍA ORAL FI: 11/11/2026 D: 02/2 ***SUSPENDER***",
+      "nombre": "Meropenem 500 mg c/12h (FI: 13/11/2026, Día 3/5, CIE-10: A41.9)",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -64,7 +57,7 @@
       "nota": null
     },
     {
-      "nombre": "FLUCONAZOL 400 MG IV CADA DIA FI: 11/11/2026 D: 03/7",
+      "nombre": "Fluconazol 400 mg IV QD (FI: 11/11/2026, D: 3/7).",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -77,7 +70,7 @@
       "nota": null
     },
     {
-      "nombre": "OMEPRAZOL 40 MG IV CADA DIA",
+      "nombre": "Omeprazol 40 mg IV QD",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -90,7 +83,7 @@
       "nota": null
     },
     {
-      "nombre": "PARACETAMOL 1 GR IV CADA 8 HORAS",
+      "nombre": "Paracetamol 1 g IV c/8h",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -103,7 +96,7 @@
       "nota": null
     },
     {
-      "nombre": "FITOMENADIONA 10 MG IV CADA DIA",
+      "nombre": "Fitomenadiona 10 mg IV QD.",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -116,7 +109,7 @@
       "nota": null
     },
     {
-      "nombre": "MORFINA 35 MG + 96 CC DE SOLUCION SALINA 0.9% INTRAVENOSO, PASAR A 4CC/HORA",
+      "nombre": "Terapia del Dolor: Bomba de Morfina 35 mg + 96 cc SS 0.9% IV a 4 cc/h + rescates de Morfina 3.5 mg IV PRN dolor severo (máx. 3 rescates, reg",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -129,7 +122,7 @@
       "nota": null
     },
     {
-      "nombre": "MORFINA 3.5 MG INTRAVENOSO EN ESTE MOMENTO Y CASO DE DOLOR SEVERO, MAXIMO 3",
+      "nombre": "Ondansetrón 8 mg IV c/12h",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -142,7 +135,7 @@
       "nota": null
     },
     {
-      "nombre": "RESCATES, REGISTRAR EN SISTEMA PARA AJUSTE DE DOSIS BASAL",
+      "nombre": "Gabapentina 600 mg VO 21h00 y 300 mg VO HS.",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -155,7 +148,163 @@
       "nota": null
     },
     {
-      "nombre": "ONDANSETRON 8 MG INTRAVENOSO EN ESTE MOMENTO Y CADA 12 HORAS",
+      "nombre": "Psiquiatría: Sertralina 100 mg VO QD AM",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "Quetiapina 50 mg VO QD PM.",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "Conciliación habitual: Calcitriol 0.5 mcg VO QD",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "Calcio 450 mg VO c/8h",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "Citrato de magnesio 3000 mg c/8h",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "Espironolactona 25 mg VO QD",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "Prednisona 5 mg VO QD",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "Carvedilol 12.5 mg VO c/12h",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "Urocit-K 1 tab VO c/8h",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "Clonixinato de lisina/propinox VO PRN",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "Baby Derm c/8h.",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "SUSPENDIDOS: Ciprofloxacino 500 mg VO c/12h (suspender por resistencia)",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": true,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "Amikacina 1 g (D: 2/2, suspender).",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -172,7 +321,7 @@
     {
       "id": "PEND-10D-01",
       "tipo": "IMAGEN_PROCEDIMIENTO",
-      "descripcion": "PENDIENTE INFORME ECOGRAFIA DE PARTES BLANDAS DE CABEZ Y TORAX POSTERIOR",
+      "descripcion": "Recabar informe de ecografía de partes blandas de cabeza y tórax posterior.",
       "prioridad": "URGENTE",
       "turno": "NOCTURNA_20_24",
       "horario_programado": null,
@@ -184,7 +333,7 @@
     {
       "id": "PEND-10D-02",
       "tipo": "LABORATORIO",
-      "descripcion": "PENDIENTE TOMOGRAFIA SIMPLE DE CABEZA, TORAX Y PELVIS",
+      "descripcion": "Realizar tomografía simple de cabeza, tórax y pelvis.",
       "prioridad": "URGENTE",
       "turno": "NOCTURNA_20_24",
       "horario_programado": null,
@@ -195,32 +344,32 @@
     },
     {
       "id": "PEND-10D-03",
-      "tipo": "LABORATORIO",
-      "descripcion": "L: LABORATORIO CENTRAL 13/11/2026: BIOMETRIA, PCR, ELECTROLITOS,",
-      "prioridad": "RUTINA",
+      "tipo": "INTERCONSULTA",
+      "descripcion": "Seguimiento multidisciplinario por Clínica del Dolor, Coloproctología, Psiquiatría, Psicología, Cirugía Plástica, Reumatología y Comité de Bioética.",
+      "prioridad": "CONTROL",
       "turno": "NOCTURNA_20_24",
       "horario_programado": null,
-      "es_visita_nocturna": false,
+      "es_visita_nocturna": true,
       "estado": "PENDIENTE",
       "responsable": null,
       "resultado_obtenido": null
     },
     {
       "id": "PEND-10D-04",
-      "tipo": "LABORATORIO",
-      "descripcion": "UREA,CREATININA",
-      "prioridad": "RUTINA",
+      "tipo": "IMAGEN_PROCEDIMIENTO",
+      "descripcion": "Ecografía de partes blandas de cabeza y tórax posterior: Realizada, pendiente informe.",
+      "prioridad": "URGENTE",
       "turno": "NOCTURNA_20_24",
       "horario_programado": null,
-      "es_visita_nocturna": false,
+      "es_visita_nocturna": true,
       "estado": "PENDIENTE",
       "responsable": null,
       "resultado_obtenido": null
     },
     {
       "id": "PEND-10D-05",
-      "tipo": "INTERCONSULTA",
-      "descripcion": "VALORACIÓN Y SEGUIMIENTO POR EL COMITÉ DE BIOÉTICA",
+      "tipo": "IMAGEN_PROCEDIMIENTO",
+      "descripcion": "TAC simple de cabeza, tórax y pelvis: Pendiente realización/informe.",
       "prioridad": "URGENTE",
       "turno": "NOCTURNA_20_24",
       "horario_programado": null,
@@ -231,23 +380,36 @@
     }
   ],
   "observaciones": [
-    "C: INDICACIONES DE CLINICA DEL DOLOR",
-    "INDICACIONES DE COLOPROCTOLOGIA",
-    "INDICACIONES DE PSIQUIATRIA",
-    "INDICACIONES DE PSICOLOGIA",
-    "ORDENES DE CIRUGIA PLASTICA",
-    "O. VALORACION Y SEGUIMIENTO POR EL COMITE DE BIOETICA"
+    "Registrar estrictamente en el sistema cada rescate de Morfina 3.5 mg IV administrado para el ajuste de la infusión basal por Clínica del Dolor; vigilar sedación/frecuencia respiratoria, pérdidas por ileostomía y verificar en sistema que Meropenem esté prescrito por vía IV."
   ],
   "laboratorios": [
     {
-      "fecha_hora": "2026-11-16",
-      "tipo_estudio": "Laboratorios / Gasometría",
+      "fecha_hora": "16/10/2026",
+      "tipo_estudio": "Laboratorio",
       "valores": {
-        "resumen": "UROCULTIVO: MICROORGANISMO: Proteus mirabilis AMIKACINA SENSIBLE / 4 ug/mL CEFTRIAXONA SENSIBLE / <= 0,25 ug/mL Cefazolina (O) SENSIBLE / <= 4 ug/mL GENTAMICINA RESISTENTE / 8 ug/mL TRIMETOPRIMA/SULFA RESISTENTE / >= 320 ug/mL CIPROFLOXACINO RESISTENTE / >= 4 ug/mL Resultado: Positivo; Contaje de Colonias: > 100.000 UFC/ml;"
+        "resumen": "Leucocitos 8.56 K/µL (Neu 7.24, Linf 0.90, Mon 0.27), Hb 9.8 g/dL, Hto 31.2%, VCM 90.0 fL, Plaquetas 434.000/µL."
+      },
+      "alerta_critica": null
+    },
+    {
+      "fecha_hora": "17/11/2026",
+      "tipo_estudio": "Laboratorio",
+      "valores": {
+        "resumen": "Urocultivo: Proteus mirabilis >100.000 UFC/mL (Sensible a Amikacina <=4, Ceftriaxona <=0.25, Cefazolina <=4; Resistente a Ciprofloxacino >=4, Gentamicina 8, TMP/SMX >=320)."
+      },
+      "alerta_critica": null
+    },
+    {
+      "fecha_hora": "13/11/2026",
+      "tipo_estudio": "Laboratorio",
+      "valores": {
+        "resumen": "Solicitados BH, PCR, electrolitos, urea y creatinina en laboratorio central."
       },
       "alerta_critica": null
     }
   ],
   "cultivos": [],
-  "alertas_criticas": []
+  "alertas_criticas": [
+    "Registrar estrictamente en el sistema cada rescate de Morfina 3.5 mg IV administrado para el ajuste de la infusión basal por Clínica del Dolor; vigilar sedación/frecuencia respiratoria, pérdidas por ileostomía y verificar en sistema que Meropenem esté prescrito por vía IV."
+  ]
 }

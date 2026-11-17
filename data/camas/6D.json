@@ -3,27 +3,23 @@
   "area": "HOSPITALIZACION",
   "servicio_tratante": null,
   "nombre_completo": "FARINANGO ANDRADE JUAN MANUEL",
-  "hc": "N/D",
-  "cedula": null,
-  "edad": "88 AÑOS",
+  "hc": "601604",
+  "cedula": "1000364081",
+  "edad": "88 años",
   "sexo": null,
   "fecha_nacimiento": null,
   "fecha_ingreso": null,
-  "dias_hospitalizacion": null,
+  "dias_hospitalizacion": 6,
   "app": [
-    "HIPOTIROIDISMO",
-    "DIABETES TIPO 2",
-    "HIPERPLASIA PROSTÁTICA",
-    "COLECISTECTOMIA",
-    "CATARATA BILATERAL",
-    "LIPOMA EN BRAZO DERECHO"
+    "Clínicos: Hipotiroidismo; Diabetes mellitus tipo 2; Hiperplasia prostática.",
+    "Quirúrgicos: Colecistectomía; Catarata bilateral; Lipoma en brazo derecho."
   ],
   "aqx": [],
   "alergias": [],
   "diagnosticos_activos": [
-    "DERRAME PLEURAL GRADO 2",
-    "SINDROME CONSTITUCIONAL",
-    "COLECCIÓN SUBFRÉNICA EN ESTUDIO"
+    "Derrame pleural grado 2 (exudado drenado el 10/11/2026; alta por Cirugía Pulmonar).",
+    "Síndrome constitucional.",
+    "Colección subfrénica en estudio (secundaria a masa abdominal)."
   ],
   "diagnosticos_pasivos": [],
   "dieta": null,
@@ -31,7 +27,7 @@
   "ckd_epi": null,
   "medicaciones": [
     {
-      "nombre": "PARACETAMOL 1 GR IV CADA 8 HORAS",
+      "nombre": "TFGe CKD-EPI: 80.5 mL/min/1.73 m² (calculada con Cr 0.78 mg/dL del 12/11/2026).",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -44,7 +40,7 @@
       "nota": null
     },
     {
-      "nombre": "METOCLOPRAMIDA 10 MG IV PRN",
+      "nombre": "Dieta blanda gástrica con restricción de líquidos a 1000 cc/día",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -57,7 +53,7 @@
       "nota": null
     },
     {
-      "nombre": "FUROSEMIDA 40 MG IV 08H00 AM Y 20 MG IV 14H00",
+      "nombre": "DISH.",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -70,7 +66,7 @@
       "nota": null
     },
     {
-      "nombre": "CEFTRIAXONA 1 GR IV CADA 12 HORAS (D:5) FI:10/11/2026 CIE10: A065",
+      "nombre": "Ceftriaxona 1 g IV c/12h (FI: 10/11/2026, D: 5, CIE-10: A06.5)",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -83,7 +79,7 @@
       "nota": null
     },
     {
-      "nombre": "METRONIDAZOL 500 MG IV CADA 8 HORAS (D:5) FI:10/11/2026 CIE10: A065",
+      "nombre": "Metronidazol 500 mg IV c/8h (FI: 10/11/2026, D: 5, CIE-10: A06.5).",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -96,7 +92,7 @@
       "nota": null
     },
     {
-      "nombre": "LOSARTAN 50 MG VO QD",
+      "nombre": "Furosemida 40 mg IV 08h00 y 20 mg IV 14h00",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -109,7 +105,7 @@
       "nota": null
     },
     {
-      "nombre": "LEVOTIROXINA 75 MCG VO QD",
+      "nombre": "Paracetamol 1 g IV c/8h",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -122,7 +118,7 @@
       "nota": null
     },
     {
-      "nombre": "TAMSULOSINA 0,4 MG VO QD",
+      "nombre": "Metoclopramida 10 mg IV PRN.",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -135,7 +131,7 @@
       "nota": null
     },
     {
-      "nombre": "METFORMINA 500 MG VO QD *******SUSPENDIDO.******",
+      "nombre": "Medicación habitual: Losartán 50 mg VO QD",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -143,6 +139,45 @@
       "dias_tratamiento": null,
       "indicacion_cie10": null,
       "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "Levotiroxina 75 mcg VO QD",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "Tamsulosina 0.4 mg VO QD.",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "SUSPENDIDO: Metformina 500 mg VO QD.",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": true,
       "diferido": false,
       "prn": false,
       "nota": null
@@ -151,31 +186,76 @@
   "pendientes": [
     {
       "id": "PEND-6D-01",
-      "tipo": "LABORATORIO",
-      "descripcion": "TENSIÓN ARTERIAL: 98/52 MMHG, FRECUENCIA CARDÍACA:74 LPM, FRECUENCIA RESPIRATORIA: 19 RPM, SATURACIÓN DE OXÍGENO: 91% (CÁNULA NASAL CON FIO2 AL 24%), TEMPERATURA: 36 °C",
-      "prioridad": "RUTINA",
+      "tipo": "IMAGEN_PROCEDIMIENTO",
+      "descripcion": "Recabar informe oficial de TAC de tórax y abdomen realizada el 15/11/2026.",
+      "prioridad": "URGENTE",
       "turno": "NOCTURNA_20_24",
       "horario_programado": null,
-      "es_visita_nocturna": false,
+      "es_visita_nocturna": true,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
+    },
+    {
+      "id": "PEND-6D-02",
+      "tipo": "LABORATORIO",
+      "descripcion": "Gestionar trámite y turno para procedimiento diagnóstico/drenaje por Radiointervencionismo.",
+      "prioridad": "URGENTE",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": null,
+      "es_visita_nocturna": true,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
+    },
+    {
+      "id": "PEND-6D-03",
+      "tipo": "IMAGEN_PROCEDIMIENTO",
+      "descripcion": "TAC de abdomen previa: Describe colección subfrénica secundaria a masa.",
+      "prioridad": "URGENTE",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": null,
+      "es_visita_nocturna": true,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
+    },
+    {
+      "id": "PEND-6D-04",
+      "tipo": "IMAGEN_PROCEDIMIENTO",
+      "descripcion": "15/11/2026 (TAC de tórax y abdomen): Realizada, pendiente informe oficial.",
+      "prioridad": "URGENTE",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": null,
+      "es_visita_nocturna": true,
       "estado": "PENDIENTE",
       "responsable": null,
       "resultado_obtenido": null
     }
   ],
   "observaciones": [
-    "TAC DE ABDOMEN DESCRIBE COLECCIÓN SECUNDARIO A MASA, PD TRAMITE PARA EXAMENES POR RADIOINTERVENCIONISMO",
-    "DRENAN LIQUIDO PLEURAL 10/11/2026 (EXUDADI) CIRUGÍA PULMONAR ALTA"
+    "SV: TA 98/52 mmHg, FC 74 lpm, FR 19 rpm, SatO2 91% (cánula nasal FiO2 24%), T 36.0 °C. Vigilar presión arterial limítrofe (recibe Furosemida 60 mg/día + Losartán 50 mg VO), mantener restricción hídrica a 1000 cc/día y dar seguimiento al turno de Radiointervencionismo."
   ],
   "laboratorios": [
     {
-      "fecha_hora": "2026-11-16",
-      "tipo_estudio": "Laboratorios / Gasometría",
+      "fecha_hora": "10/11/2026",
+      "tipo_estudio": "Laboratorio",
       "valores": {
-        "resumen": "2026/11/12 PCR CUANTITATIVO ULTRASENSIBLE: 75.80 PROCALCITONINA LAB. CLÍNICO: 0.19 INR: 1.23 TIEMPO DE PROTROMBINA (TP): 13.3 TIEMPO DE TROMBOPLASTINA (TTP): 25.5 LEUCOCITOS (WBC): 4.65 HEMOGLOBINA (HGB): 13.7 HEMATOCRITO (HCT): 44.2 VOLUMEN CORP. MEDIO (MCV): 85.60 CONC. MEDIA HEMOG. (MCH): 26.6 LINFOCITOS: 0.78 NEUTROFILOS: 3.33 BASÓFILOS: 0.040 "
+        "resumen": "Líquido pleural drenado compatible con exudado."
+      },
+      "alerta_critica": null
+    },
+    {
+      "fecha_hora": "12/11/2026",
+      "tipo_estudio": "Laboratorio",
+      "valores": {
+        "resumen": "PCR cuantitativo ultrasensible 75.80 mg/L, Procalcitonina 0.19 ng/mL; TP 13.3 s, INR 1.23, TTP 25.5 s; Leucocitos 4.65 K/µL (Neu 3.33, Linf 0.78, Bas 0.04), Hb 13.7 g/dL, Hto 44.2%, VCM 85.6 fL, HCM 26.6 pg, Plaquetas 208.000/µL; Glucosa 142 mg/dL, BUN 21 mg/dL, Urea 45.7 mg/dL, Creatinina 0.78 mg/dL, Na 136.5 mEq/L, K 3.84 mEq/L, Cl 98 mEq/L."
       },
       "alerta_critica": null
     }
   ],
   "cultivos": [],
-  "alertas_criticas": []
+  "alertas_criticas": [
+    "SV: TA 98/52 mmHg, FC 74 lpm, FR 19 rpm, SatO2 91% (cánula nasal FiO2 24%), T 36.0 °C. Vigilar presión arterial limítrofe (recibe Furosemida 60 mg/día + Losartán 50 mg VO), mantener restricción hídrica a 1000 cc/día y dar seguimiento al turno de Radiointervencionismo."
+  ]
 }

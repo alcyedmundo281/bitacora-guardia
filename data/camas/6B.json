@@ -1,0 +1,199 @@
+{
+  "cama": "6B",
+  "area": "HOSPITALIZACION",
+  "servicio_tratante": null,
+  "nombre_completo": "CABEZAS ALMEIDA VÍCTOR MANUEL",
+  "hc": "2067347",
+  "cedula": null,
+  "edad": "78 años",
+  "sexo": null,
+  "fecha_nacimiento": null,
+  "fecha_ingreso": null,
+  "dias_hospitalizacion": 7,
+  "app": [
+    "Clínicos: Hipertensión arterial; Cáncer de próstata; Insuficiencia renal crónica en diálisis bisemanal.",
+    "Quirúrgicos: Apendicectomía."
+  ],
+  "aqx": [],
+  "alergias": [],
+  "diagnosticos_activos": [
+    "Sepsis de foco abdominal.",
+    "Celulitis de otros sitios (CIE-10: L03.8), LRINEC 4 puntos al momento.",
+    "Enfermedad renal crónica KDIGO 5 (CIE-10: N18.5).",
+    "Úlcera de decúbito y por presión sacrocoxígea (CIE-10: L89.9) en curaciones con Clínica de Heridas.",
+    "Trombocitopenia severa (80.000/µL)."
+  ],
+  "diagnosticos_pasivos": [],
+  "dieta": null,
+  "hidratacion": null,
+  "ckd_epi": null,
+  "medicaciones": [
+    {
+      "nombre": "TFGe CKD-EPI: 8.1 mL/min/1.73 m² (calculada con Cr 6.37 mg/dL del 15/11/2026; ERC G5 con negativa firmada para hemodiálisis).",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "DISH + cuidados generales.",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "Meropenem 1 g IV c/48h (FI: 11/11/2026, Día 4, CIE-10: B99).",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "Tramadol 50 mg IV c/12h",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "Metoclopramida 10 mg IV c/12h.",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "SUSPENDIDOS: Amikacina 1 g IV post-diálisis DU (FI: 09/11/2026, suspender)",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": true,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "Cefepime 1 g IV STAT y post-diálisis (FI: 09/11/2026, suspender)",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "Amlodipino 10 mg VO QD (suspender por tensiones arteriales bajas).",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    }
+  ],
+  "pendientes": [
+    {
+      "id": "PEND-6B-01",
+      "tipo": "INTERCONSULTA",
+      "descripcion": "Recabar respuesta de interconsulta a Cuidados Paliativos.",
+      "prioridad": "URGENTE",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": null,
+      "es_visita_nocturna": true,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
+    },
+    {
+      "id": "PEND-6B-02",
+      "tipo": "INTERCONSULTA",
+      "descripcion": "Cumplir indicaciones de Clínica del Dolor y curaciones sacrocoxígeas por Clínica de Heridas.",
+      "prioridad": "URGENTE",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": null,
+      "es_visita_nocturna": true,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
+    },
+    {
+      "id": "PEND-6B-03",
+      "tipo": "IMAGEN_PROCEDIMIENTO",
+      "descripcion": "11/11/2026 (Imagen de pelvis): Masa pélvica heterogénea de 10.7 × 10.6 × 10.2 cm (AP × T × CC) que infiltra vejiga y pared anterior del recto; líquido libre en espacios subfrénicos y corredera parietocólica.",
+      "prioridad": "URGENTE",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": null,
+      "es_visita_nocturna": true,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
+    }
+  ],
+  "observaciones": [
+    "SV PM: TA 116/61 mmHg, FC 95 lpm, FR 17 rpm, T 36.0 °C, SatO2 95% (FiO2 28%). Portador de sonda vesical; Balance hídrico: Ingesta 560 mL / Eliminación 200 mL / Balance +360 mL; edema en miembros inferiores. IMPORTANTE: Cuenta con negativa firmada para hemodiálisis; priorizar confort, control analgésico y vigilancia de diuresis y presión arterial."
+  ],
+  "laboratorios": [
+    {
+      "fecha_hora": "11/11/2026 (13:44)",
+      "tipo_estudio": "Laboratorio",
+      "valores": {
+        "resumen": "Leucocitos 5.81 K/µL (Neu 5.06, Linf 0.45, Mon 0.19, Eos 0.01), Hb 10.8 g/dL, Hto 33.4%, VCM 97.9 fL, HCM 31.7 pg, CHCM 32.3 g/dL, Plaquetas 98.000/µL (cálculo manual 130.000/µL, VPM 11.9 fL); Ferritina 1295.0 ng/mL, Hierro sérico 21.7 µg/dL, Transferrina 57.0 mg/dL, Capacidad de fijación de hierro 47.4."
+      },
+      "alerta_critica": null
+    },
+    {
+      "fecha_hora": "15/11/2026",
+      "tipo_estudio": "Laboratorio",
+      "valores": {
+        "resumen": "PCR 132 mg/L, Leucocitos 5.88 K/µL, Hb 10.1 g/dL, Plaquetas 80.000/µL, Urea 184 mg/dL, Creatinina 6.37 mg/dL, Na 137.7 mEq/L, K 3.91 mEq/L, Cl 100 mEq/L."
+      },
+      "alerta_critica": null
+    }
+  ],
+  "cultivos": [],
+  "alertas_criticas": [
+    "SV PM: TA 116/61 mmHg, FC 95 lpm, FR 17 rpm, T 36.0 °C, SatO2 95% (FiO2 28%). Portador de sonda vesical; Balance hídrico: Ingesta 560 mL / Eliminación 200 mL / Balance +360 mL; edema en miembros inferiores. IMPORTANTE: Cuenta con negativa firmada para hemodiálisis; priorizar confort, control analgésico y vigilancia de diuresis y presión arterial."
+  ]
+}

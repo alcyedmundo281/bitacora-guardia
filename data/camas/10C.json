@@ -2,31 +2,26 @@
   "cama": "10C",
   "area": "HOSPITALIZACION",
   "servicio_tratante": null,
-  "nombre_completo": "BENAVIDES ANA LUCIA C",
+  "nombre_completo": "BENAVIDES ANA LUCÍA",
   "hc": "639501",
   "cedula": "1000997724",
-  "edad": "70 años",
+  "edad": "70 años 5 días",
   "sexo": null,
   "fecha_nacimiento": null,
   "fecha_ingreso": null,
-  "dias_hospitalizacion": null,
+  "dias_hospitalizacion": 5,
   "app": [
-    "FRACTURA DE COSTILLAS DE LADO IZQUIERDO",
-    "INSUFICIENCIA CARDIACA CONGESTIVA",
-    "ENFERMEDAD RENAL CRÓNICA",
-    "HIPERTENSIÓN PORTAL",
-    "FIBROMIALGIA",
-    "HIPOTIROIDISMO",
-    "GOTA",
-    "ISQUEMIA MESENTÉRICA SEGMENTARIA"
+    "Clínicos: Fractura costal izquierda; Insuficiencia cardíaca congestiva; Enfermedad renal crónica; Hipertensión portal; Fibromialgia; Hipotiroidismo; Gota; Isquemia mesentérica segmentaria; Trombocitosis esencial (DG 2023, JAK2 mutado 08/2023); Hemorragia digestiva variceal (Blatchford 8 pts, 14/12/2024); Várices esofagogástricas tipo I y II, várices gástricas en fondo, gastropatía congestiva, úlceras antrales Forrest III, várices duodenales y cavernomatosis (14/12/2024); Nódulos pulmonares en estudio desde abril 2026; Antecedentes de cáncer de mama y cérvix."
   ],
   "aqx": [],
   "alergias": [],
   "diagnosticos_activos": [
-    "DERRAME PLEURAL TABICADO IZQUIERDO",
-    "NEUMONÍA ASOCIADA A CUIDADOS DE LA SALUD",
-    "DESCARTAR PROGRESIÓN DE PATOLOGIA ONCOLOGICA (CANCER DE MAMA/CERVIX)",
-    "PORTADORA DE YEYUNOSTOMÍA"
+    "Derrame pleural tabicado izquierdo, posvideotoracoscopia + decorticación pleural + tubo torácico izquierdo (15/11/2026).",
+    "Neumonía asociada a cuidados de salud.",
+    "Ascitis en estudio, pendiente paracentesis evacuatoria.",
+    "Descartar progresión de patología oncológica (antecedente de Ca de mama y cérvix).",
+    "Dolor torácico agudo posquirúrgico.",
+    "Portadora de yeyunostomía."
   ],
   "diagnosticos_pasivos": [],
   "dieta": null,
@@ -34,7 +29,7 @@
   "ckd_epi": null,
   "medicaciones": [
     {
-      "nombre": "MEROPENEM 1G IV CADA 8 HORAS (FI: 11/11/2026 D4 CIE 10 B99)",
+      "nombre": "TFGe CKD-EPI: 88.5 mL/min/1.73 m² (Cr 0.72 mg/dL).",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -47,7 +42,7 @@
       "nota": null
     },
     {
-      "nombre": "PARACETAMOL 1 GR IV CADA 8 HORAS",
+      "nombre": "Meropenem 1 g IV c/8h (FI: 11/11/2026, D: 5/5).",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -60,7 +55,7 @@
       "nota": null
     },
     {
-      "nombre": "ENOXAPARINA 40 MG SC CADA DIA***SUSPENDER*** RETOMAR 12 HORAS POSTERIOR A",
+      "nombre": "Enoxaparina 40 mg SC QD (verificar reinicio 12h post-procedimiento quirúrgico).",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -73,7 +68,33 @@
       "nota": null
     },
     {
-      "nombre": "METAMIZOL 1 GR PRN",
+      "nombre": "Furosemida 20 mg IV c/8h",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "Paracetamol 1 g IV PRN.",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "Tramadol 300 mg en 100 mL de SS 0.9% pasar en bomba IV a 4 mL/h.",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -89,12 +110,12 @@
   "pendientes": [
     {
       "id": "PEND-10C-01",
-      "tipo": "LABORATORIO",
-      "descripcion": "INDICACIONES DE CIRUGÍA PULMONAR (POSTQUIRÚRGICO, TUBO TORÁCICO IZQUIERDO 28 FR)",
-      "prioridad": "RUTINA",
+      "tipo": "IMAGEN_PROCEDIMIENTO",
+      "descripcion": "Realizar TAC de tórax, abdomen y pelvis simple.",
+      "prioridad": "URGENTE",
       "turno": "NOCTURNA_20_24",
       "horario_programado": null,
-      "es_visita_nocturna": false,
+      "es_visita_nocturna": true,
       "estado": "PENDIENTE",
       "responsable": null,
       "resultado_obtenido": null
@@ -102,11 +123,11 @@
     {
       "id": "PEND-10C-02",
       "tipo": "IMAGEN_PROCEDIMIENTO",
-      "descripcion": "RESULTADOS DE CITOLOGÍA DE LÍQUIDO PLEURAL, HISTOPATOLÓGICO DE PLEURA PARIETAL Y CULTIVO DE LÍQUIDO PLEURAL Y GLERA PLEUROPULMONAR",
-      "prioridad": "RUTINA",
+      "descripcion": "Ecografía abdominal para identificar bolsillo y realizar paracentesis evacuatoria guiada por ecografía.",
+      "prioridad": "URGENTE",
       "turno": "NOCTURNA_20_24",
       "horario_programado": null,
-      "es_visita_nocturna": false,
+      "es_visita_nocturna": true,
       "estado": "PENDIENTE",
       "responsable": null,
       "resultado_obtenido": null
@@ -114,11 +135,11 @@
     {
       "id": "PEND-10C-03",
       "tipo": "LABORATORIO",
-      "descripcion": "MEROPENEM 1 G INTRAVENOSO CADA 8 HORAS DÍA 4 (INICIO 11/11/2026)",
-      "prioridad": "RUTINA",
+      "descripcion": "Colocación de sonda vesical para control de diuresis.",
+      "prioridad": "CONTROL",
       "turno": "NOCTURNA_20_24",
       "horario_programado": null,
-      "es_visita_nocturna": false,
+      "es_visita_nocturna": true,
       "estado": "PENDIENTE",
       "responsable": null,
       "resultado_obtenido": null
@@ -126,11 +147,11 @@
     {
       "id": "PEND-10C-04",
       "tipo": "LABORATORIO",
-      "descripcion": "REINICIAR ENOXAPARINA 12 HORAS POSTERIOR A PROCEDIMIENTO",
-      "prioridad": "RUTINA",
+      "descripcion": "Solicitar perfil hepático, albúmina, perfil lipídico, gasometría y dímero D.",
+      "prioridad": "URGENTE",
       "turno": "NOCTURNA_20_24",
       "horario_programado": null,
-      "es_visita_nocturna": false,
+      "es_visita_nocturna": true,
       "estado": "PENDIENTE",
       "responsable": null,
       "resultado_obtenido": null
@@ -138,20 +159,20 @@
     {
       "id": "PEND-10C-05",
       "tipo": "LABORATORIO",
-      "descripcion": "PROBAR TOLERANCIA ORAL POSTERIOR A PROCEDIMIENTO",
-      "prioridad": "RUTINA",
+      "descripcion": "Recabar resultados de laboratorio central, citología, histopatología y cultivo de líquido pleural.",
+      "prioridad": "URGENTE",
       "turno": "NOCTURNA_20_24",
       "horario_programado": null,
-      "es_visita_nocturna": false,
+      "es_visita_nocturna": true,
       "estado": "PENDIENTE",
       "responsable": null,
       "resultado_obtenido": null
     },
     {
       "id": "PEND-10C-06",
-      "tipo": "LABORATORIO",
-      "descripcion": "BIOMETRÍA, UREA, CREATININA Y ELECTROLITOS STAT",
-      "prioridad": "STAT",
+      "tipo": "INTERCONSULTA",
+      "descripcion": "Seguimiento por Cirugía Pulmonar y optimización de analgesia por Clínica del Dolor.",
+      "prioridad": "CONTROL",
       "turno": "NOCTURNA_20_24",
       "horario_programado": null,
       "es_visita_nocturna": true,
@@ -161,45 +182,52 @@
     },
     {
       "id": "PEND-10C-07",
-      "tipo": "LABORATORIO",
-      "descripcion": "LUNES 16/11/2026: BIOMETRÍA, QUÍMICA, ELECTROLITOS, GLUCOSA, PCR, PROCALCITONINA",
-      "prioridad": "RUTINA",
+      "tipo": "IMAGEN_PROCEDIMIENTO",
+      "descripcion": "15/11/2026 (Videotoracoscopia + decorticación pleural izquierda): Hallazgos de paquipleuritis y atrapamiento del lóbulo inferior izquierdo; se logra expansión pulmonar completa.",
+      "prioridad": "URGENTE",
       "turno": "NOCTURNA_20_24",
       "horario_programado": null,
-      "es_visita_nocturna": false,
+      "es_visita_nocturna": true,
       "estado": "PENDIENTE",
       "responsable": null,
       "resultado_obtenido": null
     },
     {
       "id": "PEND-10C-08",
-      "tipo": "LABORATORIO",
-      "descripcion": "INDICACIONES DE GASTROENTEROLOGÍA: MAGALDRATO MÁS SIMETICONA 10 ML VÍA ORAL 30 MINUTOS DESPUÉS DE CADA COMIDA PRINCIPAL",
-      "prioridad": "RUTINA",
+      "tipo": "IMAGEN_PROCEDIMIENTO",
+      "descripcion": "Pendientes: TAC de tórax, abdomen y pelvis simple, y ecografía abdominal para marcaje de paracentesis.",
+      "prioridad": "URGENTE",
       "turno": "NOCTURNA_20_24",
       "horario_programado": null,
-      "es_visita_nocturna": false,
-      "estado": "PENDIENTE",
-      "responsable": null,
-      "resultado_obtenido": null
-    },
-    {
-      "id": "PEND-10C-09",
-      "tipo": "INTERCONSULTA",
-      "descripcion": "SEGUIMIENTO POR NEUMOLOGÍA Y CIRUGÍA GENERAL",
-      "prioridad": "RUTINA",
-      "turno": "NOCTURNA_20_24",
-      "horario_programado": null,
-      "es_visita_nocturna": false,
+      "es_visita_nocturna": true,
       "estado": "PENDIENTE",
       "responsable": null,
       "resultado_obtenido": null
     }
   ],
   "observaciones": [
-    "HOY PROCEDIIEMINTO POR CIRUGIA PULMONAR"
+    "SV: PA 91/57 mmHg, FC 99 lpm, SatO2 91% con FiO2 28%. Tubo torácico izquierdo con débito serohemático de 190 mL; edema periférico +/++++ y abdomen distendido. OBSERVACIÓN IMPORTANTE GUARDIA PM: Verificar el reinicio de Enoxaparina 40 mg SC (suspendida por cirugía para reinicio 12h después) y vigilar estrechamente presión arterial (91/57 mmHg), diuresis y débito del tubo torácico por riesgo de hipovolemia intravascular o sangrado posquirúrgico."
   ],
-  "laboratorios": [],
+  "laboratorios": [
+    {
+      "fecha_hora": "17/11/2026",
+      "tipo_estudio": "Laboratorio",
+      "valores": {
+        "resumen": "Líquido pleural: Hemorrágico, LDH 618 U/L, Leucocitos 654/µL."
+      },
+      "alerta_critica": null
+    },
+    {
+      "fecha_hora": "17/11/2026",
+      "tipo_estudio": "Laboratorio",
+      "valores": {
+        "resumen": "Control reciente: Leucocitos 10.230/µL, Hb 10.5 g/dL, Plaquetas 262.000/µL; Urea 43 mg/dL, Creatinina 0.72 mg/dL; Albúmina previa 2.5 g/dL."
+      },
+      "alerta_critica": null
+    }
+  ],
   "cultivos": [],
-  "alertas_criticas": []
+  "alertas_criticas": [
+    "SV: PA 91/57 mmHg, FC 99 lpm, SatO2 91% con FiO2 28%. Tubo torácico izquierdo con débito serohemático de 190 mL; edema periférico +/++++ y abdomen distendido. OBSERVACIÓN IMPORTANTE GUARDIA PM: Verificar el reinicio de Enoxaparina 40 mg SC (suspendida por cirugía para reinicio 12h después) y vigilar estrechamente presión arterial (91/57 mmHg), diuresis y débito del tubo torácico por riesgo de hipovolemia intravascular o sangrado posquirúrgico."
+  ]
 }

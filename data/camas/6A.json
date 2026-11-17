@@ -2,30 +2,24 @@
   "cama": "6A",
   "area": "HOSPITALIZACION",
   "servicio_tratante": null,
-  "nombre_completo": "RODRIGUEZ MORENO SEGUNDO EZEQUIEL",
+  "nombre_completo": "RODRÍGUEZ MORENO SEGUNDO EZEQUIEL",
   "hc": "2013397",
   "cedula": "1709777906",
-  "edad": "59 AÑO",
+  "edad": "59 años",
   "sexo": null,
   "fecha_nacimiento": null,
   "fecha_ingreso": null,
-  "dias_hospitalizacion": null,
+  "dias_hospitalizacion": 13,
   "app": [
-    "HIPOTIROIDISMO",
-    "HIPERTENSIÓN ARTERIAL",
-    "NEUMONIA ASOCIADA A LA COMUNIDAD FINALES DE OCTUBRE/2026, ENVIADO CON ANTIBIOTICOTERAPIA VIA ORAL + INHALADORES",
-    "HIPERTENSIÓN ARTERIAL",
-    "ARTRITIS REUMATOIDE EN SEGUIMIENTO POR REUMATOLOGÍA IESS DISPENSARIO",
-    "EN REVALORACIÓN AL MOMENTO",
-    "NEUMONIA HACE DOS AÑOS"
+    "Clínicos: Hipotiroidismo; Hipertensión arterial; Artritis reumatoide en seguimiento por Reumatología IESS dispensario (en revaloración actual); Neumonía asociada a la comunidad a finales de octubre/2026 (tratada con antibioticoterapia VO + inhaladores); Neumonía hace 2 años."
   ],
   "aqx": [],
   "alergias": [],
   "diagnosticos_activos": [
-    "INSUFICIENCIA RESPIRATORIA",
-    "NEUMONIA ADQUIRIDA EN LA COMUNIDAD. CIE 10: J159 SUPERADA",
-    "CHOQUE SÉPTICO DE FOCO PULMONAR SUPERADO CIE 10: R572",
-    "LESIÓN RENAL AGUDA KDIGO C3 CIE-10: N179 SUPERADO"
+    "Insuficiencia respiratoria (actualmente sin requerimiento de oxígeno suplementario, en terapia respiratoria).",
+    "Neumonía adquirida en la comunidad (CIE-10: J15.9) superada.",
+    "Choque séptico de foco pulmonar (CIE-10: R57.2) superado.",
+    "Lesión renal aguda KDIGO C3 (CIE-10: N17.9) superada."
   ],
   "diagnosticos_pasivos": [],
   "dieta": null,
@@ -33,7 +27,7 @@
   "ckd_epi": null,
   "medicaciones": [
     {
-      "nombre": "FUROSEMIDA 10 MG IV 08H00 Y 14H00",
+      "nombre": "TFGe CKD-EPI: 109.2 mL/min/1.73 m² (calculada con Cr 0.55 mg/dL del 10/11/2026).",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -46,7 +40,7 @@
       "nota": null
     },
     {
-      "nombre": "PARACETAMOL 1 GRAMO VIA ORAL CADA 8 HORAS",
+      "nombre": "Furosemida 10 mg IV 08h00 y 14h00",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -59,7 +53,7 @@
       "nota": null
     },
     {
-      "nombre": "OMEPRAZOL 40 MILIGRAMOS INTRAVENOSO CADA DIA",
+      "nombre": "Omeprazol 40 mg IV QD",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -72,7 +66,7 @@
       "nota": null
     },
     {
-      "nombre": "ENOXAPARINA 60 MG APLICAR SUBCUTANEO, CADA DIA",
+      "nombre": "Enoxaparina 60 mg SC QD.",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -85,7 +79,7 @@
       "nota": null
     },
     {
-      "nombre": "LEVOTIROXINA 50 MICROGRAMO VIA ORAL CADA DIA 06:00",
+      "nombre": "Paracetamol 1 g VO c/8h",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -98,7 +92,7 @@
       "nota": null
     },
     {
-      "nombre": "TRAMADOL 50 MILIGRAMOS INTRAVENOSO POR RAZONES NECESARIAS",
+      "nombre": "Tramadol 50 mg IV PRN",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -111,7 +105,7 @@
       "nota": null
     },
     {
-      "nombre": "METOCLOPRAMIDA 10 MILIGRAMOS INTRAVENOSO POR RAZONES NECESARIAS",
+      "nombre": "Metoclopramida 10 mg IV PRN.",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -124,7 +118,7 @@
       "nota": null
     },
     {
-      "nombre": "AMLODIPINO 5 MG VO QD",
+      "nombre": "Levotiroxina 50 mcg VO QD (06h00)",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -137,7 +131,7 @@
       "nota": null
     },
     {
-      "nombre": "LOSARTAN 50 MG VO QD",
+      "nombre": "Amlodipino 5 mg VO QD",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -150,7 +144,59 @@
       "nota": null
     },
     {
-      "nombre": "METOTREXATO 15 MILIGRAMO / SEMANA ***SUSPENDE HACE 2 SEMANAS***",
+      "nombre": "Losartán 50 mg VO QD.",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "Hidroxicloroquina 200 mg VO QD",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "Urea 10% semisólido cutáneo aplicar tópico BID por 15 días en manos (Dermatología).",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "SUSPENDIDOS: Metotrexato 15 mg/semana (suspendido hace 2 semanas)",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": true,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "Ácido fólico 5 mg/semana (suspender).",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -167,7 +213,7 @@
     {
       "id": "PEND-6A-01",
       "tipo": "IMAGEN_PROCEDIMIENTO",
-      "descripcion": "RECOLECCIÓN DE PROTEÍNA EN ORINA DE 24 HORAS (INICIO 15/11/2026 07H00, PROCESAR 16/11/2026, ORDEN NO. 34992683)",
+      "descripcion": "Procesar recolección de proteína en orina de 24 horas (iniciada 15/11/2026 07h00, procesar 16/11/2026, Orden No. 34992683).",
       "prioridad": "URGENTE",
       "turno": "NOCTURNA_20_24",
       "horario_programado": null,
@@ -179,7 +225,7 @@
     {
       "id": "PEND-6A-02",
       "tipo": "LABORATORIO",
-      "descripcion": "RESULTADOS POR DERIVACIÓN: ANA POR INMUNOFLUORESCENCIA, ANTI-DNA, ANTI-RO, ANTI-LA, ANTI-CCP (PENDIENTE CÓDIGO)",
+      "descripcion": "Recabar resultados por derivación: ANA por IFI, Anti-DNA, Anti-Ro, Anti-La, Anti-CCP (entregado 04/11/2026, pendiente código) y Quantiferon TB (entregado 12/11/2026).",
       "prioridad": "URGENTE",
       "turno": "NOCTURNA_20_24",
       "horario_programado": null,
@@ -191,32 +237,32 @@
     {
       "id": "PEND-6A-03",
       "tipo": "LABORATORIO",
-      "descripcion": "RESULTADO DE QUANTIFERON TB (DERIVACIÓN, ENTREGADO 12/11/2026)",
-      "prioridad": "RUTINA",
+      "descripcion": "Revisar exámenes solicitados por Reumatología (Orden No. 34956973) y por servicio base (FR, Anticoagulante lúpico, C3, C4 — Orden No. 34926920).",
+      "prioridad": "URGENTE",
       "turno": "NOCTURNA_20_24",
       "horario_programado": null,
-      "es_visita_nocturna": false,
+      "es_visita_nocturna": true,
       "estado": "PENDIENTE",
       "responsable": null,
       "resultado_obtenido": null
     },
     {
       "id": "PEND-6A-04",
-      "tipo": "INTERCONSULTA",
-      "descripcion": "EXÁMENES DE LABORATORIO SOLICITADOS POR REUMATOLOGÍA (ORDEN NO. 34956973)",
-      "prioridad": "RUTINA",
+      "tipo": "IMAGEN_PROCEDIMIENTO",
+      "descripcion": "Recabar informe oficial de TAC de tórax.",
+      "prioridad": "URGENTE",
       "turno": "NOCTURNA_20_24",
       "horario_programado": null,
-      "es_visita_nocturna": false,
+      "es_visita_nocturna": true,
       "estado": "PENDIENTE",
       "responsable": null,
       "resultado_obtenido": null
     },
     {
       "id": "PEND-6A-05",
-      "tipo": "IMAGEN_PROCEDIMIENTO",
-      "descripcion": "INFORME DE TAC DE TÓRAX",
-      "prioridad": "URGENTE",
+      "tipo": "INTERCONSULTA",
+      "descripcion": "Comunicar valoración por Neumología (evaluación de oxígeno domiciliario) y seguimiento por Reumatología.",
+      "prioridad": "CONTROL",
       "turno": "NOCTURNA_20_24",
       "horario_programado": null,
       "es_visita_nocturna": true,
@@ -226,81 +272,9 @@
     },
     {
       "id": "PEND-6A-06",
-      "tipo": "LABORATORIO",
-      "descripcion": "C: COMUNICAR",
-      "prioridad": "RUTINA",
-      "turno": "NOCTURNA_20_24",
-      "horario_programado": null,
-      "es_visita_nocturna": false,
-      "estado": "PENDIENTE",
-      "responsable": null,
-      "resultado_obtenido": null
-    },
-    {
-      "id": "PEND-6A-07",
-      "tipo": "INTERCONSULTA",
-      "descripcion": "VALORACIÓN POR NEUMOLOGÍA",
+      "tipo": "IMAGEN_PROCEDIMIENTO",
+      "descripcion": "TAC de tórax: Realizada, pendiente informe oficial.",
       "prioridad": "URGENTE",
-      "turno": "NOCTURNA_20_24",
-      "horario_programado": null,
-      "es_visita_nocturna": true,
-      "estado": "PENDIENTE",
-      "responsable": null,
-      "resultado_obtenido": null
-    },
-    {
-      "id": "PEND-6A-08",
-      "tipo": "LABORATORIO",
-      "descripcion": "INICIO DE OXIGENO DOMICILIARIO",
-      "prioridad": "RUTINA",
-      "turno": "NOCTURNA_20_24",
-      "horario_programado": null,
-      "es_visita_nocturna": false,
-      "estado": "PENDIENTE",
-      "responsable": null,
-      "resultado_obtenido": null
-    },
-    {
-      "id": "PEND-6A-09",
-      "tipo": "INTERCONSULTA",
-      "descripcion": "REUMATOLOGÍA",
-      "prioridad": "RUTINA",
-      "turno": "NOCTURNA_20_24",
-      "horario_programado": null,
-      "es_visita_nocturna": false,
-      "estado": "PENDIENTE",
-      "responsable": null,
-      "resultado_obtenido": null
-    },
-    {
-      "id": "PEND-6A-10",
-      "tipo": "INTERCONSULTA",
-      "descripcion": "INDICACIONES DE DERMATOLOGÍA",
-      "prioridad": "RUTINA",
-      "turno": "NOCTURNA_20_24",
-      "horario_programado": null,
-      "es_visita_nocturna": false,
-      "estado": "PENDIENTE",
-      "responsable": null,
-      "resultado_obtenido": null
-    },
-    {
-      "id": "PEND-6A-11",
-      "tipo": "LABORATORIO",
-      "descripcion": "UREA 10% SEMISÓLIDO CUTANEO APLICAR TOPICO BID POR 15 DIAS EN MANOS",
-      "prioridad": "RUTINA",
-      "turno": "NOCTURNA_20_24",
-      "horario_programado": null,
-      "es_visita_nocturna": false,
-      "estado": "PENDIENTE",
-      "responsable": null,
-      "resultado_obtenido": null
-    },
-    {
-      "id": "PEND-6A-12",
-      "tipo": "LABORATORIO",
-      "descripcion": "PROXIMO CONTROL: 06/11/2026",
-      "prioridad": "CONTROL",
       "turno": "NOCTURNA_20_24",
       "horario_programado": null,
       "es_visita_nocturna": true,
@@ -310,23 +284,36 @@
     }
   ],
   "observaciones": [
-    "LABORATORIOS SOLICITADOS POR REUMATOLOGÍA:",
-    "FACTOR REUMATOIDEO 13.1",
-    "C3 0.85",
-    "C4 0.07",
-    "ANTICOAGULANTE LUPICO 1.08",
-    "EXAMENES DE LABORATORIO POR SERVICIO BASE: FACTOR REUMATOIDE, ANTICOAGULANTE"
+    "Paciente actualmente sin requerimiento de oxígeno suplementario, en terapia respiratoria. Confirmar envío y procesamiento de orina de 24h (Orden 34992683), vigilar patrón respiratorio nocturno e insistir en valoración por Neumología."
   ],
   "laboratorios": [
     {
-      "fecha_hora": "2026-11-16",
-      "tipo_estudio": "Laboratorios / Gasometría",
+      "fecha_hora": "04/11/2026 (Reumatología)",
+      "tipo_estudio": "Laboratorio",
       "valores": {
-        "resumen": "10/11/2026 ÁCIDO LÁCTICO.: 1.0 BE.: 5.5 Ca: 1.1 Cl: 100.0 COHb: 1.9 Glu: 130.0 HCO3: 28.8 Hct: 33.7 K.: 3.9 MetHb.: 0.2 Na.: 137.0 O2Hb: 61.8 O2SAT.: 63.1 PCO2.: 37.6 PHS: 7.493 PO2: 32.6 TCO2.: 30.0 Leucocitos (WBC)..: 4.98 Hemoglobina (HGB): 10.6 Hematocrito (HCT).: 33.0 Volumen corp. medio (MCV).: 85.40 Conc.media hemog.(MCH)..........: 27.4 Con"
+        "resumen": "Factor Reumatoideo 13.1, C3 0.85, C4 0.07 (hipocomplementemia), Anticoagulante lúpico 1.08."
+      },
+      "alerta_critica": null
+    },
+    {
+      "fecha_hora": "10/11/2026 (Gasometría)",
+      "tipo_estudio": "Laboratorio",
+      "valores": {
+        "resumen": "pH 7.493, pCO2 37.6 mmHg, pO2 32.6 mmHg, HCO3 28.8 mmol/L, TCO2 30.0, BE 5.5, SatO2 63.1%, Lactato 1.0 mmol/L, Glucosa 130 mg/dL, Ca iónico 1.1, Na 137.0, K 3.9, Cl 100.0."
+      },
+      "alerta_critica": null
+    },
+    {
+      "fecha_hora": "10/11/2026 (BH y Química)",
+      "tipo_estudio": "Laboratorio",
+      "valores": {
+        "resumen": "Leucocitos 4.98 K/µL (Neu 4.39 / 88.0%, Linf 0.44 / 8.9%, Mon 0.10 / 2.1%, IG 1.0%), Hb 10.6 g/dL, Hto 33.0%, VCM 85.4 fL, HCM 27.4 pg, CHCM 32.1 g/dL, Plaquetas 171.000/µL (VPM 11.7 fL); Na 134.2 mEq/L, K 4.14 mEq/L, Cl 100 mEq/L, Creatinina 0.55 mg/dL."
       },
       "alerta_critica": null
     }
   ],
   "cultivos": [],
-  "alertas_criticas": []
+  "alertas_criticas": [
+    "Paciente actualmente sin requerimiento de oxígeno suplementario, en terapia respiratoria. Confirmar envío y procesamiento de orina de 24h (Orden 34992683), vigilar patrón respiratorio nocturno e insistir en valoración por Neumología."
+  ]
 }

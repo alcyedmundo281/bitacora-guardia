@@ -1,0 +1,301 @@
+{
+  "cama": "INFECTOLOGÍA 1B",
+  "area": "HOSPITALIZACION",
+  "servicio_tratante": null,
+  "nombre_completo": "ANDRANGO SIMBAÑA GONZALO",
+  "hc": "307712",
+  "cedula": "1702481852",
+  "edad": "76 años",
+  "sexo": null,
+  "fecha_nacimiento": null,
+  "fecha_ingreso": null,
+  "dias_hospitalizacion": 17,
+  "app": [
+    "Clínicos: Hipotiroidismo; Hipertensión arterial; Incontinencia urinaria; Hipoacusia bilateral; No vidente; Vólvulo de colon sigmoide; Masa a nivel anal de reciente diagnóstico."
+  ],
+  "aqx": [],
+  "alergias": [],
+  "diagnosticos_activos": [
+    "Úlcera sacroisquiática grado III–IV (limpieza quirúrgica realizada el 14/11/2026).",
+    "Derrame pleural bilateral.",
+    "Masa perianal (hemangioma capilar).",
+    "Hidrocele testicular superado.",
+    "Sangrado digestivo alto por esofagitis erosiva distal intensa grado D de Los Ángeles.",
+    "Hipopotasemia moderada superada.",
+    "Infección de vías urinarias y Bacteriemia por Enterococcus faecalis."
+  ],
+  "diagnosticos_pasivos": [],
+  "dieta": null,
+  "hidratacion": null,
+  "ckd_epi": null,
+  "medicaciones": [
+    {
+      "nombre": "TFGe CKD-EPI: 124.9 mL/min/1.73 m² (Cr 0.33 mg/dL del 12/11/2026).",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "Nutrición Parenteral Total (NPT) + dieta indicada por Nutrición.",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "Omeprazol 40 mg IV c/12h",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "Paracetamol 1 g IV PRN",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "Levotiroxina 25 mcg VO 06h00",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "Cápsulas de sal 1 g VO QD.",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "Suplementación IV: Gluconato de calcio 1 amp IV lunes/miércoles/viernes",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "Sulfato de Mg 1 amp IV martes/jueves/sábado",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "Ácido ascórbico 1 amp IV QD",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "Complejo B 3 cc IV lunes y viernes",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "Fitomenadiona 1 amp IV lunes.",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "Insulina SC por escapes según glucemias.",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "SUSPENDIDO: Ampicilina/Sulbactam 2 g IV c/6h (FI: 30/10/2026, Día 14/14, CIE-10: B99 — suspender por esquema completo).",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": true,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    }
+  ],
+  "pendientes": [
+    {
+      "id": "PEND-INFECTOLOGA1B-01",
+      "tipo": "LABORATORIO",
+      "descripcion": "Revisar laboratorios del 16/11/2026: BH completa, urea, creatinina, electrolitos, magnesio y fósforo (control diario de electrolitos por NPT).",
+      "prioridad": "CONTROL",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": null,
+      "es_visita_nocturna": true,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
+    },
+    {
+      "id": "PEND-INFECTOLOGA1B-02",
+      "tipo": "LABORATORIO",
+      "descripcion": "Recabar resultado de cultivo de herida sacra (tomado en limpieza quirúrgica del 14/11/2026).",
+      "prioridad": "URGENTE",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": null,
+      "es_visita_nocturna": true,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
+    },
+    {
+      "id": "PEND-INFECTOLOGA1B-03",
+      "tipo": "LABORATORIO",
+      "descripcion": "Recálculo de NPT por Cirugía General y Nutrición.",
+      "prioridad": "URGENTE",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": null,
+      "es_visita_nocturna": true,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
+    },
+    {
+      "id": "PEND-INFECTOLOGA1B-04",
+      "tipo": "IMAGEN_PROCEDIMIENTO",
+      "descripcion": "Curaciones por Clínica de Heridas, cambios de posición c/2h y aislamiento de contacto hasta el alta.",
+      "prioridad": "URGENTE",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": null,
+      "es_visita_nocturna": true,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
+    },
+    {
+      "id": "PEND-INFECTOLOGA1B-05",
+      "tipo": "INTERCONSULTA",
+      "descripcion": "Controles programados: Cirugía Plástica (01/12/2026 08h00, Dr. Mena), Coloproctología (02/12/2026 17h00, Dr. Merchán — reinterconsultar si sigue hospitalizado) y EDA de control en diciembre 2026.",
+      "prioridad": "CONTROL",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": null,
+      "es_visita_nocturna": true,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
+    },
+    {
+      "id": "PEND-INFECTOLOGA1B-06",
+      "tipo": "IMAGEN_PROCEDIMIENTO",
+      "descripcion": "Endoscopia Digestiva Alta (previa): Esofagitis erosiva distal grado D de Los Ángeles (control en diciembre 2026).",
+      "prioridad": "CONTROL",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": null,
+      "es_visita_nocturna": true,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
+    }
+  ],
+  "observaciones": [
+    "Revisar electrolitos, Mg y P del 16/11 por infusión continua de NPT Total, vigilar glucemias capilares por turnos, mantener aislamiento de contacto y exigir cambios posturales cada 2 horas."
+  ],
+  "laboratorios": [
+    {
+      "fecha_hora": "07/11/2026 (13:37 — Hemocultivo ×1)",
+      "tipo_estudio": "Laboratorio",
+      "valores": {
+        "resumen": "Positivo a las 42.8h para Enterococcus faecalis (Sensible a Bencilpenicilina 4 µg/mL y Ampicilina <=2 µg/mL)."
+      },
+      "alerta_critica": null
+    },
+    {
+      "fecha_hora": "12/11/2026",
+      "tipo_estudio": "Laboratorio",
+      "valores": {
+        "resumen": "Creatinina 0.33 mg/dL (TFGe 124.9 mL/min/1.73 m²)."
+      },
+      "alerta_critica": null
+    }
+  ],
+  "cultivos": [],
+  "alertas_criticas": [
+    "Revisar electrolitos, Mg y P del 16/11 por infusión continua de NPT Total, vigilar glucemias capilares por turnos, mantener aislamiento de contacto y exigir cambios posturales cada 2 horas."
+  ]
+}

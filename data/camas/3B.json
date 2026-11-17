@@ -1,28 +1,24 @@
 {
   "cama": "3B",
-  "area": "EMERGENCIA_OBSERVACION",
+  "area": "HOSPITALIZACION",
   "servicio_tratante": null,
-  "nombre_completo": "BORJA PAUCARIMA VICTORIA AVELINA 69 AÑOS",
+  "nombre_completo": "BORJA PAUCARIMA VICTORIA AVELINA",
   "hc": "N/D",
   "cedula": null,
   "edad": "69 años",
   "sexo": null,
   "fecha_nacimiento": null,
   "fecha_ingreso": null,
-  "dias_hospitalizacion": null,
+  "dias_hospitalizacion": 3,
   "app": [
-    "ARTRITIS REUMATOIDE (ACTIVIDAD BAJA) HACE 10 AÑOS",
-    "HIPERTENSION ARTERIAL",
-    "OBESIDAD",
-    "ENFERMEDAD RENAL CRONICA ETAPA 3 A",
-    "TRANSTORNOS DEL SUEÑO",
-    "HIPONATREMIA CRONICA"
+    "Clínicos: Artritis reumatoide (actividad baja, hace 10 años); Hipertensión arterial; Obesidad; Enfermedad renal crónica etapa 3a; Trastornos del sueño; Hiponatremia crónica."
   ],
   "aqx": [],
   "alergias": [],
   "diagnosticos_activos": [
-    "HIPONATREMIA CRONICA SEVERA HIPOOSMOLAR EUVOLEMICA ASINTOMATICA",
-    "ARTRITIS REUMATOIDEA CDAI 15 ACTIVIDAD MODERADA"
+    "Hiponatremia crónica severa hipoosmolar euvolémica asintomática.",
+    "Artritis reumatoidea (CDAI 15 puntos, actividad moderada).",
+    "Dolor crónico secundario a lesiones cervicales."
   ],
   "diagnosticos_pasivos": [],
   "dieta": null,
@@ -30,7 +26,7 @@
   "ckd_epi": null,
   "medicaciones": [
     {
-      "nombre": "BLADURIL CADA 12 HORAS POR 3 DÍAS",
+      "nombre": "TFGe CKD-EPI: Estadio G3a (45–59 mL/min/1.73 m²; pendiente creatinina puntual en bitácora).",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -43,7 +39,7 @@
       "nota": null
     },
     {
-      "nombre": "OMEPRAZOL 20 MG VO QD",
+      "nombre": "Sulfato de magnesio al 10% 1 g (1 ampolla) diluido en 50 mL de SS 0.9% pasar IV lento c/12h (D1/D3).",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -56,7 +52,7 @@
       "nota": null
     },
     {
-      "nombre": "PARACETAMOL 1 GRAMO IV POR RAZONES NECESARIAS",
+      "nombre": "Hidrocortisona 50 mg IV c/12h (Día 1/5)",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -69,7 +65,7 @@
       "nota": null
     },
     {
-      "nombre": "ENOXAPARINA 40 MG SC CADA DIA",
+      "nombre": "Bladuril c/12h por 3 días",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -82,7 +78,7 @@
       "nota": null
     },
     {
-      "nombre": "DIGERIL 10 ML VO POSTERIOR A LAS COMIDAS",
+      "nombre": "Omeprazol 20 mg VO QD",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -95,7 +91,7 @@
       "nota": null
     },
     {
-      "nombre": "FUROSEMIDA 40 MG IV QD **SUSPENDER***",
+      "nombre": "Paracetamol 1 g IV PRN",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -108,7 +104,7 @@
       "nota": null
     },
     {
-      "nombre": "HIDROCORTISONA 50 MG IV CADA 12 HORAS DIA 1/5",
+      "nombre": "Enoxaparina 40 mg SC QD",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -121,7 +117,7 @@
       "nota": null
     },
     {
-      "nombre": "METOTREXATO 15 MG VO SEMANAL",
+      "nombre": "Digeril 10 mL VO post-comidas.",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -134,7 +130,7 @@
       "nota": null
     },
     {
-      "nombre": "ACIDO FOLICO 1 MG VO QD",
+      "nombre": "Terapia del Dolor (13/11/2026): Buprenorfina 20 mg sólido cutáneo, aplicar 1/2 parche transdérmico cada tercer día por 30 días.",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -147,7 +143,111 @@
       "nota": null
     },
     {
-      "nombre": "PREDNISONA 5 MG VO CADA 48 HORAS ******SUSPENDER*****",
+      "nombre": "Medicación habitual activa: Metotrexato 15 mg VO semanal",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "Ácido fólico 1 mg VO QD",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "Cloroquina 250 mg VO QD",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "Amlodipino 5 mg VO QD",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "Quetiapina 50 mg VO QD.",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "SUSPENDIDOS: Furosemida 40 mg IV QD (suspender)",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": true,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "Espironolactona 25 mg VO QD (suspender)",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "Losartán 100 mg VO QD (suspender)",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "Prednisona 5 mg VO c/48h (suspender mientras recibe Hidrocortisona IV).",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -163,9 +263,33 @@
   "pendientes": [
     {
       "id": "PEND-3B-01",
+      "tipo": "LABORATORIO",
+      "descripcion": "Control de electrolitos séricos AM y PM.",
+      "prioridad": "CONTROL",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": null,
+      "es_visita_nocturna": true,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
+    },
+    {
+      "id": "PEND-3B-02",
       "tipo": "INTERCONSULTA",
-      "descripcion": "C: IC A CLINICA DEL DOLOR YA REALIZADA POR DOLOR CRÓNICO DEBIDO A LESIONES CERVICALES",
-      "prioridad": "STAT",
+      "descripcion": "Seguimiento por Clínica del Dolor.",
+      "prioridad": "CONTROL",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": null,
+      "es_visita_nocturna": true,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
+    },
+    {
+      "id": "PEND-3B-03",
+      "tipo": "INTERCONSULTA",
+      "descripcion": "Estudios de columna cervical por lesiones cervicales crónicas (ya valorada por Clínica del Dolor).",
+      "prioridad": "URGENTE",
       "turno": "NOCTURNA_20_24",
       "horario_programado": null,
       "es_visita_nocturna": true,
@@ -175,9 +299,20 @@
     }
   ],
   "observaciones": [
-    "L: ELECTROLITOS AM Y PM"
+    "Revisar electrolitos PM en la guardia nocturna para vigilar la velocidad de corrección del sodio sérico (con Furosemida y Espironolactona ya suspendidas) y vigilar tolerancia al medio parche de Buprenorfina."
   ],
-  "laboratorios": [],
+  "laboratorios": [
+    {
+      "fecha_hora": "17/11/2026",
+      "tipo_estudio": "Laboratorio",
+      "valores": {
+        "resumen": "En seguimiento con controles seriados de electrolitos AM y PM por hiponatremia severa e hipomagnesemia."
+      },
+      "alerta_critica": null
+    }
+  ],
   "cultivos": [],
-  "alertas_criticas": []
+  "alertas_criticas": [
+    "Revisar electrolitos PM en la guardia nocturna para vigilar la velocidad de corrección del sodio sérico (con Furosemida y Espironolactona ya suspendidas) y vigilar tolerancia al medio parche de Buprenorfina."
+  ]
 }

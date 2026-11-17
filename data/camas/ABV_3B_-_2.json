@@ -1,0 +1,138 @@
+{
+  "cama": "ABV 3B - 2",
+  "area": "HOSPITALIZACION",
+  "servicio_tratante": null,
+  "nombre_completo": "CHÁVEZ VITERI JUAN LUIS EDUARDO",
+  "hc": "2090950",
+  "cedula": "1703067353",
+  "edad": "80 años",
+  "sexo": null,
+  "fecha_nacimiento": null,
+  "fecha_ingreso": null,
+  "dias_hospitalizacion": 3,
+  "app": [
+    "Clínicos: Hiperplasia prostática; Hipertensión arterial; Poliglobulia; Hiperuricemia."
+  ],
+  "aqx": [],
+  "alergias": [],
+  "diagnosticos_activos": [
+    "Sepsis de foco urinario / Infección del tracto urinario complicada (CIE-10: N39.0).",
+    "Acidosis metabólica.",
+    "Hematuria macroscópica.",
+    "Lesión renal aguda sobre enfermedad renal crónica de etiología posrenal (obstructiva).",
+    "Hiperkalemia moderada superada."
+  ],
+  "diagnosticos_pasivos": [],
+  "dieta": null,
+  "hidratacion": null,
+  "ckd_epi": null,
+  "medicaciones": [
+    {
+      "nombre": "TFGe CKD-EPI: [Pendiente actualizar con creatinina de controles del 15/11 y 16/11/2026].",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "Ceftriaxona 1 g IV c/12h (FI: 13/11/2026, D2/3, CIE-10: N39.0).",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "Paracetamol 1 g IV c/8h",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "Metoclopramida 10 mg IV PRN.",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    }
+  ],
+  "pendientes": [
+    {
+      "id": "PEND-ABV3B2-01",
+      "tipo": "LABORATORIO",
+      "descripcion": "Recabar resultados de controles del 15/11/2026 (electrolitos, urea, creatinina, gasometría) y del lunes 16/11/2026 (BH, urea, creatinina, electrolitos, PCR, procalcitonina).",
+      "prioridad": "CONTROL",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": null,
+      "es_visita_nocturna": true,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
+    },
+    {
+      "id": "PEND-ABV3B2-02",
+      "tipo": "LABORATORIO",
+      "descripcion": "Recabar resultado de urocultivo.",
+      "prioridad": "URGENTE",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": null,
+      "es_visita_nocturna": true,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
+    },
+    {
+      "id": "PEND-ABV3B2-03",
+      "tipo": "IMAGEN_PROCEDIMIENTO",
+      "descripcion": "Evaluación urológica por uropatía obstructiva posrenal y hematuria macroscópica.",
+      "prioridad": "URGENTE",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": null,
+      "es_visita_nocturna": true,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
+    }
+  ],
+  "observaciones": [
+    "Vigilar permeabilidad de sonda vesical y cuantía de la hematuria macroscópica (evitar retención aguda de orina por coágulos); revisar de forma prioritaria gasometría, potasio y creatinina del 16/11."
+  ],
+  "laboratorios": [
+    {
+      "fecha_hora": "17/11/2026",
+      "tipo_estudio": "Laboratorio",
+      "valores": {
+        "resumen": "Controles del 15/11/2026 y 16/11/2026 (BH, azoados, electrolitos, gasometría, PCR, PCT) y urocultivo pendientes de transcripción/reporte."
+      },
+      "alerta_critica": null
+    }
+  ],
+  "cultivos": [],
+  "alertas_criticas": [
+    "Vigilar permeabilidad de sonda vesical y cuantía de la hematuria macroscópica (evitar retención aguda de orina por coágulos); revisar de forma prioritaria gasometría, potasio y creatinina del 16/11."
+  ]
+}

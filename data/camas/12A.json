@@ -11,21 +11,17 @@
   "fecha_ingreso": null,
   "dias_hospitalizacion": null,
   "app": [
-    "GASTRITIS",
-    "HIPOTIROIDISMO CON BOCIO MULTINODULAR SIN SOSPECHA DE MALIGNIDAD",
-    "PARALISIS FACIAL PERIFERICA",
-    "DISLIPIDEMIA SECUNDARIA",
-    "POLIARTROSIS"
+    "Clínicos: Gastritis; Hipotiroidismo con bocio multinodular sin sospecha de malignidad; Parálisis facial periférica; Dislipidemia secundaria; Poliartrosis."
   ],
   "aqx": [],
   "alergias": [],
   "diagnosticos_activos": [
-    "CARCINOMATOSIS RETROPERITONEAL",
-    "SINDROME CONSTITUCIONAL EN ESTUDIO",
-    "ASCITIS",
-    "DERRAME PLEURAL PREDOMINIO IZQUIERDO",
-    "HIPOTIROIDISMO",
-    "DOLOR ABDOMINAL CRONICO"
+    "Carcinomatosis retroperitoneal.",
+    "Síndrome constitucional en estudio.",
+    "Ascitis.",
+    "Derrame pleural de predominio izquierdo.",
+    "Hipotiroidismo.",
+    "Dolor abdominal crónico."
   ],
   "diagnosticos_pasivos": [],
   "dieta": null,
@@ -33,7 +29,7 @@
   "ckd_epi": null,
   "medicaciones": [
     {
-      "nombre": "TRAMADOL 100 MG DILUIDO IV LENTO CADA 8 HORAS",
+      "nombre": "TFGe CKD-EPI: [Pendiente valor de creatinina sérica en bitácora para cálculo exacto].",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -46,7 +42,7 @@
       "nota": null
     },
     {
-      "nombre": "METOCLOPRAMIDA 10 MG DILUIDO IV LENTO POR RAZONES NECESARIAS",
+      "nombre": "Tramadol 100 mg diluido IV lento c/8h",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -59,7 +55,7 @@
       "nota": null
     },
     {
-      "nombre": "LACTULOSA 10 ML VIA ORAL CADA 12 HORAS Y SUSPENDER AL TENER DIARREAS",
+      "nombre": "Metoclopramida 10 mg diluido IV lento PRN.",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -72,7 +68,20 @@
       "nota": null
     },
     {
-      "nombre": "ENOXAPARINA 60 MG SC CADA DIA",
+      "nombre": "Lactulosa 10 mL VO c/12h (suspender si presenta diarreas)",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "Enoxaparina 60 mg SC QD.",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -89,7 +98,7 @@
     {
       "id": "PEND-12A-01",
       "tipo": "INTERCONSULTA",
-      "descripcion": "INTERCONSULTA NEUMOLOGIA PARA TRAMITE DE OXIGENO",
+      "descripcion": "Interconsulta a Neumología para trámite de oxígeno domiciliario.",
       "prioridad": "URGENTE",
       "turno": "NOCTURNA_20_24",
       "horario_programado": null,
@@ -101,8 +110,20 @@
     {
       "id": "PEND-12A-02",
       "tipo": "LABORATORIO",
-      "descripcion": "BAJAR A AVERIGUAR FECHA DE BIOPSIA, YA ENTREGADO EL TRAMITE, AUN NO APROBADO POR RADIOLOGIA INTERVENCIONISTA",
-      "prioridad": "STAT",
+      "descripcion": "Bajar a Radiología Intervencionista a averiguar fecha de biopsia (trámite ya entregado, aún no aprobado; lunes insistir por toma de biopsia).",
+      "prioridad": "URGENTE",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": null,
+      "es_visita_nocturna": true,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
+    },
+    {
+      "id": "PEND-12A-03",
+      "tipo": "IMAGEN_PROCEDIMIENTO",
+      "descripcion": "Estudios tomográficos/ecográficos que documentan carcinomatosis retroperitoneal, ascitis y derrame pleural de predominio izquierdo; pendiente biopsia guiada por Radiología Intervencionista.",
+      "prioridad": "URGENTE",
       "turno": "NOCTURNA_20_24",
       "horario_programado": null,
       "es_visita_nocturna": true,
@@ -112,14 +133,20 @@
     }
   ],
   "observaciones": [
-    "2026/11/12",
-    "BE..............................: 5.1",
-    "Ca..............................: 1.1",
-    "Cl..............................: 104.0",
-    "COHb............................: 2.1",
-    "Glu.............................: 93.0"
+    "Vigilar control del dolor abdominal, saturación de oxígeno y corregir/controlar hipokalemia leve (K 3.3 mEq/L); verificar conciliación de Levotiroxina por antecedente de hipotiroidismo. Prioridad lunes AM: insistir presencialmente en Radiología Intervencionista por fecha de biopsia."
   ],
-  "laboratorios": [],
+  "laboratorios": [
+    {
+      "fecha_hora": "12/11/2026 (Gasometría)",
+      "tipo_estudio": "Laboratorio",
+      "valores": {
+        "resumen": "pH 7.455, pCO2 41.4 mmHg, pO2 44.6 mmHg, HCO3 29.0 mmol/L, TCO2 30.3 mmol/L, BE 5.1, SatO2 79.5%, O2Hb 77.8%, COHb 2.1%, Hto 41.5%, Glucosa 93.0 mg/dL, Na 142.0 mEq/L, Potasio 3.3 mEq/L, Cl 104.0 mEq/L, Ca iónico 1.1 mmol/L."
+      },
+      "alerta_critica": null
+    }
+  ],
   "cultivos": [],
-  "alertas_criticas": []
+  "alertas_criticas": [
+    "Vigilar control del dolor abdominal, saturación de oxígeno y corregir/controlar hipokalemia leve (K 3.3 mEq/L); verificar conciliación de Levotiroxina por antecedente de hipotiroidismo. Prioridad lunes AM: insistir presencialmente en Radiología Intervencionista por fecha de biopsia."
+  ]
 }

@@ -1,29 +1,24 @@
 {
-  "cama": "INFECTOLOGIA 4 C",
-  "area": "PERIFERICOS",
+  "cama": "AB 1 - 2",
+  "area": "HOSPITALIZACION",
   "servicio_tratante": null,
-  "nombre_completo": "ARAUJO FIALLOS FAUSTO RAMIRO",
-  "hc": "N/D",
-  "cedula": null,
-  "edad": "67 AÑOS",
+  "nombre_completo": "TORRES ALBUJA MÓNICA PATRICIA",
+  "hc": "599900",
+  "cedula": "1715041123",
+  "edad": "48 años 8 meses",
   "sexo": null,
   "fecha_nacimiento": null,
   "fecha_ingreso": null,
-  "dias_hospitalizacion": null,
+  "dias_hospitalizacion": 3,
   "app": [
-    "ANTECEDENTES PATOLOGICOS PERSONALES",
-    "TRASTORNO BIPOLAR",
-    "TRASTORNOS MENTALES Y DE COMPORTAMIENTO POR USO DE ALCOHOL",
-    "ANTECEDENTES QUIRURGICOS",
-    "CIRUGIA POR DEDO EN GATILLO",
-    "ALERGIAS",
-    "NO REFIERE"
+    "Clínicos: Cervicalgia crónica; ITU a repetición; Diabetes gestacional; Prolapso vesical hace 4 años.",
+    "Quirúrgicos: Espolón nasal; Legrado; Colocación de banda TOT.",
+    "Alergias: ALERGIA A PENICILINA."
   ],
   "aqx": [],
   "alergias": [],
   "diagnosticos_activos": [
-    "HIPONATREMIA HIPOTÓNICA EUVOLEMICA SEVERA SINTOMÁTICA CRÓNICA",
-    "TRASTORNO AFECTIVO BIPOLAR DESCOMPENSADO"
+    "Infección de vías urinarias (CIE-10: N39.0)."
   ],
   "diagnosticos_pasivos": [],
   "dieta": null,
@@ -31,7 +26,7 @@
   "ckd_epi": null,
   "medicaciones": [
     {
-      "nombre": "ENOXAPARINA 40MG SC CADA DIA",
+      "nombre": "TFGe CKD-EPI: [Pendiente resultado de creatinina solicitada].",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -44,7 +39,7 @@
       "nota": null
     },
     {
-      "nombre": "CAPSULAS DE SAL 1 GRAMO CADA 12 HORAS",
+      "nombre": "Ceftriaxona 1 g IV c/12h (FI: 13/11/2026, D: 3, CIE-10: N39.0).",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -57,7 +52,7 @@
       "nota": null
     },
     {
-      "nombre": "************INDICACIONES DE PSIQUIATRIA 13/11/26***********",
+      "nombre": "Tramadol 100 mg IV diluido lento c/8h",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -70,7 +65,7 @@
       "nota": null
     },
     {
-      "nombre": "OLANZAPINA 2,5 MG VO HS",
+      "nombre": "Metoclopramida 10 mg IV c/8h",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -83,7 +78,7 @@
       "nota": null
     },
     {
-      "nombre": "QUETIAPINA 200 MILIGRAMOS VIA ORAL AL ACOSTARSE",
+      "nombre": "Paracetamol 1 g IV c/8h",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -96,7 +91,7 @@
       "nota": null
     },
     {
-      "nombre": "CLONAZEPAM 2 MILIGRAMOS : 1.5MG VO HS",
+      "nombre": "Omeprazol 40 mg IV QD.",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -109,7 +104,7 @@
       "nota": null
     },
     {
-      "nombre": "ACIDO VALPROICO VO 250MG QD HS",
+      "nombre": "DIFERIDOS: Tamsulosina 0.4 mg VO, Ciprofloxacina 500 mg VO BID, Diclofenaco 50 mg VO c/8h (diferir AINEs) y Paracetamol 500 mg VO.",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -124,68 +119,69 @@
   ],
   "pendientes": [
     {
-      "id": "PEND-INFECTOLOGIA4C-01",
+      "id": "PEND-AB12-01",
       "tipo": "LABORATORIO",
-      "descripcion": "ELECTROLITOS AM Y PM DIARIOS",
-      "prioridad": "RUTINA",
+      "descripcion": "Recabar resultados de glucosa, HbA1c y creatinina.",
+      "prioridad": "URGENTE",
       "turno": "NOCTURNA_20_24",
       "horario_programado": null,
-      "es_visita_nocturna": false,
+      "es_visita_nocturna": true,
       "estado": "PENDIENTE",
       "responsable": null,
       "resultado_obtenido": null
     },
     {
-      "id": "PEND-INFECTOLOGIA4C-02",
-      "tipo": "LABORATORIO",
-      "descripcion": "LUNES 16/11/2026: CORTISOL AM, ACTH, TSH, SODIO Y POTASIO EN ORINA",
-      "prioridad": "RUTINA",
+      "id": "PEND-AB12-02",
+      "tipo": "INTERCONSULTA",
+      "descripcion": "Interconsulta a Nutrición para plan nutricional.",
+      "prioridad": "URGENTE",
       "turno": "NOCTURNA_20_24",
       "horario_programado": null,
-      "es_visita_nocturna": false,
+      "es_visita_nocturna": true,
       "estado": "PENDIENTE",
       "responsable": null,
       "resultado_obtenido": null
     },
     {
-      "id": "PEND-INFECTOLOGIA4C-03",
-      "tipo": "LABORATORIO",
-      "descripcion": "RESTRICCIÓN HÍDRICA Y DIETA NORMOSÓDICA; CÁPSULAS DE SAL 1 G CADA 12 HORAS",
-      "prioridad": "RUTINA",
+      "id": "PEND-AB12-03",
+      "tipo": "INTERCONSULTA",
+      "descripcion": "Verificar indicación urológica (consta interconsulta para descartar alteración del vaciamiento vesical por Tamsulosina y nota de alta por Urología del 13/11/2026).",
+      "prioridad": "URGENTE",
       "turno": "NOCTURNA_20_24",
       "horario_programado": null,
-      "es_visita_nocturna": false,
+      "es_visita_nocturna": true,
       "estado": "PENDIENTE",
       "responsable": null,
       "resultado_obtenido": null
     },
     {
-      "id": "PEND-INFECTOLOGIA4C-04",
-      "tipo": "LABORATORIO",
-      "descripcion": "VIGILANCIA NEUROLÓGICA",
-      "prioridad": "RUTINA",
+      "id": "PEND-AB12-04",
+      "tipo": "IMAGEN_PROCEDIMIENTO",
+      "descripcion": "Evaluación urológica realizada (alta por Urología el 13/11/2026).",
+      "prioridad": "URGENTE",
       "turno": "NOCTURNA_20_24",
       "horario_programado": null,
-      "es_visita_nocturna": false,
-      "estado": "PENDIENTE",
-      "responsable": null,
-      "resultado_obtenido": null
-    },
-    {
-      "id": "PEND-INFECTOLOGIA4C-05",
-      "tipo": "LABORATORIO",
-      "descripcion": "INDICACIONES DE PSIQUIATRÍA; SEGUIMIENTO POR PSIQUIATRÍA AL ALTA",
-      "prioridad": "RUTINA",
-      "turno": "NOCTURNA_20_24",
-      "horario_programado": null,
-      "es_visita_nocturna": false,
+      "es_visita_nocturna": true,
       "estado": "PENDIENTE",
       "responsable": null,
       "resultado_obtenido": null
     }
   ],
-  "observaciones": [],
-  "laboratorios": [],
+  "observaciones": [
+    "ALERGIA A PENICILINA y DIFERIR AINEs. Unificar prescripción de Paracetamol IV (consta simultáneamente c/8h y c/12h en hoja), recabar creatinina para cálculo de TFGe y reevaluar posibilidad de alta médica."
+  ],
+  "laboratorios": [
+    {
+      "fecha_hora": "17/11/2026",
+      "tipo_estudio": "Laboratorio",
+      "valores": {
+        "resumen": "Pendientes resultados de glucosa, HbA1c y creatinina sérica."
+      },
+      "alerta_critica": null
+    }
+  ],
   "cultivos": [],
-  "alertas_criticas": []
+  "alertas_criticas": [
+    "ALERGIA A PENICILINA y DIFERIR AINEs. Unificar prescripción de Paracetamol IV (consta simultáneamente c/8h y c/12h en hoja), recabar creatinina para cálculo de TFGe y reevaluar posibilidad de alta médica."
+  ]
 }

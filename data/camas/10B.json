@@ -2,33 +2,26 @@
   "cama": "10B",
   "area": "HOSPITALIZACION",
   "servicio_tratante": null,
-  "nombre_completo": "REYES SANCHEZ INES MAGDALENA C",
+  "nombre_completo": "REYES SÁNCHEZ INÉS MAGDALENA",
   "hc": "8140",
   "cedula": "1703334647",
-  "edad": "79 AÑOS",
+  "edad": "79 años",
   "sexo": null,
   "fecha_nacimiento": null,
   "fecha_ingreso": null,
-  "dias_hospitalizacion": null,
+  "dias_hospitalizacion": 4,
   "app": [
-    "HIPERTENSIÓN ARTERIAL",
-    "DIABETES MELLITUS 2",
-    "HIPOTIROIDISMO",
-    "HIPOACUSIA BILATERAL",
-    "GONARTROSIS BILATERAL",
-    "LINFOMA (GANGLIO LINFATICO NEGATIVO PARA MALIGNIDAD (0/1) FAMILIAR MENCIONA",
-    "QUE RECIBIO QUIMIO Y RADIOTERAPIA POR DICHO DIAGNOSTICO"
+    "Clínicos: Hipertensión arterial; Diabetes mellitus tipo 2; Hipotiroidismo; Hipoacusia bilateral; Gonartrosis bilateral; Linfoma referido por familiar (menciona haber recibido quimioterapia y radioterapia; biopsia ganglionar 0/1 negativa para malignidad)."
   ],
   "aqx": [],
   "alergias": [],
   "diagnosticos_activos": [
-    "CHOQUE SÉPTICO DE FOCO PULMONAR SUPEREDO",
-    "NEUMONÍA NO ESPECIFICADA (BRONCOASPIRATIVA SECUNDARIA A DISFAGIA PSEUDOBULBAR)",
-    "ENFERMEDAD CEREBROVASCULAR ISQUÉMICA CRÓNICA SECUELAR DE ETIOLOGÍA CARDIOEMBÓLICA",
-    "FLUTTER AURICULAR CON RESPUESTA VENTRICULAR CONTROLADA (CHA2DS2-VASC 5, HAS-BLED 3)",
-    "LESIÓN RENAL AGUDA KDIGO 2 EN RESOLUCIÓN (CREATININA 1.31 VS 1.99 PREVIA)",
-    "HIPOTIROIDISMO / TROMBOSIS ARTERIAL ISQUÉMICA MID PREVIA SUPERADA",
-    "PO 250.5, SAFI 233"
+    "Choque séptico de foco pulmonar superado.",
+    "Neumonía no especificada (broncoaspirativa secundaria a disfagia pseudobulbar, CIE-10: J18.9) — PaO2/FiO2: SAFI 233.",
+    "Enfermedad cerebrovascular isquémica crónica secuelar de etiología cardioembólica.",
+    "Flutter auricular con respuesta ventricular controlada (CHA2DS2-VASc 5, HAS-BLED 3).",
+    "Lesión renal aguda KDIGO 2 en resolución (Cr 1.19 vs 1.99 mg/dL previa).",
+    "Hipotiroidismo / Trombosis arterial isquémica de miembro inferior derecho previa superada."
   ],
   "diagnosticos_pasivos": [],
   "dieta": null,
@@ -36,7 +29,7 @@
   "ckd_epi": null,
   "medicaciones": [
     {
-      "nombre": "CLORURO DE SODIO 0.9% 1000 ML PASAR A 40 ML/HORA EN 24 HORAS",
+      "nombre": "TFGe CKD-EPI previa: 23.38 mL/min/1.73 m² (actualizada con Cr 1.19 mg/dL del 15/11/2026: 42.5 mL/min/1.73 m²).",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -49,7 +42,7 @@
       "nota": null
     },
     {
-      "nombre": "CEFEPIME 2 GRAMOS IV CADA 8 HORAS (2/7) FI: 13 NOV 2026 J189 (48 HORAS",
+      "nombre": "Dieta enteral indicada por Nutrición",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -62,7 +55,7 @@
       "nota": null
     },
     {
-      "nombre": "CLINDAMICINA 600 MG IV CADA CADA 8 HORAS (D:2) FI: 13 NOV 2026 J189",
+      "nombre": "Cloruro de sodio 0.9% 1000 mL IV a 40 mL/h.",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -75,7 +68,7 @@
       "nota": null
     },
     {
-      "nombre": "ENOXAPARINA 40 MG SC CADA 12 HORAS",
+      "nombre": "Cefepime 2 g IV c/8h (FI: 13/11/2026, 2/7, CIE-10: J18.9 — ajustar a función renal a las 48h)",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -88,7 +81,7 @@
       "nota": null
     },
     {
-      "nombre": "PARACETAMOL 1 GRAMOS IV CADA 8 HORAS",
+      "nombre": "Clindamicina 600 mg IV c/8h (FI: 13/11/2026, D: 2, CIE-10: J18.9).",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -101,7 +94,7 @@
       "nota": null
     },
     {
-      "nombre": "OMEPRAZOL 40 MG IV HS",
+      "nombre": "Enoxaparina 40 mg SC c/12h",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -114,7 +107,7 @@
       "nota": null
     },
     {
-      "nombre": "BISOPROLOL 5 MG VO BID",
+      "nombre": "Paracetamol 1 g IV c/8h",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -127,7 +120,7 @@
       "nota": null
     },
     {
-      "nombre": "ATORVASTATINA 40 MG VO HS",
+      "nombre": "Omeprazol 40 mg IV HS.",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -140,7 +133,7 @@
       "nota": null
     },
     {
-      "nombre": "LEVOTIROXINA 50 MCG VIA ORAL LUNES A JUEVES",
+      "nombre": "Bisoprolol 5 mg VO BID (Cardiología)",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -153,7 +146,33 @@
       "nota": null
     },
     {
-      "nombre": "LEVOTIROXINA 75 MCG VO VIERNES SABADO Y DOMINGO",
+      "nombre": "Atorvastatina 40 mg VO HS",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "Levotiroxina 50 mcg VO lunes-jueves y 75 mcg VO viernes-domingo.",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "Insulina cristalina SC por escapes: 180-220: 2 UI; 220-260: 4 UI; 260-300: 6 UI; >300: 8 UI. Si glucemia <70 mg/dL pasar 200 mL Dextrosa 10%",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -169,104 +188,88 @@
   "pendientes": [
     {
       "id": "PEND-10B-01",
-      "tipo": "LABORATORIO",
-      "descripcion": "E: RMN DE ENCEFALO NO SE REALIZA POR INESTABILIDAD EN FIN DE SEMANA ABUNDANTES SECRECIONES HASTA 800 ML",
-      "prioridad": "RUTINA",
+      "tipo": "IMAGEN_PROCEDIMIENTO",
+      "descripcion": "Reprogramar RMN de encéfalo (no se realizó el 13/11/2026 por inestabilidad clínica).",
+      "prioridad": "URGENTE",
       "turno": "NOCTURNA_20_24",
       "horario_programado": null,
-      "es_visita_nocturna": false,
+      "es_visita_nocturna": true,
       "estado": "PENDIENTE",
       "responsable": null,
       "resultado_obtenido": null
     },
     {
       "id": "PEND-10B-02",
-      "tipo": "LABORATORIO",
-      "descripcion": "HACE PICOS DE HIPERGLICEMIA EN LA NOCHE SE CORRIGIERON ULTIMA GLICEMIA 180",
-      "prioridad": "RUTINA",
+      "tipo": "INTERCONSULTA",
+      "descripcion": "Seguimiento de interconsultas a Neurología, Cardiología y Trabajo Social.",
+      "prioridad": "CONTROL",
       "turno": "NOCTURNA_20_24",
       "horario_programado": null,
-      "es_visita_nocturna": false,
+      "es_visita_nocturna": true,
       "estado": "PENDIENTE",
       "responsable": null,
       "resultado_obtenido": null
     },
     {
       "id": "PEND-10B-03",
-      "tipo": "LABORATORIO",
-      "descripcion": "PARACLÍNICOS (15/11/2026): GLUCOSA 180 MG/DL PM POSTERIOR A CORRECCIÓN Y BOLO DE SOLUCIÓN SALINA",
-      "prioridad": "RUTINA",
+      "tipo": "INTERCONSULTA",
+      "descripcion": "Recabar nota de Clínica del Dolor.",
+      "prioridad": "URGENTE",
       "turno": "NOCTURNA_20_24",
       "horario_programado": null,
-      "es_visita_nocturna": false,
+      "es_visita_nocturna": true,
       "estado": "PENDIENTE",
       "responsable": null,
       "resultado_obtenido": null
     },
     {
       "id": "PEND-10B-04",
-      "tipo": "LABORATORIO",
-      "descripcion": "ACIDO LACTICO 2.9, SODIO 148.2 MEQ/L, POTASIO 4.22 MEQ/L, CLORO 120 MEQ/L, BUN 77 MG/DL, UREA 133 MG/DL, CREATININA 1.19 MG/DL (MEJORÍA FRANCA RESPECTO A 1.99 DEL 12/11",
-      "prioridad": "RUTINA",
+      "tipo": "IMAGEN_PROCEDIMIENTO",
+      "descripcion": "TAC de tórax: Evidencia proceso infeccioso pulmonar (motivó reinicio antibiótico).",
+      "prioridad": "URGENTE",
       "turno": "NOCTURNA_20_24",
       "horario_programado": null,
-      "es_visita_nocturna": false,
+      "es_visita_nocturna": true,
       "estado": "PENDIENTE",
       "responsable": null,
       "resultado_obtenido": null
     },
     {
       "id": "PEND-10B-05",
-      "tipo": "LABORATORIO",
-      "descripcion": "INGESTA 2080",
-      "prioridad": "RUTINA",
+      "tipo": "IMAGEN_PROCEDIMIENTO",
+      "descripcion": "RMN de encéfalo: Pendiente reprogramar (suspendida el 13/11 por inestabilidad).",
+      "prioridad": "URGENTE",
       "turno": "NOCTURNA_20_24",
       "horario_programado": null,
-      "es_visita_nocturna": false,
-      "estado": "PENDIENTE",
-      "responsable": null,
-      "resultado_obtenido": null
-    },
-    {
-      "id": "PEND-10B-06",
-      "tipo": "LABORATORIO",
-      "descripcion": "EXCRETA 500",
-      "prioridad": "RUTINA",
-      "turno": "NOCTURNA_20_24",
-      "horario_programado": null,
-      "es_visita_nocturna": false,
-      "estado": "PENDIENTE",
-      "responsable": null,
-      "resultado_obtenido": null
-    },
-    {
-      "id": "PEND-10B-07",
-      "tipo": "LABORATORIO",
-      "descripcion": "BALANCE 1580",
-      "prioridad": "RUTINA",
-      "turno": "NOCTURNA_20_24",
-      "horario_programado": null,
-      "es_visita_nocturna": false,
+      "es_visita_nocturna": true,
       "estado": "PENDIENTE",
       "responsable": null,
       "resultado_obtenido": null
     }
   ],
   "observaciones": [
-    "IC NEUROLOGÍA",
-    "IC CARDIOLOGÍA",
-    "IC TRABAJO SOCIAL"
+    "SV: TA 103/67 mmHg, FC 83 lpm, FR 16 rpm, SatO2 85% (con O2 a 2 L/min), T 36.2 °C. Balance 24h: Ingesta 2080 cc / Eliminación 500 cc / Balance +1580 cc. Abundantes secreciones respiratorias (hasta 800 mL). PUNTOS CRÍTICOS PM: 1) Corregir desaturación (SatO2 85% con 2 L — titular O2 y aspirar secreciones); 2) Reevaluar infusión de SS 0.9% ante hipernatremia (Na 148.2) e hipercloremia (Cl 120) con balance +1580 cc; 3) No administrar insulina correctiva después de las 22h00."
   ],
   "laboratorios": [
     {
-      "fecha_hora": "2026-11-16",
-      "tipo_estudio": "Laboratorios / Gasometría",
+      "fecha_hora": "12/11/2026",
+      "tipo_estudio": "Laboratorio",
       "valores": {
-        "resumen": "CARDIO BISOPROLOL 5 BID ATB REINICIO, TAC CON PROCESO INFECCIOSO. TENSIÓN ARTERIAL: 103/67 MMHG (TAM 120 MMHG), FRECUENCIA CARDÍACA: 83 LPM (MANUAL), FRECUENCIA RESPIRATORIA: 16 RPM, SATURACIÓN DE OXÍGENO: 85% (2 L), TEMPERATURA: 36.2 °C. BALANCE 24 H: INGESTA 2080 CC, ELIMINACIÓN 500 CC, DIFERENCIA 1580 CC."
+        "resumen": "Creatinina 1.99 mg/dL."
+      },
+      "alerta_critica": null
+    },
+    {
+      "fecha_hora": "15/11/2026",
+      "tipo_estudio": "Laboratorio",
+      "valores": {
+        "resumen": "Glucosa 180 mg/dL PM (post-corrección y bolo de SS 0.9%), Ácido láctico 2.9 mmol/L, Sodio 148.2 mEq/L, Potasio 4.22 mEq/L, Cloro 120 mEq/L, BUN 77 mg/dL, Urea 133 mg/dL, Creatinina 1.19 mg/dL."
       },
       "alerta_critica": null
     }
   ],
   "cultivos": [],
-  "alertas_criticas": []
+  "alertas_criticas": [
+    "SV: TA 103/67 mmHg, FC 83 lpm, FR 16 rpm, SatO2 85% (con O2 a 2 L/min), T 36.2 °C. Balance 24h: Ingesta 2080 cc / Eliminación 500 cc / Balance +1580 cc. Abundantes secreciones respiratorias (hasta 800 mL). PUNTOS CRÍTICOS PM: 1) Corregir desaturación (SatO2 85% con 2 L — titular O2 y aspirar secreciones); 2) Reevaluar infusión de SS 0.9% ante hipernatremia (Na 148.2) e hipercloremia (Cl 120) con balance +1580 cc; 3) No administrar insulina correctiva después de las 22h00."
+  ]
 }

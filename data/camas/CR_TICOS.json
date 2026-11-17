@@ -1,29 +1,25 @@
 {
-  "cama": "UROLOGIA_2",
-  "area": "PERIFERICOS",
+  "cama": "CRÍTICOS",
+  "area": "HOSPITALIZACION",
   "servicio_tratante": null,
-  "nombre_completo": "LIDIOMA MINANGO KATHERINE ELIZABETH C",
-  "hc": "1786985",
-  "cedula": "1720905486",
-  "edad": "24 AÑOS",
+  "nombre_completo": "SOLÓRZANO JAMA SEGUNDO SIGIFREDO",
+  "hc": "2083754",
+  "cedula": "0800310823",
+  "edad": "N/D",
   "sexo": null,
   "fecha_nacimiento": null,
   "fecha_ingreso": null,
-  "dias_hospitalizacion": null,
+  "dias_hospitalizacion": 4,
   "app": [
-    "ANTECEDENTES PATOLOGICOS PERSONALES:",
-    "CLINICOS:",
-    "MIOSITIS NECROTIZANTE INMUNOMEDIADA",
-    "QUIRURGICOS",
-    "APENDICECTOMIA",
-    "ALERGIAS:",
-    "NO REFIERE"
+    "Clínicos: Cáncer gástrico de reciente diagnóstico; Anemia crónica."
   ],
   "aqx": [],
   "alergias": [],
   "diagnosticos_activos": [
-    "MIOSITIS NECROTIZANTE INMUNOMEDIADA",
-    "REFRACTARIEDAD A CORTICOTERAPIA"
+    "Sepsis con punto de partida urinario (CIE-10: A41.9 / N39.0).",
+    "Anemia grave microcítica hipocrómica crónica descompensada / Síndrome anémico severo (Hb: 5.0 g/dL, CIE-10: D50.0 / D64.9).",
+    "Cáncer gástrico de reciente diagnóstico (CIE-10: C16.9).",
+    "Trombocitosis reactiva (Plaquetas: 682.000/µL, CIE-10: D75.2)."
   ],
   "diagnosticos_pasivos": [],
   "dieta": null,
@@ -31,7 +27,7 @@
   "ckd_epi": null,
   "medicaciones": [
     {
-      "nombre": "PARACETAMOL 1 GR INTRAVENOSO POR RAZONES NECESARIAS",
+      "nombre": "TFGe CKD-EPI: [Pendiente resultado de creatinina en química del 16/11/2026].",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -44,7 +40,7 @@
       "nota": null
     },
     {
-      "nombre": "PREDNISONA 30 MG VO QD",
+      "nombre": "DISH",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -57,7 +53,7 @@
       "nota": null
     },
     {
-      "nombre": "OMEPRAZOL 20 MG VO QD",
+      "nombre": "Meropenem 1 g IV c/8h (FI: 12/11/2026, CIE-10: B99, indicado por Infectología).",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -70,7 +66,7 @@
       "nota": null
     },
     {
-      "nombre": "COTRIMOZAXOL 800 / 160 MG LUNES MIERCOLES Y VIERNES",
+      "nombre": "Paracetamol 1 g IV c/8h",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -83,7 +79,7 @@
       "nota": null
     },
     {
-      "nombre": "VITAMINA D 2000 UI VO QD",
+      "nombre": "Omeprazol 40 mg IV c/12h",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -96,7 +92,7 @@
       "nota": null
     },
     {
-      "nombre": "AZATIOPRINA 100 MG VO QD TIENE",
+      "nombre": "Enema Fleet STAT.",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -111,9 +107,9 @@
   ],
   "pendientes": [
     {
-      "id": "PEND-UROLOGIA2-01",
-      "tipo": "IMAGEN_PROCEDIMIENTO",
-      "descripcion": "PD TAC DE TORAX",
+      "id": "PEND-CRTICOS-01",
+      "tipo": "LABORATORIO",
+      "descripcion": "Revisar electrolitos de hoy post-corrección de hipokalemia.",
       "prioridad": "URGENTE",
       "turno": "NOCTURNA_20_24",
       "horario_programado": null,
@@ -123,21 +119,21 @@
       "resultado_obtenido": null
     },
     {
-      "id": "PEND-UROLOGIA2-02",
-      "tipo": "INTERCONSULTA",
-      "descripcion": "INDICACIONES DE REUMATOLOGIA",
-      "prioridad": "RUTINA",
+      "id": "PEND-CRTICOS-02",
+      "tipo": "LABORATORIO",
+      "descripcion": "Revisar resultados de laboratorio central del lunes 16/11/2026: Biometría, química sanguínea, PCR, procalcitonina, electrolitos, AST y ALT.",
+      "prioridad": "URGENTE",
       "turno": "NOCTURNA_20_24",
       "horario_programado": null,
-      "es_visita_nocturna": false,
+      "es_visita_nocturna": true,
       "estado": "PENDIENTE",
       "responsable": null,
       "resultado_obtenido": null
     },
     {
-      "id": "PEND-UROLOGIA2-03",
+      "id": "PEND-CRTICOS-03",
       "tipo": "IMAGEN_PROCEDIMIENTO",
-      "descripcion": "ECOCARDIOGRAMA PD TURNO",
+      "descripcion": "Estudios endoscópicos/tomográficos de diagnóstico de cáncer gástrico.",
       "prioridad": "URGENTE",
       "turno": "NOCTURNA_20_24",
       "horario_programado": null,
@@ -147,13 +143,23 @@
       "resultado_obtenido": null
     }
   ],
-  "observaciones": [],
+  "observaciones": [
+    "Paciente mejor hidratado, con tolerancia oral a líquidos, adecuada diuresis y MÁS DE 24 HORAS SIN SOPORTE VASOACTIVO (apto para encargarse/transferirse a piso de hospitalización). Revisar Hb post-transfusional y K+ del control de hoy."
+  ],
   "laboratorios": [
     {
-      "fecha_hora": "2026-11-16",
-      "tipo_estudio": "Laboratorios / Gasometría",
+      "fecha_hora": "17/11/2026",
+      "tipo_estudio": "Laboratorio",
       "valores": {
-        "resumen": "11/11/2026 PCR 1.11 / INR.1.19 (TP).: 12.9 (TTP): 27.3 LEUCOCITOS : 6.83 (HB).: 15.1 MONOCITOS.: 0.30 EOSINOFILOS.: 0.05 LINFOCITOS..: 2.51 NEUTROFILOS 3.90 PLAQU: 448.000 2026/11/04 PCR : 2.24 AST .: 133.0 ALT : 223.0 CPK...: 5798.0 * COLESTEROL.: 180 TRIGLI 92 F-ALKALINA...: 103 GGT...: 18 . CL: 108, K: 4.5, SODIO: 140. . CREA. 0.53 . EMO NO INFE"
+        "resumen": "Al ingreso: Hemoglobina 5.0 g/dL, Plaquetas 682.000/µL, hipokalemia en corrección."
+      },
+      "alerta_critica": null
+    },
+    {
+      "fecha_hora": "16/11/2026",
+      "tipo_estudio": "Laboratorio",
+      "valores": {
+        "resumen": "En proceso BH, química, PCR, PCT, electrolitos y transaminasas."
       },
       "alerta_critica": null
     }

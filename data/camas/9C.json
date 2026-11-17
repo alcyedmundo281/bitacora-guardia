@@ -5,25 +5,21 @@
   "nombre_completo": "MORENO BARRIGA BLANCA ALICIA",
   "hc": "1734898",
   "cedula": "0500728902",
-  "edad": "72 AÑOS",
+  "edad": "72 años",
   "sexo": null,
   "fecha_nacimiento": null,
   "fecha_ingreso": null,
-  "dias_hospitalizacion": null,
+  "dias_hospitalizacion": 14,
   "app": [
-    "ACCIDENTE CEREBROVASCULAR ISQUÉMICO DE MÚLTIPLES TERRITORIOS Y BILATERALES",
-    "INSUFICIENCIA CARDIACA FEVI PRESERVADA 60% PERFIL HEMODINÁMICO A, ETIOLOGIA VALVULAR POR ESTENOSIS AÓRTICA SEVERA, ESTADIO C, NYHA II",
-    "SINDROME NEFRÓTICO EN ESTUDIO",
-    "INJURIA MIOCÁRDICA AGUDA SECUNDARIA A SINDROME CEREBRO CORAZON, TIPO II",
-    "DISLIPIDEMIA DIAGNOSTICADA HACE APROXIMADAMENTE 2 MESES, SIN TRATAMIENTO"
+    "Clínicos: Accidente cerebrovascular isquémico de múltiples territorios y bilateral; Insuficiencia cardíaca FEVI preservada (60%), perfil hemodinámico A, etiología valvular por estenosis aórtica severa, estadio C, NYHA II; Síndrome nefrótico en estudio; Injuria miocárdica aguda secundaria a síndrome cerebro-corazón tipo II; Dislipidemia diagnosticada hace 2 meses sin tratamiento."
   ],
   "aqx": [],
   "alergias": [],
   "diagnosticos_activos": [
-    "SINDROME NEFRÓTICO",
-    "INSUFICIENCIA CARDIACA FEVI PRESERVADA 60% PERFIL HEMODINÁMICO A, ETIOLOGIA VALVULAR POR ESTENOSIS AÓRTICA SEVERA, ESTADIO C, NYHA II DESCOMPENSADA",
-    "HIPOKALEMIA LEVE EN REPOSICIÓN",
-    "BACTERIURIA ASINTOMATICA"
+    "Síndrome nefrótico en estudio.",
+    "Insuficiencia cardíaca FEVI preservada (60%), perfil hemodinámico A, etiología valvular por estenosis aórtica severa, estadio C, NYHA II descompensada.",
+    "Hipokalemia leve en reposición.",
+    "Bacteriuria asintomática."
   ],
   "diagnosticos_pasivos": [],
   "dieta": null,
@@ -31,7 +27,7 @@
   "ckd_epi": null,
   "medicaciones": [
     {
-      "nombre": "OMEPRAZOL 20 MG P.O QD",
+      "nombre": "TFGe CKD-EPI: 55.2 mL/min/1.73 m² (Cr 1.06 mg/dL del 02/11/2026).",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -44,7 +40,7 @@
       "nota": null
     },
     {
-      "nombre": "UROCIT 2 CÁPSULAS VÍA ORAL CADA 8 HORAS",
+      "nombre": "Omeprazol 20 mg VO QD",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -57,7 +53,7 @@
       "nota": null
     },
     {
-      "nombre": "ENOXAPARINA 40 MG SUBCUTÁNEO CADA 12 HORAS SUSPENDER, RETOMAR 12 HORAS POSTERIOR A PROCEDIMIENTO",
+      "nombre": "Citrato de potasio 2 cápsulas VO c/8h",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -70,7 +66,7 @@
       "nota": null
     },
     {
-      "nombre": "PARACETAMOL 1 GRAMO INTRAVENOSO POR RAZONES NECESARIAS",
+      "nombre": "Furosemida 20 mg IV c/12h.",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -83,7 +79,7 @@
       "nota": null
     },
     {
-      "nombre": "ATORVASTATINA 40 MG VO QD ( ALTO RIESGO CARDIOVASCULAR",
+      "nombre": "Paracetamol 1 g IV PRN",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -96,7 +92,7 @@
       "nota": null
     },
     {
-      "nombre": "BETAHISTINA 48 MG VO QD",
+      "nombre": "Betahistina 48 mg VO QD",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -109,7 +105,7 @@
       "nota": null
     },
     {
-      "nombre": "EMPAGLIFLOZINA 25 MG VÍA ORAL CADA DIA ***********SUSPENDER********",
+      "nombre": "Polietilenglicol 1 cucharada VO c/12h",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -122,7 +118,7 @@
       "nota": null
     },
     {
-      "nombre": "ENALAPRIL 5 MG VO QD",
+      "nombre": "Losartán 25 mg VO QD.",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -135,7 +131,7 @@
       "nota": null
     },
     {
-      "nombre": "FUROSEMIDA 20 MG IV CADA 12 HORAS",
+      "nombre": "Psiquiatría: Mirtazapina 15 mg (media tableta) VO HS pasando un día por 30 días (dispone paciente).",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -148,7 +144,7 @@
       "nota": null
     },
     {
-      "nombre": "POLIETILENGLICOL 1 CUCHARADA VÍA ORAL CADA 12 HORAS",
+      "nombre": "Nefrología: Empagliflozina 10 mg VO QD",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -156,6 +152,58 @@
       "dias_tratamiento": null,
       "indicacion_cie10": null,
       "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "Enalapril 5 mg VO QD (evaluar según PA; conciliar con Losartán 25 mg para evitar doble bloqueo SRAA)",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "Espironolactona 50 mg VO QD",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "Atorvastatina 40 mg VO QD.",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "SUSPENDIDO: Enoxaparina 40 mg SC c/12h (suspender).",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": true,
       "diferido": false,
       "prn": false,
       "nota": null
@@ -165,11 +213,11 @@
     {
       "id": "PEND-9C-01",
       "tipo": "LABORATORIO",
-      "descripcion": "PD RESULTADO RESULTADO DE ELECTROFORESIS DE PROTEÍNAS",
-      "prioridad": "RUTINA",
+      "descripcion": "Recabar resultado de electroforesis de proteínas.",
+      "prioridad": "URGENTE",
       "turno": "NOCTURNA_20_24",
       "horario_programado": null,
-      "es_visita_nocturna": false,
+      "es_visita_nocturna": true,
       "estado": "PENDIENTE",
       "responsable": null,
       "resultado_obtenido": null
@@ -177,43 +225,115 @@
     {
       "id": "PEND-9C-02",
       "tipo": "LABORATORIO",
-      "descripcion": "ODONTOLOGIA REALIZA PROCEDIMIENTO",
-      "prioridad": "RUTINA",
+      "descripcion": "Realizar EKG diario.",
+      "prioridad": "CONTROL",
       "turno": "NOCTURNA_20_24",
       "horario_programado": null,
-      "es_visita_nocturna": false,
+      "es_visita_nocturna": true,
       "estado": "PENDIENTE",
       "responsable": null,
       "resultado_obtenido": null
     },
     {
       "id": "PEND-9C-03",
-      "tipo": "LABORATORIO",
-      "descripcion": "INDICACIONES DE NEFROLOGIA",
-      "prioridad": "RUTINA",
+      "tipo": "IMAGEN_PROCEDIMIENTO",
+      "descripcion": "Recabar informe de Body TAC simple y contrastada.",
+      "prioridad": "URGENTE",
       "turno": "NOCTURNA_20_24",
       "horario_programado": null,
-      "es_visita_nocturna": false,
+      "es_visita_nocturna": true,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
+    },
+    {
+      "id": "PEND-9C-04",
+      "tipo": "IMAGEN_PROCEDIMIENTO",
+      "descripcion": "Realizar ecografía renal pendiente.",
+      "prioridad": "URGENTE",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": null,
+      "es_visita_nocturna": true,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
+    },
+    {
+      "id": "PEND-9C-05",
+      "tipo": "IMAGEN_PROCEDIMIENTO",
+      "descripcion": "Body TAC simple y contrastada: Realizada, pendiente informe oficial.",
+      "prioridad": "URGENTE",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": null,
+      "es_visita_nocturna": true,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
+    },
+    {
+      "id": "PEND-9C-06",
+      "tipo": "IMAGEN_PROCEDIMIENTO",
+      "descripcion": "Ecografía renal: Pendiente de realizar.",
+      "prioridad": "URGENTE",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": null,
+      "es_visita_nocturna": true,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
+    },
+    {
+      "id": "PEND-9C-07",
+      "tipo": "IMAGEN_PROCEDIMIENTO",
+      "descripcion": "EKG: Control diario.",
+      "prioridad": "CONTROL",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": null,
+      "es_visita_nocturna": true,
       "estado": "PENDIENTE",
       "responsable": null,
       "resultado_obtenido": null
     }
   ],
   "observaciones": [
-    "EKG CADA DIA",
-    "PD INFORME DE BODY TAC SIMPLE Y CONTRASTADA",
-    "ECO RENAL PD REALIZAR"
+    "Odontología realizó procedimiento; vigilar hemostasia oral (Enoxaparina suspendida), realizar EKG diario y conciliar prescripción de Nefrología (Enalapril 5 mg vs Losartán 25 mg + Espironolactona 50 mg + Citrato de potasio c/8h, vigilando potasio sérico que ya normalizó a 3.90 mEq/L)."
   ],
   "laboratorios": [
     {
-      "fecha_hora": "2026-11-16",
-      "tipo_estudio": "Laboratorios / Gasometría",
+      "fecha_hora": "02/11/2026",
+      "tipo_estudio": "Laboratorio",
       "valores": {
-        "resumen": "CLORO: 114 POTASIO: 3.47 SODIO: 143.3 CALCIO IÓNICO EN SUERO: 1.19 CALCIO TOTAL: 7.4 FÓSFORO: 3.1 MAGNESIO: 1.96"
+        "resumen": "Creatinina 1.06 mg/dL (CKD-EPI 55.2 mL/min/1.73 m²)."
+      },
+      "alerta_critica": null
+    },
+    {
+      "fecha_hora": "10/11/2026",
+      "tipo_estudio": "Laboratorio",
+      "valores": {
+        "resumen": "Na 144.0 mEq/L, K 3.23 mEq/L, Cl 114 mEq/L; IgG total 5, IgM total 1.13, IgA total 2.74."
+      },
+      "alerta_critica": null
+    },
+    {
+      "fecha_hora": "11/11/2026",
+      "tipo_estudio": "Laboratorio",
+      "valores": {
+        "resumen": "Leucocitos 7.56 K/µL (Neu 4.90, Linf 1.98, Mon 0.42, Eos 0.21), Hb 10.3 g/dL, Hto 31.8%, VCM 92.9 fL, Plaquetas 364.000/µL."
+      },
+      "alerta_critica": null
+    },
+    {
+      "fecha_hora": "14/11/2026",
+      "tipo_estudio": "Laboratorio",
+      "valores": {
+        "resumen": "Na 140.5, K 3.79, Cl 108. | 15/11/2026: Na 139.7 mEq/L, K 3.90 mEq/L, Cl 109 mEq/L."
       },
       "alerta_critica": null
     }
   ],
   "cultivos": [],
-  "alertas_criticas": []
+  "alertas_criticas": [
+    "Odontología realizó procedimiento; vigilar hemostasia oral (Enoxaparina suspendida), realizar EKG diario y conciliar prescripción de Nefrología (Enalapril 5 mg vs Losartán 25 mg + Espironolactona 50 mg + Citrato de potasio c/8h, vigilando potasio sérico que ya normalizó a 3.90 mEq/L)."
+  ]
 }

@@ -1,32 +1,24 @@
 {
   "cama": "ABREVIADOS 3",
-  "area": "EMERGENCIA_OBSERVACION",
+  "area": "HOSPITALIZACION",
   "servicio_tratante": null,
-  "nombre_completo": "GUEVARA JARAMILLO MARTHA YOLANDA C",
+  "nombre_completo": "GUEVARA JARAMILLO MARTHA YOLANDA",
   "hc": "140019",
   "cedula": "1703701944",
-  "edad": "73 años",
+  "edad": "73 años 1 mes",
   "sexo": null,
   "fecha_nacimiento": null,
   "fecha_ingreso": null,
-  "dias_hospitalizacion": null,
+  "dias_hospitalizacion": 6,
   "app": [
-    "ANTECEDENTES PATOLOGICOS PERSONALES",
-    "INFECCION DEL TRACTO URINARIO POR K. PNEUMONIAE BLEE",
-    "INFECCION DEL TRACTO URINARIO RECURRENTE",
-    "HIPERTENSION PULMONAR",
-    "HIPOTIROIDISMO",
-    "ANTECEDENTES QUIRURGICO:",
-    "HISTERECTOMIA",
-    "CISTOPEXIA"
+    "Clínicos: Infección del tracto urinario previa por K. pneumoniae BLEE; ITU recurrente; Hipertensión pulmonar; Hipotiroidismo.",
+    "Quirúrgicos: Histerectomía; Cistopexia; Exéresis de sling suburetral + perineoplastia posterior (09/09/2025)."
   ],
   "aqx": [],
   "alergias": [],
   "diagnosticos_activos": [
-    "IMPRESION DIAGNOSTICA",
-    "ACTIVOS:",
-    "INFECCION DEL TRACTO URINARIO COMPLICADA E. COLI BLEE",
-    "EXACERBACIÓN DE EPID"
+    "Infección del tracto urinario complicada por Escherichia coli BLEE (CIE-10: N39.0).",
+    "Exacerbación de enfermedad pulmonar intersticial difusa (EPID)."
   ],
   "diagnosticos_pasivos": [],
   "dieta": null,
@@ -34,7 +26,7 @@
   "ckd_epi": null,
   "medicaciones": [
     {
-      "nombre": "MEROPENEM 1G INTRAVENOSO CADA 8 HORAS (FI: 10/11/2026 D3/7 N390)",
+      "nombre": "TFGe CKD-EPI: 96.6 mL/min/1.73 m² (calculada con Cr 0.55 mg/dL del 13/11/2026).",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -47,7 +39,7 @@
       "nota": null
     },
     {
-      "nombre": "PREDNISONA 20 MG VIA ORAL CADA DIA D1/3",
+      "nombre": "Dieta blanda gástrica",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -60,7 +52,7 @@
       "nota": null
     },
     {
-      "nombre": "PARACETAMOL 1 GRAMO INTRAVENOSO POR RAZONES NECESARIAS",
+      "nombre": "DISH.",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -73,7 +65,7 @@
       "nota": null
     },
     {
-      "nombre": "LOSARTAN 100 MG VIA ORAL CADA DIA",
+      "nombre": "Meropenem 1 g IV c/8h (FI: 10/11/2026, D3/7, CIE-10: N39.0)",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -86,7 +78,7 @@
       "nota": null
     },
     {
-      "nombre": "AMLODIPINO 10 MG VIA ORAL CADA DIA",
+      "nombre": "Prednisona 20 mg VO QD (D1/3).",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -99,7 +91,7 @@
       "nota": null
     },
     {
-      "nombre": "OMEPRAZOL 20 MG VIA ORAL CADA DIA",
+      "nombre": "Paracetamol 1 g IV PRN",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -112,7 +104,7 @@
       "nota": null
     },
     {
-      "nombre": "ENOXAPARINA 40 MG SC CADA DIA",
+      "nombre": "Omeprazol 20 mg VO QD",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -125,7 +117,7 @@
       "nota": null
     },
     {
-      "nombre": "LEVOTIROXINA 50 MCG VO CADA DIA EN AYUNAS",
+      "nombre": "Enoxaparina 40 mg SC QD.",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -138,7 +130,7 @@
       "nota": null
     },
     {
-      "nombre": "TAMSULOSINA 0.4 MG VO CADA DIA",
+      "nombre": "Losartán 100 mg VO QD",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -151,7 +143,85 @@
       "nota": null
     },
     {
-      "nombre": "SALBUTAMOL 2 PUFFS CADA 6 HORAS",
+      "nombre": "Amlodipino 10 mg VO QD",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "Levotiroxina 50 mcg VO QD en ayunas",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "Tamsulosina 0.4 mg VO QD.",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "Terapia inhalatoria: Salbutamol 2 puffs c/6h",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "Bromuro de ipratropio 2 puffs c/8h",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "Tiotropio 1 cápsula inhalada QD",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "Salmeterol/Fluticasona 25/125 mcg 2 inh c/12h.",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -168,8 +238,20 @@
     {
       "id": "PEND-ABREVIADOS3-01",
       "tipo": "LABORATORIO",
-      "descripcion": "EXÁMENES DE CONTROL EL DIA LUNES",
+      "descripcion": "Revisar exámenes de laboratorio de control del lunes 16/11/2026.",
       "prioridad": "CONTROL",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": null,
+      "es_visita_nocturna": true,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
+    },
+    {
+      "id": "PEND-ABREVIADOS3-02",
+      "tipo": "IMAGEN_PROCEDIMIENTO",
+      "descripcion": "Estudios torácicos de base por EPID e hipertensión pulmonar.",
+      "prioridad": "URGENTE",
       "turno": "NOCTURNA_20_24",
       "horario_programado": null,
       "es_visita_nocturna": true,
@@ -178,17 +260,21 @@
       "resultado_obtenido": null
     }
   ],
-  "observaciones": [],
+  "observaciones": [
+    "Vigilar saturación de oxígeno y mecánica ventilatoria por exacerbación de EPID, revisar laboratorios de control del lunes y verificar en sistema el número de HC/CI (comparte numeración 140019 / 1703701944 con registro de cama 13B)."
+  ],
   "laboratorios": [
     {
-      "fecha_hora": "2026-11-16",
-      "tipo_estudio": "Laboratorios / Gasometría",
+      "fecha_hora": "13/11/2026",
+      "tipo_estudio": "Laboratorio",
       "valores": {
-        "resumen": "13/11/2026 LEU: 10.66, HG: 14.8, HCTO: 45, NEU: 9.57, PLAQ: 327.000. . CLORO: 105, POTASIO: 4.05, SODIO:141 . CREA: 0.55"
+        "resumen": "Leucocitos 10.66 K/µL (Neu 9.57 K/µL), Hb 14.8 g/dL, Hto 45%, Plaquetas 327.000/µL; Creatinina 0.55 mg/dL, Sodio 141 mEq/L, Potasio 4.05 mEq/L, Cloro 105 mEq/L."
       },
       "alerta_critica": null
     }
   ],
   "cultivos": [],
-  "alertas_criticas": []
+  "alertas_criticas": [
+    "Vigilar saturación de oxígeno y mecánica ventilatoria por exacerbación de EPID, revisar laboratorios de control del lunes y verificar en sistema el número de HC/CI (comparte numeración 140019 / 1703701944 con registro de cama 13B)."
+  ]
 }

@@ -1,25 +1,24 @@
 {
   "cama": "AB 1",
-  "area": "EMERGENCIA_OBSERVACION",
+  "area": "HOSPITALIZACION",
   "servicio_tratante": null,
-  "nombre_completo": "RODRIGUEZ VILLAMAR CECILIA AUGUSTA",
-  "hc": "N/D",
+  "nombre_completo": "RODRÍGUEZ VILLAMAR CECILIA AUGUSTA",
+  "hc": "2088804",
   "cedula": "1703966620",
-  "edad": "74 AÑOS",
+  "edad": "74 años",
   "sexo": null,
   "fecha_nacimiento": null,
   "fecha_ingreso": null,
-  "dias_hospitalizacion": null,
+  "dias_hospitalizacion": 4,
   "app": [
-    "DIABETES MELLITUS TIPO 2",
-    "ITU A REPETICIÓN"
+    "Clínicos: Diabetes mellitus tipo 2; Infecciones del tracto urinario a repetición."
   ],
   "aqx": [],
   "alergias": [],
   "diagnosticos_activos": [
-    "SEPSIS DE FOCO URINARIO",
-    "HIPONATREMIA SEVERA HIPERVOLEMICA HIPOOSMOLAR CRONICA",
-    "HEPATOPATIA EN ESTUDIO"
+    "Sepsis de foco urinario (CIE-10: A41.9).",
+    "Hiponatremia severa hipervolémica hipoosmolar crónica.",
+    "Hepatopatía en estudio."
   ],
   "diagnosticos_pasivos": [],
   "dieta": null,
@@ -27,7 +26,7 @@
   "ckd_epi": null,
   "medicaciones": [
     {
-      "nombre": "AMPICILINA MAS SULBACTAM 3G IV CADA 6HORAS FI: 12.11.2026 D:1 CIE10: A419",
+      "nombre": "TFGe CKD-EPI: 91.32 mL/min/1.73 m² (Cr 0.57 mg/dL del 12/11/2026).",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -40,7 +39,7 @@
       "nota": null
     },
     {
-      "nombre": "PARACETAMOL 1G IV CADA 12 HORAS Y PRN",
+      "nombre": "Ampicilina/Sulbactam 3 g IV c/6h (FI: 12/11/2026, D: 4, CIE-10: A41.9).",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -53,7 +52,7 @@
       "nota": null
     },
     {
-      "nombre": "OMEPRAZOL 40 MG IV QD",
+      "nombre": "Paracetamol 1 g IV c/12h y PRN",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -66,7 +65,33 @@
       "nota": null
     },
     {
-      "nombre": "ENOXAPARINA 40 MG SC CADA 24 HORAS MANTENER SI NO HAY SANGRADO",
+      "nombre": "Omeprazol 40 mg IV QD",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "Esquema de insulina.",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "Enoxaparina 40 mg SC c/24h (mantener si no hay sangrado).",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -83,45 +108,43 @@
     {
       "id": "PEND-AB1-01",
       "tipo": "LABORATORIO",
-      "descripcion": "OSMOLARIDAD SERICA/PLASMATICA ELECTROLITOS CORTISOL SERICO 08H. NA URINARIO",
-      "prioridad": "RUTINA",
+      "descripcion": "INSISTIR en resultados pendientes: Osmolaridad sérica/plasmática, electrolitos séricos, cortisol sérico 08h00, sodio urinario, osmolaridad urinaria, TSH y T4 libre.",
+      "prioridad": "URGENTE",
       "turno": "NOCTURNA_20_24",
       "horario_programado": null,
-      "es_visita_nocturna": false,
+      "es_visita_nocturna": true,
       "estado": "PENDIENTE",
       "responsable": null,
       "resultado_obtenido": null
     },
     {
       "id": "PEND-AB1-02",
-      "tipo": "LABORATORIO",
-      "descripcion": "+OSMOLARIDAD URINARIA TSH + T4L **INSISTIR***",
-      "prioridad": "RUTINA",
+      "tipo": "IMAGEN_PROCEDIMIENTO",
+      "descripcion": "Evaluación de hepatopatía en curso (nota: paciente figura en registro quirúrgico previo del 02/11 en Gastronomía/Gastro).",
+      "prioridad": "URGENTE",
       "turno": "NOCTURNA_20_24",
       "horario_programado": null,
-      "es_visita_nocturna": false,
-      "estado": "PENDIENTE",
-      "responsable": null,
-      "resultado_obtenido": null
-    },
-    {
-      "id": "PEND-AB1-03",
-      "tipo": "LABORATORIO",
-      "descripcion": "L: LUNES BIOMETRIA HEMATICA, QUIMICA Y ELECTROLITOS",
-      "prioridad": "RUTINA",
-      "turno": "NOCTURNA_20_24",
-      "horario_programado": null,
-      "es_visita_nocturna": false,
+      "es_visita_nocturna": true,
       "estado": "PENDIENTE",
       "responsable": null,
       "resultado_obtenido": null
     }
   ],
   "observaciones": [
-    "CONTROL SERIADO DE SODIO Y ELECTROLITOS CADA 4-6 HORAS DURANTE CORRECCION",
-    "ACTIVA"
+    "Insistir durante la guardia PM en los resultados del perfil de estudio de hiponatremia (Na urinario, osmolaridad, cortisol 08h, TSH/T4L) y vigilar estado neurológico y signos de sangrado."
   ],
-  "laboratorios": [],
+  "laboratorios": [
+    {
+      "fecha_hora": "12/11/2026",
+      "tipo_estudio": "Laboratorio",
+      "valores": {
+        "resumen": "Creatinina 0.57 mg/dL (TFGe 91.32 mL/min/1.73 m²). Pendientes electrolitos, osmolaridad sérica/urinaria y perfil endocrino."
+      },
+      "alerta_critica": null
+    }
+  ],
   "cultivos": [],
-  "alertas_criticas": []
+  "alertas_criticas": [
+    "Insistir durante la guardia PM en los resultados del perfil de estudio de hiponatremia (Na urinario, osmolaridad, cortisol 08h, TSH/T4L) y vigilar estado neurológico y signos de sangrado."
+  ]
 }

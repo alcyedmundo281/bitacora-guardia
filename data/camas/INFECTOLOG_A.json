@@ -1,33 +1,24 @@
 {
-  "cama": "11A",
+  "cama": "INFECTOLOGÍA",
   "area": "HOSPITALIZACION",
   "servicio_tratante": null,
-  "nombre_completo": "YELA DÍAS NELSON ARNULFO",
-  "hc": "641333",
-  "cedula": "1705250726",
-  "edad": "78 años",
+  "nombre_completo": "CÁRDENAS CORONEL CÉSAR WASHINGTON",
+  "hc": "N/D",
+  "cedula": "1700837642",
+  "edad": "92 años",
   "sexo": null,
   "fecha_nacimiento": null,
   "fecha_ingreso": null,
-  "dias_hospitalizacion": null,
+  "dias_hospitalizacion": 7,
   "app": [
-    "ANTECEDENTES PATOLÓGICOS PERSONALES:",
-    "ENFERMEDAD RENAL CRÓNICA ESTADIO 5 SECUNDARIA A NEFROPATÍA DIABÉTICA EN HEMODIÁLISIS TRISEMANAL (MARTES, JUEVES Y SÁBADO) NO OLIGÚRICO",
-    "INFECCIÓN DE VÍAS URINARIAS NOSOCOMIAL POR KLEBSIELLA PNEUMONIAE KPC/ENTEROCOCCUS FAECALIS SUPERADA",
-    "DIABETES MELLITUS TIPO 2",
-    "DISLIPIDEMIA",
-    "HIPERTENSIÓN ARTERIAL SISTÉMICA",
-    "TAQUIARRITMIA CARDÍACA TIPO FIBRILACIÓN AURICULAR",
-    "HIPERPLASIA E HIPERTROFIA PROSTÁTICA BENIGNA"
+    "Clínicos: Adenocarcinoma de próstata acinar en tratamiento con Leuprolide; Hipotiroidismo en tratamiento con Levotiroxina 50 mcg VO QD; Hipertensión arterial sin tratamiento; Rinitis alérgica en tratamiento con Loratadina 10 mg VO QD."
   ],
   "aqx": [],
   "alergias": [],
   "diagnosticos_activos": [
-    "DIAGNÓSTICOS ACTIVOS:",
-    "NEUMONÍA ADQUIRIDA EN LA COMUNIDAD EN RESOLUCIÓN (CIE-10: J18.9)",
-    "ENFERMEDAD RENAL CRÓNICA ESTADIO 5 EN HEMODIÁLISIS (CKD-EPI: 13.14 ML/MIN) (CIE-10: N18.5)",
-    "DIABETES MELLITUS TIPO 2 (CIE-10: E11.9)",
-    "HIPERTENSIÓN ARTERIAL (CIE-10: I10)"
+    "Otras espondilopatías inflamatorias / Infección piógena de disco intervertebral (espondilodiscitis, CIE-10: M46.3).",
+    "Alteración hidroelectrolítica en estudio.",
+    "Infección de vías urinarias descartada (urocultivo negativo)."
   ],
   "diagnosticos_pasivos": [],
   "dieta": null,
@@ -35,7 +26,7 @@
   "ckd_epi": null,
   "medicaciones": [
     {
-      "nombre": "CEFTRIAXONA 2 GRAMOS IV CADA DIA (4/5) FI: 12/11/2026 A419",
+      "nombre": "TFGe CKD-EPI: [Pendiente valor de creatinina en bitácora].",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -48,7 +39,7 @@
       "nota": null
     },
     {
-      "nombre": "HEPARINA SODICA 5000 UI SC CADA 12 HORAS LOS DÍAS QUE NO HACE DIÁLISIS",
+      "nombre": "Cefazolina 1 g IV c/8h (FI: 13/11/2026, D: 3/28, CIE-10: M46.3).",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -61,7 +52,7 @@
       "nota": null
     },
     {
-      "nombre": "LOSARTAN 100 MG VO CADA DIA",
+      "nombre": "Buprenorfina 20 mg SC: aplicar 1/4 de parche c/72h (inicio 12/11/2026, cambio domingo 15/11, próximo cambio 18/11/2026).",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -74,7 +65,7 @@
       "nota": null
     },
     {
-      "nombre": "AMLODIPINA 10 MG VO CADA DIA",
+      "nombre": "Levotiroxina 50 mcg VO QD",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -87,7 +78,7 @@
       "nota": null
     },
     {
-      "nombre": "CARVEDILOL 6.25 MG VO CADA DIA",
+      "nombre": "Omeprazol 20 mg VO QD (07h00)",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -100,7 +91,7 @@
       "nota": null
     },
     {
-      "nombre": "INSULINA NPH 24 UI + 2UI INSULINA CRISTALINA SC AM",
+      "nombre": "Paracetamol 1 g IV PRN dolor",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -113,7 +104,7 @@
       "nota": null
     },
     {
-      "nombre": "INSULINA CRISTALINA 4UI SC 12H00",
+      "nombre": "Polietilenglicol 17 g en 1 vaso de agua PRN.",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -126,7 +117,7 @@
       "nota": null
     },
     {
-      "nombre": "INSULINA NPH 10 UI + 2UI INSULINA CRISTALINA SC PM",
+      "nombre": "Risperidona 10 gotas VO HS (paciente tiene)",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -139,20 +130,7 @@
       "nota": null
     },
     {
-      "nombre": "180-230 2UI",
-      "dosis": "",
-      "via": "",
-      "frecuencia": "",
-      "fecha_inicio": null,
-      "dias_tratamiento": null,
-      "indicacion_cie10": null,
-      "suspendido": false,
-      "diferido": false,
-      "prn": false,
-      "nota": null
-    },
-    {
-      "nombre": "231-280 3UI",
+      "nombre": "Zopiclona 7.5 mg VO HS (paciente tiene).",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -167,33 +145,9 @@
   ],
   "pendientes": [
     {
-      "id": "PEND-11A-01",
+      "id": "PEND-INFECTOLOGA-01",
       "tipo": "LABORATORIO",
-      "descripcion": "16/11/2026: BIOMETRÍA, ELECTROLITOS, UREA Y CREATININA",
-      "prioridad": "RUTINA",
-      "turno": "NOCTURNA_20_24",
-      "horario_programado": null,
-      "es_visita_nocturna": false,
-      "estado": "PENDIENTE",
-      "responsable": null,
-      "resultado_obtenido": null
-    },
-    {
-      "id": "PEND-11A-02",
-      "tipo": "LABORATORIO",
-      "descripcion": "CEFTRIAXONA 2 G INTRAVENOSO CADA DÍA DÍA 4/5 (INICIO 12/11/2026)",
-      "prioridad": "RUTINA",
-      "turno": "NOCTURNA_20_24",
-      "horario_programado": null,
-      "es_visita_nocturna": false,
-      "estado": "PENDIENTE",
-      "responsable": null,
-      "resultado_obtenido": null
-    },
-    {
-      "id": "PEND-11A-03",
-      "tipo": "INTERCONSULTA",
-      "descripcion": "HEMODIÁLISIS 16/11/2026 PREVIA VALORACIÓN DE LABORATORIOS ACTUALIZADOS Y BALANCE DIARIO",
+      "descripcion": "Recabar resultado de hemocultivos tomados el 13/11/2026.",
       "prioridad": "URGENTE",
       "turno": "NOCTURNA_20_24",
       "horario_programado": null,
@@ -203,21 +157,9 @@
       "resultado_obtenido": null
     },
     {
-      "id": "PEND-11A-04",
-      "tipo": "LABORATORIO",
-      "descripcion": "RESTRICCIÓN ESTRICTA DE LÍQUIDOS PARENTERALES, NO LACTATO DE RINGER",
-      "prioridad": "RUTINA",
-      "turno": "NOCTURNA_20_24",
-      "horario_programado": null,
-      "es_visita_nocturna": false,
-      "estado": "PENDIENTE",
-      "responsable": null,
-      "resultado_obtenido": null
-    },
-    {
-      "id": "PEND-11A-05",
+      "id": "PEND-INFECTOLOGA-02",
       "tipo": "IMAGEN_PROCEDIMIENTO",
-      "descripcion": "LABORATORIOS (17H00): DESTACA MEJORIA DE AZOADOS POST-DIÁLISIS (UREA 67.8, CR",
+      "descripcion": "Realizar RMN de columna cervical, dorsal y lumbar solicitada.",
       "prioridad": "URGENTE",
       "turno": "NOCTURNA_20_24",
       "horario_programado": null,
@@ -227,22 +169,73 @@
       "resultado_obtenido": null
     },
     {
-      "id": "PEND-11A-06",
+      "id": "PEND-INFECTOLOGA-03",
       "tipo": "LABORATORIO",
-      "descripcion": "3.90). SODIO EN 134.0. PERSISTEN LEUCOCITOSIS (14.03) Y ANEMIA (HB 9.0)",
-      "prioridad": "RUTINA",
+      "descripcion": "Trámite de oxígeno domiciliario por Neumología (2 L/min por cánula nasal 24 horas).",
+      "prioridad": "URGENTE",
       "turno": "NOCTURNA_20_24",
       "horario_programado": null,
-      "es_visita_nocturna": false,
+      "es_visita_nocturna": true,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
+    },
+    {
+      "id": "PEND-INFECTOLOGA-04",
+      "tipo": "LABORATORIO",
+      "descripcion": "Control externo por Urología con PSA total.",
+      "prioridad": "CONTROL",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": null,
+      "es_visita_nocturna": true,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
+    },
+    {
+      "id": "PEND-INFECTOLOGA-05",
+      "tipo": "IMAGEN_PROCEDIMIENTO",
+      "descripcion": "RMN de columna cervical, dorsal y lumbar: Solicitada, pendiente realización.",
+      "prioridad": "URGENTE",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": null,
+      "es_visita_nocturna": true,
       "estado": "PENDIENTE",
       "responsable": null,
       "resultado_obtenido": null
     }
   ],
   "observaciones": [
-    "C: IC CENTRO DE HEMODIALISIS"
+    "TECHO TERAPÉUTICO: LIMITACIÓN DEL ESFUERZO TERAPÉUTICO, NO UCI, NO RCP. Confirmar que se haya efectuado el recambio del cuarto de parche de Buprenorfina (próximo 18/11), vigilar control del dolor axial y dar seguimiento a RMN de columna y trámite de O2 domiciliario."
   ],
-  "laboratorios": [],
+  "laboratorios": [
+    {
+      "fecha_hora": "09/11/2026",
+      "tipo_estudio": "Laboratorio",
+      "valores": {
+        "resumen": "PCR cuantitativo ultrasensible 232.00 mg/L, Procalcitonina 0.28 ng/mL."
+      },
+      "alerta_critica": null
+    },
+    {
+      "fecha_hora": "17/11/2026",
+      "tipo_estudio": "Laboratorio",
+      "valores": {
+        "resumen": "Urocultivo: Negativo."
+      },
+      "alerta_critica": null
+    },
+    {
+      "fecha_hora": "13/11/2026",
+      "tipo_estudio": "Laboratorio",
+      "valores": {
+        "resumen": "Hemocultivos en curso."
+      },
+      "alerta_critica": null
+    }
+  ],
   "cultivos": [],
-  "alertas_criticas": []
+  "alertas_criticas": [
+    "TECHO TERAPÉUTICO: LIMITACIÓN DEL ESFUERZO TERAPÉUTICO, NO UCI, NO RCP. Confirmar que se haya efectuado el recambio del cuarto de parche de Buprenorfina (próximo 18/11), vigilar control del dolor axial y dar seguimiento a RMN de columna y trámite de O2 domiciliario."
+  ]
 }

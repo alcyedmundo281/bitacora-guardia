@@ -1,29 +1,23 @@
 {
-  "cama": "INFECTO",
-  "area": "PERIFERICOS",
+  "cama": "ABREVIADO 3B",
+  "area": "HOSPITALIZACION",
   "servicio_tratante": null,
-  "nombre_completo": "CARDENAS CORONEL CESAR WASHINGTON C",
-  "hc": "N/D",
-  "cedula": "1700837642",
-  "edad": "92 años",
+  "nombre_completo": "JIMÉNEZ DUQUE SEGUNDO JOSÉ IGNACIO",
+  "hc": "122185",
+  "cedula": "1700077355",
+  "edad": "83 años 9 meses",
   "sexo": null,
   "fecha_nacimiento": null,
   "fecha_ingreso": null,
-  "dias_hospitalizacion": null,
+  "dias_hospitalizacion": 2,
   "app": [
-    "ADENOCARCINOMA DE PROSTATA ACINAR EN TTO CON LEUPROLIDE",
-    "HIPOTIROIDEO EN TTO LT4 50MCG VO QD",
-    "HTA SIN TTO",
-    "RINITIS ALERGICA EN TTO LORATADINA 10MG VO QD"
+    "Clínicos: Infecciones del tracto urinario recurrentes (última hospitalización en octubre 2026); Cardiopatía isquémica crónica por IAM / Cardiopatía aterosclerótica severa difusa / Enfermedad coronaria multivaso (IAMSEST previo GRACE 162, CRUSADE 53, Killip II); Insuficiencia cardíaca con FEVI reducida (49%), perfil hemodinámico A, estadio C; Anemia aguda leve normocítica normocrómica por pérdidas hemáticas; Quiste cortical renal izquierdo; Hipertensión arterial; Hipertrofia prostática benigna; Hipotiroidismo."
   ],
   "aqx": [],
   "alergias": [],
   "diagnosticos_activos": [
-    "ALTERACIÓN HIDROELECTROLÍTICA EN ESTUDIO",
-    "INFECCION DE VIAS URINARIA A DESCARTAR",
-    "OTRAS ESPONDILOPATIAS INFLAMATORIAS",
-    "INFECCION DE DISCO INTERVERTEBRAL (PIOGENA)",
-    "INFECCION DE DISCO INTERVERTEBRAL (PIOGENA)"
+    "Infección de vías urinarias (Tumbarello 7 puntos) + Bacteriemia por Escherichia coli BLEE (CIE-10: A41.51).",
+    "Hiponatremia leve."
   ],
   "diagnosticos_pasivos": [],
   "dieta": null,
@@ -31,7 +25,7 @@
   "ckd_epi": null,
   "medicaciones": [
     {
-      "nombre": "BUPRENORFINA 20 MG SC 1/4 (UN CUARTO) DE PARCHE, CAMBIO CADA 72 HORAS CIE: 10",
+      "nombre": "TFGe CKD-EPI: [Pendiente valor de creatinina en bitácora].",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -44,7 +38,7 @@
       "nota": null
     },
     {
-      "nombre": "LEVOTIROXINA 50 UG P.O. QD",
+      "nombre": "Meropenem 1 g IV c/8h (FI: 14/11/2026, D2, CIE-10: N39.0).",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -57,7 +51,7 @@
       "nota": null
     },
     {
-      "nombre": "PARACETAMOL 1 G I.V. PRN ( DOLOR )",
+      "nombre": "Paracetamol 1 g IV PRN",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -70,7 +64,7 @@
       "nota": null
     },
     {
-      "nombre": "OMEPRAZOL 20 MG P.O. QD 07H00",
+      "nombre": "Metoclopramida 10 mg IV PRN",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -83,7 +77,7 @@
       "nota": null
     },
     {
-      "nombre": "POLIETILENGLICOL 17 G DILUIDO EN 1 VASO DE AGUA PRN",
+      "nombre": "Tamsulosina 0.4 mg VO QD.",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -96,20 +90,7 @@
       "nota": null
     },
     {
-      "nombre": "ZOPLICONA 7.5 MG P.O. HS (PCTE TIENE)",
-      "dosis": "",
-      "via": "",
-      "frecuencia": "",
-      "fecha_inicio": null,
-      "dias_tratamiento": null,
-      "indicacion_cie10": null,
-      "suspendido": false,
-      "diferido": false,
-      "prn": false,
-      "nota": null
-    },
-    {
-      "nombre": "CEFAZOLINA 1 G IV C/8H CIE 10:M463 DI: 13-XI-2026 D:2/28",
+      "nombre": "Continuar con medicación crónica habitual para patología cardíaca e hipotiroidismo (paciente dispone).",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -124,57 +105,57 @@
   ],
   "pendientes": [
     {
-      "id": "PEND-INFECTO-01",
-      "tipo": "LABORATORIO",
-      "descripcion": "INDICACIONES DE UROLOGIA",
-      "prioridad": "RUTINA",
+      "id": "PEND-ABREVIADO3B-01",
+      "tipo": "IMAGEN_PROCEDIMIENTO",
+      "descripcion": "Recabar informe de UroTAC.",
+      "prioridad": "URGENTE",
       "turno": "NOCTURNA_20_24",
       "horario_programado": null,
-      "es_visita_nocturna": false,
+      "es_visita_nocturna": true,
       "estado": "PENDIENTE",
       "responsable": null,
       "resultado_obtenido": null
     },
     {
-      "id": "PEND-INFECTO-02",
+      "id": "PEND-ABREVIADO3B-02",
       "tipo": "LABORATORIO",
-      "descripcion": "CAMBIO DE PARCHE DOMINGO",
-      "prioridad": "RUTINA",
+      "descripcion": "Recabar resultado de urocultivo pendiente.",
+      "prioridad": "URGENTE",
       "turno": "NOCTURNA_20_24",
       "horario_programado": null,
-      "es_visita_nocturna": false,
+      "es_visita_nocturna": true,
       "estado": "PENDIENTE",
       "responsable": null,
       "resultado_obtenido": null
     },
     {
-      "id": "PEND-INFECTO-03",
-      "tipo": "LABORATORIO",
-      "descripcion": "UROCULTIVO RESULTADO: NEGATIVO",
-      "prioridad": "RUTINA",
+      "id": "PEND-ABREVIADO3B-03",
+      "tipo": "IMAGEN_PROCEDIMIENTO",
+      "descripcion": "UroTAC: Realizada, pendiente informe.",
+      "prioridad": "URGENTE",
       "turno": "NOCTURNA_20_24",
       "horario_programado": null,
-      "es_visita_nocturna": false,
+      "es_visita_nocturna": true,
       "estado": "PENDIENTE",
       "responsable": null,
       "resultado_obtenido": null
     }
   ],
   "observaciones": [
-    "UROCULTIVO NEGATIVO",
-    "HEMOCULTIVOS PENDIENTES SACADOS 13/11/2026",
-    "SE SOLICITA RMN DE COLUMNA CERVICAL, DORSAL Y LUMBAR PENDIENTE REALIZACION"
+    "Vigilar estado hemodinámico y signos de congestión pulmonar (FEVI 49% y enfermedad coronaria multivaso), recabar informe de UroTAC y verificar función renal para confirmar dosis de Meropenem."
   ],
   "laboratorios": [
     {
-      "fecha_hora": "2026-11-16",
-      "tipo_estudio": "Laboratorios / Gasometría",
+      "fecha_hora": "17/11/2026",
+      "tipo_estudio": "Laboratorio",
       "valores": {
-        "resumen": "2026/11/09 PCR CUANTITATIVO ULTRASENSIB..: 232.00 PROCALCITONINA LAB. CLÍNICO.....: 0.28 ."
+        "resumen": "Hemocultivos/cultivos previos positivos para Escherichia coli BLEE; urocultivo de control en curso."
       },
       "alerta_critica": null
     }
   ],
   "cultivos": [],
-  "alertas_criticas": []
+  "alertas_criticas": [
+    "Vigilar estado hemodinámico y signos de congestión pulmonar (FEVI 49% y enfermedad coronaria multivaso), recabar informe de UroTAC y verificar función renal para confirmar dosis de Meropenem."
+  ]
 }

@@ -1,29 +1,22 @@
 {
   "cama": "ABR 2",
-  "area": "EMERGENCIA_OBSERVACION",
+  "area": "HOSPITALIZACION",
   "servicio_tratante": null,
-  "nombre_completo": "AYALA PANCHEZ SEGUNDO VICTORIANO",
+  "nombre_completo": "AYALA PÁNCHEZ SEGUNDO VICTORIANO",
   "hc": "954541",
   "cedula": null,
   "edad": "N/D",
   "sexo": null,
   "fecha_nacimiento": null,
   "fecha_ingreso": null,
-  "dias_hospitalizacion": null,
+  "dias_hospitalizacion": 8,
   "app": [
-    "ANTECEDENTES PERSONALES:",
-    "MALFORMACION VASCULAR DE TIPO ANGIOMA CAVERNOSO",
-    "MIELOMA MULTIPLE DIAGNOSTICADO EN EL 2021",
-    "EPOC DIAGNOSTICADO EN EL 2021",
-    "DIABETES MELLITUS TIPO 2 DIAGNOSTICADO HACE 2 MESES",
-    "ENFERMEDAD DE PARKINSON",
-    "HIPOTIROIDISMO"
+    "Clínicos: Malformación vascular de tipo angioma cavernoso; Mieloma múltiple diagnosticado en 2021; EPOC diagnosticado en 2021; Diabetes mellitus tipo 2 diagnosticada hace 2 meses; Enfermedad de Parkinson; Hipotiroidismo."
   ],
   "aqx": [],
   "alergias": [],
   "diagnosticos_activos": [
-    "SEPSIS",
-    "DE PROBABLE ETIOLOGIA PULMONAR POR NEUMONIA ASPIRATIVA PSI CLASE 5, NEW DE RIESGO ALTO"
+    "Sepsis de probable etiología pulmonar por neumonía aspirativa (PSI Clase V, NEWS-2 de riesgo alto)."
   ],
   "diagnosticos_pasivos": [],
   "dieta": null,
@@ -31,7 +24,7 @@
   "ckd_epi": null,
   "medicaciones": [
     {
-      "nombre": "CLORURO DE SODIO 0,9% 300 ML + 30 MEQ DE CLORURO DE POTASIO PASAR IV A 3 HORAS",
+      "nombre": "TFGe CKD-EPI: [Pendiente valor de creatinina en bitácora].",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -44,7 +37,7 @@
       "nota": null
     },
     {
-      "nombre": "FITOMENADIONA 10 MG IV CADA 12 HORAS D1/3",
+      "nombre": "Dextrosa al 5% 1000 mL pasar IV a 40 mL/h.",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -57,7 +50,46 @@
       "nota": null
     },
     {
-      "nombre": "MEROPEMEN 2 GRAMOS IV EN ESTE MOMENTO Y LUEGO MEROPENEM 1 GRAMO IV CADA 8 HORa",
+      "nombre": "Reposición de potasio: Cloruro de sodio 0.9% 300 mL + 30 mEq de Cloruro de potasio pasar IV en 3 horas.",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "Fitomenadiona 10 mg IV c/12h (D1/3)",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "Colocar sonda nasogástrica.",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "Meropenem 2 g IV STAT en este momento y luego Meropenem 1 g IV c/8h.",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -74,11 +106,11 @@
     {
       "id": "PEND-ABR2-01",
       "tipo": "LABORATORIO",
-      "descripcion": "2026/11/08",
-      "prioridad": "RUTINA",
+      "descripcion": "Colocar sonda nasogástrica y verificar ubicación.",
+      "prioridad": "URGENTE",
       "turno": "NOCTURNA_20_24",
       "horario_programado": null,
-      "es_visita_nocturna": false,
+      "es_visita_nocturna": true,
       "estado": "PENDIENTE",
       "responsable": null,
       "resultado_obtenido": null
@@ -86,54 +118,41 @@
     {
       "id": "PEND-ABR2-02",
       "tipo": "LABORATORIO",
-      "descripcion": "PCR 433.00",
-      "prioridad": "RUTINA",
+      "descripcion": "Solicitar control de electrolitos post-reposición de potasio, tiempos de coagulación (TP/INR) y función renal actualizada.",
+      "prioridad": "CONTROL",
       "turno": "NOCTURNA_20_24",
       "horario_programado": null,
-      "es_visita_nocturna": false,
+      "es_visita_nocturna": true,
       "estado": "PENDIENTE",
       "responsable": null,
       "resultado_obtenido": null
     },
     {
       "id": "PEND-ABR2-03",
-      "tipo": "LABORATORIO",
-      "descripcion": "PROCALCITONINA10.0INR 1.85",
-      "prioridad": "RUTINA",
+      "tipo": "IMAGEN_PROCEDIMIENTO",
+      "descripcion": "Imagen pulmonar compatible con neumonía aspirativa PSI Clase V.",
+      "prioridad": "URGENTE",
       "turno": "NOCTURNA_20_24",
       "horario_programado": null,
-      "es_visita_nocturna": false,
-      "estado": "PENDIENTE",
-      "responsable": null,
-      "resultado_obtenido": null
-    },
-    {
-      "id": "PEND-ABR2-04",
-      "tipo": "LABORATORIO",
-      "descripcion": "PROTROMBINA 19.2",
-      "prioridad": "RUTINA",
-      "turno": "NOCTURNA_20_24",
-      "horario_programado": null,
-      "es_visita_nocturna": false,
-      "estado": "PENDIENTE",
-      "responsable": null,
-      "resultado_obtenido": null
-    },
-    {
-      "id": "PEND-ABR2-05",
-      "tipo": "LABORATORIO",
-      "descripcion": "TROMBOPLASTINA (TTP)..: 40.7",
-      "prioridad": "RUTINA",
-      "turno": "NOCTURNA_20_24",
-      "horario_programado": null,
-      "es_visita_nocturna": false,
+      "es_visita_nocturna": true,
       "estado": "PENDIENTE",
       "responsable": null,
       "resultado_obtenido": null
     }
   ],
-  "observaciones": [],
-  "laboratorios": [],
+  "observaciones": [
+    "PACIENTE DE ALTO RIESGO (NEWS-2 alto, PSI Clase V, mieloma múltiple): Confirmar administración de dosis de carga de Meropenem (2 g IV), colocación de SNG, control de potasio tras infusión de 30 mEq KCl y vigilancia de sangrado por coagulopatía (INR 1.85)."
+  ],
+  "laboratorios": [
+    {
+      "fecha_hora": "08/11/2026",
+      "tipo_estudio": "Laboratorio",
+      "valores": {
+        "resumen": "PCR 433.00 mg/L, Procalcitonina 10.0 ng/mL; TP 19.2 s, INR 1.85, TTP 40.7 s."
+      },
+      "alerta_critica": null
+    }
+  ],
   "cultivos": [],
   "alertas_criticas": []
 }

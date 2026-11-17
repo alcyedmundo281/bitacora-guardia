@@ -1,0 +1,194 @@
+{
+  "cama": "ABV 1 - 2",
+  "area": "HOSPITALIZACION",
+  "servicio_tratante": null,
+  "nombre_completo": "IZQUIERDO CORREA SHIRLY DEL CARMEN",
+  "hc": "2058466",
+  "cedula": "1757419278",
+  "edad": "50 años",
+  "sexo": null,
+  "fecha_nacimiento": null,
+  "fecha_ingreso": null,
+  "dias_hospitalizacion": 2,
+  "app": [
+    "Clínicos: Cáncer de cérvix estadio IIIC1; Atención paliativa; Uropatía obstructiva de origen maligno."
+  ],
+  "aqx": [],
+  "alergias": [],
+  "diagnosticos_activos": [
+    "Infección del tracto urinario (CIE-10: N39.0).",
+    "Uropatía obstructiva de origen maligno.",
+    "Anemia moderada normocítica normocrómica."
+  ],
+  "diagnosticos_pasivos": [],
+  "dieta": null,
+  "hidratacion": null,
+  "ckd_epi": null,
+  "medicaciones": [
+    {
+      "nombre": "TFGe CKD-EPI: 110.7 mL/min/1.73 m² (Cr 0.53 mg/dL del 15/11/2026).",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "Solución salina 0.9% 1000 mL IV a 40 mL/h.",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "Ceftazidima 2 g IV c/8h (FI: 14/11/2026, Día 1/2, CIE-10: N39.0).",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "Paracetamol 1 g IV c/8h",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "Tramadol 100 mg en 100 mL de SS 0.9% IV c/8h",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "Metoclopramida 10 mg IV PRN náuseas o vómitos.",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    }
+  ],
+  "pendientes": [
+    {
+      "id": "PEND-ABV12-01",
+      "tipo": "IMAGEN_PROCEDIMIENTO",
+      "descripcion": "Realizar/recabar UroTAC simple solicitada por Urología.",
+      "prioridad": "URGENTE",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": null,
+      "es_visita_nocturna": true,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
+    },
+    {
+      "id": "PEND-ABV12-02",
+      "tipo": "LABORATORIO",
+      "descripcion": "Revisar laboratorios del lunes 16/11/2026: Biometría, PCR, electrolitos, urea y creatinina.",
+      "prioridad": "URGENTE",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": null,
+      "es_visita_nocturna": true,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
+    },
+    {
+      "id": "PEND-ABV12-03",
+      "tipo": "LABORATORIO",
+      "descripcion": "Recabar resultado de urocultivo.",
+      "prioridad": "URGENTE",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": null,
+      "es_visita_nocturna": true,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
+    },
+    {
+      "id": "PEND-ABV12-04",
+      "tipo": "INTERCONSULTA",
+      "descripcion": "Revaloración por Urología (con UroTAC) y reinterconsulta a Infectología (con cultivos).",
+      "prioridad": "URGENTE",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": null,
+      "es_visita_nocturna": true,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
+    },
+    {
+      "id": "PEND-ABV12-05",
+      "tipo": "IMAGEN_PROCEDIMIENTO",
+      "descripcion": "UroTAC simple: Solicitada por Urología, pendiente realización/informe.",
+      "prioridad": "URGENTE",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": null,
+      "es_visita_nocturna": true,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
+    }
+  ],
+  "observaciones": [
+    "Vigilar diuresis horaria y control del dolor pélvico/lumbar; revisar laboratorios del lunes 16/11 y gestionar realización/informe de UroTAC para revaloración urológica."
+  ],
+  "laboratorios": [
+    {
+      "fecha_hora": "15/11/2026",
+      "tipo_estudio": "Laboratorio",
+      "valores": {
+        "resumen": "Creatinina 0.53 mg/dL (CKD-EPI 110.7 mL/min/1.73 m²)."
+      },
+      "alerta_critica": null
+    },
+    {
+      "fecha_hora": "16/11/2026",
+      "tipo_estudio": "Laboratorio",
+      "valores": {
+        "resumen": "BH, PCR, electrolitos y azoados en proceso; urocultivo pendiente."
+      },
+      "alerta_critica": null
+    }
+  ],
+  "cultivos": [],
+  "alertas_criticas": [
+    "Vigilar diuresis horaria y control del dolor pélvico/lumbar; revisar laboratorios del lunes 16/11 y gestionar realización/informe de UroTAC para revaloración urológica."
+  ]
+}

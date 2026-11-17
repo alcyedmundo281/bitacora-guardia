@@ -1,0 +1,253 @@
+{
+  "cama": "ABV 1",
+  "area": "HOSPITALIZACION",
+  "servicio_tratante": null,
+  "nombre_completo": "VÁSCONEZ RUALES CARLOS AUGUSTO",
+  "hc": "297135",
+  "cedula": "1700568841",
+  "edad": "87 años",
+  "sexo": null,
+  "fecha_nacimiento": null,
+  "fecha_ingreso": null,
+  "dias_hospitalizacion": 6,
+  "app": [
+    "Clínicos: Hiperplasia prostática benigna; Glaucoma; Enfermedad renal crónica; Nódulo tiroideo; Síndrome mielodisplásico / Mieloma múltiple en estudio."
+  ],
+  "aqx": [],
+  "alergias": [],
+  "diagnosticos_activos": [
+    "Colección submentoniana y masa cervical izquierda en estudio (descartar foco odontogénico / descartar Angina de Ludwig / descartar neoplasia tiroidea).",
+    "Pancitopenia con neutropenia profunda / agranulocitosis (Leucocitos 0.48 K/µL, Neutrófilos 0.05 K/µL = 50 cel/µL).",
+    "Enfermedad renal crónica reagudizada.",
+    "Hiponatremia leve."
+  ],
+  "diagnosticos_pasivos": [],
+  "dieta": null,
+  "hidratacion": null,
+  "ckd_epi": null,
+  "medicaciones": [
+    {
+      "nombre": "TFGe CKD-EPI: [Pendiente resultado de creatinina del 16/11/2026; Vancomicina ajustada c/48h].",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "Cefepime 1 g IV c/12h (FI: 12/11/2026, Día 4, CIE-10: L03.9).",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "Vancomicina 500 mg IV c/48h (FI: 12/11/2026, Día 4, CIE-10: L03.9 — toca dosis hoy lunes 16/11/2026).",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "Fluconazol 150 mg VO QD (FI: 12/11/2026, Día 5)",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "Cotrimoxazol 800/160 mg VO lunes, miércoles y viernes (FI: 12/11/2026)",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "Aciclovir 800 mg VO QD (FI: 12/11/2026, Día 5).",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "ORL: Dexametasona 8 mg IV c/12h (FI: 10/11/2026, Día 6/6).",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "Paracetamol 1 g VO c/8h",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "Heparina sódica 5000 UI SC c/12h",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "Omeprazol 20 mg IV QD",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "Alopurinol 150 mg VO QD.",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "Insulina rápida SC por escapes (180-230: 2 UI; 231-280: 3 UI; 281-330: 4 UI; si <70 mg/dL: Dextrosa 10% 100 mL IV en bolo).",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    }
+  ],
+  "pendientes": [
+    {
+      "id": "PEND-ABV1-01",
+      "tipo": "INTERCONSULTA",
+      "descripcion": "Reinterconsultar de forma prioritaria a Hematología para biopsia de médula ósea y lectura de frotis de sangre periférica.",
+      "prioridad": "URGENTE",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": null,
+      "es_visita_nocturna": true,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
+    },
+    {
+      "id": "PEND-ABV1-02",
+      "tipo": "LABORATORIO",
+      "descripcion": "Recabar resultados de química/electrolitos del 16/11/2026, perfil ferrocinético (hierro sérico, ferritina, TIBC, transferrina), vitamina B12, ácido fólico y hemocultivos.",
+      "prioridad": "URGENTE",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": null,
+      "es_visita_nocturna": true,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
+    },
+    {
+      "id": "PEND-ABV1-03",
+      "tipo": "LABORATORIO",
+      "descripcion": "PAAF de masa cervical diferida hasta recuperación de neutrófilos.",
+      "prioridad": "URGENTE",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": null,
+      "es_visita_nocturna": true,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
+    },
+    {
+      "id": "PEND-ABV1-04",
+      "tipo": "IMAGEN_PROCEDIMIENTO",
+      "descripcion": "Evaluación cervical/submentoniana por ORL; PAAF cervical pendiente de ascenso de RAN.",
+      "prioridad": "URGENTE",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": null,
+      "es_visita_nocturna": true,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
+    }
+  ],
+  "observaciones": [
+    "ALERTA CRÍTICA GUARDIA PM: Paciente en AGRANULOCITOSIS (RAN 50 cel/µL) con colección submentoniana; mantener aislamiento inverso estricto, vigilar permeabilidad de vía aérea superior (descarte de Angina de Ludwig), verificar que haya recibido la dosis de Vancomicina 500 mg IV de hoy lunes 16/11 y revisar creatinina/electrolitos del 16/11."
+  ],
+  "laboratorios": [
+    {
+      "fecha_hora": "16/11/2026 (Biometría hemática)",
+      "tipo_estudio": "Laboratorio",
+      "valores": {
+        "resumen": "Leucocitos 0.48 K/µL (Neutrófilos 0.05 K/µL [50/µL], Linfocitos 0.43 K/µL, Monocitos 0.00, Eosinófilos 0.00, Basófilos 0.00), Hemoglobina 8.4 g/dL, Hematocrito 27.8%, VCM 86.6 fL, HCM 26.1 pg, CHCM 30.2 g/dL, Plaquetas 184.000/µL (VPM 13.2 fL)."
+      },
+      "alerta_critica": null
+    }
+  ],
+  "cultivos": [],
+  "alertas_criticas": [
+    "ALERTA CRÍTICA GUARDIA PM: Paciente en AGRANULOCITOSIS (RAN 50 cel/µL) con colección submentoniana; mantener aislamiento inverso estricto, vigilar permeabilidad de vía aérea superior (descarte de Angina de Ludwig), verificar que haya recibido la dosis de Vancomicina 500 mg IV de hoy lunes 16/11 y revisar creatinina/electrolitos del 16/11."
+  ]
+}

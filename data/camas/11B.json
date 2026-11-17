@@ -2,30 +2,24 @@
   "cama": "11B",
   "area": "HOSPITALIZACION",
   "servicio_tratante": null,
-  "nombre_completo": "PACHACAMA SUNTAXI FREDDY RODRIGO C",
+  "nombre_completo": "PACHACAMA SUNTAXI FREDDY RODRIGO",
   "hc": "20",
   "cedula": "1713637401",
-  "edad": "N/D",
+  "edad": "50 años",
   "sexo": null,
   "fecha_nacimiento": null,
   "fecha_ingreso": null,
-  "dias_hospitalizacion": null,
+  "dias_hospitalizacion": 31,
   "app": [
-    "LUPUS ERITEMATOSO SISTEMICO DIAGNOSTICO EN EL 2022",
-    "ANEMIA MODERADA MICROCITICA HIPOCROMICA",
-    "TROMBOEMBOLIA PULMONAR, ANGIO TOMOGRAFIA TORAX 12/09/2026",
-    "SEPSIS POR BACTERIEMIA POR SALMONELLA SUPERADO 10/2026",
-    "NEFRITIS LUPICA (POR CLINICA PROBABLE CLASE IV, SLEDAI 2K: 24 ACTIVIDAD",
-    "SEVERA)",
-    "PROTEINURIA SUB NEFROTICA"
+    "Clínicos: Lupus eritematoso sistémico diagnosticado en 2022; Nefritis lúpica (probable clase IV clínica, SLEDAI-2K previo 24 puntos, proteinuria subnefrótica); Anemia moderada microcítica hipocrómica; Tromboembolia pulmonar (Angio-TAC 12/09/2026); Sepsis por bacteriemia por Salmonella superada (10/2026)."
   ],
   "aqx": [],
   "alergias": [],
   "diagnosticos_activos": [
-    "LUPUS ERITEMATOSO SISTEMICO SLEDAI 2K 10 PUNTOS ACTIVIDAD ALTA",
-    "NEFRITIS LÚPICA",
-    "DERRAME PLEURAL LOCULADO RESUELTO",
-    "ANEMIA MODERADA MICROCÍTICA HIPOCRÓMICA"
+    "Lupus eritematoso sistémico (SLEDAI-2K: 10 puntos, actividad alta).",
+    "Nefritis lúpica.",
+    "Derrame pleural loculado derecho por Salmonella enterica resuelto (postquirúrgico de toracoscopia derecha con retiro exitoso de tubo torácico el 13/11/2026).",
+    "Anemia moderada microcítica hipocrómica."
   ],
   "diagnosticos_pasivos": [],
   "dieta": null,
@@ -33,7 +27,7 @@
   "ckd_epi": null,
   "medicaciones": [
     {
-      "nombre": "CEFTRIAXONA A 2 G IV QD FI: 16/10/2026 D: 27 CIE 10 B99",
+      "nombre": "TFGe CKD-EPI: 112.9 mL/min/1.73 m² (calculada con Cr 0.64 mg/dL del 13/11/2026).",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -46,7 +40,7 @@
       "nota": null
     },
     {
-      "nombre": "PARACETAMOL 1 GR IV CADA 8 HORAS",
+      "nombre": "Ceftriaxona 2 g IV QD (FI: 16/10/2026, D: 30, CIE-10: B99)",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -59,7 +53,7 @@
       "nota": null
     },
     {
-      "nombre": "MORFINA 4 MG IV EN LA TARDE, DESPUES DE ALMUERZO",
+      "nombre": "Cotrimoxazol 800/160 mg VO martes, jueves y sábado 14h00 (dispone paciente).",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -72,7 +66,7 @@
       "nota": null
     },
     {
-      "nombre": "ENOXAPARINA 60 MG SC CADA 12 HORAS",
+      "nombre": "Rivaroxabán 20 mg VO c/12h",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -85,7 +79,7 @@
       "nota": null
     },
     {
-      "nombre": "OMEPRAZOL 40 MG INTRAVENOSO CADA DIA",
+      "nombre": "Furosemida 40 mg VO QD",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -98,7 +92,7 @@
       "nota": null
     },
     {
-      "nombre": "CARBONATO DE CALCIO SOLIDO ORAL 500 MG VO QD 11 AM",
+      "nombre": "Paracetamol 1 g IV PRN",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -111,7 +105,7 @@
       "nota": null
     },
     {
-      "nombre": "COTRIMOXAZOL SOLIDO ORAL 800/160 MG LOS DIAS MARTES JUEVES SABADO A LAS 2",
+      "nombre": "Tramadol 50 mg VO c/12h",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -124,7 +118,7 @@
       "nota": null
     },
     {
-      "nombre": "GABAPENTINA SOLIDO ORAL 300 MG VO QD A LAS 9 PM",
+      "nombre": "Gabapentina 300 mg VO 21h00",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -137,7 +131,7 @@
       "nota": null
     },
     {
-      "nombre": "TRAMADOL 100 MG INTRAVENOSO CADA 8 HORAS",
+      "nombre": "Metoclopramida 10 mg VO c/8h",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -150,7 +144,111 @@
       "nota": null
     },
     {
-      "nombre": "METOCLOPRAMIDA 10 MG INTRAVENOSO CADA 8 HORAS",
+      "nombre": "Carbonato de calcio 500 mg VO 11h00",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "Complejo B 4 mg VO 09h00",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "Tusigen 20 mL VO HS PRN.",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "Reumatología: Hidrocortisona 100 mg IV QD",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "Hidroxicloroquina 200 mg VO QD",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "Losartán 25 mg VO QD (antiproteinúrico).",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "SUSPENDIDOS/DIFERIDOS: Enoxaparina 60 mg SC c/12h (suspender)",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": true,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "Omeprazol 40 mg IV QD (suspender)",
+      "dosis": "",
+      "via": "",
+      "frecuencia": "",
+      "fecha_inicio": null,
+      "dias_tratamiento": null,
+      "indicacion_cie10": null,
+      "suspendido": false,
+      "diferido": false,
+      "prn": false,
+      "nota": null
+    },
+    {
+      "nombre": "Prednisona 5 mg VO QD (diferido el 07/10/2026).",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -167,82 +265,103 @@
     {
       "id": "PEND-11B-01",
       "tipo": "INTERCONSULTA",
-      "descripcion": "INDICACIONES DE REUMATOLOGÍA",
-      "prioridad": "RUTINA",
+      "descripcion": "Valoración por Infectología para definir conducta antimicrobiana (cumple 30 días de Ceftriaxona).",
+      "prioridad": "URGENTE",
       "turno": "NOCTURNA_20_24",
       "horario_programado": null,
-      "es_visita_nocturna": false,
+      "es_visita_nocturna": true,
       "estado": "PENDIENTE",
       "responsable": null,
       "resultado_obtenido": null
     },
     {
       "id": "PEND-11B-02",
-      "tipo": "INTERCONSULTA",
-      "descripcion": "BRONCOSCOPIA:10-11-2026",
-      "prioridad": "RUTINA",
+      "tipo": "LABORATORIO",
+      "descripcion": "Continuar seguimiento por Reumatología.",
+      "prioridad": "CONTROL",
       "turno": "NOCTURNA_20_24",
       "horario_programado": null,
-      "es_visita_nocturna": false,
+      "es_visita_nocturna": true,
       "estado": "PENDIENTE",
       "responsable": null,
       "resultado_obtenido": null
     },
     {
       "id": "PEND-11B-03",
-      "tipo": "LABORATORIO",
-      "descripcion": "INFILTRACION GRADO II DE CARINA SECUNDARIA ENTRE LOBULO SUPERIOR E INFERIOR",
-      "prioridad": "RUTINA",
+      "tipo": "IMAGEN_PROCEDIMIENTO",
+      "descripcion": "12/09/2026 (Angio-TAC de tórax): Tromboembolia pulmonar.",
+      "prioridad": "URGENTE",
       "turno": "NOCTURNA_20_24",
       "horario_programado": null,
-      "es_visita_nocturna": false,
+      "es_visita_nocturna": true,
       "estado": "PENDIENTE",
       "responsable": null,
       "resultado_obtenido": null
     },
     {
       "id": "PEND-11B-04",
-      "tipo": "LABORATORIO",
-      "descripcion": "IZQUIERDO",
-      "prioridad": "RUTINA",
+      "tipo": "IMAGEN_PROCEDIMIENTO",
+      "descripcion": "10/11/2026 (Broncoscopia): Infiltración grado II de carina secundaria entre lóbulo superior e inferior izquierdo; traqueobronquitis leve no purulenta.",
+      "prioridad": "URGENTE",
       "turno": "NOCTURNA_20_24",
       "horario_programado": null,
-      "es_visita_nocturna": false,
+      "es_visita_nocturna": true,
       "estado": "PENDIENTE",
       "responsable": null,
       "resultado_obtenido": null
     },
     {
       "id": "PEND-11B-05",
-      "tipo": "LABORATORIO",
-      "descripcion": "TRAQUEOBRONQUITIS LEVE NO PURULENTA",
-      "prioridad": "RUTINA",
+      "tipo": "IMAGEN_PROCEDIMIENTO",
+      "descripcion": "13/11/2026: Retiro exitoso de tubo torácico derecho post-toracoscopia.",
+      "prioridad": "URGENTE",
       "turno": "NOCTURNA_20_24",
       "horario_programado": null,
-      "es_visita_nocturna": false,
+      "es_visita_nocturna": true,
       "estado": "PENDIENTE",
       "responsable": null,
       "resultado_obtenido": null
     }
   ],
   "observaciones": [
-    "INMUNOLÓGICOS LABORATORIO ZURITA Y ZURITA 23-09-2026",
-    "ANTICUERPOS ANTI-PEPTIDO CITRULINADO (ANTICCP): INFERIOR A 0,50 U/ML-NEGATIVO",
-    "ANTICUERPOS ANTI-SM (SMITH): INFERIOR A 3,3 CU - NEGATIVO",
-    "ANTICUERPOS ANTI-CARDIOLIPINA IGM: 2,10 CU - NEGATIVO",
-    "ANTICUERPOS ANTI-CARDIOLIPINA IGG: 9,50 CU - NEGATIVO",
-    "ANTICUERPOS ANTI-BETA2 GLICOPROTEINA 1 IGM: INFERIOR A 1,1 CU - NEGATIVO"
+    "Vigilar sitio de retiro de tubo torácico derecho y signos de sangrado (recibe Rivaroxabán 20 mg VO c/12h; confirmar si corresponde pasar a dosis de mantenimiento de 20 mg QD habiendo cumplido >21 días desde la TEP del 12/09); insistir en valoración por Infectología ante PCR en 112 mg/L."
   ],
   "laboratorios": [
     {
-      "fecha_hora": "2026-11-16",
-      "tipo_estudio": "Laboratorios / Gasometría",
+      "fecha_hora": "23/09/2026 (Inmunológicos Zurita & Zurita)",
+      "tipo_estudio": "Laboratorio",
       "valores": {
-        "resumen": "CULTIVO DE LIQ. PLEURAL: MICROORGANISMO: SALMONELLA ENTERICA SSP ENTÉRICA . SENSIBLE A CEFTRIAXONA . RETIRO DE TUBO TORACICO EL 13/11 . PARACLÍNICOS (13/11/2026): PCR ULTRASENSIBLE 112.0 MG/L. LEUCOCITOS 8.49 K (NEUTRÓFILOS 6.66 K, LINFOCITOS 1.21 K), HEMOGLOBINA 11.6 G/DL, HEMATOCRITO 38.1%, PLAQUETAS 392.000. SODIO 142.7 MEQ/L, POTASIO 3.32 MEQ/L"
+        "resumen": "Anti-CCP <0.50 (-), Anti-Sm <3.3 (-), Anticardiolipina IgM 2.10 (-), IgG 9.50 (-), Anti-B2GP1 IgM <1.1 (-), IgG <6.4 (-), Anticoagulante lúpico 1.18 (-), c-ANCA (PR3) 2.50 (-), p-ANCA (MPO) <3.2 (-)."
+      },
+      "alerta_critica": null
+    },
+    {
+      "fecha_hora": "17/11/2026",
+      "tipo_estudio": "Laboratorio",
+      "valores": {
+        "resumen": "Cultivo de líquido pleural: Positivo para Salmonella enterica ssp. enterica (sensible a Ceftriaxona)."
+      },
+      "alerta_critica": null
+    },
+    {
+      "fecha_hora": "17/11/2026",
+      "tipo_estudio": "Laboratorio",
+      "valores": {
+        "resumen": "Control previo: Leucocitos 6.45 K/µL (Neu 4.63, Linf 1.13), Hb 11.7 g/dL, Hto 37.3%, VCM 86.0 fL, Plaquetas 452.000/µL."
+      },
+      "alerta_critica": null
+    },
+    {
+      "fecha_hora": "13/11/2026",
+      "tipo_estudio": "Laboratorio",
+      "valores": {
+        "resumen": "PCR ultrasensible 112.0 mg/L; Leucocitos 8.49 K/µL (Neu 6.66 K, Linf 1.21 K), Hb 11.6 g/dL, Hto 38.1%, Plaquetas 392.000/µL; BUN 14 mg/dL, Urea 29.7 mg/dL, Creatinina 0.64 mg/dL, Na 142.7 mEq/L, K 3.32 mEq/L, Cl 104 mEq/L."
       },
       "alerta_critica": null
     }
   ],
   "cultivos": [],
-  "alertas_criticas": []
+  "alertas_criticas": [
+    "Vigilar sitio de retiro de tubo torácico derecho y signos de sangrado (recibe Rivaroxabán 20 mg VO c/12h; confirmar si corresponde pasar a dosis de mantenimiento de 20 mg QD habiendo cumplido >21 días desde la TEP del 12/09); insistir en valoración por Infectología ante PCR en 112 mg/L."
+  ]
 }

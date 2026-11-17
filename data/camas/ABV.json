@@ -1,31 +1,24 @@
 {
   "cama": "ABV",
-  "area": "EMERGENCIA_OBSERVACION",
+  "area": "HOSPITALIZACION",
   "servicio_tratante": null,
-  "nombre_completo": "MORA GAIBOR JORGE RAMIRO C",
+  "nombre_completo": "MORA GAIBOR JORGE RAMIRO",
   "hc": "1948799",
   "cedula": "0200146611",
   "edad": "83 años",
   "sexo": null,
   "fecha_nacimiento": null,
   "fecha_ingreso": null,
-  "dias_hospitalizacion": null,
+  "dias_hospitalizacion": 1,
   "app": [
-    "ANTECEDENTES PATOLÓGICOS PERSONALES:",
-    "SMD IPSS RIESGO INTERMEDIO SIN CITOGENÉTICO",
-    "LEUCEMIA MIELOIDE AGUDA SECUNDARIO SINDROME MIELODISPLÁSICO",
-    "DIABETES MELLITUS TIPO 2",
-    "HIPERTENSIÓN ARTERIAL",
-    "HIPOACUSIA",
-    "INSUFICIENCIA CARDIACA",
-    "BLOQUEO AV TOTAL DE PROBABLE ORIGEN NODAL + FIBRILACIÓN AURICULAR"
+    "Clínicos: Síndrome mielodisplásico (SMD IPSS riesgo intermedio sin citogenético); Leucemia mieloide aguda secundaria a síndrome mielodisplásico; Diabetes mellitus tipo 2; Hipertensión arterial; Hipoacusia; Insuficiencia cardíaca; Bloqueo AV total de probable origen nodal + Fibrilación auricular; Hipertensión pulmonar; Enfermedad renal crónica (Cr basal 1.84 en 06/2026 y 1.76 en 08/2026)."
   ],
   "aqx": [],
   "alergias": [],
   "diagnosticos_activos": [
-    "DIAGNÓSTICOS ACTIVOS:",
-    "INFECCIÓN DE VÍAS URINARIAS",
-    "ENFERMEDAD RENAL CRÓNICA REAGUDIZADA"
+    "Infección de vías urinarias (CIE-10: N39.0).",
+    "Enfermedad renal crónica reagudizada (Cr 2.61 mg/dL).",
+    "Pancitopenia/bicitopenia por patología hematológica de base (Leucocitos 1.44 K/µL, Hb 8.2 g/dL, Plaquetas 127.000/µL)."
   ],
   "diagnosticos_pasivos": [],
   "dieta": null,
@@ -33,7 +26,7 @@
   "ckd_epi": null,
   "medicaciones": [
     {
-      "nombre": "PARACETAMOL 1 GR VÍA INTRAVENOSA POR RAZONES NECESARIAS",
+      "nombre": "TFGe CKD-EPI: 23.3 mL/min/1.73 m² (calculada con Cr 2.61 mg/dL del 15/11/2026).",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -46,7 +39,7 @@
       "nota": null
     },
     {
-      "nombre": "MEROPENEM 1 GRAMO INTRAVENOSO CADA 8 HORAS 1ER DÍA, LUEGO AJUSTE A FILTRADO GLOMERULAR POR SERVICIO BASE (FI: 15/11/2026",
+      "nombre": "Infectología (15/11/2026): Meropenem 500 mg IV c/12h (FI: 15/11/2026, Día 1, CIE-10: B99 / N39.0 — ajustado a función renal).",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -59,7 +52,7 @@
       "nota": null
     },
     {
-      "nombre": "ENOXAPARINA AJUSTADO A FUNCION RENAL: 50 MILIGRAMOS SUBCUTÁNEO CADA 12 HORAS",
+      "nombre": "Cardiología (15/11/2026): Enoxaparina ajustada a función renal: 50 mg SC c/12h.",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -72,7 +65,7 @@
       "nota": null
     },
     {
-      "nombre": "OMEPRAZOL 40 MG VO QD",
+      "nombre": "Paracetamol 1 g IV PRN",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -85,7 +78,7 @@
       "nota": null
     },
     {
-      "nombre": "TAMSULOSINA 0.4 MG VO QD",
+      "nombre": "Esquema de corrección con insulina cristalina.",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -98,7 +91,7 @@
       "nota": null
     },
     {
-      "nombre": "SIMVASTATINA 40 MG VO QD",
+      "nombre": "Medicación habitual activa: Omeprazol 40 mg VO QD",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -111,7 +104,7 @@
       "nota": null
     },
     {
-      "nombre": "LOSARTAN 50 MG VO QD SOLO SI TENSIONES ARTERIALES MAYORES A 140/90 MMHG",
+      "nombre": "Tamsulosina 0.4 mg VO QD",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -124,7 +117,7 @@
       "nota": null
     },
     {
-      "nombre": "METFORMINA 850 MG ***DIFERIR***",
+      "nombre": "Simvastatina 40 mg VO QD",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -137,7 +130,7 @@
       "nota": null
     },
     {
-      "nombre": "FUROSEMIDA 40 MG ***DIFERIR***",
+      "nombre": "Losartán 50 mg VO QD solo si PA >140/90 mmHg.",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -150,7 +143,7 @@
       "nota": null
     },
     {
-      "nombre": "ESPIRONOLACTONA 25 MG ***DIFERIR***",
+      "nombre": "DIFERIDOS: Metformina 850 mg, Furosemida 40 mg, Espironolactona 25 mg y Dapagliflozina 10 mg.",
       "dosis": "",
       "via": "",
       "frecuencia": "",
@@ -167,7 +160,7 @@
     {
       "id": "PEND-ABV-01",
       "tipo": "IMAGEN_PROCEDIMIENTO",
-      "descripcion": "ECOGRAFÍA RENAL SOLICITADA POR NEFROLOGÍA (Orden No. 35003556)",
+      "descripcion": "Realizar Ecografía renal solicitada por Nefrología (Orden No. 35003556).",
       "prioridad": "URGENTE",
       "turno": "NOCTURNA_20_24",
       "horario_programado": null,
@@ -179,11 +172,11 @@
     {
       "id": "PEND-ABV-02",
       "tipo": "LABORATORIO",
-      "descripcion": "16/11/2026: BIOMETRÍA HEMÁTICA COMPLETA, UREA, CREATININA, ELECTROLITOS, MAGNESIO, CALCIO, GASOMETRÍA VENOSA, PCR",
-      "prioridad": "RUTINA",
+      "descripcion": "Revisar laboratorios del 16/11/2026: BH completa, urea, creatinina, electrolitos, Mg, Ca, gasometría venosa y PCR.",
+      "prioridad": "URGENTE",
       "turno": "NOCTURNA_20_24",
       "horario_programado": null,
-      "es_visita_nocturna": false,
+      "es_visita_nocturna": true,
       "estado": "PENDIENTE",
       "responsable": null,
       "resultado_obtenido": null
@@ -191,7 +184,31 @@
     {
       "id": "PEND-ABV-03",
       "tipo": "LABORATORIO",
-      "descripcion": "UROCULTIVO PENDIENTE RESULTADOS (Orden No. 35003554, Orden No. 35002630)",
+      "descripcion": "Recabar resultados de urocultivo (Orden No. 35003554 / Orden No. 35002630).",
+      "prioridad": "URGENTE",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": null,
+      "es_visita_nocturna": true,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
+    },
+    {
+      "id": "PEND-ABV-04",
+      "tipo": "LABORATORIO",
+      "descripcion": "RETIRAR SONDA FOLEY EL 17/11/2026.",
+      "prioridad": "URGENTE",
+      "turno": "NOCTURNA_20_24",
+      "horario_programado": null,
+      "es_visita_nocturna": true,
+      "estado": "PENDIENTE",
+      "responsable": null,
+      "resultado_obtenido": null
+    },
+    {
+      "id": "PEND-ABV-05",
+      "tipo": "IMAGEN_PROCEDIMIENTO",
+      "descripcion": "Ecografía renal (Orden No. 35003556): Solicitada por Nefrología, pendiente realización.",
       "prioridad": "URGENTE",
       "turno": "NOCTURNA_20_24",
       "horario_programado": null,
@@ -202,14 +219,44 @@
     }
   ],
   "observaciones": [
-    "2026/11/15",
-    "PROCALCITONINA LAB. CLINICO.....: 3.88",
-    "Leucocitos (WBC)................: 1.44",
-    "Hemoglobina (HGB)...............: 8.2",
-    "Hematocrito (HCT)...............: 26.1",
-    "Volumen corp. medio (MCV).......: 104.70"
+    "Revisar laboratorios del 16/11 (vigilar potasio tras descenso de 5.68 → 4.97 mEq/L y hemoglobina de 8.2 g/dL; paciente es GRUPO O Rh NEGATIVO en caso de requerir soporte transfusional). Vigilar signos de sangrado dado uso de Enoxaparina 50 mg SC c/12h con TFGe de 23.3 mL/min y programar retiro de sonda Foley mañana 17/11/2026."
   ],
-  "laboratorios": [],
+  "laboratorios": [
+    {
+      "fecha_hora": "17/11/2026",
+      "tipo_estudio": "Laboratorio",
+      "valores": {
+        "resumen": "Previos: Cr 1.84 mg/dL (20/06/2026), Cr 1.76 mg/dL (05/08/2026)."
+      },
+      "alerta_critica": null
+    },
+    {
+      "fecha_hora": "14/11/2026",
+      "tipo_estudio": "Laboratorio",
+      "valores": {
+        "resumen": "PCR ultrasensible 86.40 mg/L; TP 14.4 s, INR 1.33, TTP 34.1 s; Leucocitos 1.85 K/µL (Neu 1.43, Linf 0.34), Hb 8.5 g/dL, Hto 26.9%, VCM 106.1 fL, Plaquetas 152.000/µL; BUN 50 mg/dL, Urea 108.0 mg/dL, Cr 2.52 mg/dL; Na 132.2, Potasio 5.68 mEq/L, Cl 98."
+      },
+      "alerta_critica": null
+    },
+    {
+      "fecha_hora": "15/11/2026",
+      "tipo_estudio": "Laboratorio",
+      "valores": {
+        "resumen": "Procalcitonina 3.88 ng/mL; Leucocitos 1.44 K/µL (Neu 1.08 / 74.7%, Linf 0.29 / 20.3%), Hb 8.2 g/dL, Hto 26.1%, VCM 104.7 fL, Plaquetas 127.000/µL; Glucosa 129 mg/dL, Creatinina 2.61 mg/dL, Ácido úrico 8.7 mg/dL; Na 134.1, Potasio 4.97 mEq/L, Cl 101, Ca total 8.3 (iónico 1.17), Mg 1.61, Fósforo 5.7 mg/dL; Grupo sanguíneo: O Rh NEGATIVO."
+      },
+      "alerta_critica": null
+    },
+    {
+      "fecha_hora": "15/11/2026 (EMO y Gram)",
+      "tipo_estudio": "Laboratorio",
+      "valores": {
+        "resumen": "Orina turbia, pH 5.0, leucocitos 75, piocitos 188.1, bacterias +++; Gram de gota fresca: bacilos gramnegativos."
+      },
+      "alerta_critica": null
+    }
+  ],
   "cultivos": [],
-  "alertas_criticas": []
+  "alertas_criticas": [
+    "Revisar laboratorios del 16/11 (vigilar potasio tras descenso de 5.68 → 4.97 mEq/L y hemoglobina de 8.2 g/dL; paciente es GRUPO O Rh NEGATIVO en caso de requerir soporte transfusional). Vigilar signos de sangrado dado uso de Enoxaparina 50 mg SC c/12h con TFGe de 23.3 mL/min y programar retiro de sonda Foley mañana 17/11/2026."
+  ]
 }
